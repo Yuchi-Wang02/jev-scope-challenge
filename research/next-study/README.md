@@ -51,7 +51,7 @@ hf download Qwen/Qwen3-4B-Base --revision 906bfd4b4dc7f14ee4320094d8b41684abff85
 hf download jaredpalmer/kev-4b --revision c4bfa11b0dc07691884f2d97f1c4c4c05c92e416 --cache-dir /your/cache
 python research/next-study/study.py run --cache /your/cache
 python research/next-study/analyze_study.py
-python research/next-study/analyze_study.py --verify
+python research/next-study/verify_study.py
 ```
 
 Model weights (about 8.2 GB total) stay outside Git. For a new replication, use a
