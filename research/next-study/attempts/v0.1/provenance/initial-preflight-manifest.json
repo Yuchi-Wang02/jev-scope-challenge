@@ -1,5 +1,5 @@
 {
-  "study": "matched-base-pilot-v0.2",
+  "study": "matched-base-pilot-v0.1",
   "base": "Qwen/Qwen3-4B-Base",
   "base_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
   "adapter": "jaredpalmer/kev-4b",
@@ -33,16 +33,15 @@
   "head_dtype": "float32",
   "adapter_mode": "unmerged",
   "tf32": false,
-  "sdpa_kernel": "math_only",
   "quantization": null,
   "new_training": false,
   "independent_human_reviewed": false,
   "file_sha256_lf": {
     "data/cases.jsonl": "eb29a29ff73e1b83c89344814a81113990429f54978081541a4bf7e2a1b33a66",
-    "study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd",
-    "analyze_study.py": "fe3d325e83a3a896f80b93f0b2d73ea48a23f1d06b702590bbf93b036781816c",
-    "PROTOCOL.md": "f6ec1f172511429adfceca7804cac38910baf580559be2f64be393654f9382b3",
+    "study.py": "a8127992212c7ecc369031d1a8bdf4b90bdb532d2c950d8821e12518be5a6b3d",
+    "analyze_study.py": "d9f4b7702461448b94ced9e3696048d8450a7c9c6c6edb626d292917f411ddfb",
+    "PROTOCOL.md": "c9157718d17d4c9e31f25c466b4f7981dc1a34be94f457d66e51f2c7450a6ef4",
     "vendor/kev/model.py": "839dd7632ec291ac4740035c86f780f8f13da2b74b54a146ce90ff0ce8de527b"
   },
-  "config_hash": "63e39428ec0ac6092f14949d36b02217ecee22e6601751dd5c84990071d94fcb"
+  "config_hash": "1a9ed25f3c1f326c76867f2e9015b29a5de9563c5f21b144bd166a7ff33a9415"
 }

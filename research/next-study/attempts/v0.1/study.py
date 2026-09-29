@@ -142,11 +142,11 @@ def validate(rows):
 
 def freeze():
     paths = ['data/cases.jsonl','study.py','analyze_study.py','PROTOCOL.md','vendor/kev/model.py']
-    obj = {'study':'matched-base-pilot-v0.2', 'base':BASE, 'base_revision':BASE_REV,
+    obj = {'study':'matched-base-pilot-v0.1', 'base':BASE, 'base_revision':BASE_REV,
            'adapter':ADAPTER,'adapter_revision':ADAPTER_REV,'source_revision':SOURCE_REV,
            'arms':['N0','N1','K1','C0'],'candidate_orders':MAPS,'seed':SEED,
            'backbone_dtype':'bfloat16','head_dtype':'float32','adapter_mode':'unmerged',
-           'tf32':False,'sdpa_kernel':'math_only','quantization':None,'new_training':False,'independent_human_reviewed':False,
+           'tf32':False,'quantization':None,'new_training':False,'independent_human_reviewed':False,
            'file_sha256_lf':{p:sha((HERE/p).read_bytes().replace(b'\r\n',b'\n')) for p in paths}}
     obj['config_hash'] = sha(canonical(obj).encode())
     path = HERE / 'manifest.json'
@@ -184,15 +184,11 @@ def run(cache):
     torch.manual_seed(SEED)
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
-    torch.backends.cuda.enable_flash_sdp(False)
-    torch.backends.cuda.enable_mem_efficient_sdp(False)
-    torch.backends.cuda.enable_cudnn_sdp(False)
-    torch.backends.cuda.enable_math_sdp(True)
     torch.cuda.reset_peak_memory_stats()
     environment = {'python':platform.python_version(),'gpu':torch.cuda.get_device_name(0),'cuda':torch.version.cuda,
                    'packages':{p:importlib.metadata.version(p) for p in ('torch','transformers','peft','huggingface-hub','numpy')},
                    'config_hash':manifest['config_hash'], 'status':'loading', 'backbone_dtype':'bfloat16', 'head_dtype':'float32',
-                   'new_training':False,'paid_api_calls':0,'sdpa_kernel':'math_only'}
+                   'new_training':False,'paid_api_calls':0}
     write_json(out/'runtime.json',environment)
     base_path = snapshot_download(BASE, revision=BASE_REV, cache_dir=cache, local_files_only=True)
     adapter_path = snapshot_download(ADAPTER, revision=ADAPTER_REV, cache_dir=cache, local_files_only=True)

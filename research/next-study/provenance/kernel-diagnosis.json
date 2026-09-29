@@ -1,0 +1,33 @@
+{
+  "scope": "one engineering input only; no scientific dataset scored",
+  "kernels": {
+    "default": {
+      "packed_logits": [
+        3.0773143768310547,
+        1.5591837167739868
+      ],
+      "causal_logits": [
+        3.098078489303589,
+        1.6406784057617188
+      ],
+      "max_probability_delta": 0.009128332138061523
+    },
+    "math_only": {
+      "packed_logits": [
+        3.098078489303589,
+        1.6406784057617188
+      ],
+      "causal_logits": [
+        3.098078489303589,
+        1.6406784057617188
+      ],
+      "max_probability_delta": 0.0
+    }
+  },
+  "adapter_tensor_check": {
+    "status": "passed",
+    "tensors": 504,
+    "parameters": 33030144,
+    "scope": "expected public LoRA tensors exactly equal loaded tensors; not historical library parity"
+  }
+}

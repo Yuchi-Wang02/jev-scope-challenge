@@ -1,4 +1,4 @@
-# Matched-base exploratory pilot v0.2
+# Matched-base exploratory pilot v0.1
 
 Freeze before scientific inference. No new training or paid API. This diagnostic
 extends Kev's existing native/adapted LM-head probes; no method novelty is claimed.
@@ -15,10 +15,7 @@ N0: pinned Qwen3-4B-Base, original LM head. N1: same model and LM head with the
 pinned Kev LoRA unmerged. K1: the same adapted backbone with the trained pointer
 head and exact historical encoder/model source (SHA recorded in manifest).
 One question per example, no truncation, BF16 backbone, FP32 trained pointer
-head and raw probability computation, math-only SDPA for every arm, TF32 disabled.
-No quantization. The v0.1 attempt stopped before K1 scientific scoring because
-default SDPA packed and standard paths differed on an engineering input. v0.2
-reruns every arm under the same math kernel; original records stay in attempts/.
+head and raw probability computation, SDPA, TF32 disabled. No quantization.
 Native letter candidates are single tokens whose continuation boundaries must
 match. N0/N1 use identical prompts and order. K1 changes representation/readout;
 its difference from N1 is a system-path comparison, not an isolated head effect.
