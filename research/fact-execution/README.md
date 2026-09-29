@@ -51,6 +51,8 @@ encoded plans, a guarded local runner and a raw-score recomputation checker.
 It is a pre-inference artifact, not a model result.
 The [scope audit](JOINT_ROUTE_SCOPE_AUDIT.md) documents prior extraction work
 and a tested one-line/two-fact case that the exclusive route cannot express.
+The [One Line, Two Facts stress test](MULTIFACT_LINE_STRESS.md) expands that
+software check to 56 paired development texts, with no new model inference.
 
 ## Reproduce the published evidence offline
 

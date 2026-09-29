@@ -1,0 +1,22 @@
+{
+  "status": "software_only_program_reference_not_model_evaluation",
+  "original_development_sources": 56,
+  "paired_derived_items": 112,
+  "parent_clusters": 12,
+  "independent_new_examples": 0,
+  "model_forwards": 0,
+  "independent_human_annotations": 0,
+  "by_packing": {
+    "cross_field": {
+      "items": 56,
+      "exact_fact_vector_reachable": 0,
+      "gold_decision_reachable": 30
+    },
+    "mixed_scope_control": {
+      "items": 56,
+      "exact_fact_vector_reachable": 56,
+      "gold_decision_reachable": 56
+    }
+  },
+  "interpretation": "Reachability allows only a constituent record label per packed line. It measures this exclusive interface with perfect semantic routing, not model accuracy or language transfer."
+}

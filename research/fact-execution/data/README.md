@@ -22,6 +22,13 @@ The [144 rewrite pairs](../review/) are AI-generated candidates that intend to
 preserve facts. Their equality is not independently verified, and no rewritten
 input has a model score. They must not be advertised as a validated benchmark.
 
+The [multi-fact line stress set](../MULTIFACT_LINE_STRESS.md) contains 112
+line-packed versions of 56 of the same development texts. Its program-derived
+reachability scores describe the exclusive routing interface under faithful
+labels; they are not model evaluations, new independent examples or human
+annotations. The audit JSONL includes program references and must never be
+supplied wholesale as a model prompt.
+
 Original synthetic text and program-derived reference data, including these
 provisional candidates, are CC BY 4.0. Attribute Yuchi Wang / Jev Scope Challenge,
 cite the relevant version, link the [license](https://creativecommons.org/licenses/by/4.0/),

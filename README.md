@@ -47,6 +47,8 @@ no new inference has been authorized or run.
 The [joint-route scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md)
 records close prior work and a tested interface limit: a line containing two
 facts cannot be represented by its exclusive one-owner label.
+The [One Line, Two Facts software stress](research/fact-execution/MULTIFACT_LINE_STRESS.md)
+checks 56 paired line packings without another model run.
 
 **Same words. Different scope. Opposite decisions.**
 

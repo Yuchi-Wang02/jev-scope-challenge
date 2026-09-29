@@ -35,6 +35,9 @@ and direct union. CI verifies the frozen plan only; the run has not occurred.
 The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
 related extraction work and demonstrates that one exclusive label cannot carry
 two facts from the same line. That software test is not a model measurement.
+The [paired multi-fact line stress](research/fact-execution/MULTIFACT_LINE_STRESS.md)
+tests that interface limit on 56 existing development texts; all 112 packed
+versions are unscored transformations and carry zero independent annotations.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated
