@@ -1,9 +1,9 @@
 {
   "experiment": "jev-scope-challenge-v0.1",
   "seed": 20260929,
-  "data_sha256": "fca690bba6f0de2827ecfd8a093588e34049518e6257f5b8b68dae16639da0c4",
+  "data_sha256": "abd5d0c0997eb2994f54d51df822c4df1b3900a204cc3c909316567280e2cefe",
   "core_sha256": "ceb78dba6a3b62e69f3f64e69c8f7b8bafb065c53d2258d77ae9263e50fd1ea7",
-  "runner_sha256": "08fef6148bf0c69a40ff41470ed7762786d6df528869b34cbda6166f16dc5af0",
+  "runner_sha256": "32958c7cf284d4c7e279b480a14aaa329604e748717f67c6417c36cbbde89816",
   "analysis_sha256": "84f9727a4cf7e1ccd772390cadcd64962cff932dc270d3c72f7b3d132d8e06fa",
   "protocol_sha256": "06a96f5f054687b91844704c83b0c54e31f6cc337ec981a1d8a2ae0c72a8d15c",
   "qwen_model": "Qwen/Qwen3-4B",
@@ -44,6 +44,6 @@
   "budget_stop_usd": 1,
   "http_attempt_limit": 400,
   "max_attempts_per_job": 2,
-  "config_hash": "48e83c0c1129632ae452e50f77298a60b5ee3fc8dfee8cf5b256b2feaa244e76",
-  "frozen_at_utc": "2026-09-29T11:41:45.619478+00:00"
+  "config_hash": "522e6ca4a22b7de046803af7eff054089979582fbd9aa66b67198bf5c9bc73b9",
+  "frozen_at_utc": "2026-09-29T11:40:56.741336+00:00"
 }

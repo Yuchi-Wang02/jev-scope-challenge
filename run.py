@@ -20,7 +20,8 @@ def utc() -> str:
     return dt.datetime.now(dt.timezone.utc).isoformat()
 
 def sha_file(path: Path) -> str:
-    return digest(path.read_bytes())
+    # Text freezes must survive Windows/Linux Git line-ending conversion.
+    return digest(path.read_bytes().replace(b"\r\n", b"\n"))
 
 def versions() -> dict:
     out = {"python": platform.python_version(), "os": platform.platform()}
