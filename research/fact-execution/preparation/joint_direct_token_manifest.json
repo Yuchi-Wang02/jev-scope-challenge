@@ -1,0 +1,28 @@
+{
+  "status": "tokenizer_only_unscored_preparation",
+  "source_sha256_lf": {
+    "JOINT_TOKEN_CONTROL.md": "c98bb156126b8934a0ae87ff2e16138b2151861288fd49a906fe7ee73301cf20",
+    "joint_token_control.py": "ceed773e292d91cb6ae7ef98889175a1111c79dc21e4f23489d95a79e69c9fec",
+    "joint_route.py": "ea2ae9d5169a274ba6df38be5223e210b652d0dbdcb9529d29f7ef74453ac9fd",
+    "joint_route_plan.py": "e30a9a037535557b3e25dd788571e329b13fafe2c1c79d6045de37f1eb8a8bb5",
+    "preparation/joint_route_query_manifest.json": "9c24f116c2d867dff16b2910d1341c623be67be25162ac1819758c90393c7a4a",
+    "preparation/joint_direct_queries.jsonl": "1aff5735ff204a991fe1e25cb4c03b8d194b600d375563a9f06722cf1cdc8761",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd"
+  },
+  "tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "selection_rule": "Start with all 228 call-matched queries; traverse each next unused order in rounds, cases sorted by SHA256(source_id), include only if the recorded input-token total stays <= target. No labels used.",
+  "joint_primary_target_input_tokens": 95889,
+  "all_six_order_direct_queries": 432,
+  "call_matched_direct_queries": 228,
+  "token_matched_direct_queries": 286,
+  "additional_direct_queries": 58,
+  "call_matched_input_tokens": 76855,
+  "token_matched_direct_input_tokens": 95849,
+  "input_token_gap": 40,
+  "all_costs_sha256_lf": "75138e30fccd672132df24a89c4db584be366861320b8c7d1b7d176bfb1b2bd4",
+  "selected_queries_sha256_lf": "51ddc62f1e0d426bf924e38db52abb79537501a7a2df72d13ac8267e5d1674e1",
+  "actual_model_forwards": 0,
+  "rewrite_or_reserved_queries": 0,
+  "independent_human_annotations": 0,
+  "verification_limit": "Offline verification checks source prompts, every stored cost, selection and hashes. Exact tokenizer counts require the pinned local tokenizer and verify-tokenizer."
+}

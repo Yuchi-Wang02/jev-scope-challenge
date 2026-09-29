@@ -26,6 +26,9 @@ model measurement.
 The [joint-routing candidate](research/fact-execution/JOINT_ROUTE_PROTOCOL.md)
 has published prompts and a call-matched direct plan, but no encoded execution
 freeze or new scores. Its input-token budgets differ and are disclosed.
+An [ID-only token-matched direct control](research/fact-execution/JOINT_TOKEN_CONTROL.md)
+is now prepared at 95,849 versus 95,889 planned input tokens, but uses 286
+rather than 228 calls. Both comparisons remain unscored.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

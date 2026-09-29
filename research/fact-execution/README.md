@@ -43,6 +43,9 @@ are not model results.
 The [joint-routing preparation](JOINT_ROUTE_PROTOCOL.md) then tests a
 one-line/one-owner hypothesis. It contains query plans and tokenizer-only
 costs, with zero new model forwards.
+The [second direct control](JOINT_TOKEN_CONTROL.md) matches its planned input
+token budget to within 40 tokens using distinct prompt orders selected without
+labels, while explicitly retaining the 58-call difference.
 
 ## Reproduce the published evidence offline
 

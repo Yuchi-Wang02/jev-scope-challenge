@@ -38,6 +38,9 @@ not a new model score.
 [One line, one owner](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) is the
 next unscored joint-routing preparation: 228 primary queries plus a 228-call
 direct control are reviewable, with no new model result.
+An additional [token-matched direct plan](research/fact-execution/JOINT_TOKEN_CONTROL.md)
+uses 286 planned calls / 95,849 input tokens, 40 fewer tokens than the joint
+candidate; it too remains unscored.
 
 **Same words. Different scope. Opposite decisions.**
 

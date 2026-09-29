@@ -31,6 +31,7 @@ python research/fact-execution/line_analyze.py --verify
 python research/fact-execution/line_oracle_decomposition.py --verify
 python research/fact-execution/publish_line.py --verify
 python research/fact-execution/joint_route_plan.py verify
+python research/fact-execution/joint_token_control.py verify
 python verify_publication.py
 ```
 
