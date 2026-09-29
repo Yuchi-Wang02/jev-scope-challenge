@@ -1,0 +1,520 @@
+{
+  "experiment": "jev-scope-challenge-v0.1",
+  "config_hash": "48e83c0c1129632ae452e50f77298a60b5ee3fc8dfee8cf5b256b2feaa244e76",
+  "data_sha256": "fca690bba6f0de2827ecfd8a093588e34049518e6257f5b8b68dae16639da0c4",
+  "models": {
+    "jev": {
+      "rounds": {
+        "0": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 96,
+          "robust_pass": 12,
+          "parents": 12,
+          "parent_pass": {
+            "S01": true,
+            "S02": true,
+            "S03": true,
+            "S04": true,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 12,
+            "keep_first": 12
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 0,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            }
+          },
+          "brier": 0.00010624999999999997,
+          "nll": 0.0025559565010970084
+        },
+        "1": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 96,
+          "robust_pass": 12,
+          "parents": 12,
+          "parent_pass": {
+            "S01": true,
+            "S02": true,
+            "S03": true,
+            "S04": true,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 12,
+            "keep_first": 12
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 0,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            }
+          },
+          "brier": 5.208333333333337e-05,
+          "nll": 0.00211000628474281
+        }
+      },
+      "repeat_disagreements": 0,
+      "latency_s": {
+        "median": 0.14674435000051744,
+        "p95": 0.20271719999982443
+      },
+      "total_decision_time_s": 29.391701400039892,
+      "formal_input_tokens": 88192,
+      "missing_usage": 0
+    },
+    "qwen": {
+      "rounds": {
+        "0": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 83,
+          "robust_pass": 8,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 8,
+            "keep_first": 8
+          },
+          "wrong_cancel": 10,
+          "missed_cancel": 3,
+          "mapping_disagreements": 1,
+          "semantic_errors_both_mappings": 6,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 35,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 40,
+              "total_pairs": 48
+            }
+          },
+          "brier": 0.13428894920277823,
+          "nll": 2.0461768560915177
+        },
+        "1": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 83,
+          "robust_pass": 8,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 8,
+            "keep_first": 8
+          },
+          "wrong_cancel": 10,
+          "missed_cancel": 3,
+          "mapping_disagreements": 1,
+          "semantic_errors_both_mappings": 6,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 35,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 40,
+              "total_pairs": 48
+            }
+          },
+          "brier": 0.1342889492027782,
+          "nll": 2.0461768560915172
+        }
+      },
+      "repeat_disagreements": 0,
+      "latency_s": {
+        "median": 0.04654875000051106,
+        "p95": 0.05204901000142854
+      },
+      "total_decision_time_s": 9.34799430003477,
+      "formal_input_tokens": 35808,
+      "missing_usage": 0,
+      "candidate_mass": {
+        "min": 0.9999997160630301,
+        "median": 1.000000000004262,
+        "low_mass_under_0.01": 0
+      }
+    }
+  },
+  "references": {
+    "always_keep": {
+      "rounds": {
+        "0": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 48,
+          "robust_pass": 0,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": false,
+            "Q02": false,
+            "Q03": false,
+            "Q04": false,
+            "T01": false,
+            "T02": false,
+            "T03": false,
+            "T04": false
+          },
+          "mapping_pass": {
+            "cancel_first": 0,
+            "keep_first": 0
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 48,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 24,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 0,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 24,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        },
+        "1": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 48,
+          "robust_pass": 0,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": false,
+            "Q02": false,
+            "Q03": false,
+            "Q04": false,
+            "T01": false,
+            "T02": false,
+            "T03": false,
+            "T04": false
+          },
+          "mapping_pass": {
+            "cancel_first": 0,
+            "keep_first": 0
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 48,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 24,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 0,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 24,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        }
+      }
+    },
+    "keyword": {
+      "rounds": {
+        "0": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 48,
+          "robust_pass": 0,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": false,
+            "Q02": false,
+            "Q03": false,
+            "Q04": false,
+            "T01": false,
+            "T02": false,
+            "T03": false,
+            "T04": false
+          },
+          "mapping_pass": {
+            "cancel_first": 0,
+            "keep_first": 0
+          },
+          "wrong_cancel": 48,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 24,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 0,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 24,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        },
+        "1": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 48,
+          "robust_pass": 0,
+          "parents": 12,
+          "parent_pass": {
+            "S01": false,
+            "S02": false,
+            "S03": false,
+            "S04": false,
+            "Q01": false,
+            "Q02": false,
+            "Q03": false,
+            "Q04": false,
+            "T01": false,
+            "T02": false,
+            "T03": false,
+            "T04": false
+          },
+          "mapping_pass": {
+            "cancel_first": 0,
+            "keep_first": 0
+          },
+          "wrong_cancel": 48,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 24,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 0,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 24,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        }
+      }
+    },
+    "known_grammar": {
+      "rounds": {
+        "0": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 96,
+          "robust_pass": 12,
+          "parents": 12,
+          "parent_pass": {
+            "S01": true,
+            "S02": true,
+            "S03": true,
+            "S04": true,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 12,
+            "keep_first": 12
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 0,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        },
+        "1": {
+          "expected": 96,
+          "terminal_records": 96,
+          "valid": 96,
+          "missing": 0,
+          "failed": 0,
+          "correct": 96,
+          "robust_pass": 12,
+          "parents": 12,
+          "parent_pass": {
+            "S01": true,
+            "S02": true,
+            "S03": true,
+            "S04": true,
+            "Q01": true,
+            "Q02": true,
+            "Q03": true,
+            "Q04": true,
+            "T01": true,
+            "T02": true,
+            "T03": true,
+            "T04": true
+          },
+          "mapping_pass": {
+            "cancel_first": 12,
+            "keep_first": 12
+          },
+          "wrong_cancel": 0,
+          "missed_cancel": 0,
+          "mapping_disagreements": 0,
+          "semantic_errors_both_mappings": 0,
+          "pairs": {
+            "flip": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            },
+            "hold": {
+              "correct_pairs": 48,
+              "total_pairs": 48
+            }
+          },
+          "brier": null,
+          "nll": null
+        }
+      }
+    }
+  },
+  "human_reviewed": false,
+  "round0_primary": true,
+  "jev_usage": {
+    "http_attempts": 195,
+    "finished_attempts": 195,
+    "known_input_tokens": 89563,
+    "unknown_cost_attempts": 0,
+    "usage_estimated_usd": 0.003761646000000004,
+    "includes_smoke": true,
+    "account_bill_verified": false
+  },
+  "within_probe_reweighting": {
+    "qwen_minus_jev_pass_rate": -0.3333333333333333,
+    "percentile_95": [
+      -0.5833333333333334,
+      -0.08333333333333333
+    ],
+    "interpretation": "Within these purposively constructed cases only; not population CI or equivalence."
+  },
+  "ranking_signs_by_round_and_mapping": [
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "stable_strict_direction": -1,
+  "result_files_sha256": {
+    "jev_formal.jsonl": "81810fd2afe412b3f405e73d09daab61f9b543cbd31e4f16e1eba34c12c1fc25",
+    "qwen_formal.jsonl": "6d04f9dbef995b9197b5759828a4f80306ba3a02e5eb6ac08f29704be077c0b1"
+  }
+}
