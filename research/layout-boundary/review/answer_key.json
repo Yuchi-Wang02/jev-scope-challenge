@@ -1,0 +1,386 @@
+{
+  "B001": {
+    "case_id": "owner_scope-8-flip",
+    "rule_label": "ALLOW"
+  },
+  "B002": {
+    "case_id": "current_request-4-flip",
+    "rule_label": "ALLOW"
+  },
+  "B003": {
+    "case_id": "claim_binding-7-full",
+    "rule_label": "ALLOW"
+  },
+  "B004": {
+    "case_id": "current_request-5-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B005": {
+    "case_id": "claim_binding-3-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B006": {
+    "case_id": "current_request-1-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B007": {
+    "case_id": "claim_binding-4-hold",
+    "rule_label": "DENY"
+  },
+  "B008": {
+    "case_id": "owner_scope-1-hold",
+    "rule_label": "ALLOW"
+  },
+  "B009": {
+    "case_id": "claim_binding-3-flip",
+    "rule_label": "DENY"
+  },
+  "B010": {
+    "case_id": "owner_scope-6-hold",
+    "rule_label": "DENY"
+  },
+  "B011": {
+    "case_id": "owner_scope-4-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B012": {
+    "case_id": "claim_binding-8-full",
+    "rule_label": "DENY"
+  },
+  "B013": {
+    "case_id": "owner_scope-7-full",
+    "rule_label": "ALLOW"
+  },
+  "B014": {
+    "case_id": "owner_scope-2-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B015": {
+    "case_id": "owner_scope-8-hold",
+    "rule_label": "DENY"
+  },
+  "B016": {
+    "case_id": "owner_scope-5-flip",
+    "rule_label": "DENY"
+  },
+  "B017": {
+    "case_id": "owner_scope-4-flip",
+    "rule_label": "ALLOW"
+  },
+  "B018": {
+    "case_id": "owner_scope-4-hold",
+    "rule_label": "DENY"
+  },
+  "B019": {
+    "case_id": "current_request-7-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B020": {
+    "case_id": "owner_scope-5-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B021": {
+    "case_id": "current_request-2-hold",
+    "rule_label": "DENY"
+  },
+  "B022": {
+    "case_id": "owner_scope-2-full",
+    "rule_label": "DENY"
+  },
+  "B023": {
+    "case_id": "claim_binding-2-flip",
+    "rule_label": "ALLOW"
+  },
+  "B024": {
+    "case_id": "current_request-1-flip",
+    "rule_label": "DENY"
+  },
+  "B025": {
+    "case_id": "owner_scope-7-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B026": {
+    "case_id": "current_request-3-hold",
+    "rule_label": "ALLOW"
+  },
+  "B027": {
+    "case_id": "claim_binding-2-hold",
+    "rule_label": "DENY"
+  },
+  "B028": {
+    "case_id": "current_request-7-hold",
+    "rule_label": "ALLOW"
+  },
+  "B029": {
+    "case_id": "claim_binding-7-hold",
+    "rule_label": "ALLOW"
+  },
+  "B030": {
+    "case_id": "owner_scope-6-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B031": {
+    "case_id": "claim_binding-8-flip",
+    "rule_label": "ALLOW"
+  },
+  "B032": {
+    "case_id": "owner_scope-6-full",
+    "rule_label": "DENY"
+  },
+  "B033": {
+    "case_id": "current_request-7-full",
+    "rule_label": "ALLOW"
+  },
+  "B034": {
+    "case_id": "claim_binding-4-flip",
+    "rule_label": "ALLOW"
+  },
+  "B035": {
+    "case_id": "owner_scope-5-full",
+    "rule_label": "ALLOW"
+  },
+  "B036": {
+    "case_id": "claim_binding-6-full",
+    "rule_label": "DENY"
+  },
+  "B037": {
+    "case_id": "claim_binding-2-full",
+    "rule_label": "DENY"
+  },
+  "B038": {
+    "case_id": "current_request-1-hold",
+    "rule_label": "ALLOW"
+  },
+  "B039": {
+    "case_id": "claim_binding-3-full",
+    "rule_label": "ALLOW"
+  },
+  "B040": {
+    "case_id": "owner_scope-7-hold",
+    "rule_label": "ALLOW"
+  },
+  "B041": {
+    "case_id": "current_request-6-hold",
+    "rule_label": "DENY"
+  },
+  "B042": {
+    "case_id": "owner_scope-3-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B043": {
+    "case_id": "current_request-2-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B044": {
+    "case_id": "claim_binding-6-flip",
+    "rule_label": "ALLOW"
+  },
+  "B045": {
+    "case_id": "claim_binding-1-hold",
+    "rule_label": "ALLOW"
+  },
+  "B046": {
+    "case_id": "owner_scope-7-flip",
+    "rule_label": "DENY"
+  },
+  "B047": {
+    "case_id": "current_request-4-full",
+    "rule_label": "DENY"
+  },
+  "B048": {
+    "case_id": "current_request-8-hold",
+    "rule_label": "DENY"
+  },
+  "B049": {
+    "case_id": "current_request-2-flip",
+    "rule_label": "ALLOW"
+  },
+  "B050": {
+    "case_id": "owner_scope-5-hold",
+    "rule_label": "ALLOW"
+  },
+  "B051": {
+    "case_id": "current_request-3-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B052": {
+    "case_id": "claim_binding-8-hold",
+    "rule_label": "DENY"
+  },
+  "B053": {
+    "case_id": "claim_binding-7-flip",
+    "rule_label": "DENY"
+  },
+  "B054": {
+    "case_id": "current_request-7-flip",
+    "rule_label": "DENY"
+  },
+  "B055": {
+    "case_id": "claim_binding-5-hold",
+    "rule_label": "ALLOW"
+  },
+  "B056": {
+    "case_id": "claim_binding-4-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B057": {
+    "case_id": "owner_scope-4-full",
+    "rule_label": "DENY"
+  },
+  "B058": {
+    "case_id": "current_request-6-full",
+    "rule_label": "DENY"
+  },
+  "B059": {
+    "case_id": "claim_binding-1-flip",
+    "rule_label": "DENY"
+  },
+  "B060": {
+    "case_id": "claim_binding-5-flip",
+    "rule_label": "DENY"
+  },
+  "B061": {
+    "case_id": "claim_binding-1-full",
+    "rule_label": "ALLOW"
+  },
+  "B062": {
+    "case_id": "current_request-4-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B063": {
+    "case_id": "current_request-8-full",
+    "rule_label": "DENY"
+  },
+  "B064": {
+    "case_id": "current_request-6-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B065": {
+    "case_id": "owner_scope-1-full",
+    "rule_label": "ALLOW"
+  },
+  "B066": {
+    "case_id": "owner_scope-8-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B067": {
+    "case_id": "current_request-4-hold",
+    "rule_label": "DENY"
+  },
+  "B068": {
+    "case_id": "current_request-8-flip",
+    "rule_label": "ALLOW"
+  },
+  "B069": {
+    "case_id": "owner_scope-3-full",
+    "rule_label": "ALLOW"
+  },
+  "B070": {
+    "case_id": "claim_binding-3-hold",
+    "rule_label": "ALLOW"
+  },
+  "B071": {
+    "case_id": "claim_binding-5-full",
+    "rule_label": "ALLOW"
+  },
+  "B072": {
+    "case_id": "owner_scope-3-hold",
+    "rule_label": "ALLOW"
+  },
+  "B073": {
+    "case_id": "claim_binding-4-full",
+    "rule_label": "DENY"
+  },
+  "B074": {
+    "case_id": "current_request-2-full",
+    "rule_label": "DENY"
+  },
+  "B075": {
+    "case_id": "owner_scope-6-flip",
+    "rule_label": "ALLOW"
+  },
+  "B076": {
+    "case_id": "owner_scope-3-flip",
+    "rule_label": "DENY"
+  },
+  "B077": {
+    "case_id": "claim_binding-8-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B078": {
+    "case_id": "owner_scope-2-hold",
+    "rule_label": "DENY"
+  },
+  "B079": {
+    "case_id": "owner_scope-1-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B080": {
+    "case_id": "claim_binding-6-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B081": {
+    "case_id": "current_request-3-flip",
+    "rule_label": "DENY"
+  },
+  "B082": {
+    "case_id": "current_request-8-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B083": {
+    "case_id": "claim_binding-1-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B084": {
+    "case_id": "current_request-3-full",
+    "rule_label": "ALLOW"
+  },
+  "B085": {
+    "case_id": "owner_scope-2-flip",
+    "rule_label": "ALLOW"
+  },
+  "B086": {
+    "case_id": "owner_scope-1-flip",
+    "rule_label": "DENY"
+  },
+  "B087": {
+    "case_id": "claim_binding-6-hold",
+    "rule_label": "DENY"
+  },
+  "B088": {
+    "case_id": "current_request-5-flip",
+    "rule_label": "DENY"
+  },
+  "B089": {
+    "case_id": "current_request-1-full",
+    "rule_label": "ALLOW"
+  },
+  "B090": {
+    "case_id": "current_request-5-hold",
+    "rule_label": "ALLOW"
+  },
+  "B091": {
+    "case_id": "claim_binding-2-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B092": {
+    "case_id": "current_request-6-flip",
+    "rule_label": "ALLOW"
+  },
+  "B093": {
+    "case_id": "owner_scope-8-full",
+    "rule_label": "DENY"
+  },
+  "B094": {
+    "case_id": "current_request-5-full",
+    "rule_label": "ALLOW"
+  },
+  "B095": {
+    "case_id": "claim_binding-5-missing",
+    "rule_label": "INSUFFICIENT"
+  },
+  "B096": {
+    "case_id": "claim_binding-7-missing",
+    "rule_label": "INSUFFICIENT"
+  }
+}

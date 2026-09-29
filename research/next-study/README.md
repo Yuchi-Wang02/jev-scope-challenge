@@ -1,5 +1,10 @@
 # Is the Decision Model Better Than the Model It Came From?
 
+Follow-up: the [completed input-boundary diagnostic](../layout-boundary/) exactly
+reproduces this original layout, then shows that the old test-panel ordering
+reverses under declared representation changes. Across the entire pilot the new
+paths are nearly tied. Read both studies before attributing a gap to the head.
+
 An exploratory follow-up to the cancellation probe. Compare a pinned Qwen3-4B
 **Base** checkpoint through its original LM head before and after Kev's public
 LoRA, then evaluate Kev's complete pointer path. The earlier instruct-model

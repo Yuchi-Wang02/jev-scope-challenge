@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "encoded_plans": 864,
+  "checked_logical_records": 2592,
+  "identical_native_layout_pairs": 288,
+  "tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "model_calls": 0,
+  "no_truncation": true
+}

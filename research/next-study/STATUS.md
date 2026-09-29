@@ -1,5 +1,10 @@
 # Execution status — 2026-09-29
 
+Subsequent work: [layout-boundary](../layout-boundary/) completed the first
+representation control. Original anchors match exactly; the old test ranking
+reverses under another layout but not across every split. This strengthens the
+need for fixed representation and fresh data before head-only training.
+
 ## Completed and inspectable
 
 - Original cancellation probe fully published; original frozen evidence unchanged.

@@ -1,7 +1,7 @@
 # Cancel the Right Thing: Jev vs a Frozen 4B
 
 Research sequence: [matched-base results](research/next-study/) →
-[input-boundary diagnostic](research/layout-boundary/) (frozen design; execution pending).
+[input-boundary diagnostic](research/layout-boundary/) (completed; real records and all layout results).
 
 **Same words. Different scope. Opposite decisions.**
 

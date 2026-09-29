@@ -8,6 +8,7 @@ sys.path.insert(0,str(ROOT/'research/layout-boundary'))
 from layout_study import fields,prompt_for,freeze,HERE,PRIOR,read_rows
 from layout_analyze import check_equal
 import layout_analyze
+from verify_layout import verify
 import study as prior
 
 
@@ -40,7 +41,7 @@ class LayoutEvidenceTests(unittest.TestCase):
     def test_complete_offline_check_never_writes_evidence(self):
         paths=[HERE/'manifest.json',HERE/'results/summary.json']+[HERE/f'results/{a}.jsonl' for a in ('N0','N1','K1')]
         before={str(p):(p.read_bytes(),p.stat().st_mtime_ns) for p in paths}
-        summary,_=layout_analyze.analyze()
+        summary=verify()
         import json
         check_equal(summary,json.loads((HERE/'results/summary.json').read_text(encoding='utf-8')))
         self.assertEqual(before,{str(p):(p.read_bytes(),p.stat().st_mtime_ns) for p in paths})

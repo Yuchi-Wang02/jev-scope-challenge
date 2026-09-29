@@ -1,0 +1,433 @@
+review_id,evidence,policy,reviewer_label,reason,ambiguity_or_objection,reviewer,reviewed_at
+B001,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-other-8 says: deny write access.
+2) The owner of repository owner_scope-target-8 says: grant write access.
+3) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B002,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Superseded instruction for account current_request-target-4: disable notifications.
+2) Current instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B003,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank 2.
+Report row: item claim_binding-other-7; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B004,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B005,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank not supplied.
+Report row: item claim_binding-other-3; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B006,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B007,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-other-4; rank 2.
+2) Report row: item claim_binding-target-4; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B008,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The guest of repository owner_scope-target-1 says: deny write access.
+The owner of repository owner_scope-other-1 says: deny write access.
+The owner of repository owner_scope-target-1 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B009,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank 7.
+Report row: item claim_binding-other-3; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B010,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The guest of repository owner_scope-target-6 says: grant write access.
+2) The owner of repository owner_scope-other-6 says: grant write access.
+3) The owner of repository owner_scope-target-6 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B011,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-other-4 says: grant write access.
+2) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B012,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank 7.
+2) Report row: item claim_binding-other-8; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B013,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-target-7 says: grant write access.
+The owner of repository owner_scope-other-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B014,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-other-2 says: grant write access.
+2) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B015,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The guest of repository owner_scope-target-8 says: grant write access.
+2) The owner of repository owner_scope-other-8 says: grant write access.
+3) The owner of repository owner_scope-target-8 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B016,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-other-5 says: grant write access.
+The owner of repository owner_scope-target-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B017,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-other-4 says: deny write access.
+2) The owner of repository owner_scope-target-4 says: grant write access.
+3) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B018,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The guest of repository owner_scope-target-4 says: grant write access.
+2) The owner of repository owner_scope-other-4 says: grant write access.
+3) The owner of repository owner_scope-target-4 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B019,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B020,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-other-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B021,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Current instruction for account current_request-other-2: enable notifications.
+2) Superseded instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-target-2: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B022,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-target-2 says: deny write access.
+2) The owner of repository owner_scope-other-2 says: grant write access.
+3) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B023,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank 2.
+2) Report row: item claim_binding-other-2; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B024,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Superseded instruction for account current_request-target-1: enable notifications.
+Current instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B025,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-other-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B026,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Current instruction for account current_request-other-3: disable notifications.
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-target-3: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B027,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-other-2; rank 2.
+2) Report row: item claim_binding-target-2; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B028,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Current instruction for account current_request-other-7: disable notifications.
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-target-7: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B029,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-other-7; rank 7.
+Report row: item claim_binding-target-7; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B030,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-other-6 says: grant write access.
+2) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B031,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank 2.
+2) Report row: item claim_binding-other-8; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B032,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-target-6 says: deny write access.
+2) The owner of repository owner_scope-other-6 says: grant write access.
+3) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B033,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Current instruction for account current_request-target-7: enable notifications.
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B034,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank 2.
+2) Report row: item claim_binding-other-4; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B035,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-target-5 says: grant write access.
+The owner of repository owner_scope-other-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B036,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank 7.
+2) Report row: item claim_binding-other-6; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B037,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank 7.
+2) Report row: item claim_binding-other-2; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B038,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Current instruction for account current_request-other-1: disable notifications.
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-target-1: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B039,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank 2.
+Report row: item claim_binding-other-3; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B040,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The guest of repository owner_scope-target-7 says: deny write access.
+The owner of repository owner_scope-other-7 says: deny write access.
+The owner of repository owner_scope-target-7 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B041,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Current instruction for account current_request-other-6: enable notifications.
+2) Superseded instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-target-6: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B042,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-other-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B043,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Superseded instruction for account current_request-target-2: enable notifications.
+2) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B044,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank 2.
+2) Report row: item claim_binding-other-6; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B045,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-other-1; rank 7.
+Report row: item claim_binding-target-1; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B046,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-other-7 says: grant write access.
+The owner of repository owner_scope-target-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B047,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Current instruction for account current_request-target-4: disable notifications.
+2) Superseded instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B048,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Current instruction for account current_request-other-8: enable notifications.
+2) Superseded instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-target-8: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B049,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Superseded instruction for account current_request-target-2: disable notifications.
+2) Current instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B050,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The guest of repository owner_scope-target-5 says: deny write access.
+The owner of repository owner_scope-other-5 says: deny write access.
+The owner of repository owner_scope-target-5 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B051,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B052,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-other-8; rank 2.
+2) Report row: item claim_binding-target-8; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B053,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank 7.
+Report row: item claim_binding-other-7; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B054,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Superseded instruction for account current_request-target-7: enable notifications.
+Current instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B055,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-other-5; rank 7.
+Report row: item claim_binding-target-5; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B056,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank not supplied.
+2) Report row: item claim_binding-other-4; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B057,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-target-4 says: deny write access.
+2) The owner of repository owner_scope-other-4 says: grant write access.
+3) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B058,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Current instruction for account current_request-target-6: disable notifications.
+2) Superseded instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B059,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank 7.
+Report row: item claim_binding-other-1; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B060,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank 7.
+Report row: item claim_binding-other-5; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B061,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank 2.
+Report row: item claim_binding-other-1; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B062,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Superseded instruction for account current_request-target-4: enable notifications.
+2) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B063,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Current instruction for account current_request-target-8: disable notifications.
+2) Superseded instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B064,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Superseded instruction for account current_request-target-6: enable notifications.
+2) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B065,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-target-1 says: grant write access.
+The owner of repository owner_scope-other-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B066,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-other-8 says: grant write access.
+2) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B067,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Current instruction for account current_request-other-4: enable notifications.
+2) Superseded instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-target-4: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B068,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Superseded instruction for account current_request-target-8: disable notifications.
+2) Current instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B069,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-target-3 says: grant write access.
+The owner of repository owner_scope-other-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B070,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-other-3; rank 7.
+Report row: item claim_binding-target-3; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B071,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank 2.
+Report row: item claim_binding-other-5; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B072,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The guest of repository owner_scope-target-3 says: deny write access.
+The owner of repository owner_scope-other-3 says: deny write access.
+The owner of repository owner_scope-target-3 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B073,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank 7.
+2) Report row: item claim_binding-other-4; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B074,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Current instruction for account current_request-target-2: disable notifications.
+2) Superseded instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B075,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-other-6 says: deny write access.
+2) The owner of repository owner_scope-target-6 says: grant write access.
+3) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B076,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-other-3 says: grant write access.
+The owner of repository owner_scope-target-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B077,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank not supplied.
+2) Report row: item claim_binding-other-8; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B078,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The guest of repository owner_scope-target-2 says: grant write access.
+2) The owner of repository owner_scope-other-2 says: grant write access.
+3) The owner of repository owner_scope-target-2 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B079,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-other-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B080,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank not supplied.
+2) Report row: item claim_binding-other-6; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B081,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Superseded instruction for account current_request-target-3: enable notifications.
+Current instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B082,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Superseded instruction for account current_request-target-8: enable notifications.
+2) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B083,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank not supplied.
+Report row: item claim_binding-other-1; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B084,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Current instruction for account current_request-target-3: enable notifications.
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B085,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-other-2 says: deny write access.
+2) The owner of repository owner_scope-target-2 says: grant write access.
+3) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B086,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-other-1 says: grant write access.
+The owner of repository owner_scope-target-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B087,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-other-6; rank 2.
+2) Report row: item claim_binding-target-6; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B088,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Superseded instruction for account current_request-target-5: enable notifications.
+Current instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B089,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Current instruction for account current_request-target-1: enable notifications.
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B090,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Current instruction for account current_request-other-5: disable notifications.
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-target-5: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B091,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank not supplied.
+2) Report row: item claim_binding-other-2; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B092,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Superseded instruction for account current_request-target-6: disable notifications.
+2) Current instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B093,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-target-8 says: deny write access.
+2) The owner of repository owner_scope-other-8 says: grant write access.
+3) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,,
+B094,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Current instruction for account current_request-target-5: enable notifications.
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,,
+B095,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank not supplied.
+Report row: item claim_binding-other-5; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
+B096,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank not supplied.
+Report row: item claim_binding-other-7; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,,
