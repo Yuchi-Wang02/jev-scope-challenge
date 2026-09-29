@@ -1,5 +1,8 @@
 # Cancel the Right Thing: Jev vs a Frozen 4B
 
+Research sequence: [matched-base results](research/next-study/) →
+[input-boundary diagnostic](research/layout-boundary/) (frozen design; execution pending).
+
 **Same words. Different scope. Opposite decisions.**
 
 Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?

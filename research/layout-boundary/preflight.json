@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scored_model_records": 0,
+  "plans": 864,
+  "native_identical_pairs": 288,
+  "original_anchor_inputs": 288,
+  "max_native_tokens": 177,
+  "max_pointer_tokens": 178,
+  "max_pointer_state_tokens": 124,
+  "tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "no_truncation": true
+}

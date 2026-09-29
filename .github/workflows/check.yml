@@ -15,4 +15,5 @@ jobs:
       - run: python verify_evidence.py
       - run: python analyze.py --verify
       - run: python research/next-study/verify_study.py
+      - run: python research/layout-boundary/layout_study.py build
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

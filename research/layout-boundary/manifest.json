@@ -1,0 +1,51 @@
+{
+  "study": "layout-boundary-v0.1",
+  "parent_config_hash": "63e39428ec0ac6092f14949d36b02217ecee22e6601751dd5c84990071d94fcb",
+  "base": "Qwen/Qwen3-4B-Base",
+  "base_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "adapter": "jaredpalmer/kev-4b",
+  "adapter_revision": "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+  "source_revision": "29d71c78368657b3a522729a01c748ea15272abc",
+  "arms": [
+    "N0",
+    "N1",
+    "K1"
+  ],
+  "layouts": [
+    "L0",
+    "L1",
+    "L2"
+  ],
+  "seed": 20260930,
+  "gate": 0.0001,
+  "logical_records": 2592,
+  "scientific_forwards": 2016,
+  "parity_forwards": 864,
+  "warmup_forwards": 6,
+  "backbone_dtype": "bfloat16",
+  "head_dtype": "float32",
+  "sdpa_kernel": "math_only",
+  "tf32": false,
+  "quantization": null,
+  "new_training": false,
+  "paid_api_calls": 0,
+  "independent_human_reviewed": false,
+  "previously_inspected_data": true,
+  "file_sha256_lf": {
+    "PROTOCOL.md": "3787be26e12ed7ce55453e26c631762d13160292e516979d88a3a9b024444277",
+    "layout_study.py": "1a1a71ac4a85e10d541e2099f5cc9a98b92fb8abf4e23a9778c3dd1a15cc6843",
+    "layout_analyze.py": "748a57bd77f287944da9607d0110f2c0f8916c96c3135d02a78ee25eed9e615a",
+    "data/inputs.jsonl": "47f350bf783a3058aee20bf8d71b36905dc6cb41a95c9639631328e21c1a6f97",
+    "preflight.json": "c99220b27bc0a96926637ea8d08a7cfcc840d39fae998a6284229df2f194a91f",
+    "../next-study/manifest.json": "d144cdb7aa9962822a13a60fa84812129cf280e392a75932d6e052980e6d2d55",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd",
+    "../next-study/analyze_study.py": "fe3d325e83a3a896f80b93f0b2d73ea48a23f1d06b702590bbf93b036781816c",
+    "../next-study/vendor/kev/model.py": "839dd7632ec291ac4740035c86f780f8f13da2b74b54a146ce90ff0ce8de527b",
+    "../next-study/data/cases.jsonl": "eb29a29ff73e1b83c89344814a81113990429f54978081541a4bf7e2a1b33a66",
+    "../next-study/results/weight_checksums.json": "d4a2615eaff9d271db5a4be69e0692a1b6d98635552fb0281d49545a203c5eab",
+    "../next-study/results/N0.jsonl": "4210b01de273ab753c40c8ad1e242108e2794d284ab91aafaa2785ae6462e597",
+    "../next-study/results/N1.jsonl": "63885d63e85f496112d92c2fe428a711ff81959e712d541fe7413f7db869b153",
+    "../next-study/results/K1.jsonl": "b7712da3912c7d728e37186cc3b7a888a0d4e619b27b36875c5bb3bb0c5886d2"
+  },
+  "config_hash": "4481fd54d316438223cbac4187089f3bd49f11d8023e7990a58471e764bc0fb3"
+}
