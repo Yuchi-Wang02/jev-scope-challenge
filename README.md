@@ -3,53 +3,6 @@
 [Research map and status](RESEARCH_INDEX.md) · [Credits and reuse](THIRD_PARTY_NOTICES.md) ·
 [Citation](CITATION.cff) · [Reproduction guide](REPRODUCIBILITY.md)
 
-This independent repository includes the original Jev API comparison below and
-later diagnostics using a **historical pinned Kev/Qwen checkpoint**. Kev's code
-and trained artifacts are upstream work, credited and licensed separately.
-Laya was inspected as related work, not run as a model backend. Later results
-are not evaluations of current Kev or new Jev measurements.
-
-Research sequence: [matched-base results](research/next-study/) →
-[input-boundary diagnostic](research/layout-boundary/) (completed; real records and all layout results).
-
-New: [Missing Evidence Is Not Just Deleted Text](research/evidence-gap/)
-(development results complete; deletion controls and blank review pack;
-reserved splits not scored).
-
-Follow-up: [Can a guard tell missing evidence from missing fields?](research/evidence-guards/)
-(completed post-hoc development comparison; fixed score grids, policy/code
-controls and every derived result).
-
-New diagnostic: [Correct Code, Wrong Facts](research/fact-execution/)
-(completed original-development experiment: verified rule execution, unreliable
-fact extraction; all controls published; 144 rewrite pairs await human review).
-
-Latest controlled failure: [More evidence calls, fewer commitments, worse
-decisions](research/fact-execution/LINE_EVIDENCE_RESULTS.md). On the same 72
-public development texts, an N1 line-by-line evidence scan cut false commitments
-to 6/24 but dropped correct determined decisions to 11/48, with 548 calls.
-It failed the prewritten continuation gate; no rewrites or reserved inputs ran.
-[Inspect every saved line judgment](research/fact-execution/docs/line_explorer.html)
-in the standalone offline evidence explorer.
-The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
-shows why request and field binding are the next hypothesis: correcting both
-classes with unavailable construction labels changes 29/72 to 68/72, but is
-not a new model score.
-[One line, one owner](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) is the
-next unscored joint-routing preparation: 228 primary queries plus a 228-call
-direct control are reviewable, with no new model result.
-An additional [token-matched direct plan](research/fact-execution/JOINT_TOKEN_CONTROL.md)
-uses 286 planned calls / 95,849 input tokens, 40 fewer tokens than the joint
-candidate; it too remains unscored.
-The [514-forward execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
-now pins encoded inputs, the runner and a raw-score recomputation checker;
-no new inference has been authorized or run.
-The [joint-route scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md)
-records close prior work and a tested interface limit: a line containing two
-facts cannot be represented by its exclusive one-owner label.
-The [One Line, Two Facts software stress](research/fact-execution/MULTIFACT_LINE_STRESS.md)
-checks 56 paired line packings without another model run.
-
 **Same words. Different scope. Opposite decisions.**
 
 Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?
@@ -96,6 +49,28 @@ Both models produced 192 formal records; see [full results](results/REPORT.md),
 
 The known-grammar parser is explicitly tailored to this controlled grammar;
 it is not a general natural-language replacement. Its success is part of the result.
+
+## Where the research went next
+
+The live Jev comparison above is the original study. Later diagnostics use a
+**historical pinned Kev/Qwen checkpoint**; they are not new Jev measurements or
+evaluations of current Kev. Kev's reused code and trained artifacts are credited
+separately. Laya was inspected as related work and was not run here.
+
+|Follow-up|What it established|Status|
+|---|---|---|
+|[Matched base](research/next-study/) and [input boundary](research/layout-boundary/)|Performance changes with adaptation, readout and input layout.|Completed synthetic diagnostics; see exact records and budgets.|
+|[Evidence gap](research/evidence-gap/) and [evidence guards](research/evidence-guards/)|Missing evidence, missing fields and abstention are distinct tests.|Development results and post-hoc controls; reserved inputs unscored.|
+|[Correct Code, Wrong Facts](research/fact-execution/)|Facts plus a verified executor reached 44/72 versus 31/72 direct, but asserted values for 14/18 missing fields.|Original development only; 144 provisional rewrites await human review.|
+|[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html).|
+|[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
+|[Joint-route pilot](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)|A 514-forward N1/direct comparison is encoded and frozen.|**Not run**; [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md), [candidate plan](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) and [token control](research/fact-execution/JOINT_TOKEN_CONTROL.md) are available for review.|
+
+The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
+motivates the joint-route test but uses unavailable construction labels; its
+counterfactual 29/72 to 68/72 change is **not** a model score. The
+[research map](RESEARCH_INDEX.md) separates every completed result, derived
+analysis, pending review and unrun plan.
 
 ## Inspect or reproduce without an API key
 
