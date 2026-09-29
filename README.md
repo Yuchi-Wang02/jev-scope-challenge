@@ -8,7 +8,8 @@ New: [Missing Evidence Is Not Just Deleted Text](research/evidence-gap/)
 reserved splits not scored).
 
 Follow-up: [Can a guard tell missing evidence from missing fields?](research/evidence-guards/)
-(post-hoc development design; fixed score grids and policy/code controls).
+(completed post-hoc development comparison; fixed score grids, policy/code
+controls and every derived result).
 
 **Same words. Different scope. Opposite decisions.**
 
