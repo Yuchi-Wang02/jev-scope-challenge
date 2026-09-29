@@ -5,13 +5,37 @@ An exploratory follow-up to the cancellation probe. Compare a pinned Qwen3-4B
 LoRA, then evaluate Kev's complete pointer path. The earlier instruct-model
 result is a regression reference, not this study's unchanged parent.
 
-See [the detailed plan](PLAN.zh-CN.md). Execution status, exact provenance, data,
-scripts and real model records will be saved here as the study progresses.
-The baseline design is informed by Kev's existing native/adapted probes; it is
-not claimed as a new architecture or an independently reviewed benchmark.
+**Completed: 864 real scientific forward records in v0.2.** The LoRA improved
+the native path on this pilot, while the pointer path retained less of that
+decision-level gain. Missing-evidence decisions remain weak for all three paths.
+
+|Exploratory test|Correct decisions|Complete parents|Correct missing-evidence decisions|
+|---|---:|---:|---:|
+|N0: unchanged Base, native LM head|85/144|0/12|0/36|
+|N1: public LoRA, native LM head|111/144|1/12|7/36|
+|K1: same adapted backbone, pointer path|98/144|0/12|1/36|
+
+![Actual pilot counts](assets/matched-base-results.png)
+
+Read the [research note](RESEARCH_NOTE.md), [all split metrics](results/summary.json),
+[decision CSV](results/decisions.csv), [raw records](results/), or download/open
+the [standalone result explorer](explorer.html). This page replays saved results.
+See [execution status](STATUS.md) and the [detailed plan](PLAN.zh-CN.md).
+
+The baseline design is informed by Kev's existing native/adapted probes. Labels
+are original rule-generated facts with AI-checked text, **not independently
+human reviewed**. Twelve test parents define the groups; candidate mappings are
+repeated measurements. K1 also changes representation, so this is no isolated
+proof that a decision head caused the difference.
 
 Phase 1 has no new training. Later head-only training depends on this diagnosis
 and requires its own data, controls and execution record.
+
+A [known-grammar text parser](code_reference.py) also reads the same rendered
+state and gets 48/48 exploratory-test inputs / 12/12 parents correct. It was
+implemented **after** seeing model outcomes and knows the complete construction
+grammar; it is a post-run engineering reference, not a general language baseline
+or new algorithm. See its [saved records and counts](results/C0_text_summary.json).
 
 ## Execute
 
@@ -34,3 +58,16 @@ Model weights (about 8.2 GB total) stay outside Git. For a new replication, use 
 separate checkout and an empty study `results/` folder. The runner rejects existing
 scientific records rather than selecting a successful rerun. Full execution,
 probability metrics and limits belong in the saved report, not guessed scores.
+
+The exact additional package versions used were huggingface-hub 0.36.2 and
+numpy 2.1.2. [Runtime](results/runtime.json) and [weight checksums](results/weight_checksums.json)
+record the actual path. The stopped default-kernel attempt is in [attempts/v0.1](attempts/v0.1/TERMINATION.md).
+
+The summary field `missing_false_acceptance` counts **any non-INSUFFICIENT
+decision on a missing-evidence input**, including DENY. It means a false
+commitment, not only a mistaken ALLOW. Calibration/risk figures use the separately
+fitted temperature and fixed threshold; small observed zero risk is not a guarantee.
+
+See [claims](claims.md), [related work](related_work.md), [novelty boundaries](novelty_matrix.md)
+and [open questions](open_questions.md). Original data are CC BY 4.0; vendored
+Kev source is Apache-2.0. Repository MIT does not replace upstream licenses.

@@ -97,11 +97,14 @@ limitations. The newer replication entry point does not accept local path overri
 
 ## What comes next
 
-The next study asks **Is the Decision Model Better Than the Model It Came From?**
-It uses an exactly matched Qwen Base checkpoint, its original LM head before and
-after Kev's public LoRA, and the complete Kev pointer path. The plan, provenance
-and evolving execution status are kept in [research/next-study](research/next-study/).
-New results will be versioned separately from this fixed cancellation probe.
+The follow-up asks **Is the Decision Model Better Than the Model It Came From?**
+We completed 864 real forward records using a matched Qwen Base, its original
+LM head before and after Kev's public LoRA, and the trained pointer path. On its
+12-parent exploratory test, the three paths scored **85/144, 111/144, 98/144**
+correct decisions, but only **0/12, 1/12, 0/12** fully correct parents. This is
+an exploratory synthetic diagnostic with AI-reviewed labels, not a broad model
+ranking. See [the research note and result explorer](research/next-study/README.md).
+The stopped first attempt and numerical-control amendment are preserved too.
 
 ## Cost, scope and provenance
 

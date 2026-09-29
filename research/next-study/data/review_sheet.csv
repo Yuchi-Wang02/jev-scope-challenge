@@ -1,0 +1,433 @@
+id,state,instruction,reviewer_label,rationale,reviewer,review_date
+owner_scope-1-full,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-target-1 says: grant write access.
+The owner of repository owner_scope-other-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-1-hold,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The guest of repository owner_scope-target-1 says: deny write access.
+The owner of repository owner_scope-other-1 says: deny write access.
+The owner of repository owner_scope-target-1 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-1-flip,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-other-1 says: grant write access.
+The owner of repository owner_scope-target-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-1-missing,"Request: grant write access to repository owner_scope-target-1.
+Evidence:
+The owner of repository owner_scope-other-1 says: deny write access.
+The guest of repository owner_scope-target-1 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-2-full,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-target-2 says: deny write access.
+2) The owner of repository owner_scope-other-2 says: grant write access.
+3) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-2-hold,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The guest of repository owner_scope-target-2 says: grant write access.
+2) The owner of repository owner_scope-other-2 says: grant write access.
+3) The owner of repository owner_scope-target-2 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-2-flip,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-other-2 says: deny write access.
+2) The owner of repository owner_scope-target-2 says: grant write access.
+3) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-2-missing,"Request: grant write access to repository owner_scope-target-2.
+Records:
+1) The owner of repository owner_scope-other-2 says: grant write access.
+2) The guest of repository owner_scope-target-2 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-3-full,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-target-3 says: grant write access.
+The owner of repository owner_scope-other-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-3-hold,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The guest of repository owner_scope-target-3 says: deny write access.
+The owner of repository owner_scope-other-3 says: deny write access.
+The owner of repository owner_scope-target-3 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-3-flip,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-other-3 says: grant write access.
+The owner of repository owner_scope-target-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-3-missing,"Request: grant write access to repository owner_scope-target-3.
+Supplied notes:
+The owner of repository owner_scope-other-3 says: deny write access.
+The guest of repository owner_scope-target-3 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-4-full,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-target-4 says: deny write access.
+2) The owner of repository owner_scope-other-4 says: grant write access.
+3) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-4-hold,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The guest of repository owner_scope-target-4 says: grant write access.
+2) The owner of repository owner_scope-other-4 says: grant write access.
+3) The owner of repository owner_scope-target-4 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-4-flip,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-other-4 says: deny write access.
+2) The owner of repository owner_scope-target-4 says: grant write access.
+3) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-4-missing,"Request: grant write access to repository owner_scope-target-4.
+Decision record:
+1) The owner of repository owner_scope-other-4 says: grant write access.
+2) The guest of repository owner_scope-target-4 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-5-full,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-target-5 says: grant write access.
+The owner of repository owner_scope-other-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-5-hold,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The guest of repository owner_scope-target-5 says: deny write access.
+The owner of repository owner_scope-other-5 says: deny write access.
+The owner of repository owner_scope-target-5 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-5-flip,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-other-5 says: grant write access.
+The owner of repository owner_scope-target-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-5-missing,"Request: grant write access to repository owner_scope-target-5.
+Source extract:
+The owner of repository owner_scope-other-5 says: deny write access.
+The guest of repository owner_scope-target-5 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-6-full,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-target-6 says: deny write access.
+2) The owner of repository owner_scope-other-6 says: grant write access.
+3) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-6-hold,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The guest of repository owner_scope-target-6 says: grant write access.
+2) The owner of repository owner_scope-other-6 says: grant write access.
+3) The owner of repository owner_scope-target-6 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-6-flip,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-other-6 says: deny write access.
+2) The owner of repository owner_scope-target-6 says: grant write access.
+3) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-6-missing,"Request: grant write access to repository owner_scope-target-6.
+Case evidence:
+1) The owner of repository owner_scope-other-6 says: grant write access.
+2) The guest of repository owner_scope-target-6 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-7-full,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-target-7 says: grant write access.
+The owner of repository owner_scope-other-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-7-hold,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The guest of repository owner_scope-target-7 says: deny write access.
+The owner of repository owner_scope-other-7 says: deny write access.
+The owner of repository owner_scope-target-7 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-7-flip,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-other-7 says: grant write access.
+The owner of repository owner_scope-target-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-7-missing,"Request: grant write access to repository owner_scope-target-7.
+Available statements:
+The owner of repository owner_scope-other-7 says: deny write access.
+The guest of repository owner_scope-target-7 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-8-full,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-target-8 says: deny write access.
+2) The owner of repository owner_scope-other-8 says: grant write access.
+3) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-8-hold,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The guest of repository owner_scope-target-8 says: grant write access.
+2) The owner of repository owner_scope-other-8 says: grant write access.
+3) The owner of repository owner_scope-target-8 says: deny write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-8-flip,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-other-8 says: deny write access.
+2) The owner of repository owner_scope-target-8 says: grant write access.
+3) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+owner_scope-8-missing,"Request: grant write access to repository owner_scope-target-8.
+Report extract:
+1) The owner of repository owner_scope-other-8 says: grant write access.
+2) The guest of repository owner_scope-target-8 says: grant write access.","Only the repository owner can authorize write access for that repository. Owner grant supports the request; owner deny contradicts it. An instruction for a different repository or from a guest gives no authorization. If the owner decision for the target is absent, choose insufficient. Use only this evidence.",,,,
+claim_binding-1-full,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank 2.
+Report row: item claim_binding-other-1; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-1-hold,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-other-1; rank 7.
+Report row: item claim_binding-target-1; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-1-flip,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank 7.
+Report row: item claim_binding-other-1; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-1-missing,"Claim: item claim_binding-target-1 has rank 2 in the supplied report.
+Evidence:
+Report row: item claim_binding-target-1; rank not supplied.
+Report row: item claim_binding-other-1; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-2-full,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank 7.
+2) Report row: item claim_binding-other-2; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-2-hold,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-other-2; rank 2.
+2) Report row: item claim_binding-target-2; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-2-flip,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank 2.
+2) Report row: item claim_binding-other-2; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-2-missing,"Claim: item claim_binding-target-2 has rank 2 in the supplied report.
+Records:
+1) Report row: item claim_binding-target-2; rank not supplied.
+2) Report row: item claim_binding-other-2; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-3-full,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank 2.
+Report row: item claim_binding-other-3; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-3-hold,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-other-3; rank 7.
+Report row: item claim_binding-target-3; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-3-flip,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank 7.
+Report row: item claim_binding-other-3; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-3-missing,"Claim: item claim_binding-target-3 has rank 2 in the supplied report.
+Supplied notes:
+Report row: item claim_binding-target-3; rank not supplied.
+Report row: item claim_binding-other-3; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-4-full,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank 7.
+2) Report row: item claim_binding-other-4; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-4-hold,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-other-4; rank 2.
+2) Report row: item claim_binding-target-4; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-4-flip,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank 2.
+2) Report row: item claim_binding-other-4; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-4-missing,"Claim: item claim_binding-target-4 has rank 2 in the supplied report.
+Decision record:
+1) Report row: item claim_binding-target-4; rank not supplied.
+2) Report row: item claim_binding-other-4; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-5-full,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank 2.
+Report row: item claim_binding-other-5; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-5-hold,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-other-5; rank 7.
+Report row: item claim_binding-target-5; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-5-flip,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank 7.
+Report row: item claim_binding-other-5; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-5-missing,"Claim: item claim_binding-target-5 has rank 2 in the supplied report.
+Source extract:
+Report row: item claim_binding-target-5; rank not supplied.
+Report row: item claim_binding-other-5; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-6-full,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank 7.
+2) Report row: item claim_binding-other-6; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-6-hold,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-other-6; rank 2.
+2) Report row: item claim_binding-target-6; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-6-flip,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank 2.
+2) Report row: item claim_binding-other-6; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-6-missing,"Claim: item claim_binding-target-6 has rank 2 in the supplied report.
+Case evidence:
+1) Report row: item claim_binding-target-6; rank not supplied.
+2) Report row: item claim_binding-other-6; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-7-full,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank 2.
+Report row: item claim_binding-other-7; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-7-hold,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-other-7; rank 7.
+Report row: item claim_binding-target-7; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-7-flip,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank 7.
+Report row: item claim_binding-other-7; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-7-missing,"Claim: item claim_binding-target-7 has rank 2 in the supplied report.
+Available statements:
+Report row: item claim_binding-target-7; rank not supplied.
+Report row: item claim_binding-other-7; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-8-full,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank 7.
+2) Report row: item claim_binding-other-8; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-8-hold,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-other-8; rank 2.
+2) Report row: item claim_binding-target-8; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-8-flip,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank 2.
+2) Report row: item claim_binding-other-8; rank 7.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+claim_binding-8-missing,"Claim: item claim_binding-target-8 has rank 2 in the supplied report.
+Report extract:
+1) Report row: item claim_binding-target-8; rank not supplied.
+2) Report row: item claim_binding-other-8; rank 2.","Verify the stated item-rank claim against the report. Exact match supports it, a different rank for that item contradicts it, and an absent rank for that item is insufficient. Rows about other items do not establish the target rank. Use only this evidence.",,,,
+current_request-1-full,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Current instruction for account current_request-target-1: enable notifications.
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-1-hold,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Current instruction for account current_request-other-1: disable notifications.
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-target-1: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-1-flip,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Superseded instruction for account current_request-target-1: enable notifications.
+Current instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-1-missing,"Request: enable notifications for account current_request-target-1.
+Evidence:
+Superseded instruction for account current_request-target-1: disable notifications.
+Current instruction for account current_request-other-1: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-2-full,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Current instruction for account current_request-target-2: disable notifications.
+2) Superseded instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-2-hold,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Current instruction for account current_request-other-2: enable notifications.
+2) Superseded instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-target-2: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-2-flip,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Superseded instruction for account current_request-target-2: disable notifications.
+2) Current instruction for account current_request-target-2: enable notifications.
+3) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-2-missing,"Request: enable notifications for account current_request-target-2.
+Records:
+1) Superseded instruction for account current_request-target-2: enable notifications.
+2) Current instruction for account current_request-other-2: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-3-full,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Current instruction for account current_request-target-3: enable notifications.
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-3-hold,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Current instruction for account current_request-other-3: disable notifications.
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-target-3: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-3-flip,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Superseded instruction for account current_request-target-3: enable notifications.
+Current instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-3-missing,"Request: enable notifications for account current_request-target-3.
+Supplied notes:
+Superseded instruction for account current_request-target-3: disable notifications.
+Current instruction for account current_request-other-3: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-4-full,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Current instruction for account current_request-target-4: disable notifications.
+2) Superseded instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-4-hold,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Current instruction for account current_request-other-4: enable notifications.
+2) Superseded instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-target-4: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-4-flip,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Superseded instruction for account current_request-target-4: disable notifications.
+2) Current instruction for account current_request-target-4: enable notifications.
+3) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-4-missing,"Request: enable notifications for account current_request-target-4.
+Decision record:
+1) Superseded instruction for account current_request-target-4: enable notifications.
+2) Current instruction for account current_request-other-4: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-5-full,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Current instruction for account current_request-target-5: enable notifications.
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-5-hold,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Current instruction for account current_request-other-5: disable notifications.
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-target-5: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-5-flip,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Superseded instruction for account current_request-target-5: enable notifications.
+Current instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-5-missing,"Request: enable notifications for account current_request-target-5.
+Source extract:
+Superseded instruction for account current_request-target-5: disable notifications.
+Current instruction for account current_request-other-5: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-6-full,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Current instruction for account current_request-target-6: disable notifications.
+2) Superseded instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-6-hold,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Current instruction for account current_request-other-6: enable notifications.
+2) Superseded instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-target-6: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-6-flip,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Superseded instruction for account current_request-target-6: disable notifications.
+2) Current instruction for account current_request-target-6: enable notifications.
+3) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-6-missing,"Request: enable notifications for account current_request-target-6.
+Case evidence:
+1) Superseded instruction for account current_request-target-6: enable notifications.
+2) Current instruction for account current_request-other-6: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-7-full,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Current instruction for account current_request-target-7: enable notifications.
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-7-hold,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Current instruction for account current_request-other-7: disable notifications.
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-target-7: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-7-flip,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Superseded instruction for account current_request-target-7: enable notifications.
+Current instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-7-missing,"Request: enable notifications for account current_request-target-7.
+Available statements:
+Superseded instruction for account current_request-target-7: disable notifications.
+Current instruction for account current_request-other-7: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-8-full,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Current instruction for account current_request-target-8: disable notifications.
+2) Superseded instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-8-hold,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Current instruction for account current_request-other-8: enable notifications.
+2) Superseded instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-target-8: disable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-8-flip,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Superseded instruction for account current_request-target-8: disable notifications.
+2) Current instruction for account current_request-target-8: enable notifications.
+3) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,
+current_request-8-missing,"Request: enable notifications for account current_request-target-8.
+Report extract:
+1) Superseded instruction for account current_request-target-8: enable notifications.
+2) Current instruction for account current_request-other-8: enable notifications.","Only the instruction explicitly marked current determines the request. Current enable supports it; current disable contradicts it. Superseded instructions do not control the decision even when no current instruction is supplied. If the target current instruction is absent, choose insufficient. Use only this evidence.",,,,

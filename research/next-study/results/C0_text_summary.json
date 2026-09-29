@@ -1,0 +1,28 @@
+{
+  "reference": "post-run known-grammar text parser",
+  "model_calls": 0,
+  "human_reviewed": false,
+  "uses_same_rendered_state": true,
+  "knows_construction_grammar": true,
+  "implemented_after_model_outcomes": true,
+  "splits": {
+    "development": {
+      "inputs": 24,
+      "correct": 24,
+      "parents": 6,
+      "complete_parents": 6
+    },
+    "calibration": {
+      "inputs": 24,
+      "correct": 24,
+      "parents": 6,
+      "complete_parents": 6
+    },
+    "exploratory_test": {
+      "inputs": 48,
+      "correct": 48,
+      "parents": 12,
+      "complete_parents": 12
+    }
+  }
+}

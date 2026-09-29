@@ -1,6 +1,6 @@
 # 下一期实验设计草案：同底座的决策能力变化
 
-状态：研究计划，未执行。2026-09-29。先导与确认性研究分开；此文件不是预注册完成的声明。
+状态：原始设计文档（起稿时未执行），2026-09-29 已完成探索性先导 v0.2，详见 STATUS.md、RESEARCH_NOTE.md 与 results/。本文保留原始设计语境；实际冻结配置以 manifest.json 和 PROTOCOL.md 为准。第二阶段训练尚未执行。
 
 **标题候选：Is the Decision Model Better Than the Model It Came From?**
 
