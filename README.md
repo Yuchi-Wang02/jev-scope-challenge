@@ -11,9 +11,9 @@ Follow-up: [Can a guard tell missing evidence from missing fields?](research/evi
 (completed post-hoc development comparison; fixed score grids, policy/code
 controls and every derived result).
 
-Next: [Does the model need to decide, or only extract facts?](research/fact-execution/)
-(original-development protocol and encoded inputs frozen; four-state fact
-interface; 144 language rewrite pairs await independent review).
+New diagnostic: [Correct Code, Wrong Facts](research/fact-execution/)
+(completed original-development experiment: verified rule execution, unreliable
+fact extraction; all controls published; 144 rewrite pairs await human review).
 
 **Same words. Different scope. Opposite decisions.**
 

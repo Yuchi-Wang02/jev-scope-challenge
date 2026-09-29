@@ -1,0 +1,170 @@
+{
+  "N0": {
+    "direct_0": {
+      "correct": 39,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_1": {
+      "correct": 24,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_2": {
+      "correct": 35,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_two_01": {
+      "correct": 28,
+      "calls": 144,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_three": {
+      "correct": 35,
+      "calls": 216,
+      "fields": null,
+      "vectors": null
+    },
+    "facts_0": {
+      "correct": 24,
+      "calls": 168,
+      "fields": 16,
+      "vectors": 0
+    },
+    "facts_1": {
+      "correct": 23,
+      "calls": 168,
+      "fields": 49,
+      "vectors": 4
+    },
+    "facts_two": {
+      "correct": 23,
+      "calls": 336,
+      "fields": 25,
+      "vectors": 1
+    },
+    "legacy_direct_0": {
+      "correct": 34,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    }
+  },
+  "N1": {
+    "direct_0": {
+      "correct": 31,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_1": {
+      "correct": 26,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_2": {
+      "correct": 35,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_two_01": {
+      "correct": 31,
+      "calls": 144,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_three": {
+      "correct": 31,
+      "calls": 216,
+      "fields": null,
+      "vectors": null
+    },
+    "facts_0": {
+      "correct": 44,
+      "calls": 168,
+      "fields": 123,
+      "vectors": 33
+    },
+    "facts_1": {
+      "correct": 41,
+      "calls": 168,
+      "fields": 122,
+      "vectors": 30
+    },
+    "facts_two": {
+      "correct": 43,
+      "calls": 336,
+      "fields": 123,
+      "vectors": 33
+    },
+    "legacy_direct_0": {
+      "correct": 33,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    }
+  },
+  "K1": {
+    "direct_0": {
+      "correct": 32,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_1": {
+      "correct": 35,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_2": {
+      "correct": 32,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_two_01": {
+      "correct": 32,
+      "calls": 144,
+      "fields": null,
+      "vectors": null
+    },
+    "direct_three": {
+      "correct": 33,
+      "calls": 216,
+      "fields": null,
+      "vectors": null
+    },
+    "facts_0": {
+      "correct": 35,
+      "calls": 168,
+      "fields": 120,
+      "vectors": 25
+    },
+    "facts_1": {
+      "correct": 42,
+      "calls": 168,
+      "fields": 121,
+      "vectors": 31
+    },
+    "facts_two": {
+      "correct": 40,
+      "calls": 336,
+      "fields": 122,
+      "vectors": 30
+    },
+    "legacy_direct_0": {
+      "correct": 35,
+      "calls": 72,
+      "fields": null,
+      "vectors": null
+    }
+  }
+}

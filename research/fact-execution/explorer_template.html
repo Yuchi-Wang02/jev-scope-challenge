@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,">
+<title>Facts → Code: development replay</title>
+<style>body{font:16px/1.5 system-ui;background:#f6f5f0;color:#182d39;max-width:1080px;margin:auto;padding:24px}h1{line-height:1.15}h2{font-size:20px}.notice{padding:16px;background:#e8ddc5;border-radius:8px}select{padding:9px;font:inherit;max-width:100%}.controls{display:flex;flex-wrap:wrap;gap:16px;margin:22px 0}label{display:grid;gap:4px}section{background:white;border:1px solid #ddd;padding:18px;border-radius:8px;margin:18px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.5 ui-monospace,monospace}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:8px;border-bottom:1px solid #ddd}.scroll{overflow:auto}.good{color:#21633d}.bad{color:#a5402e}button{padding:10px;font:inherit}.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:650px){body{padding:14px}.split{grid-template-columns:1fr}h1{font-size:28px}}</style>
+<h1>Does the model need to decide,<br>or only extract facts?</h1>
+<p class="notice">Saved original-development scores only. Known schema and code executor. Zero independent annotations; 144 candidate rewrites and reserved splits have no model scores. Conditional candidate probabilities are not calibrated confidence. Changing selectors makes no model call.</p>
+<div class="controls"><label>Model path<select id="arm"></select></label><label>Method<select id="method"></select></label><label>Original input<select id="case"></select></label></div>
+<section id="result"></section><section><h2>All fixed methods for this path</h2><div class="scroll" id="methods"></div></section>
+<section><h2>Extracted facts versus construction references</h2><p>Predictions have <code>evidence_spans: null</code>. Quotes below are program-derived reference labels, never model citations.</p><div class="scroll" id="facts"></div></section>
+<section class="split"><div><h2>Supplied evidence</h2><pre id="state"></pre></div><div><h2>Original policy</h2><pre id="policy"></pre></div></section>
+<section><h2>Predicted status probabilities</h2><pre id="probabilities"></pre></section>
+<p>Read <a href="../PROTOCOL.md">the frozen protocol</a>, <a href="../results/ALL_COUNTS.md">every family/view count</a>, <a href="../results/">raw evidence</a> and <a href="../review/README.md">review-only candidates</a>. Native extraction and direct use the same policy/field scaffold. Legacy controls have the earlier prompt.</p>
+<script>
+const D=__FACT_DATA__;const $=id=>document.getElementById(id);const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const table=(headers,rows)=>'<table><thead><tr>'+headers.map(x=>'<th>'+esc(x)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(x=>'<td>'+esc(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+for(const a of ['N0','N1','K1'])$('arm').add(new Option(a,a));
+for(const m of Object.keys(D.summary.methods.N0))$('method').add(new Option(m,m));
+$('method').value='facts_0';for(const c of D.cases)$('case').add(new Option(c.id,c.id));
+function render(){const arm=$('arm').value,method=$('method').value,id=$('case').value,c=D.cases.find(c=>c.id===id),r=D.decisions.find(r=>r.arm===arm&&r.method===method&&r.source_id===id),m=D.summary.methods[arm][method].all;
+$('result').innerHTML='<h2 class="'+(r.correct?'good':'bad')+'">'+esc(r.prediction)+' · reference '+esc(r.gold)+'</h2><p>'+esc(r.attribution||'Direct final decision; no extracted fact claims.')+'</p><p>This input: '+r.model_calls+' model calls; '+r.input_tokens+' input tokens. Method total: '+m.correct+'/72 correct, '+m.complete_parents+'/12 complete parents, '+m.false_commitments+'/24 unsupported commitments.</p>';
+$('methods').innerHTML=table(['Method','Correct /72','Pair /12','Unsupported /24','Calls /72','Tokens'],Object.entries(D.summary.methods[arm]).map(([name,p])=>[name,p.all.correct,p.all.deletion_pair_correct,p.all.false_commitments,p.all.model_calls,p.all.input_tokens]));
+const claims=D.claims.filter(r=>r.arm===arm&&r.method===method&&r.source_id===id);
+$('facts').innerHTML=claims.length?table(['Field','Predicted status','Reference status','Correct','Predicted spans','Construction reference quotes'],claims.map(x=>[x.field,x.status,x.reference_status,x.correct,'null',D.references.find(r=>r.source_id===id&&r.field===x.field).evidence_spans.map(s=>s.text).join(' | ')||'(no target observations)'])):'No extraction stage for this method.';
+$('probabilities').textContent=claims.length?JSON.stringify(claims.map(x=>({field:x.field,conditional_probabilities:x.semantic_probabilities})),null,2):'See raw direct records for candidate logits/probabilities.';
+$('state').textContent=c.state;$('policy').textContent=c.instruction;
+}for(const id of ['arm','method','case'])$(id).addEventListener('change',render);render();
+</script></html>

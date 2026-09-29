@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
@@ -26,4 +28,6 @@ jobs:
       - run: python research/evidence-guards/publish_guards.py --verify
       - run: python research/fact-execution/data_tools.py verify
       - run: python research/fact-execution/fact_run.py build
+      - run: python research/fact-execution/fact_analyze.py --verify
+      - run: python research/fact-execution/publish_facts.py --verify
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

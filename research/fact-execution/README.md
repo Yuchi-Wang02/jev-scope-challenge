@@ -1,22 +1,39 @@
-# Does the model need to decide, or only extract facts?
+# Correct Code, Wrong Facts
 
-Status: development preparation; not yet run. The experiment separates four-state
-fact extraction from finite policy execution, with schema-matched direct controls.
-It follows known development results; no new architecture or confirmation claim.
+**Does the model need to decide, or only extract facts?** We ran 1,656 real cached
+model forwards with schema-matched direct controls and a verified finite-policy
+executor. The primary Kev-LoRA/native facts pipeline improved decisions from
+31/72 to 44/72, but filled 14/18 missing target fields with an asserted value.
+Code execution passed all 96 declared fact-state combinations; extraction
+remained unreliable. These are original-development results, with zero
+independent annotations and no scored rewrites or reserved inputs.
 
-Read [the protocol](PROTOCOL.md) and [fact interface](interface_schema.json).
-Only original development text can be scored. AI rewrite candidates are review-
-only, independent annotations remain zero, and reserved inputs remain unscored.
-# Reproduce preparation offline
+![All call budgets and primary extraction results](assets/fact-execution.png)
+
+Read [the results and limitations](RESULTS.md), [all fixed method/family/view
+counts](results/ALL_COUNTS.md), [frozen protocol](PROTOCOL.md), and
+[fact contract](interface_schema.json). The four contract keys `field`, `status`,
+`evidence_spans`, `provenance` are the interface payload; rows in fact_claims.jsonl
+also carry separate evaluation/audit metadata, which is not part of that payload.
+
+Open/download [the offline replay](docs/explorer.html) to inspect each decision,
+fact vector and reference. [144 AI-generated rewrite pairs](review/README.md)
+are ready for semantic review and have no model scores. Models produced no
+evidence quotes: their citation field is null, distinct from construction labels.
+
+## Reproduce the published evidence offline
 
 ```bash
 python research/fact-execution/data_tools.py verify
 python research/fact-execution/fact_run.py build
+python research/fact-execution/fact_analyze.py --verify
+python research/fact-execution/publish_facts.py --verify
 python -m unittest discover -s tests -v
 ```
 
 With the committed manifest, `build` verifies the existing freeze and makes no
 tokenizer download or inference. The source is published before scoring; this
 is still a post-hoc development diagnostic, because previous results on these
-same original texts were known. A pinned cached-model run uses
-`fact_run.py run --cache G:/jev-lab/hf-cache` and refuses an existing output set.
+same original texts were known. Source freeze: `548e00f3e7322e2791541642f4371d60cec55ce1`.
+The scientific runner refuses existing outputs; a new scored study needs a
+separately versioned output/freeze rather than overwriting this run.
