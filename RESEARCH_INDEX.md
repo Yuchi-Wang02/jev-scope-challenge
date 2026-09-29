@@ -38,6 +38,9 @@ two facts from the same line. That software test is not a model measurement.
 The [paired multi-fact line stress](research/fact-execution/MULTIFACT_LINE_STRESS.md)
 tests that interface limit on 56 existing development texts; all 112 packed
 versions are unscored transformations and carry zero independent annotations.
+The [external rule-data audit](research/external-validation/) identifies ShARC
+as a candidate for a later four-way action task and publishes source structure
+only; no ShARC model result, human mapping audit or dataset copy exists here.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

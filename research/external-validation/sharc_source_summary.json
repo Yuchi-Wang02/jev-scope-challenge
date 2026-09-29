@@ -1,0 +1,42 @@
+{
+  "status": "source_structure_only_no_model_inference",
+  "official_archive_url": "https://sharc-data.github.io/data/sharc1-official.zip",
+  "archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+  "archive_bytes": 6810878,
+  "train": {
+    "rows": 21890,
+    "unique_tree_ids": 628,
+    "trees_with_multiple_rows": 628,
+    "fixed_answers": {
+      "Yes": 6773,
+      "No": 7057,
+      "Irrelevant": 1256
+    },
+    "other_answer_rows": 6804,
+    "nonempty_history_rows": 15006,
+    "empty_scenario_rows": 4025,
+    "median_snippet_words": 39.0,
+    "max_snippet_words": 143
+  },
+  "dev": {
+    "rows": 2270,
+    "unique_tree_ids": 69,
+    "trees_with_multiple_rows": 69,
+    "fixed_answers": {
+      "Yes": 804,
+      "No": 766,
+      "Irrelevant": 138
+    },
+    "other_answer_rows": 562,
+    "nonempty_history_rows": 1509,
+    "empty_scenario_rows": 431,
+    "median_snippet_words": 38.0,
+    "max_snippet_words": 150
+  },
+  "train_dev_tree_id_overlap": 0,
+  "license_file_in_archive": false,
+  "test_labels_parsed_by_this_script": false,
+  "model_forwards": 0,
+  "independent_human_annotations_by_this_project": 0,
+  "interpretation_limit": "Public external data, not a pristine held-out test. Nonstandard answers require an explicit follow-up-action mapping and review; answer text quality is not scored here."
+}
