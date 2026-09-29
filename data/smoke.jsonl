@@ -1,0 +1,3 @@
+{"id": "smoke-scope", "parent_id": "smoke", "variant": "smoke", "family": "smoke", "target": "internet plan", "customer_message": "Cancel the security add-on. Keep the internet plan active."}
+{"id": "smoke-quote", "parent_id": "smoke", "variant": "smoke", "family": "smoke", "target": "book subscription", "customer_message": "Example only: \"Keep the book subscription.\" Actual request: \"Cancel the book subscription.\""}
+{"id": "smoke-time", "parent_id": "smoke", "variant": "smoke", "family": "smoke", "target": "photo plan", "customer_message": "Current request: keep the photo plan. Previous request, now superseded: cancel the photo plan."}
