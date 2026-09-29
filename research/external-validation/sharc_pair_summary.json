@@ -1,0 +1,31 @@
+{
+  "official_archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+  "status": "train_only_visible_contrast_inventory_not_model_evaluation",
+  "train_rows": 21890,
+  "unique_visible_inputs": 21850,
+  "tree_ids_with_multiple_visible_questions": 628,
+  "duplicated_visible_input_groups": 34,
+  "ambiguous_action_groups_excluded": 1,
+  "ambiguous_rows_excluded": 3,
+  "one_representative_per_consistent_visible_input": 21849,
+  "exact_one_history_answer_pairs": 3334,
+  "changed_history_answer_values": {
+    "No/Yes": 3334
+  },
+  "provisionally_changed_action_pairs": 3037,
+  "same_action_pairs": 297,
+  "tree_ids_with_changed_action_pair": 599,
+  "action_pair_counts": {
+    "ASK/ASK": 81,
+    "ASK/No": 553,
+    "ASK/Yes": 587,
+    "No/No": 122,
+    "No/Yes": 1897,
+    "Yes/Yes": 94
+  },
+  "pair_rule": "Within identical tree_id, snippet, question and scenario, the history questions and length match and exactly one history answer changes from No to Yes. Duplicate visible inputs collapse to the smallest utterance_id if actions agree; conflicting-action groups are excluded.",
+  "action_mapping": "Yes, No and Irrelevant stay literal; every other answer is provisionally ASK. Human semantic review and follow-up question quality scoring remain undone.",
+  "model_forwards": 0,
+  "independent_human_annotations_by_this_project": 0,
+  "raw_third_party_rows_published_here": 0
+}

@@ -41,6 +41,9 @@ versions are unscored transformations and carry zero independent annotations.
 The [external rule-data audit](research/external-validation/) identifies ShARC
 as a candidate for a later four-way action task and publishes source structure
 only; no ShARC model result, human mapping audit or dataset copy exists here.
+Its [one-answer-flip inventory](research/external-validation/SHARC_PAIR_AUDIT.md)
+counts exact train-only contrasts, excludes one contradictory visible-input
+group and likewise contains no model evaluation.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

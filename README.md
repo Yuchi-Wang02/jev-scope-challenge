@@ -65,6 +65,7 @@ separately. Laya was inspected as related work and was not run here.
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html).|
 |[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
 |[Joint-route pilot](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)|A 514-forward N1/direct comparison is encoded and frozen.|**Not run**; [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md), [candidate plan](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) and [token control](research/fact-execution/JOINT_TOKEN_CONTROL.md) are available for review.|
+|[Flip one answer](research/external-validation/SHARC_PAIR_AUDIT.md)|The public ShARC train split contains 3,334 strict one-history-answer contrasts; 3,037 change provisional action label.|Source-data inventory only; zero model calls, no human-reviewed labels or new benchmark claim.|
 
 The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
 motivates the joint-route test but uses unavailable construction labels; its

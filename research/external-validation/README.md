@@ -28,9 +28,11 @@ reports:
 |Dev|2,270|69|804|766|138|562|1,509|
 
 Train and dev have **zero overlapping `tree_id` values** in this pinned
-archive. This makes the rule-question tree, not each dialogue turn, the relevant
-grouping unit. The dev rule snippet is a median 38 words, so source length is
-more compatible with a bounded decision readout than a full legal contract.
+archive. `tree_id` is a conservative grouping unit, but can include multiple
+visible questions; the [pair audit](SHARC_PAIR_AUDIT.md) therefore also checks
+exact question text. The dev rule snippet is a median 38 words, so source
+length is more compatible with a bounded decision readout than a full legal
+contract.
 These counts describe dataset structure; no Jev, Kev or Qwen prediction exists.
 
 The official ShARC archive contains no license file. The
@@ -54,6 +56,11 @@ action mapping, matched prompts/tools/budgets and a separate frozen protocol
 are required before any inference. These are proposed steps, not completed
 results. Existing ShARC methods and scores remain prior work; this project
 does not claim the task or dataset as its own contribution.
+
+The separate [one-answer-flip audit](SHARC_PAIR_AUDIT.md) now confirms that
+the pinned **training** split contains exact visible-input contrasts suitable
+for later human review. It publishes aggregate counts and selection logic
+only, with no third-party row text or model score.
 
 To recompute the structural summary from the pinned source (network required,
 no model or API credential):
