@@ -34,7 +34,9 @@ turns a complete export into independently verified labels.
 The [line-by-line evidence pilot](LINE_EVIDENCE_RESULTS.md) has now run under a
 separate pre-inference freeze. It failed the prewritten go/no-go rule: fewer
 false commitments came with many more missed determined decisions and higher
-cost. Its raw records and limitations are separate from the frozen study above.
+cost. Download/open its [offline evidence explorer](docs/line_explorer.html) to
+inspect all 72 inputs and 548 saved line judgments. Its raw records and
+limitations are separate from the frozen study above.
 
 ## Reproduce the published evidence offline
 

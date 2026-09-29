@@ -29,6 +29,8 @@ decisions](research/fact-execution/LINE_EVIDENCE_RESULTS.md). On the same 72
 public development texts, an N1 line-by-line evidence scan cut false commitments
 to 6/24 but dropped correct determined decisions to 11/48, with 548 calls.
 It failed the prewritten continuation gate; no rewrites or reserved inputs ran.
+[Inspect every saved line judgment](research/fact-execution/docs/line_explorer.html)
+in the standalone offline evidence explorer.
 
 **Same words. Different scope. Opposite decisions.**
 

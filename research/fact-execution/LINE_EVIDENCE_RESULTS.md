@@ -73,12 +73,17 @@ Inspect the [raw N1 records](line_results/v0.1/N1.jsonl),
 [per-text decisions](line_results/v0.1/decisions.jsonl),
 [per-field claims and citation audits](line_results/v0.1/fact_claims.jsonl),
 [complete summary](line_results/v0.1/summary.json) and
-[runtime/provenance](line_results/v0.1/runtime.json). Recompute all reported
+[runtime/provenance](line_results/v0.1/runtime.json). The
+[offline evidence explorer](docs/line_explorer.html) displays every one of the
+72 cases and all 548 saved line/field judgments, including errors from other
+requests and fields. Download and open it locally; changing filters does not
+call a model. Recompute all reported
 values without a model or credential:
 
 ```bash
 python research/fact-execution/line_run.py verify-freeze
 python research/fact-execution/line_analyze.py --verify
+python research/fact-execution/publish_line.py --verify
 ```
 
 The next method should address *target and field binding* before buying more

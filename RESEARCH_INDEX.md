@@ -18,6 +18,9 @@ before interpreting the project as a new architecture or upstream implementation
 |[Fact extraction + execution](research/fact-execution/)|Reuses the 72 original development texts for a new task: 1,656 scientific forwards. Kev-LoRA/native primary direct 31/72 vs facts + code 44/72; 14/18 missing fields became asserted values.|552 parity forwards and six warmups are separate. 144 provisional rewrite pairs remain unreviewed and unscored.|
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|Same 72 original development texts; 548 new N1/native forwards. False commitments 6/24, but correct determined decisions only 11/48; 29/72 overall.|Prewritten screening rule failed. 548 calls / 133,977 input tokens, no budget-matched direct control; no rewrite, reserved or Jev scores.|
 
+Download and open the [offline line-evidence explorer](research/fact-execution/docs/line_explorer.html)
+to inspect all 72 inputs and 548 saved judgments behind the failed pilot.
+
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated
 views to claim independent sample size, or describe accumulated forward counts
