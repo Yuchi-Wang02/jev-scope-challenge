@@ -41,6 +41,9 @@ direct control are reviewable, with no new model result.
 An additional [token-matched direct plan](research/fact-execution/JOINT_TOKEN_CONTROL.md)
 uses 286 planned calls / 95,849 input tokens, 40 fewer tokens than the joint
 candidate; it too remains unscored.
+The [514-forward execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
+now pins encoded inputs, the runner and a raw-score recomputation checker;
+no new inference has been authorized or run.
 
 **Same words. Different scope. Opposite decisions.**
 

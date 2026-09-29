@@ -29,6 +29,9 @@ freeze or new scores. Its input-token budgets differ and are disclosed.
 An [ID-only token-matched direct control](research/fact-execution/JOINT_TOKEN_CONTROL.md)
 is now prepared at 95,849 versus 95,889 planned input tokens, but uses 286
 rather than 228 calls. Both comparisons remain unscored.
+The [joint N1 execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
+pins 514 unique forwards and 191,738 planned input tokens across the candidate
+and direct union. CI verifies the frozen plan only; the run has not occurred.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

@@ -46,6 +46,9 @@ costs, with zero new model forwards.
 The [second direct control](JOINT_TOKEN_CONTROL.md) matches its planned input
 token budget to within 40 tokens using distinct prompt orders selected without
 labels, while explicitly retaining the 58-call difference.
+The [joint execution freeze](JOINT_EXECUTION_PROTOCOL.md) now contains exact
+encoded plans, a guarded local runner and a raw-score recomputation checker.
+It is a pre-inference artifact, not a model result.
 
 ## Reproduce the published evidence offline
 
