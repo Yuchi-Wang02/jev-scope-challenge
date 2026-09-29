@@ -1,6 +1,8 @@
 # Proposed development diagnostic: classify each evidence line
 
-**Status: executable query/aggregation dry run, no new model forwards or scores.**
+**Pre-run protocol:** this file and its preparation manifest contain no model
+forwards or scores. Results, if run, belong in a separate versioned result
+directory with raw records and an independent read-only recomputation.
 This is a post-hoc follow-up to [Correct Code, Wrong Facts](RESULTS.md), on the
 same 72 public original development texts. It is neither a preregistered
 confirmation nor a language-transfer result. The 144 provisional rewrites and
@@ -58,7 +60,7 @@ manifest is a reviewable **preparation artifact**, not an execution freeze or
 evidence that a model ran. Its IDs and source offsets are audit metadata; only
 the `prompt` string is planned model input.
 
-The smallest next scored pilot would use the pinned historical Kev-LoRA/native
+The first scored pilot uses the pinned historical Kev-LoRA/native
 N1 path, with no new model downloads, training, paid API or cloud job. Its
 primary candidate would need 548 forwards and 133,977 input tokens, compared
 with 168 forwards / 63,467 input tokens for the old N1 canonical whole-state
@@ -98,6 +100,13 @@ resume/partial-result cherry-picking. A checker must recompute every prediction,
 cost and metric from raw records and prove zero rewrite/reserved queries. The
 old fact-execution manifest and outputs must remain unchanged. Review the
 frozen method and its known budget disadvantage before the scored run.
+
+Execution preparation uses [`line_run.py`](line_run.py) to pin the 548 encoded
+primary-order queries in `preparation/line_native_primary.jsonl` and a separate
+execution manifest. The runner writes only under `line_results/v0.1`; the
+[`line_analyze.py`](line_analyze.py) checker recomputes it from raw scores.
+`line_run.py verify-freeze` is read-only and needs no local tokenizer; `build`
+requires the cached tokenizer and must be committed before `run`.
 
 The public hook, **if supported by real outputs**, is “The quote is real. The
 fact may still be wrong.” Until then it describes an adversarial software

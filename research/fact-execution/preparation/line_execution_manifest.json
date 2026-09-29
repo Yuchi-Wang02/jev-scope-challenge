@@ -1,0 +1,43 @@
+{
+  "study": "line-evidence-N1-native-original-development-v0.1",
+  "status": "pre_inference_freeze",
+  "arm": "N1",
+  "base": "Qwen/Qwen3-4B-Base",
+  "base_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "adapter": "jaredpalmer/kev-4b",
+  "adapter_revision": "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+  "seed": 20261004,
+  "allowed_splits": [
+    "development"
+  ],
+  "allowed_representations": [
+    "original"
+  ],
+  "allowed_mappings": [
+    0
+  ],
+  "planned_forwards": 548,
+  "planned_input_tokens": 133977,
+  "max_input_tokens": 277,
+  "encoded_plan_sha256_lf": "a7c2ae8d30e808bac3d1aefe96e5f1dc0a090414fd15e6519799bc8f4ffce60d",
+  "source_file_sha256_lf": {
+    "LINE_EVIDENCE_PROTOCOL.md": "dc3241b634c529afec6d6fc74a55fae48ebda30857fd727f0d8b034d30b82459",
+    "line_evidence.py": "291656b18a9c969e52b1c8f7a4571b90c49f5bbb05baa2d4b2ebe576fa62c0cb",
+    "line_plan_tools.py": "380338ec8b979dba77d1a91391298e496bea4f9aea41201e3520b59b7f77f629",
+    "line_run.py": "da1cd007b8e5c6a97cbcfc806e6812f0b021742b906e394cba64aa82b8ee402d",
+    "line_analyze.py": "0be0d5e3fdb0f120c080ed0adecc436e0bf9814dc23d1ebe3aa0271bb1f89ecb",
+    "data/original_cases.jsonl": "4e32f5e072a64d34f70da1c598adeaf96c87132c940579c9a45a4ef943740f9f",
+    "preparation/line_query_plans.jsonl": "c3680f33ac3cf41afbc52ff3fe17ea618c60387ddfe509de032cc57ecca8ef60",
+    "preparation/line_query_manifest.json": "01d727efffa664a5bb49519febee3bcfa0f23480972a9b26fd1619cca5d4c7fc",
+    "manifest.json": "fd30d2e08340f4cb321a2d2bfc3afa55c1c142bea05b85249bd56a65bf4edaff",
+    "../next-study/results/weight_checksums.json": "d4a2615eaff9d271db5a4be69e0692a1b6d98635552fb0281d49545a203c5eab",
+    "../evidence-gap/gap_run.py": "4318544b2e10dfc29a2c44af0cf7a54d25a4c1835ad9982741699bccb947710c",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd"
+  },
+  "new_training": false,
+  "paid_api_calls": 0,
+  "rewrite_model_records": 0,
+  "reserved_model_records": 0,
+  "post_hoc_development": true,
+  "config_hash": "9c34e10d1ec1afde31d879b14fc263d25cde45e6429da3a61203c74a571b55cd"
+}
