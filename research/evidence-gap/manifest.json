@@ -1,0 +1,54 @@
+{
+  "study": "evidence-gap-development-v0.1",
+  "base": "Qwen/Qwen3-4B-Base",
+  "base_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "adapter": "jaredpalmer/kev-4b",
+  "adapter_revision": "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+  "source_revision": "29d71c78368657b3a522729a01c748ea15272abc",
+  "arms": [
+    "N0",
+    "N1",
+    "K1"
+  ],
+  "allowed_splits": [
+    "development"
+  ],
+  "methods": [
+    "raw",
+    "null_subtract",
+    "two_order"
+  ],
+  "alpha": 1,
+  "null_cache_scope": "parent/order/arm",
+  "seed": 20261001,
+  "parity_gate": 0.0001,
+  "scientific_forwards": 756,
+  "main_forwards": 648,
+  "null_forwards": 108,
+  "parity_forwards": 252,
+  "warmup_forwards": 6,
+  "method_predictions": 1944,
+  "reserved_model_records": 0,
+  "backbone_dtype": "bfloat16",
+  "head_dtype": "float32",
+  "sdpa_kernel": "math_only",
+  "tf32": false,
+  "new_training": false,
+  "paid_api_calls": 0,
+  "independent_human_reviewed": false,
+  "file_sha256_lf": {
+    "PROTOCOL.md": "ad33c356a12661515713f20aa5a2098597b0713572864b82992f7d05fdf77118",
+    "gap_data.py": "12dcfb34c5fe06ade07b489e950f95b76405c56ec52c4ccab822a1c4915cdf5f",
+    "gap_run.py": "4318544b2e10dfc29a2c44af0cf7a54d25a4c1835ad9982741699bccb947710c",
+    "gap_methods.py": "148eb9b6abf1495c7ca922f6de814258568eb3771b548eb8b228ad81026bfb2b",
+    "gap_analyze.py": "ddf9c293d511490f78c255fd39ee9f38be48750084e73a27b074c2240c403838",
+    "data/cases.jsonl": "98cd1da07026ee2b6f1a53222e201d14ef8ea6be29ab15d01525bc289d4fbccb",
+    "data/solver_audit.json": "f5483a61a968b72610aba4b7ff997d2ae6087478adc70dbd842ab6cb5685546a",
+    "data/inputs.jsonl": "db8eff018ef5d7b30c02c2c31f58bbf904ebdc5c48acdc0dc3f5d907a0d9ac76",
+    "preflight.json": "010aba23a2561a4d62d33c39bc09532f15be8ed9fa31ef625ad6c4b4847fa161",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd",
+    "../next-study/vendor/kev/model.py": "839dd7632ec291ac4740035c86f780f8f13da2b74b54a146ce90ff0ce8de527b",
+    "../next-study/results/weight_checksums.json": "d4a2615eaff9d271db5a4be69e0692a1b6d98635552fb0281d49545a203c5eab"
+  },
+  "config_hash": "e2df561595485cf9d328ec989852be9d476e24214e1e5e32fbc94acfb009948d"
+}
