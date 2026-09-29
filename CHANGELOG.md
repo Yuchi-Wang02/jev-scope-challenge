@@ -1,5 +1,19 @@
 # Release notes
 
+## 2026-09-29 — series attribution audit and review preparation
+
+Added prominent Kev/Laya/Qwen/TypeSafe credit, an exact-revision reuse inventory,
+a schema-validated CITATION.cff, a six-study index, complete offline verification
+instructions and the newest derivative-data card. GitHub metadata confirms this
+is not a fork; the unchanged vendored Kev source and its Apache license remain
+explicitly attributed. Laya is a research reference, not an executed backend.
+
+Added a pack-fingerprinted, read-only rewrite-review CSV checker and a design-only
+cited-fact extraction follow-up. Blank sheets do not count as annotations; valid
+CSV syntax does not certify independence or open inference. No historical
+scientific result, model input, frozen implementation or upstream code changed.
+See [the publication audit](docs/PUBLICATION_AUDIT_2026-09-29.md).
+
 ## Complete v0.1 evidence publication and post-run tooling
 
 The 2026-09-29 real results, inputs, frozen runner, analyzer, manifest and protocol

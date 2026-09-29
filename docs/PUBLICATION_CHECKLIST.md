@@ -1,5 +1,9 @@
 # Publication checks
 
+Historical checklist for the original cancellation and matched-base upload.
+For the current six-study scope and remaining scientific gates, use
+[the research map](../RESEARCH_INDEX.md) and [the publication audit](PUBLICATION_AUDIT_2026-09-29.md).
+
 Completed locally before the final result upload:
 
 - Original freeze, 384 formal / 6 smoke records, raw evidence and 195-attempt
@@ -16,6 +20,6 @@ Completed locally before the final result upload:
   appear on the figure, the README and the research note.
 - Credential-pattern scan on intended public files; no weight/cache files tracked.
 
-Final publication requires a fresh public clone, offline checks, matching remote
-tree and green final-commit CI. These checks establish delivery and consistency,
+Each subsequent publication requires a clean public-origin checkout, offline
+checks, matching remote tree and green final-commit CI. These checks establish delivery and consistency,
 not independent human labels, production reliability or paper novelty.

@@ -1,5 +1,10 @@
 # Correct Code, Wrong Facts
 
+Uses [Jared Palmer's historical Kev implementation and checkpoint](../../THIRD_PARTY_NOTICES.md)
+and Qwen's pretrained base. No pointer-architecture novelty, new training or
+current-release evaluation is claimed. This study's original-data license and
+provenance are described in [the data card](data/README.md).
+
 **Does the model need to decide, or only extract facts?** We ran 1,656 real cached
 model forwards with schema-matched direct controls and a verified finite-policy
 executor. The primary Kev-LoRA/native facts pipeline improved decisions from
@@ -20,6 +25,10 @@ Open/download [the offline replay](docs/explorer.html) to inspect each decision,
 fact vector and reference. [144 AI-generated rewrite pairs](review/README.md)
 are ready for semantic review and have no model scores. Models produced no
 evidence quotes: their citation field is null, distinct from construction labels.
+
+The [cited-fact follow-up](CITED_FACT_PLAN.md) is a design, not a tested remedy.
+The review pack now includes a read-only CSV validator; it never automatically
+turns a complete export into independently verified labels.
 
 ## Reproduce the published evidence offline
 

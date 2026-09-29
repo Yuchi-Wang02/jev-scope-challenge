@@ -1,0 +1,95 @@
+{
+  "checked_on": "2026-09-29",
+  "audited_scientific_result_commit": "3329358ab59b6aa5836deadf6d9307ed3651338f",
+  "repository_metadata": {
+    "url": "https://github.com/Yuchi-Wang02/jev-scope-challenge",
+    "fork": false,
+    "parent": null,
+    "source": null
+  },
+  "kev": {
+    "revision": "29d71c78368657b3a522729a01c748ea15272abc",
+    "upstream_notice_paths": [],
+    "source_files": [
+      {
+        "upstream_path": "kev/model.py",
+        "upstream_url": "https://raw.githubusercontent.com/jaredpalmer/kev/29d71c78368657b3a522729a01c748ea15272abc/kev/model.py",
+        "sha256_lf": "839dd7632ec291ac4740035c86f780f8f13da2b74b54a146ce90ff0ce8de527b",
+        "local_paths": [
+          "research/next-study/vendor/kev/model.py",
+          "research/next-study/attempts/v0.1/vendor/kev/model.py"
+        ],
+        "byte_equal_before_git_line_endings": [
+          true,
+          true
+        ],
+        "lf_equal": true
+      },
+      {
+        "upstream_path": "kev/__init__.py",
+        "upstream_url": "https://raw.githubusercontent.com/jaredpalmer/kev/29d71c78368657b3a522729a01c748ea15272abc/kev/__init__.py",
+        "sha256_lf": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "local_paths": [
+          "research/next-study/vendor/kev/__init__.py",
+          "research/next-study/attempts/v0.1/vendor/kev/__init__.py"
+        ],
+        "byte_equal_before_git_line_endings": [
+          true,
+          true
+        ],
+        "lf_equal": true
+      },
+      {
+        "upstream_path": "LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/jaredpalmer/kev/29d71c78368657b3a522729a01c748ea15272abc/LICENSE",
+        "sha256_lf": "6b08bb37982c233aa12bcbdf19106da12f3f4fcf800773ea42e28ebeddd34fb8",
+        "local_paths": [
+          "research/next-study/vendor/kev/LICENSE",
+          "research/next-study/attempts/v0.1/vendor/kev/LICENSE"
+        ],
+        "byte_equal_before_git_line_endings": [
+          false,
+          false
+        ],
+        "lf_equal": true
+      }
+    ]
+  },
+  "models": [
+    {
+      "model": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3-4B/raw/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+      "model_card_sha256_lf": "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47",
+      "declared_license": "apache-2.0",
+      "weights_in_git": false
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Base",
+      "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+      "model_card_url": "https://huggingface.co/Qwen/Qwen3-4B-Base/raw/906bfd4b4dc7f14ee4320094d8b41684abff8539/README.md",
+      "model_card_sha256_lf": "9fd20ab531a1dc75ae18fcde658dd69d04173fdb93311091c38a7098e3d4b4a1",
+      "declared_license": "apache-2.0",
+      "weights_in_git": false
+    },
+    {
+      "model": "jaredpalmer/kev-4b",
+      "revision": "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+      "model_card_url": "https://huggingface.co/jaredpalmer/kev-4b/raw/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416/README.md",
+      "model_card_sha256_lf": "707d29726fe2929723ccf9e4d5934d03adf3d4c98ae6f879ef533c8e6a05592e",
+      "declared_license": "apache-2.0",
+      "weights_in_git": false
+    }
+  ],
+  "laya": {
+    "use": "related work and design reference only; no implementation, weights, data or scores incorporated",
+    "reference_revision": "9d955671415fc19f069b9cc998928075c1f255ec"
+  },
+  "citation": {
+    "sha256_lf": "05c2efd045ff8785db991e3e2a60328661080feb0927051f4638f31d402a2454",
+    "schema_url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+    "schema_sha256_lf": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+    "validation": "passed official CFF 1.2.0 schema"
+  },
+  "scope": "source inventory and technical consistency; not legal certification or independent semantic validation"
+}

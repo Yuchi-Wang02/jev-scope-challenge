@@ -1,5 +1,14 @@
 # Cancel the Right Thing: Jev vs a Frozen 4B
 
+[Research map and status](RESEARCH_INDEX.md) · [Credits and reuse](THIRD_PARTY_NOTICES.md) ·
+[Citation](CITATION.cff) · [Reproduction guide](REPRODUCIBILITY.md)
+
+This independent repository includes the original Jev API comparison below and
+later diagnostics using a **historical pinned Kev/Qwen checkpoint**. Kev's code
+and trained artifacts are upstream work, credited and licensed separately.
+Laya was inspected as related work, not run as a model backend. Later results
+are not evaluations of current Kev or new Jev measurements.
+
 Research sequence: [matched-base results](research/next-study/) →
 [input-boundary diagnostic](research/layout-boundary/) (completed; real records and all layout results).
 
@@ -110,7 +119,7 @@ Fresh inference installations and other hardware have not been independently rep
 `run.py` is preserved as the original frozen runner, including its historical
 limitations. The newer replication entry point does not accept local path overrides.
 
-## What comes next
+## Matched-base follow-up (completed)
 
 The follow-up asks **Is the Decision Model Better Than the Model It Came From?**
 We completed 864 real forward records using a matched Qwen Base, its original
@@ -154,5 +163,10 @@ Paired behavior tests and native logits are established ideas; see
 [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev).
 
 Created by Yuchi Wang with AI-assisted experiment design, implementation and
-analysis. Code: [MIT](LICENSE). Original data: [CC BY 4.0](data/README.md).
-Upstream models and components retain their own licenses.
+analysis. Original code: [MIT](LICENSE). Original synthetic data: [CC BY 4.0](data/README.md).
+The vendored Kev implementation remains **Apache-2.0**, with its full license,
+exact source commit and unchanged-source checks. Kev/Qwen model weights retain
+their upstream terms. [Credits and reuse](THIRD_PARTY_NOTICES.md) distinguish
+copied code, executed weights and research inspiration, including Laya.
+Use [CITATION.cff](CITATION.cff) and the relevant study commit when citing this
+work; also credit the upstream components used in that result.

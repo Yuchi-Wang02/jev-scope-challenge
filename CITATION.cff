@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+type: software
+title: "Jev Scope Challenge: an exploratory decision-reliability research series"
+message: >-
+  Cite the relevant study and exact Git commit when using this repository.
+  Also credit Kev, Qwen and other upstream work used in that study; see
+  THIRD_PARTY_NOTICES.md. This is research software with exploratory results,
+  not a published or peer-reviewed paper.
+authors:
+  - family-names: Wang
+    given-names: Yuchi
+repository-code: "https://github.com/Yuchi-Wang02/jev-scope-challenge"
+url: "https://github.com/Yuchi-Wang02/jev-scope-challenge"
+abstract: >-
+  Controlled synthetic studies of scope, input representation, evidence
+  sufficiency and fact extraction in typed model decisions. Includes a Jev API
+  comparison and subsequent historical Kev/Qwen diagnostics with frozen inputs,
+  raw records, offline verification and explicit human-review limitations.
+keywords:
+  - model evaluation
+  - decision reliability
+  - evidence sufficiency
+  - fact extraction
+references:
+  - type: software
+    title: "Kev: historical implementation used by this research"
+    authors:
+      - family-names: Palmer
+        given-names: Jared
+    repository-code: "https://github.com/jaredpalmer/kev"
+    version: "29d71c78368657b3a522729a01c748ea15272abc"
+    url: "https://github.com/jaredpalmer/kev/tree/29d71c78368657b3a522729a01c748ea15272abc"
+  - type: software
+    title: "Kev-4B: historical adapter and pointer-head checkpoint"
+    authors:
+      - family-names: Palmer
+        given-names: Jared
+    version: "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416"
+    url: "https://huggingface.co/jaredpalmer/kev-4b/tree/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416"
+  - type: software
+    title: "Qwen3-4B-Base"
+    authors:
+      - name: Qwen Team
+    version: "906bfd4b4dc7f14ee4320094d8b41684abff8539"
+    url: "https://huggingface.co/Qwen/Qwen3-4B-Base/tree/906bfd4b4dc7f14ee4320094d8b41684abff8539"
+  - type: software
+    title: "Qwen3-4B"
+    authors:
+      - name: Qwen Team
+    version: "1cfa9a7208912126459214e8b04321603b3df60c"
+    url: "https://huggingface.co/Qwen/Qwen3-4B/tree/1cfa9a7208912126459214e8b04321603b3df60c"
+  - type: software
+    title: "Laya: related-work diagnostic, not executed in this repository"
+    authors:
+      - name: NandhaKishorM
+    repository-code: "https://github.com/NandhaKishorM/laya"
+    version: "9d955671415fc19f069b9cc998928075c1f255ec"
+    url: "https://github.com/NandhaKishorM/laya/tree/9d955671415fc19f069b9cc998928075c1f255ec"

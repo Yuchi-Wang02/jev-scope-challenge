@@ -1,5 +1,38 @@
 # Evidence and replication notes
 
+This document's original evidence description below concerns the cancellation
+study. For the whole series, see [RESEARCH_INDEX.md](RESEARCH_INDEX.md) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Kev diagnostics use an exact
+historical checkpoint; current upstream releases are not interchangeable.
+
+## Offline verification of the complete series
+
+Clone with full history: the latest study verifies source at the execution
+commit. Use Python 3.10 and `pip install -r requirements.txt`. The following
+checks use committed artifacts only, without credentials, weights or inference:
+
+```bash
+python -m unittest discover -s tests -v
+python verify_evidence.py
+python analyze.py --verify
+python research/next-study/verify_study.py
+python research/layout-boundary/verify_layout.py
+python research/evidence-gap/verify_gap.py
+python research/evidence-gap/review_tools.py verify
+python research/evidence-guards/verify_guards.py
+python research/fact-execution/data_tools.py verify
+python research/fact-execution/fact_analyze.py --verify
+python research/fact-execution/publish_facts.py --verify
+python verify_publication.py
+```
+
+The full [CI workflow](.github/workflows/check.yml) also verifies generated
+publication bundles and other preparation artifacts. Offline consistency is
+different from reproducing model inference in a new environment or auditing
+labels independently. Our original outputs and failed attempt remain available.
+
+## Original cancellation evidence
+
 This release contains real direct Jev API calls and real local Qwen3-4B forward
 passes. The result explorer replays them; it does not simulate inference.
 
