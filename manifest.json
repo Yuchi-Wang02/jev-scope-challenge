@@ -1,0 +1,49 @@
+{
+  "experiment": "jev-scope-challenge-v0.1",
+  "seed": 20260929,
+  "data_sha256": "fca690bba6f0de2827ecfd8a093588e34049518e6257f5b8b68dae16639da0c4",
+  "core_sha256": "ceb78dba6a3b62e69f3f64e69c8f7b8bafb065c53d2258d77ae9263e50fd1ea7",
+  "runner_sha256": "08fef6148bf0c69a40ff41470ed7762786d6df528869b34cbda6166f16dc5af0",
+  "analysis_sha256": "84f9727a4cf7e1ccd772390cadcd64962cff932dc270d3c72f7b3d132d8e06fa",
+  "protocol_sha256": "06a96f5f054687b91844704c83b0c54e31f6cc337ec981a1d8a2ae0c72a8d15c",
+  "qwen_model": "Qwen/Qwen3-4B",
+  "qwen_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "jev_model": "jev-1.13.0",
+  "thinking": false,
+  "dtype": "bfloat16",
+  "qwen_readout": "bare A/B single-token logits; conditional softmax",
+  "candidate_mappings": {
+    "cancel_first": {
+      "A": "CANCEL",
+      "B": "KEEP"
+    },
+    "keep_first": {
+      "A": "KEEP",
+      "B": "CANCEL"
+    }
+  },
+  "replicates": [
+    0,
+    1
+  ],
+  "primary_replicate": 0,
+  "validation": {
+    "inputs": 48,
+    "parents": 12,
+    "labels": {
+      "CANCEL": 24,
+      "KEEP": 24
+    },
+    "same_word_multisets": true,
+    "human_reviewed": false
+  },
+  "human_reviewed": false,
+  "label_provenance": "Rule-constructed; AI reviewed; no independent human label audit",
+  "api_price_usd_per_million_input_tokens": 0.042,
+  "price_source": "https://docs.typesafe.ai/models",
+  "budget_stop_usd": 1,
+  "http_attempt_limit": 400,
+  "max_attempts_per_job": 2,
+  "config_hash": "48e83c0c1129632ae452e50f77298a60b5ee3fc8dfee8cf5b256b2feaa244e76",
+  "frozen_at_utc": "2026-09-29T11:41:45.619478+00:00"
+}
