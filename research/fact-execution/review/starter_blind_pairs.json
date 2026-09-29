@@ -1,0 +1,74 @@
+[
+  {
+    "review_id": "P-def4d2bad54d",
+    "original_state": "Request: allow action for request request-GZYYS.\nEvidence:\nReviewer A approves request request-GZYYS.\nReviewer B rejects request other-SVNUU.",
+    "candidate_state": "Request: allow action for request request-GZYYS.\nSupplied records:\nFor request request-GZYYS, reviewer A's recorded decision is approval.\nFor request other-SVNUU, reviewer B's recorded decision is rejection.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Allow exactly when both reviewer A and reviewer B approve. Any explicit rejection denies even when the other reviewer decision is absent. With no rejection, a missing required reviewer decision is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-dc1ae55207cc",
+    "original_state": "Request: allow action for request request-GZYYS.\nEvidence:\nReviewer A approves request request-GZYYS.\nReviewer B rejects request other-SVNUU.",
+    "candidate_state": "Request: allow action for request request-GZYYS.\nSupplied records:\nRequest request-GZYYS was approved by reviewer A.\nRequest other-SVNUU was rejected by reviewer B.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Allow exactly when both reviewer A and reviewer B approve. Any explicit rejection denies even when the other reviewer decision is absent. With no rejection, a missing required reviewer decision is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-3a029700b216",
+    "original_state": "Request: allow action for request request-GZYYS.\nEvidence:\nReviewer A approves request request-GZYYS.\nReviewer B approves request request-GZYYS.\nReviewer B rejects request other-SVNUU.\nReviewer B rejects request request-GZYYS.",
+    "candidate_state": "Request: allow action for request request-GZYYS.\nSupplied records:\nFor request request-GZYYS, reviewer A's recorded decision is approval.\nFor request request-GZYYS, reviewer B's recorded decision is approval.\nFor request other-SVNUU, reviewer B's recorded decision is rejection.\nFor request request-GZYYS, reviewer B's recorded decision is rejection.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Allow exactly when both reviewer A and reviewer B approve. Any explicit rejection denies even when the other reviewer decision is absent. With no rejection, a missing required reviewer decision is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-7750d7f8b2f1",
+    "original_state": "Request: allow action for request request-GZYYS.\nEvidence:\nReviewer A approves request request-GZYYS.\nReviewer B approves request request-GZYYS.\nReviewer B rejects request other-SVNUU.\nReviewer B rejects request request-GZYYS.",
+    "candidate_state": "Request: allow action for request request-GZYYS.\nSupplied records:\nRequest request-GZYYS was approved by reviewer A.\nRequest request-GZYYS was approved by reviewer B.\nRequest other-SVNUU was rejected by reviewer B.\nRequest request-GZYYS was rejected by reviewer B.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Allow exactly when both reviewer A and reviewer B approve. Any explicit rejection denies even when the other reviewer decision is absent. With no rejection, a missing required reviewer decision is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-ef097d3b69ef",
+    "original_state": "Request: allow action for request request-VEWTS.\nEvidence:\nBase decision for request request-VEWTS: ALLOW.\nReversal exception for request other-SQZRG: active.",
+    "candidate_state": "Request: allow action for request request-VEWTS.\nSupplied records:\nThe recorded baseline outcome for request request-VEWTS is ALLOW.\nFor request other-SQZRG, the reversal exception is in force.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Use the target base decision, except reverse ALLOW and DENY when the target reversal exception is active. An inactive exception keeps the base decision. Missing base decision or exception status is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-3dabfc608470",
+    "original_state": "Request: allow action for request request-VEWTS.\nEvidence:\nBase decision for request request-VEWTS: ALLOW.\nReversal exception for request other-SQZRG: active.",
+    "candidate_state": "Request: allow action for request request-VEWTS.\nSupplied records:\nThe recorded baseline outcome for request request-VEWTS is ALLOW.\nThe reversal-exception status of request other-SQZRG is ACTIVE.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Use the target base decision, except reverse ALLOW and DENY when the target reversal exception is active. An inactive exception keeps the base decision. Missing base decision or exception status is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-ddb2c768ddcc",
+    "original_state": "Request: allow action for request request-VEWTS.\nEvidence:\nBase decision for request request-VEWTS: ALLOW.\nReversal exception for request request-VEWTS: inactive.\nReversal exception for request other-SQZRG: active.\nReversal exception for request request-VEWTS: active.",
+    "candidate_state": "Request: allow action for request request-VEWTS.\nSupplied records:\nThe recorded baseline outcome for request request-VEWTS is ALLOW.\nFor request request-VEWTS, the reversal exception is not in force.\nFor request other-SQZRG, the reversal exception is in force.\nFor request request-VEWTS, the reversal exception is in force.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Use the target base decision, except reverse ALLOW and DENY when the target reversal exception is active. An inactive exception keeps the base decision. Missing base decision or exception status is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-b6c8fef6d5c2",
+    "original_state": "Request: allow action for request request-VEWTS.\nEvidence:\nBase decision for request request-VEWTS: ALLOW.\nReversal exception for request request-VEWTS: inactive.\nReversal exception for request other-SQZRG: active.\nReversal exception for request request-VEWTS: active.",
+    "candidate_state": "Request: allow action for request request-VEWTS.\nSupplied records:\nThe recorded baseline outcome for request request-VEWTS is ALLOW.\nThe reversal-exception status of request request-VEWTS is INACTIVE.\nThe reversal-exception status of request other-SQZRG is ACTIVE.\nThe reversal-exception status of request request-VEWTS is ACTIVE.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. Use the target base decision, except reverse ALLOW and DENY when the target reversal exception is active. An inactive exception keeps the base decision. Missing base decision or exception status is INSUFFICIENT."
+  },
+  {
+    "review_id": "P-abdce6a54e35",
+    "original_state": "Request: allow action for request request-VMRRH.\nEvidence:\nPermission for site site-WTTFT in request request-VMRRH: allowed.\nPermission for site site-PPNHJ in request request-VMRRH: blocked.\nRoute for request other-RBQUR: site-PPNHJ.",
+    "candidate_state": "Request: allow action for request request-VMRRH.\nSupplied records:\nUnder request request-VMRRH, site site-WTTFT has permission set to allowed.\nUnder request request-VMRRH, site site-PPNHJ has permission set to blocked.\nRequest other-RBQUR is assigned to site-PPNHJ.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. The target route names either site-WTTFT or site-PPNHJ. Use the permission recorded for that selected site; a missing route or missing selected-site permission is INSUFFICIENT unless every possible route yields the same decision. Missing permission for an unselected site does not affect a known route. Allowed site permission supports the request; blocked site permission denies it."
+  },
+  {
+    "review_id": "P-6b1d339bfb82",
+    "original_state": "Request: allow action for request request-VMRRH.\nEvidence:\nPermission for site site-WTTFT in request request-VMRRH: allowed.\nPermission for site site-PPNHJ in request request-VMRRH: blocked.\nRoute for request other-RBQUR: site-PPNHJ.",
+    "candidate_state": "Request: allow action for request request-VMRRH.\nSupplied records:\nPermission entry for request request-VMRRH at site-WTTFT: ALLOWED.\nPermission entry for request request-VMRRH at site-PPNHJ: BLOCKED.\nRoute entry: request other-RBQUR -> site-PPNHJ.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. The target route names either site-WTTFT or site-PPNHJ. Use the permission recorded for that selected site; a missing route or missing selected-site permission is INSUFFICIENT unless every possible route yields the same decision. Missing permission for an unselected site does not affect a known route. Allowed site permission supports the request; blocked site permission denies it."
+  },
+  {
+    "review_id": "P-e9c1ffca7492",
+    "original_state": "Request: allow action for request request-VMRRH.\nEvidence:\nRoute for request request-VMRRH: site-WTTFT.\nPermission for site site-WTTFT in request request-VMRRH: allowed.\nPermission for site site-PPNHJ in request request-VMRRH: blocked.\nRoute for request other-RBQUR: site-PPNHJ.\nRoute for request request-VMRRH: site-PPNHJ.",
+    "candidate_state": "Request: allow action for request request-VMRRH.\nSupplied records:\nRequest request-VMRRH is assigned to site-WTTFT.\nUnder request request-VMRRH, site site-WTTFT has permission set to allowed.\nUnder request request-VMRRH, site site-PPNHJ has permission set to blocked.\nRequest other-RBQUR is assigned to site-PPNHJ.\nRequest request-VMRRH is assigned to site-PPNHJ.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. The target route names either site-WTTFT or site-PPNHJ. Use the permission recorded for that selected site; a missing route or missing selected-site permission is INSUFFICIENT unless every possible route yields the same decision. Missing permission for an unselected site does not affect a known route. Allowed site permission supports the request; blocked site permission denies it."
+  },
+  {
+    "review_id": "P-c2b5792a157e",
+    "original_state": "Request: allow action for request request-VMRRH.\nEvidence:\nRoute for request request-VMRRH: site-WTTFT.\nPermission for site site-WTTFT in request request-VMRRH: allowed.\nPermission for site site-PPNHJ in request request-VMRRH: blocked.\nRoute for request other-RBQUR: site-PPNHJ.\nRoute for request request-VMRRH: site-PPNHJ.",
+    "candidate_state": "Request: allow action for request request-VMRRH.\nSupplied records:\nRoute entry: request request-VMRRH -> site-WTTFT.\nPermission entry for request request-VMRRH at site-WTTFT: ALLOWED.\nPermission entry for request request-VMRRH at site-PPNHJ: BLOCKED.\nRoute entry: request other-RBQUR -> site-PPNHJ.\nRoute entry: request request-VMRRH -> site-PPNHJ.",
+    "policy": "Use only the supplied records for the requested target. Records for another request do not establish target facts. If target-schema records give opposite values for the same field, choose INSUFFICIENT. The target route names either site-WTTFT or site-PPNHJ. Use the permission recorded for that selected site; a missing route or missing selected-site permission is INSUFFICIENT unless every possible route yields the same decision. Missing permission for an unselected site does not affect a known route. Allowed site permission supports the request; blocked site permission denies it."
+  }
+]

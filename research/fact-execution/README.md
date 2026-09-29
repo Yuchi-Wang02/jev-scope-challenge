@@ -26,7 +26,9 @@ fact vector and reference. [144 AI-generated rewrite pairs](review/README.md)
 are ready for semantic review and have no model scores. Models produced no
 evidence quotes: their citation field is null, distinct from construction labels.
 
-The [cited-fact follow-up](CITED_FACT_PLAN.md) is a design, not a tested remedy.
+The [cited-fact follow-up](CITED_FACT_PLAN.md) now includes a known-grammar
+program-control implementation and adversarial software checks; its model
+comparison remains a design, not a tested remedy.
 The review pack now includes a read-only CSV validator; it never automatically
 turns a complete export into independently verified labels.
 

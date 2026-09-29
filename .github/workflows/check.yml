@@ -31,5 +31,6 @@ jobs:
       - run: python research/fact-execution/fact_analyze.py --verify
       - run: python research/fact-execution/publish_facts.py --verify
       - run: python research/fact-execution/review_pair_tools.py
+      - run: python research/fact-execution/review_starter.py --verify
       - run: python verify_publication.py
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

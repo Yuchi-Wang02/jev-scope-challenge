@@ -1,0 +1,12 @@
+{
+  "status": "human_review_starter_only",
+  "selection": "first development parent in each of three families; decisive_missing and conflict; both rewrite styles",
+  "source_pack_sha256_lf": "3428b26a36bed72525d207a8e3e89b0bc5647e70a62e416a2efa0e66d921bd79",
+  "starter_blind_sha256_lf": "97bc3673a4fa2ddc7c5c19705cc6a251ec7f501eb18ae4342c06036aa9c2a37e",
+  "pairs": 12,
+  "original_cases": 6,
+  "independent_human_annotations": 0,
+  "model_scored_rewrites": 0,
+  "statistical_sample": false,
+  "note": "Selection is procedural and parent-clustered; it is not a confirmation sample or semantic validation."
+}

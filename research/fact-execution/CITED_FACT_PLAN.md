@@ -1,7 +1,8 @@
 # Next development question: does a citation actually support the extracted fact?
 
-Status: design only. No new model scores, reviewed labels or successful remedy
-are reported here. This follows the existing development failures and uses the
+Status: contract-control code and adversarial software tests prepared; the model
+comparison is still design only. No new model scores, reviewed labels or
+successful remedy are reported here. This follows the existing development failures and uses the
 same attribution boundaries as [the completed study](RESULTS.md).
 
 The next falsifiable question is whether a bounded evidence-selection step can
@@ -56,3 +57,21 @@ results or independent semantic labels.
 The automated review-export validator is now available. Independent semantic
 review and the new-run protocol remain open. There is no claim that adding
 citations has already repaired the observed failures.
+
+## Prepared pure-code control
+
+[`cited_contract.py`](cited_contract.py) checks exact offsets, target/field/value
+binding, full conflict coverage and declared inspection scope against the
+**entire known-grammar visible state**. It explicitly rejects unsupported
+paraphrases. An empty quote for MISSING remains `absence_unverified` unless
+the caller separately enables a full-parser absence certificate. That option
+is marked `pure_code_reference`: the parser already knows all source records,
+so this is a strong code baseline, not evidence that a model selected or
+understood a citation. The software tests are adversarial program fixtures;
+they are not independent annotations or model results.
+
+The [`12-pair starter`](review/starter_blind_pairs.json) reduces the first
+human-review workload to missing/conflict cases across the three development
+families. Its selection is procedural, clustered by parent, and not a random or
+held-out sample. The full 144-pair pack remains available; neither pack has
+independent human judgments or rewrite inference.

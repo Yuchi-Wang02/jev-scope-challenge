@@ -16,6 +16,18 @@ No export here automatically certifies independence or opens inference. Record
 reviewer provenance and adjudicate disagreement; version changed inputs before
 a new execution protocol. Current annotations and candidate model records: zero.
 
+For a smaller first pass, [`starter_blind_pairs.json`](starter_blind_pairs.json)
+and [`starter_blank.csv`](starter_blank.csv) contain 12 of the same 144 pairs:
+both rewrite styles for the first development parent in each of the three
+families, limited to decisive-missing and conflict variants. They are a
+procedural review queue, not a statistical sample. The
+[`starter manifest`](starter_manifest.json) records the exact source-pack
+fingerprint and zero completed reviews. Run
+`python research/fact-execution/review_starter.py --verify` to check that the
+starter still matches the frozen pack. Do not use the source mapping during
+blind review; the original full-pack fingerprint below also applies when
+validating a partial starter CSV.
+
 ## Validate a later review export without changing the study
 
 The read-only helper reports zero submitted annotations for the committed blank:
