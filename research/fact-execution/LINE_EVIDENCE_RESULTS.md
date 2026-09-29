@@ -90,3 +90,6 @@ The next method should address *target and field binding* before buying more
 line-level calls. A genuine comparison would need a fixed total budget and
 independently reviewed language variation; repeating this failed primary path
 on unreviewed rewrites would not make the evidence stronger.
+The [post-hoc oracle decomposition](LINE_ORACLE_DECOMPOSITION.md) quantifies
+which program-labeled line errors would need correction. It is a diagnostic,
+not a tested repair.

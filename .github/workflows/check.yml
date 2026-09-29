@@ -36,6 +36,7 @@ jobs:
       - run: python research/fact-execution/line_plan_tools.py verify
       - run: python research/fact-execution/line_run.py verify-freeze
       - run: python research/fact-execution/line_analyze.py --verify
+      - run: python research/fact-execution/line_oracle_decomposition.py --verify
       - run: python research/fact-execution/publish_line.py --verify
       - run: python verify_publication.py
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

@@ -31,6 +31,10 @@ to 6/24 but dropped correct determined decisions to 11/48, with 548 calls.
 It failed the prewritten continuation gate; no rewrites or reserved inputs ran.
 [Inspect every saved line judgment](research/fact-execution/docs/line_explorer.html)
 in the standalone offline evidence explorer.
+The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
+shows why request and field binding are the next hypothesis: correcting both
+classes with unavailable construction labels changes 29/72 to 68/72, but is
+not a new model score.
 
 **Same words. Different scope. Opposite decisions.**
 
