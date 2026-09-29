@@ -77,6 +77,8 @@ def figures():
     fig.suptitle('Correct Code, Wrong Facts',fontsize=20,fontweight='bold')
     fig.text(.5,-.18,'Original development · 12 grouped parents · known policy/schema · no human labels · rewrites and reserved splits unscored',ha='center',fontsize=10)
     for ext in ('png','svg'):fig.savefig(HERE/f'assets/fact-execution.{ext}',dpi=170,bbox_inches='tight',metadata={'Creator':'Matplotlib'} if ext=='svg' else None)
+    svg=HERE/'assets/fact-execution.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8',newline='\n')
     plt.close(fig)
 
 
