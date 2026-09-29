@@ -1,0 +1,56 @@
+name: Challenge a case or claim
+description: Submit a label objection, paired counterexample, or interpretation error.
+title: "[challenge] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please identify the study and exact record. Use synthetic or authorized text;
+        do not post private customer data or credentials. See CONTRIBUTING.md.
+  - type: dropdown
+    id: challenge-type
+    attributes:
+      label: What are you challenging?
+      options:
+        - Published case label
+        - Reported interpretation or metric
+        - New paired counterexample
+        - Other research claim
+    validations:
+      required: true
+  - type: input
+    id: study-commit-record
+    attributes:
+      label: Study, commit, and record ID
+      description: Link a published artifact or name the exact input. Say "new case" if no record exists.
+      placeholder: "Example: cancellation scope, commit SHA, case ID"
+    validations:
+      required: true
+  - type: textarea
+    id: visible-input
+    attributes:
+      label: Visible text and policy
+      description: Paste the smallest relevant input or link exact public lines.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected decision or behavior, with reasoning
+      description: Explain which condition determines the answer and why.
+    validations:
+      required: true
+  - type: textarea
+    id: paired-control
+    attributes:
+      label: Minimal paired control, if applicable
+      description: State the one changed condition and whether the answer should flip or hold.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence-limit
+    attributes:
+      label: Supporting evidence and limits
+      description: Link a reproduction or source and distinguish observation from inference.
+    validations:
+      required: false

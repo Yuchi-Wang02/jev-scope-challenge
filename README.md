@@ -152,10 +152,13 @@ The stopped first attempt and numerical-control amendment are preserved too.
 
 ## Extend the challenge
 
-Recompute the published results first. A useful contribution is a new clear
-four-way case, a label objection with its reasoning, or results from another
-backend with exact prompts and costs. New cases belong in a separately versioned
-extension; this v0.1 test stays fixed. Report wins, losses and mapping sensitivity.
+Recompute the published results first, then [open a structured challenge or
+reproduction issue](https://github.com/Yuchi-Wang02/jev-scope-challenge/issues/new/choose).
+A useful contribution is a new clear four-way case, a label objection with its
+reasoning, or results from another backend with exact prompts and costs. The
+[contribution guide](CONTRIBUTING.md) explains the minimum evidence and how to
+keep a versioned extension separate from this fixed v0.1 test. Report wins,
+losses and mapping sensitivity.
 
 The series asks *You Might Not Need Jev*; this release does not announce that
 Jev is useless. Independent project, not affiliated with or endorsed by TypeSafe.

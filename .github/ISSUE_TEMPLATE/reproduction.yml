@@ -1,0 +1,52 @@
+name: Report a reproduction
+description: Share a rerun or another backend under explicit settings and costs.
+title: "[reproduction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A result on these public synthetic inputs is a reproduction or extension,
+        not fresh held-out confirmation. Please link raw records where possible.
+        See CONTRIBUTING.md for provenance and attribution.
+  - type: input
+    id: study-commit
+    attributes:
+      label: Study and source commit
+      placeholder: "Study path and 40-character Git commit"
+    validations:
+      required: true
+  - type: textarea
+    id: system-settings
+    attributes:
+      label: System and inference settings
+      description: Model/provider, exact revision, prompt, candidate order, thinking mode, readout, decoding, retries, hardware and software versions.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results and denominator
+      description: Include parent groups, texts, repeated calls, error counts, and uncertainty or failure cases.
+    validations:
+      required: true
+  - type: textarea
+    id: costs
+    attributes:
+      label: Calls, tokens, latency, and cost
+      description: Report available measured quantities and identify estimates or missing values.
+    validations:
+      required: true
+  - type: textarea
+    id: raw-records
+    attributes:
+      label: Raw records and reproduction steps
+      description: Link public artifacts or provide commands that reproduce your report; redact secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: deviations
+    attributes:
+      label: Deviations from the published protocol
+      description: List any changed input, tool access, budget, checkpoint, parsing rule, or missing record.
+    validations:
+      required: false

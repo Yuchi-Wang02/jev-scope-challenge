@@ -78,6 +78,8 @@ language rewrites, reproductions with exact prompts/costs, and fixes that preser
 historical evidence. Record the study and commit, explain any changed assumptions,
 and include upstream attribution. Human exports require provenance and
 adjudication before they can support a confirmation claim or open a new run.
+Use the [contribution guide](CONTRIBUTING.md) and the repository's structured
+GitHub issue forms to make objections and reproductions reviewable.
 
 The first [bounded line-by-line pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)
 failed its screening rule, so that method is not advancing unchanged. A
