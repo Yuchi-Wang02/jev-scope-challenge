@@ -1,0 +1,839 @@
+{
+  "status": "passed",
+  "states": 96,
+  "scope": "all four-state vectors of three development policies",
+  "checks": [
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "TRUE",
+        "review_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "TRUE",
+        "review_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "TRUE",
+        "review_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "TRUE",
+        "review_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "FALSE",
+        "review_b": "TRUE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "FALSE",
+        "review_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "FALSE",
+        "review_b": "MISSING"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "FALSE",
+        "review_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "MISSING",
+        "review_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "MISSING",
+        "review_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "MISSING",
+        "review_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "MISSING",
+        "review_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "CONFLICT",
+        "review_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "CONFLICT",
+        "review_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "CONFLICT",
+        "review_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "joint_approval",
+      "facts": {
+        "review_a": "CONFLICT",
+        "review_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "TRUE",
+        "exception": "TRUE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "TRUE",
+        "exception": "FALSE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "TRUE",
+        "exception": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "TRUE",
+        "exception": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "FALSE",
+        "exception": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "FALSE",
+        "exception": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "FALSE",
+        "exception": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "FALSE",
+        "exception": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "MISSING",
+        "exception": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "MISSING",
+        "exception": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "MISSING",
+        "exception": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "MISSING",
+        "exception": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "CONFLICT",
+        "exception": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "CONFLICT",
+        "exception": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "CONFLICT",
+        "exception": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "reversal_exception",
+      "facts": {
+        "base": "CONFLICT",
+        "exception": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "TRUE",
+        "site_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "TRUE",
+        "site_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "TRUE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "TRUE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "FALSE",
+        "site_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "FALSE",
+        "site_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "FALSE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "FALSE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "MISSING",
+        "site_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "MISSING",
+        "site_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "MISSING",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "MISSING",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "CONFLICT",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "CONFLICT",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "CONFLICT",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "TRUE",
+        "site_a": "CONFLICT",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "TRUE",
+        "site_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "TRUE",
+        "site_b": "FALSE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "TRUE",
+        "site_b": "MISSING"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "TRUE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "FALSE",
+        "site_b": "TRUE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "FALSE",
+        "site_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "FALSE",
+        "site_b": "MISSING"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "FALSE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "MISSING",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "MISSING",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "MISSING",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "MISSING",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "CONFLICT",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "CONFLICT",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "CONFLICT",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "FALSE",
+        "site_a": "CONFLICT",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "TRUE",
+        "site_b": "TRUE"
+      },
+      "decision": "ALLOW"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "TRUE",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "TRUE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "TRUE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "FALSE",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "FALSE",
+        "site_b": "FALSE"
+      },
+      "decision": "DENY"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "FALSE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "FALSE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "MISSING",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "MISSING",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "MISSING",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "MISSING",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "CONFLICT",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "CONFLICT",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "CONFLICT",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "MISSING",
+        "site_a": "CONFLICT",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "TRUE",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "TRUE",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "TRUE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "TRUE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "FALSE",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "FALSE",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "FALSE",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "FALSE",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "MISSING",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "MISSING",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "MISSING",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "MISSING",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "CONFLICT",
+        "site_b": "TRUE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "CONFLICT",
+        "site_b": "FALSE"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "CONFLICT",
+        "site_b": "MISSING"
+      },
+      "decision": "INSUFFICIENT"
+    },
+    {
+      "family": "route_lookup",
+      "facts": {
+        "route": "CONFLICT",
+        "site_a": "CONFLICT",
+        "site_b": "CONFLICT"
+      },
+      "decision": "INSUFFICIENT"
+    }
+  ]
+}

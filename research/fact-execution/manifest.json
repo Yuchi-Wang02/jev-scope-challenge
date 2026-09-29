@@ -1,0 +1,61 @@
+{
+  "study": "fact-execution-original-development-v0.1",
+  "base": "Qwen/Qwen3-4B-Base",
+  "base_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "adapter": "jaredpalmer/kev-4b",
+  "adapter_revision": "c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+  "source_revision": "29d71c78368657b3a522729a01c748ea15272abc",
+  "arms": [
+    "N0",
+    "N1",
+    "K1"
+  ],
+  "seed": 20261003,
+  "parity_gate": 0.0001,
+  "allowed_splits": [
+    "development"
+  ],
+  "allowed_representations": [
+    "original"
+  ],
+  "scientific_forwards": 1656,
+  "direct_forwards": 648,
+  "fact_forwards": 1008,
+  "parity_forwards": 552,
+  "warmup_forwards": 6,
+  "reserved_model_records": 0,
+  "rewrite_model_records": 0,
+  "new_training": false,
+  "paid_api_calls": 0,
+  "independent_human_reviewed": false,
+  "post_hoc": true,
+  "previous_development_results_known": true,
+  "file_sha256_lf": {
+    "PROTOCOL.md": "ab671befffba2616bb62ed301b968f3db0e774887ebefcac483fe8c4dad32035",
+    "interface.py": "7946b25e75c596394afb3c1b4607da4db87cf545946a550f3280d55897b0bba4",
+    "interface_schema.json": "f09e406411cafc83364824e2f099085b239c2de93c5be4d977771200b3bdd764",
+    "data_tools.py": "a396320ba4ed2f230f0fa3188e6bd57e47add37dd4fb3675358ab1be2c4a9f2c",
+    "fact_run.py": "9eb39651600f0a391f1308ec3cc15547a612249d2b01d730c6e8aad2f0807b11",
+    "fact_analyze.py": "ec263bdd141d45f4ea901cbb1735fed6a16c3c9df2ea58f0b4ecd3bf860437a1",
+    "data/original_cases.jsonl": "4e32f5e072a64d34f70da1c598adeaf96c87132c940579c9a45a4ef943740f9f",
+    "data/reference_facts.jsonl": "544ad9f02db70884da48ec828bb349175034ec77561d5c6134686deafec442c4",
+    "data/inputs.jsonl": "f352920e4115d09123d94fa23430cf41d87deecc352802a748a927ba11352223",
+    "data/executor_audit.json": "a573d4318d28b044144e859baabb071f94f553949acb85828e77b0c87c6af9e0",
+    "preflight.json": "7c5fcdf2fd7efbe2514de0339c32f21c54cfbdb7bec1a7b5e9d5f68c2c552ef4",
+    "review/candidate_rewrites.jsonl": "3ccf9eb287c46c8a383d783042c26a1e1711c2e94aad0b5ba4b5310bd405b78f",
+    "review/blind_pairs.json": "3428b26a36bed72525d207a8e3e89b0bc5647e70a62e416a2efa0e66d921bd79",
+    "review/blank.csv": "8b70d94ff5564ad52149f2ab3ce5884355b50d4454c67a4454e7762756a9d6db",
+    "review/manifest.json": "a9b87ad3cd3361f6396f32c8920c42556937ea9bc54fc09422a204b1e676bf3d",
+    "../evidence-gap/gap_data.py": "12dcfb34c5fe06ade07b489e950f95b76405c56ec52c4ccab822a1c4915cdf5f",
+    "../evidence-gap/gap_run.py": "4318544b2e10dfc29a2c44af0cf7a54d25a4c1835ad9982741699bccb947710c",
+    "../evidence-gap/verify_gap.py": "799f3d3ad7aea2ce5af8bffece66bd20df3ef5c987e53b60ac160bc63914aa01",
+    "../evidence-gap/manifest.json": "f7960e6f04455331d3a73a1b1a54d73138b3c5fb2ccf6970ae7ad00c89f54c4e",
+    "../evidence-gap/results/N0.jsonl": "1de3985787a377fcc3e1499cfb143f4cc59140c7d3a52bf196088fc48fe7b4e6",
+    "../evidence-gap/results/N1.jsonl": "26b7ce372d4e14008bdda6a0b6dfd2df65be0c4c22e7b76c9447089615b78077",
+    "../evidence-gap/results/K1.jsonl": "98c73930cb1f4d18c51e73763f4f726a7f7992ccd5744cfdc7f57788e5ce5e84",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd",
+    "../next-study/vendor/kev/model.py": "839dd7632ec291ac4740035c86f780f8f13da2b74b54a146ce90ff0ce8de527b",
+    "../next-study/results/weight_checksums.json": "d4a2615eaff9d271db5a4be69e0692a1b6d98635552fb0281d49545a203c5eab"
+  },
+  "config_hash": "a1d22fe660e255c2f2aa0bc309bd42550a51953bf3ce9eb65a3b2c9ed6c471ea"
+}

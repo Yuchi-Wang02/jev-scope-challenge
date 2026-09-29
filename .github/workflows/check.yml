@@ -24,4 +24,6 @@ jobs:
       - run: python research/evidence-guards/guard_study.py prepare
       - run: python research/evidence-guards/verify_guards.py
       - run: python research/evidence-guards/publish_guards.py --verify
+      - run: python research/fact-execution/data_tools.py verify
+      - run: python research/fact-execution/fact_run.py build
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

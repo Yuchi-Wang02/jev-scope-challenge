@@ -11,6 +11,10 @@ Follow-up: [Can a guard tell missing evidence from missing fields?](research/evi
 (completed post-hoc development comparison; fixed score grids, policy/code
 controls and every derived result).
 
+Next: [Does the model need to decide, or only extract facts?](research/fact-execution/)
+(original-development protocol and encoded inputs frozen; four-state fact
+interface; 144 language rewrite pairs await independent review).
+
 **Same words. Different scope. Opposite decisions.**
 
 Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?

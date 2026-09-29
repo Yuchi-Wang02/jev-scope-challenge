@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One target-field observation claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["field", "status", "evidence_spans", "provenance"],
+  "properties": {
+    "field": {"type": "string"},
+    "status": {"enum": ["TRUE", "FALSE", "MISSING", "CONFLICT"]},
+    "evidence_spans": {
+      "description": "Null means the classifier supplied no citation; never substitute program reference spans.",
+      "type": ["array", "null"],
+      "items": {"type": "object", "required": ["start", "end", "text"], "additionalProperties": false,
+        "properties": {"start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 0}, "text": {"type": "string"}}}
+    },
+    "provenance": {"enum": ["model_choice_without_spans", "independent_human_annotation", "known_grammar_parser"]}
+  }
+}

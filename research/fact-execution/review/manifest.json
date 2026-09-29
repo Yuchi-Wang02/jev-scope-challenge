@@ -1,0 +1,8 @@
+{
+  "status": "awaiting_independent_semantic_review",
+  "pairs": 144,
+  "annotations": 0,
+  "candidate_model_records": 0,
+  "reserved_inference_open": false,
+  "blinding": "blind_pairs excludes intended equality/source metadata; public source mapping exists separately"
+}
