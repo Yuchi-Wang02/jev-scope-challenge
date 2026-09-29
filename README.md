@@ -24,6 +24,12 @@ New diagnostic: [Correct Code, Wrong Facts](research/fact-execution/)
 (completed original-development experiment: verified rule execution, unreliable
 fact extraction; all controls published; 144 rewrite pairs await human review).
 
+Latest controlled failure: [More evidence calls, fewer commitments, worse
+decisions](research/fact-execution/LINE_EVIDENCE_RESULTS.md). On the same 72
+public development texts, an N1 line-by-line evidence scan cut false commitments
+to 6/24 but dropped correct determined decisions to 11/48, with 548 calls.
+It failed the prewritten continuation gate; no rewrites or reserved inputs ran.
+
 **Same words. Different scope. Opposite decisions.**
 
 Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?

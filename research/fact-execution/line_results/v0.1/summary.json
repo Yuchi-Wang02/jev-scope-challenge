@@ -1,0 +1,99 @@
+{
+  "status": "post_hoc_original_development_only",
+  "config_hash": "9c34e10d1ec1afde31d879b14fc263d25cde45e6429da3a61203c74a571b55cd",
+  "arm": "N1",
+  "original_inputs": 72,
+  "parent_clusters": 12,
+  "reference_fields": 168,
+  "independent_human_annotations": 0,
+  "rewrite_model_records": 0,
+  "reserved_model_records": 0,
+  "scientific_forwards": 548,
+  "warmup_forwards": 2,
+  "correct_decisions": 29,
+  "complete_parents": 0,
+  "uncertain_decisions": 24,
+  "false_commitments": 6,
+  "determined_decisions": 48,
+  "determined_correct": 11,
+  "wrong_supported_actions": 0,
+  "false_insufficient": 37,
+  "correct_fields": 60,
+  "exact_fact_vectors": 13,
+  "missing_fields": 18,
+  "missing_as_reported_value": 10,
+  "missed_conflicts": 0,
+  "wrong_request_selected_lines": 73,
+  "wrong_field_selected_lines": 172,
+  "wrong_value_selected_lines": 4,
+  "known_grammar_audit_gates": {
+    "accepted": 28,
+    "rejected": 139,
+    "absence_unverified": 1
+  },
+  "model_calls": 548,
+  "input_tokens": 133977,
+  "summed_forward_latency_s": 41.35686020007415,
+  "by_family": {
+    "joint_approval": {
+      "correct": 10,
+      "decisions": 24
+    },
+    "reversal_exception": {
+      "correct": 11,
+      "decisions": 24
+    },
+    "route_lookup": {
+      "correct": 8,
+      "decisions": 24
+    }
+  },
+  "by_variant": {
+    "conflict": {
+      "correct": 12,
+      "decisions": 12
+    },
+    "decisive_missing": {
+      "correct": 6,
+      "decisions": 12
+    },
+    "flip": {
+      "correct": 4,
+      "decisions": 12
+    },
+    "full": {
+      "correct": 1,
+      "decisions": 12
+    },
+    "hold": {
+      "correct": 1,
+      "decisions": 12
+    },
+    "nondecisive_missing": {
+      "correct": 5,
+      "decisions": 12
+    }
+  },
+  "fixed_screening_rule": {
+    "max_false_commitments": 7,
+    "min_determined_correct": 34,
+    "passed": false
+  },
+  "old_N1_comparators": {
+    "facts_0": {
+      "correct": 44,
+      "false_commitments": 14,
+      "determined_decisions": 48,
+      "model_calls": 168,
+      "input_tokens": 63467
+    },
+    "direct_0": {
+      "correct": 31,
+      "false_commitments": 23,
+      "determined_decisions": 48,
+      "model_calls": 72,
+      "input_tokens": 23523
+    }
+  },
+  "interpretation_limit": "Original public development grammar; no independent labels, budget-matched direct control, rewrite test or Jev run."
+}

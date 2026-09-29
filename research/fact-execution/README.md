@@ -31,9 +31,10 @@ program-control implementation and adversarial software checks; its model
 comparison remains a design, not a tested remedy.
 The review pack now includes a read-only CSV validator; it never automatically
 turns a complete export into independently verified labels.
-The [line-by-line evidence candidate](LINE_EVIDENCE_PROTOCOL.md) is currently
-an unscored dry run with an explicit tokenizer-only cost estimate and go/no-go
-rule; it has not been executed on a model.
+The [line-by-line evidence pilot](LINE_EVIDENCE_RESULTS.md) has now run under a
+separate pre-inference freeze. It failed the prewritten go/no-go rule: fewer
+false commitments came with many more missed determined decisions and higher
+cost. Its raw records and limitations are separate from the frozen study above.
 
 ## Reproduce the published evidence offline
 

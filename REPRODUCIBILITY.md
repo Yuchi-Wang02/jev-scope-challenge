@@ -27,6 +27,7 @@ python research/fact-execution/review_starter.py --verify
 python research/fact-execution/line_evidence.py
 python research/fact-execution/line_plan_tools.py verify
 python research/fact-execution/line_run.py verify-freeze
+python research/fact-execution/line_analyze.py --verify
 python verify_publication.py
 ```
 

@@ -1,6 +1,6 @@
 # Research map and evidence status
 
-This repository contains one original Jev/Qwen comparison and five subsequent
+This repository contains one original Jev/Qwen comparison and six subsequent
 diagnostics. Later studies use a **historical pinned Kev-4B checkpoint based on
 Qwen3-4B-Base**. Kev and Jev are distinct systems. Laya was inspected as related
 work; it was not executed here. Read [credits and reuse](THIRD_PARTY_NOTICES.md)
@@ -16,6 +16,7 @@ before interpreting the project as a new architecture or upstream implementation
 |[Evidence gap](research/evidence-gap/)|48 candidate parents / 288 texts; only 12 development parents / 72 texts scored. 648 main + 108 null scientific forwards.|216 calibration/test texts unscored. Program-derived labels; 252 parity forwards and six warmups are separate.|
 |[Evidence guards](research/evidence-guards/)|Reuses evidence-gap scores. 13 methods produce 8,424 derived predictions, with a known-grammar pure-code reference.|Post-hoc analysis with zero new model forwards; derived rows are not new samples.|
 |[Fact extraction + execution](research/fact-execution/)|Reuses the 72 original development texts for a new task: 1,656 scientific forwards. Kev-LoRA/native primary direct 31/72 vs facts + code 44/72; 14/18 missing fields became asserted values.|552 parity forwards and six warmups are separate. 144 provisional rewrite pairs remain unreviewed and unscored.|
+|[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|Same 72 original development texts; 548 new N1/native forwards. False commitments 6/24, but correct determined decisions only 11/48; 29/72 overall.|Prewritten screening rule failed. 548 calls / 133,977 input tokens, no budget-matched direct control; no rewrite, reserved or Jev scores.|
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated
@@ -57,10 +58,10 @@ historical evidence. Record the study and commit, explain any changed assumption
 and include upstream attribution. Human exports require provenance and
 adjudication before they can support a confirmation claim or open a new run.
 
-Next development work is a scored bounded evidence-selection pilot and a
-language-transfer protocol. An [unscored line-by-line candidate](research/fact-execution/LINE_EVIDENCE_PROTOCOL.md), a
+The first [bounded line-by-line pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)
+failed its screening rule, so that method is not advancing unchanged. A
 [strict pure-code citation control](research/fact-execution/CITED_FACT_PLAN.md)
 and [12-pair procedural review starter](research/fact-execution/review/README.md)
-are prepared; they are not model results or human labels. Independent review
+are prepared; those controls are not human labels. Independent review
 remains a separate gate; a valid CSV or a green CI
 run cannot certify reviewer independence or semantic truth.
