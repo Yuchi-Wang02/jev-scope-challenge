@@ -1,0 +1,37 @@
+{
+  "raw_deletion": {
+    "N0": {
+      "decisive_missing": 8,
+      "nondecisive_missing": 27
+    },
+    "N1": {
+      "decisive_missing": 1,
+      "nondecisive_missing": 29
+    },
+    "K1": {
+      "decisive_missing": 3,
+      "nondecisive_missing": 31
+    }
+  },
+  "false_commitments": {
+    "N0": {
+      "raw": 55,
+      "null_subtract": 70,
+      "two_order": 52
+    },
+    "N1": {
+      "raw": 68,
+      "null_subtract": 72,
+      "two_order": 71
+    },
+    "K1": {
+      "raw": 66,
+      "null_subtract": 72,
+      "two_order": 65
+    }
+  },
+  "deletion_denominator": 36,
+  "uncertain_denominator": 72,
+  "parents": 12,
+  "independent_human_reviewed": false
+}

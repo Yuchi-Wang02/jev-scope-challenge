@@ -1,0 +1,17 @@
+{
+  "status": "awaiting_independent_human_review",
+  "annotations": 0,
+  "case_sha256_lf": "98cd1da07026ee2b6f1a53222e201d14ef8ea6be29ab15d01525bc289d4fbccb",
+  "candidate_inputs": 288,
+  "starter_inputs": 6,
+  "starter_ids": [
+    "R-49f8dd6de8f1",
+    "R-6970b266755d",
+    "R-8bd3c04a6cb9",
+    "R-47b838bda9b8",
+    "R-db2d99285586",
+    "R-be54172b339c"
+  ],
+  "reserved_inference_open": false,
+  "blinding": "procedural only; public key exists separately"
+}

@@ -1,0 +1,1557 @@
+{
+  "status": "complete_development_only",
+  "config_hash": "e2df561595485cf9d328ec989852be9d476e24214e1e5e32fbc94acfb009948d",
+  "scientific_forwards": 756,
+  "main_forwards": 648,
+  "null_forwards": 108,
+  "parity_forwards": 252,
+  "derived_method_predictions": 1944,
+  "reserved_model_records": 0,
+  "development_parents": 12,
+  "reserved_calibration_parents": 12,
+  "reserved_test_parents": 24,
+  "independent_human_reviewed": false,
+  "new_training": false,
+  "paid_api_calls": 0,
+  "results": {
+    "N0": {
+      "methods": {
+        "raw": {
+          "all": {
+            "decisions": 216,
+            "correct": 102,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 26,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 15,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 17,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 8,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 27,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 9,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 7,
+            "deletion_triplet_correct": 7,
+            "paired_units": 36,
+            "flip_pair_correct": 9,
+            "nondecisive_preserve_correct": 25,
+            "false_commitments": 55,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 49
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 46,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 5,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 6,
+              "deletion_triplet_correct": 6,
+              "paired_units": 12,
+              "flip_pair_correct": 4,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 13,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 16
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 24,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 4,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 5,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 1,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 1,
+              "nondecisive_preserve_correct": 7,
+              "false_commitments": 23,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 17
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 2,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 5,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 1,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 4,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 1,
+              "deletion_triplet_correct": 1,
+              "paired_units": 12,
+              "flip_pair_correct": 4,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 19,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 16
+            }
+          }
+        },
+        "null_subtract": {
+          "all": {
+            "decisions": 216,
+            "correct": 97,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 27,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 20,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 21,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 1,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 27,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 1,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 1,
+            "deletion_triplet_correct": 1,
+            "paired_units": 36,
+            "flip_pair_correct": 12,
+            "nondecisive_preserve_correct": 26,
+            "false_commitments": 70,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 29
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 35,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 1,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 1,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 1,
+              "deletion_triplet_correct": 1,
+              "paired_units": 12,
+              "flip_pair_correct": 5,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 22,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 9
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 29,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 3,
+              "nondecisive_preserve_correct": 7,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 8
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 33,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 4,
+              "nondecisive_preserve_correct": 10,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 12
+            }
+          },
+          "vs_raw": {
+            "corrected": 30,
+            "regressed": 35
+          }
+        },
+        "two_order": {
+          "all": {
+            "decisions": 216,
+            "correct": 114,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 29,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 16,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 19,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 9,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 30,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 11,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 8,
+            "deletion_triplet_correct": 8,
+            "paired_units": 36,
+            "flip_pair_correct": 13,
+            "nondecisive_preserve_correct": 29,
+            "false_commitments": 52,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 31
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 50,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 8,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 6,
+              "deletion_triplet_correct": 6,
+              "paired_units": 12,
+              "flip_pair_correct": 4,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 9,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 9
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 27,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 5,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 3,
+              "nondecisive_preserve_correct": 8,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 14
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 37,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 2,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 2,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 3,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 2,
+              "deletion_triplet_correct": 2,
+              "paired_units": 12,
+              "flip_pair_correct": 6,
+              "nondecisive_preserve_correct": 12,
+              "false_commitments": 19,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 8
+            }
+          },
+          "vs_raw": {
+            "corrected": 26,
+            "regressed": 14
+          }
+        }
+      },
+      "null_reference_correct_insufficient": 19,
+      "null_reference_decisions": 36,
+      "actual_main_forwards": 216,
+      "actual_null_forwards": 36
+    },
+    "N1": {
+      "methods": {
+        "raw": {
+          "all": {
+            "decisions": 216,
+            "correct": 96,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 21,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 19,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 23,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 1,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 29,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 3,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 0,
+            "deletion_triplet_correct": 0,
+            "paired_units": 36,
+            "flip_pair_correct": 9,
+            "nondecisive_preserve_correct": 21,
+            "false_commitments": 68,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 19
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 11,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 1,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 1,
+              "nondecisive_preserve_correct": 6,
+              "false_commitments": 23,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 5
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 26,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 5,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 1,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 2,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 0,
+              "nondecisive_preserve_correct": 5,
+              "false_commitments": 21,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 11
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 38,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 8,
+              "nondecisive_preserve_correct": 10,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            }
+          }
+        },
+        "null_subtract": {
+          "all": {
+            "decisions": 216,
+            "correct": 111,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 29,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 20,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 29,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 0,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 33,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 0,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 0,
+            "deletion_triplet_correct": 0,
+            "paired_units": 36,
+            "flip_pair_correct": 22,
+            "nondecisive_preserve_correct": 29,
+            "false_commitments": 72,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 13
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 39,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 8,
+              "nondecisive_preserve_correct": 10,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 31,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 4,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 8
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 41,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 10,
+              "nondecisive_preserve_correct": 10,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 2
+            }
+          },
+          "vs_raw": {
+            "corrected": 19,
+            "regressed": 4
+          }
+        },
+        "two_order": {
+          "all": {
+            "decisions": 216,
+            "correct": 98,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 22,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 20,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 24,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 1,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 31,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 0,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 1,
+            "deletion_triplet_correct": 1,
+            "paired_units": 36,
+            "flip_pair_correct": 10,
+            "nondecisive_preserve_correct": 22,
+            "false_commitments": 71,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 8
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 0,
+              "nondecisive_preserve_correct": 6,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 1
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 28,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 1,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 1,
+              "deletion_triplet_correct": 1,
+              "paired_units": 12,
+              "flip_pair_correct": 2,
+              "nondecisive_preserve_correct": 7,
+              "false_commitments": 23,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 6
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 38,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 11,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 8,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 1
+            }
+          },
+          "vs_raw": {
+            "corrected": 11,
+            "regressed": 9
+          }
+        }
+      },
+      "null_reference_correct_insufficient": 36,
+      "null_reference_decisions": 36,
+      "actual_main_forwards": 216,
+      "actual_null_forwards": 36
+    },
+    "K1": {
+      "methods": {
+        "raw": {
+          "all": {
+            "decisions": 216,
+            "correct": 106,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 26,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 21,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 22,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 3,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 31,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 3,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 1,
+            "deletion_triplet_correct": 1,
+            "paired_units": 36,
+            "flip_pair_correct": 13,
+            "nondecisive_preserve_correct": 25,
+            "false_commitments": 66,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 8
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 34,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 1,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 0,
+              "nondecisive_preserve_correct": 6,
+              "false_commitments": 23,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 3,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 2,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 1,
+              "deletion_triplet_correct": 1,
+              "paired_units": 12,
+              "flip_pair_correct": 3,
+              "nondecisive_preserve_correct": 7,
+              "false_commitments": 19,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 40,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 10,
+              "nondecisive_preserve_correct": 12,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 2
+            }
+          }
+        },
+        "null_subtract": {
+          "all": {
+            "decisions": 216,
+            "correct": 108,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 28,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 21,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 26,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 0,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 33,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 0,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 0,
+            "deletion_triplet_correct": 0,
+            "paired_units": 36,
+            "flip_pair_correct": 18,
+            "nondecisive_preserve_correct": 28,
+            "false_commitments": 72,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 7
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 35,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 7,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 2,
+              "nondecisive_preserve_correct": 7,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 5,
+              "nondecisive_preserve_correct": 9,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 2
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 41,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 11,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 11,
+              "nondecisive_preserve_correct": 12,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 2
+            }
+          },
+          "vs_raw": {
+            "corrected": 8,
+            "regressed": 6
+          }
+        },
+        "two_order": {
+          "all": {
+            "decisions": 216,
+            "correct": 106,
+            "parents": 12,
+            "complete_parents": 0,
+            "variants": {
+              "full": {
+                "correct": 26,
+                "decisions": 36
+              },
+              "hold": {
+                "correct": 21,
+                "decisions": 36
+              },
+              "flip": {
+                "correct": 22,
+                "decisions": 36
+              },
+              "decisive_missing": {
+                "correct": 3,
+                "decisions": 36
+              },
+              "nondecisive_missing": {
+                "correct": 30,
+                "decisions": 36
+              },
+              "conflict": {
+                "correct": 4,
+                "decisions": 36
+              }
+            },
+            "deletion_pair_correct": 0,
+            "deletion_triplet_correct": 0,
+            "paired_units": 36,
+            "flip_pair_correct": 13,
+            "nondecisive_preserve_correct": 24,
+            "false_commitments": 65,
+            "uncertain_decisions": 72,
+            "order_sensitive_inputs": 5
+          },
+          "families": {
+            "joint_approval": {
+              "decisions": 72,
+              "correct": 34,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 9,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 1,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 0,
+              "nondecisive_preserve_correct": 6,
+              "false_commitments": 23,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 3
+            },
+            "reversal_exception": {
+              "decisions": 72,
+              "correct": 32,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 8,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 3,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 3,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 3,
+              "nondecisive_preserve_correct": 6,
+              "false_commitments": 18,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 1
+            },
+            "route_lookup": {
+              "decisions": 72,
+              "correct": 40,
+              "parents": 4,
+              "complete_parents": 0,
+              "variants": {
+                "full": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "hold": {
+                  "correct": 6,
+                  "decisions": 12
+                },
+                "flip": {
+                  "correct": 10,
+                  "decisions": 12
+                },
+                "decisive_missing": {
+                  "correct": 0,
+                  "decisions": 12
+                },
+                "nondecisive_missing": {
+                  "correct": 12,
+                  "decisions": 12
+                },
+                "conflict": {
+                  "correct": 0,
+                  "decisions": 12
+                }
+              },
+              "deletion_pair_correct": 0,
+              "deletion_triplet_correct": 0,
+              "paired_units": 12,
+              "flip_pair_correct": 10,
+              "nondecisive_preserve_correct": 12,
+              "false_commitments": 24,
+              "uncertain_decisions": 24,
+              "order_sensitive_inputs": 1
+            }
+          },
+          "vs_raw": {
+            "corrected": 1,
+            "regressed": 1
+          }
+        }
+      },
+      "null_reference_correct_insufficient": 36,
+      "null_reference_decisions": 36,
+      "actual_main_forwards": 216,
+      "actual_null_forwards": 36
+    }
+  },
+  "code_reference": {
+    "description": "known synthetic grammar and declared finite policy; not general NLP",
+    "correct": 72,
+    "inputs": 72
+  },
+  "always_insufficient": {
+    "correct": 72,
+    "decisions": 216,
+    "complete_parents": 0
+  },
+  "file_sha256_lf": {
+    "N0": "1de3985787a377fcc3e1499cfb143f4cc59140c7d3a52bf196088fc48fe7b4e6",
+    "N1": "26b7ce372d4e14008bdda6a0b6dfd2df65be0c4c22e7b76c9447089615b78077",
+    "K1": "98c73930cb1f4d18c51e73763f4f726a7f7992ccd5744cfdc7f57788e5ce5e84"
+  }
+}

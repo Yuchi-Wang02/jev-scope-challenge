@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "config_hash": "e2df561595485cf9d328ec989852be9d476e24214e1e5e32fbc94acfb009948d",
+  "allowed_splits": [
+    "development"
+  ],
+  "python": "3.10.18",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.55.4",
+    "peft": "0.17.1",
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.1.2"
+  },
+  "new_training": false,
+  "paid_api_calls": 0,
+  "scientific_forwards": 756,
+  "main_forwards": 648,
+  "null_forwards": 108,
+  "parity_forwards": 252,
+  "warmup_forwards": 6,
+  "reserved_model_records": 0,
+  "start_utc": "2026-09-29T14:08:20Z",
+  "execution_commit": "4809a5b2ea9aa8aef803f2875ad064998f60dd0b",
+  "N0": {
+    "main": 216,
+    "null": 36,
+    "status": "complete"
+  },
+  "N1": {
+    "main": 216,
+    "null": 36,
+    "status": "complete"
+  },
+  "K1": {
+    "main": 216,
+    "null": 36,
+    "status": "complete"
+  },
+  "max_parity_delta": 0.0,
+  "peak_allocated_mib": 7987.09765625,
+  "sdpa_kernel": "math_only",
+  "backbone_dtype": "bfloat16",
+  "head_dtype": "float32",
+  "elapsed_s": 81.52612439999939
+}

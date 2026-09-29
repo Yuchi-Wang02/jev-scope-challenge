@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evidence Gap — independent label review</title>
+<link rel="icon" href="data:,">
+<style>
+:root{font-family:system-ui,sans-serif;color:#e7edf8;background:#101827;color-scheme:dark}*{box-sizing:border-box}body{margin:0}main{max-width:1060px;margin:auto;padding:30px 22px}h1{font-size:clamp(1.6rem,4vw,2.5rem);margin-bottom:10px}p{line-height:1.6;color:#bac8df}label{display:block;font-weight:600;margin:16px 0 6px}input,select,textarea,button{font:inherit;border:1px solid #647897;border-radius:8px;padding:10px;background:#18263c;color:#e7edf8}input,select,textarea{width:100%;min-width:0}textarea{min-height:90px;resize:vertical}button{cursor:pointer;background:#244b71}button:disabled{opacity:.4;cursor:default}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.row>*{flex:1;min-width:120px}.card{border:1px solid #435672;background:#172337;border-radius:14px;padding:20px;margin:18px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.65 ui-monospace,monospace;margin:0}.policy{line-height:1.7;color:#d1dcef}.badge{color:#90e4da;font-size:14px}.check{display:flex;align-items:center;gap:12px}.check input{width:20px;flex:none}#message{min-height:28px;color:#ffd48e}footer{font-size:14px}a{color:#a9d8ff}@media(max-width:550px){main{padding:18px 12px}.card{padding:14px}.row>*{flex-basis:100%}}
+</style>
+<main>
+<div class="badge">288 candidates · no independent annotations yet · no model calls</div>
+<h1>Does the evidence determine a decision?</h1>
+<p>Read the policy and supplied records, then assign ALLOW, DENY or INSUFFICIENT. Explain your choice and flag ambiguous wording. Work independently, before viewing program labels or model results. A valid export will still require provenance checking and adjudication.</p>
+<div class="row"><div><label for="reviewer">Reviewer name or stable ID</label><input id="reviewer" autocomplete="off" placeholder="Enter before recording a label"></div><div><label for="scope">Review set</label><select id="scope"><option value="starter">Six-item starter</option><option value="all">All 288 candidates</option></select></div></div>
+<label for="item">Item</label><select id="item"></select>
+<p id="progress" aria-live="polite"></p>
+<div class="card"><h2>Policy</h2><div id="policy" class="policy"></div></div>
+<div class="card"><h2>Supplied records</h2><pre id="state"></pre></div>
+<label for="label">Your decision</label><select id="label"><option value="">Choose a label</option><option>ALLOW</option><option>DENY</option><option>INSUFFICIENT</option></select>
+<label for="reason">Reason: which supplied fact or missing fact determines the answer?</label><textarea id="reason"></textarea>
+<label class="check" for="ambiguity"><input type="checkbox" id="ambiguity">The wording is ambiguous or the task is underspecified</label>
+<label for="ambiguity_reason">If flagged, explain the ambiguity</label><textarea id="ambiguity_reason"></textarea>
+<div class="row"><button id="save">Save label locally</button><button id="previous">Previous</button><button id="next">Next</button><button id="export">Download annotations</button></div>
+<p id="message" role="status"></p>
+<footer><p>This standalone page sends no data anywhere. Draft labels stay in this browser's local storage until you download them. Blinding is procedural: the public repository contains a separate answer key. The page contains no program gold, model outputs, family/split names or pair identifiers.</p></footer>
+</main>
+<script id="review-data" type="application/json">__REVIEW_DATA__</script>
+<script>
+'use strict';const data=JSON.parse(document.getElementById('review-data').textContent),$=id=>document.getElementById(id),key='evidence-gap-review-'+data.case_sha256_lf;let drafts={};
+try{drafts=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){$('message').textContent='Local storage is unavailable; keep this page open and export before closing.'}
+const byId=Object.fromEntries(data.items.map(x=>[x.review_id,x]));
+function progress(){$('progress').textContent=Object.keys(drafts).length+' / 288 labels saved locally. This does not certify independent review.'}
+function show(){const c=byId[$('item').value],d=drafts[c.review_id]||{};$('policy').textContent=c.policy;$('state').textContent=c.state;$('label').value=d.label||'';$('reason').value=d.reason||'';$('ambiguity').checked=!!d.ambiguity;$('ambiguity_reason').value=d.ambiguity_reason||'';if(d.reviewer&&!$('reviewer').value)$('reviewer').value=d.reviewer;$('previous').disabled=$('item').selectedIndex===0;$('next').disabled=$('item').selectedIndex===$('item').options.length-1;progress()}
+function setList(){const ids=$('scope').value==='starter'?data.starter:data.items.map(x=>x.review_id);$('item').replaceChildren(...ids.map((id,i)=>{const o=document.createElement('option');o.value=id;o.textContent=(i+1)+' / '+ids.length+' — '+id;return o}));show()}
+$('scope').addEventListener('change',setList);$('item').addEventListener('change',show);
+$('previous').onclick=()=>{$('item').selectedIndex--;show()};$('next').onclick=()=>{$('item').selectedIndex++;show()};
+$('save').onclick=()=>{if(!$('reviewer').value.trim()||!$('label').value||!$('reason').value.trim()||($('ambiguity').checked&&!$('ambiguity_reason').value.trim())){$('message').textContent='Enter reviewer, label, reason and an explanation for any flagged ambiguity.';return}const r={review_id:$('item').value,label:$('label').value,reason:$('reason').value.trim(),ambiguity:$('ambiguity').checked,ambiguity_reason:$('ambiguity_reason').value.trim(),reviewer:$('reviewer').value.trim(),reviewed_at:new Date().toISOString()};drafts[r.review_id]=r;try{localStorage.setItem(key,JSON.stringify(drafts));$('message').textContent='Saved in this browser. Download an export when ready.'}catch(e){$('message').textContent='Saved in memory only; download before closing.'}progress()};
+$('export').onclick=()=>{const obj={case_sha256_lf:data.case_sha256_lf,annotations:Object.values(drafts)},blob=new Blob([JSON.stringify(obj,null,2)+'\n'],{type:'application/json'}),a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='evidence-gap-human-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('message').textContent='Exported '+obj.annotations.length+' annotations. No labels were submitted to a server.'};setList();
+</script></html>

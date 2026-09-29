@@ -3,8 +3,9 @@
 Research sequence: [matched-base results](research/next-study/) →
 [input-boundary diagnostic](research/layout-boundary/) (completed; real records and all layout results).
 
-Next: [Missing Evidence Is Not Just Deleted Text](research/evidence-gap/)
-(new mechanism corpus; development-only design; reserved splits not scored).
+New: [Missing Evidence Is Not Just Deleted Text](research/evidence-gap/)
+(development results complete; deletion controls and blank review pack;
+reserved splits not scored).
 
 **Same words. Different scope. Opposite decisions.**
 

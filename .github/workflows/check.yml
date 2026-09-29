@@ -18,4 +18,7 @@ jobs:
       - run: python research/layout-boundary/layout_study.py build
       - run: python research/layout-boundary/verify_layout.py
       - run: python research/evidence-gap/gap_run.py build
+      - run: python research/evidence-gap/verify_gap.py
+      - run: python research/evidence-gap/review_tools.py verify
+      - run: python research/evidence-gap/release_tools.py --verify
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run
