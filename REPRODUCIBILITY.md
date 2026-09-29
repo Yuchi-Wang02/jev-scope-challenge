@@ -24,6 +24,8 @@ python research/fact-execution/data_tools.py verify
 python research/fact-execution/fact_analyze.py --verify
 python research/fact-execution/publish_facts.py --verify
 python research/fact-execution/review_starter.py --verify
+python research/fact-execution/line_evidence.py
+python research/fact-execution/line_plan_tools.py verify
 python verify_publication.py
 ```
 

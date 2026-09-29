@@ -57,8 +57,9 @@ historical evidence. Record the study and commit, explain any changed assumption
 and include upstream attribution. Human exports require provenance and
 adjudication before they can support a confirmation claim or open a new run.
 
-Next development work is a bounded evidence-selection candidate and a
-language-transfer protocol. A [strict pure-code citation control](research/fact-execution/CITED_FACT_PLAN.md)
+Next development work is a scored bounded evidence-selection pilot and a
+language-transfer protocol. An [unscored line-by-line candidate](research/fact-execution/LINE_EVIDENCE_PROTOCOL.md), a
+[strict pure-code citation control](research/fact-execution/CITED_FACT_PLAN.md)
 and [12-pair procedural review starter](research/fact-execution/review/README.md)
 are prepared; they are not model results or human labels. Independent review
 remains a separate gate; a valid CSV or a green CI

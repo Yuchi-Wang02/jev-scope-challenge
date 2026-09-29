@@ -75,3 +75,9 @@ human-review workload to missing/conflict cases across the three development
 families. Its selection is procedural, clustered by parent, and not a random or
 held-out sample. The full 144-pair pack remains available; neither pack has
 independent human judgments or rewrite inference.
+
+A [line-wise evidence candidate](LINE_EVIDENCE_PROTOCOL.md) now has a runnable
+query/aggregation dry run and a tokenizer-only budget preflight. It has zero new
+model forwards. It cannot establish a remedy on the original exact grammar;
+the proposed N1 pilot is an exploratory screen before any reviewed transfer
+study and needs its own pre-inference freeze and result verifier.
