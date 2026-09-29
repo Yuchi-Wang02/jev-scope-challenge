@@ -35,11 +35,15 @@ independent human label audit.
 
 ## New live replication
 
-The committed files are the evidence from the original run. In a separate copy,
-archive the entire included `results/` directory, then create an empty `results/`
-directory before smoke/formal commands. Keep the frozen data and code unchanged.
-The included successful records otherwise cause resume to skip API/model calls.
+The committed files are the evidence from the original run. Use the newer
+`replicate.py --output .local/my-replication` entry point shown in the README.
+It keeps results separate and session metadata immutable across resume. The
+original `run.py` remains frozen and is not the recommended replication entry point.
 Jev credentials go only in the `TYPESAFE_API_KEY` environment variable.
+
+After-run strict validation: `python verify_evidence.py`. This adds raw evidence
+chain checks and manifest self-fingerprint validation without changing the original
+analyzer or experimental result. Its report is in `provenance/postrun-verification.json`.
 
 Python 3.10.18, torch 2.8.0+cu128, transformers 4.55.4 and accelerate 1.10.1 were
 the executed environment. Offline analysis used numpy 2.1.2 and matplotlib 3.10.9.

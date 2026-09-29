@@ -54,6 +54,7 @@ Use Python 3.10 (the executed environment was Python 3.10.18):
 ```bash
 pip install -r requirements.txt
 python -m unittest discover -s tests -v
+python verify_evidence.py
 python analyze.py --verify
 python analyze.py
 ```
@@ -66,30 +67,41 @@ It replays saved results; changing a selector does not run a model.
 ## Run your own live comparison
 
 ```bash
-python run.py run --backend jev --phase smoke --dry-run
+python replicate.py --backend jev --phase smoke --output .local/my-replication --dry-run
 # Set TYPESAFE_API_KEY privately in your shell, then:
-python run.py run --backend jev --phase smoke
-python run.py run --backend jev --phase formal
+python replicate.py --backend jev --phase smoke --output .local/my-replication
+python replicate.py --backend jev --phase formal --output .local/my-replication
 ```
 
-Existing successful records are cached. For a genuinely new replication, preserve
-this published evidence and use a separate copy/output directory after archiving
-the included results. Do not edit frozen files or overwrite earlier runs.
+Use a fresh output directory: the replication entry point protects the published
+results and stores each execution's runtime in its own session directory. A full
+cache hit creates no backend and makes no model calls. Unknown HTTP costs stop
+execution until reconciled. See [post-run tooling changes](CHANGELOG.md).
 
 For Qwen, install the CUDA-compatible PyTorch 2.8.0 build for your platform
 ([official instructions](https://pytorch.org/get-started/locally/)) plus
 `transformers==4.55.4` and `accelerate==1.10.1`; then:
 
 ```bash
-python run.py run --backend qwen --phase smoke
-python run.py run --backend qwen --phase formal
+python replicate.py --backend qwen --phase smoke --output .local/my-replication
+python replicate.py --backend qwen --phase formal --output .local/my-replication
 ```
 
 The pinned weights require about 8 GB on disk and were already cached for our
 run. They are not included. With no local override, the runner resolves the pinned
-HF revision. `--model-path` accepts that pinned snapshot directory for local use.
+HF revision. The historical runner accepted a local snapshot path override.
 Actual runtime versions, tokenizer/template hashes and hardware are in `results/`.
-Fresh installations and other hardware have not been independently reproduced.
+Fresh inference installations and other hardware have not been independently reproduced.
+`run.py` is preserved as the original frozen runner, including its historical
+limitations. The newer replication entry point does not accept local path overrides.
+
+## What comes next
+
+The next study asks **Is the Decision Model Better Than the Model It Came From?**
+It uses an exactly matched Qwen Base checkpoint, its original LM head before and
+after Kev's public LoRA, and the complete Kev pointer path. The plan, provenance
+and evolving execution status are kept in [research/next-study](research/next-study/).
+New results will be versioned separately from this fixed cancellation probe.
 
 ## Cost, scope and provenance
 

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "verifier_version": "1.0",
+  "formal_records": 384,
+  "smoke_records": 6,
+  "matched_http_attempts": 195,
+  "manifest_self_fingerprint": true,
+  "raw_evidence_chain": true,
+  "files_sha256_lf": {
+    "results/jev_formal.jsonl": "81810fd2afe412b3f405e73d09daab61f9b543cbd31e4f16e1eba34c12c1fc25",
+    "results/qwen_formal.jsonl": "6d04f9dbef995b9197b5759828a4f80306ba3a02e5eb6ac08f29704be077c0b1",
+    "results/jev_smoke.jsonl": "e75cb9e942713643041c6b9145bebf6d24440443471a1fb7cc0d58c849aaee21",
+    "results/qwen_smoke.jsonl": "228728b2ae57f5b1942e66b1c3ee9ba5ed50a6248c1b4acd72cda96690b97d11",
+    "results/jev_attempts.jsonl": "bd3880038cf0b44b7ff122182402cd0cd26804c10709d07c83535cf547cbbfd6"
+  },
+  "limitations": [
+    "Offline consistency check, not authentication of a hosted service",
+    "No independent human label review",
+    "No model calls"
+  ]
+}

@@ -7,4 +7,6 @@ __pycache__/
 .venv/
 .local/
 *.egg-info/
+.playwright-cli/
+output/playwright/
 
