@@ -1,0 +1,25 @@
+{
+  "status": "unscored_preparation_not_execution_freeze",
+  "source_sha256_lf": {
+    "JOINT_ROUTE_PROTOCOL.md": "24200edc707ffefcaa8e9c378e65f233ad16c1f5505a2ea91f882b0695c754fc",
+    "joint_route.py": "ea2ae9d5169a274ba6df38be5223e210b652d0dbdcb9529d29f7ef74453ac9fd",
+    "joint_route_plan.py": "e30a9a037535557b3e25dd788571e329b13fafe2c1c79d6045de37f1eb8a8bb5",
+    "interface.py": "7946b25e75c596394afb3c1b4607da4db87cf545946a550f3280d55897b0bba4",
+    "line_evidence.py": "291656b18a9c969e52b1c8f7a4571b90c49f5bbb05baa2d4b2ebe576fa62c0cb",
+    "data_tools.py": "a396320ba4ed2f230f0fa3188e6bd57e47add37dd4fb3675358ab1be2c4a9f2c",
+    "data/original_cases.jsonl": "4e32f5e072a64d34f70da1c598adeaf96c87132c940579c9a45a4ef943740f9f",
+    "../evidence-gap/gap_data.py": "12dcfb34c5fe06ade07b489e950f95b76405c56ec52c4ccab822a1c4915cdf5f",
+    "../next-study/study.py": "1fa3031cdd43bd9fb7543e7af1232cd620b10a945df12161093cab046a91c2cd"
+  },
+  "joint_query_sha256_lf": "c7f182056e1a35098301d754c5fd3e4305d9e6b8f78e14bde9a10a6f97577f76",
+  "direct_query_sha256_lf": "1aff5735ff204a991fe1e25cb4c03b8d194b600d375563a9f06722cf1cdc8761",
+  "original_development_inputs": 72,
+  "joint_primary_queries": 228,
+  "joint_reverse_queries": 228,
+  "call_matched_direct_queries": 228,
+  "planned_arm": "N1_historical_kev_lora_native",
+  "actual_model_forwards": 0,
+  "rewrite_or_reserved_queries": 0,
+  "independent_human_annotations": 0,
+  "note": "Only prompt is model input. IDs, variant, split and line offsets are audit metadata. Encoded execution freeze and runner do not yet exist."
+}

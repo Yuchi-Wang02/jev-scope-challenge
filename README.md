@@ -35,6 +35,9 @@ The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOS
 shows why request and field binding are the next hypothesis: correcting both
 classes with unavailable construction labels changes 29/72 to 68/72, but is
 not a new model score.
+[One line, one owner](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) is the
+next unscored joint-routing preparation: 228 primary queries plus a 228-call
+direct control are reviewable, with no new model result.
 
 **Same words. Different scope. Opposite decisions.**
 

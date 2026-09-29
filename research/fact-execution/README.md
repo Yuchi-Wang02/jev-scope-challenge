@@ -40,6 +40,9 @@ limitations are separate from the frozen study above.
 The [oracle decomposition](LINE_ORACLE_DECOMPOSITION.md) replays 16 classes of
 program-label corrections without new inference; those counterfactual scores
 are not model results.
+The [joint-routing preparation](JOINT_ROUTE_PROTOCOL.md) then tests a
+one-line/one-owner hypothesis. It contains query plans and tokenizer-only
+costs, with zero new model forwards.
 
 ## Reproduce the published evidence offline
 

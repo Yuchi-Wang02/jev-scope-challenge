@@ -23,6 +23,9 @@ to inspect all 72 inputs and 548 saved judgments behind the failed pilot.
 The [16-way post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
 uses unavailable construction labels to diagnose binding errors; it adds no
 model measurement.
+The [joint-routing candidate](research/fact-execution/JOINT_ROUTE_PROTOCOL.md)
+has published prompts and a call-matched direct plan, but no encoded execution
+freeze or new scores. Its input-token budgets differ and are disclosed.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

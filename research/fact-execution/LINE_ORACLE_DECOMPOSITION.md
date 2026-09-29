@@ -44,9 +44,9 @@ confidence intervals or estimates of a future method's accuracy.
 
 The evidence favors testing **request and field binding together** before
 spending more calls on polarity or adding a confidence threshold. A plausible
-candidate would ask for an explicit line-to-target/field route (including an
-uncertain or no-observation option), then determine polarity only for routed
-lines. This is a hypothesis, not an implemented or validated repair. A future
+candidate would ask for an explicit line-to-target/field/value route (including
+an uncertain or no-observation option). An [unscored joint-routing preparation](JOINT_ROUTE_PROTOCOL.md)
+now makes that hypothesis reviewable; it has no model result. A future
 protocol must pin its visible-only prompt, option mapping, aggregation, total
 calls/tokens and a direct-decision budget control *before* inference. The
 strict known-grammar parser remains a separate pure-code reference; using its
