@@ -7,6 +7,9 @@ New: [Missing Evidence Is Not Just Deleted Text](research/evidence-gap/)
 (development results complete; deletion controls and blank review pack;
 reserved splits not scored).
 
+Follow-up: [Can a guard tell missing evidence from missing fields?](research/evidence-guards/)
+(post-hoc development design; fixed score grids and policy/code controls).
+
 **Same words. Different scope. Opposite decisions.**
 
 Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?

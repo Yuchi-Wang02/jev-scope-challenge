@@ -1,0 +1,50 @@
+{
+  "study": "evidence-guards-development-v0.1",
+  "prior_source_commit": "434703989b08d003a44a95b0528765d2b94e11d3",
+  "design_status": "post_hoc_after_development_results",
+  "allowed_splits": [
+    "development"
+  ],
+  "methods": [
+    "raw",
+    "maxprob_0.5",
+    "maxprob_0.7",
+    "maxprob_0.9",
+    "maxprob_0.95",
+    "maxprob_0.99",
+    "margin_0.2",
+    "margin_0.5",
+    "margin_0.8",
+    "margin_0.95",
+    "schema_presence",
+    "policy_determinacy",
+    "always_insufficient"
+  ],
+  "new_model_forwards": 0,
+  "reused_main_records": 648,
+  "derived_predictions": 8424,
+  "code_reference_predictions": 216,
+  "reserved_model_records": 0,
+  "label_fitted_parameters": 0,
+  "independent_human_annotations": 0,
+  "paid_api_calls": 0,
+  "training_steps": 0,
+  "file_sha256_lf": {
+    "PROTOCOL.md": "0dcd3d5a834e1709c93a3e1b8e50f0b98e138be8679a1922e673ad372b267cbc",
+    "guards.py": "4e0810c1b5a0960a56599bb4de57dc002565139f94b66fc8288e6aeb7b928c72",
+    "guard_study.py": "9f7e2ab7acb43564ec55e81f488d50d0e237c871b41033e82255fc7f4e99016e",
+    "development_cases.jsonl": "4e32f5e072a64d34f70da1c598adeaf96c87132c940579c9a45a4ef943740f9f",
+    "../evidence-gap/manifest.json": "f7960e6f04455331d3a73a1b1a54d73138b3c5fb2ccf6970ae7ad00c89f54c4e",
+    "../evidence-gap/gap_data.py": "12dcfb34c5fe06ade07b489e950f95b76405c56ec52c4ccab822a1c4915cdf5f",
+    "../evidence-gap/gap_run.py": "4318544b2e10dfc29a2c44af0cf7a54d25a4c1835ad9982741699bccb947710c",
+    "../evidence-gap/gap_methods.py": "148eb9b6abf1495c7ca922f6de814258568eb3771b548eb8b228ad81026bfb2b",
+    "../evidence-gap/gap_analyze.py": "ddf9c293d511490f78c255fd39ee9f38be48750084e73a27b074c2240c403838",
+    "../evidence-gap/verify_gap.py": "799f3d3ad7aea2ce5af8bffece66bd20df3ef5c987e53b60ac160bc63914aa01",
+    "../evidence-gap/results/runtime.json": "0c25606362f925ab50bc2af5b051bd447ff3832c5ce77a04514994104ca083a1",
+    "../evidence-gap/results/summary.json": "6b42ab902a487a18640b45e78c590aa8944811777b33ad23301e6c301407b0f1",
+    "../evidence-gap/results/N0.jsonl": "1de3985787a377fcc3e1499cfb143f4cc59140c7d3a52bf196088fc48fe7b4e6",
+    "../evidence-gap/results/N1.jsonl": "26b7ce372d4e14008bdda6a0b6dfd2df65be0c4c22e7b76c9447089615b78077",
+    "../evidence-gap/results/K1.jsonl": "98c73930cb1f4d18c51e73763f4f726a7f7992ccd5744cfdc7f57788e5ce5e84"
+  },
+  "config_hash": "5bddee9e49ee32a0a8f57bc3c1d4dcb5cf2bf2cd2945f58895ff96c90b01d519"
+}

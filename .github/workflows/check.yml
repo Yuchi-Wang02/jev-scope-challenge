@@ -21,4 +21,5 @@ jobs:
       - run: python research/evidence-gap/verify_gap.py
       - run: python research/evidence-gap/review_tools.py verify
       - run: python research/evidence-gap/release_tools.py --verify
+      - run: python research/evidence-guards/guard_study.py prepare
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run
