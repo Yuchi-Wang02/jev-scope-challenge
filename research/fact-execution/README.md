@@ -49,6 +49,8 @@ labels, while explicitly retaining the 58-call difference.
 The [joint execution freeze](JOINT_EXECUTION_PROTOCOL.md) now contains exact
 encoded plans, a guarded local runner and a raw-score recomputation checker.
 It is a pre-inference artifact, not a model result.
+The [scope audit](JOINT_ROUTE_SCOPE_AUDIT.md) documents prior extraction work
+and a tested one-line/two-fact case that the exclusive route cannot express.
 
 ## Reproduce the published evidence offline
 

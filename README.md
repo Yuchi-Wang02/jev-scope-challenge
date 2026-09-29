@@ -44,6 +44,9 @@ candidate; it too remains unscored.
 The [514-forward execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
 now pins encoded inputs, the runner and a raw-score recomputation checker;
 no new inference has been authorized or run.
+The [joint-route scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md)
+records close prior work and a tested interface limit: a line containing two
+facts cannot be represented by its exclusive one-owner label.
 
 **Same words. Different scope. Opposite decisions.**
 

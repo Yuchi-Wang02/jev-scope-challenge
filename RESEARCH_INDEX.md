@@ -24,14 +24,17 @@ The [16-way post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_D
 uses unavailable construction labels to diagnose binding errors; it adds no
 model measurement.
 The [joint-routing candidate](research/fact-execution/JOINT_ROUTE_PROTOCOL.md)
-has published prompts and a call-matched direct plan, but no encoded execution
-freeze or new scores. Its input-token budgets differ and are disclosed.
+has published prompts and a call-matched direct plan, but no new scores. Its
+input-token budgets differ and are disclosed.
 An [ID-only token-matched direct control](research/fact-execution/JOINT_TOKEN_CONTROL.md)
 is now prepared at 95,849 versus 95,889 planned input tokens, but uses 286
 rather than 228 calls. Both comparisons remain unscored.
 The [joint N1 execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
 pins 514 unique forwards and 191,738 planned input tokens across the candidate
 and direct union. CI verifies the frozen plan only; the run has not occurred.
+The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
+related extraction work and demonstrates that one exclusive label cannot carry
+two facts from the same line. That software test is not a model measurement.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated
