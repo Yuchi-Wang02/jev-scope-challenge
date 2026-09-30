@@ -4,6 +4,27 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: exercise both four-action backends once
+
+- Objective: replace adapter assumptions with bounded live transport, mapping,
+  final-channel and termination evidence before a later task comparison.
+- Completed: frozen 8 Jev requests and 8 local Qwen3.5 generations; every output
+  copied its explicitly supplied label. Jev used 3,236 input tokens, estimated
+  $0.000135912; Qwen used 764 input and 2,195 generated tokens in 70.113 seconds
+  generation-stage wall time. Zero retries/downloads/task-dataset items.
+- Audit: all raw records, events, settings and tokens are retained. Offline
+  tokenizer checks recompute local boundaries; semantic probability remapping and
+  freeze/source/work checks pass. One thinking JSON fence is accepted under the
+  already declared contract. No earlier score is recomputed.
+- Gap: tiny supplied-label checks do not establish rule interpretation, a useful
+  task budget, or fairness on the next workload. ShARC still has zero completed
+  human reviews; the original two payment reviews do not cover these items.
+- Decision: close this smoke at its predeclared limit. Do not start another generic
+  calibration grid. Next task evidence requires independent labels, adjudication
+  and a frozen comparison. Full-paper novelty assessment remains independent work.
+- Presentation: [technical integration report](research/action-backends/README.md),
+  outside research accuracy tables.
+
 ## 2026-09-30: separate future action parsing from model correctness
 
 - Objective: prevent a future comparison from treating one harmless JSON fence

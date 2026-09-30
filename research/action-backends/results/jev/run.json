@@ -1,0 +1,562 @@
+{
+  "status": "completed",
+  "backend": "jev",
+  "started_at_utc": "2026-09-30T09:21:09.481478+00:00",
+  "commit": "6f26707137776940a23f022aa39a73b2afc78751",
+  "source_hashes": {
+    "research/action-backends/run.py": "8d5826bb4516421ea4f13dc690e45bd2c4b5813a33739b729814a7b6e7910f37",
+    "research/action-backends/adapters.py": "775f31111e8eab97d18b414b5dfdce6083fd2bfcbea9b35fc46b0025e464e43e",
+    "research/action-backends/plan.py": "544e25e93a33d7f8c24c60346aa4ec957fe4b1dd747deb1e0eb7e1b133a5f484",
+    "research/action-backends/plan.json": "c49505c3879264e530b3fcb430f56654ce002a3d70a7139d96587d6a00cf875c",
+    "research/action-backends/PROTOCOL.md": "397705a9deeb4f1dd824c11a031353eed098bd9a5a1cca0c8be20bdd919fdd79",
+    "research/external-validation/action_interface.py": "57e3a8477fb9339ecbe5b494a7874981a2ecb1625baff3ca2b73c05f21448dba",
+    "research/generation-calibration/interface.py": "9c6773c75703c880df176573d971dc9a56b6a8e2567147c6617d439b17341751",
+    "research/generation-calibration/settings.py": "08c64e71aebd629b71252ee5750af799db25bd6b1c063f5cb5625ccd9fc14519",
+    "research/payment-ownership/run_api_v02.py": "0981a1b32ec7424ff0f7990e2606bd302af67cb7e50d34d0f818fd9d603d7888",
+    "research/payment-ownership/study.py": "3ade9249484245ed540e8467bc87546518b769903732e6756c7afa1077142e0a"
+  },
+  "purpose": "technical label-copy integration only; not research evaluation",
+  "calls_started": 8,
+  "records": [
+    {
+      "id": "copy_0_order_0",
+      "case_id": "copy_0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Yes",
+          "distractor_action": "No"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:09.873691+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "A",
+            "confidence": 1.0,
+            "probabilities": {
+              "C": 0.0,
+              "A": 1.0,
+              "B": 0.0,
+              "D": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 403,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "Yes",
+        "probabilities": {
+          "Yes": 1.0,
+          "No": 0.0,
+          "Irrelevant": 0.0,
+          "ASK": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 403,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.20319739999831654,
+      "reference_match": true
+    },
+    {
+      "id": "copy_0_order_1",
+      "case_id": "copy_0",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Yes",
+          "distractor_action": "No"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.088140+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "D",
+            "confidence": 1.0,
+            "probabilities": {
+              "C": 0.0,
+              "D": 1.0,
+              "A": 0.0,
+              "B": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 403,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "Yes",
+        "probabilities": {
+          "ASK": 0.0,
+          "Irrelevant": 0.0,
+          "No": 0.0,
+          "Yes": 1.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 403,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.233467500002007,
+      "reference_match": true
+    },
+    {
+      "id": "copy_1_order_0",
+      "case_id": "copy_1",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "No",
+          "distractor_action": "Irrelevant"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.327872+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "B",
+            "confidence": 1.0,
+            "probabilities": {
+              "D": 0.0,
+              "B": 1.0,
+              "C": 0.0,
+              "A": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 406,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "No",
+        "probabilities": {
+          "Yes": 0.0,
+          "No": 1.0,
+          "Irrelevant": 0.0,
+          "ASK": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 406,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.15924929999164306,
+      "reference_match": true
+    },
+    {
+      "id": "copy_1_order_1",
+      "case_id": "copy_1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "No",
+          "distractor_action": "Irrelevant"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.492442+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "C",
+            "confidence": 1.0,
+            "probabilities": {
+              "B": 0.0,
+              "A": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 406,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "No",
+        "probabilities": {
+          "ASK": 0.0,
+          "Irrelevant": 0.0,
+          "No": 1.0,
+          "Yes": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 406,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.12258000001020264,
+      "reference_match": true
+    },
+    {
+      "id": "copy_2_order_0",
+      "case_id": "copy_2",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Irrelevant",
+          "distractor_action": "ASK"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.620752+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "C",
+            "confidence": 1.0,
+            "probabilities": {
+              "A": 0.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 406,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "Irrelevant",
+        "probabilities": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "Irrelevant": 1.0,
+          "ASK": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 406,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.163100800011307,
+      "reference_match": true
+    },
+    {
+      "id": "copy_2_order_1",
+      "case_id": "copy_2",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Irrelevant",
+          "distractor_action": "ASK"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.788740+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "B",
+            "confidence": 1.0,
+            "probabilities": {
+              "D": 0.0,
+              "C": 0.0,
+              "A": 0.0,
+              "B": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 406,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "Irrelevant",
+        "probabilities": {
+          "ASK": 0.0,
+          "Irrelevant": 1.0,
+          "No": 0.0,
+          "Yes": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 406,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.13417730000219308,
+      "reference_match": true
+    },
+    {
+      "id": "copy_3_order_0",
+      "case_id": "copy_3",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "ASK",
+          "distractor_action": "Yes"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:10.927909+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "D",
+            "confidence": 1.0,
+            "probabilities": {
+              "D": 1.0,
+              "A": 0.0,
+              "C": 0.0,
+              "B": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 403,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "ASK",
+        "probabilities": {
+          "Yes": 0.0,
+          "No": 0.0,
+          "Irrelevant": 0.0,
+          "ASK": 1.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 403,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.1388137000030838,
+      "reference_match": true
+    },
+    {
+      "id": "copy_3_order_1",
+      "case_id": "copy_3",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "ASK",
+          "distractor_action": "Yes"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      },
+      "status": "finished",
+      "started_at_utc": "2026-09-30T09:21:11.071816+00:00",
+      "http_status": 200,
+      "raw_response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "decision": {
+            "type": "choice",
+            "choice": "A",
+            "confidence": 1.0,
+            "probabilities": {
+              "D": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "C": 0.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 403,
+          "output_tokens": 45
+        }
+      },
+      "parsed": {
+        "action": "ASK",
+        "probabilities": {
+          "ASK": 1.0,
+          "Irrelevant": 0.0,
+          "No": 0.0,
+          "Yes": 0.0
+        },
+        "confidence": 1.0,
+        "input_tokens": 403,
+        "output_tokens": 45
+      },
+      "latency_seconds": 0.1753694000071846,
+      "reference_match": true
+    }
+  ],
+  "retries": 0,
+  "downloads": 0,
+  "source_dataset_items": 0,
+  "human_reviews": 0,
+  "runtime": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "httpx": "0.28.1"
+  },
+  "input_tokens": 3236,
+  "output_tokens": 360,
+  "known_input_price_usd": 0.000135912,
+  "finished_at_utc": "2026-09-30T09:21:11.252262+00:00"
+}

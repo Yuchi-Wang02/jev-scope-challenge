@@ -1,7 +1,9 @@
 # Proposed next-run final-action contract
 
-2026-09-30; implementation and synthetic software checks only. No model outputs
-have been scored with this contract. It is not a frozen inference protocol.
+2026-09-30; implemented interface, subsequently exercised by a separate
+[frozen backend smoke](../action-backends/README.md). It has parsed technical
+label-copy outputs, not ShARC task predictions or a historical research rescore.
+This document is not itself a frozen task-inference protocol.
 
 The [parser](action_interface.py) accepts the following **final-channel** payload:
 
@@ -20,10 +22,10 @@ The parser does not search reasoning text for a convenient answer.
 Termination is a separate requirement: the backend adapter must supply
 `natural_eos` based on saved provider metadata or output token IDs. Length stops,
 errors and unknown reasons are rejected even if the visible text happens to
-contain a complete object. The parser cannot authenticate this metadata. A later
-adapter must be tested against the pinned model's final-channel boundaries and
-termination behavior before an end-to-end run. No Jev adapter is implemented by
-this module; its helper only validates a four-action option permutation.
+contain a complete object. The parser cannot authenticate this metadata. The
+separate [backend adapter](../action-backends/adapters.py) now validates live Jev
+responses and extracts Qwen finals from pinned tokenizer/template boundaries.
+This parser module itself only validates a four-action option permutation.
 
 This change was motivated by the [completed calibration](../generation-calibration/README.md),
 where harmless fences accounted for 13 rejected thinking finals. That historical
@@ -39,8 +41,9 @@ parser fixtures, not an AI evaluation dataset or a model capability result.
 python -m unittest discover -s tests -p test_rule_action_interface.py -v
 ```
 
-Next integration requires completed human review, a separate frozen model
-protocol, backend-specific completion/final-channel extraction, declared prompts
-and budgets, and explicit cost accounting. The existing user authorization
+Task integration still requires completed human review, a separate frozen model
+protocol, declared prompts and budgets, and explicit cost accounting. The backend
+smoke established completion/final-channel extraction on tiny label-copy inputs,
+not task-specific readiness or a sufficient thinking budget. The existing user authorization
 covers bounded runs once those scientific and technical prerequisites are met;
 this document adds no repeated approval requirement.

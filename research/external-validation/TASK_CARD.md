@@ -63,9 +63,11 @@ That observation motivates the proposed wrapper contract; it does not prove a
 task-specific budget or model capability. Hardware capacity alone is not a fair
 comparison protocol.
 
-The proposed [final-action interface](ACTION_INTERFACE.md) is now implemented and
-tested on synthetic parser fixtures. It has not scored model outputs or supplied
-a task-specific budget. Backend final-channel/termination integration remains open.
+The proposed [final-action interface](ACTION_INTERFACE.md) is implemented and
+tested on synthetic parser fixtures. A separate [backend integration smoke](../action-backends/README.md)
+now adds eight live Jev calls and eight local label-copy generations with checked
+final-channel/termination extraction. It supplies neither ShARC predictions nor
+a task-specific budget. The independent-review gate remains unchanged.
 
 ## Nearest-work screen and reuse ledger
 

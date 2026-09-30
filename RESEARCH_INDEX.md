@@ -59,6 +59,12 @@ Markdown JSON blocks containing reference-matching objects, identified in a
 separate post-run inspection. No thinking cap qualifies under the frozen strict
 format gate. This is interface evidence, not 13 proven reasoning errors.
 
+The separate [four-action backend integration](research/action-backends/README.md)
+then completed 8 Jev calls and 8 local generations on four explicit label-copy
+records, all returning the specified label. It validates mappings, token-grounded
+final extraction and accounting, including one predeclared JSON-fence case.
+It does not add ShARC predictions, independent labels or a capability ranking.
+
 ## Analyses of saved outputs and software checks
 
 The computational analyses below add no model forwards or independent human annotations. A large number of

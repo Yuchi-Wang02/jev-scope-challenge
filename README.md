@@ -65,6 +65,12 @@ found their inner objects matched the references. Frozen strict results are reta
 This is a warning about evaluation interfaces, not evidence of a Jev advantage or
 a new reasoning method.
 
+A separate [four-action integration smoke](research/action-backends/README.md)
+has now completed 8 Jev requests and 8 Qwen3.5 generations on four explicit
+label-copy records. Both interfaces return the specified labels; one thinking
+JSON fence is handled by the predeclared future contract. This checks adapters
+and accounting, not natural-language rule reasoning or a capability ranking.
+
 The next external rule-action candidate is [One fact changes. Should the decision
 change?](research/external-validation/TASK_CARD.md). A licensed ShARC review package
 now makes 60 frozen visible inputs available for independent annotation. It has

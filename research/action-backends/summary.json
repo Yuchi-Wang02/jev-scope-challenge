@@ -1,0 +1,69 @@
+{
+  "purpose": "technical label-copy integration only; not research evaluation",
+  "source_dataset_items": 0,
+  "human_reviews": 0,
+  "technical_fixtures": 4,
+  "backends": {
+    "jev": {
+      "run_status": "completed",
+      "freeze_commit": "6f26707137776940a23f022aa39a73b2afc78751",
+      "calls_started": 8,
+      "calls_finished": 8,
+      "matches": 8,
+      "latency_seconds_sum": 1.3299554000259377,
+      "run_sha256": "746065434596e8163ab20ed6a49147b91ea4a9a469eedaad5787354dc9039690",
+      "events_sha256": "6f1f20e98b9319ece8bd9f7953d2ddc4754c2fd6798281bd150b7271c6c2402f",
+      "input_tokens": 3236,
+      "output_tokens": 360,
+      "input_price_estimate_usd": 0.000135912,
+      "usage_missing_attempts": 0
+    },
+    "qwen": {
+      "run_status": "completed",
+      "freeze_commit": "6f26707137776940a23f022aa39a73b2afc78751",
+      "calls_started": 8,
+      "calls_finished": 8,
+      "matches": 8,
+      "latency_seconds_sum": 70.04778590000933,
+      "run_sha256": "2a0f2e7d49ad78936761dcd156e3d98fa676e37deeb92e66e988c42f8bfcbebc",
+      "events_sha256": "4d3670ca541d4857d412f76bd58f5b853e8fff6cffc61e21067c2fc4f86e82da",
+      "input_tokens": 764,
+      "generated_tokens": 2195,
+      "modes": {
+        "direct": {
+          "calls": 4,
+          "matches": 4,
+          "natural_eos": 4,
+          "wrappers": {
+            "bare_json": 4
+          },
+          "generated_tokens": 28
+        },
+        "thinking": {
+          "calls": 4,
+          "matches": 4,
+          "natural_eos": 4,
+          "wrappers": {
+            "bare_json": 3,
+            "fenced_json": 1
+          },
+          "generated_tokens": 2167
+        }
+      },
+      "load_seconds": 3.5570433999964735,
+      "generation_wall_seconds": 70.11319129999902
+    }
+  },
+  "source_line_endings": {
+    "research/action-backends/run.py": "Git blob bytes",
+    "research/action-backends/adapters.py": "Git blob bytes",
+    "research/action-backends/plan.py": "Git blob bytes",
+    "research/action-backends/plan.json": "Git blob bytes",
+    "research/action-backends/PROTOCOL.md": "Git blob bytes",
+    "research/external-validation/action_interface.py": "Git blob bytes",
+    "research/generation-calibration/interface.py": "Git blob bytes",
+    "research/generation-calibration/settings.py": "Git blob bytes",
+    "research/payment-ownership/run_api_v02.py": "CRLF checkout bytes",
+    "research/payment-ownership/study.py": "Git blob bytes"
+  }
+}

@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — live four-action backend integration
+
+Completed the fixed 8-request Jev and 8-generation Qwen3.5 technical label-copy
+smoke with no retries or downloads. Saved all requests/responses, probabilities,
+token IDs, settings, timing and start/finish events. Added offline freeze, mapping,
+budget and tokenizer-boundary audits. One thinking JSON fence was accepted under
+the predeclared prospective contract. These are interface checks, not ShARC
+results or a model ranking; the independent-review gate stays unchanged.
+
 ## 2026-09-30 — prospective rule-action parser
 
 Implemented a separate four-action final parser for future work: exact bare JSON

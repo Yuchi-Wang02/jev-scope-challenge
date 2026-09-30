@@ -1,0 +1,20 @@
+{
+  "model_forwards": 0,
+  "http_calls": 0,
+  "run_sha256": "2a0f2e7d49ad78936761dcd156e3d98fa676e37deeb92e66e988c42f8bfcbebc",
+  "record_ids": [
+    "copy_0_direct",
+    "copy_0_thinking",
+    "copy_1_direct",
+    "copy_1_thinking",
+    "copy_2_direct",
+    "copy_2_thinking",
+    "copy_3_direct",
+    "copy_3_thinking"
+  ],
+  "tokenizer_files": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+  }
+}
