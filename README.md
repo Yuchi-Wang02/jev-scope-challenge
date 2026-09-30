@@ -21,10 +21,14 @@ or API call.
 The reveal also shows the grammar-specific Python control that solved all 12
 predefined cases; this synthetic probe does not show that Jev is necessary.
 
-The separate [wrong-action vs needless-deferral calculator](https://yuchi-wang02.github.io/jev-scope-challenge/risk_tradeoff.html)
-replays three saved historical Kev-LoRA development paths. It exposes the
-hypothetical cost ratio where fewer wrong actions outweigh extra abstentions;
-it is not a new Jev comparison or a real-world utility estimate.
+The separate [Can 548 calls beat always deferring? calculator](https://yuchi-wang02.github.io/jev-scope-challenge/risk_tradeoff.html)
+compares three saved historical Kev-LoRA development paths with zero-model-call
+always-defer and grammar-specific code controls. Charging only needless deferrals
+makes the line reader never optimal; charging every deferral gives it a narrow
+winning range among the model paths and always-defer, where the grammar-specific
+code still has lower loss. These are hypothetical cost assumptions on 72 synthetic
+views, not new Jev results or measured real-world utility. The controls correct an
+earlier three-path comparison that emphasized a pairwise crossover.
 
 ![All predefined case results](assets/scope-results.png)
 

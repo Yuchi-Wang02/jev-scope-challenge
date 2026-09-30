@@ -93,3 +93,37 @@ on unreviewed rewrites would not make the evidence stronger.
 The [post-hoc oracle decomposition](LINE_ORACLE_DECOMPOSITION.md) quantifies
 which program-labeled line errors would need correction. It is a diagnostic,
 not a tested repair.
+
+## Cost sensitivity correction: include the zero-call controls
+
+The later [interactive cost explorer](../../docs/risk_tradeoff.html) initially
+compared only the three model paths. Adding always-defer and rerunning the
+existing visible-text grammar parser offline changes the interpretation without
+changing any saved model prediction. The constant baseline reads no reference
+label at runtime, and the grammar parser receives only state and policy text;
+program-derived labels grade their outputs afterwards.
+
+|Path on the same 72 views|Wrong actions|Needless deferrals|All deferrals|Model calls|
+|---|---:|---:|---:|---:|
+|Direct|36|5|6|72|
+|Whole-state facts + code|20|8|18|168|
+|Line-by-line facts + code|6|37|55|548|
+|Always defer|0|48|72|0|
+|Known-grammar code|0|0|24|0|
+
+Let a wrong action cost `r` units and a charged deferral cost one, excluding
+computation. If only needless deferrals are charged, the line method's loss
+`6r + 37` never reaches the four-path minimum for any `r >= 0`: whole-state
+`20r + 8` beats it through `r = 2`, and always-defer's constant 48 beats it
+from there onwards. If every deferral is charged, including correct uncertainty,
+line loss becomes `6r + 55`; it is the unique minimum among the three model
+paths and always-defer only for `37/14 < r < 17/6`, with ties at the endpoints.
+Known-grammar code has loss 0 under the first convention and 24 under the second,
+so it beats the line method throughout that interval. This control knows the
+synthetic grammar and does not establish a general language parser.
+
+These are post-hoc hypothetical loss calculations, not measurements of human
+handling quality, money, harm or end-to-end runtime. Zero model calls does not
+mean measured zero CPU time. The exact range calculation and source fingerprints
+are in [the page builder](../../docs/build_risk_tradeoff.py); it adds no model
+inference, independent annotation or confirmation claim.

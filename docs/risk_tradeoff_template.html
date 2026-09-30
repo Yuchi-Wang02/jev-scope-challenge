@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="data:,">
-<title>When should a model say “I don't know”? · Jev Scope Challenge</title>
+<title>Can 548 calls beat always deferring? · Jev Scope Challenge</title>
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#162c37;background:#f4f0e7;color-scheme:light}
 *{box-sizing:border-box}body{margin:0}a{color:inherit}button,input{font:inherit}a:focus-visible,input:focus-visible{outline:3px solid #f7b36f;outline-offset:3px}
@@ -13,8 +13,9 @@
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.55fr);gap:35px;align-items:end}.hero h1{font-size:clamp(42px,6.5vw,75px);letter-spacing:-.067em;line-height:1.02;margin:0;max-width:760px}.hero h1 em{font-style:normal;color:#fac083}.hero p{color:#cbdbd6;line-height:1.65;font-size:17px;max-width:680px;margin:23px 0 0}.threshold{background:#20444e;border:1px solid #5c8688;border-radius:19px;padding:24px;box-shadow:13px 13px 0 #0e2530}.threshold span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#86dcca;font-weight:850}.threshold strong{display:block;font-size:64px;letter-spacing:-.08em;line-height:1;margin:13px 0}.threshold p{font-size:13px;line-height:1.55;margin:0;color:#d0e1da}
 main{padding-top:36px;padding-bottom:70px}.lead{font-size:18px;line-height:1.65;max-width:900px}.lead strong{color:#1b6d5a}.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:30px 0 45px}.fact{border-radius:15px;padding:20px 24px;border:1px solid #c7d7d0;background:#fff}.fact.line{background:#e3f1e9;border-color:#b6d4c1}.fact .label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:#4d6d64}.fact strong{display:block;font-size:31px;letter-spacing:-.045em;margin:8px 0}.fact p{font-size:13px;line-height:1.55;margin:0;color:#526b64}
 .calculator{background:#fff;border:1px solid #ccd9d1;border-radius:20px;padding:clamp(21px,4vw,40px);box-shadow:0 13px 35px #153d3220}.calculator h2{font-size:clamp(26px,4vw,39px);letter-spacing:-.05em;margin:0}.calculator p{line-height:1.6;color:#566f68}.calc-label{display:flex;justify-content:space-between;gap:16px;align-items:baseline;font-weight:800;margin:27px 0 11px}.calc-label output{color:#1b6e5b;font-size:26px;letter-spacing:-.04em;white-space:nowrap}input[type=range]{width:100%;accent-color:#1c7862;cursor:pointer}.ticks{display:flex;justify-content:space-between;color:#728780;font-size:11px;margin:5px 1px 26px}.equation{font-size:13px;border-left:4px solid #7cc5ac;background:#edf7f1;padding:13px 17px;line-height:1.55;margin-bottom:28px}.winner{font-weight:800;color:#1c6956;min-height:28px}
-.bars{display:grid;gap:18px;margin-top:17px}.bar-head{display:flex;justify-content:space-between;gap:14px;font-size:14px;font-weight:750;margin-bottom:7px}.bar-head span:last-child{white-space:nowrap}.bar-track{height:26px;border-radius:6px;background:#e6ece7;overflow:hidden}.bar-fill{height:100%;background:#98ada9;border-radius:6px;transition:width .18s ease}.bar-row.best .bar-fill{background:#24a27b}.bar-row.best .bar-head{color:#137050}.bar-row.line .bar-fill{background:#e6b170}.bar-row.line.best .bar-fill{background:#24a27b}.parent-note{margin:23px 0 0;padding:15px 18px;background:#f9f5eb;border-radius:11px;font-size:13px;line-height:1.6;color:#52685e}
+.bars{display:grid;gap:18px;margin-top:17px}.bar-head{display:flex;justify-content:space-between;gap:14px;font-size:14px;font-weight:750;margin-bottom:7px}.bar-head span:last-child{white-space:nowrap}.bar-track{height:26px;border-radius:6px;background:#e6ece7;overflow:hidden}.bar-fill{height:100%;background:#98ada9;border-radius:6px;transition:width .18s ease}.bar-row.best .bar-fill{background:#24a27b}.bar-row.best .bar-head{color:#137050}.bar-row.method-line .bar-fill{background:#e6b170}.bar-row.method-line.best .bar-fill{background:#24a27b}.parent-note{margin:23px 0 0;padding:15px 18px;background:#f9f5eb;border-radius:11px;font-size:13px;line-height:1.6;color:#52685e}
 .section{margin-top:53px}.section h2{font-size:clamp(26px,3.8vw,37px);letter-spacing:-.05em;margin:0 0 10px}.section p{line-height:1.65;color:#4e6760;max-width:930px}.scroll{overflow-x:auto}.table{border-collapse:collapse;width:100%;min-width:690px;background:#fff;border:1px solid #d7e0d8}.table th,.table td{text-align:right;padding:13px 14px;border-bottom:1px solid #e4ebe5;font-size:13px}.table th:first-child,.table td:first-child{text-align:left}.table th{background:#e9f2eb;color:#2a5a4d}.table tr:last-child td{border-bottom:0}.note{font-size:13px;line-height:1.65;border-left:4px solid #e5b26d;padding:12px 17px;background:#fff8ec;margin-top:18px}.source-links{display:flex;gap:15px;flex-wrap:wrap;margin-top:20px}.source-links a{color:#126b54;font-size:13px;font-weight:750}.source-links a:hover{text-decoration-thickness:2px}.footer{border-top:1px solid #cbd6cd;margin-top:54px;padding-top:17px;font-size:12px;color:#667b72;line-height:1.6}
+.modes{border:0;padding:0;margin:22px 0;display:grid;gap:10px}.modes legend{font-weight:800;margin-bottom:10px}.modes label{border:1px solid #bdcec3;border-radius:10px;padding:13px;cursor:pointer}.modes label:has(input:checked){background:#e6f3ea;border-color:#318b69}.modes small{display:block;margin:5px 0 0 23px;color:#61776c}.scope-result{padding:13px 16px;background:#edf5ef;border-radius:9px;line-height:1.6;font-size:14px;margin:14px 0}.proof code{overflow-wrap:anywhere}.bar-row.method-grammar .bar-fill{background:#80709c}.table.envelope{min-width:400px}.table.envelope th,.table.envelope td{text-align:left}
 @media(max-width:780px){.hero-grid{grid-template-columns:1fr}.threshold{max-width:410px}.facts{grid-template-columns:1fr}}
 @media(max-width:480px){.wrap{padding-left:17px;padding-right:17px}.hero .wrap{padding-bottom:48px}.hero h1{font-size:44px}.hero p{font-size:15px}.threshold strong{font-size:56px}.calc-label{align-items:start;flex-direction:column;gap:0}.calc-label output{font-size:23px}}
 </style>
@@ -23,66 +24,76 @@ main{padding-top:36px;padding-bottom:70px}.lead{font-size:18px;line-height:1.65;
 <header class="hero"><div class="wrap">
   <a class="back" href="index.html">← Back to the four-line Jev challenge</a>
   <div class="eyebrow">A separate Kev-LoRA development study · no Jev run here</div>
-  <div class="hero-grid"><div><h1>How many “I don't knows”<br>equal <em>one wrong action?</em></h1><p>On the same 72 synthetic texts, the line-by-line reader made 14 fewer wrong actions than a whole-state reader—but created 29 more needless deferrals. Move the cost ratio to see exactly when the ranking changes.</p></div><div class="threshold"><span>Decision-only crossover</span><strong id="threshold">≈2.07×</strong><p>Above the exact 29/14 ratio, the line reader has lower weighted error on these saved decisions. Computation is excluded from this threshold.</p></div></div>
+  <div class="hero-grid"><div><h1>Can 548 calls beat<br><em>always deferring?</em></h1><p>The line reader made 14 fewer wrong actions than a whole-state reader, with 29 more needless deferrals. Add an always-defer baseline and change which deferrals cost effort: a pairwise win can disappear.</p></div><div class="threshold"><span>The missing comparator</span><strong>0 calls</strong><p>Always choose INSUFFICIENT: zero wrong actions, 48 needless deferrals, 72 total deferrals on these same synthetic views.</p></div></div>
 </div></header>
 <main class="wrap">
-  <p class="lead">These are <strong>three historical paths through one pinned Kev-LoRA N1 model</strong>, not three independent models. The reference actions come from an artificial policy grammar, with no independent human label audit. The slider does not estimate a real organization's costs.</p>
+  <p class="lead">Compare <strong>three historical paths through one pinned Kev-LoRA N1 model and two offline code controls</strong> on 72 synthetic views. The controls are newly derived from the same visible texts; no new model ran. Reference actions are program-derived with no independent human label audit. Interpreting INSUFFICIENT as a deferral is a hypothetical operational choice.</p>
   <div class="facts"><div class="fact"><div class="label">Whole-state facts + code</div><strong>20 wrong actions · 8 needless deferrals</strong><p>168 forwards; 63,467 input tokens on the original development texts.</p></div><div class="fact line"><div class="label">Line-by-line facts + code</div><strong>6 wrong actions · 37 needless deferrals</strong><p>548 forwards; 133,977 input tokens on those same texts. Its prewritten screening rule failed.</p></div></div>
   <section class="calculator" aria-labelledby="calculator-title">
     <h2 id="calculator-title">Choose a hypothetical cost ratio</h2>
-    <p>Set the cost of one wrong action relative to one needless deferral. Zero is only a mathematical edge case that ignores wrong actions. This is a sensitivity check, not a deployment recommendation.</p>
-    <label class="calc-label" for="ratio"><span>Wrong action cost ÷ needless deferral cost</span><output id="ratio-value" for="ratio">1.00×</output></label>
+    <p>Correct uncertainty can still consume a human's time. Choose whether to charge only avoidable deferrals or every deferral, then assign a hypothetical wrong-action cost. Zero ignores wrong actions; it is a mathematical edge case.</p>
+    <fieldset class="modes"><legend>Which deferrals cost one unit?</legend><label><input type="radio" name="cost-mode" value="needless_deferrals" checked> Only needless deferrals<small>Correct INSUFFICIENT decisions have zero cost.</small></label><label><input type="radio" name="cost-mode" value="all_deferrals"> Every deferral<small>Every INSUFFICIENT decision costs one unit, including correct uncertainty.</small></label></fieldset>
+    <label class="calc-label" for="ratio"><span>Wrong action cost ÷ charged deferral cost</span><output id="ratio-value" for="ratio">1.00×</output></label>
     <input id="ratio" type="range" min="0" max="10" step="0.01" value="1" aria-describedby="formula">
     <div class="ticks"><span>0×</span><span>2×</span><span>4×</span><span>6×</span><span>8×</span><span>10×</span></div>
-    <div id="formula" class="equation"><strong>Weighted errors</strong> = wrong actions × your ratio + needless deferrals. Call and token costs remain separate below.</div>
+    <div id="formula" class="equation"></div>
     <div id="winner" class="winner" role="status" aria-live="polite"></div>
-    <div id="bars" class="bars" aria-label="Weighted error comparison"></div>
+    <div id="generic-winner" class="scope-result" role="status" aria-live="polite"></div>
+    <div id="bars" class="bars" aria-label="Hypothetical loss comparison"></div>
     <div id="parent-note" class="parent-note"></div>
+    <h3>Exact cost ranges, including always-defer</h3><p id="envelope-summary"></p>
+    <div class="scroll"><table class="table envelope"><thead><tr><th>Wrong-action cost ratio</th><th>Lowest loss among model paths and always-defer</th></tr></thead><tbody id="envelope"></tbody></table></div>
+    <p>Neighboring paths tie at the shared interval boundaries. The grammar-specific control is shown in the chart above and evaluated separately from this four-path table.</p>
   </section>
   <section class="section"><h2>What the counts mean</h2><p>A <strong>wrong action</strong> is any non-INSUFFICIENT prediction that disagrees with the program-derived reference. That includes committing on an uncertain input and choosing the opposite action on a determined input. A <strong>needless deferral</strong> is INSUFFICIENT when the reference has a determined action. Every one of the 72 views belongs to exactly one of these errors or to correct decisions.</p>
-    <div class="scroll"><table class="table"><thead><tr><th>Saved N1 path</th><th>Correct /72</th><th>Wrong actions</th><th>Needless deferrals</th><th>Forwards</th><th>Input tokens</th><th>Summed forward time</th></tr></thead><tbody id="outcomes"></tbody></table></div>
-    <div class="note">The 72 views come from 12 six-view synthetic parent groups; they are not 72 independent sampled cases. The prompts and computational budgets differ. Forward time sums individual measured calls; it is not end-to-end latency. No monetary cost, task-specific harm weight, probability calibration, Jev score or future generalization is inferred by this page.</div>
+    <div class="scroll"><table class="table"><thead><tr><th>Comparator</th><th>Correct /72</th><th>Wrong actions</th><th>Needless deferrals</th><th>All deferrals</th><th>Model forwards</th><th>Model input tokens</th><th>Summed model forward time</th></tr></thead><tbody id="outcomes"></tbody></table></div>
+    <div class="note">The 72 views come from 12 six-view synthetic parent groups. Prompts and budgets differ. Model forward time sums individual calls; it is not end-to-end latency. Zero model calls for the controls does not mean measured zero CPU runtime; their CPU time was not benchmarked. Monetary cost, actual human handling quality, harm weights and future generalization are unmeasured. Computation is excluded from both loss formulas.</div>
   </section>
-  <section class="section"><h2>Inspect every assumption</h2><p>At the crossover, the line method's 14 fewer wrong actions exactly offset its 29 additional needless deferrals: <code>14 × ratio = 29</code>. The direct one-call path is included as a baseline. A known-grammar pure-code reference solved these constructed texts, so the exercise does not show a model is necessary.</p>
+  <section class="section proof"><h2>The pairwise crossover is not the optimum</h2><p>With needless deferrals charged, whole-state loss is <code>20r + 8</code>, line loss <code>6r + 37</code>, and always-defer loss <code>48</code>. The line/whole-state crossover remains <code>r = 29/14 ≈ 2.07</code>. However, for <code>r ≤ 2</code> the line method is at least one loss unit above whole-state; for <code>r ≥ 2</code> it is at least one unit above always-defer. It never minimizes this loss for any nonnegative ratio.</p><p>Charge every deferral and the intercepts change to 18, 55 and 72. The line method is the unique minimum among those generic paths for <code>37/14 &lt; r &lt; 17/6</code>, approximately 2.64–2.83, and ties at the endpoints. The declared-grammar parser has no outcome errors and 24 correct INSUFFICIENT outputs, so its loss is 0 in the first mode and 24 in the second. It beats the line method throughout that narrow interval. Its advantage is specific to this known grammar.</p><p>The previous page compared only the three model paths and emphasized their pairwise crossover. Adding the two zero-model-call controls changes that interpretation; the saved predictions and the prewritten screening rule are unchanged.</p><p>The exact intervals are computed with rational arithmetic from saved counts, not a slider grid. These post-hoc utility calculations do not establish a new inference algorithm.</p>
     <div class="source-links"><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/fact-execution/PARENT_PAIRED_AUDIT.md">12-parent paired audit</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/fact-execution/LINE_EVIDENCE_RESULTS.md">Line pilot and negative result</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/fact-execution/results/decisions.jsonl">Whole-state and direct decisions</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/fact-execution/line_results/v0.1/decisions.jsonl">Line-wise decisions</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/docs/build_risk_tradeoff.py">Page builder and integrity checks</a></div>
   </section>
-  <div class="footer">The page is an offline replay of saved decisions. Moving the slider makes no model or API call and sends no data. This is a post-hoc explanation of a failed development candidate, not a new experiment or real-world utility estimate.</div>
+  <div class="footer">The page combines saved model decisions with a constant deferral control and the existing visible-text grammar parser. Moving a control makes no model or API call and sends no data. It explains assumptions in a failed development study; it does not estimate real-world utility.</div>
 </main>
 <script id="tradeoff-data" type="application/json">__TRADEOFF_DATA__</script>
 <script>
 'use strict';
 (() => {
   const data = JSON.parse(document.getElementById('tradeoff-data').textContent);
-  const names = {direct:'Direct · one call', facts:'Whole-state facts + code', line:'Line-by-line facts + code'};
-  const order = ['direct','facts','line'];
+  const names = {direct:'Direct · one call', facts:'Whole-state facts + code', line:'Line-by-line facts + code',defer:'Always defer · zero model calls',grammar:'Declared-grammar code · task-specific'};
+  const order = ['direct','facts','line','defer','grammar'];
+  const generic = ['direct','facts','line','defer'];
   const ratio = document.getElementById('ratio');
-  const threshold = (data.methods.line.needless_deferrals - data.methods.facts.needless_deferrals) /
-    (data.methods.facts.wrong_actions - data.methods.line.wrong_actions);
-  if (Math.abs(threshold - 29/14) > 1e-12) throw new Error('Saved crossover count mismatch');
-  document.getElementById('threshold').textContent = '≈' + threshold.toFixed(2) + '×';
   const tbody = document.getElementById('outcomes');
   order.forEach(key => {
     const m = data.methods[key], tr = document.createElement('tr');
-    [names[key],m.correct+'/72',m.wrong_actions,m.needless_deferrals,m.calls,
-     m.input_tokens.toLocaleString('en-US'),m.forward_seconds.toFixed(1)+' s']
+    [names[key],m.correct+'/72',m.wrong_actions,m.needless_deferrals,m.all_deferrals,m.calls,
+     m.input_tokens.toLocaleString('en-US'),m.forward_seconds===null?'Not measured':m.forward_seconds.toFixed(1)+' s']
       .forEach(value => {const td=document.createElement('td');td.textContent=value;tr.appendChild(td);});
     tbody.appendChild(tr);
   });
   function render() {
     const r = Number(ratio.value);
+    const mode = document.querySelector('input[name="cost-mode"]:checked').value;
     document.getElementById('ratio-value').textContent = r.toFixed(2) + '×';
+    document.getElementById('formula').textContent = 'Hypothetical loss = wrong actions × your ratio + '+
+      (mode==='all_deferrals'?'every deferral':'needless deferrals')+'. Computation is excluded.';
     const losses = Object.fromEntries(order.map(key => [key,
-      data.methods[key].wrong_actions*r+data.methods[key].needless_deferrals]));
+      data.methods[key].wrong_actions*r+data.methods[key][mode]]));
     const lowest = Math.min(...Object.values(losses)), highest = Math.max(...Object.values(losses));
     const winners = order.filter(key => Math.abs(losses[key]-lowest)<1e-9);
     document.getElementById('winner').textContent = winners.map(key => names[key]).join(' and ') +
-      (winners.length>1?' tie for':' has') + ' the lowest weighted error on these 72 views.';
+      (winners.length>1?' tie for':' has') + ' the lowest hypothetical loss among all five comparators.';
+    const genericLowest=Math.min(...generic.map(key=>losses[key]));
+    const genericWinners=generic.filter(key=>Math.abs(losses[key]-genericLowest)<1e-9);
+    document.getElementById('generic-winner').textContent='Among the three model paths and always-defer: '+
+      genericWinners.map(key=>names[key]).join(' and ')+(genericWinners.length>1?' tie at ':' leads at ')+
+      genericLowest.toFixed(2)+' loss units. The grammar-specific code is included in the complete comparison above.';
     const bars=document.getElementById('bars');bars.replaceChildren();
     order.forEach(key => {
-      const row=document.createElement('div');row.className='bar-row '+key+(winners.includes(key)?' best':'');
+      const row=document.createElement('div');row.className='bar-row method-'+key+(winners.includes(key)?' best':'');
       const head=document.createElement('div');head.className='bar-head';
       const label=document.createElement('span');label.textContent=names[key];
-      const value=document.createElement('span');value.textContent=losses[key].toFixed(2)+' weighted errors';
+      const value=document.createElement('span');value.textContent=losses[key].toFixed(2)+' loss units';
       head.append(label,value);row.appendChild(head);
       const track=document.createElement('div');track.className='bar-track';
       const fill=document.createElement('div');fill.className='bar-fill';
@@ -91,16 +102,27 @@ main{padding-top:36px;padding-bottom:70px}.lead{font-size:18px;line-height:1.65;
     let line=0,facts=0,tied=0;
     Object.keys(data.methods.facts.parents).forEach(parent => {
       const f=data.methods.facts.parents[parent],l=data.methods.line.parents[parent];
-      const fLoss=f.wrong_actions*r+f.needless_deferrals,lLoss=l.wrong_actions*r+l.needless_deferrals;
+      const fLoss=f.wrong_actions*r+f[mode],lLoss=l.wrong_actions*r+l[mode];
       if (lLoss<fLoss-1e-9) line++;
       else if (fLoss<lLoss-1e-9) facts++;
       else tied++;
     });
     document.getElementById('parent-note').textContent =
-      'Parent-level check: at this ratio, the line method has lower weighted error in '+line+
+      'Pairwise parent check (line versus whole-state only): line has lower hypothetical loss in '+line+
       ' of 12 parent groups; whole-state facts in '+facts+'; tied in '+tied+
       '. This is still the same constructed development corpus.';
+    document.getElementById('envelope-summary').textContent=mode==='needless_deferrals'?
+      'With only needless deferrals charged, the line method never leads these four paths at any nonnegative ratio.':
+      'Charging every deferral creates a narrow line-method interval: 37/14 to 17/6, about 2.64 to 2.83. The grammar-specific control is cheaper throughout it.';
+    const envelope=document.getElementById('envelope');envelope.replaceChildren();
+    data.exact_envelopes_without_grammar[mode].intervals.forEach(interval=>{
+      const tr=document.createElement('tr'),range=document.createElement('td'),method=document.createElement('td');
+      range.textContent=interval.start+' to '+(interval.end===null?'∞':interval.end);
+      method.textContent=interval.winners.map(key=>names[key]).join(' / ');
+      tr.append(range,method);envelope.appendChild(tr);
+    });
   }
+  document.querySelectorAll('input[name="cost-mode"]').forEach(input=>input.addEventListener('change',render));
   ratio.addEventListener('input',render);render();
 })();
 </script>

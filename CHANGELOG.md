@@ -1,5 +1,16 @@
 # Release notes
 
+## 2026-09-29 — cost explorer baseline correction
+
+Added always-defer and the existing visible-text known-grammar parser to the
+post-hoc cost explorer. The previous version showed only three saved model
+paths and emphasized their pairwise crossover. The line reader never minimizes
+loss when only needless deferrals cost one unit; charging all deferrals gives
+it a narrow four-path winning range, where the grammar-specific code is cheaper.
+Both conventions now have exact rational intervals and boundary ties, with
+outcomes and unmatched model budgets visible. No model prediction, frozen
+protocol, model call or human annotation was added or changed.
+
 ## 2026-09-29 — series attribution audit and review preparation
 
 Added prominent Kev/Laya/Qwen/TypeSafe credit, an exact-revision reuse inventory,

@@ -34,6 +34,7 @@ python research/fact-execution/joint_route_plan.py verify
 python research/fact-execution/joint_token_control.py verify
 python research/fact-execution/joint_execution.py verify-freeze
 python docs/build_four_line_challenge.py verify
+python docs/build_risk_tradeoff.py verify
 python verify_publication.py
 ```
 
@@ -45,6 +46,13 @@ The four-line challenge verifier rebuilds the standalone page from the pinned
 S01 input texts and all 32 saved S01 model decisions across backends, mappings
 and rounds. It also recomputes the four grammar-specific code decisions and
 checks the full-probe code summary; it does not call either model.
+
+The cost explorer verifier recomputes the three saved N1 development paths,
+derives always-defer and the existing grammar parser from visible inputs, then
+grades their predictions against program-derived labels. It uses exact rational
+arithmetic to find optimal ranges under two hypothetical loss definitions. It
+makes no model calls; the controls' CPU time and actual human handling costs
+were not benchmarked. Its 72 views are the same public development inputs.
 
 ## Original cancellation evidence
 
