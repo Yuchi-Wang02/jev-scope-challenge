@@ -24,6 +24,9 @@ The [paired parent audit](research/fact-execution/PARENT_PAIRED_AUDIT.md)
 shows determined correctness fell in 10 of 12 parent groups while false
 commitments fell in eight; it recomputes saved decisions without new calls or
 an inferential claim.
+The [interactive cost sensitivity page](docs/risk_tradeoff.html) derives a
+decision-only crossover from those saved errors and displays unmatched call
+and input-token budgets separately. Its slider is an explainer, not a score.
 The [16-way post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
 uses unavailable construction labels to diagnose binding errors; it adds no
 model measurement.

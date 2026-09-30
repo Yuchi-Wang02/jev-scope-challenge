@@ -21,6 +21,11 @@ or API call.
 The reveal also shows the grammar-specific Python control that solved all 12
 predefined cases; this synthetic probe does not show that Jev is necessary.
 
+The separate [wrong-action vs needless-deferral calculator](https://yuchi-wang02.github.io/jev-scope-challenge/risk_tradeoff.html)
+replays three saved historical Kev-LoRA development paths. It exposes the
+hypothetical cost ratio where fewer wrong actions outweigh extra abstentions;
+it is not a new Jev comparison or a real-world utility estimate.
+
 ![All predefined case results](assets/scope-results.png)
 
 ## The four-line challenge
