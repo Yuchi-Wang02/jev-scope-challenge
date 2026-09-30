@@ -42,8 +42,9 @@ publication bundles and other preparation artifacts. Offline consistency is
 different from reproducing model inference in a new environment or auditing
 labels independently. Our original outputs and failed attempt remain available.
 The four-line challenge verifier rebuilds the standalone page from the pinned
-S01 input texts and all 32 saved S01 decisions across backends, mappings and
-rounds; it does not call either model.
+S01 input texts and all 32 saved S01 model decisions across backends, mappings
+and rounds. It also recomputes the four grammar-specific code decisions and
+checks the full-probe code summary; it does not call either model.
 
 ## Original cancellation evidence
 

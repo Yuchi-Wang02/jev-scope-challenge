@@ -7,12 +7,17 @@ import argparse
 import csv
 import json
 import re
+import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from core import grammar_reference  # noqa: E402 - root is added above
+
 CASES = ROOT / 'data' / 'cases.jsonl'
 DECISIONS = ROOT / 'results' / 'decisions.csv'
+SUMMARY = ROOT / 'results' / 'summary.json'
 TEMPLATE = ROOT / 'docs' / 'four_line_template.html'
 OUTPUTS = (ROOT / 'docs' / 'four_line_challenge.html',
            ROOT / 'docs' / 'index.html')
@@ -65,12 +70,25 @@ def challenge_data():
         for round_ in ROUNDS} for backend in BACKENDS}
     if counts != {'jev': {'0': 8, '1': 8}, 'qwen': {'0': 6, '1': 6}}:
         raise ValueError('S01 headline counts changed')
+    code_reference = [
+        {'case_id': case['id'],
+         'prediction': grammar_reference({'target': case['target'],
+                                          'customer_message': case['customer_message']})}
+        for case in cases]
+    if any(row['prediction'] != case_by_id[row['case_id']]['gold']
+           for row in code_reference):
+        raise ValueError('Known-grammar code no longer solves S01')
+    code_summary = json.loads(SUMMARY.read_text(encoding='utf-8'))[
+        'references']['known_grammar']['rounds']['0']
+    if code_summary['correct'] != 96 or code_summary['robust_pass'] != 12:
+        raise ValueError('Published full-probe code reference changed')
     return {'cases': visible, 'records': [
         {'backend': backend, 'round': round_, 'mapping': mapping,
          'case_id': case['id'], 'prediction': records[(backend, round_, mapping, case['id'])]}
         for round_ in ROUNDS for mapping in MAPPINGS
         for backend in BACKENDS for case in cases],
-        'counts': counts}
+        'counts': counts, 'code_reference': code_reference,
+        'code_complete_cases': code_summary['robust_pass']}
 
 
 def render():
@@ -93,7 +111,8 @@ def main():
     elif any(output.read_bytes() != result for output in OUTPUTS):
         raise ValueError('Published challenge differs from frozen cases/results/template')
     print(json.dumps({'status': args.command, 'cases': 4,
-                      'saved_model_decisions': 32, 'new_model_calls': 0,
+                      'saved_model_decisions': 32,
+                      'derived_code_decisions': 4, 'new_model_calls': 0,
                       'outputs': [str(output) for output in OUTPUTS]}))
 
 

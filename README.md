@@ -18,6 +18,8 @@ The direction persisted across both candidate mappings and the repeat. This iden
 before seeing the model decisions. A [standalone HTML copy](docs/four_line_challenge.html)
 also runs offline. Both replay the saved S01 case; your choices trigger no model
 or API call.
+The reveal also shows the grammar-specific Python control that solved all 12
+predefined cases; this synthetic probe does not show that Jev is necessary.
 
 ![All predefined case results](assets/scope-results.png)
 
