@@ -1,0 +1,207 @@
+{
+  "captured_at_utc": "2026-09-30T14:21:53.434623+00:00",
+  "scope": "Focused known-cache inventory; not an exhaustive machine search or capability test",
+  "new_model_calls": 0,
+  "weight_downloads": 0,
+  "gpu_snapshot_csv": "NVIDIA GeForce RTX 5070 Ti, 16303 MiB, 2124 MiB",
+  "roots": [
+    {
+      "location_label": "project_models",
+      "exists": true,
+      "entries": [
+        {
+          "relative_directory": "qwen35-4b-851bf6e",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+          "model_type": "qwen3_5",
+          "architectures": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 2,
+          "present_weight_files": 2,
+          "missing_weight_files": [],
+          "present_weight_bytes": 9319828096,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        }
+      ]
+    },
+    {
+      "location_label": "historical_base_adapter_cache",
+      "exists": true,
+      "entries": [
+        {
+          "relative_directory": "models--jaredpalmer--kev-4b/snapshots/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416",
+          "kind": "adapter",
+          "config_file": "adapter_config.json",
+          "config_sha256": "46d9f1113377e8d0032f0548ae03b270153b2b7ba6dd26b63b244d29487e00e6",
+          "model_type": null,
+          "architectures": null,
+          "base_model_name_or_path": "Qwen/Qwen3-4B-Base",
+          "declared_weight_files": 1,
+          "present_weight_files": 1,
+          "missing_weight_files": [],
+          "present_weight_bytes": 132184864,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Qwen--Qwen3-4B-Base/snapshots/906bfd4b4dc7f14ee4320094d8b41684abff8539",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "304b2545a258d35620f1d4bf46940c0471d9baa00715ff8e77f84c2fca5057c1",
+          "model_type": "qwen3",
+          "architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 3,
+          "present_weight_files": 3,
+          "missing_weight_files": [],
+          "present_weight_bytes": 8044982000,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        }
+      ]
+    },
+    {
+      "location_label": "earlier_instruction_cache",
+      "exists": true,
+      "entries": [
+        {
+          "relative_directory": "models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+          "model_type": "qwen3",
+          "architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 1,
+          "present_weight_files": 1,
+          "missing_weight_files": [],
+          "present_weight_bytes": 1503300328,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+          "model_type": "qwen3",
+          "architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 2,
+          "present_weight_files": 2,
+          "missing_weight_files": [],
+          "present_weight_bytes": 4063515592,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+          "model_type": "qwen3",
+          "architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 3,
+          "present_weight_files": 3,
+          "missing_weight_files": [],
+          "present_weight_bytes": 8044982000,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Yuchiwang02--DelaySentinel/snapshots/3add8ad4a5f5feee64479a7204083a379d7d0722",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "56b93f00bf275229c4aef7f0466e6b0fcbb4929145fd9068082483f12ab99ae3",
+          "model_type": "llama",
+          "architectures": [
+            "LlamaForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 1,
+          "present_weight_files": 1,
+          "missing_weight_files": [],
+          "present_weight_bytes": 2471645608,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Yuchiwang02--Llama-3.2-1B-DelaySentinel/snapshots/64818b8f609c96c0885576e27fe2ac4736f883b8",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "370cace401ba809a729ab398fb7349994a4be0ea98d4555518e22df98a9c26ab",
+          "model_type": "llama",
+          "architectures": [
+            "LlamaForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 1,
+          "present_weight_files": 1,
+          "missing_weight_files": [],
+          "present_weight_bytes": 2471645608,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        }
+      ]
+    },
+    {
+      "location_label": "default_hub_cache",
+      "exists": true,
+      "entries": [
+        {
+          "relative_directory": "models--Yuchiwang02--Llama-3.2-1B-DelaySentinel/snapshots/3add8ad4a5f5feee64479a7204083a379d7d0722",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "56b93f00bf275229c4aef7f0466e6b0fcbb4929145fd9068082483f12ab99ae3",
+          "model_type": "llama",
+          "architectures": [
+            "LlamaForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 0,
+          "present_weight_files": 0,
+          "missing_weight_files": [],
+          "present_weight_bytes": 0,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        },
+        {
+          "relative_directory": "models--Yuchiwang02--Llama-3.2-1B-DelaySentinel/snapshots/db3476fd7c012a45537c1968ae3510e82035c7d9",
+          "kind": "model",
+          "config_file": "config.json",
+          "config_sha256": "370cace401ba809a729ab398fb7349994a4be0ea98d4555518e22df98a9c26ab",
+          "model_type": "llama",
+          "architectures": [
+            "LlamaForCausalLM"
+          ],
+          "base_model_name_or_path": null,
+          "declared_weight_files": 0,
+          "present_weight_files": 0,
+          "missing_weight_files": [],
+          "present_weight_bytes": 0,
+          "weight_contents_hashed": false,
+          "loaded_by_this_inventory": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Config and file presence do not establish a correct or runnable checkpoint.",
+    "Weights are not rehashed, loaded or benchmarked in this inventory.",
+    "Directory names and parameter counts do not establish stronger capability.",
+    "GPU allocation is transient and not a peak-memory estimate."
+  ]
+}

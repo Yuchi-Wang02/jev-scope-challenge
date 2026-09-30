@@ -26,6 +26,10 @@ presentation. It does not claim a paper is ready.
   readiness and freeze a new study only after its evidence question is precise.
 - Presentation: [source audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md)
   beside the unchanged result table, including the unanimous-model counterexample.
+- Resource follow-up: [four known cache locations inspected](research/baseline-readiness/CURRENT_RESOURCES.md).
+  Ten config/adapter entries include config-only and task-specific snapshots;
+  no 8B-or-larger general instruction model found in those locations. No weights
+  loaded/downloaded. Stronger-comparator acquisition/configuration remains open.
 
 ## 2026-09-30: completed fresh-cluster interface comparison
 

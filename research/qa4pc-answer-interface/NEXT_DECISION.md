@@ -8,6 +8,13 @@ next priority before any repair based on these observed errors. The original
 cohort remains closed and its scores unchanged. Stronger-comparator readiness
 and future independent study design remain open work.
 
+The [focused local resource refresh](../baseline-readiness/CURRENT_RESOURCES.md)
+now completes the cache-inspection part of step 3: the inspected caches contain
+the measured 4B models, smaller models and historical adapters, with no 8B-or-larger
+general instruction comparator found. This is not a whole-machine scan or a
+capability test. Selecting a stronger comparator or a declared capability-oriented
+configuration on new reviewed material remains unfinished.
+
 ## Milestone audit
 
 Goal: determine whether an unfairly narrow output interface explains the earlier

@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — refresh actual local comparator inventory
+
+Inspected four known cache locations without loading models or downloading
+weights. Published ten config/adapter entries, including config-only snapshots,
+and linked current availability separately from the historical runtime snapshot.
+No 8B-or-larger general instruction comparator was found in those locations.
+This is resource evidence, not a capability evaluation or new run protocol.
+
 ## 2026-09-30 — all-case semantic audit and local retrospective review tooling
 
 Inspected all 24 answer-interface scenarios and retained every item in derived
