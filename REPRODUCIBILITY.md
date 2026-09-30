@@ -146,8 +146,9 @@ reliability, and the Qwen result concerns this frozen model and readout.
 
 The known-grammar parser solves this grammar without a model. It has full
 knowledge of the explicit construction grammar and must be labeled accordingly.
-That result matters: this release does not show that any model is necessary for
-these artificial inputs. Natural-language extensions require separate tests.
+The earlier grammar-bound probes do not show that a model is necessary for those
+artificial inputs. The source screen adds natural-language records, but its
+reference concerns, output caps and interface repairs do not settle necessity.
 
 API cost is estimated from returned input-token usage and the documented fee,
 not verified against an account invoice. Local GPU time is not converted into
@@ -176,3 +177,29 @@ use different inputs and are not validated by these two payment reviews.
 Run `python research/payment-ownership/review_pair.py --verify` for the two-review
 comparison and exact date-normalization check. The [reporting disposition](research/payment-ownership/REVIEW_DISPOSITION.md)
 retains the conditional labels and intake metadata limitations.
+
+## Public-source Jev / Qwen3.5 screen (2026-09-30)
+
+The [source-label screen](research/source-label-screen/README.md) preserves all
+48 API and 96 local results. Offline, run:
+
+```bash
+python research/source-label-screen/jev_audit.py --verify
+python research/source-label-screen/report.py verify
+python research/source-label-screen/replay.py --verify
+```
+
+These checks reproduce original API phase handling, final native/argmax views,
+saved final-text extraction, common-cohort metrics, costs and the HTML replay.
+They require no credentials or inference. They do not independently decode
+Qwen token IDs. That additional check uses the recorded pinned local tokenizer
+and runtime, without loading weights or generating tokens:
+
+```bash
+python research/source-label-screen/report.py verify --model-dir /path/to/pinned/qwen35
+```
+
+All 96 sequences passed that additional check at capture. Both earlier API stops
+remain in their original ledgers. Original protocol statements are historical;
+the current report distinguishes completed grid coverage from the adaptively
+repaired readout. No verifier certifies the source labels or human independence.

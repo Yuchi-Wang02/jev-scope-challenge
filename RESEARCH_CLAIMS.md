@@ -1,7 +1,7 @@
 # Current research claims
 
 This ledger summarizes the completed series through the
-[candidate-coverage diagnostic](research/candidate-completeness/RESULTS.md).
+[public-source contrast diagnostic](research/source-label-screen/RESULTS.md).
 It interprets saved evidence; it adds no experiment, approval or new research
 commitment. Study-specific protocols, results and earlier claims retain their
 historical scope. See the [research map](RESEARCH_INDEX.md) for execution status
@@ -18,6 +18,7 @@ independent samples. Follow each report for all controls, budgets and failures.
 
 |Claim|Observed evidence|Interpretation and limit|
 |---|---|---|
+|C14. Fixed-budget output completion and source agreement are distinct.|[ShARC dev screen](research/source-label-screen/RESULTS.md): Jev native 18/24 in both orders; Qwen3.5 direct 11/24 and 12/24; thinking 5/24 and 6/24 with 37/48 cap-truncated outputs. Copy-last control 14/24. All 48 API and 96 local jobs returned.|Zero new human reviews. A title-only source rule and other sufficiency concerns prevent treating source mismatch as proven error. Two API readout repairs preserve prior strict stops. Fixed caps, one seed and different serving environments do not establish model necessity or reasoning ceilings.|
 |C1. Jev led the original cancellation probe.|[Original report](results/REPORT.md): Jev 12/12 complete cases versus Qwen3-4B 8/12 in the primary round; known-grammar code also 12/12.|A gap on 12 constructed cases and a fixed readout, not proof of Jev's necessity or general model superiority. Later Kev studies are not new Jev measurements.|
 |C2. Adaptation, readout and input representation matter in this pilot.|[Matched-base results](research/next-study/) record N0/N1/K1 at 85/111/98 correct out of 144 repeated old-test decisions. [Layout results](research/layout-boundary/) move pointer accuracy from 98/144 to 127/144 and LoRA/native from 111/144 to 121/144 under declared layouts.|The readout comparison changes representation as well as the output path. The old test panel is now inspected development evidence, not an isolated head-capacity or training-necessity test.|
 |C3. Decisive and nondecisive deletion expose different obligations.|[Evidence-gap results](research/evidence-gap/): the pointer answers nondecisive deletion correctly in 31/36 repeated decisions, decisive deletion in 3/36, and both in 1/36 paired units.|An answer-preservation score alone hides failure to recognize insufficient evidence. Only 12 development parents /72 texts were scored; 216 reserved texts remain unscored.|

@@ -1,0 +1,5012 @@
+{
+  "status": "complete_repaired_decision_grid",
+  "study": "sharc-dev-source-label-screen-v1",
+  "reference_basis": "public source labels; no project human verification or adjudication",
+  "metric_key_interpretation": "Accuracy/correctness fields mean source-label agreement, not established truth.",
+  "tree_units": 12,
+  "independent_human_reviews": 0,
+  "original_strict_status": "incomplete_grid",
+  "original_strict_jev_conditions": {
+    "jev_order0": {
+      "grid_complete": false,
+      "planned_items": 24,
+      "finished": 8,
+      "not_started": 16,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 8,
+        "results_recorded": 8,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 8
+        },
+        "known_input_tokens": 4850,
+        "known_output_tokens": 360,
+        "usage_incomplete": false,
+        "recorded_latency_count": 8,
+        "recorded_call_latency_seconds": 1.157999999995809,
+        "recorded_latency_median_seconds": 0.1485000000029686,
+        "recorded_latency_p95_nearest_rank_seconds": 0.17200000000593718,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": null,
+      "completion_counts": {
+        "ok": 8
+      },
+      "strict_bare_json_count": null
+    },
+    "jev_order1": {
+      "grid_complete": false,
+      "planned_items": 24,
+      "finished": 15,
+      "not_started": 9,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 15,
+        "results_recorded": 15,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 14,
+          "protocol_error": 1
+        },
+        "known_input_tokens": 9496,
+        "known_output_tokens": 675,
+        "usage_incomplete": false,
+        "recorded_latency_count": 15,
+        "recorded_call_latency_seconds": 2.283000000024913,
+        "recorded_latency_median_seconds": 0.15600000000267755,
+        "recorded_latency_p95_nearest_rank_seconds": 0.1879999999946449,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": null,
+      "completion_counts": {
+        "ok": 14,
+        "protocol_error": 1
+      },
+      "strict_bare_json_count": null
+    }
+  },
+  "conditions": {
+    "qwen_direct_order0": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7088,
+        "known_output_tokens": 268,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 12.985999999989872,
+        "recorded_latency_median_seconds": 0.5319999999992433,
+        "recorded_latency_p95_nearest_rank_seconds": 0.5939999999973224,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": {
+        "condition": "qwen_direct_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 11,
+          "denominator": 24,
+          "rate": 0.4583333333333333
+        },
+        "pair_both_correct": {
+          "numerator": 3,
+          "denominator": 12,
+          "rate": 0.25
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 2,
+          "denominator": 18,
+          "rate": 0.1111111111111111
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 8,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 1,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 2,
+            "No": 3,
+            "Irrelevant": 2,
+            "ASK": 1,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 4,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 3,
+          "first_only": 3,
+          "second_only": 2,
+          "neither_correct": 4
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 1,
+            "prediction_changed": 2,
+            "prediction_same": 6,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 2,
+            "prediction_changed": 2,
+            "prediction_same": 2,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 2,
+              "denominator": 4,
+              "rate": 0.5
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Irrelevant",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          }
+        ]
+      },
+      "completion_counts": {
+        "natural_eos": 24
+      },
+      "strict_bare_json_count": 24
+    },
+    "qwen_direct_order1": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7088,
+        "known_output_tokens": 269,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 13.251000000018394,
+        "recorded_latency_median_seconds": 0.5310000000026776,
+        "recorded_latency_p95_nearest_rank_seconds": 0.5939999999973224,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": {
+        "condition": "qwen_direct_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 12,
+          "denominator": 24,
+          "rate": 0.5
+        },
+        "pair_both_correct": {
+          "numerator": 3,
+          "denominator": 12,
+          "rate": 0.25
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 9,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 2,
+            "No": 3,
+            "Irrelevant": 3,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 4,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 3,
+          "first_only": 4,
+          "second_only": 2,
+          "neither_correct": 3
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 1,
+            "prediction_changed": 3,
+            "prediction_same": 5,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 2,
+            "prediction_changed": 2,
+            "prediction_same": 2,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 2,
+              "denominator": 4,
+              "rate": 0.5
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Irrelevant",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "completion_counts": {
+        "natural_eos": 24
+      },
+      "strict_bare_json_count": 24
+    },
+    "qwen_thinking_order0": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7040,
+        "known_output_tokens": 47020,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 1510.75,
+        "recorded_latency_median_seconds": 65.68000000000029,
+        "recorded_latency_p95_nearest_rank_seconds": 66.11000000000058,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": {
+        "condition": "qwen_thinking_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 5,
+          "denominator": 24,
+          "rate": 0.20833333333333334
+        },
+        "pair_both_correct": {
+          "numerator": 0,
+          "denominator": 12,
+          "rate": 0.0
+        },
+        "invalid_output": {
+          "numerator": 19,
+          "denominator": 24,
+          "rate": 0.7916666666666666
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 0,
+          "denominator": 6,
+          "rate": 0.0
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 3,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 7
+          },
+          "No": {
+            "Yes": 0,
+            "No": 2,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 6
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 6
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 0,
+          "first_only": 3,
+          "second_only": 2,
+          "neither_correct": 7
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 0,
+            "prediction_changed": 0,
+            "prediction_same": 0,
+            "incomplete_pair": 8,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 0,
+            "prediction_changed": 0,
+            "prediction_same": 0,
+            "incomplete_pair": 4,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 4,
+              "rate": 0.0
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              null
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              null
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              null
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              null,
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          }
+        ]
+      },
+      "completion_counts": {
+        "length": 19,
+        "natural_eos": 5
+      },
+      "strict_bare_json_count": 5
+    },
+    "qwen_thinking_order1": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7040,
+        "known_output_tokens": 45002,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 1446.4679999999935,
+        "recorded_latency_median_seconds": 65.67199999999139,
+        "recorded_latency_p95_nearest_rank_seconds": 66.61000000000058,
+        "shared_setup_cost_allocated": false
+      },
+      "metric": {
+        "condition": "qwen_thinking_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 6,
+          "denominator": 24,
+          "rate": 0.25
+        },
+        "pair_both_correct": {
+          "numerator": 0,
+          "denominator": 12,
+          "rate": 0.0
+        },
+        "invalid_output": {
+          "numerator": 18,
+          "denominator": 24,
+          "rate": 0.75
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 0,
+          "denominator": 6,
+          "rate": 0.0
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 3,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 7
+          },
+          "No": {
+            "Yes": 0,
+            "No": 2,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 6
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 1,
+            "INVALID_OUTPUT": 5
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 0,
+          "first_only": 2,
+          "second_only": 4,
+          "neither_correct": 6
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 0,
+            "prediction_changed": 0,
+            "prediction_same": 0,
+            "incomplete_pair": 8,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 0,
+            "prediction_changed": 0,
+            "prediction_same": 0,
+            "incomplete_pair": 4,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 4,
+              "rate": 0.0
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              null
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              null
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              null,
+              "ASK"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              null
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              null,
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              null,
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": null
+          }
+        ]
+      },
+      "completion_counts": {
+        "length": 18,
+        "natural_eos": 6
+      },
+      "strict_bare_json_count": 6
+    },
+    "jev_native_order0": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "metric": {
+        "condition": "jev_native_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 18,
+          "denominator": 24,
+          "rate": 0.75
+        },
+        "pair_both_correct": {
+          "numerator": 8,
+          "denominator": 12,
+          "rate": 0.6666666666666666
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 3,
+          "denominator": 18,
+          "rate": 0.16666666666666666
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 5,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 3,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 0,
+            "No": 8,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 5,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 8,
+          "first_only": 0,
+          "second_only": 2,
+          "neither_correct": 2
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 5,
+            "prediction_changed": 8,
+            "prediction_same": 0,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 5,
+              "denominator": 8,
+              "rate": 0.625
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 3,
+            "prediction_changed": 1,
+            "prediction_same": 3,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 3,
+              "denominator": 4,
+              "rate": 0.75
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 15098,
+        "known_output_tokens": 1080,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 3.7519999999931315,
+        "recorded_latency_median_seconds": 0.14100000000325963,
+        "recorded_latency_p95_nearest_rank_seconds": 0.2649999999994179,
+        "shared_setup_cost_allocated": false
+      },
+      "readout_scope": "Same API requests and costs; unique-argmax is a secondary view, not extra calls.",
+      "metadata_anomalies": 1
+    },
+    "jev_native_order1": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "metric": {
+        "condition": "jev_native_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 18,
+          "denominator": 24,
+          "rate": 0.75
+        },
+        "pair_both_correct": {
+          "numerator": 8,
+          "denominator": 12,
+          "rate": 0.6666666666666666
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 3,
+          "denominator": 18,
+          "rate": 0.16666666666666666
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 5,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 3,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 0,
+            "No": 8,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 5,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 8,
+          "first_only": 0,
+          "second_only": 2,
+          "neither_correct": 2
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 5,
+            "prediction_changed": 8,
+            "prediction_same": 0,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 5,
+              "denominator": 8,
+              "rate": 0.625
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 3,
+            "prediction_changed": 1,
+            "prediction_same": 3,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 3,
+              "denominator": 4,
+              "rate": 0.75
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 15098,
+        "known_output_tokens": 1080,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 3.6090000000112923,
+        "recorded_latency_median_seconds": 0.14849999999569263,
+        "recorded_latency_p95_nearest_rank_seconds": 0.17200000000593718,
+        "shared_setup_cost_allocated": false
+      },
+      "readout_scope": "Same API requests and costs; unique-argmax is a secondary view, not extra calls.",
+      "metadata_anomalies": 1
+    },
+    "jev_unique_argmax_order0": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "metric": {
+        "condition": "jev_unique_argmax_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 18,
+          "denominator": 24,
+          "rate": 0.75
+        },
+        "pair_both_correct": {
+          "numerator": 8,
+          "denominator": 12,
+          "rate": 0.6666666666666666
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 3,
+          "denominator": 18,
+          "rate": 0.16666666666666666
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 5,
+            "No": 1,
+            "Irrelevant": 1,
+            "ASK": 3,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 0,
+            "No": 8,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 5,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 8,
+          "first_only": 0,
+          "second_only": 2,
+          "neither_correct": 2
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 5,
+            "prediction_changed": 8,
+            "prediction_same": 0,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 5,
+              "denominator": 8,
+              "rate": 0.625
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 3,
+            "prediction_changed": 1,
+            "prediction_same": 3,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 3,
+              "denominator": 4,
+              "rate": 0.75
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 15098,
+        "known_output_tokens": 1080,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 3.7519999999931315,
+        "recorded_latency_median_seconds": 0.14100000000325963,
+        "recorded_latency_p95_nearest_rank_seconds": 0.2649999999994179,
+        "shared_setup_cost_allocated": false
+      },
+      "readout_scope": "Same API requests and costs; unique-argmax is a secondary view, not extra calls.",
+      "metadata_anomalies": 1
+    },
+    "jev_unique_argmax_order1": {
+      "grid_complete": true,
+      "planned_items": 24,
+      "finished": 24,
+      "not_started": 0,
+      "started_without_result": 0,
+      "metric": {
+        "condition": "jev_unique_argmax_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 18,
+          "denominator": 24,
+          "rate": 0.75
+        },
+        "pair_both_correct": {
+          "numerator": 8,
+          "denominator": 12,
+          "rate": 0.6666666666666666
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 1,
+          "denominator": 6,
+          "rate": 0.16666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 3,
+          "denominator": 18,
+          "rate": 0.16666666666666666
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 5,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 3,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 0,
+            "No": 8,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 0,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 5,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 8,
+          "first_only": 0,
+          "second_only": 2,
+          "neither_correct": 2
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 5,
+            "prediction_changed": 8,
+            "prediction_same": 0,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 5,
+              "denominator": 8,
+              "rate": 0.625
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 3,
+            "prediction_changed": 1,
+            "prediction_same": 3,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 3,
+              "denominator": 4,
+              "rate": 0.75
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "No",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "ASK",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "No"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 15098,
+        "known_output_tokens": 1080,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 3.6090000000112923,
+        "recorded_latency_median_seconds": 0.14849999999569263,
+        "recorded_latency_p95_nearest_rank_seconds": 0.17200000000593718,
+        "shared_setup_cost_allocated": false
+      },
+      "readout_scope": "Same API requests and costs; unique-argmax is a secondary view, not extra calls.",
+      "metadata_anomalies": 1
+    }
+  },
+  "order_effects": {
+    "qwen_direct": {
+      "available": true,
+      "total_items": 24,
+      "valid_in_both": 24,
+      "invalid_in_either": 0,
+      "changed_valid_action": 2
+    },
+    "qwen_thinking": {
+      "available": true,
+      "total_items": 24,
+      "valid_in_both": 2,
+      "invalid_in_either": 22,
+      "changed_valid_action": 0
+    },
+    "jev_native": {
+      "available": true,
+      "total_items": 24,
+      "valid_in_both": 24,
+      "invalid_in_either": 0,
+      "changed_valid_action": 0
+    },
+    "jev_unique_argmax": {
+      "available": true,
+      "total_items": 24,
+      "valid_in_both": 24,
+      "invalid_in_either": 0,
+      "changed_valid_action": 1
+    }
+  },
+  "controls": {
+    "constant_Yes": {
+      "condition": "constant_Yes",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 10,
+        "denominator": 24,
+        "rate": 0.4166666666666667
+      },
+      "pair_both_correct": {
+        "numerator": 2,
+        "denominator": 12,
+        "rate": 0.16666666666666666
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 10,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 8,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 6,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 2,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 4
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 2,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_No": {
+      "condition": "constant_No",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 8,
+        "denominator": 24,
+        "rate": 0.3333333333333333
+      },
+      "pair_both_correct": {
+        "numerator": 1,
+        "denominator": 12,
+        "rate": 0.08333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 10,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 8,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 6,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 1,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 5
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 1,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_Irrelevant": {
+      "condition": "constant_Irrelevant",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "pair_both_correct": {
+        "numerator": 0,
+        "denominator": 12,
+        "rate": 0.0
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 10,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 8,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 6,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 0,
+        "first_only": 0,
+        "second_only": 0,
+        "neither_correct": 12
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 4,
+            "rate": 0.0
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_ASK": {
+      "condition": "constant_ASK",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 6,
+        "denominator": 24,
+        "rate": 0.25
+      },
+      "pair_both_correct": {
+        "numerator": 1,
+        "denominator": 12,
+        "rate": 0.08333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 18,
+        "denominator": 18,
+        "rate": 1.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 10,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 8,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 6,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 1,
+        "first_only": 2,
+        "second_only": 2,
+        "neither_correct": 7
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 1,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "copy_last_history_answer": {
+      "condition": "copy_last_history_answer",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 14,
+        "denominator": 24,
+        "rate": 0.5833333333333334
+      },
+      "pair_both_correct": {
+        "numerator": 4,
+        "denominator": 12,
+        "rate": 0.3333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 8,
+          "No": 2,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 2,
+          "No": 6,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 2,
+          "No": 4,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 4,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 2
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 4,
+          "prediction_changed": 8,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 4,
+            "denominator": 8,
+            "rate": 0.5
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 0,
+          "prediction_changed": 4,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 4,
+            "rate": 0.0
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        }
+      ]
+    }
+  },
+  "resources": {
+    "jev_all_phases": {
+      "status": "all_48_native_choices_audited",
+      "new_model_calls_during_audit": 0,
+      "source_agreement_scored_here": false,
+      "independent_human_reviews": 0,
+      "original_strict_run_complete": false,
+      "readout_repairs": 2,
+      "total_http_attempts": 48,
+      "repeated_job_ids": 0,
+      "input_tokens": 30196,
+      "output_tokens": 2160,
+      "list_price_usd_per_million_input_tokens": "0.042",
+      "price_checked_date": "2026-09-30",
+      "estimated_input_list_price_usd": "0.001268232",
+      "latency_seconds_sum": 7.361000000004424,
+      "metadata_anomaly_counts": {
+        "any_original_metadata_check_failed": 2,
+        "nonunit_probability_sum": 1,
+        "native_choice_not_displayed_maximum": 1,
+        "no_unique_displayed_argmax": 0,
+        "invalid_confidence": 0
+      },
+      "phases": {
+        "original_strict": {
+          "planned": 48,
+          "attempts": 23,
+          "finished": 23,
+          "original_status_counts": {
+            "ok": 22,
+            "protocol_error": 1
+          },
+          "input_tokens": 14346,
+          "output_tokens": 1035,
+          "session_seconds": 3.5780000000086147,
+          "journal_sha256": "e4fd6de17a6156bf54322f7a1cdcc110095ae4588ca1b0464c974922d22e6a27",
+          "execution_commit": "e90f051459370ad99be8ddfaf29e65c013d2eda1"
+        },
+        "first_repair": {
+          "planned": 25,
+          "attempts": 7,
+          "finished": 7,
+          "original_status_counts": {
+            "ok": 6,
+            "protocol_error": 1
+          },
+          "input_tokens": 4473,
+          "output_tokens": 315,
+          "session_seconds": 1.235000000000582,
+          "journal_sha256": "2ca5f2c900e2df8e433b17a6ad8955902e9683bb382629081db1df650696aec3",
+          "execution_commit": "293c2298e422723c5cd7057c337e43a9bac0f936"
+        },
+        "final_native": {
+          "planned": 18,
+          "attempts": 18,
+          "finished": 18,
+          "original_status_counts": {
+            "ok": 18
+          },
+          "input_tokens": 11377,
+          "output_tokens": 810,
+          "session_seconds": 2.8439999999973224,
+          "journal_sha256": "290ca98addec72676574e16543a044e4f5c72e3013fc61c0cc06bc9c94dd2cbe",
+          "execution_commit": "55fa19c78dcec2805cb9f0d18185c6e5fa2e90f5"
+        }
+      }
+    },
+    "qwen": {
+      "status": "complete",
+      "planned_calls": 96,
+      "attempts_started": 96,
+      "results_recorded": 96,
+      "unresolved_attempts": 0,
+      "result_status_counts": {
+        "ok": 96
+      },
+      "known_input_tokens": 28256,
+      "known_output_tokens": 92559,
+      "usage_incomplete": false,
+      "known_closed_session_seconds": 2983.875,
+      "session_time_incomplete": false,
+      "recorded_call_latency_seconds": 2983.4550000000017,
+      "overruns": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "session_seconds": 0
+      },
+      "session_setup_metadata": [
+        {
+          "python": "3.10.18 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:08:55) [MSC v.1929 64 bit (AMD64)]",
+          "transformers": "5.3.0",
+          "torch": "2.8.0+cu128",
+          "peft": "0.18.1",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "model": "Qwen/Qwen3.5-4B",
+          "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "files": [
+            {
+              "name": "LICENSE",
+              "bytes": 11544,
+              "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+            },
+            {
+              "name": "README.md",
+              "bytes": 77661,
+              "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"
+            },
+            {
+              "name": "config.json",
+              "bytes": 3161,
+              "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"
+            },
+            {
+              "name": "tokenizer.json",
+              "bytes": 12807982,
+              "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+              "upstream_lfs_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+            },
+            {
+              "name": "tokenizer_config.json",
+              "bytes": 16710,
+              "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+            },
+            {
+              "name": "chat_template.jinja",
+              "bytes": 7756,
+              "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+            },
+            {
+              "name": "merges.txt",
+              "bytes": 3353259,
+              "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+            },
+            {
+              "name": "vocab.json",
+              "bytes": 6722759,
+              "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+            },
+            {
+              "name": "model.safetensors.index.json",
+              "bytes": 76196,
+              "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d"
+            },
+            {
+              "name": "model.safetensors-00001-of-00002.safetensors",
+              "bytes": 5329398688,
+              "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+              "upstream_lfs_sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+            },
+            {
+              "name": "model.safetensors-00002-of-00002.safetensors",
+              "bytes": 3990429408,
+              "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+              "upstream_lfs_sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+            }
+          ],
+          "cpu_checks": {
+            "model_forwards": 0,
+            "tensor_penalty_checks_passed": true,
+            "configurations": [
+              {
+                "thinking": false,
+                "processor_order": [
+                  "GeneratedPresencePenalty",
+                  "TemperatureLogitsWarper",
+                  "TopKLogitsWarper",
+                  "TopPLogitsWarper",
+                  "MinPLogitsWarper"
+                ],
+                "effective_generation_config": {
+                  "max_length": 20,
+                  "max_new_tokens": 256,
+                  "min_length": 0,
+                  "min_new_tokens": null,
+                  "early_stopping": false,
+                  "max_time": null,
+                  "stop_strings": null,
+                  "do_sample": true,
+                  "num_beams": 1,
+                  "use_cache": true,
+                  "cache_implementation": null,
+                  "cache_config": null,
+                  "temperature": 0.7,
+                  "top_k": 20,
+                  "top_p": 0.8,
+                  "min_p": 0.0,
+                  "top_h": null,
+                  "typical_p": 1.0,
+                  "epsilon_cutoff": 0.0,
+                  "eta_cutoff": 0.0,
+                  "repetition_penalty": 1.0,
+                  "encoder_repetition_penalty": 1.0,
+                  "length_penalty": 1.0,
+                  "no_repeat_ngram_size": 0,
+                  "bad_words_ids": null,
+                  "renormalize_logits": null,
+                  "forced_bos_token_id": null,
+                  "forced_eos_token_id": null,
+                  "remove_invalid_values": false,
+                  "exponential_decay_length_penalty": null,
+                  "suppress_tokens": null,
+                  "begin_suppress_tokens": null,
+                  "sequence_bias": null,
+                  "token_healing": null,
+                  "guidance_scale": null,
+                  "watermarking_config": null,
+                  "num_return_sequences": 1,
+                  "output_attentions": false,
+                  "output_hidden_states": false,
+                  "output_scores": false,
+                  "output_logits": null,
+                  "return_dict_in_generate": false,
+                  "pad_token_id": 248044,
+                  "bos_token_id": null,
+                  "eos_token_id": 248046,
+                  "encoder_no_repeat_ngram_size": 0,
+                  "decoder_start_token_id": null,
+                  "is_assistant": null,
+                  "num_assistant_tokens": 20,
+                  "num_assistant_tokens_schedule": "constant",
+                  "assistant_confidence_threshold": 0.4,
+                  "prompt_lookup_num_tokens": null,
+                  "max_matching_ngram_size": null,
+                  "assistant_early_exit": null,
+                  "assistant_lookbehind": 10,
+                  "target_lookbehind": 10,
+                  "compile_config": null,
+                  "disable_compile": null,
+                  "low_memory": null,
+                  "penalty_alpha": null,
+                  "dola_layers": null,
+                  "diversity_penalty": 0.0,
+                  "num_beam_groups": 1,
+                  "constraints": null,
+                  "force_words_ids": null,
+                  "prefill_chunk_size": null,
+                  "_from_model_config": true,
+                  "transformers_version": "5.3.0"
+                }
+              },
+              {
+                "thinking": true,
+                "processor_order": [
+                  "GeneratedPresencePenalty",
+                  "TopKLogitsWarper",
+                  "TopPLogitsWarper",
+                  "MinPLogitsWarper"
+                ],
+                "effective_generation_config": {
+                  "max_length": 20,
+                  "max_new_tokens": 2048,
+                  "min_length": 0,
+                  "min_new_tokens": null,
+                  "early_stopping": false,
+                  "max_time": null,
+                  "stop_strings": null,
+                  "do_sample": true,
+                  "num_beams": 1,
+                  "use_cache": true,
+                  "cache_implementation": null,
+                  "cache_config": null,
+                  "temperature": 1.0,
+                  "top_k": 20,
+                  "top_p": 0.95,
+                  "min_p": 0.0,
+                  "top_h": null,
+                  "typical_p": 1.0,
+                  "epsilon_cutoff": 0.0,
+                  "eta_cutoff": 0.0,
+                  "repetition_penalty": 1.0,
+                  "encoder_repetition_penalty": 1.0,
+                  "length_penalty": 1.0,
+                  "no_repeat_ngram_size": 0,
+                  "bad_words_ids": null,
+                  "renormalize_logits": null,
+                  "forced_bos_token_id": null,
+                  "forced_eos_token_id": null,
+                  "remove_invalid_values": false,
+                  "exponential_decay_length_penalty": null,
+                  "suppress_tokens": null,
+                  "begin_suppress_tokens": null,
+                  "sequence_bias": null,
+                  "token_healing": null,
+                  "guidance_scale": null,
+                  "watermarking_config": null,
+                  "num_return_sequences": 1,
+                  "output_attentions": false,
+                  "output_hidden_states": false,
+                  "output_scores": false,
+                  "output_logits": null,
+                  "return_dict_in_generate": false,
+                  "pad_token_id": 248044,
+                  "bos_token_id": null,
+                  "eos_token_id": 248046,
+                  "encoder_no_repeat_ngram_size": 0,
+                  "decoder_start_token_id": null,
+                  "is_assistant": null,
+                  "num_assistant_tokens": 20,
+                  "num_assistant_tokens_schedule": "constant",
+                  "assistant_confidence_threshold": 0.4,
+                  "prompt_lookup_num_tokens": null,
+                  "max_matching_ngram_size": null,
+                  "assistant_early_exit": null,
+                  "assistant_lookbehind": 10,
+                  "target_lookbehind": 10,
+                  "compile_config": null,
+                  "disable_compile": null,
+                  "low_memory": null,
+                  "penalty_alpha": null,
+                  "dola_layers": null,
+                  "diversity_penalty": 0.0,
+                  "num_beam_groups": 1,
+                  "constraints": null,
+                  "force_words_ids": null,
+                  "prefill_chunk_size": null,
+                  "_from_model_config": true,
+                  "transformers_version": "5.3.0"
+                }
+              }
+            ]
+          },
+          "loaded_configuration_checks": [
+            {
+              "thinking": false,
+              "effective_generation_config": {
+                "max_length": 20,
+                "max_new_tokens": 256,
+                "min_length": 0,
+                "min_new_tokens": null,
+                "early_stopping": false,
+                "max_time": null,
+                "stop_strings": null,
+                "do_sample": true,
+                "num_beams": 1,
+                "use_cache": true,
+                "cache_implementation": null,
+                "cache_config": null,
+                "temperature": 0.7,
+                "top_k": 20,
+                "top_p": 0.8,
+                "min_p": 0.0,
+                "top_h": null,
+                "typical_p": 1.0,
+                "epsilon_cutoff": 0.0,
+                "eta_cutoff": 0.0,
+                "repetition_penalty": 1.0,
+                "encoder_repetition_penalty": 1.0,
+                "length_penalty": 1.0,
+                "no_repeat_ngram_size": 0,
+                "bad_words_ids": null,
+                "renormalize_logits": null,
+                "forced_bos_token_id": null,
+                "forced_eos_token_id": null,
+                "remove_invalid_values": false,
+                "exponential_decay_length_penalty": null,
+                "suppress_tokens": null,
+                "begin_suppress_tokens": null,
+                "sequence_bias": null,
+                "token_healing": null,
+                "guidance_scale": null,
+                "watermarking_config": null,
+                "num_return_sequences": 1,
+                "output_attentions": null,
+                "output_hidden_states": null,
+                "output_scores": false,
+                "output_logits": null,
+                "return_dict_in_generate": false,
+                "pad_token_id": 248044,
+                "bos_token_id": null,
+                "eos_token_id": 248046,
+                "encoder_no_repeat_ngram_size": 0,
+                "decoder_start_token_id": null,
+                "is_assistant": null,
+                "num_assistant_tokens": 20,
+                "num_assistant_tokens_schedule": "constant",
+                "assistant_confidence_threshold": 0.4,
+                "prompt_lookup_num_tokens": null,
+                "max_matching_ngram_size": null,
+                "assistant_early_exit": null,
+                "assistant_lookbehind": 10,
+                "target_lookbehind": 10,
+                "compile_config": null,
+                "disable_compile": null,
+                "low_memory": null,
+                "penalty_alpha": null,
+                "dola_layers": null,
+                "diversity_penalty": 0.0,
+                "num_beam_groups": 1,
+                "constraints": null,
+                "force_words_ids": null,
+                "prefill_chunk_size": null,
+                "_from_model_config": true,
+                "transformers_version": "5.3.0"
+              },
+              "processor_order": [
+                "GeneratedPresencePenalty",
+                "TemperatureLogitsWarper",
+                "TopKLogitsWarper",
+                "TopPLogitsWarper",
+                "MinPLogitsWarper"
+              ]
+            },
+            {
+              "thinking": true,
+              "effective_generation_config": {
+                "max_length": 20,
+                "max_new_tokens": 2048,
+                "min_length": 0,
+                "min_new_tokens": null,
+                "early_stopping": false,
+                "max_time": null,
+                "stop_strings": null,
+                "do_sample": true,
+                "num_beams": 1,
+                "use_cache": true,
+                "cache_implementation": null,
+                "cache_config": null,
+                "temperature": 1.0,
+                "top_k": 20,
+                "top_p": 0.95,
+                "min_p": 0.0,
+                "top_h": null,
+                "typical_p": 1.0,
+                "epsilon_cutoff": 0.0,
+                "eta_cutoff": 0.0,
+                "repetition_penalty": 1.0,
+                "encoder_repetition_penalty": 1.0,
+                "length_penalty": 1.0,
+                "no_repeat_ngram_size": 0,
+                "bad_words_ids": null,
+                "renormalize_logits": null,
+                "forced_bos_token_id": null,
+                "forced_eos_token_id": null,
+                "remove_invalid_values": false,
+                "exponential_decay_length_penalty": null,
+                "suppress_tokens": null,
+                "begin_suppress_tokens": null,
+                "sequence_bias": null,
+                "token_healing": null,
+                "guidance_scale": null,
+                "watermarking_config": null,
+                "num_return_sequences": 1,
+                "output_attentions": null,
+                "output_hidden_states": null,
+                "output_scores": false,
+                "output_logits": null,
+                "return_dict_in_generate": false,
+                "pad_token_id": 248044,
+                "bos_token_id": null,
+                "eos_token_id": 248046,
+                "encoder_no_repeat_ngram_size": 0,
+                "decoder_start_token_id": null,
+                "is_assistant": null,
+                "num_assistant_tokens": 20,
+                "num_assistant_tokens_schedule": "constant",
+                "assistant_confidence_threshold": 0.4,
+                "prompt_lookup_num_tokens": null,
+                "max_matching_ngram_size": null,
+                "assistant_early_exit": null,
+                "assistant_lookbehind": 10,
+                "target_lookbehind": 10,
+                "compile_config": null,
+                "disable_compile": null,
+                "low_memory": null,
+                "penalty_alpha": null,
+                "dola_layers": null,
+                "diversity_penalty": 0.0,
+                "num_beam_groups": 1,
+                "constraints": null,
+                "force_words_ids": null,
+                "prefill_chunk_size": null,
+                "_from_model_config": true,
+                "transformers_version": "5.3.0"
+              },
+              "processor_order": [
+                "GeneratedPresencePenalty",
+                "TopKLogitsWarper",
+                "TopPLogitsWarper",
+                "MinPLogitsWarper"
+              ]
+            }
+          ],
+          "verification_seconds": 6.125,
+          "load_seconds": 3.4530000000086147,
+          "warmup_forwards": 0,
+          "execution_commit": "e90f051459370ad99be8ddfaf29e65c013d2eda1",
+          "study": "sharc-dev-source-label-screen-v1"
+        }
+      ]
+    }
+  },
+  "new_model_calls_during_analysis": 0,
+  "readout_repairs": 2,
+  "scope": "Selected public development pilot with adaptively repaired API readout; no confirmation or population claim.",
+  "evidence_sha256": {
+    "results/jev_audit.json": "a82023c9e94947395840a446652b6e0d12d4c839f2a15d07114844fefb336c8c",
+    "results/qwen.jsonl": "7d89b6cda5dd1b5e804e546aaf4ca3f1bc2fd022500b93f19009d22cdd35fd22",
+    "freeze.json": "15ddfeed09ba5948c6c88ab3119b75f0f32dd64f4131c728ca79c21790959722",
+    "final_readout_freeze.json": "26d22ff0a0100fe37654226eefbbdf9d2a93acd9bb9bc39f74e9ea16243b5c69"
+  }
+}

@@ -4,6 +4,27 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: close the public-source screen and audit its measurement target
+
+- Objective: complete the frozen 12-tree Jev / Qwen3.5 comparison with paired
+  source agreement, failed-output denominators, costs and an inspectable replay.
+- Reality: 48 distinct API jobs and 96 local generations returned. Native Jev
+  scores 18/24 in each order; direct Qwen 11/24 and 12/24; last-answer copy 14/24.
+  Thinking truncates 37/48 times and scores 5/24 and 6/24 under the fixed cap.
+- Verification: all 96 local token sequences re-decoded with the pinned tokenizer;
+  offline extraction/scoring replay agrees. All 24 selected source rows match the
+  official archive. The existing 270-test suite passes.
+- Gap: strict API execution needed two disclosed readout repairs. A source audit
+  completed before reading scores found a title-only rule and other sufficiency
+  concerns. Labels remain unchanged; no new human adjudication or confirmation.
+- Decision: close this grid without cap extension or prompt search. Preserve the
+  evidence in [results](research/source-label-screen/RESULTS.md) and the
+  [replay](docs/source_label_screen.html). The original training queue stays unscored.
+- Next: inspect a bounded finite-choice local readout as an outcome-aware interface
+  diagnostic, with an explicit new freeze before inference. Semantic adjudication
+  and new confirmation material remain separate paper requirements. See the
+  [full interpretation](research/source-label-screen/INTERPRETATION.md).
+
 ## 2026-09-30: preserve two API stops and finish the original 48 requests
 
 - Objective: obtain native decisions while keeping probability-field quality and

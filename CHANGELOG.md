@@ -1,5 +1,16 @@
 # Release notes
 
+## 2026-09-30 — completed public-source screen, full replay and source audit
+
+All 48 original Jev requests and 96 Qwen3.5 generations are retained. Source
+agreement is 18/24 in both Jev mappings, 11/24 and 12/24 for direct Qwen, and
+5/24 and 6/24 for thinking with 37/48 truncated outputs. Published original
+strict failures, repaired native and displayed-argmax views, all five shallow
+controls, raw local tokens, costs and tokenizer audit. Added a 12-pair interactive
+replay and an exhaustive source-evidence review, without changing references.
+The latter flags title-only and sufficiency issues; these are not verified gold
+labels or confirmed model errors. The separate human-review queue stays unscored.
+
 ## 2026-09-30 — 48 real API responses retained across explicit readout repairs
 
 The new source-label screen hit a nonunit probability sum and then a native

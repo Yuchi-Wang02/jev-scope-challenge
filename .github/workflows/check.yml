@@ -70,4 +70,6 @@ jobs:
       - run: python docs/build_request_switch.py verify
       - run: python verify_publication.py
       - run: python research/source-label-screen/jev_audit.py --verify
+      - run: python research/source-label-screen/report.py verify
+      - run: python research/source-label-screen/replay.py --verify
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

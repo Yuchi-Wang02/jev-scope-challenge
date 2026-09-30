@@ -1,6 +1,6 @@
 # Jev Scope Challenge
 
-**From cancellation scope to evidence ownership.**
+**From cancellation scope to evidence ownership and rule-grounded decisions.**
 
 [Research map](RESEARCH_INDEX.md) · [Current claims](RESEARCH_CLAIMS.md) ·
 [Novelty and reuse](NOVELTY_MATRIX.md) · [Reproduction guide](REPRODUCIBILITY.md) ·
@@ -19,16 +19,35 @@ The project began with a live **Jev vs frozen Qwen3-4B** cancellation challenge.
 Jev won that probe, and a parser tailored to its grammar also solved every case.
 The intermediate studies examine **historical pinned Kev/Qwen checkpoints**.
 N1 uses an already-trained Kev LoRA with native causal logits; no new training
-does not mean an unadapted model. The latest payment-ownership diagnostic returns
-to live Jev with a new, publicly sourced simulated task.
+does not mean an unadapted model. The payment diagnostic returned to live Jev;
+the latest public-source screen compares Jev with Qwen3.5-4B.
 
-**Current evidence: real, replayable synthetic diagnostics; two reviewers have
+**Current evidence: real, replayable synthetic and public-source diagnostics; two reviewers have
 submitted judgments on the same 96 payment-study items, with a scope objection;
 no reviewer-endorsed reference update or held-out confirmation of a general method.** Several
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
-## Latest: One visible match — when is caution wrong?
+## Latest: One answer changes. Does the decision follow?
+
+On 12 ShARC development trees /24 unchanged inputs, Jev native choice matches
+source labels **18/24 in both orders**, versus Qwen3.5-4B direct **11/24 and 12/24**.
+The last-history-answer copying control reaches **14/24**. Qwen thinking has
+**37/48 cap-truncated outputs** at 2,048 tokens; its full-denominator agreement is
+5/24 and 6/24. This measures fixed-budget interfaces, not reasoning ceilings.
+
+All 48 API requests and 96 local generations are preserved. Two API readout
+repairs retain both earlier stops. An all-pair audit finds a title-only rule
+and other evidence concerns: **source agreement is not verified correctness**.
+This new slice has zero project human reviews, and the separate training review
+queue remains unscored. No label was changed after seeing results.
+
+[Results and costs](research/source-label-screen/RESULTS.md) ·
+[Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/source_label_screen.html) ·
+[Source audit](research/source-label-screen/SOURCE_REVIEW.md) ·
+[Interpretation and next decision](research/source-label-screen/INTERPRETATION.md)
+
+## Previous: One visible match — when is caution wrong?
 
 On 12 new simulated users /72 constructed inputs, Jev handles missing candidates
 for product-name requests but sometimes defers even when a visible exact order ID
@@ -77,12 +96,9 @@ now makes 60 frozen visible inputs available for independent annotation. It has
 zero completed reviews and no model results; it is a public-training development
 pilot, not a new benchmark or a hidden test. [Review package](research/external-validation/public-review/README.md).
 
-A separate [public-dev source-label screen](research/source-label-screen/README.md)
-is now running under an explicit exploration amendment. Its original 48 Jev
-requests have returned across two disclosed readout repairs, preserving a
-probability-sum anomaly and a native-choice/displayed-maximum mismatch. The fixed
-Qwen grid is still running at this update. Source labels are not project-reviewed
-truth, and no cross-model ranking is claimed from the partial experiment.
+The separate [public-dev source-label screen](research/source-label-screen/README.md)
+is complete under its explicit exploration amendment; its evidence and limits
+are summarized above. It does not validate or unlock this training-review queue.
 
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·

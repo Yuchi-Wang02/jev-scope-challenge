@@ -1,9 +1,8 @@
 # Research map and evidence status
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
-[current novelty assessment](NOVELTY_MATRIX.md). The latest completed model run
-is the [fixed-budget Qwen control](research/candidate-completeness/REASONING_RESULTS.md)
-following the [candidate-coverage Jev / Qwen native diagnostic](research/candidate-completeness/RESULTS.md).
+[current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
+[public-source Jev / Qwen3.5 diagnostic](research/source-label-screen/RESULTS.md).
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -18,6 +17,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[Public-source contrast](research/source-label-screen/RESULTS.md)|12 ShARC dev trees /24 inputs; 48 distinct Jev requests and 96 Qwen3.5 generations. Jev native source agreement 18/24 in both mappings; Qwen direct 11/24 and 12/24; thinking 5/24 and 6/24 with 37/48 truncated. Last-answer copy 14/24. Local generation: 92,559 tokens, 2,983.875 seconds.|Zero project human reviews; title-only and other source-evidence concerns. Two prospective API readout repairs preserve strict failures. Source agreement is not verified correctness or independent confirmation. All raw data and both API readouts retained.|
 |[Candidate coverage](research/candidate-completeness/RESULTS.md)|12 disjoint source users /72 inputs; 150 Jev requests and 150 Qwen3-4B native prefills including six smoke each. Jev 63/72 and 67/72; Qwen 34/72 and 30/72. Strict parents 3/12 and 0/12; grammar code 72/72.|Synthetic coverage premises, one wording family, zero new independent reviews. Jev errors are unnecessary explicit-ID deferrals. Native Qwen is not a reasoning-ceiling comparator. Both freezes published before main outputs. No adaptive follow-up on these grids.|
 |[Fixed-budget Qwen control](research/candidate-completeness/REASONING_RESULTS.md)|Same 72 inputs, six smoke +144 main decisions; 69,771 generated tokens and 19,129 batched physical forwards. Scores 58/72 and 59/72; all 12 unknown-reference cases per mapping still receive a determined answer; strict parents 0/12.|Outcome-aware extra-compute comparison, not new independent data. 69/144 main traces truncated. An earlier six-case sampled smoke attempt is preserved separately; an explicit greedy repair preceded all v2 outputs. No third configuration searched.|
 |[Payment ownership](research/payment-ownership/RESULTS_V02.md)|12 source users /48 constructed views; 192 main + six smoke live Jev requests. Both full and related conditions, both mappings: 48/48; parser 48/48. Smoke 5/6. 245,241 input tokens, zero retries; no follow-up.|Public simulated tau source, AI-authored requests. Two submissions cover the same 96 items, with conditional label agreement and a candidate-scope objection for 24 product-reference inputs; explicit-ID inputs remain 24/24 per condition. No adjudicated reference update. [Review disposition](research/payment-ownership/REVIEW_DISPOSITION.md). A documented launch-gate amendment followed the smoke error and preceded all main calls. No main unknown-reference cases or ordinary-model comparison.|
@@ -30,7 +30,8 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 |[Joint routing pilot](research/fact-execution/JOINT_RESULTS.md)|Same 72 texts; 514 scientific forwards / 191,738 input tokens, plus two warmups. Joint 34/72 versus both matched direct controls 31/72; 60/66 foreign lines became target evidence.|Failed both screens: false commitments 11/24, determined correct 21/48. Controls match either calls or input tokens, not both.|
 |[Target switching](research/request-ownership/RESULTS.md)|24 newly constructed scenes / 48 views; 500 scientific forwards / 188,797 input tokens, plus two warmups. Joint 2/24 complete pairs becomes 23/24 with an ID gate; false commitments 7/12 to 0/12. Direct filtering remains 2/24; grammar code 24/24.|Passes its frozen directional diagnostic. Same-prefix IDs remove the earlier prefix shortcut, but sentence/policy grammar was already inspected. Zero independent human annotations.|
 
-All of these are constructed diagnostics. Forward counts, repeated views and
+These are constructed diagnostics except the selected public-source screen.
+Forward counts, repeated views and
 derived rows must not be added together as independent benchmark examples.
 Complete-case/parent/pair definitions also differ between studies. The earlier target-switch
 gate corrects 30 view decisions with no regression in that run; its one remaining
@@ -45,13 +46,9 @@ predictions and is not a blinded human-review instrument.
 
 ## Runtime preparation with actual generation
 
-**Separate diagnostic in progress:** the [public-dev source-label screen](research/source-label-screen/README.md)
-uses 12 previously unscored dev trees /24 unchanged inputs, including invariant
-pairs. All 48 original API requests now have responses; two explicit readout
-repairs preserve the original failures and never repeat a request. The fixed
-96-generation local grid is still running at this update. This is unreviewed
-source agreement, not an addition to completed studies or independent confirmation.
-The training-review queue below remains unscored.
+The [public-dev screen](research/source-label-screen/README.md) is now complete
+and listed in the model-run table above. It is unreviewed source agreement,
+not independent confirmation. The training-review queue below remains unscored.
 
 The [Qwen3.5-4B technical smoke](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)
 completed one BF16 GPU load and six generic generation calls (550 generated tokens,
