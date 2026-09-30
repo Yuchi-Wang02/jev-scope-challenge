@@ -3,6 +3,8 @@ import copy
 import importlib.util
 import sys
 import tempfile
+import io
+import zipfile
 import unittest
 from pathlib import Path
 
@@ -72,5 +74,19 @@ class CoverageAnalysisTests(unittest.TestCase):
                     {'event':'finished','batch_id':'smoke_000','ok':True,'responses':[{'job_id':'mock-for-resume-test-only'}]}])
                 with self.assertRaises(RuntimeError):B.completion()
         finally:B.OUT,B.LEDGER=old
+
+    def test_review_zip_creator_is_not_content_but_corruption_is(self):
+        expected={'README.md':'review only\n','reviewer.csv':'blank\n'}
+        for system in (0,3):
+            for corrupt in (False,True):
+                data=io.BytesIO()
+                with zipfile.ZipFile(data,'w') as z:
+                    for name,text in expected.items():
+                        entry=zipfile.ZipInfo(name);entry.create_system=system
+                        z.writestr(entry,text+('changed' if corrupt else ''))
+                data.seek(0)
+                if corrupt:
+                    with self.assertRaises(AssertionError):V.verify_archive(data,expected)
+                else:V.verify_archive(data,expected)
 
 if __name__=='__main__':unittest.main()

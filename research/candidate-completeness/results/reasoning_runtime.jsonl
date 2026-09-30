@@ -1,0 +1,1 @@
+{"attention":"sdpa","batch_size":4,"cuda":"12.8","dtype":"torch.bfloat16","gpu":"NVIDIA GeForce RTX 5070 Ti","load_s":3.3397139000007883,"model":"Qwen/Qwen3-4B","phase":"smoke","python":"3.10.18","revision":"1cfa9a7208912126459214e8b04321603b3df60c","seed":20260930,"started_at_utc":"2026-09-30T07:11:52.469399+00:00","tf32":false,"torch":"2.8.0+cu128","transformers":"4.55.4"}

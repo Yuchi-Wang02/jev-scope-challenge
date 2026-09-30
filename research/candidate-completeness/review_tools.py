@@ -62,6 +62,12 @@ Permission for public attribution (name or reviewer ID preference):
            'LICENSE':(ROOT/'vendor/LICENSE').read_text(encoding='utf-8')}
     return files,mapping
 
+def verify_archive(path, files):
+    with zipfile.ZipFile(path) as z:
+        assert z.namelist()==list(files)
+        assert len(z.infolist())==len(files)
+        for name,text in files.items():assert z.read(name)==text.encode('utf-8'),name
+
 def package(verify=False):
     files,mapping=materials();base=ROOT/'review';base.mkdir(exist_ok=True)
     for name,text in files.items():
@@ -75,7 +81,10 @@ def package(verify=False):
         for name,text in files.items():
             info=zipfile.ZipInfo(name,date_time=(2026,9,30,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,text.encode())
-    if verify:assert (base/'review_package.zip').read_bytes()==data.getvalue()
+    if verify:
+        # ZIP creator metadata and deflate streams can differ across OS/zlib builds.
+        # Verify exact uncompressed members, never rewrite the published archive.
+        verify_archive(base/'review_package.zip',files)
     else:(base/'review_package.zip').write_bytes(data.getvalue())
     return {'review_items':72,'submissions_received':0,'labels_or_outputs_in_package':False}
 

@@ -66,6 +66,24 @@ presentation. It does not claim a paper is ready.
   dedicated-model replacement claim. Publication/CI checks establish consistency,
   not scientific validity. No Hugging Face release yet.
 
+## 2026-09-30: stop a generation-default mismatch before main execution
+
+- Objective: execute one frozen fixed-budget reasoning control after native results.
+- Reality: Transformers 4.55.4 overwrote default-valued `do_sample=False` with the
+  checkpoint's True. Six smoke outputs at freeze `db2837c` therefore used sampling,
+  not the intended greedy configuration. No main job ran. Preserve 2,249 generated
+  tokens, 932 physical forwards and 11,104 processed padded token positions.
+- Audit: reproduced configuration merging on CPU without loading weights. The
+  model shards also match official pinned Hub LFS SHA256 values. The raw smoke
+  responses are retained under `reasoning_*`, not relabeled as valid greedy data.
+- Repair: [v2 amendment](research/candidate-completeness/REASONING_GREEDY_V2.md)
+  disables model-default merging and passes greedy mode explicitly, then validates
+  the effective mode before inference. No prompt/data/label/schedule change. Publish
+  the new freeze before any v2 output; total stage decisions capped at 156.
+- Publication repair: Linux CI exposed platform-dependent ZIP container metadata.
+  Verify each exact uncompressed review member and reject extra/missing/changed
+  members; preserve the original published archive. This changes no review content.
+
 ## Long-term direction and gates
 
 The project asks when models plus programs can provide reliable typed decisions,
