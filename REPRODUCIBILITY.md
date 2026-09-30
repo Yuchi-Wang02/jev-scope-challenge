@@ -37,6 +37,7 @@ python research/fact-execution/joint_analyze.py --verify
 python research/fact-execution/publish_joint.py --verify
 python research/fact-execution/scope_gate_audit.py verify
 python research/request-ownership/prepare.py verify
+python research/request-ownership/execution.py verify-freeze
 python docs/build_four_line_challenge.py verify
 python docs/build_risk_tradeoff.py verify
 python verify_publication.py
@@ -46,6 +47,10 @@ The full [CI workflow](.github/workflows/check.yml) also verifies generated
 publication bundles and other preparation artifacts. Offline consistency is
 different from reproducing model inference in a new environment or auditing
 labels independently. Our original outputs and failed attempt remain available.
+The request-ownership check verifies an unscored execution freeze. Its scorer
+requires complete real evidence and intentionally cannot produce model results
+before an approved run. In-memory software fixtures test the scorer without
+writing model records or calling a model.
 The four-line challenge verifier rebuilds the standalone page from the pinned
 S01 input texts and all 32 saved S01 model decisions across backends, mappings
 and rounds. It also recomputes the four grammar-specific code decisions and

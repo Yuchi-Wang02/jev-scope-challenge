@@ -97,10 +97,13 @@ the completed run scored no packed multi-fact line. The
 [research map](RESEARCH_INDEX.md) separates every completed result, derived
 analysis, pending review and unrun plan.
 
-The next [target-switch preparation](research/request-ownership/PROTOCOL.md)
+The next [target-switch diagnostic](research/request-ownership/)
 holds each two-request record block fixed and changes only the requested ID.
 Both IDs share one namespace. Its 24 constructed scenes / 48 views and query
-plans are unscored preparation, not an execution-ready freeze or confirmation.
+plans remain unscored. The [guarded execution protocol](research/request-ownership/EXECUTION_PROTOCOL.md)
+now freezes 500 scientific forwards /188,797 input tokens plus two unscored
+warmups, with a paired scorer and overwrite protection. A distinct local run
+approval is pending; this is not independent confirmation.
 
 ## Inspect or reproduce without an API key
 

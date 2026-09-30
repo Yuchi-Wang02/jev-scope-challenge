@@ -46,6 +46,7 @@ jobs:
       - run: python research/fact-execution/publish_joint.py --verify
       - run: python research/fact-execution/scope_gate_audit.py verify
       - run: python research/request-ownership/prepare.py verify
+      - run: python research/request-ownership/execution.py verify-freeze
       - run: python docs/build_four_line_challenge.py verify
       - run: python docs/build_risk_tradeoff.py verify
       - run: python verify_publication.py

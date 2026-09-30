@@ -55,7 +55,10 @@ The [target-switch preparation](research/request-ownership/PROTOCOL.md) uses
 24 newly constructed scenes / 48 paired views, with the same record block
 queried for two same-namespace IDs. It reuses existing policy/sentence templates;
 new scenes are not new independent policies or reviewed natural language.
-Its model outputs remain zero, and a guarded execution freeze is still pending.
+Its model outputs remain zero. A [guarded execution freeze](research/request-ownership/EXECUTION_PROTOCOL.md)
+now binds the 500-query union, 188,797 scientific input tokens, two unscored
+warmups, runner, scorer and paired endpoint. A distinct local-run approval is
+pending; completed prior-run approvals do not transfer to these new scenes.
 The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
 related extraction work and demonstrates that one exclusive label cannot carry
 two facts from the same line. That software test is not a model measurement.
