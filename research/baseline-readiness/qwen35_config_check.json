@@ -1,0 +1,9 @@
+{
+  "obsolete_unused_kwargs": {
+    "use_model_defaults": false
+  },
+  "corrected_unused_kwargs": {},
+  "corrected_do_sample": true,
+  "corrected_max_new_tokens": 256,
+  "model_forwards": 0
+}

@@ -135,7 +135,8 @@ def main():
                     eos_token_id=tokenizer.eos_token_id,
                     pad_token_id=tokenizer.pad_token_id or tokenizer.eos_token_id,
                     use_cache=True, num_beams=1, num_return_sequences=1)
-                effective, unused = model._prepare_generation_config(config, use_model_defaults=False)
+                effective, unused = model._prepare_generation_config(config)
+                assert not unused, unused
                 assert effective.do_sample is True and effective.max_new_tokens == 256
                 assert effective.temperature == config.temperature and effective.top_p == config.top_p
                 record = {'id': f'{"thinking" if thinking else "direct"}_{index+1}',
@@ -154,7 +155,7 @@ def main():
                     inference_start = start
                 with torch.inference_mode():
                     output = model.generate(**inputs, generation_config=config,
-                             use_model_defaults=False, stopping_criteria=StoppingCriteriaList([Deadline()]))
+                             stopping_criteria=StoppingCriteriaList([Deadline()]))
                 torch.cuda.synchronize()
                 elapsed = time.perf_counter()-start
                 ids = output[0, inputs['input_ids'].shape[1]:].tolist()
