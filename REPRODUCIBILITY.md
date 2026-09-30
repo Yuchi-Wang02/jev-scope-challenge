@@ -33,6 +33,7 @@ python research/fact-execution/publish_line.py --verify
 python research/fact-execution/joint_route_plan.py verify
 python research/fact-execution/joint_token_control.py verify
 python research/fact-execution/joint_execution.py verify-freeze
+python docs/build_four_line_challenge.py verify
 python verify_publication.py
 ```
 
@@ -40,6 +41,9 @@ The full [CI workflow](.github/workflows/check.yml) also verifies generated
 publication bundles and other preparation artifacts. Offline consistency is
 different from reproducing model inference in a new environment or auditing
 labels independently. Our original outputs and failed attempt remain available.
+The four-line challenge verifier rebuilds the standalone page from the pinned
+S01 input texts and all 32 saved S01 decisions across backends, mappings and
+rounds; it does not call either model.
 
 ## Original cancellation evidence
 
