@@ -74,10 +74,17 @@ under the ignored `.local/` directory; never commit those generated files.
 python research/external-validation/prepare_sharc_review.py verify
 python research/external-validation/prepare_sharc_review.py export
 python research/external-validation/prepare_sharc_review.py verify-export
+python research/external-validation/prepare_sharc_review.py export-page
+python research/external-validation/prepare_sharc_review.py verify-page
 ```
 
 The private files are `.local/sharc-train-contrast-review-v0.1/review_items.json`
-and `blank_review.csv`. The CSV starts blank; its presence, the machine
+and `blank_review.csv`. The generated `review.html` is an offline, item-by-item
+review interface with local drafts and CSV import/export. Its
+[public template](review_template.html) contains no ShARC examples; the
+text-filled page stays under ignored `.local/`. A reviewer can clear an
+incomplete item before export; export includes every queue ID and leaves
+unreviewed rows blank. The CSV starts blank; its presence, the machine
 manifest and a passed verifier do **not** count as independent annotations.
 Each reviewer should fill a separate copy of the CSV. The read-only checker
 accepts partial exports, rejects foreign or duplicated IDs, incomplete rows,

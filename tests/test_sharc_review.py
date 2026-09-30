@@ -8,7 +8,7 @@ HERE = Path(__file__).resolve().parents[1] / 'research/external-validation'
 sys.path.insert(0, str(HERE))
 from prepare_sharc_review import (
     CSV_FIELDS, PRIMARY_EACH, RESERVE_EACH, ROOT, STRATA,
-    choose, export_private, review_pack, validate_review_rows,
+    choose, export_private, review_pack, review_page, validate_review_rows,
 )
 
 
@@ -69,6 +69,15 @@ class SharcReviewPreparationTests(unittest.TestCase):
         for directory in (ROOT, ROOT / 'research', ROOT.parent / 'elsewhere'):
             with self.assertRaises(ValueError):
                 export_private(directory, b'private', b'blank')
+
+    def test_page_embeds_visible_text_without_executable_markup(self):
+        pack = {'items': [{'item_id': 'x', 'snippet': '</script><img src=x>',
+                           'question': 'Visible?', 'scenario': '', 'history': []}]}
+        page = review_page({'private_review_pack_sha256': 'digest'},
+                           json.dumps(pack).encode('utf-8')).decode('utf-8')
+        self.assertNotIn('</script><img src=x>', page)
+        self.assertIn('\\u003c/script>\\u003cimg src=x>', page)
+        self.assertNotIn('__REVIEW_DATA__', page)
 
     def test_review_checker_requires_exact_ids_and_complete_rows(self):
         pack = {'items': [{'item_id': 'a'}, {'item_id': 'b'}]}

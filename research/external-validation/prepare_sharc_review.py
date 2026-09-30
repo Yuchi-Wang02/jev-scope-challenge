@@ -15,6 +15,7 @@ from inspect_sharc_pairs import (
 
 ROOT = HERE.parents[1]
 MANIFEST = HERE / 'sharc_review_manifest.json'
+REVIEW_TEMPLATE = HERE / 'review_template.html'
 STUDY = 'sharc-train-contrast-review-v0.1'
 STRATA = ('No/Yes', 'ASK/No', 'ASK/Yes')
 PRIMARY_EACH = 8
@@ -231,7 +232,7 @@ def verify_manifest(manifest):
         raise ValueError('ShARC human-review selection drift')
 
 
-def export_private(directory, pack_bytes, csv_bytes):
+def private_directory(directory):
     directory = directory.resolve()
     local_path = ROOT / '.local'
     if local_path.is_symlink():
@@ -239,6 +240,11 @@ def export_private(directory, pack_bytes, csv_bytes):
     local = local_path.resolve()
     if directory != local and local not in directory.parents:
         raise ValueError('Private source text may only be exported inside .local')
+    return directory
+
+
+def export_private(directory, pack_bytes, csv_bytes):
+    directory = private_directory(directory)
     targets = (directory / 'review_items.json', directory / 'blank_review.csv')
     if any(path.exists() for path in targets):
         raise FileExistsError('Private review export exists; preserve it')
@@ -249,10 +255,42 @@ def export_private(directory, pack_bytes, csv_bytes):
     return targets
 
 
+def review_page(manifest, pack_bytes):
+    template = REVIEW_TEMPLATE.read_text(encoding='utf-8')
+    if template.count('__REVIEW_DATA__') != 1:
+        raise ValueError('Review page placeholder changed')
+    payload = json.dumps({
+        'pack_sha256': manifest['private_review_pack_sha256'],
+        'pack': json.loads(pack_bytes),
+    }, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+    return template.replace('__REVIEW_DATA__', payload).encode('utf-8')
+
+
+def verify_private_pack(directory, pack_bytes, csv_bytes):
+    directory = private_directory(directory)
+    paths = (directory / 'review_items.json', directory / 'blank_review.csv')
+    if [path.read_bytes() for path in paths] != [pack_bytes, csv_bytes]:
+        raise ValueError('Private review export does not match frozen manifest')
+    return paths
+
+
+def review_page_file(directory, payload, verify_only):
+    directory = private_directory(directory)
+    path = directory / 'review.html'
+    if verify_only:
+        if path.read_bytes() != payload:
+            raise ValueError('Private review page differs from pinned input/template')
+    else:
+        with path.open('xb') as output:
+            output.write(payload)
+    return path
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=('build', 'verify', 'export',
-                                           'verify-export', 'check-review'))
+                                           'verify-export', 'export-page',
+                                           'verify-page', 'check-review'))
     parser.add_argument('--output-dir', type=Path,
                         default=ROOT / '.local' / STUDY)
     parser.add_argument('--review-csv', type=Path)
@@ -269,11 +307,14 @@ def main():
         targets = export_private(args.output_dir, pack_bytes, csv_bytes)
         exported = [str(path) for path in targets]
     elif args.command == 'verify-export':
-        directory = args.output_dir.resolve()
-        paths = (directory / 'review_items.json', directory / 'blank_review.csv')
-        if [path.read_bytes() for path in paths] != [pack_bytes, csv_bytes]:
-            raise ValueError('Private review export does not match frozen manifest')
+        paths = verify_private_pack(args.output_dir, pack_bytes, csv_bytes)
         exported = [str(path) for path in paths]
+    elif args.command in ('export-page', 'verify-page'):
+        verify_private_pack(args.output_dir, pack_bytes, csv_bytes)
+        page = review_page_file(args.output_dir,
+                                review_page(manifest, pack_bytes),
+                                args.command == 'verify-page')
+        exported = [str(page)]
     else:
         exported = []
     review_status = {}
