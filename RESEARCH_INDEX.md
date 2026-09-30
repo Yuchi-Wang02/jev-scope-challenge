@@ -51,6 +51,14 @@ one truncated thinking output). It preserves a zero-forward dependency failure
 and pre-output amendments. This is not another research dataset or a demonstrated
 stronger comparator; no closed study was rerun.
 
+The following [generation calibration](research/generation-calibration/README.md)
+adds 48 development-only calls over 12 new elementary fixtures and two seeds.
+All calls end naturally; direct has 24/24 strict outputs with 22 content matches,
+thinking has 11/24 strict outputs. The other 13 thinking finals are single
+Markdown JSON blocks containing reference-matching objects, identified in a
+separate post-run inspection. No thinking cap qualifies under the frozen strict
+format gate. This is interface evidence, not 13 proven reasoning errors.
+
 ## Analyses of saved outputs and software checks
 
 The computational analyses below add no model forwards or independent human annotations. A large number of

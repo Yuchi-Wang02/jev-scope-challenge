@@ -1,5 +1,16 @@
 # Release notes
 
+## 2026-09-30 — independent generation/interface calibration
+
+Completed a predeclared 48-call Qwen3.5 calibration on 12 new elementary fixtures,
+using two seeds, explicit sampling, a standard presence penalty and a strict
+final-answer parser. All calls reach natural EOS; direct delivers 24 strict JSON
+outputs (22 reference matches), thinking 11. A separately labeled post-run
+inspection finds 13 rejected thinking finals are JSON fences whose inner objects
+match references. Primary results/cap qualification are unchanged; no failed
+format is presented as a proved reasoning error. Added all traces, offline
+verification and parser/budget regression checks. No prior research grid rerun.
+
 ## 2026-09-30 — Qwen3.5 runtime established
 
 Acquired a pinned Qwen3.5-4B checkpoint outside the repository and completed six

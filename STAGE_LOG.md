@@ -4,6 +4,27 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: calibrate output completion and audit format failures
+
+- Objective: exercise a strict final-answer interface and choose a finite output
+  budget using completion, independently of content correctness.
+- Completed: 12 new elementary fixtures x two seeds x direct/thinking, 48 calls;
+  8,128 input and 11,463 generated tokens; 368.783 seconds generation-stage wall
+  time. Zero API cost, new downloads, retries or token-cap stops. Frozen sampling
+  uses a tested standard presence penalty. All raw inputs and outputs are retained.
+- Gap: direct meets the strict format gate at 256 tokens but has two content
+  mismatches. Thinking ends naturally on all calls but 13 use Markdown JSON
+  fences, so no cap qualifies under the frozen parser. Post-run inspection finds
+  all 13 inner objects reference-matching; it does not rewrite the primary gate.
+- Decision: stop this calibration at its planned calls. A future ordinary-model
+  comparison needs a declared final-output contract that does not confuse
+  harmless wrappers with reasoning mistakes. More thinking tokens would not
+  resolve this particular format mismatch. New reviewed task material and a
+  realistic need beyond deterministic code remain the scientific bottlenecks.
+- Presentation: [complete calibration](research/generation-calibration/README.md),
+  separately labeled from research scores. No new performance leaderboard or
+  claim that a dedicated model is necessary.
+
 ## 2026-09-30: establish an executable Qwen3.5 comparator resource
 
 - Objective: move beyond model metadata and verify local loading/generation.

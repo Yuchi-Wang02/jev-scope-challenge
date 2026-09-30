@@ -101,6 +101,13 @@ protocol but is not the recommended-settings capability reference. Model-family
 claims need that missing comparison, separately reviewed material, and explicit
 precision/template/budget controls. The audit acquired no model or inference data.
 
+Later [runtime smoke](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md) and
+[output-budget calibration](research/generation-calibration/README.md) use actual
+local Qwen3.5 generations, but only on generic development fixtures. The strict
+parser, generated-token presence penalty and completion-based cap selection are
+ordinary engineering preparation. They do not supply the missing natural-language
+comparison or constitute an algorithmic contribution.
+
 ## Decision sufficiency: a specification example, not a method claim
 
 The [executable contract lab](research/decision-sufficiency/README.md) distinguishes

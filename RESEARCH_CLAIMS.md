@@ -41,6 +41,12 @@ prefiltered subset was not separately executed or timed.
 
 ## What is not established
 
+The subsequent [Qwen3.5 technical smoke](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)
+and [generation calibration](research/generation-calibration/README.md) establish
+runtime/interface evidence only. Their generic fixtures do not add task-specific
+research scores, independent human labels or a demonstrated capable-model ceiling
+to C12/C13. Complete parseable JSON and correct content remain separate checks.
+
 |Possible overstatement|Current evidence boundary|
 |---|---|
 |“A new decision architecture or extraction algorithm.”|The pointer architecture and adapted weights are upstream Kev artifacts. Native logits, order averaging, finite-state execution and ID equality are existing components. The current contribution is the diagnostic record and its controls; paper novelty remains unresolved.|

@@ -1,0 +1,600 @@
+{
+  "run_status": "completed",
+  "purpose": "development interface calibration, not research evaluation",
+  "fixtures": 12,
+  "independent_human_reviews": 0,
+  "modes": {
+    "direct": {
+      "completed_calls": 24,
+      "planned_calls": 24,
+      "natural_eos": 24,
+      "valid_final": 24,
+      "content_matches": 22,
+      "token_caps": 0,
+      "parse_statuses": {
+        "valid": 24
+      },
+      "generated_tokens": 201,
+      "generation_seconds": 10.8240273000265,
+      "length_min": 6,
+      "length_median": 7.0,
+      "length_max": 12,
+      "prefix_readiness": {
+        "256": 24
+      },
+      "selected_development_cap": 256
+    },
+    "thinking": {
+      "completed_calls": 24,
+      "planned_calls": 24,
+      "natural_eos": 24,
+      "valid_final": 11,
+      "content_matches": 11,
+      "token_caps": 0,
+      "parse_statuses": {
+        "valid": 11,
+        "invalid_json": 13
+      },
+      "generated_tokens": 11262,
+      "generation_seconds": 357.58547359997465,
+      "length_min": 133,
+      "length_median": 383.5,
+      "length_max": 1197,
+      "prefix_readiness": {
+        "256": 0,
+        "512": 6,
+        "1024": 11,
+        "2048": 11
+      },
+      "selected_development_cap": null
+    }
+  },
+  "cases": [
+    {
+      "id": "copy",
+      "reference": "C",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 383,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 621,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "threshold",
+      "reference": "B",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 7,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 347,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 759,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "reference": "C",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 384,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 360,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "sum",
+      "reference": "A",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 12,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 12,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 252,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 906,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "intersection",
+      "reference": "B",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 11,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 11,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 719,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 406,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "latest",
+      "reference": "A",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 11,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 658,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 439,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "conjunction",
+      "reference": "B",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 12,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 12,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 517,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 1197,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "minimum",
+      "reference": "A",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 133,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 365,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "lookup",
+      "reference": "C",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 259,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 293,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "count",
+      "reference": "C",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "C",
+          "status": "valid",
+          "tokens": 11,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 11,
+          "match": false
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 299,
+          "match": false
+        },
+        {
+          "seed": 43,
+          "answer": null,
+          "status": "invalid_json",
+          "tokens": 485,
+          "match": false
+        }
+      ]
+    },
+    {
+      "id": "alphabetical",
+      "reference": "A",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 7,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 463,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "A",
+          "status": "valid",
+          "tokens": 351,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "nested",
+      "reference": "B",
+      "direct": [
+        {
+          "seed": 17,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 6,
+          "match": true
+        }
+      ],
+      "thinking": [
+        {
+          "seed": 17,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 351,
+          "match": true
+        },
+        {
+          "seed": 43,
+          "answer": "B",
+          "status": "valid",
+          "tokens": 315,
+          "match": true
+        }
+      ]
+    }
+  ],
+  "total_generated_tokens": 11463,
+  "planned_input_tokens": 8128,
+  "new_model_downloads": 0,
+  "paid_api_calls": 0,
+  "posthoc_format_inspection": {
+    "selected_after_outputs": true,
+    "changes_primary_results_or_cap_selection": false,
+    "single_json_fence_cases": [
+      {
+        "id": "thinking-threshold-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "B"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-missing-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-missing-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-sum-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "A"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-intersection-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "B"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-latest-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "A"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-conjunction-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "B"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-conjunction-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "B"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-minimum-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "A"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-lookup-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-lookup-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-count-17",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      },
+      {
+        "id": "thinking-count-43",
+        "inspection": {
+          "status": "valid",
+          "answer": "C"
+        },
+        "inner_object_matches_reference": true
+      }
+    ]
+  }
+}

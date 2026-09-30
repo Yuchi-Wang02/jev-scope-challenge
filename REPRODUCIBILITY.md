@@ -21,6 +21,8 @@ python research/candidate-completeness/plot_results.py --verify
 python research/decision-sufficiency/build.py --verify
 python research/baseline-readiness/preflight.py verify
 python research/baseline-readiness/qwen35_report.py --verify
+python research/generation-calibration/prepare.py
+python research/generation-calibration/analyze.py --verify
 python -m unittest discover -s tests -v
 python verify_evidence.py
 python analyze.py --verify

@@ -60,6 +60,8 @@ jobs:
       - run: python research/decision-sufficiency/build.py --verify
       - run: python research/baseline-readiness/preflight.py verify
       - run: python research/baseline-readiness/qwen35_report.py --verify
+      - run: python research/generation-calibration/prepare.py
+      - run: python research/generation-calibration/analyze.py --verify
       - run: python docs/build_four_line_challenge.py verify
       - run: python docs/build_risk_tradeoff.py verify
       - run: python docs/build_request_switch.py verify

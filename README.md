@@ -58,6 +58,13 @@ in an isolated BF16 environment. Six generic interface checks generated 550 toke
 one thinking output hit its short cap. This is runtime evidence, with no new task
 scores or independent labels. The existing research grids remain closed.
 
+The subsequent [interface calibration](research/generation-calibration/README.md)
+ran 48 generations on 12 new elementary development fixtures. All ended naturally;
+13 thinking finals were rejected solely for a Markdown JSON wrapper, and inspection
+found their inner objects matched the references. Frozen strict results are retained.
+This is a warning about evaluation interfaces, not evidence of a Jev advantage or
+a new reasoning method.
+
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·
 [Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·

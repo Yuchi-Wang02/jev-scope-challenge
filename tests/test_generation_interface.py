@@ -1,7 +1,9 @@
 """Reject incomplete thoughts, ambiguous JSON, and bad development fixtures."""
 import importlib.util
 import json
+import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]/'research/generation-calibration'
@@ -14,6 +16,8 @@ def load(name):
 
 
 I = load('interface'); P = load('prepare')
+with patch.dict(sys.modules, {'interface': I, 'prepare': P}):
+    A = load('analyze')
 
 
 class GenerationInterfaceTests(unittest.TestCase):
@@ -52,3 +56,21 @@ class GenerationInterfaceTests(unittest.TestCase):
         for c in material['cases']:
             self.assertEqual(c['prompt'].count(P.FORMAT), 1)
         self.assertEqual(material, json.loads((ROOT/'plan.json').read_text(encoding='utf-8')))
+
+    def test_cap_selection_never_uses_answer_correctness(self):
+        rows = [{'parsed': {'status': 'valid'}, 'ended_with_eos': True,
+                 'generated_tokens': 300, 'content_match': False} for _ in range(24)]
+        self.assertEqual(A.select_cap(rows, [256,512,1024,2048], True), 512)
+        for r in rows: r['content_match'] = True
+        self.assertEqual(A.select_cap(rows, [256,512,1024,2048], True), 512)
+
+    def test_one_incomplete_or_malformed_call_disqualifies_cap(self):
+        rows = [{'parsed': {'status': 'valid'}, 'ended_with_eos': True,
+                 'generated_tokens': 100} for _ in range(24)]
+        self.assertIsNone(A.select_cap(rows[:23], [256], True))
+        self.assertIsNone(A.select_cap(rows, [256], False))
+        rows[-1]['ended_with_eos'] = False
+        self.assertIsNone(A.select_cap(rows, [256], True))
+        rows[-1]['ended_with_eos'] = True
+        rows[-1]['parsed']['status'] = 'invalid_json'
+        self.assertIsNone(A.select_cap(rows, [256], True))

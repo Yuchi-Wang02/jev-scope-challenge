@@ -71,6 +71,12 @@ means the Kev adapter/head was untrained.
 
 ## Other research credit and dependencies
 
+The [generation calibration](research/generation-calibration/README.md) inspects
+[vLLM v0.11.0 presence-penalty semantics](https://github.com/vllm-project/vllm/blob/v0.11.0/vllm/model_executor/layers/utils.py)
+as a reference. Its small standard-penalty processor is independently implemented;
+no vLLM source was copied, forked or executed. Standard penalties, JSON parsing
+and output-budget selection are engineering components, not new algorithms.
+
 Kev's [native/adapted probe](https://github.com/jaredpalmer/kev/blob/0c142becde423a0c68ec857f7831dac0315588a1/scripts/base_mmlu_probe.py)
 predates our N0/N1 comparison. Laya's diagnostic is a close neighbor to the
 scope/current/quoted-instruction questions. See the matched-base

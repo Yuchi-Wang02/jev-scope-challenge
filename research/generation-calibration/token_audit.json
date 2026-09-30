@@ -1,0 +1,8 @@
+{
+  "run_sha256": "9d7ba1efd68f43ac145be4c78f006ea4721506c630335f4057216d35252d0ea9",
+  "records_checked": 48,
+  "input_template_and_token_ids_match": true,
+  "output_ids_decode_to_saved_text": true,
+  "model_forwards": 0,
+  "scope": "Local tokenizer reconstruction, not independent inference or semantic validation"
+}
