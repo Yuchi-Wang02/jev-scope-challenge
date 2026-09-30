@@ -14,7 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CASES = ROOT / 'data' / 'cases.jsonl'
 DECISIONS = ROOT / 'results' / 'decisions.csv'
 TEMPLATE = ROOT / 'docs' / 'four_line_template.html'
-OUTPUT = ROOT / 'docs' / 'four_line_challenge.html'
+OUTPUTS = (ROOT / 'docs' / 'four_line_challenge.html',
+           ROOT / 'docs' / 'index.html')
 MARKER = '__CHALLENGE_DATA__'
 BACKENDS = ('jev', 'qwen')
 ROUNDS = ('0', '1')
@@ -87,12 +88,13 @@ def main():
     args = parser.parse_args()
     result = render()
     if args.command == 'build':
-        OUTPUT.write_bytes(result)
-    elif OUTPUT.read_bytes() != result:
+        for output in OUTPUTS:
+            output.write_bytes(result)
+    elif any(output.read_bytes() != result for output in OUTPUTS):
         raise ValueError('Published challenge differs from frozen cases/results/template')
     print(json.dumps({'status': args.command, 'cases': 4,
                       'saved_model_decisions': 32, 'new_model_calls': 0,
-                      'output': str(OUTPUT)}))
+                      'outputs': [str(output) for output in OUTPUTS]}))
 
 
 if __name__ == '__main__':
