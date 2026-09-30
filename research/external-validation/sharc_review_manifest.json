@@ -1,0 +1,32 @@
+{
+  "status": "train_only_pre_human_review_no_model_inference",
+  "study": "sharc-train-contrast-review-v0.1",
+  "official_archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+  "source_train_rows": 21890,
+  "source_one_answer_pairs": 3334,
+  "selection_rule": "Public train only; different provisional actions; 8 primary and 2 ordered reserves in each of No/Yes, ASK/No, ASK/Yes. SHA-256 rank and round-robin strata; no shared tree_id across selected pairs. Reserves replace invalid items only before inference, in frozen order.",
+  "provisional_strata": {
+    "No/Yes": {
+      "primary": 8,
+      "reserve": 2
+    },
+    "ASK/No": {
+      "primary": 8,
+      "reserve": 2
+    },
+    "ASK/Yes": {
+      "primary": 8,
+      "reserve": 2
+    }
+  },
+  "selected_pairs": 30,
+  "blinded_individual_items": 60,
+  "unique_tree_ids": 30,
+  "selection_sha256": "140053a26902255df677953b473045c93380976b8e12c94fbd93d5dda8d700a0",
+  "private_review_pack_sha256": "a84e976cde5033efce7e393a5a19e43461990684711d44f94f765c987d2b8524",
+  "private_blank_csv_sha256": "edd9053a5c1c1a0ab2bd27644ff1019e33bdb35e8f429823ae29d7f7ac39fa0b",
+  "independent_human_annotations": 0,
+  "model_forwards": 0,
+  "source_rows_committed": 0,
+  "source_and_item_ids_committed": 0
+}

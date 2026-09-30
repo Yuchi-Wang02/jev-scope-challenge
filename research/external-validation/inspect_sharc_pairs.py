@@ -51,51 +51,70 @@ def one_answer_difference(left, right):
     return ('No', 'Yes')
 
 
-def summarize(rows):
-    if len(rows) != 21890 or any(not isinstance(row, dict) or
-                                 not REQUIRED <= set(row) for row in rows):
-        raise ValueError('Unexpected pinned ShARC train grid')
+def dedupe_visible(rows):
     by_visible = defaultdict(list)
-    questions_by_tree = defaultdict(set)
     for row in rows:
         by_visible[visible_key(row)].append(row)
-        questions_by_tree[str(row['tree_id'])].add(str(row['question']))
-    duplicates = sum(len(group) > 1 for group in by_visible.values())
     ambiguous = [group for group in by_visible.values()
                  if len({action(row) for row in group}) > 1]
     kept = [min(group, key=lambda row: str(row['utterance_id']))
             for group in by_visible.values()
             if len({action(row) for row in group}) == 1]
+    return by_visible, ambiguous, kept
+
+
+def iter_one_answer_pairs(kept):
     by_context = defaultdict(list)
     for row in kept:
         by_context[visible_key(row)[:4]].append(row)
+    for group in by_context.values():
+        for left, right in itertools.combinations(group, 2):
+            if one_answer_difference(left, right) is not None:
+                yield left, right
+
+
+def summarize(rows):
+    if len(rows) != 21890 or any(not isinstance(row, dict) or
+                                 not REQUIRED <= set(row) for row in rows):
+        raise ValueError('Unexpected pinned ShARC train grid')
+    questions_by_tree = defaultdict(set)
+    snippets_by_tree = defaultdict(set)
+    for row in rows:
+        questions_by_tree[str(row['tree_id'])].add(str(row['question']))
+        snippets_by_tree[str(row['tree_id'])].add(str(row['snippet']))
+    by_visible, ambiguous, kept = dedupe_visible(rows)
+    duplicates = sum(len(group) > 1 for group in by_visible.values())
     transitions, changed_answers, trees = Counter(), Counter(), set()
     pairs = 0
-    for context, group in by_context.items():
-        for left, right in itertools.combinations(group, 2):
-            changed_answer = one_answer_difference(left, right)
-            if changed_answer is None:
-                continue
-            pairs += 1
-            changed_answers[changed_answer] += 1
-            labels = tuple(sorted((action(left), action(right))))
-            transitions[labels] += 1
-            if labels[0] != labels[1]:
-                trees.add(context[0])
+    for left, right in iter_one_answer_pairs(kept):
+        pairs += 1
+        changed_answers[('No', 'Yes')] += 1
+        labels = tuple(sorted((action(left), action(right))))
+        transitions[labels] += 1
+        if labels[0] != labels[1]:
+            trees.add(str(left['tree_id']))
     if changed_answers != {('No', 'Yes'): pairs}:
         raise ValueError('One-answer contrasts are not all Yes/No changes')
     changed = sum(n for (a, b), n in transitions.items() if a != b)
     multiple_questions = sum(len(questions) > 1
                              for questions in questions_by_tree.values())
+    question_variants = Counter(len(questions)
+                                for questions in questions_by_tree.values())
+    multiple_snippets = sum(len(snippets) > 1
+                            for snippets in snippets_by_tree.values())
     if (len(by_visible) != 21850 or duplicates != 34 or len(ambiguous) != 1 or
             sum(map(len, ambiguous)) != 3 or len(kept) != 21849 or
             pairs != 3334 or changed != 3037 or len(trees) != 599 or
-            multiple_questions != 628):
+            multiple_questions != 628 or question_variants != {3: 628} or
+            multiple_snippets != 0):
         raise ValueError('Pinned ShARC pair inventory drift')
     return {
         'status': 'train_only_visible_contrast_inventory_not_model_evaluation',
         'train_rows': len(rows), 'unique_visible_inputs': len(by_visible),
         'tree_ids_with_multiple_visible_questions': multiple_questions,
+        'question_variants_per_tree_distribution': {
+            str(n): count for n, count in sorted(question_variants.items())},
+        'tree_ids_with_multiple_visible_snippets': multiple_snippets,
         'duplicated_visible_input_groups': duplicates,
         'ambiguous_action_groups_excluded': len(ambiguous),
         'ambiguous_rows_excluded': sum(map(len, ambiguous)),
@@ -119,7 +138,7 @@ def summarize(rows):
         'raw_third_party_rows_published_here': 0}
 
 
-def audit():
+def load_train_rows():
     with urllib.request.urlopen(URL, timeout=30) as response:
         payload = response.read()
     if hashlib.sha256(payload).hexdigest() != ARCHIVE_SHA256:
@@ -127,7 +146,12 @@ def audit():
     with zipfile.ZipFile(io.BytesIO(payload)) as archive:
         rows = json.loads(archive.read(
             'sharc1-official/json/sharc_train.json').decode('utf-8'))
-    return {'official_archive_sha256': ARCHIVE_SHA256, **summarize(rows)}
+    return rows
+
+
+def audit():
+    return {'official_archive_sha256': ARCHIVE_SHA256,
+            **summarize(load_train_rows())}
 
 
 def main():

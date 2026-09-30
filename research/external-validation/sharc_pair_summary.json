@@ -4,6 +4,10 @@
   "train_rows": 21890,
   "unique_visible_inputs": 21850,
   "tree_ids_with_multiple_visible_questions": 628,
+  "question_variants_per_tree_distribution": {
+    "3": 628
+  },
+  "tree_ids_with_multiple_visible_snippets": 0,
   "duplicated_visible_input_groups": 34,
   "ambiguous_action_groups_excluded": 1,
   "ambiguous_rows_excluded": 3,

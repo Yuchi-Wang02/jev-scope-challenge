@@ -62,6 +62,10 @@ the pinned **training** split contains exact visible-input contrasts suitable
 for later human review. It publishes aggregate counts and selection logic
 only, with no third-party row text or model score.
 
+A [blinded review queue](SHARC_REVIEW_PROTOCOL.md) is now frozen at 30 pairs
+from 30 `tree_id` groups, exported as 60 independently shuffled items only
+to ignored private storage. No human labels or model outputs have been added.
+
 To recompute the structural summary from the pinned source (network required,
 no model or API credential):
 

@@ -67,9 +67,30 @@ def verify():
     for directory in ('evidence-gap','fact-execution'):
         manifest=json.loads((ROOT/f'research/{directory}/review/manifest.json').read_text(encoding='utf-8'))
         if manifest['annotations']!=0 or manifest['reserved_inference_open']:raise ValueError('Review status changed; update the study-wide publication audit explicitly')
+    external=ROOT/'research/external-validation'
+    source=json.loads((external/'sharc_source_summary.json').read_text(encoding='utf-8'))
+    pairs=json.loads((external/'sharc_pair_summary.json').read_text(encoding='utf-8'))
+    review=json.loads((external/'sharc_review_manifest.json').read_text(encoding='utf-8'))
+    if (source['archive_sha256']!=pairs['official_archive_sha256'] or
+        source['archive_sha256']!=review['official_archive_sha256'] or
+        review['selected_pairs']!=30 or review['blinded_individual_items']!=60 or
+        review['unique_tree_ids']!=30 or review['independent_human_annotations']!=0 or
+        review['model_forwards']!=0 or review['source_rows_committed']!=0):
+        raise ValueError('External review status or source pin changed; update publication audit')
+    allowed_external_data={
+        'research/external-validation/sharc_source_summary.json',
+        'research/external-validation/sharc_pair_summary.json',
+        'research/external-validation/sharc_review_manifest.json',
+    }
+    external_data={name for name in names
+                   if name.startswith('research/external-validation/') and
+                   Path(name).suffix.lower() in ('.json','.jsonl','.csv','.parquet','.zip')}
+    if external_data!=allowed_external_data:
+        raise ValueError('Unexpected public external-validation data file(s)')
     return {'status':'passed','read_only':True,**counts,'vendored_source_and_license_copies_checked':6,
         'citation_matches_schema_validated_bytes':True,'credential_pattern_matches':0,'public_weight_files':0,
-        'independent_human_annotations':0,'scope':'technical consistency, not a legal or scientific certification'}
+        'independent_human_annotations':0,'external_summary_files_checked':3,
+        'scope':'technical consistency, not a legal or scientific certification'}
 
 
 if __name__=='__main__':print(json.dumps(verify(),indent=2))
