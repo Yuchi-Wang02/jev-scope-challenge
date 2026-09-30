@@ -1,5 +1,23 @@
 # Release notes
 
+## 2026-09-30 — author review and candidate-scope audit
+
+Received Yuchi's 96-item author review and preserved the original CSV bytes and
+cover note. All IDs, destination IDs and labels agree with the original construction,
+but the reviewer raises a scope objection affecting 48 product-reference review
+items /24 underlying inputs. The input policy describes a selected order subset
+without guaranteeing that the request target is among the displayed candidates.
+Explicit-ID inputs remain 24/24 per condition. No adjudicated labels or new model
+results are claimed; no second reviewer has submitted.
+
+Added the [audit](research/payment-ownership/REVIEW_AUDIT.md), offline receipt/package
+checks and a neutral second-reviewer ZIP. Current entry points and the amended
+result replay disclose the qualification. Frozen inputs, protocols, original
+report, review package and raw responses are retained. Added a separate
+[candidate-completeness proposal](research/candidate-completeness/PLAN.md), with
+no data construction, API calls or execution approval implied by publication.
+The entries below retain their release-time status.
+
 ## 2026-09-30 — sourced payment-ownership Jev exploration
 
 Published the initial 198-request preparation before calls at `0569f8d`. The

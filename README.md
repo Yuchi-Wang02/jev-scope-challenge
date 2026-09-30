@@ -19,20 +19,22 @@ N1 uses an already-trained Kev LoRA with native causal logits; no new training
 does not mean an unadapted model. The latest payment-ownership diagnostic returns
 to live Jev with a new, publicly sourced simulated task.
 
-**Current evidence: real, replayable synthetic diagnostics; zero independent
-human annotations; no held-out confirmation of a general method.** Several
+**Current evidence: real, replayable synthetic diagnostics; one author has
+reviewed 96 payment-study items, with a scope objection; no non-author review
+submission or held-out confirmation of a general method.** Several
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
 ## Latest: Right Payment, Wrong Order?
 
-**Jev passed all 48 main inputs. One ambiguous smoke case still failed.**
+**Jev matched all 48 original main references. Author review questions the
+candidate scope of 24 product-reference inputs. One ambiguity smoke case failed.**
 A static refund-destination diagnostic uses 12 distinct simulated users from a
 pinned tau retail database. Switching target orders should change the answer in
 six parent scenes and preserve it in six. Requests include explicit IDs and
 constructed item/card references; the underlying records stay structured.
 
-|System / condition|Correct inputs /48|Complete four-view parents /12|
+|System / condition|Matches to original references /48|Complete parents under original references /12|
 |---|---:|---:|
 |Jev, full records, primary mapping|48|12|
 |Jev, program-selected related records, primary mapping|48|12|
@@ -40,8 +42,17 @@ constructed item/card references; the underlying records stay structured.
 
 The reversed option mapping also scores 48/48 in both input conditions.
 The prewritten main-grid stop rule was triggered; **no follow-up was run**.
-This construction did not expose the hypothesized foreign-order interference.
+Under the original interpretation, this construction did not expose the
+hypothesized foreign-order interference.
 It does not establish that Jev or a learned solution is necessary.
+
+**Review update:** Yuchi submitted 96/96 full/related review items. IDs and labels
+agree with the construction, but the cover note identifies an unresolved issue:
+the displayed orders are called a selected subset without guaranteeing that the
+target is among them. This affects 48 product-reference review items /24 inputs.
+Explicit-ID inputs remain 24/24 in every condition; the remaining scores depend
+on a displayed-candidate interpretation. No references have been changed and no
+second reviewer has submitted. Read the [audit and original submission](research/payment-ownership/REVIEW_AUDIT.md).
 
 The independent smoke score is **5/6**. With two Mug orders and no unique target,
 Jev selected VALID with returned probability 0.97 against the provisional
@@ -51,13 +62,15 @@ it changed the launch gate, not the main inputs or scoring. That outcome-aware
 change and the single failure are retained, not hidden behind the main score.
 
 Actual execution: **198 requests, 245,241 input tokens, zero retries**, estimated
-**$0.010300122** from reported usage (not an invoice). Zero independent human
-annotations; no strong ordinary-model comparison in this study; main data contains
+**$0.010300122** from reported usage (not an invoice). Two-reviewer adjudication
+is pending; no strong ordinary-model comparison in this study; main data contains
 no intended insufficient-evidence answers. No tau-bench agent score is claimed.
 
 - [Read the completed report and execution amendment](research/payment-ownership/RESULTS_V02.md).
 - [Replay exact requests, all six smoke cases and actual responses](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
 - [Review the inputs independently](research/payment-ownership/review/README.md).
+- [Download the second-reviewer handoff only](research/payment-ownership/review/reviewer_B_package.zip), without results or the first review.
+- [Read the proposed candidate-completeness study](research/candidate-completeness/PLAN.md): design only, no new calls.
 - [Inspect source, license and scope](research/payment-ownership/README.md).
 
 ## Earlier diagnostic: right facts, wrong request

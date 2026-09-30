@@ -1,0 +1,121 @@
+{
+  "received_at_utc": "2026-09-30T05:56:29.001486+00:00",
+  "original_filename": "payment_review_yuchi_excel.csv",
+  "original_sha256": "fa33f9f4761af2e5b517657a3cbbf6378c5bb495d9ea29b20c6bb458b26ebfb2",
+  "reviewer_id": "yuchi",
+  "review_items": 96,
+  "role": "project author reviewer",
+  "prior_summary_exposure": "aggregate results appeared in this conversation",
+  "specific_model_or_program_label_exposure": "reviewer self-report: no",
+  "ai_assistance": "reviewer self-report: no",
+  "discussion_with_others": "not explicitly reported",
+  "self_reports_independently_verified": false,
+  "second_reviewer_received": false,
+  "labels_automatically_adopted": false,
+  "label_reference_agreement": 96,
+  "target_reference_agreement": 96,
+  "destination_reference_agreement": 96,
+  "label_counts": {
+    "VALID_DESTINATION": 48,
+    "INVALID_DESTINATION": 48
+  },
+  "ambiguous_counts": {
+    "no": 96
+  },
+  "valid_evidence_paths": 552,
+  "wildcard_paths_included": 24,
+  "automated_evidence_issues": [],
+  "concern": "Item references are unique among displayed orders, but the state calls those orders a selected subset and does not explicitly restrict the target to that subset.",
+  "affected_review_items": [
+    "r_05f0d61ffb81",
+    "r_095d981eb8dc",
+    "r_0bc273a42396",
+    "r_13f378f30b01",
+    "r_184edce4f97a",
+    "r_2079364622a0",
+    "r_31ab985502a2",
+    "r_3a91f62f968b",
+    "r_3b1b22c28025",
+    "r_3b6dedf22495",
+    "r_3db64716bfd7",
+    "r_3f3afbb3e0d1",
+    "r_4122c48d6cc3",
+    "r_476fe595877b",
+    "r_5e5d4cee5a20",
+    "r_620d591bf935",
+    "r_660d4fb99568",
+    "r_686adc00b588",
+    "r_6a2c4d188642",
+    "r_6d1cfc976c5c",
+    "r_6dd94656455d",
+    "r_74efd6c75e2b",
+    "r_7c2c922bb970",
+    "r_7d4e9e4d375b",
+    "r_8554135d87b7",
+    "r_8c12013a5a66",
+    "r_8f6fc6cec70b",
+    "r_98689d22d641",
+    "r_99351772ee81",
+    "r_9ce21548a444",
+    "r_9eba777efba5",
+    "r_a2f3ef701c4d",
+    "r_a3ca2ef14313",
+    "r_a45bc2cb66d9",
+    "r_adc767cc4e54",
+    "r_b32bf28aabd0",
+    "r_b6e60ced9a4b",
+    "r_bbadbf4b1376",
+    "r_bbe55f88f6ef",
+    "r_bddadda1b49f",
+    "r_c08893e9fdae",
+    "r_c1ff431e4d66",
+    "r_c5aa47181888",
+    "r_d9ef0c2f248b",
+    "r_e5ed99ae2400",
+    "r_eb0d509af2de",
+    "r_ec0b6c1a5982",
+    "r_f98d899f1484"
+  ],
+  "affected_base_inputs": 24,
+  "parent_scenes": 12,
+  "interpretation_status": "unresolved annotation-scope issue; original labels and outputs retained",
+  "original_scores_by_style": {
+    "full_0_explicit": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "full_0_item_reference": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "full_1_explicit": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "full_1_item_reference": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "related_0_explicit": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "related_0_item_reference": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "related_1_explicit": {
+      "requests": 24,
+      "matches_original_reference": 24
+    },
+    "related_1_item_reference": {
+      "requests": 24,
+      "matches_original_reference": 24
+    }
+  },
+  "recommended_reporting": "Separate explicit-ID results (24/24 per arm) from item-reference results conditional on a visible-candidate scope assumption. Do not claim a newly established model failure or confirmed unambiguous full-grid success.",
+  "cover_note_verbatim": "审核者：Yuchi\n完成范围：全部（96/96）\n整体觉得不清楚的地方：规则同时写了 \"Use only visible records\" 和 \"The orders shown are a selected subset\"。用商品名指代订单的 48 条（\"my X order\"），我都把显示的订单中唯一含该商品的那一笔当作目标订单，Ambiguous 标 no。如果本意是\"显示的只是子集，不能排除未显示的同名商品订单\"，这 48 条的目标订单都无法唯一确定，应改为 UNRESOLVED / NOT_ESTABLISHED。直接给出订单号的另外 48 条不受影响。",
+  "provenance_reply_verbatim": "没看过 没ai",
+  "note_order_visibility_issues": [],
+  "note_check_scope": "All order IDs mentioned in notes are checked against the corresponding visible records. Mentions of non-target orders are allowed as contrastive evidence. This is not a full semantic certification of free text."
+}

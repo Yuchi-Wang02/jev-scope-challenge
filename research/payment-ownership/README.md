@@ -2,10 +2,16 @@
 
 **An exploratory static refund-destination diagnostic derived from tau retail.**
 This completed study contains 192 main Jev calls plus six smoke calls. Jev and
-the finite-language program each solve all 48 main inputs; one independent
+the finite-language program each match all 48 original main references; one independent
 ambiguity smoke case fails. The prewritten main-grid stop rule was triggered;
 no adaptive follow-up ran. Read [the results and amendment](RESULTS_V02.md),
 [the frozen protocol](PROTOCOL.md), and [the online replay](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
+
+**Post-run author review:** 96/96 items received, with a candidate-scope objection
+affecting 48 product-reference review items /24 underlying inputs. Explicit-ID
+inputs remain 24/24 per condition. Product-reference scores are conditional on
+interpreting the displayed records as the target candidates. No original label
+is changed. Read the [audit and preserved submission](REVIEW_AUDIT.md).
 
 **Execution amendment:** v0.1 stopped after an ambiguous-target smoke error.
 All six smoke responses were retained (5/6 correct). The subsequent
@@ -54,9 +60,12 @@ documented in [third-party notices](../../THIRD_PARTY_NOTICES.md).
 
 ## Review and reproduction
 
-Independent human annotations: **zero**. Two reviewers can use the separate
-[review pack](review/README.md); no human work is claimed complete. The 96 review
-items include both evidence views of the 48 inputs. Existing labels stay provisional.
+**One author review: 96 items completed. Zero non-author reviewer submissions;
+two-reviewer adjudication pending.** The [second-reviewer handoff](review/reviewer_B_package.zip)
+contains only the original inputs, blank form, viewer and neutral instructions.
+Send that package alone, without this page, the audit or any results. The original
+[review instructions](review/README.md) and package preserve their preparation-time
+status. Existing labels stay provisional; agreement does not settle the scope issue.
 
 Offline checks, requiring Python and the root requirements:
 
@@ -65,6 +74,7 @@ python research/payment-ownership/study.py verify-freeze
 python -m unittest discover -s tests -p test_payment_ownership.py -v
 python research/payment-ownership/report.py --verify
 python research/payment-ownership/verify_run.py
+python research/payment-ownership/audit_review.py --verify
 python research/payment-ownership/review_check.py research/payment-ownership/review/reviewer_A.csv
 ```
 

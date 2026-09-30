@@ -152,4 +152,10 @@ It requires full Git history for preparation commits `0569f8d` and `08fdda6`.
 pinned public source files into memory; it performs no inference. The original
 v0.1 runner retains the failed semantic gate. The v0.2 runner and amendment remain
 separately frozen, with shared append-only accounting. Published completed outputs
-are not a blank replication destination. Human review remains uncompleted.
+are not a blank replication destination. One author review of 96 items is complete,
+with a candidate-scope objection; second-reviewer submission and adjudication remain
+pending. Run `python research/payment-ownership/audit_review.py --verify` to check
+the unaltered submission hash, IDs, evidence paths, saved scores and the neutral
+second-reviewer package. The checks do not establish semantic validity or independence.
+See the [audit](research/payment-ownership/REVIEW_AUDIT.md). The separate
+[candidate-completeness plan](research/candidate-completeness/PLAN.md) has no new run.
