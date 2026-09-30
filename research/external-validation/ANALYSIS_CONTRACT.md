@@ -39,6 +39,13 @@ arbitrary fabricated record could be authenticated as a real model execution.
   and output tokens, incomplete usage, closed-session duration, incomplete session
   time, per-call latency sums, setup metadata and observed overruns. Known usage
   with an unresolved attempt is a partial sum, not the complete cost.
+- Each condition additionally reports its own input/output tokens, started and
+  unresolved attempts, error counts, and recorded callback latency sum, median
+  and nearest-rank p95. The percentile is observation at rank `ceil(0.95 * n)`
+  among finished callbacks, including failures; no observations means unavailable.
+  Partial observations are not a full-grid latency estimate. Thinking/direct and
+  option orders are never pooled for this view. Backend loading and verification
+  remain shared setup costs rather than an arbitrary per-condition allocation.
 - `complete_grid_within_recorded_budgets` and
   `complete_grid_without_execution_or_protocol_errors` are distinct flags. Neither
   means answers are correct or human reference truth is automatically verified.
@@ -79,9 +86,10 @@ conditions, not sixteen independent research examples or new generations.
 |`research/action-backends/results/jev/run.json`|`746065434596e8163ab20ed6a49147b91ea4a9a469eedaad5787354dc9039690`|
 |`research/action-backends/results/qwen/run.json`|`2a0f2e7d49ad78936761dcd156e3d98fa676e37deeb92e66e988c42f8bfcbebc`|
 
-Eight synthetic analyzer tests additionally cover cohort/input drift, invalid
+Nine synthetic analyzer tests additionally cover cohort/input drift, invalid
 answers, incomplete grids, unknown outcomes, stored-action changes, tokenizer
-requirements, budget overruns and final-call protocol failure. Synthetic journals
+requirements, budget overruns, final-call protocol failure and disaggregated
+cost accounting (including unknown outcomes). Synthetic journals
 are software fixtures, never model results.
 
 ```bash

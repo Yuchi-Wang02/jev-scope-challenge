@@ -3,7 +3,8 @@
 ## 2026-09-30 — raw-record comparison analysis
 
 Added common-cohort journal analysis, all five controls, incomplete-grid reporting
-and separate grid, error and budget completion flags. Eight synthetic tests pass.
+and separate grid, error and budget completion flags. Nine synthetic tests pass,
+including per-condition cost accounting that keeps direct/thinking modes apart.
 An offline audit of 16 preserved technical-smoke records exposed and resolved
 a no-weight versus actual-load generation-config mismatch without relaxing
 equality or changing historical records. Five altered in-memory records were

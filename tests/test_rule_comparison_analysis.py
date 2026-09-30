@@ -144,6 +144,33 @@ class RuleComparisonAnalysisTests(unittest.TestCase):
         self.assertEqual(report['resources']['jev']['result_status_counts']['protocol_error'], 1)
         self.assertEqual(report['conditions'][job['condition']]['metric']['invalid_output']['numerator'], 1)
 
+    def test_condition_costs_separate_thinking_orders_and_preserve_unknowns(self):
+        plan, refs, journals = setup_grid()
+        jobs = {j['id']: j for j in plan['jobs']}
+        for event in journals['qwen']:
+            if event['event'] == 'call_finish' and jobs[event['job_id']]['thinking']:
+                event['result']['output_tokens'] = 2
+                event['result']['detail']['output_ids'] *= 2
+                event['result']['latency_seconds'] = .3
+        report = self.run_grid(plan, refs, journals)
+        direct = report['conditions']['qwen_direct_order0']['resources']
+        thinking = report['conditions']['qwen_thinking_order0']['resources']
+        self.assertEqual(direct['known_output_tokens'], 4)
+        self.assertEqual(thinking['known_output_tokens'], 8)
+        self.assertEqual(direct['recorded_latency_median_seconds'], .1)
+        self.assertEqual(thinking['recorded_latency_p95_nearest_rank_seconds'], .3)
+        for backend in ('jev', 'qwen'):
+            for field in ('known_input_tokens', 'known_output_tokens', 'results_recorded'):
+                self.assertEqual(sum(c['resources'][field] for name, c in report['conditions'].items()
+                                     if name.startswith(backend)), report['resources'][backend][field])
+        journals['jev'] = journals['jev'][:3]
+        report = self.run_grid(plan, refs, journals)
+        started_job = jobs[journals['jev'][-1]['job_id']]
+        cost = report['conditions'][started_job['condition']]['resources']
+        self.assertTrue(cost['usage_incomplete'])
+        self.assertEqual(cost['unresolved_attempts'], 1)
+        self.assertIsNone(cost['recorded_latency_median_seconds'])
+
 
 if __name__ == '__main__':
     unittest.main()

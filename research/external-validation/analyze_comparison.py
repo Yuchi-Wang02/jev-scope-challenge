@@ -1,7 +1,9 @@
 """Offline, freeze-bound comparison analysis; never run models or repair records."""
 import argparse
 import json
+import math
 import sys
+from statistics import median
 from collections import Counter, defaultdict
 from contextlib import ExitStack
 from pathlib import Path
@@ -112,6 +114,29 @@ def audit_result(job, result, qwen_checker):
     return audited
 
 
+def condition_resources(rows, records):
+    """Per-condition observed costs; never allocate shared setup or impute usage."""
+    selected = [records[j['id']] for j in rows]
+    finished = [r for r in selected if r['state'] == 'finished']
+    unresolved = sum(r['state'] == 'started_without_result' for r in selected)
+    latencies = sorted(r['latency_seconds'] for r in finished)
+    return {
+        'attempts_started': len(finished) + unresolved,
+        'results_recorded': len(finished), 'unresolved_attempts': unresolved,
+        'result_status_counts': dict(Counter(r['result_status'] for r in finished)),
+        'known_input_tokens': sum(r['input_tokens'] or 0 for r in finished),
+        'known_output_tokens': sum(r['output_tokens'] or 0 for r in finished),
+        'usage_incomplete': bool(unresolved) or any(r['input_tokens'] is None or
+                                                   r['output_tokens'] is None for r in finished),
+        'recorded_latency_count': len(latencies),
+        'recorded_call_latency_seconds': sum(latencies),
+        'recorded_latency_median_seconds': median(latencies) if latencies else None,
+        'recorded_latency_p95_nearest_rank_seconds': latencies[math.ceil(.95 * len(latencies)) - 1]
+                                                   if latencies else None,
+        'shared_setup_cost_allocated': False,
+    }
+
+
 def analyze(plan, references, journals, plan_hash, *, qwen_checker=None):
     groups, states, tree_count = cohort(plan, references)
     records, resources = {}, {}
@@ -140,7 +165,9 @@ def analyze(plan, references, journals, plan_hash, *, qwen_checker=None):
             ident = job['id']
             if ident in state['results']:
                 result = state['results'][ident]
-                records[ident] = {'state': 'finished', **audit_result(job, result, qwen_checker)}
+                records[ident] = {'state': 'finished', **audit_result(job, result, qwen_checker),
+                    'result_status': result['status'], 'input_tokens': result['input_tokens'],
+                    'output_tokens': result['output_tokens'], 'latency_seconds': result['latency_seconds']}
             else:
                 records[ident] = {'state': 'started_without_result' if ident in state['started'] else 'not_started'}
     scores, predictions = {}, {}
@@ -154,6 +181,7 @@ def analyze(plan, references, journals, plan_hash, *, qwen_checker=None):
         scores[name] = {'grid_complete': complete, 'planned_items': len(rows),
                        'finished': statuses['finished'], 'not_started': statuses['not_started'],
                        'started_without_result': statuses['started_without_result'],
+                       'resources': condition_resources(rows, records),
                        'metric': score_condition(references, pred, condition=name) if complete else None,
                        'completion_counts': dict(Counter(records[j['id']]['completion'] for j in rows
                                                         if records[j['id']]['state'] == 'finished')),

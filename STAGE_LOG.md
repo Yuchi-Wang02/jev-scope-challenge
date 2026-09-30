@@ -24,6 +24,10 @@ presentation. It does not claim a paper is ready.
   activity. A separate live technical check needs its own explicit bounded purpose.
 - Presentation: show what can now be audited and the configuration repair, keeping
   technical readiness distinct from research findings or publication readiness.
+- Follow-through: stage self-review identified that backend totals alone pooled
+  direct/thinking costs. Added per-condition tokens, failure/unknown counts and
+  callback-latency summaries, with shared setup unallocated. A ninth synthetic
+  test reconciles condition totals to backend totals and preserves unknown usage.
 
 ## 2026-09-30: implement durable, bounded task execution without running the task
 
