@@ -1,5 +1,21 @@
 # Release notes
 
+## 2026-09-29 — visible-ID replay and target-switch preparation
+
+Added an explicitly post-hoc visible-text request-ID gate over the saved joint
+routes. Correct decisions change from 34/72 to 70/72, with 38 corrections and
+two regressions; the original failed screen stays failed. Full known-grammar
+code remains 72/72. Published all derived decisions, line gates, field checks,
+216 unscored name transformations and 16 software-only contract cases.
+
+The audit exposes a perfect target/distractor prefix shortcut in the original
+grammar. New target-switch preparation uses 24 constructed scenes / 48 views
+with two same-namespace request IDs and an identical record block within each
+pair. Prompts and program references are preparation only, with zero model
+outputs or independent human annotations; an execution freeze is still pending.
+No historical scientific source or output, paid API, model download, training,
+rewrite score or reserved score was changed or added.
+
 ## 2026-09-29 — completed joint-route N1 development pilot
 
 Executed the separately approved frozen 514-forward joint/direct union plus two

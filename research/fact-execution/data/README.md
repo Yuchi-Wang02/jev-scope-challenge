@@ -29,6 +29,11 @@ labels; they are not model evaluations, new independent examples or human
 annotations. The audit JSONL includes program references and must never be
 supplied wholesale as a model prompt.
 
+The [visible-ID gate overlay](scope_gate/README.md) reuses the completed joint
+pilot's outputs. Its 72 decision rows and 228 gate rows are post-hoc derivations;
+216 identifier-renamed texts and 16 parser contract examples have no model
+outputs. None are new independent annotations or an amended original result.
+
 Original synthetic text and program-derived reference data, including these
 provisional candidates, are CC BY 4.0. Attribute Yuchi Wang / Jev Scope Challenge,
 cite the relevant version, link the [license](https://creativecommons.org/licenses/by/4.0/),

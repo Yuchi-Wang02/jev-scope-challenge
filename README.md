@@ -83,6 +83,7 @@ separately. Laya was inspected as related work and was not run here.
 |[Correct Code, Wrong Facts](research/fact-execution/)|Facts plus a verified executor reached 44/72 versus 31/72 direct, but asserted values for 14/18 missing fields.|Original development only; 144 provisional rewrites await human review.|
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html) and the [12-parent paired audit](research/fact-execution/PARENT_PAIRED_AUDIT.md).|
 |[Joint routing results](research/fact-execution/JOINT_RESULTS.md)|514 new forwards: joint 34/72 versus 31/72 for both matched direct controls; 60/66 other-request lines became target evidence.|Failed both screening conditions. [Inspect all saved queries online](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html); no rewrite, reserved or Jev scores.|
+|[Visible-ID gate replay](research/fact-execution/VISIBLE_ID_GATE_AUDIT.md)|An ordinary text-ID gate changes saved joint outcomes from 34/72 to 70/72: 38 corrections and two regressions. Full grammar code remains 72/72.|Post-hoc, zero new forwards; original screen stays failed. Reveals a perfect ID-prefix shortcut in the joint-pilot inputs.|
 |[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
 |[Flip one answer](research/external-validation/SHARC_PAIR_AUDIT.md)|The public ShARC train split contains 3,334 strict one-history-answer contrasts; 3,037 change provisional action label.|A [30-pair blinded review queue](research/external-validation/SHARC_REVIEW_PROTOCOL.md) is frozen; zero reviews, model calls or new benchmark claims.|
 
@@ -95,6 +96,11 @@ unchanged as a historical pre-inference artifact. Its
 the completed run scored no packed multi-fact line. The
 [research map](RESEARCH_INDEX.md) separates every completed result, derived
 analysis, pending review and unrun plan.
+
+The next [target-switch preparation](research/request-ownership/PROTOCOL.md)
+holds each two-request record block fixed and changes only the requested ID.
+Both IDs share one namespace. Its 24 constructed scenes / 48 views and query
+plans are unscored preparation, not an execution-ready freeze or confirmation.
 
 ## Inspect or reproduce without an API key
 

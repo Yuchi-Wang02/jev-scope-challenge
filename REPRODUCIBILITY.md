@@ -35,6 +35,8 @@ python research/fact-execution/joint_token_control.py verify
 python research/fact-execution/joint_execution.py verify-freeze
 python research/fact-execution/joint_analyze.py --verify
 python research/fact-execution/publish_joint.py --verify
+python research/fact-execution/scope_gate_audit.py verify
+python research/request-ownership/prepare.py verify
 python docs/build_four_line_challenge.py verify
 python docs/build_risk_tradeoff.py verify
 python verify_publication.py

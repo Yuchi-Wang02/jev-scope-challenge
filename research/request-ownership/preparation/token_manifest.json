@@ -1,0 +1,22 @@
+{
+  "status": "tokenizer_only_design_preparation_not_execution_freeze",
+  "tokenizer_model": "Qwen/Qwen3-4B-Base",
+  "tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "planned_queries": 500,
+  "planned_input_tokens": 188797,
+  "input_tokens_by_arm": {
+    "joint_full": 85214,
+    "direct_full": 71050,
+    "direct_filtered": 32533
+  },
+  "single_anchor_input_tokens": {
+    "direct_full": 16314,
+    "direct_filtered": 14974
+  },
+  "max_input_tokens": 539,
+  "queries_sha256_lf": "19ee426082ab6c28614f554088265ca5e3fc61e95f3650a7de38402ba7681a6d",
+  "encoded_sha256_lf": "3fe772aa1e4490bfb2305f974b04ffcfe2d20d5ce5f44279e7e4eb920488e4c0",
+  "actual_model_forwards": 0,
+  "execution_ready": false,
+  "verification_limit": "Offline verify checks stored encodings, lengths and hashes; verify-tokenizer independently re-encodes using the cached pinned tokenizer."
+}

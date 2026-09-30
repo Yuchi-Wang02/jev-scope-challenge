@@ -44,6 +44,18 @@ pins the 514 unique forwards and 191,738 input tokens that were executed across
 the candidate and shared direct union. CI now verifies the raw results as well
 as the unchanged pre-inference source. The [saved-query viewer](docs/joint_route.html)
 shows every route and direct judgment; its filters make no model calls.
+The [visible-ID gate replay](research/fact-execution/VISIBLE_ID_GATE_AUDIT.md)
+uses only displayed request IDs to veto foreign records in saved joint outputs.
+It changes 34/72 to 70/72, with 38 corrections and two regressions, while the
+full grammar parser remains 72/72. This is post-hoc code-plus-saved-model
+composition, with zero new forwards and no retrospective screen pass.
+The original ID namespace perfectly encodes ownership; 216 unscored name
+transformations and 16 software contract cases expose that boundary.
+The [target-switch preparation](research/request-ownership/PROTOCOL.md) uses
+24 newly constructed scenes / 48 paired views, with the same record block
+queried for two same-namespace IDs. It reuses existing policy/sentence templates;
+new scenes are not new independent policies or reviewed natural language.
+Its model outputs remain zero, and a guarded execution freeze is still pending.
 The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
 related extraction work and demonstrates that one exclusive label cannot carry
 two facts from the same line. That software test is not a model measurement.

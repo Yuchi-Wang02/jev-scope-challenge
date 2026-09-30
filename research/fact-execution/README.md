@@ -49,6 +49,12 @@ now reports 514 scientific forwards: joint 34/72, both matched direct controls
 31/72, and 60/66 other-request lines assigned to target fields. Both prewritten
 screen conditions failed. [Inspect all saved queries](docs/joint_explorer.html)
 offline or use [the identical online viewer](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html).
+The subsequent [visible-ID gate audit](VISIBLE_ID_GATE_AUDIT.md) reuses those
+saved outputs: a grammar-specific identity veto yields 70/72, with 38 corrections
+and two regressions, versus full known-grammar code at 72/72. No new inference
+ran, and the original screen remains failed. The audit also exposes the original
+target/distractor ID-prefix confound and motivates an unscored
+[target-switch preparation](../request-ownership/PROTOCOL.md).
 The [second direct control](JOINT_TOKEN_CONTROL.md) matches its planned input
 token budget to within 40 tokens using distinct prompt orders selected without
 labels, while explicitly retaining the 58-call difference.
@@ -70,6 +76,7 @@ python research/fact-execution/fact_analyze.py --verify
 python research/fact-execution/publish_facts.py --verify
 python research/fact-execution/joint_analyze.py --verify
 python research/fact-execution/publish_joint.py --verify
+python research/fact-execution/scope_gate_audit.py verify
 python -m unittest discover -s tests -v
 ```
 
