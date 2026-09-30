@@ -1,6 +1,9 @@
 # Independent review — two separate reviewers
 
 **Completed independent annotations: zero.** The two blank templates are not labels.
+Download [the reviewer-only package](https://github.com/Yuchi-Wang02/jev-scope-challenge/raw/refs/heads/main/research/payment-ownership/review/review_package.zip). It excludes model results,
+construction labels, source-case mapping and pairing IDs; do not use the result
+replay as the review interface. The package does not prevent browsing public results.
 These materials cover 48 inputs in full and program-selected related forms: 96
 individually shuffled review items. Repeated forms are not independent samples.
 

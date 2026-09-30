@@ -62,3 +62,15 @@ authorize a new experiment. The older [source register](research/next-study/rela
 [missing-evidence register](research/evidence-gap/related_work.md) and
 [extraction scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md)
 retain their narrower context and additional sources.
+
+## 2026-09-30 addition: payment ownership
+
+The [new live-Jev diagnostic](research/payment-ownership/RESULTS_V02.md) adapts
+Sierra's pinned tau retail rules and simulated records. It reuses target-switch,
+contrast and oracle-style diagnostic ideas; it introduces no new binding algorithm.
+Jev and the finite parser solve the main grid. One ambiguous smoke case fails;
+the resulting launch amendment is disclosed. Current contribution: a reproducible
+bounded result with source provenance and retained failure, not a general benchmark
+or model replacement finding. The [bounded nearest-work review](research/payment-ownership/RELATED_WORK.md)
+includes entity binding, Legible Failures and When History Lies. Human review,
+ordinary-model comparison and independent confirmation remain incomplete.

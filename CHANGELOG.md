@@ -1,5 +1,26 @@
 # Release notes
 
+## 2026-09-30 — sourced payment-ownership Jev exploration
+
+Published the initial 198-request preparation before calls at `0569f8d`. The
+original launch prerequisite stopped on the fifth smoke case: an ambiguous target
+received VALID with probability 0.97. All six predeclared smoke cases were completed
+without reissuing earlier calls, scoring 5/6. The explicit v0.2 execution amendment
+and preserved smoke evidence were published at `08fdda6` before any main-grid call.
+It changes the prerequisite from perfect semantic accuracy to valid API responses;
+main inputs, labels, mappings, scoring and budgets remain unchanged.
+
+Completed 192 main requests on 12 distinct tau-source users /48 constructed views.
+All full/related and primary/reversed-mapping cells score 48/48, as does the finite
+parser. The main stop rule triggers; zero follow-up calls. Total actual work:
+198 HTTP attempts, 245,241 input tokens, zero retries, usage-estimated $0.010300122.
+The ambiguity error, outcome-aware amendment and zero independent human annotations
+remain visible in the [report](research/payment-ownership/RESULTS_V02.md) and
+[replay](docs/payment_ownership_v02.html). Added MIT upstream attribution, a 96-item
+review pack, source checks, budget/response tests and offline CI. No weights,
+training, new Kev/Laya run, HF upload or general reliability claim.
+
+
 ## 2026-09-29 — series documentation audit and current evidence map
 
 Reorganized the README around the original cancellation study and the latest

@@ -1,5 +1,7 @@
 # Right Payment, Wrong Order? — Jev results
 
+**Execution history:** the original all-correct smoke prerequisite failed (5/6). The [v0.2 amendment](EXECUTION_V02.md) was published before any main-grid call; it changed only that launch prerequisite. Original inputs and scoring were retained. Read the [smoke stop audit](SMOKE_AUDIT.md). This is outcome-aware exploratory work.
+
 **Status: completed. Independent human annotations: 0.**
 
 This is a static diagnostic derived from a public simulated tau retail database.
@@ -53,6 +55,6 @@ Jev or a learned method is necessary. No ordinary-model comparison has run.
 
 Run `python research/payment-ownership/study.py verify-freeze` and
 `python research/payment-ownership/report.py --verify` from the repository root.
-These checks are offline and never call a model. Open [the replay](../../docs/payment_ownership.html).
+These checks are offline and never call a model. Open [the replay](../../docs/payment_ownership_v02.html).
 See [the protocol](PROTOCOL.md), [data and source notes](README.md),
 [review instructions](review/README.md), and [nearest-work assessment](RELATED_WORK.md).

@@ -13,7 +13,7 @@ the GitHub fork relationship.
 |[Jared Palmer's Kev](https://github.com/jaredpalmer/kev)|Upstream implementation, trained artifact, and research precedent|The historical `kev/model.py` and empty `kev/__init__.py` are vendored unchanged. The pinned public LoRA and pointer-head weights were executed locally; weights are not committed. Kev's native/adapted probe informed the N0/N1 design.|
 |[NandhaKishorM's Laya](https://github.com/NandhaKishorM/laya)|Related work and design reference|We inspected its [Feishu scope/current/quoted-instruction diagnostic](https://github.com/NandhaKishorM/laya/blob/9d955671415fc19f069b9cc998928075c1f255ec/research/benchmarks/feishu_zh/README.md). No Laya implementation, checkpoint, dataset or result records are incorporated in our experiments. No Laya model scores were collected here.|
 |[Qwen](https://huggingface.co/Qwen)|Pretrained model and tokenizer provider|The original cancellation comparison used Qwen3-4B; the later matched-base series used Qwen3-4B-Base. Exact revisions appear below. We did not train these base models.|
-|[TypeSafe / Jev](https://typesafe.ai/)|Hosted comparison system|The original cancellation study called `jev-1.13.0`. Later Kev/Qwen studies are not new Jev measurements. No Jev implementation or weights are included.|
+|[TypeSafe / Jev](https://typesafe.ai/)|Hosted comparison system|The original cancellation study and 2026-09-30 payment-ownership study called `jev-1.13.0`. The intermediate Kev/Qwen studies are not Jev measurements. No Jev implementation or weights are included.|
 
 Inspecting or locally cloning an upstream repository for research is different
 from creating a GitHub fork. No fork is needed merely to preserve this evaluation
@@ -21,6 +21,19 @@ repository. A future upstream code contribution should be developed and attribut
 as such; none of the proposed head-training/upstream-contribution work is claimed
 as completed here. The historical plan's phrase “research fork” describes a
 possible later phase, not an existing fork.
+
+## Tau retail source: MIT
+
+The [payment-ownership study](research/payment-ownership/README.md) uses
+[Sierra Research tau2-bench](https://github.com/sierra-research/tau2-bench/tree/5bfa7e37b36656b37dc6d022156be6563c1007f3),
+commit `5bfa7e37b36656b37dc6d022156be6563c1007f3`. Selected simulated user/order
+records, policy.md and tools.py are copied with the full
+[MIT license](research/payment-ownership/vendor/LICENSE), copyright 2025 Sierra
+Research. The tool file is inspected reference material, not executed refund code.
+The [source manifest](research/payment-ownership/source_manifest.json) identifies
+original hashes, selection and the visible-state projection. New requests are
+AI-authored templates. This is not a GitHub fork, a tau agent evaluation or real
+customer data. This new study executes no Kev or Laya model/code.
 
 ## Vendored Kev source: Apache-2.0
 
@@ -75,6 +88,9 @@ model reuse; it is not a complete transitive dependency SBOM.
 
 - The root [MIT license](LICENSE) covers our original software and documentation,
   subject to the explicitly identified upstream source exceptions above.
+- The new tau-derived payment-ownership data, source copies and added request
+  templates use MIT with the retained Sierra notice, as documented in its data
+  card. Earlier studies retain their existing terms below.
 - Original synthetic input datasets and program-derived reference annotations
   are CC BY 4.0, as recorded in their data cards. This includes the explicitly
   provisional fact-execution rewrite candidates; a license does not certify

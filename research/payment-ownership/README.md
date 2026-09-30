@@ -1,8 +1,11 @@
 # Right Payment, Wrong Order?
 
 **An exploratory static refund-destination diagnostic derived from tau retail.**
-This directory contains new live-Jev preparation, not a tau-bench agent evaluation.
-Read [the frozen protocol](PROTOCOL.md) and, after execution, [the results](RESULTS.md).
+This completed study contains 192 main Jev calls plus six smoke calls. Jev and
+the finite-language program each solve all 48 main inputs; one independent
+ambiguity smoke case fails. The prewritten main-grid stop rule was triggered;
+no adaptive follow-up ran. Read [the results and amendment](RESULTS_V02.md),
+[the frozen protocol](PROTOCOL.md), and [the online replay](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
 
 **Execution amendment:** v0.1 stopped after an ambiguous-target smoke error.
 All six smoke responses were retained (5/6 correct). The subsequent
@@ -18,8 +21,8 @@ valid, three invalid). Explicit-ID and unique-item/card-description requests giv
 48 inputs: 24 VALID and 24 INVALID. Main data has no NOT_ESTABLISHED reference.
 Six separate smoke cases include missing and ambiguous evidence.
 
-Full records are compared with program-selected related records at two candidate
-orders: 192 planned scientific requests, plus six smoke requests. Related evidence
+Full records were compared with program-selected related records at two candidate
+orders: 192 completed scientific requests, plus six smoke requests. Related evidence
 uses the construction target ID and is pending independent review. It is not an
 implementable model-free filter for arbitrary user language. Repeated views and
 calls are not independent data points. Program labels and AI-authored templates
@@ -61,8 +64,13 @@ Offline checks, requiring Python and the root requirements:
 python research/payment-ownership/study.py verify-freeze
 python -m unittest discover -s tests -p test_payment_ownership.py -v
 python research/payment-ownership/report.py --verify
+python research/payment-ownership/verify_run.py
 python research/payment-ownership/review_check.py research/payment-ownership/review/reviewer_A.csv
 ```
+
+The optional `study.py verify-source` command downloads the pinned public source
+into memory and independently checks the database hash, deterministic selection,
+and copied policy/tool/license bytes. It makes no model call.
 
 The live runners require an authorized API key supplied privately, validate their
 freezes, append all attempts, and resume only safely completed jobs. The original

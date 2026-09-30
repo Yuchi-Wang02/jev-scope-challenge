@@ -1,5 +1,5 @@
 {
-  "status": "incomplete",
+  "status": "completed",
   "parents": 12,
   "views": 48,
   "main_reference_counts": {
@@ -11,23 +11,23 @@
     "recorded": 6,
     "correct": 5
   },
-  "primary_recorded": 0,
+  "primary_recorded": 192,
   "accounting": {
-    "attempts": 6,
+    "attempts": 198,
     "retries": 0,
-    "planned_input_units": 12668,
-    "known_input_tokens": 4661,
+    "planned_input_units": 570476,
+    "known_input_tokens": 245241,
     "unfinished": [],
     "unknown_usage_attempts": 0,
-    "usage_estimated_cost_usd": 0.00019576200000000001,
+    "usage_estimated_cost_usd": 0.010300122000000002,
     "usage_cost_is_invoice": false
   },
   "metrics": {
     "full_0": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -36,22 +36,22 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     },
     "full_1": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -60,22 +60,22 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     },
     "full_mean": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -84,22 +84,22 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     },
     "related_0": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -108,22 +108,22 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     },
     "related_1": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -132,22 +132,22 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     },
     "related_mean": {
-      "available": 0,
-      "correct": 0,
+      "available": 48,
+      "correct": 48,
       "total": 48,
-      "complete_four_view_parents": 0,
+      "complete_four_view_parents": 12,
       "parents": 12,
       "wrong_valid_among_invalid": 0,
       "invalid_reference_denominator": 24,
@@ -156,19 +156,452 @@
       "unknown_reference_denominator": 0,
       "by_style": {
         "explicit": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         },
         "item_reference": {
-          "correct": 0,
+          "correct": 24,
           "total": 24,
-          "complete_target_pairs": 0
+          "complete_target_pairs": 12
         }
       }
     }
   },
-  "primary_transitions": [],
+  "primary_transitions": [
+    {
+      "case_id": "p01_0_explicit",
+      "parent_id": "p01",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p01_0_item_reference",
+      "parent_id": "p01",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p01_1_explicit",
+      "parent_id": "p01",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p01_1_item_reference",
+      "parent_id": "p01",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p02_0_explicit",
+      "parent_id": "p02",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p02_0_item_reference",
+      "parent_id": "p02",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p02_1_explicit",
+      "parent_id": "p02",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p02_1_item_reference",
+      "parent_id": "p02",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p03_0_explicit",
+      "parent_id": "p03",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p03_0_item_reference",
+      "parent_id": "p03",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p03_1_explicit",
+      "parent_id": "p03",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p03_1_item_reference",
+      "parent_id": "p03",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p04_0_explicit",
+      "parent_id": "p04",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p04_0_item_reference",
+      "parent_id": "p04",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p04_1_explicit",
+      "parent_id": "p04",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p04_1_item_reference",
+      "parent_id": "p04",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p05_0_explicit",
+      "parent_id": "p05",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p05_0_item_reference",
+      "parent_id": "p05",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p05_1_explicit",
+      "parent_id": "p05",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p05_1_item_reference",
+      "parent_id": "p05",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p06_0_explicit",
+      "parent_id": "p06",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p06_0_item_reference",
+      "parent_id": "p06",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p06_1_explicit",
+      "parent_id": "p06",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p06_1_item_reference",
+      "parent_id": "p06",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p07_0_explicit",
+      "parent_id": "p07",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p07_0_item_reference",
+      "parent_id": "p07",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p07_1_explicit",
+      "parent_id": "p07",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p07_1_item_reference",
+      "parent_id": "p07",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p08_0_explicit",
+      "parent_id": "p08",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p08_0_item_reference",
+      "parent_id": "p08",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p08_1_explicit",
+      "parent_id": "p08",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p08_1_item_reference",
+      "parent_id": "p08",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p09_0_explicit",
+      "parent_id": "p09",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p09_0_item_reference",
+      "parent_id": "p09",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p09_1_explicit",
+      "parent_id": "p09",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p09_1_item_reference",
+      "parent_id": "p09",
+      "reference": "INVALID_DESTINATION",
+      "full": "INVALID_DESTINATION",
+      "related": "INVALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p10_0_explicit",
+      "parent_id": "p10",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p10_0_item_reference",
+      "parent_id": "p10",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p10_1_explicit",
+      "parent_id": "p10",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p10_1_item_reference",
+      "parent_id": "p10",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p11_0_explicit",
+      "parent_id": "p11",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p11_0_item_reference",
+      "parent_id": "p11",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p11_1_explicit",
+      "parent_id": "p11",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p11_1_item_reference",
+      "parent_id": "p11",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p12_0_explicit",
+      "parent_id": "p12",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p12_0_item_reference",
+      "parent_id": "p12",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p12_1_explicit",
+      "parent_id": "p12",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    },
+    {
+      "case_id": "p12_1_item_reference",
+      "parent_id": "p12",
+      "reference": "VALID_DESTINATION",
+      "full": "VALID_DESTINATION",
+      "related": "VALID_DESTINATION",
+      "full_correct": true,
+      "related_correct": true
+    }
+  ],
   "full_order_disagreements": 0,
   "controls": {
     "finite_parser_correct": 48,
@@ -179,9 +612,9 @@
     "always_invalid_complete_parents": 3,
     "always_defer_complete_parents": 0
   },
-  "median_request_latency_s": 0.1392291500014835,
-  "summed_successful_request_latency_s": 0.8400704999803565,
-  "continuation": "INCOMPLETE",
+  "median_request_latency_s": 0.14094199999817647,
+  "summed_successful_request_latency_s": 29.153474800041295,
+  "continuation": "STOP_NO_FOLLOWUP",
   "followup_calls": 0,
   "basis": "Exploratory constructed component test; program labels; review pending; no other model scored."
 }

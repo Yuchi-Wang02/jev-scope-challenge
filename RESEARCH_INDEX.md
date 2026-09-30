@@ -2,12 +2,13 @@
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed model run
-is the [target-switch diagnostic](research/request-ownership/RESULTS.md).
+is the [payment-ownership Jev diagnostic](research/payment-ownership/RESULTS_V02.md).
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
-The original comparison used Jev and Qwen. Later runs use a **historical pinned
-Kev checkpoint based on Qwen3-4B-Base**, not current Kev or new Jev measurements.
+The original comparison used Jev and Qwen. Intermediate runs use a **historical
+pinned Kev checkpoint based on Qwen3-4B-Base**. The payment-ownership study returns
+to live Jev; it does not measure current Kev.
 N0 is unchanged Base/native; N1 adds upstream Kev LoRA while retaining the native
 LM head; K1 uses the adapted backbone and Kev pointer path. Laya was inspected
 as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICES.md).
@@ -16,6 +17,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[Payment ownership](research/payment-ownership/RESULTS_V02.md)|12 source users /48 constructed views; 192 main + six smoke live Jev requests. Both full and related conditions, both mappings: 48/48; parser 48/48. Smoke 5/6. 245,241 input tokens, zero retries; no follow-up.|Public simulated tau source, AI-authored requests, no independent human labels. A documented launch-gate amendment followed the smoke error and preceded all main calls. No main unknown-reference cases or ordinary-model comparison.|
 |[Cancellation scope](results/REPORT.md)|12 four-view cases / 48 texts; 384 formal records across Jev and Qwen, plus six smoke records. Primary complete cases: Jev 12/12, Qwen 8/12; grammar code 12/12.|Local pre-execution freeze; public release followed execution. Repeated mappings and rounds are not independent examples.|
 |[Matched base](research/next-study/)|24 parents / 96 texts; 864 completed scientific forwards. N0/N1/K1 exploratory test: 85/111/98 correct out of 144 repeated decisions.|A 576-record stopped attempt is archived and excluded. The inspected test is now development/regression material.|
 |[Input boundary](research/layout-boundary/)|Same matched-base corpus; 2,016 new scientific forwards and 2,592 logical rows including shared native records. Rankings change with layout/split.|No new independent dataset. Another 864 parity forwards and six warmups are reported separately.|
@@ -27,7 +29,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 All of these are constructed diagnostics. Forward counts, repeated views and
 derived rows must not be added together as independent benchmark examples.
-Complete-case/parent/pair definitions also differ between studies. The latest
+Complete-case/parent/pair definitions also differ between studies. The earlier target-switch
 gate corrects 30 view decisions with no regression in that run; its one remaining
 field-assignment error and all direct-filter regressions are preserved in the report.
 
@@ -66,6 +68,10 @@ shared records and zero-call controls should not be counted as additional runs.
 |[Cited-fact model comparison](research/fact-execution/CITED_FACT_PLAN.md)|A design with a strict grammar-code citation control and software checks.|A separately frozen model comparison; code tests are not model evidence.|
 |[ShARC external-data inventory](research/external-validation/) and [review protocol](research/external-validation/SHARC_REVIEW_PROTOCOL.md)|Train/dev source audit and train-only selection of 30 pairs / 60 blinded items. Public source summaries only; no public dataset copy, completed human review or model scores.|Two-reviewer review, adjudication and the declared selection workflow.|
 |[Head-only versus joint training](research/next-study/PLAN.zh-CN.md)|Historical second-phase design; no training run or new checkpoint.|Fresh data, matched tuning/compute budgets, seeds and a new approved execution protocol.|
+
+The [payment review pack](research/payment-ownership/review/README.md) adds 96
+shuffled full/related items and two blank reviewer forms. Its 48 underlying inputs
+have already been model-scored as exploratory development material.
 
 Independent human annotations remain zero. There is no held-out confirmation of
 the evolving method, language-transfer result, new learned checkpoint, Hugging

@@ -142,3 +142,14 @@ API cost is estimated from returned input-token usage and the documented fee,
 not verified against an account invoice. Local GPU time is not converted into
 an artificial zero-dollar deployment price. No hosted/local architecture speed
 claim follows from the latency table.
+
+## Payment-ownership study (2026-09-30)
+
+Run `python research/payment-ownership/verify_run.py` for offline raw-response,
+source-freeze, explicit execution-amendment, aggregate and publication checks.
+It requires full Git history for preparation commits `0569f8d` and `08fdda6`.
+`python research/payment-ownership/study.py verify-source` additionally re-fetches
+pinned public source files into memory; it performs no inference. The original
+v0.1 runner retains the failed semantic gate. The v0.2 runner and amendment remain
+separately frozen, with shared append-only accounting. Published completed outputs
+are not a blank replication destination. Human review remains uncompleted.

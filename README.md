@@ -14,16 +14,53 @@ software decision components without new training. That question remains open.
 
 The project began with a live **Jev vs frozen Qwen3-4B** cancellation challenge.
 Jev won that probe, and a parser tailored to its grammar also solved every case.
-Later studies examine **historical pinned Kev/Qwen checkpoints**, not new Jev
-measurements or current upstream Kev. N1 uses an already-trained Kev LoRA with
-native causal logits; no new training does not mean an unadapted model.
+The intermediate studies examine **historical pinned Kev/Qwen checkpoints**.
+N1 uses an already-trained Kev LoRA with native causal logits; no new training
+does not mean an unadapted model. The latest payment-ownership diagnostic returns
+to live Jev with a new, publicly sourced simulated task.
 
 **Current evidence: real, replayable synthetic diagnostics; zero independent
 human annotations; no held-out confirmation of a general method.** Several
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
-## Latest completed diagnostic: right facts, wrong request
+## Latest: Right Payment, Wrong Order?
+
+**Jev passed all 48 main inputs. One ambiguous smoke case still failed.**
+A static refund-destination diagnostic uses 12 distinct simulated users from a
+pinned tau retail database. Switching target orders should change the answer in
+six parent scenes and preserve it in six. Requests include explicit IDs and
+constructed item/card references; the underlying records stay structured.
+
+|System / condition|Correct inputs /48|Complete four-view parents /12|
+|---|---:|---:|
+|Jev, full records, primary mapping|48|12|
+|Jev, program-selected related records, primary mapping|48|12|
+|Finite-language parser + policy code|48|12|
+
+The reversed option mapping also scores 48/48 in both input conditions.
+The prewritten main-grid stop rule was triggered; **no follow-up was run**.
+This construction did not expose the hypothesized foreign-order interference.
+It does not establish that Jev or a learned solution is necessary.
+
+The independent smoke score is **5/6**. With two Mug orders and no unique target,
+Jev selected VALID with returned probability 0.97 against the provisional
+NOT_ESTABLISHED reference. The original launch prerequisite stopped there.
+An explicit amendment was published **after smoke but before all main calls**;
+it changed the launch gate, not the main inputs or scoring. That outcome-aware
+change and the single failure are retained, not hidden behind the main score.
+
+Actual execution: **198 requests, 245,241 input tokens, zero retries**, estimated
+**$0.010300122** from reported usage (not an invoice). Zero independent human
+annotations; no strong ordinary-model comparison in this study; main data contains
+no intended insufficient-evidence answers. No tau-bench agent score is claimed.
+
+- [Read the completed report and execution amendment](research/payment-ownership/RESULTS_V02.md).
+- [Replay exact requests, all six smoke cases and actual responses](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
+- [Review the inputs independently](research/payment-ownership/review/README.md).
+- [Inspect source, license and scope](research/payment-ownership/README.md).
+
+## Earlier diagnostic: right facts, wrong request
 
 Keep a two-request record block fixed and change only the requested ID. Both
 IDs use the same prefix. A complete pair requires both resulting decisions to
