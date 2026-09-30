@@ -1,0 +1,45 @@
+{
+  "status_at_preparation": "zero model calls",
+  "study": "rule-direction-v1",
+  "plan_sha256": "83c35ff0338600325b55c9f0805b072d930775319431a9795c38668bfe4c0a8c",
+  "case_sha256": "cbb82b3ca4b2330a39a4d8fe26937e58cbeef92fa7025204b2fb35fdbf65eb9b",
+  "counts": {
+    "jev_smoke": 6,
+    "qwen_smoke": 6,
+    "jev_main": 216,
+    "qwen_main": 216
+  },
+  "reference_distribution": {
+    "yes": 24,
+    "maybe": 60,
+    "no": 24
+  },
+  "vocabulary_families": 12,
+  "logical_relation_patterns": 3,
+  "orders": [
+    [
+      "yes",
+      "no",
+      "maybe"
+    ],
+    [
+      "maybe",
+      "no",
+      "yes"
+    ]
+  ],
+  "planned_local_input_tokens": 37620,
+  "planned_local_output_token_cap": 7104,
+  "planned_jev_request_bytes_plus_allowance": 1125798,
+  "limits": {
+    "http_attempts": 222,
+    "http_retries": 0,
+    "local_generations": 222,
+    "jev_actual_input_tokens": 300000,
+    "jev_planning_bytes_plus_allowance": 2000000,
+    "local_input_tokens": 200000,
+    "local_generated_tokens": 7104,
+    "local_generation_wall_seconds": 900,
+    "local_context_tokens": 32768
+  }
+}

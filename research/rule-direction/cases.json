@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "r01_sufficient_positive",
+    "family_id": "r01",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel carries a blue inspection seal."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_sufficient_negative",
+    "family_id": "r01",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel does not carry a blue inspection seal."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_sufficient_unknown",
+    "family_id": "r01",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_necessary_positive",
+    "family_id": "r01",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel carries a blue inspection seal."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_necessary_negative",
+    "family_id": "r01",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel does not carry a blue inspection seal."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r01_necessary_unknown",
+    "family_id": "r01",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_equivalent_positive",
+    "family_id": "r01",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if and only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel carries a blue inspection seal."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r01_equivalent_negative",
+    "family_id": "r01",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if and only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday. The parcel does not carry a blue inspection seal."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r01_equivalent_unknown",
+    "family_id": "r01",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The parcel qualifies for priority dispatch if and only if the parcel carries a blue inspection seal.",
+      "question": "Does the parcel qualify for priority dispatch?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_sufficient_positive",
+    "family_id": "r02",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The repair request qualifies for free service if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request includes a valid receipt."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_sufficient_negative",
+    "family_id": "r02",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The repair request qualifies for free service if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request does not include a valid receipt."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_sufficient_unknown",
+    "family_id": "r02",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The repair request qualifies for free service if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_necessary_positive",
+    "family_id": "r02",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The repair request qualifies for free service only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request includes a valid receipt."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_necessary_negative",
+    "family_id": "r02",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The repair request qualifies for free service only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request does not include a valid receipt."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r02_necessary_unknown",
+    "family_id": "r02",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The repair request qualifies for free service only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_equivalent_positive",
+    "family_id": "r02",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The repair request qualifies for free service if and only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request includes a valid receipt."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r02_equivalent_negative",
+    "family_id": "r02",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The repair request qualifies for free service if and only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday. The repair request does not include a valid receipt."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r02_equivalent_unknown",
+    "family_id": "r02",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The repair request qualifies for free service if and only if the repair request includes a valid receipt.",
+      "question": "Does the repair request qualify for free service?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_sufficient_positive",
+    "family_id": "r03",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The booking qualifies for a date change if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking has a flexible fare."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_sufficient_negative",
+    "family_id": "r03",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The booking qualifies for a date change if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking does not have a flexible fare."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_sufficient_unknown",
+    "family_id": "r03",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The booking qualifies for a date change if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_necessary_positive",
+    "family_id": "r03",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The booking qualifies for a date change only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking has a flexible fare."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_necessary_negative",
+    "family_id": "r03",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The booking qualifies for a date change only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking does not have a flexible fare."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r03_necessary_unknown",
+    "family_id": "r03",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The booking qualifies for a date change only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_equivalent_positive",
+    "family_id": "r03",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The booking qualifies for a date change if and only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking has a flexible fare."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r03_equivalent_negative",
+    "family_id": "r03",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The booking qualifies for a date change if and only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday. The booking does not have a flexible fare."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r03_equivalent_unknown",
+    "family_id": "r03",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The booking qualifies for a date change if and only if the booking has a flexible fare.",
+      "question": "Does the booking qualify for a date change?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_sufficient_positive",
+    "family_id": "r04",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment has a current safety certificate."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_sufficient_negative",
+    "family_id": "r04",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment does not have a current safety certificate."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_sufficient_unknown",
+    "family_id": "r04",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_necessary_positive",
+    "family_id": "r04",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment has a current safety certificate."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_necessary_negative",
+    "family_id": "r04",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment does not have a current safety certificate."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r04_necessary_unknown",
+    "family_id": "r04",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_equivalent_positive",
+    "family_id": "r04",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if and only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment has a current safety certificate."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r04_equivalent_negative",
+    "family_id": "r04",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if and only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday. The equipment does not have a current safety certificate."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r04_equivalent_unknown",
+    "family_id": "r04",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The equipment qualifies for warehouse use if and only if the equipment has a current safety certificate.",
+      "question": "Does the equipment qualify for warehouse use?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_sufficient_positive",
+    "family_id": "r05",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier has a completed quality audit."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_sufficient_negative",
+    "family_id": "r05",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier does not have a completed quality audit."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_sufficient_unknown",
+    "family_id": "r05",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_necessary_positive",
+    "family_id": "r05",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier has a completed quality audit."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_necessary_negative",
+    "family_id": "r05",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier does not have a completed quality audit."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r05_necessary_unknown",
+    "family_id": "r05",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_equivalent_positive",
+    "family_id": "r05",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if and only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier has a completed quality audit."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r05_equivalent_negative",
+    "family_id": "r05",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if and only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday. The supplier does not have a completed quality audit."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r05_equivalent_unknown",
+    "family_id": "r05",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The supplier qualifies for the preferred list if and only if the supplier has a completed quality audit.",
+      "question": "Does the supplier qualify for the preferred list?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_sufficient_positive",
+    "family_id": "r06",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental includes a protection package."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_sufficient_negative",
+    "family_id": "r06",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental does not include a protection package."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_sufficient_unknown",
+    "family_id": "r06",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_necessary_positive",
+    "family_id": "r06",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental includes a protection package."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_necessary_negative",
+    "family_id": "r06",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental does not include a protection package."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r06_necessary_unknown",
+    "family_id": "r06",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_equivalent_positive",
+    "family_id": "r06",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if and only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental includes a protection package."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r06_equivalent_negative",
+    "family_id": "r06",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if and only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday. The rental does not include a protection package."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r06_equivalent_unknown",
+    "family_id": "r06",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The rental qualifies for a fee waiver if and only if the rental includes a protection package.",
+      "question": "Does the rental qualify for a fee waiver?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_sufficient_positive",
+    "family_id": "r07",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch has a passing temperature report."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_sufficient_negative",
+    "family_id": "r07",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch does not have a passing temperature report."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_sufficient_unknown",
+    "family_id": "r07",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_necessary_positive",
+    "family_id": "r07",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch has a passing temperature report."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_necessary_negative",
+    "family_id": "r07",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch does not have a passing temperature report."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r07_necessary_unknown",
+    "family_id": "r07",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_equivalent_positive",
+    "family_id": "r07",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if and only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch has a passing temperature report."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r07_equivalent_negative",
+    "family_id": "r07",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if and only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday. The batch does not have a passing temperature report."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r07_equivalent_unknown",
+    "family_id": "r07",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The batch qualifies for cold-storage release if and only if the batch has a passing temperature report.",
+      "question": "Does the batch qualify for cold-storage release?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_sufficient_positive",
+    "family_id": "r08",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The account qualifies for invoice billing if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account has a verified address."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_sufficient_negative",
+    "family_id": "r08",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The account qualifies for invoice billing if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account does not have a verified address."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_sufficient_unknown",
+    "family_id": "r08",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The account qualifies for invoice billing if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_necessary_positive",
+    "family_id": "r08",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The account qualifies for invoice billing only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account has a verified address."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_necessary_negative",
+    "family_id": "r08",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The account qualifies for invoice billing only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account does not have a verified address."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r08_necessary_unknown",
+    "family_id": "r08",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The account qualifies for invoice billing only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_equivalent_positive",
+    "family_id": "r08",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The account qualifies for invoice billing if and only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account has a verified address."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r08_equivalent_negative",
+    "family_id": "r08",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The account qualifies for invoice billing if and only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday. The account does not have a verified address."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r08_equivalent_unknown",
+    "family_id": "r08",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The account qualifies for invoice billing if and only if the account has a verified address.",
+      "question": "Does the account qualify for invoice billing?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_sufficient_positive",
+    "family_id": "r09",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The order qualifies for a packing discount if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order contains a reusable container."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_sufficient_negative",
+    "family_id": "r09",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The order qualifies for a packing discount if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order does not contain a reusable container."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_sufficient_unknown",
+    "family_id": "r09",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The order qualifies for a packing discount if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_necessary_positive",
+    "family_id": "r09",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The order qualifies for a packing discount only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order contains a reusable container."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_necessary_negative",
+    "family_id": "r09",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The order qualifies for a packing discount only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order does not contain a reusable container."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r09_necessary_unknown",
+    "family_id": "r09",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The order qualifies for a packing discount only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_equivalent_positive",
+    "family_id": "r09",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The order qualifies for a packing discount if and only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order contains a reusable container."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r09_equivalent_negative",
+    "family_id": "r09",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The order qualifies for a packing discount if and only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday. The order does not contain a reusable container."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r09_equivalent_unknown",
+    "family_id": "r09",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The order qualifies for a packing discount if and only if the order contains a reusable container.",
+      "question": "Does the order qualify for a packing discount?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_sufficient_positive",
+    "family_id": "r10",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device has an active maintenance plan."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_sufficient_negative",
+    "family_id": "r10",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device does not have an active maintenance plan."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_sufficient_unknown",
+    "family_id": "r10",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_necessary_positive",
+    "family_id": "r10",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The device qualifies for a replacement unit only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device has an active maintenance plan."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_necessary_negative",
+    "family_id": "r10",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The device qualifies for a replacement unit only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device does not have an active maintenance plan."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r10_necessary_unknown",
+    "family_id": "r10",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The device qualifies for a replacement unit only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_equivalent_positive",
+    "family_id": "r10",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if and only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device has an active maintenance plan."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r10_equivalent_negative",
+    "family_id": "r10",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if and only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday. The device does not have an active maintenance plan."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r10_equivalent_unknown",
+    "family_id": "r10",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The device qualifies for a replacement unit if and only if the device has an active maintenance plan.",
+      "question": "Does the device qualify for a replacement unit?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_sufficient_positive",
+    "family_id": "r11",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The delivery qualifies for dock access if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery has a confirmed appointment."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_sufficient_negative",
+    "family_id": "r11",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The delivery qualifies for dock access if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery does not have a confirmed appointment."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_sufficient_unknown",
+    "family_id": "r11",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The delivery qualifies for dock access if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_necessary_positive",
+    "family_id": "r11",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The delivery qualifies for dock access only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery has a confirmed appointment."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_necessary_negative",
+    "family_id": "r11",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The delivery qualifies for dock access only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery does not have a confirmed appointment."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r11_necessary_unknown",
+    "family_id": "r11",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The delivery qualifies for dock access only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_equivalent_positive",
+    "family_id": "r11",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The delivery qualifies for dock access if and only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery has a confirmed appointment."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r11_equivalent_negative",
+    "family_id": "r11",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The delivery qualifies for dock access if and only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday. The delivery does not have a confirmed appointment."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r11_equivalent_unknown",
+    "family_id": "r11",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The delivery qualifies for dock access if and only if the delivery has a confirmed appointment.",
+      "question": "Does the delivery qualify for dock access?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_sufficient_positive",
+    "family_id": "r12",
+    "relation": "sufficient",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase includes a loyalty voucher."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_sufficient_negative",
+    "family_id": "r12",
+    "relation": "sufficient",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase does not include a loyalty voucher."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_sufficient_unknown",
+    "family_id": "r12",
+    "relation": "sufficient",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": false,
+        "Q": true
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_necessary_positive",
+    "family_id": "r12",
+    "relation": "necessary",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase includes a loyalty voucher."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_necessary_negative",
+    "family_id": "r12",
+    "relation": "necessary",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase does not include a loyalty voucher."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r12_necessary_unknown",
+    "family_id": "r12",
+    "relation": "necessary",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_equivalent_positive",
+    "family_id": "r12",
+    "relation": "equivalent",
+    "fact_state": "positive",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if and only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase includes a loyalty voucher."
+    },
+    "reference": "yes",
+    "possible_worlds": [
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  },
+  {
+    "id": "r12_equivalent_negative",
+    "family_id": "r12",
+    "relation": "equivalent",
+    "fact_state": "negative",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if and only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday. The purchase does not include a loyalty voucher."
+    },
+    "reference": "no",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      }
+    ]
+  },
+  {
+    "id": "r12_equivalent_unknown",
+    "family_id": "r12",
+    "relation": "equivalent",
+    "fact_state": "unknown",
+    "state": {
+      "policy": "The purchase qualifies for a handling rebate if and only if the purchase includes a loyalty voucher.",
+      "question": "Does the purchase qualify for a handling rebate?",
+      "scenario": "The case was logged on Monday."
+    },
+    "reference": "maybe",
+    "possible_worlds": [
+      {
+        "P": false,
+        "Q": false
+      },
+      {
+        "P": true,
+        "Q": true
+      }
+    ]
+  }
+]
