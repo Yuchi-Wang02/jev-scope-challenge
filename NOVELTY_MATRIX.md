@@ -11,6 +11,13 @@ without changing that document or any frozen study. Pair it with the
 and documented failures of particular compositions. A novel general method or
 paper-level contribution has not been established.**
 
+The [latest semantic audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md) adds
+traceable review concerns and retrospective review tooling. Source-label audits,
+three-way evidence judgments and blinded annotation forms are established
+evaluation practices; this is not a new algorithm or an independently validated
+benchmark correction. All-case coverage and retained counterevidence improve
+this project's auditability without establishing novelty.
+
 The public-source screen also requires a stricter measurement distinction:
 matching a ShARC label is not proof that a decision follows from its visible
 rule. The [all-pair evidence audit](research/source-label-screen/SOURCE_REVIEW.md)

@@ -1,0 +1,1894 @@
+{
+  "review_type": "AI-assisted qualitative source audit; outcome-aware, not independent human adjudication",
+  "source_revision": "2b1de7c5e588ec70afa1e753394ae25531e0d182",
+  "coverage_scenarios": 24,
+  "coverage_trees": 12,
+  "final_review_categories": {
+    "rule_scope": 4,
+    "decisive_evidence_gap": 4
+  },
+  "no_specific_final_flag_in_this_pass": 16,
+  "intermediate_flagged_scenarios": 10,
+  "all_routes_all_mappings_same_source_mismatch": [
+    "5a9c8998854d08ae0b4526a78a78d2994c5c07f0",
+    "449e3844d757c89e99b535c3070df83f66fa7063",
+    "7e34e009da76d89cd6d962199b2f0a32ced9ebdb",
+    "9e1f29ec881863786203eb63203781e9a23e779c"
+  ],
+  "native_stable_source_mismatches": 7,
+  "native_stable_source_mismatches_with_final_review_flag": 5,
+  "reference_updates": 0,
+  "new_model_calls": 0,
+  "new_human_reviews": 0,
+  "rescored_or_filtered_metrics": false,
+  "input_hashes_lf": {
+    "source_notes.json": "90caf93559cdbc315715305da36e7562aee507f9aa6c0299cd443271ed3dff7e",
+    "cohort.json": "e29480fb59bc32801564fb382683962c4ef63ef09331f723ad1c9700091989a6",
+    "report.json": "a249d319312318540573cb1ffde5208d1739ccdb13c8bafde99b5470cfb2b789",
+    "audit_sources.py": "fcaaf807b845f80cec88d94cd91ca5fa4bf33fbada3b8ab68979aa31f4352926"
+  },
+  "items": [
+    {
+      "item_id": "81a382468639877688c5b08037853adf14d25e6b",
+      "final_flags": [
+        "rule_scope"
+      ],
+      "intermediate_flags": [],
+      "note": "A pending application supports absence of the stated credential. The policy gives credential possession as a sufficient permission route; treating its absence as a general prohibition needs the benchmark's completed-rule convention.",
+      "tree_id": "95d2d25b10d09209f7505c11a1e07eb029a0810b",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "maybe",
+            "no",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "no": 5,
+            "maybe": 1
+          },
+          "all_six_same_valid": false
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "cbe3acedbfa2e2884f5cde22959ecfbf4b4be7e2",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "Possession of the named credential is explicit and satisfies the permission route written in the snippet. No specific visible-evidence objection identified in this pass.",
+      "tree_id": "95d2d25b10d09209f7505c11a1e07eb029a0810b",
+      "source_label": "yes",
+      "source_fact_labels": {
+        "Q0": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "5a9c8998854d08ae0b4526a78a78d2994c5c07f0",
+      "final_flags": [
+        "decisive_evidence_gap"
+      ],
+      "intermediate_flags": [
+        "unsupported_status_inference"
+      ],
+      "note": "The scenario names an asylum status and reports a need for work permission, but does not establish the rule's nonimmigrant-status prerequisite. The source makes that prerequisite affirmative. This requires a status equivalence absent from the visible text; no current immigration-law classification is asserted here.",
+      "tree_id": "8034fa59293fec3669d41a392e1b2062350a6847",
+      "source_label": "yes",
+      "source_fact_labels": {
+        "Q0": "yes",
+        "Q1": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "c1724e0ef22508c069ebc329a6ec8a114579a203",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "A nonimmigrant status is named, but work permission remains unstated. The unresolved final label is supported regardless of whether the status itself fully establishes the longer first condition.",
+      "tree_id": "8034fa59293fec3669d41a392e1b2062350a6847",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            null
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "maybe": 5,
+            "INVALID": 1
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "eb8d0133522537b0f89f0f8be0d96ab5e9aab38a",
+      "final_flags": [],
+      "intermediate_flags": [
+        "unstated_threshold"
+      ],
+      "note": "Employment is unstated, so the unresolved final label is supported. The source's affirmative age-threshold fact nevertheless depends on a pension threshold not supplied in the policy; final-label consistency masks that unsupported intermediate step.",
+      "tree_id": "ec33da9155d683bf47c11405608fca2b2e2bb637",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "yes",
+        "Q1": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "449e3844d757c89e99b535c3070df83f66fa7063",
+      "final_flags": [
+        "rule_scope"
+      ],
+      "intermediate_flags": [],
+      "note": "The employment condition is explicitly false. The source treats failure of an employee-specific stopping route as a negative answer to the broader question of stopping payments. The visible rule does not itself establish an ongoing obligation for a nonworker.",
+      "tree_id": "ec33da9155d683bf47c11405608fca2b2e2bb637",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "a76e901506bd8a808b83fb61b9274afe394a0953",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "Neither of the named tax-relief prerequisites is established. The narrative about occupying another person's property does not supply those facts. The unresolved reference is plausible without external tax rules.",
+      "tree_id": "2eeb6b5ed46cea8a9c0e9b1b1fcd0fc9fbbf8af9",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "2a1b6e9e696f7b006aef6572a407ce7bbe68d3be",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "Both named prerequisites are asserted. The question asks about possible qualification, consistent with the snippet's modal wording; this does not establish unconditional entitlement.",
+      "tree_id": "2eeb6b5ed46cea8a9c0e9b1b1fcd0fc9fbbf8af9",
+      "source_label": "yes",
+      "source_fact_labels": {
+        "Q0": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "6903c93d15179692eb1244bd3f35158f19c9ddf6",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "The policy expressly prohibits the action before receipt of the required number, and the scenario expressly denies having it. The negative reference has direct visible support.",
+      "tree_id": "f44401af0e0821896d2085315e38f81f46c718c4",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "0e1b91c441eed76118786861e494e991e2f665b9",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "The stated registration and number satisfy the local prerequisite. The affirmative reference is reasonable for this snippet-level restriction, not a determination of all invoicing requirements.",
+      "tree_id": "f44401af0e0821896d2085315e38f81f46c718c4",
+      "source_label": "yes",
+      "source_fact_labels": {
+        "Q0": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "yes": 5,
+            "no": 1
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "yes": 5,
+            "no": 1
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "9ffb450ac338ce72186ffda25b1d08cc4e08f645",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "A different fraud category is mentioned without establishing the benefit-fraud condition or which listed benefit is at issue. The unresolved reference avoids importing either assumption.",
+      "tree_id": "2a9a97559011094fef6cda24fdb3aa3681da31ad",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "maybe",
+        "Q2": "maybe",
+        "Q3": "maybe",
+        "Q4": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            null,
+            "no",
+            "maybe",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "maybe": 3,
+            "INVALID": 1,
+            "no": 2
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "no",
+            "no",
+            "maybe",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "maybe": 3,
+            "no": 3
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "3b77b085b29d800f87a4c167f3da23c3e9e4457c",
+      "final_flags": [
+        "rule_scope"
+      ],
+      "intermediate_flags": [],
+      "note": "The stated fraud trigger is denied. No sanction follows through that route, but a broad assertion that a benefit cannot be reduced requires treating this trigger as exhaustive. Review the intended scope of the question.",
+      "tree_id": "2a9a97559011094fef6cda24fdb3aa3681da31ad",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "maybe",
+        "Q2": "maybe",
+        "Q3": "maybe",
+        "Q4": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "no",
+            "yes",
+            "yes",
+            "no",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "yes": 3,
+            "no": 3
+          },
+          "all_six_same_valid": false
+        }
+      }
+    },
+    {
+      "item_id": "50cef1d135281e02a7696b35278d2b49f190aa36",
+      "final_flags": [],
+      "intermediate_flags": [
+        "unnecessary_negative_alternatives"
+      ],
+      "note": "One explicit exception determines the negative final answer. Other exception labels are set to false without separate denials; those potential intermediate assumptions cannot change the result under the supplied disjunction.",
+      "tree_id": "b39c85baca8d016ae4d61d9afae753f85c31fa01",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "yes",
+        "Q2": "no",
+        "Q3": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "75e2021efea3193538a1d002244c806bb636fd24",
+      "final_flags": [],
+      "intermediate_flags": [
+        "unnecessary_negative_alternatives"
+      ],
+      "note": "The scenario identifies one named exception, which supports the final negative. The other exceptions need not be proven false to reach that answer; their negative source labels should not be treated as independently verified facts.",
+      "tree_id": "b39c85baca8d016ae4d61d9afae753f85c31fa01",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "yes",
+        "Q1": "no",
+        "Q2": "no",
+        "Q3": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "no",
+            "no",
+            "yes",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "yes": 3,
+            "no": 3
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "no",
+            "no",
+            "yes",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "yes": 3,
+            "no": 3
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no",
+            "yes"
+          ],
+          "source_matches": 1,
+          "histogram": {
+            "yes": 5,
+            "no": 1
+          },
+          "all_six_same_valid": false
+        }
+      }
+    },
+    {
+      "item_id": "8dceb351329d172e6563e584c3da81717a8878e5",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "The stated charitable identity conflicts with the intended for-profit requirement under the ordinary task reading. No specific final-label objection identified; no external legal classification has been adjudicated.",
+      "tree_id": "f8a5281086240ac5a81b3e306677ebb17bccfeea",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "maybe",
+        "Q2": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "maybe": 1,
+            "no": 5
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "maybe": 1,
+            "no": 5
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "7e34e009da76d89cd6d962199b2f0a32ced9ebdb",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "Profit status and lack of other financing are supplied, while the geographic/small-business prerequisite remains unstated. The unresolved final label is consistent with that missing condition.",
+      "tree_id": "f8a5281086240ac5a81b3e306677ebb17bccfeea",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no",
+        "Q2": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "b52bfa4f2421530d85bbe38b2f00356f882d0096",
+      "final_flags": [],
+      "intermediate_flags": [],
+      "note": "The stated location is explicitly included by the supplied snippet. The affirmative answer is supported within its geographic scope and is not a finding of complete real-world benefit eligibility.",
+      "tree_id": "a6bf82d7b888f49ac44576ecfb1bcb14f0318589",
+      "source_label": "yes",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "no",
+        "Q2": "no",
+        "Q3": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "yes": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "ed9a09db588872ec4fa5fa9779a048d8eb40ef9c",
+      "final_flags": [
+        "rule_scope"
+      ],
+      "intermediate_flags": [],
+      "note": "The stated location is outside the listed locations. The negative answer assumes the list exhausts permitted locations, which the supplied wording does not explicitly declare. Demographic information cannot silently supply a different rule.",
+      "tree_id": "a6bf82d7b888f49ac44576ecfb1bcb14f0318589",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "no",
+        "Q2": "no",
+        "Q3": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "no",
+            "maybe",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "no",
+            "maybe",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        }
+      }
+    },
+    {
+      "item_id": "9e1f29ec881863786203eb63203781e9a23e779c",
+      "final_flags": [
+        "decisive_evidence_gap"
+      ],
+      "intermediate_flags": [
+        "unsupported_negative_credit_fact",
+        "graph_omits_purchase_branch"
+      ],
+      "note": "The only scenario assertion is favorable credit, yet the source marks the satisfactory-credit-risk condition false. Favorable credit need not establish every risk criterion, but it supplies no adverse evidence for that false label. The other conditions are unknown. Separately, the graph's purpose question omits the purchase alternative present in the policy; D did not receive this graph.",
+      "tree_id": "31ff00724567ea17ee26265cc9097a750ad3464b",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "maybe",
+        "Q2": "maybe",
+        "Q3": "maybe",
+        "Q4": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "982782a51d2817a2b5c5ba97b7c81b666b940250",
+      "final_flags": [],
+      "intermediate_flags": [
+        "unsupported_negative_loan_purpose",
+        "graph_omits_purchase_branch"
+      ],
+      "note": "The primary-residence requirement is expressly denied and supports the negative final label. The source also negates the loan-purpose condition without establishing it; that is masked by the residence failure. The graph omits a purchase alternative, but it was not an input to the direct models.",
+      "tree_id": "31ff00724567ea17ee26265cc9097a750ad3464b",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no",
+        "Q2": "no",
+        "Q3": "maybe",
+        "Q4": "maybe"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            null,
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 5,
+          "histogram": {
+            "INVALID": 1,
+            "no": 5
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "semantic": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "685119bc49b1b34f9f4dec34d04b0b6023f7bfd7",
+      "final_flags": [],
+      "intermediate_flags": [
+        "role_exclusivity_assumption"
+      ],
+      "note": "The speaker identifies the role explicitly prohibited from the action, supporting a negative answer. A separate source label denies patient status even though the text does not state that roles are mutually exclusive; the explicit prohibition makes this nondecisive.",
+      "tree_id": "1065dbb24430b3b8e20a359506fd1130d91d3eab",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "no",
+        "Q1": "yes"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "no",
+            "maybe",
+            null,
+            "no",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "maybe": 2,
+            "no": 3,
+            "INVALID": 1
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "no",
+            "maybe",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        }
+      }
+    },
+    {
+      "item_id": "a9402a4d552ed5eadd072f9b0d2852b65a10335f",
+      "final_flags": [],
+      "intermediate_flags": [
+        "positive_permission_not_explicit"
+      ],
+      "note": "The prohibited role is denied, but no affirmative permission is established by that denial alone. The unresolved answer is supported; the source graph's affirmative patient requirement is stronger than an explicit general permission in the snippet.",
+      "tree_id": "1065dbb24430b3b8e20a359506fd1130d91d3eab",
+      "source_label": "maybe",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "maybe",
+            "yes",
+            "no"
+          ],
+          "source_matches": 1,
+          "histogram": {
+            "yes": 4,
+            "maybe": 1,
+            "no": 1
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "yes",
+            "yes",
+            "yes",
+            "maybe",
+            "yes",
+            "no"
+          ],
+          "source_matches": 1,
+          "histogram": {
+            "yes": 4,
+            "maybe": 1,
+            "no": 1
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "yes",
+            "maybe",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 1,
+          "histogram": {
+            "yes": 5,
+            "maybe": 1
+          },
+          "all_six_same_valid": false
+        }
+      }
+    },
+    {
+      "item_id": "f1488993629418b7a01dc30d2235e9ae22d4a845",
+      "final_flags": [
+        "decisive_evidence_gap"
+      ],
+      "intermediate_flags": [
+        "annual_lifetime_comparison"
+      ],
+      "note": "The scenario compares the initial expense with an annual saving, whereas the policy compares expense with savings over expected lifetime. Equality in one year does not establish failure over the unspecified lifetime. The source nevertheless marks cost effectiveness false.",
+      "tree_id": "316a5289e5026bb599241e9132223f7666d27565",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+          ],
+          "source_matches": 6,
+          "histogram": {
+            "no": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 4,
+            "yes": 2
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "yes",
+            "yes"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 4,
+            "yes": 2
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        }
+      }
+    },
+    {
+      "item_id": "b4ed19f8ee8db73a16b4e5c52253ec9559b3d605",
+      "final_flags": [
+        "decisive_evidence_gap"
+      ],
+      "intermediate_flags": [
+        "absolute_relative_cost_confusion"
+      ],
+      "note": "A qualitative statement of high expense supplies neither lifetime savings nor their relationship to cost. The source makes the relative cost-effectiveness condition false, although both relevant requirements remain unresolved from the visible statement.",
+      "tree_id": "316a5289e5026bb599241e9132223f7666d27565",
+      "source_label": "no",
+      "source_fact_labels": {
+        "Q0": "maybe",
+        "Q1": "no"
+      },
+      "model_observations": {
+        "native": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe"
+          ],
+          "source_matches": 0,
+          "histogram": {
+            "maybe": 6
+          },
+          "all_six_same_valid": true
+        },
+        "finite": {
+          "actions": [
+            "maybe",
+            "no",
+            null,
+            "maybe",
+            "no",
+            "no"
+          ],
+          "source_matches": 3,
+          "histogram": {
+            "maybe": 2,
+            "no": 3,
+            "INVALID": 1
+          },
+          "all_six_same_valid": false
+        },
+        "letter": {
+          "actions": [
+            "maybe",
+            "no",
+            "no",
+            "maybe",
+            "no",
+            "no"
+          ],
+          "source_matches": 4,
+          "histogram": {
+            "maybe": 2,
+            "no": 4
+          },
+          "all_six_same_valid": false
+        },
+        "semantic": {
+          "actions": [
+            "maybe",
+            "maybe",
+            "maybe",
+            "maybe",
+            "no",
+            "no"
+          ],
+          "source_matches": 2,
+          "histogram": {
+            "maybe": 4,
+            "no": 2
+          },
+          "all_six_same_valid": false
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — all-case semantic audit and local retrospective review tooling
+
+Inspected all 24 answer-interface scenarios and retained every item in derived
+audit records. Four decisive-evidence and four rule-scope concerns are provisional
+AI-assisted flags, not corrected reference labels. Preserved a unanimous-model
+counterexample. Added two source-only local review forms, package hashes and
+submission validation; zero human reviews or new model calls. Updated current
+navigation while preserving frozen inputs, outputs and original scores.
+
 ## 2026-09-30 — complete 648-job answer-interface grid
 
 Published 162 Jev requests and 486 Qwen decisions (162 prefills,324 generations).

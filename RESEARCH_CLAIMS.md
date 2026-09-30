@@ -1,7 +1,8 @@
 # Current research claims
 
 This ledger summarizes the completed series through the
-[six-way answer-interface diagnostic](research/qa4pc-answer-interface/RESULTS.md).
+[six-way answer-interface diagnostic](research/qa4pc-answer-interface/RESULTS.md)
+and its [all-case semantic source audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md).
 It interprets saved evidence; it adds no experiment, approval or new research
 commitment. Study-specific protocols, results and earlier claims retain their
 historical scope. See the [research map](RESEARCH_INDEX.md) for execution status
@@ -18,6 +19,7 @@ independent samples. Follow each report for all controls, budgets and failures.
 
 |Claim|Observed evidence|Interpretation and limit|
 |---|---|---|
+|C19. Composition checks and model consensus do not independently validate source semantics.|Outcome-aware inspection of all 24 latest scenarios flags four decisive-evidence gaps and four rule-scope issues. One unanimous-model source mismatch still lacks the policy's visible prerequisites.|AI-assisted review flags, not eight corrected labels. Original source-agreement metrics stay unchanged. No human adjudication or replacement ranking.|
 |C18. Valid generated output does not necessarily improve decision agreement.|[Fresh-cluster interface grid](research/qa4pc-answer-interface/RESULTS.md): all 324 generations are strict valid labels. Generated semantics 87/144 versus generated letters 89/144 and Jev 101/144 across six repeated mappings; stable items18/24 versus 15/24. Finite85/144 differs from generated letters only at five exact ties.|12 trees /24 scenarios; upstream references, zero new human adjudication. Same-prompt letter bridge isolates this run's tie-handling difference. Semantic format remains a bundled intervention, not a position-bias mechanism. No ordinary-model ceiling or specialization conclusion.|
 |C17. The ordinary-model comparison is sensitive to the answer mapping.|[Amended comparison](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md): Qwen direct 13/24 vs 19/24; facts 22/56 vs 38/56. Graph-direct changes 14/21 valid-both actions; ten main prefills have exact maximum ties.|Same 24 scenarios and checkpoint, two mappings only. Named outcome-aware gate amendment; original stop preserved. No generated-label, all-permutation or stronger-model control, and no general decision-model necessity claim.|
 |C16. Extra condition calls did not consistently improve either model on the selected QA4PC cohort.|[Stage attribution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md): Jev G 20/24 both mappings, F 19/24 and 20/24; Qwen G 14/24 and 16/24, F 12/24 and 14/24. F uses 2.33x G calls, 2.60x Jev inputs and 2.81x Qwen inputs.|12 trees /24 scenarios, source labels, zero new human adjudication. Supplied-fact execution is label-assisted. Original Qwen smoke stop and later gate amendment are explicit; this is not a paper-ready general model comparison.|

@@ -15,6 +15,13 @@ parseable; semantic labels improve mapping consistency but do not improve mean
 source agreement. The finite/generated-letter difference is entirely five exact
 ties. All six mappings, invalids, raw outputs and costs are published.
 
+Latest audit: [Does consistent composition mean supported evidence?](research/qa4pc-answer-interface/SOURCE_AUDIT.md)
+All 24 scenarios were inspected; eight have provisional final-label concerns.
+The audit also retains a case where every model agrees but the visible evidence
+is still insufficient. No labels or scores changed. Source-only retrospective
+review packages are prepared locally; completed human reviews remain zero for
+this cohort.
+
 Earlier [facts-versus-execution results](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md)
 show no consistent gain from additional condition calls. The original Qwen stop,
 explicit amendment and [source audit](research/qa4pc-audit/README.md) remain visible.

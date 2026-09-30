@@ -5,6 +5,12 @@ Current status: **all 648 jobs completed and independently recounted**.
 Semantic-label generation improves mapping consistency but does not improve
 mean source agreement over generated letters. This cohort is now closed.
 
+Latest follow-up: [all-case semantic source audit](SOURCE_AUDIT.md). Four scenarios
+have decisive-evidence flags and four have rule-scope flags; these are AI-assisted
+review concerns, not adjudicated label errors. Original scores are unchanged.
+[Local retrospective review packages](REVIEW_PACKAGE.md) are ready; zero completed
+human reviews. Source agreement must not be presented as verified correctness.
+
 Historical status at execution freeze: **prepared, zero model calls**. This is the next
 bounded study after the [completed stage-attribution comparison](../qa4pc-stage-attribution/CONTINUATION_RESULTS.md).
 Subsequent execution must add a separate result/status entry here and preserve
@@ -22,9 +28,10 @@ exact same input tokens as the finite-letter route.
 - [Prior-method check and novelty limits](RELATED_WORK.md)
 - [No-weight generation configuration audit](generation_audit.json)
 
-The planned ledger is 162 HTTP attempts, 162 local prefills and 324 local
+At freeze, the planned ledger was 162 HTTP attempts, 162 local prefills and 324 local
 generations, including smoke. Local inputs total 115,668 tokens; generated output
-cap 10,368. These are plans, not actual usage or completed results. Semantic smoke
+cap 10,368. This paragraph records the historical plan; actual usage is in the
+linked completed results. Semantic smoke
 mistakes and malformed generated answers remain observations; structural errors
 halt the corresponding backend. No automatic retries or output-dependent search.
 
@@ -45,7 +52,6 @@ any call to pin an explicit implementation file list, permitting later analysis
 files without changing the execution contract. The old draft remains in the
 local preparation cache. No model observation motivated this bookkeeping change.
 
-Remaining before a scientific conclusion: complete the frozen grid, independently
-recompute actions/counts/costs, report invalids and all six mappings, then close
-this cohort. Human semantic validation and stronger/cost-matched comparators
+Completed: frozen grid, independent action/count/cost replay, invalid accounting,
+all six mappings and cohort closure. Human semantic validation and stronger/cost-matched comparators
 remain separate gaps. Neither voting nor option sensitivity is claimed as new.

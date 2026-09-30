@@ -1,5 +1,10 @@
 # Valid generated outputs do not close the decision gap
 
+Subsequent [all-case source audit](SOURCE_AUDIT.md) flags four decisive-evidence
+gaps and four rule-scope questions. These are outcome-aware AI review notes,
+not adjudicated corrections. All original scores and denominators below remain
+unchanged; they measure source agreement, not human-verified accuracy.
+
 Completed all **648 frozen jobs**: 162 Jev requests, 162 Qwen prefills and 324
 Qwen generations, including smoke. Freeze commit
 [`eba5ba4`](https://github.com/Yuchi-Wang02/jev-scope-challenge/commit/eba5ba4671679b58f093174703fc52dd1d4905eb)

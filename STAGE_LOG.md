@@ -4,6 +4,29 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: audit all 24 interface scenarios; prepare retrospective review
+
+- Objective: separate source agreement from supported decisions before adding an
+  intervention to the completed comparison.
+- Completed: all 24 scenarios /12 trees inspected against policy, question,
+  scenario, intermediate annotations and graphs; joined to all saved mappings.
+- Evidence: four decisive-evidence and four rule-scope flags; ten intermediate
+  concerns overlap those categories. Four unanimous source mismatches include
+  one case with absent prerequisites and no final-label objection in this audit.
+- Audit limits: AI-assisted and outcome-aware. The overlap of five flags with
+  seven stable Jev mismatches is post hoc, not five corrected errors. Zero new
+  reference labels, replacement scores, model calls or human submissions.
+- Deliverable: two local standalone source-only forms with distinct orders,
+  process disclosures, actual draft-export check and submission validation.
+  Public tooling omits original source prose while redistribution terms are unresolved.
+- Gap: readable review tooling does not supply reviewers or semantic adjudication.
+  Formal composition consistency had been verified; visible-evidence support had not.
+- Next: obtain retrospective judgments without exposing results to new reviewers;
+  preserve the separate unscored training queue; assess stronger ordinary-model
+  readiness and freeze a new study only after its evidence question is precise.
+- Presentation: [source audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md)
+  beside the unchanged result table, including the unanimous-model counterexample.
+
 ## 2026-09-30: completed fresh-cluster interface comparison
 
 - Objective: test interface dependence with six mappings and a same-prompt bridge.

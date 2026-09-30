@@ -9,6 +9,9 @@ Its [amended stage-attribution run](research/qa4pc-stage-attribution/CONTINUATIO
 The latest [answer-interface grid](research/qa4pc-answer-interface/RESULTS.md)
 completed all 648 jobs on 12 new policy clusters, with six mappings and three
 Qwen output routes. Generated semantic labels do not close the mean agreement gap.
+Its subsequent [all-case semantic audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md)
+retains eight provisional final-label concerns and a unanimous-model counterexample.
+No scores change; local retrospective review tooling is prepared, with zero reviews.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -96,6 +99,7 @@ derived predictions is not a larger evaluated dataset.
 
 |Analysis|What it adds|Interpretation boundary|
 |---|---|---|
+|[All-case QA4PC semantic audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md)|24 scenarios /12 trees: four decisive-evidence flags, four rule-scope flags, ten intermediate concerns. Prepared two local source-only review slots.|AI-assisted, outcome-aware, not adjudication. Zero reference updates, new calls or completed human reviews. Model consensus does not establish label error.|
 |[Ordinary-model readiness audit](research/baseline-readiness/README.md)|Pinned metadata for four checkpoints, installed-runtime registry and GPU inspection; identifies the greedy-control departure from Qwen's recommended thinking decoding.|Zero weights downloaded and zero inference. Weight bytes are not runtime memory; architecture registration is not a successful load. Closed-grid scores are unchanged.|
 |[Decision-sufficiency specification lab](research/decision-sufficiency/README.md)|20 artificial examples, five invalid-input controls; a finite database enumerator checks 730 valid and rejects 180 inconsistent contracts. Distinguishes predicate-only answers from unique-target requirements.|Zero model calls or human annotations. Applies existing certain-answer semantics; software test counts are not empirical results. Does not relabel earlier experiments or authorize refunds.|
 |[Evidence guards](research/evidence-guards/)|13 methods over saved evidence-gap scores; 8,424 derived predictions and a grammar-code reference.|Post-hoc development analysis.|

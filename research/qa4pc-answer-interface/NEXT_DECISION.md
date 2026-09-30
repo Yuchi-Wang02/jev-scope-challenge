@@ -1,5 +1,13 @@
 # Close the interface grid; inspect the remaining decision errors
 
+Follow-up status: steps 1 and 2 below now have an [exhaustive source audit](SOURCE_AUDIT.md)
+and [local source-only review tooling](REVIEW_PACKAGE.md). Human assessment remains
+pending; tooling completion does not complete that requirement. Eight final-label
+review flags and a unanimous-model counterexample make semantic validation the
+next priority before any repair based on these observed errors. The original
+cohort remains closed and its scores unchanged. Stronger-comparator readiness
+and future independent study design remain open work.
+
 ## Milestone audit
 
 Goal: determine whether an unfairly narrow output interface explains the earlier

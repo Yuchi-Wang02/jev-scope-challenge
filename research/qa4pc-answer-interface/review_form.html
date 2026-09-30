@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visible-evidence review</title>
+<style>
+body{font:16px/1.55 system-ui,sans-serif;color:#202632;background:#f4f6f8;margin:0}main{max-width:950px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 10px}h2{font-size:21px}h3{font-size:16px;margin-bottom:5px}section{background:white;border:1px solid #d6dce3;border-radius:12px;padding:22px;margin-bottom:20px}p{margin:8px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;background:#f5f7fa;padding:14px;border-radius:8px}label{display:block;margin:12px 0 4px;font-weight:600}select,input,textarea,button{font:inherit;box-sizing:border-box}select,input,textarea{width:100%;border:1px solid #8e9aab;border-radius:6px;padding:9px;background:#fff;color:#202632}textarea{min-height:85px}button{padding:10px 18px;border:0;border-radius:6px;background:#244d83;color:#fff;cursor:pointer;margin:5px}button.secondary{background:#526170}button:disabled{opacity:.5;cursor:default}.bar{position:sticky;top:0;background:#f4f6f8f5;padding:10px 0;z-index:2;border-bottom:1px solid #d6dce3;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.muted{color:#536075;font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notice{border-left:4px solid #b47b17;padding-left:12px}#status{min-height:24px}a{color:#244d83}@media(max-width:650px){main{padding:12px}.grid{grid-template-columns:1fr}section{padding:16px}}
+</style>
+<main><h1>Visible-evidence review</h1><p id="slot"></p>
+<section><h2>Before you start</h2>
+<p>Read the supplied historical policy, question and scenario. This is a research review of the provided text, not a request for current legal, tax, immigration or medical advice. Do not search current rules, source answers or model outputs.</p>
+<p>Make your own judgment using the exact task instruction below. Record assumptions or ambiguity; do not force a determined answer when evidence is missing. Do not consult another reviewer or an AI to determine answers. If you already did, disclose that in the process record; your work will still be retained.</p>
+<details><summary>Exact task instruction used in the experiment</summary><pre id="instruction"></pre></details>
+<p class="notice">This package hides reference labels, model outputs, graphs and audit notes. That does not establish that its reviewer is blind: prior exposure is recorded below. Complete all 24 cases, including apparently easy ones. Save a draft JSON whenever useful.</p>
+<p class="muted">Your answers stay in this browser. There are no network requests. Browser storage is a convenience, not a backup: export your JSON. Submit the final JSON and retain a copy. Do not send this package or the original policy text to a public repository while dataset redistribution terms remain unresolved.</p>
+</section>
+<section id="process"><h2>Reviewer and process record</h2><div class="grid"><div><label for="name">Reviewer name or stable pseudonym</label><input id="name"></div><div><label for="relationship">Relationship to the project / relevant background</label><input id="relationship" placeholder="Describe, or write none"></div></div><div id="processFields" class="grid"></div><label for="processNotes">Explain any exposure, assistance or discussion</label><textarea id="processNotes"></textarea></section>
+<div class="bar"><strong id="progress"></strong><div><button id="draft" class="secondary">Export draft JSON</button><button id="final">Export completed JSON</button></div></div>
+<p id="status" role="status"></p><div id="cases"></div><p class="muted" id="identity"></p></main>
+<script id="packet" type="application/json">__PACKET_JSON__</script>
+<script>
+'use strict';
+const packet=JSON.parse(document.getElementById('packet').textContent);
+const key='qa4pc-review-'+packet.packet_sha256;
+const questions={seen_model_summaries:'Before review, had you seen model summary scores?',seen_case_outputs:'Before review, had you seen individual model answers?',seen_source_labels:'Before review, had you seen source/reference labels?',seen_other_review:'Had you seen another reviewer’s judgments?',seen_audit_discussion:'Had you seen the project’s source-ambiguity discussion?',used_ai:'Did you use AI assistance to determine judgments?',discussed_with_others:'Did you discuss judgments with another person?'};
+const blank=()=>({reviewer:{name:'',relationship:'',process_notes:'',...Object.fromEntries(Object.keys(questions).map(k=>[k,'']))},responses:Object.fromEntries(packet.items.map(i=>[i.review_id,{judgment:'',evidence:'',ambiguity:'',missing_information:'',notes:''}]))});
+let state=blank();
+try{const saved=JSON.parse(localStorage.getItem(key));if(saved&&Object.keys(saved.responses||{}).sort().join()==Object.keys(state.responses).sort().join()){state=saved;}}catch(e){}
+const el=id=>document.getElementById(id);
+const complete=r=>['yes','no','maybe'].includes(r.judgment)&&r.evidence.trim()&&['yes','no','unsure'].includes(r.ambiguity);
+const processComplete=()=>state.reviewer.name.trim()&&state.reviewer.relationship.trim()&&Object.keys(questions).every(k=>['yes','no','unsure'].includes(state.reviewer[k]));
+function save(){try{localStorage.setItem(key,JSON.stringify(state));}catch(e){el('status').textContent='Browser storage is unavailable. Please export a draft to keep your work.';}refresh();}
+function refresh(){const count=Object.values(state.responses).filter(complete).length;el('progress').textContent=`${count} / ${packet.items.length} cases complete`;el('final').disabled=count!==packet.items.length||!processComplete();}
+function select(id,values,value,onchange){const s=document.createElement('select');s.id=id;for(const [v,t] of [['','Choose…'],...values]){const o=document.createElement('option');o.value=v;o.textContent=t;s.append(o);}s.value=value;s.addEventListener('change',()=>{onchange(s.value);save();});return s;}
+el('slot').textContent=`Review slot ${packet.slot} · ${packet.items.length} cases · Original outputs remain unchanged`;
+el('instruction').textContent=packet.instruction;el('identity').textContent='Packet SHA-256: '+packet.packet_sha256;
+for(const [id,k] of [['name','name'],['relationship','relationship'],['processNotes','process_notes']]){el(id).value=state.reviewer[k];el(id).addEventListener('input',()=>{state.reviewer[k]=el(id).value;save();});}
+for(const [k,text] of Object.entries(questions)){const box=document.createElement('div');const label=document.createElement('label');label.htmlFor=k;label.textContent=text;box.append(label,select(k,[['no','No'],['yes','Yes'],['unsure','Unsure']],state.reviewer[k],v=>state.reviewer[k]=v));el('processFields').append(box);}
+for(const [index,item] of packet.items.entries()){
+ const section=document.createElement('section'),h=document.createElement('h2');h.textContent=`Case ${index+1} · ${item.review_id}`;section.append(h);
+ for(const [k,title] of [['policy','Historical policy'],['question','Question'],['scenario','Visible scenario']]){const heading=document.createElement('h3'),body=document.createElement('pre');heading.textContent=title;body.textContent=item[k];section.append(heading,body);}
+ const response=state.responses[item.review_id];
+ for(const [k,title,values] of [['judgment','Your judgment',[['yes','yes — established true'],['no','no — established false'],['maybe','maybe — not established either way']]],['ambiguity','Does the interpretation require a scope assumption or have material ambiguity?',[['no','No'],['yes','Yes'],['unsure','Unsure']]]]){const label=document.createElement('label');label.htmlFor=item.review_id+'-'+k;label.textContent=title;section.append(label,select(label.htmlFor,values,response[k],v=>response[k]=v));}
+ for(const [k,title] of [['evidence','Supporting visible evidence or explanation of its absence (required)'],['missing_information','Information still needed, if any'],['notes','Assumptions, ambiguity or other comments']]){const label=document.createElement('label'),area=document.createElement('textarea');area.id=item.review_id+'-'+k;label.htmlFor=area.id;label.textContent=title;area.value=response[k];area.addEventListener('input',()=>{response[k]=area.value;save();});section.append(label,area);}
+ el('cases').append(section);
+}
+function download(final){if(final&&el('final').disabled)return;const payload={schema_version:1,packet_sha256:packet.packet_sha256,slot:packet.slot,submission_type:final?'completed':'draft',exported_at_client:new Date().toISOString(),reviewer:state.reviewer,responses:packet.items.map(i=>({review_id:i.review_id,...state.responses[i.review_id]}))};const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`qa4pc_review_${packet.slot}_${final?'completed':'draft'}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);el('status').textContent=final?'Completed JSON exported. Send the file to the project owner.':'Draft exported. Keep it as a backup; this is not a completed review.';}
+el('draft').addEventListener('click',()=>download(false));el('final').addEventListener('click',()=>download(true));refresh();
+</script></html>
