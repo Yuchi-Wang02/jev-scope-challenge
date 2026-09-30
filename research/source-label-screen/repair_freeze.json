@@ -1,0 +1,18 @@
+{
+  "study": "sharc-dev-source-label-screen-jev-readout-repair-v1",
+  "status": "frozen_for_readout_repair",
+  "parent_execution_commit": "e90f051459370ad99be8ddfaf29e65c013d2eda1",
+  "parent_plan_sha256": "1d65ac76f3b41e749866195b4da44424094f95e1ff6e6f3fd3849e2404310418",
+  "parent_journal_sha256": "e4fd6de17a6156bf54322f7a1cdcc110095ae4588ca1b0464c974922d22e6a27",
+  "parent_attempts": 23,
+  "parent_input_tokens": 14346,
+  "remaining_attempts": 25,
+  "original_total_attempt_cap": 48,
+  "original_total_input_cap": 100000,
+  "repair_plan_sha256": "16162be60479b98a1371a869039fb6e76f44723bf0294345165423c78d0821a0",
+  "source_hashes_lf": {
+    "research/source-label-screen/repair_jev.py": "6e613889410689b730bb07440604dfd667ac2cecec5a6bf8fdfd826690eecc39",
+    "research/source-label-screen/decision_readout.py": "0d870e81fe85aef5e4667ebdf0f76f2040d90fb999939ad993d27721c3e44562",
+    "research/source-label-screen/READOUT_REPAIR.md": "acf4b1c253405b0e16651b5203e630211692b646ef87a9835437bdbe709dc9a5"
+  }
+}
