@@ -37,6 +37,7 @@ def report(s):
         '- Data selection is deterministic from pinned public simulated tau retail records; 12 users are disjoint from the earlier payment pilot. Coverage statements and omitted-world witnesses are constructed premises, not actual source retrieval failures.',
         '- The unique-target requirement is explicit. An order ID uniquely selects the visible order; unseen same-product orders do not make that ID ambiguous. The omission sentence describes product-name requests, not explicit-ID requests.',
         '- One wording family, simple templates, program-derived labels and no new independent review. The two earlier reviewers reviewed a different dataset. Later review cannot make these inspected data independent confirmation.',
+        '- Wording alternative for later adjudication: explicit-ID requests also name the product. References interpret the premise about a product-name request as product-only identification; a broader reading could make the premise confusing. Code cannot resolve that linguistic issue. See [next research gates](NEXT_RESEARCH_GATES.md). Until review, unnecessary deferral means disagreement with the declared program reference, not a validated general reasoning defect.',
         '- Qwen and Jev do not share a backbone, serialization or inference interface. Inputs/rubrics and options correspond, but this comparison does not isolate dedicated training. No new Kev or Laya model was executed.',
         '- No general novelty, model replacement, tau-bench agent score or paper-ready causal explanation is established. Established context-sufficiency and abstention work is discussed in [RELATED_WORK.md](RELATED_WORK.md).','',
         '## Decision and reproduction','',
@@ -47,11 +48,24 @@ def report(s):
 def replay(s):
     payload={'summary':s,'cases':rows(ROOT/'data/cases.jsonl'),'jev':rows(ROOT/'results/responses.jsonl'),
              'qwen':rows(ROOT/'results/local_responses.jsonl'),'plans':rows(ROOT/'plans/primary.jsonl')}
+    if (ROOT/'results/reasoning_summary.json').exists():
+        from reasoning_analyze import analyze as reasoning
+        payload['reasoning_summary']=reasoning()
+        payload['reasoning']=rows(ROOT/'results/reasoning_greedy_responses.jsonl')
+        payload['stopped_sampled_smoke']=rows(ROOT/'results/reasoning_responses.jsonl')
+    else:
+        payload['reasoning']=[];payload['reasoning_summary']=None;payload['stopped_sampled_smoke']=[]
     return (ROOT/'replay_template.html').read_text(encoding='utf-8').replace('__DATA__',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'))
 
 def publish(verify=False):
     s=analyze()
-    for path,text in [(ROOT/'RESULTS.md',report(s)),(REPO/'docs/candidate_coverage.html',replay(s))]:
+    md=report(s)
+    if (ROOT/'results/reasoning_summary.json').exists():
+        md=md.replace('## Decision and reproduction',
+            '**Later control completed:** the separately frozen [512-token Qwen deliberation arm](REASONING_RESULTS.md) is now available, including the stopped sampled smoke attempt and explicit greedy repair. The native/Jev results above are unchanged.\n\n## Decision and reproduction')
+        md=md.replace('The next justified control is one separately frozen fixed-budget Qwen reasoning arm on the same material, disclosed as outcome-aware exploration.',
+            'The subsequent fixed-budget Qwen reasoning arm is complete and disclosed as outcome-aware exploration; see its separate report.')
+    for path,text in [(ROOT/'RESULTS.md',md),(REPO/'docs/candidate_coverage.html',replay(s))]:
         if verify:assert path.read_text(encoding='utf-8')==text,str(path)
         else:path.write_text(text,encoding='utf-8',newline='\n')
 

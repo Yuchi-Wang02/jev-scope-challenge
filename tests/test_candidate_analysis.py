@@ -11,13 +11,16 @@ from pathlib import Path
 P=Path(__file__).resolve().parents[1]/'research/candidate-completeness'
 def load(name,path):
     spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
-saved={n:sys.modules.get(n) for n in ('study','local_run','run')}
+saved={n:sys.modules.get(n) for n in ('study','local_run','run','analyze','reasoning_run','reasoning_greedy')}
 try:
     S=load('candidate_analysis_study',P/'study.py');sys.modules['study']=S
     L=load('candidate_analysis_local',P/'local_run.py');sys.modules['local_run']=L
     R=load('candidate_analysis_api',P/'run.py');sys.modules['run']=R
     A=load('candidate_analysis',P/'analyze.py');V=load('candidate_review_tools',P/'review_tools.py')
     B=load('candidate_reasoning_run',P/'reasoning_run.py')
+    sys.modules['analyze']=A;sys.modules['reasoning_run']=B
+    G=load('candidate_reasoning_greedy',P/'reasoning_greedy.py');sys.modules['reasoning_greedy']=G
+    RA=load('candidate_reasoning_analysis',P/'reasoning_analyze.py')
 finally:
     for n,m in saved.items():
         if m is None:sys.modules.pop(n,None)
@@ -88,5 +91,13 @@ class CoverageAnalysisTests(unittest.TestCase):
                 if corrupt:
                     with self.assertRaises(AssertionError):V.verify_archive(data,expected)
                 else:V.verify_archive(data,expected)
+
+    def test_complete_reasoning_grid_preserves_stop_and_work_accounting(self):
+        s=RA.analyze()
+        self.assertEqual(s,S.read(P/'results/reasoning_summary.json'))
+        self.assertEqual(s['work']['decisions'],150)
+        self.assertEqual(s['stopped_sampled_smoke_work']['decisions'],6)
+        self.assertEqual(s['total_control_decisions_including_stopped'],156)
+        self.assertEqual(sum(v['records'] for v in s['termination_strata'].values()),144)
 
 if __name__=='__main__':unittest.main()

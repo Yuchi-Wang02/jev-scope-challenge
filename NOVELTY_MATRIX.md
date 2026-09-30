@@ -87,5 +87,8 @@ Closed/open candidate-set reasoning and abstention are not new; see the
 Current contribution is an inspectable controlled failure and negative controls,
 not a new abstention algorithm or causal model explanation. New independent labels,
 an ordinary-model reasoning control and transfer beyond one template family remain
-gates before stronger claims. A fixed-budget reasoning control is the next design,
-not a completed result at this milestone.
+gates before stronger claims. The [fixed-budget reasoning control](research/candidate-completeness/REASONING_RESULTS.md)
+is now complete: it improves Qwen's aggregate correctness while leaving every
+unknown-reference case committed in both mappings. This is a baseline check,
+not a new reasoning method. The [post-result literature check](research/candidate-completeness/RELATED_WORK_POSTRUN.md)
+also identifies direct precedents in prompt-induced abstention and evidence boundaries.

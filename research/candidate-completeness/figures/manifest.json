@@ -1,0 +1,12 @@
+{
+  "matplotlib_version": "3.10.0",
+  "source_sha256_lf": {
+    "results/summary.json": "a2e516c75bdcce53db854d71a40c4d02c4e9e9a4917dd30f6f2ce27780d33f22",
+    "results/reasoning_summary.json": "914ca188ddce4c39e49fab23ed2614d31e2455fd6b02849bf80dfb0f80678604",
+    "plot_results.py": "5b85b28f99992fabeba5868a4949cf69b401ef14815cce475ebe9a030fbe983a"
+  },
+  "artifact_sha256": {
+    "coverage_cells.png": "8a51c6468495dfcd40b0d2eac255ece8c939b9ee8aa461367102fd9286e112b7",
+    "coverage_cells.svg": "e150ee5424004804f083fec345767ee433cea922c96d2d882328acc42893d620"
+  }
+}

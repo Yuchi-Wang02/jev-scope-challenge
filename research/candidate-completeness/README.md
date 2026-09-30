@@ -37,3 +37,17 @@ After freezing: `python research/candidate-completeness/study.py verify-freeze`.
 Never run preparation again over a frozen study. The live runner protects its
 published directory through freeze and resume checks; it is not a general
 isolated-output replication CLI. Use a separately versioned run for replication.
+
+The fixed-budget control has separate [protocol](REASONING_PROTOCOL.md),
+[greedy repair](REASONING_GREEDY_V2.md) and [configuration pitfall note](GENERATION_CONFIG_NOTE.md).
+The [post-result literature check](RELATED_WORK_POSTRUN.md) and
+[next research gates](NEXT_RESEARCH_GATES.md) distinguish a useful diagnostic
+from a paper-level method claim. Source-user disjointness does not guarantee
+that public source records were absent from a model's pretraining data.
+
+**Fixed-budget control completed:** [Qwen + up to 512 deliberation tokens](REASONING_RESULTS.md)
+scores 58/72 and 59/72, improving determined-case judgments while retaining 12/12
+false commitments on unknown-reference cases in each mapping. Strict complete
+parents remain 0/12. All 69 truncated main outputs remain scored; six earlier
+sampled smoke outputs are separately retained as an execution deviation. No
+third prompt or budget search was run. All model arms in this pilot are closed.

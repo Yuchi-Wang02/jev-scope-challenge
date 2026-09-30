@@ -1,5 +1,19 @@
 # Release notes
 
+## 2026-09-30 — fixed-budget reasoning control and execution audit
+
+Completed one repaired greedy Qwen3-4B control: 150 decisions, 69,771 generated
+tokens, 19,129 batched physical forwards, 563,924 processed token positions. Scores
+58/72 and 59/72 versus native 34/72 and 30/72; false commitments remain 12/12 per
+mapping. All 69 truncated main records stay in the denominator. Preserved six
+earlier sampled smoke outputs (a Transformers configuration-merge mismatch), a
+CPU-only reproduction and the v2 pre-output repair freeze `4527534`. No original
+sampled main run, third prompt or budget search. Added full report, exportable
+figure, replay toggle, post-result nearest-work screen and next research gates.
+Fixed Linux ZIP verification by checking exact uncompressed members while retaining
+the original published archive; CI/Pages for that repair passed. Review is still
+pending for this new material, including the generic product-name wording.
+
 ## 2026-09-30 — candidate-coverage fixed Jev and ordinary Qwen grids
 
 Published data/protocol freeze `680fb6f` before Jev calls and local readout freeze

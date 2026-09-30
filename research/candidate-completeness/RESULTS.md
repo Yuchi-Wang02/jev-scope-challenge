@@ -52,11 +52,14 @@ Median main measured latency: hosted Jev 0.149s; local Qwen 0.293s. They use dif
 - Data selection is deterministic from pinned public simulated tau retail records; 12 users are disjoint from the earlier payment pilot. Coverage statements and omitted-world witnesses are constructed premises, not actual source retrieval failures.
 - The unique-target requirement is explicit. An order ID uniquely selects the visible order; unseen same-product orders do not make that ID ambiguous. The omission sentence describes product-name requests, not explicit-ID requests.
 - One wording family, simple templates, program-derived labels and no new independent review. The two earlier reviewers reviewed a different dataset. Later review cannot make these inspected data independent confirmation.
+- Wording alternative for later adjudication: explicit-ID requests also name the product. References interpret the premise about a product-name request as product-only identification; a broader reading could make the premise confusing. Code cannot resolve that linguistic issue. See [next research gates](NEXT_RESEARCH_GATES.md). Until review, unnecessary deferral means disagreement with the declared program reference, not a validated general reasoning defect.
 - Qwen and Jev do not share a backbone, serialization or inference interface. Inputs/rubrics and options correspond, but this comparison does not isolate dedicated training. No new Kev or Laya model was executed.
 - No general novelty, model replacement, tau-bench agent score or paper-ready causal explanation is established. Established context-sufficiency and abstention work is discussed in [RELATED_WORK.md](RELATED_WORK.md).
 
+**Later control completed:** the separately frozen [512-token Qwen deliberation arm](REASONING_RESULTS.md) is now available, including the stopped sampled smoke attempt and explicit greedy repair. The native/Jev results above are unchanged.
+
 ## Decision and reproduction
 
-Stop the frozen Jev/native grids here. The next justified control is one separately frozen fixed-budget Qwen reasoning arm on the same material, disclosed as outcome-aware exploration. Independent semantic review is needed before stronger reference claims. New-material confirmation and natural-language transfer are later gates, not completed work.
+Stop the frozen Jev/native grids here. The subsequent fixed-budget Qwen reasoning arm is complete and disclosed as outcome-aware exploration; see its separate report. Independent semantic review is needed before stronger reference claims. New-material confirmation and natural-language transfer are later gates, not completed work.
 
 Run `python research/candidate-completeness/analyze.py --verify` and `python research/candidate-completeness/publish.py --verify` without API credentials or model weights. These verify recorded results, not model honesty or scientific validity. See [PROTOCOL.md](PROTOCOL.md), [LOCAL_PROTOCOL.md](LOCAL_PROTOCOL.md), [machine-readable summary](results/summary.json), [review-only package](review/README.md) and [replay](../../docs/candidate_coverage.html).

@@ -39,7 +39,16 @@ complete parents **3/12**. The frozen exploratory screen fails.
 An ordinary Qwen3-4B native readout with thinking disabled scores **34/72 and 30/72**,
 with 0/12 complete parents; it predominantly accepts the destination. Known-grammar
 code scores 72/72. This compares two fixed interfaces, not model reasoning ceilings
-or the necessity of dedicated training. New human review is pending.
+or the necessity of dedicated training. New human review is pending. The omission
+wording also has an unresolved interpretation: explicit-ID requests mention the
+product, while one premise refers to a "product-name request." Until adjudication,
+deferral errors mean disagreement with the declared program reference.
+
+A separately frozen **512-token deliberation control** raises Qwen to **58/72 and
+59/72**, but it still makes a determined judgment on all 12 unknown-reference
+inputs per mapping. Strict complete parents stay 0/12. All truncated outputs and
+a stopped six-case sampling-configuration deviation are retained. Read the
+[full reasoning control and work accounting](research/candidate-completeness/REASONING_RESULTS.md).
 
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·

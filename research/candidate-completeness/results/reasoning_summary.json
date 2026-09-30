@@ -1,0 +1,394 @@
+{
+  "mappings": {
+    "0": {
+      "correct": 58,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 11,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 11,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 11,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 11,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 12,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 2,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 39,
+        "INVALID_DESTINATION": 33
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        }
+      ]
+    },
+    "1": {
+      "correct": 59,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 11,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 11,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 12,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 1,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 38,
+        "INVALID_DESTINATION": 34
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        }
+      ]
+    }
+  },
+  "strict_complete_parents": 0,
+  "parent_n": 12,
+  "option_order_disagreements": {
+    "count": 5,
+    "n": 72
+  },
+  "smoke_correct": 4,
+  "smoke_n": 6,
+  "work": {
+    "decisions": 150,
+    "batches": 38,
+    "generated_nonpadding_tokens": 69771,
+    "prompt_tokens_unpadded": 181060,
+    "final_prefill_tokens_unpadded": 251112,
+    "physical_forwards": 19129,
+    "processed_token_positions_including_padding": 563924,
+    "summed_batch_latency_s": 831.7075135999767,
+    "peak_allocated_mib": 9535.0703125,
+    "stop_reasons": {
+      "think_end": 81,
+      "budget": 69
+    },
+    "forced_boundaries": 69
+  },
+  "stopped_sampled_smoke_work": {
+    "decisions": 6,
+    "batches": 2,
+    "generated_nonpadding_tokens": 2249,
+    "prompt_tokens_unpadded": 2692,
+    "final_prefill_tokens_unpadded": 4948,
+    "physical_forwards": 932,
+    "processed_token_positions_including_padding": 11104,
+    "summed_batch_latency_s": 29.39369070000248,
+    "peak_allocated_mib": 8486.63232421875,
+    "stop_reasons": {
+      "think_end": 5,
+      "budget": 1
+    },
+    "forced_boundaries": 1
+  },
+  "total_control_decisions_including_stopped": 156,
+  "status": "Outcome-aware exploratory control; zero independent reviews of these inputs",
+  "termination_strata": {
+    "think_end": {
+      "records": 75,
+      "correct": 63,
+      "unknown_reference_records": 12,
+      "unknown_correct": 0
+    },
+    "budget": {
+      "records": 69,
+      "correct": 54,
+      "unknown_reference_records": 12,
+      "unknown_correct": 0
+    },
+    "model_eos": {
+      "records": 0,
+      "correct": 0,
+      "unknown_reference_records": 0,
+      "unknown_correct": 0
+    }
+  },
+  "readout": {
+    "candidate_mass_min": 0.006698248501272985,
+    "candidate_mass_median": 0.9982859640693484,
+    "low_mass_records": 2
+  },
+  "paired_vs_native": {
+    "0": {
+      "corrections": 25,
+      "regressions": 1,
+      "complete_parents_native": 0,
+      "complete_parents_reasoning": 0
+    },
+    "1": {
+      "corrections": 29,
+      "regressions": 0,
+      "complete_parents_native": 0,
+      "complete_parents_reasoning": 0
+    }
+  }
+}

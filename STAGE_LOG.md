@@ -84,6 +84,31 @@ presentation. It does not claim a paper is ready.
   Verify each exact uncompressed review member and reject extra/missing/changed
   members; preserve the original published archive. This changes no review content.
 
+## 2026-09-30: budgeted reasoning improves decisions but not unknown recognition
+
+- Objective: check whether the poor ordinary native readout understates this
+  checkpoint's performance under one fixed extra-compute policy.
+- Completed: repaired greedy freeze `4527534`, 150 decisions, 69,771 generated
+  tokens, 19,129 physical forwards and 563,924 padded token positions. Measured
+  batch work 831.71 seconds; no new API spending or downloads. Original sampled
+  smoke cost remains separate and included in the total control record.
+- Result: Qwen improves from 34/72 and 30/72 to 58/72 and 59/72; corrections/regressions
+  are 25/1 and 29/0. However, all 12 unknown-reference cases per mapping still
+  receive a determined answer. Strict complete parents remain 0/12. Jev remains
+  3/12 under the same strict criterion; known-grammar code is 12/12.
+- Gap: 69/144 main traces hit the cap. Twelve unknown repeated decisions end
+  naturally and twelve are truncated; neither subgroup abstains correctly. This
+  does not prove a larger cap cannot help. New labels lack independent review,
+  and the product-name wording has a plausible alternative reading to adjudicate.
+- Decision: close all arms on these inputs. Do not add a third prompt/cap to
+  chase a desired result. Next use the [research gates](research/candidate-completeness/NEXT_RESEARCH_GATES.md):
+  neutral review, then a new-material language/coverage contrast and stronger
+  ordinary comparator, or stop/redirect if the effect is just a wording artifact.
+- Presentation: [reasoning report](research/candidate-completeness/REASONING_RESULTS.md),
+  seven-row scientific figure and replay toggle. Headline remains a question about
+  justified caution; show both over-deferral and unsupported commitment, code
+  success, extra cost and failed execution. No model replacement or novelty claim.
+
 ## Long-term direction and gates
 
 The project asks when models plus programs can provide reliable typed decisions,
