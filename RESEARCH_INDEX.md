@@ -6,9 +6,9 @@ Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 A later [implementation/data audit](research/implementation-audit/README.md) adds no model calls and identifies two invisible-change label conflicts in the pinned EXtrA release.
 The subsequent [QA4PC graph audit](research/qa4pc-audit/README.md) verifies 429 complete development compositions and retains eight cases with a missing formula variable.
 Its [amended stage-attribution run](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md) now completes both models while preserving Qwen's original smoke stop.
-The next [answer-interface grid](research/qa4pc-answer-interface/README.md) is
-frozen on 12 new policy clusters, with six mappings and three Qwen output routes;
-preparation is separate from completed model evidence.
+The latest [answer-interface grid](research/qa4pc-answer-interface/RESULTS.md)
+completed all 648 jobs on 12 new policy clusters, with six mappings and three
+Qwen output routes. Generated semantic labels do not close the mean agreement gap.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -23,6 +23,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[Six-way answer interfaces](research/qa4pc-answer-interface/RESULTS.md)|162 Jev requests,162 Qwen prefills,324 Qwen generations. Across six repeated mappings: native 101/144, finite 85/144, generated letters 89/144, generated semantics 87/144. Five finite ties; zero generated invalids. All 162 paired letter first-logit vectors agree exactly.|12 new trees /24 scenarios, zero human labels. Semantic consistency improves but mean agreement does not. Finite/generated-letter differences are tie handling. Four-vote aggregation costs six calls. No stronger-model, matched-budget or specialization conclusion.|
 |[QA4PC amended stage attribution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md)|262 Jev requests and 262 Qwen prefills. Jev G 20/24 both mappings, F 19/24 and 20/24. Qwen G 14/24 and 16/24, F 12/24 and 14/24; direct D 13/24 and 19/24. Ten Qwen main ties.|12 trees /24 scenarios, zero new human labels. Outcome-aware semantic-gate amendment preserves original stop. F uses 2.33x G calls without consistent gain. Mapping/readout sensitivity, label assistance and absence of stronger/generated-label controls limit model claims.|
 |[Single-prefill Qwen control](research/finite-choice-readout/RESULTS.md)|8 smoke +48 main physical forwards; 14,448 input and zero generated tokens; 10.672 session seconds. Source agreement 13/24 and 10/24, pairs 3/12 and 2/12; one exact tie invalid.|Same inspected 24 ShARC inputs, zero new human reviews. Prompt/verbalizer/readout change together. No consistent gain over JSON or copy-last; different sessions prevent controlled speedup claims. Closed without prompt search.|
 |[Public-source contrast](research/source-label-screen/RESULTS.md)|12 ShARC dev trees /24 inputs; 48 distinct Jev requests and 96 Qwen3.5 generations. Jev native source agreement 18/24 in both mappings; Qwen direct 11/24 and 12/24; thinking 5/24 and 6/24 with 37/48 truncated. Last-answer copy 14/24. Local generation: 92,559 tokens, 2,983.875 seconds.|Zero project human reviews; title-only and other source-evidence concerns. Two prospective API readout repairs preserve strict failures. Source agreement is not verified correctness or independent confirmation. All raw data and both API readouts retained.|

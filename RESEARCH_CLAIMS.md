@@ -1,7 +1,7 @@
 # Current research claims
 
 This ledger summarizes the completed series through the
-[public-source contrast diagnostic](research/source-label-screen/RESULTS.md).
+[six-way answer-interface diagnostic](research/qa4pc-answer-interface/RESULTS.md).
 It interprets saved evidence; it adds no experiment, approval or new research
 commitment. Study-specific protocols, results and earlier claims retain their
 historical scope. See the [research map](RESEARCH_INDEX.md) for execution status
@@ -18,6 +18,7 @@ independent samples. Follow each report for all controls, budgets and failures.
 
 |Claim|Observed evidence|Interpretation and limit|
 |---|---|---|
+|C18. Valid generated output does not necessarily improve decision agreement.|[Fresh-cluster interface grid](research/qa4pc-answer-interface/RESULTS.md): all 324 generations are strict valid labels. Generated semantics 87/144 versus generated letters 89/144 and Jev 101/144 across six repeated mappings; stable items18/24 versus 15/24. Finite85/144 differs from generated letters only at five exact ties.|12 trees /24 scenarios; upstream references, zero new human adjudication. Same-prompt letter bridge isolates this run's tie-handling difference. Semantic format remains a bundled intervention, not a position-bias mechanism. No ordinary-model ceiling or specialization conclusion.|
 |C17. The ordinary-model comparison is sensitive to the answer mapping.|[Amended comparison](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md): Qwen direct 13/24 vs 19/24; facts 22/56 vs 38/56. Graph-direct changes 14/21 valid-both actions; ten main prefills have exact maximum ties.|Same 24 scenarios and checkpoint, two mappings only. Named outcome-aware gate amendment; original stop preserved. No generated-label, all-permutation or stronger-model control, and no general decision-model necessity claim.|
 |C16. Extra condition calls did not consistently improve either model on the selected QA4PC cohort.|[Stage attribution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md): Jev G 20/24 both mappings, F 19/24 and 20/24; Qwen G 14/24 and 16/24, F 12/24 and 14/24. F uses 2.33x G calls, 2.60x Jev inputs and 2.81x Qwen inputs.|12 trees /24 scenarios, source labels, zero new human adjudication. Supplied-fact execution is label-assisted. Original Qwen smoke stop and later gate amendment are explicit; this is not a paper-ready general model comparison.|
 |C15. One-prefill legal-letter readout did not consistently improve source agreement.|[Finite-choice control](research/finite-choice-readout/RESULTS.md): Qwen3.5-4B 13/24 and 10/24 versus prior JSON 11/24 and 12/24; pairs 3/12 and 2/12. One exact tie invalid. Main callbacks 4.501/4.406 seconds; zero generated tokens.|Same 24 inspected inputs, zero new reviews. Prompt and verbalizer also changed. Lower observed callback time in a different session is not a controlled speedup. Copy-last remains 14/24; no new method or model-necessity claim.|

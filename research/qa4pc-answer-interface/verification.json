@@ -1,0 +1,104 @@
+{
+  "verified_jobs": 648,
+  "per_mapping_correct": {
+    "native": [
+      17,
+      17,
+      17,
+      16,
+      17,
+      17
+    ],
+    "finite": [
+      11,
+      16,
+      13,
+      15,
+      16,
+      14
+    ],
+    "letter": [
+      12,
+      16,
+      14,
+      16,
+      16,
+      15
+    ],
+    "semantic": [
+      12,
+      14,
+      14,
+      14,
+      17,
+      16
+    ]
+  },
+  "per_mapping_invalid": {
+    "native": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "finite": [
+      1,
+      0,
+      2,
+      1,
+      0,
+      1
+    ],
+    "letter": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "semantic": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "strict_majority": {
+    "native": {
+      "correct": 17,
+      "abstentions": 0
+    },
+    "finite": {
+      "correct": 13,
+      "abstentions": 4
+    },
+    "letter": {
+      "correct": 15,
+      "abstentions": 2
+    },
+    "semantic": {
+      "correct": 14,
+      "abstentions": 1
+    }
+  },
+  "tokenizer_verified_generations": 324,
+  "letter_pair_count": 162,
+  "identical_letter_candidate_logits": 162,
+  "main_finite_ties": 5,
+  "actual_token_totals": {
+    "jev": {
+      "input_tokens": 87006,
+      "output_tokens": 6156
+    },
+    "qwen": {
+      "input_tokens": 115668,
+      "output_tokens": 648
+    }
+  },
+  "no_model_forwards": true
+}

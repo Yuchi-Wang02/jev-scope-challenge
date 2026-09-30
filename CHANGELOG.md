@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — complete 648-job answer-interface grid
+
+Published 162 Jev requests and 486 Qwen decisions (162 prefills,324 generations).
+All six mappings retained. Generated outputs are all valid; semantic-label
+agreement87/144 does not improve on generated letters 89/144; Jev 101/144. Finite
+85/144 differs only through five exact ties. Added independent648-action replay,
+324 token-decode checks, actual costs and a decision to close this cohort.
+
 ## 2026-09-30 — freeze fresh-cluster answer-interface comparison
 
 Selected 12 of 40 eligible QA4PC trees /24 scenarios after whole-tree exclusions.

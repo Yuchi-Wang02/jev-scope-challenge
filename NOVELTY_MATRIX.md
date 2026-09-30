@@ -29,6 +29,14 @@ then completed only its unexecuted jobs. Facts+code also fails to improve Qwen
 over graph-direct, and answer mapping changes many decisions. This is a bounded
 negative intervention/interface-sensitivity result, not a novel decomposition method.
 
+The subsequent [fresh-cluster six-way interface control](research/qa4pc-answer-interface/RESULTS.md)
+completes finite letters, same-prompt generated letters and generated semantic
+labels. Cleaner outputs and more stable semantic labels do not improve mean
+source agreement here. The letter bridge attributes its observed difference to
+tie handling. [Primary method sections](research/qa4pc-answer-interface/RELATED_WORK.md)
+already establish option/token sensitivity and voting/calibration precedents;
+this diagnostic adds an auditable bounded comparison, not a new decoder.
+
 ## Components, precedents and what this repository adds
 
 |Component or observation|Existing work or ordinary component|Current contribution and boundary|

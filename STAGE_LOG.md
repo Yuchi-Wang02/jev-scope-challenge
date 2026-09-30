@@ -4,6 +4,26 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: completed fresh-cluster interface comparison
+
+- Objective: test interface dependence with six mappings and a same-prompt bridge.
+- Reality: all 648 jobs complete; no retries, truncations, amendments or overruns.
+  Qwen generated 648 output tokens in 324 sequences; all end with natural EOS.
+- Results: native 101/144, finite 85/144, generated letters 89/144, semantic 87/144,
+  over 24 scenarios and six repeated mappings. Semantic labels improve stability
+  (18/24 vs15/24) but not mean agreement. Five exact finite ties explain its
+  entire difference from generated letters; all 162 paired logit vectors match.
+- Audit: raw-action/source recount reproduces 648 decisions, all mapping/vote
+  counts and token totals. Pinned tokenizer reproduces 324 output decodings.
+- Gap: one ordinary 4B model, short greedy nonthinking outputs, twelve clusters,
+  no new human semantic review, stronger comparison or matched compute evidence.
+- Next: close this grid; audit remaining errors against source evidence and make
+  the semantic-review gap actionable before another intervention. Continuing
+  generic permutation studies would drift from reliable software decisions.
+- Display: lead with the negative interface result and the tie-only bridge;
+  [all results and limits](research/qa4pc-answer-interface/RESULTS.md),
+  [next decision](research/qa4pc-answer-interface/NEXT_DECISION.md).
+
 ## 2026-09-30: fresh-cluster answer-interface execution freeze
 
 - Objective: separate finite readout from generated output before extending fact

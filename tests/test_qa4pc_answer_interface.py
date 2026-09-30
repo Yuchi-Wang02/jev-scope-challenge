@@ -14,6 +14,34 @@ observations=load('answer_interface_observations_tests','observations.py')
 
 
 class AnswerInterfaceTests(unittest.TestCase):
+    def test_published_journals_cover_each_job_once_and_match_report(self):
+        folder=ROOT/'research/qa4pc-answer-interface'
+        report_path=folder/'report.json'
+        if not report_path.exists():self.skipTest('Results not published at execution freeze')
+        report=json.loads(report_path.read_bytes());manifest=json.loads((folder/'plan_manifest.json').read_bytes())
+        results={}
+        for backend in ('jev','qwen'):
+            events=[json.loads(s) for s in (folder/'results'/f'{backend}.jsonl').read_text().splitlines()]
+            jobs=[j for j in manifest['jobs'] if j['backend']==backend]
+            self.assertEqual([e['job_id'] for e in events if e['event']=='call_start'],[j['id'] for j in jobs])
+            finishes=[e for e in events if e['event']=='call_finish']
+            self.assertEqual([e['job_id'] for e in finishes],[j['id'] for j in jobs])
+            self.assertEqual(events[-1]['event'],'session_end')
+            results.update({e['job_id']:e['result'] for e in finishes})
+            for field in ('input_tokens','output_tokens'):
+                self.assertEqual(sum(e['result'][field] for e in finishes),report['cost'][backend][field])
+        for row in report['observations']:
+            self.assertTrue(row['executed']);self.assertEqual(row['action'],results[row['job_id']]['action'])
+        for j in manifest['jobs']:
+            if j['arm']=='finite':
+                d=results[j['id']]['detail']
+                bridge=results[j['id'].removesuffix('_finite')+'_letter']['detail']
+                self.assertEqual(d['first_candidate_logits'],bridge['first_candidate_logits'])
+                if not d['first_letter_readout']['exact_tie']:
+                    self.assertEqual(d['first_letter_readout']['action'],bridge['generated']['action'])
+        for arm,summary in report['strict_majority'].items():
+            self.assertEqual(sum(readout.strict_majority(item['actions']) is None for item in summary['items'].values()),summary['abstentions'])
+
     def test_compiled_inputs_do_not_depend_on_reference_label(self):
         compiler=load('answer_interface_compiler_tests','compile_plan.py')
         class Tokenizer:

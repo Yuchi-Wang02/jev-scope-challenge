@@ -1,6 +1,11 @@
 # Same facts. Different answer interface.
 
-Status at execution freeze: **prepared, zero model calls**. This is the next
+Current status: **all 648 jobs completed and independently recounted**.
+[Results, costs and limits](RESULTS.md) · [Next decision](NEXT_DECISION.md).
+Semantic-label generation improves mapping consistency but does not improve
+mean source agreement over generated letters. This cohort is now closed.
+
+Historical status at execution freeze: **prepared, zero model calls**. This is the next
 bounded study after the [completed stage-attribution comparison](../qa4pc-stage-attribution/CONTINUATION_RESULTS.md).
 Subsequent execution must add a separate result/status entry here and preserve
 the prospective protocol and original preparation artifacts.
@@ -23,7 +28,7 @@ cap 10,368. These are plans, not actual usage or completed results. Semantic smo
 mistakes and malformed generated answers remain observations; structural errors
 halt the corresponding backend. No automatic retries or output-dependent search.
 
-The current new sample contains no13/maybe6/yes5 source labels. Zero new human
+The current new sample contains no=13/maybe=6/yes=5 source labels. Zero new human
 labels have been collected. Upstream QA4PC consistency is not semantic truth.
 Policies may have appeared in model training; project ID disjointness does not
 establish contamination freedom. Twelve trees are the statistical clusters.

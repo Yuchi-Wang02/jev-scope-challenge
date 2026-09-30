@@ -9,16 +9,15 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
-Latest execution: [QA4PC facts versus execution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md).
-Jev and Qwen main grids are complete after an explicit Qwen gate amendment.
-Fact calls plus code did not consistently improve either model over graph-direct;
-Qwen decisions change substantially with answer mapping. The original stop,
-[source audit](research/qa4pc-audit/README.md), invalids and costs remain visible.
+Latest execution: [Same facts. Different answer interface.](research/qa4pc-answer-interface/RESULTS.md)
+All 648 jobs completed on 12 new policy clusters. Generated outputs are fully
+parseable; semantic labels improve mapping consistency but do not improve mean
+source agreement. The finite/generated-letter difference is entirely five exact
+ties. All six mappings, invalids, raw outputs and costs are published.
 
-Next frozen grid: [Same facts. Different answer interface.](research/qa4pc-answer-interface/README.md)
-New policy clusters, all six mappings, and an identical-prompt generated-letter
-bridge between finite readout and semantic-label generation. Preparation is
-complete; the linked study reports its execution status separately.
+Earlier [facts-versus-execution results](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md)
+show no consistent gain from additional condition calls. The original Qwen stop,
+explicit amendment and [source audit](research/qa4pc-audit/README.md) remain visible.
 
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
