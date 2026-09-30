@@ -4,6 +4,28 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: QA4PC Jev completion and Qwen smoke stop
+
+- Objective: compare direct judgment, graph help, predicted facts plus code,
+  and supplied-fact execution on the fixed cohort.
+- Reality: Jev completed 262 calls. D 19/24 both mappings; G 20/24; F 19/24 and
+  20/24; L 24/24. Qwen made two prefills and stopped when no OR no was read as
+  maybe. Its 256 main decisions and four later smoke jobs are unexecuted.
+- Verification: preserve raw journals and execution commit; recompute every
+  completed readout, explicitly distinguish unexecuted from invalid/incorrect.
+  A post-run float-only analyzer tolerance fixes a Python-version sum difference
+  without changing outputs, actions or references.
+- Gap: the planned two-model comparison is incomplete. The original gate mixed
+  infrastructure validity with target-task correctness. No new human adjudication.
+- Decision: do not bypass that gate or score Qwen as 0/24. Publish the stopped
+  attempt and Jev's cost/no-improvement result together.
+- Next: separately freeze an outcome-aware continuation of only 260 unexecuted
+  Qwen jobs, retaining unchanged prompts and all old costs. Do not call this an
+  untouched protocol or software bug repair. No continuation has run yet.
+- Presentation: [results](research/qa4pc-stage-attribution/RESULTS.md) and
+  [reflection](research/qa4pc-stage-attribution/INTERPRETATION.md), crediting prior
+  decomposition work and avoiding unassisted-accuracy/model-ranking claims.
+
 ## 2026-09-30: QA4PC source graphs and stage-attribution feasibility
 
 Follow-up: [cohort preparation](research/qa4pc-stage-attribution/README.md)

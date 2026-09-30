@@ -4,7 +4,8 @@ Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
 [single-prefill Qwen control](research/finite-choice-readout/RESULTS.md), on the same public-source inputs.
 A later [implementation/data audit](research/implementation-audit/README.md) adds no model calls and identifies two invisible-change label conflicts in the pinned EXtrA release.
-The subsequent [QA4PC graph audit](research/qa4pc-audit/README.md) verifies 429 complete development compositions and retains eight cases with a missing formula variable; it adds no model results.
+The subsequent [QA4PC graph audit](research/qa4pc-audit/README.md) verifies 429 complete development compositions and retains eight cases with a missing formula variable.
+Its [stage-attribution run](research/qa4pc-stage-attribution/RESULTS.md) now has a complete Jev grid and a Qwen smoke stop, with no Qwen main scores.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -19,6 +20,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[QA4PC stage attribution](research/qa4pc-stage-attribution/RESULTS.md)|262 Jev requests: D 19/24 in both mappings; graph-direct G 20/24; facts+code F 19/24 and 20/24; supplied-fact execution L 24/24. Qwen stops after two smoke prefills.|12 trees /24 source scenarios, zero new human labels. F uses 2.33x G calls and 2.60x inputs without consistent gain. Qwen main unexecuted, so cross-model comparison is incomplete.|
 |[Single-prefill Qwen control](research/finite-choice-readout/RESULTS.md)|8 smoke +48 main physical forwards; 14,448 input and zero generated tokens; 10.672 session seconds. Source agreement 13/24 and 10/24, pairs 3/12 and 2/12; one exact tie invalid.|Same inspected 24 ShARC inputs, zero new human reviews. Prompt/verbalizer/readout change together. No consistent gain over JSON or copy-last; different sessions prevent controlled speedup claims. Closed without prompt search.|
 |[Public-source contrast](research/source-label-screen/RESULTS.md)|12 ShARC dev trees /24 inputs; 48 distinct Jev requests and 96 Qwen3.5 generations. Jev native source agreement 18/24 in both mappings; Qwen direct 11/24 and 12/24; thinking 5/24 and 6/24 with 37/48 truncated. Last-answer copy 14/24. Local generation: 92,559 tokens, 2,983.875 seconds.|Zero project human reviews; title-only and other source-evidence concerns. Two prospective API readout repairs preserve strict failures. Source agreement is not verified correctness or independent confirmation. All raw data and both API readouts retained.|
 |[Candidate coverage](research/candidate-completeness/RESULTS.md)|12 disjoint source users /72 inputs; 150 Jev requests and 150 Qwen3-4B native prefills including six smoke each. Jev 63/72 and 67/72; Qwen 34/72 and 30/72. Strict parents 3/12 and 0/12; grammar code 72/72.|Synthetic coverage premises, one wording family, zero new independent reviews. Jev errors are unnecessary explicit-ID deferrals. Native Qwen is not a reasoning-ceiling comparator. Both freezes published before main outputs. No adaptive follow-up on these grids.|
@@ -82,8 +84,8 @@ This is source consistency, not model accuracy or independent semantic validatio
 Its [next comparison design](research/qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md) is not run.
 The [selected next cohort](research/qa4pc-stage-attribution/README.md) has 12 trees,
 24 scenarios and 56 condition questions after whole-tree overlap exclusions;
-its 524-job grid (512 main plus 12 smoke) is now frozen, with zero model predictions
-at freeze time. See its protocol for fixed input budgets and zero automatic retries.
+its 524-job grid was frozen before execution. The later Jev completion and Qwen
+smoke stop are listed in the model-run table; the original freeze stays unchanged.
 
 The computational analyses below add no model forwards or independent human annotations. A large number of
 derived predictions is not a larger evaluated dataset.

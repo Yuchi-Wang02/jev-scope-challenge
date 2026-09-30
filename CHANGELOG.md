@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — QA4PC real Jev grid and preserved Qwen gate failure
+
+Published 262 Jev requests and two Qwen prefills under the committed 524-job plan.
+Jev facts+code does not consistently improve on graph-assisted direct decisions;
+supplied-fact execution is 24/24 in both mappings. Qwen fails the second semantic
+smoke and has no main scores. Includes raw journals, costs, a null-not-zero
+incomplete analysis and explicit gate-design reflection. No retries or new labels.
+
 ## 2026-09-30 — QA4PC structural audit and next diagnostic design
 
 Subsequent preparation selected 12 trees /24 scenarios by fixed hash ordering,

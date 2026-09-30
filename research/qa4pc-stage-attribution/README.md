@@ -1,12 +1,13 @@
 # Facts, rules, or both? — cohort preparation
 
-**Execution grid frozen before model execution, 2026-09-30. Zero model calls at
-this freeze.**
+**Jev complete; Qwen stopped at its second smoke, 2026-09-30.**
+Read [actual results and costs](RESULTS.md) and [the stage reflection](INTERPRETATION.md).
+There are 262 real Jev requests and two Qwen prefills; zero Qwen main outputs.
 This is the next step after the [QA4PC structural audit](../qa4pc-audit/README.md)
 and [stage-attribution design](../qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md).
 The [protocol](PROTOCOL.md), [524-job manifest](plan_manifest.json),
 [code/input freeze](freeze.json), compiler and runner are now complete.
-This is a prospective freeze, not an executed result.
+Those files preserve the prospective freeze; current execution status is above.
 
 ## Fixed selection
 
@@ -67,8 +68,8 @@ interpretation limits are explained in the linked design.
 
 The compiled local inputs total **77,528 tokens**. Jev serialized request UTF-8
 bytes plus 4,096 per request total **1,416,558 planning units**, below the
-2,000,000 cap; this proxy is not actual billed tokens. Next: execute the committed
-freeze under existing authorization. No arbitrary retries or prompt searches.
+2,000,000 cap; this proxy is not actual billed tokens. Actual consumption and the
+stopped comparator are reported in RESULTS. No arbitrary retries or prompt searches.
 
 The runner uses a three-class adaptation of this repository's durable journal
 and native-choice diagnostics, and adapts its earlier Qwen single-prefill reader.

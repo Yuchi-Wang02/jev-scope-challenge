@@ -22,6 +22,10 @@ The [QA4PC source audit](research/qa4pc-audit/README.md) now implements standard
 three-valued composition checks on released annotations. Its 429/429 consistency
 result is a software/data check, not a model score or a novel executor. A proposed
 stage comparison must control human graph assistance in both corresponding arms.
+The [completed Jev portion](research/qa4pc-stage-attribution/RESULTS.md) does so:
+facts+code has no consistent advantage over graph-direct despite more calls.
+Qwen's original gate stopped before main evaluation. This is a bounded negative
+intervention result with an incomplete comparator, not a novel decomposition method.
 
 ## Components, precedents and what this repository adds
 

@@ -9,9 +9,11 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
-Latest preparation: [QA4PC graph and label audit](research/qa4pc-audit/README.md)
-checks the source for the next fact-versus-execution diagnostic. It adds no model
-score: 429 complete compositions agree, and eight cases lack a formula variable.
+Latest execution: [QA4PC facts versus execution](research/qa4pc-stage-attribution/RESULTS.md).
+Jev completed 262 requests; fact calls plus code did not consistently improve
+on graph-assisted direct decisions. Qwen stopped at a semantic smoke gate and
+has no main score. The [source audit](research/qa4pc-audit/README.md) and failed
+comparator remain visible alongside the results.
 
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
