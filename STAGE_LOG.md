@@ -6,6 +6,13 @@ presentation. It does not claim a paper is ready.
 
 ## 2026-09-30: QA4PC Jev completion and Qwen smoke stop
 
+Follow-up preparation: the [named gate amendment](research/qa4pc-stage-attribution/CONTINUATION_PROTOCOL.md)
+freezes exactly the remaining 260 original Qwen jobs /77,150 input tokens. It
+records semantic smoke mistakes without halting otherwise valid measurement.
+Three tests verify unchanged model inputs, structural-stop preservation and
+exact suffix/no-replay accounting. Original journals and their failed gate stay
+unchanged. No successor outputs existed at this preparation step.
+
 - Objective: compare direct judgment, graph help, predicted facts plus code,
   and supplied-fact execution on the fixed cohort.
 - Reality: Jev completed 262 calls. D 19/24 both mappings; G 20/24; F 19/24 and

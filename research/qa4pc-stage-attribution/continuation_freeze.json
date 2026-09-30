@@ -1,0 +1,29 @@
+{
+  "study": "qa4pc-qwen-semantic-gate-continuation-v1",
+  "plan_sha256": "da098eb6605aa498591f609938a3bb28f09d21df16341210dceef663299c7937",
+  "manifest_sha256": "a05d660a43434f6ee60afac2e92297380f5a10f6e4eb5bd6ad504d0446cf40ea",
+  "source_hashes_lf": {
+    "research/qa4pc-stage-attribution/continuation.py": "d40dfa20aedde3e9c77ef27d372f6c1ace7f0c7ddb7dd7dd129da56ca9c413e2",
+    "research/qa4pc-stage-attribution/CONTINUATION_PROTOCOL.md": "85505c3dfe6476656a1d7ac5cc51c210869e64efe0dc7fc9854d5e8f18ea33da",
+    "research/qa4pc-stage-attribution/analyze.py": "c394af5347542faef0d36bb9a0d4ca624a062ab961ebef1909cde03aa0d98699",
+    "research/qa4pc-stage-attribution/freeze.json": "12c92adaa7ba8d5b99f37514678575c1b410dfa4bd637a5ac7e85904d058fdee",
+    "research/qa4pc-stage-attribution/plan_manifest.json": "6e40fb2b0bd67c78252f0f3f7eb089ba2684c0aa2d9d78ad4bee1e58f2b41287",
+    "research/qa4pc-stage-attribution/results/qwen.jsonl": "0eb7bfaed7345ccf2c830ddbbbc31c43ec5259faeccad582d8ce49e0fa831f00",
+    "research/qa4pc-stage-attribution/results/jev.jsonl": "9ef58370640fb4800ccc5e7a53f5aa4afc74d95ff6340a0b999c6ec8c92e2395"
+  },
+  "parent_source_hashes_lf": {
+    "research/qa4pc-stage-attribution/plan.py": "7f6159150553ca1f2146e26c3070c86646fdd818bbe08e7f885974b0a3667983",
+    "research/qa4pc-stage-attribution/runner.py": "5448831aab27503a8f6ae8a9b4a643ea1399059212bf8c914c94ebee22443229",
+    "research/qa4pc-stage-attribution/journal.py": "f5598fabfeb9fbf29d8b4869ba072e21ccc3f54871c199318da98fb674136773",
+    "research/qa4pc-stage-attribution/cohort.py": "4079e43258e57feeb0aaae8cdb93b6b88f840cdc9dfff30283fc57f1e37d6672",
+    "research/qa4pc-stage-attribution/cohort.json": "325ddc98afbdbdabdf6da2130079f0df8af9d2ed924a2faf8a467230d6e03830",
+    "research/qa4pc-stage-attribution/PROTOCOL.md": "9b31a4996f074a9152d897b00c939e733383bb945fcd222efd2fefc85874a17d",
+    "research/qa4pc-audit/audit.py": "dcf320e89986456b0475a46f4f044d4b01bcd8c3d6e993d6cd4bfa873c57a130",
+    "research/external-validation/comparison_plan.py": "62c1bf8f6ad66cef3b8a44f698129e330fd56548a8b8c72d8db5c0a3ac47135d",
+    "research/external-validation/comparison_backends.py": "12f56e0da585ca85a96b202e9e39325b6818d8a829e9e41a6588c89ea0d5e67b",
+    "research/action-backends/adapters.py": "775f31111e8eab97d18b414b5dfdce6083fd2bfcbea9b35fc46b0025e464e43e",
+    "research/payment-ownership/run_api_v02.py": "70d57ef899de752a449d3c87c5e4c1cbcb4f36c326c66f031a058ce3e102ec28",
+    "research/payment-ownership/study.py": "3ade9249484245ed540e8467bc87546518b769903732e6756c7afa1077142e0a",
+    "research/baseline-readiness/qwen35-smoke-repaired/run.json": "8f56b14a0b6865ffc490c88ff3f0c1abf8b7bf8d62bc061d9cd1dd71d67eab91"
+  }
+}

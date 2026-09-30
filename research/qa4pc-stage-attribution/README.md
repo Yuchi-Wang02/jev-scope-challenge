@@ -3,6 +3,11 @@
 **Jev complete; Qwen stopped at its second smoke, 2026-09-30.**
 Read [actual results and costs](RESULTS.md) and [the stage reflection](INTERPRETATION.md).
 There are 262 real Jev requests and two Qwen prefills; zero Qwen main outputs.
+
+**Next execution frozen:** the [outcome-aware continuation](CONTINUATION_PROTOCOL.md)
+schedules only the 260 previously unexecuted Qwen jobs. Its
+[manifest](continuation_manifest.json) verifies exact original job hashes.
+The original gate failure remains unchanged; no successor result is claimed here.
 This is the next step after the [QA4PC structural audit](../qa4pc-audit/README.md)
 and [stage-attribution design](../qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md).
 The [protocol](PROTOCOL.md), [524-job manifest](plan_manifest.json),
