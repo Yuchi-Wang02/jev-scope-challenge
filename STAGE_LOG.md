@@ -4,6 +4,21 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: check a parallel source-label diagnostic without opening the review queue
+
+- Objective: avoid making project-added human review a prerequisite for every
+  exploratory observation, while keeping the frozen training queue untouched.
+- Evidence: [dev-source inventory](research/source-label-screen/README.md) found
+  69 dev trees, zero train tree-ID or normalized-exact-snippet overlap, changed
+  and invariant action pairs, and one conflicting visible-action group excluded.
+  These are source-label counts; semantic overlap and label truth remain unverified.
+- Decision: a separate 12-tree /24-input source-label screen is feasible enough
+  to specify. No cases are selected, no protocol is frozen and no predictions
+  exist. A prospective amendment and deterministic selection are required next.
+- Gap and presentation: this would yield source-agreement observations sooner,
+  not human-confirmed errors or a new method. Do not change the pending train
+  review gate, quietly use its cases, or call subsequent adaptive work confirmation.
+
 ## 2026-09-30: audit raw records before comparing conditions
 
 - Objective: make a future comparison inspectable across common inputs, output
