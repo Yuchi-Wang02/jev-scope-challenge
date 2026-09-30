@@ -1,0 +1,56 @@
+# Qwen3.5-4B: local runtime verified, capability comparison still pending
+
+Completed 2026-09-30. **One successful BF16 GPU load and six technical generation calls.** These generic prompts do not establish task accuracy, comparative capability or a research finding. The prior 72-input research grids were not reopened.
+
+## Observed execution
+
+|Call|Generated tokens|Generate seconds|Termination|Final-answer portion|
+|---|---:|---:|---|---|
+|direct_1|2|0.566|EOS|`READY`|
+|direct_2|12|0.511|EOS|`{   "color": "blue" }`|
+|direct_3|2|0.182|EOS|`B`|
+|thinking_1|108|3.503|EOS|`READY`|
+|thinking_2|256|8.088|256-token cap|No final answer; thought truncated|
+|thinking_3|170|5.381|EOS|`B`|
+
+Total: 550 generated tokens; 18.247 seconds from first generate start through final record; load 3.474 seconds. Peak PyTorch allocated memory 8.539 GiB, reserved 8.566 GiB. These are short single-sequence measurements, not long-context, concurrency or end-to-end serving guarantees. Other GPU/display allocations are outside PyTorch peak counters.
+
+Non-thinking output has the requested content in all three interface checks. Two thinking calls emit a final-answer portion; the JSON call reaches the cap inside its reasoning text. A JSON example inside a thought is not a completed final answer. No parser extracts a favorable answer from that truncated trace. These hand-authored trivial checks are not summarized as benchmark accuracy.
+
+## Model and runtime
+
+- Qwen/Qwen3.5-4B, revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`.
+- Python 3.10.18, torch 2.8.0+cu128 / CUDA 12.8, Transformers 5.3.0, tokenizers 0.22.2, huggingface-hub 1.33.0, PEFT 0.18.1.
+- NVIDIA RTX 5070 Ti; all parameters reported on cuda:0 in BF16. No quantization/offload.
+- SDPA with native torch DeltaNet fallback; optimized flash-linear-attention and causal-conv1d kernels were unavailable. No kernel download or remote code.
+- Sampling on; seed 20260930 per call, top-k 20, min-p 0, repetition penalty 1. Direct temperature/top-p 0.7/0.8; thinking 1.0/0.95. Presence penalty 0. The latter and the short cap depart from the vendor general-task recommendation.
+
+## Acquisition and preserved failures
+
+The eleven retained model/tokenizer/license files total 9,342,905,124 bytes; weights account for 9,319,828,096 bytes. Both weight SHA-256 values match pinned Hub LFS digests. Four dependency wheel payloads total 14,813,008 bytes. Combined unique payload: 9,357,718,132 bytes (8.715 GiB), below the 15 GiB allowance. This is payload accounting, not packet-level HTTP overhead/retransmit measurement. Paid API calls: zero. Weights remain outside this repository under Apache-2.0.
+
+The first full runner attempt failed before loading weights because inherited PEFT 0.17.1 imported removed HybridCache. Its [raw record](qwen35-smoke-run/run.json) and traceback are retained. Installing PEFT 0.18.1 only in the isolated venv resolved the complete import check. The old environment was rechecked: Transformers 4.55.4, torch 2.8.0+cu128 and PEFT 0.17.1 remain available.
+
+Before that failed attempt, source inspection found removed use_model_defaults support in Transformers 5.3.0. A CPU-only check and pre-load amendment corrected the runner without changing the intended sampling policy. A terminal Unicode display error during token inspection was fixed with -X utf8, with zero model work. The dependency amendment initially misstated the wheel size by eight bytes; the acquisition record verifies 556,960 bytes for PEFT 0.18.1.
+
+## Reproduction and evidence boundary
+
+Read the [pre-acquisition protocol](QWEN35_SMOKE_PROTOCOL.md), [API compatibility amendment](QWEN35_COMPATIBILITY_AMENDMENT.md), [dependency amendment](QWEN35_DEPENDENCY_AMENDMENT.md), [acquisition manifest](qwen35_acquisition.json) and [successful raw record](qwen35-smoke-repaired/run.json). The raw record includes exact rendered inputs, token IDs, outputs, settings, durations and source-commit hashes. It is not a blinded review package.
+
+Offline: `python research/baseline-readiness/qwen35_report.py --verify`. This checks saved record consistency and runner/protocol hashes against full Git history. It does not reload weights or prove semantic validity. Live replication requires the separately downloaded pinned model and the isolated environment; pass a new output directory to qwen35_smoke.py. Do not silently rerun this published destination.
+
+For live replication, create a Python 3.10 environment with CUDA-compatible torch 2.8.0+cu128; install transformers==5.3.0, tokenizers==0.22.2, huggingface-hub==1.33.0 and peft==0.18.1. Read the original protocol budget first. The local setup reused an existing torch environment with --system-site-packages; it was not a fully hermetic fresh installation.
+
+Fetch pinned Hub metadata from [this public endpoint](https://huggingface.co/api/models/Qwen/Qwen3.5-4B/revision/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a?blobs=true) into hub.json. Download the eleven files listed in the run manifest with `hf download Qwen/Qwen3.5-4B --revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a --local-dir MODEL_DIR` and explicit filenames from that manifest. Then:
+
+```bash
+python -X utf8 research/baseline-readiness/qwen35_smoke.py --model-dir MODEL_DIR --hub-metadata hub.json --output NEW_RUN_DIR
+```
+
+The runner checks artifact sizes/LFS hashes before loading and refuses an existing output directory. Keep the pinned environment and record all results; sampled outputs can vary across software/hardware configurations.
+
+## Milestone audit and next decision
+
+Goal: turn a metadata-only candidate into an executable ordinary-model resource. Achieved: local BF16 loading and bounded generation. Gap: no new research inputs, no independent labels, no evidence that this model is a stronger task comparator, and no adequate thinking-budget calibration. The original environment remains usable.
+
+Next: freeze a separate development-only interface/budget calibration before a new reviewed comparison, including final-answer parsing and truncated-output accounting. Review the existing 72-input candidate-coverage wording separately; the two old payment reviews do not cover it. Any confirmatory material must be new and independently reviewed. Preserve the code baseline and the question of whether natural-language modeling is necessary at all. Present this release as reproducible setup evidence, not a new leaderboard.

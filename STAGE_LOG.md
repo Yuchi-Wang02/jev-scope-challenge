@@ -4,6 +4,21 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: establish an executable Qwen3.5 comparator resource
+
+- Objective: move beyond model metadata and verify local loading/generation.
+- Completed: pinned BF16 checkpoint, isolated runtime, six technical calls,
+  550 generated tokens, one truncated thought. Raw records and two pre-output
+  compatibility amendments preserve the failure/recovery sequence. Unique model
+  and wheel payloads total 8.715 GiB; zero paid API calls.
+- Gap: no task-specific capability comparison or new reviewed labels. Short
+  generic prompts do not establish long-context performance or a capable ceiling.
+- Decision: keep all previous research grids closed. Define separate development
+  calibration and new reviewed comparison material, with adequate thinking budget,
+  declared sampling settings, a final-answer parser and code baseline.
+- Presentation: [technical smoke report](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md).
+  Runtime evidence belongs outside the research score table.
+
 ## 2026-09-30: close review intake and qualify the payment pilot
 
 - Objective: preserve two initial human submissions and settle how to report

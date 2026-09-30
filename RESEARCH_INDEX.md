@@ -43,6 +43,14 @@ model calls. The [target-switch input explorer](docs/request_switch.html) shows
 frozen texts, planned prompts and program references only; it contains no model
 predictions and is not a blinded human-review instrument.
 
+## Runtime preparation with actual generation
+
+The [Qwen3.5-4B technical smoke](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)
+completed one BF16 GPU load and six generic generation calls (550 generated tokens,
+one truncated thinking output). It preserves a zero-forward dependency failure
+and pre-output amendments. This is not another research dataset or a demonstrated
+stronger comparator; no closed study was rerun.
+
 ## Analyses of saved outputs and software checks
 
 The computational analyses below add no model forwards or independent human annotations. A large number of

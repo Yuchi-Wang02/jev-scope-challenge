@@ -1,5 +1,7 @@
 # Ordinary-model comparator readiness
 
+Historical metadata-only stage. The subsequent [Qwen3.5 technical smoke](QWEN35_SMOKE_RESULTS.md) adds a real local load and six generic generation calls; it is not a research evaluation. The snapshot and counts below retain their original scope.
+
 Captured 2026-09-30T08:04:43.999317+00:00. **Metadata and installed-runtime inspection only: zero inference, zero weight downloads.**
 
 ## What is available versus what remains untested

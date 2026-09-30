@@ -8,8 +8,9 @@ trainer_utils, which imported inherited PEFT 0.17.1; PEFT requested HybridCache,
 removed from Transformers 5.3.0. Zero weight loads, zero generation attempts and
 zero model forwards occurred. The earlier narrower architecture import had passed.
 
-Install PEFT 0.18.1 only in the probe venv, a 556,952-byte wheel according to pip's
-download display (exact wheel bytes will be checked in the acquisition record).
+Install PEFT 0.18.1 only in the probe venv, a 556,960-byte wheel as subsequently
+verified in the acquisition record. The pre-load commit misstated this as 556,952
+bytes; that eight-byte documentation error did not change the downloaded artifact.
 Retain the original environment's PEFT 0.17.1. The complete import list and local
 tokenizer construction now pass without model weights. A terminal-only Unicode
 display failure while printing token strings was resolved with Python -X utf8;

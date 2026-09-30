@@ -58,6 +58,7 @@ default Kev release.
 |Artifact|Revision actually used|Pinned license declaration|
 |---|---|---|
 |[Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B/tree/1cfa9a7208912126459214e8b04321603b3df60c)|`1cfa9a7208912126459214e8b04321603b3df60c`|[Apache-2.0 model card](https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md)|
+|[Qwen3.5-4B technical smoke only](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)|`851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`|[Apache-2.0 license](https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE)|
 |[Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base/tree/906bfd4b4dc7f14ee4320094d8b41684abff8539)|`906bfd4b4dc7f14ee4320094d8b41684abff8539`|[Apache-2.0 model card](https://huggingface.co/Qwen/Qwen3-4B-Base/blob/906bfd4b4dc7f14ee4320094d8b41684abff8539/README.md)|
 |[Kev-4B adapter + pointer head](https://huggingface.co/jaredpalmer/kev-4b/tree/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416)|`c4bfa11b0dc07691884f2d97f1c4c4c05c92e416`|[Apache-2.0 model card](https://huggingface.co/jaredpalmer/kev-4b/blob/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416/README.md)|
 

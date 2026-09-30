@@ -144,6 +144,9 @@ def capture(python, recover_cache=False):
 def report(s):
     r = s['local_runtime']; gpu_gib = r['total_gpu_memory_bytes']/1024**3
     lines = ['# Ordinary-model comparator readiness', '',
+        'Historical metadata-only stage. The subsequent [Qwen3.5 technical smoke](QWEN35_SMOKE_RESULTS.md) '
+        'adds a real local load and six generic generation calls; it is not a research evaluation. '
+        'The snapshot and counts below retain their original scope.', '',
         f'Captured {s["captured_at_utc"]}. **Metadata and installed-runtime inspection only: zero inference, zero weight downloads.**', '',
         '## What is available versus what remains untested', '',
         f'The existing environment uses Transformers {r["transformers"]}, PyTorch {r["torch"]}, CUDA {r["cuda"]}, '

@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    {
+      "name": "transformers",
+      "version": "5.3.0",
+      "wheel": "transformers-5.3.0-py3-none-any.whl",
+      "bytes": 10661827,
+      "sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
+      "url": "https://files.pythonhosted.org/packages/b8/88/ae8320064e32679a5429a2c9ebbc05c2bf32cefb6e076f9b07f6d685a9b4/transformers-5.3.0-py3-none-any.whl"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "wheel": "tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+      "bytes": 2747786,
+      "sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48",
+      "url": "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0",
+      "wheel": "huggingface_hub-1.33.0-py3-none-any.whl",
+      "bytes": 846435,
+      "sha256": "04e434b06e100eddbce9a6e817d72693a7884b10a79bd67ab48080d5c07eb899",
+      "url": "https://files.pythonhosted.org/packages/fc/16/963096d224b80909432dc16561a615fd33d2d13beef3ce4c63fa25e40867/huggingface_hub-1.33.0-py3-none-any.whl"
+    },
+    {
+      "name": "peft",
+      "version": "0.18.1",
+      "wheel": "peft-0.18.1-py3-none-any.whl",
+      "bytes": 556960,
+      "sha256": "0bf06847a3551e3019fc58c440cffc9a6b73e6e2962c95b52e224f77bbdb50f1",
+      "url": "https://files.pythonhosted.org/packages/b3/14/b4e3f574acf349ae6f61f9c000a77f97a3b315b4bb6ad03791e79ae4a568/peft-0.18.1-py3-none-any.whl"
+    }
+  ],
+  "unique_wheel_payload_bytes": 14813008,
+  "old_runtime_rechecked": {
+    "transformers": "4.55.4",
+    "torch": "2.8.0+cu128",
+    "peft": "0.17.1"
+  },
+  "measurement_note": "Unique payload sizes, not packet-level network traffic. Pip dry runs populate cache and install reuses it. No model retransfers requested."
+}

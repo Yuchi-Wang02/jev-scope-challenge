@@ -53,6 +53,11 @@ Its greedy decoding differs from Qwen's recommendation for thinking mode;
 the [comparator audit](research/baseline-readiness/README.md) records that limit
 and what a stronger ordinary-model comparison still requires.
 
+Qwen3.5-4B has since [loaded and generated locally](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)
+in an isolated BF16 environment. Six generic interface checks generated 550 tokens;
+one thinking output hit its short cap. This is runtime evidence, with no new task
+scores or independent labels. The existing research grids remain closed.
+
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·
 [Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·

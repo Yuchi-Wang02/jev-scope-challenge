@@ -20,6 +20,7 @@ python research/candidate-completeness/reasoning_report.py --verify
 python research/candidate-completeness/plot_results.py --verify
 python research/decision-sufficiency/build.py --verify
 python research/baseline-readiness/preflight.py verify
+python research/baseline-readiness/qwen35_report.py --verify
 python -m unittest discover -s tests -v
 python verify_evidence.py
 python analyze.py --verify
@@ -166,7 +167,9 @@ update is claimed. Run `python research/payment-ownership/audit_review.py --veri
 the unaltered submission hash, IDs, evidence paths, saved scores and the neutral
 second-reviewer package. The checks do not establish semantic validity or independence.
 See the [audit](research/payment-ownership/REVIEW_AUDIT.md). The separate
-[candidate-completeness plan](research/candidate-completeness/PLAN.md) has no new run.
+[candidate-completeness plan](research/candidate-completeness/PLAN.md) retains its
+historical preparation status; its subsequent [completed results](research/candidate-completeness/RESULTS.md)
+use different inputs and are not validated by these two payment reviews.
 
 Run `python research/payment-ownership/review_pair.py --verify` for the two-review
 comparison and exact date-normalization check. The [reporting disposition](research/payment-ownership/REVIEW_DISPOSITION.md)

@@ -1,5 +1,15 @@
 # Release notes
 
+## 2026-09-30 — Qwen3.5 runtime established
+
+Acquired a pinned Qwen3.5-4B checkpoint outside the repository and completed six
+generic technical generations in an isolated BF16 GPU environment: 550 generated
+tokens, five EOS terminations and one truncated thinking trace. Preserved a
+zero-forward inherited-PEFT import failure and pre-output compatibility amendments.
+Added complete input/output/configuration records, weight hashes, acquisition
+accounting and an offline verifier. No new research scores or closed-grid reruns.
+The earlier runtime and historical metadata snapshot remain intact.
+
 ## 2026-09-30 — comparator readiness and interpretation correction
 
 Added a bounded metadata/runtime audit for Qwen3-4B, Qwen3-8B, Qwen3-8B-FP8 and
