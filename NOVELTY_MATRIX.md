@@ -52,7 +52,7 @@ and disclosed regressions make those distinctions inspectable.
 
 They do not yet distinguish a broadly necessary model capability from a weakness
 of one prompt/readout/representation. Pure code already solves the declared
-grammar, no non-author reviewer has submitted, and multiple later analyses
+grammar, human submissions do not settle the payment scope objection, and multiple later analyses
 reuse 12 familiar development parents. The latest 24 scenes add new instances,
 not unseen language structure. No claim of independent confirmation, model
 necessity, broad small-model substitution or language transfer follows.
@@ -72,10 +72,10 @@ Jev and the finite parser match the original main references. One ambiguous smok
 the resulting launch amendment is disclosed. Current contribution: a reproducible
 bounded result with source provenance and retained failure, not a general benchmark
 or model replacement finding. The [bounded nearest-work review](research/payment-ownership/RELATED_WORK.md)
-includes entity binding, Legible Failures and When History Lies. One author has
-since submitted 96 item reviews, agreeing with the original references while
-raising an unresolved scope objection for 24 product-reference inputs. See the
-[audit](research/payment-ownership/REVIEW_AUDIT.md). Two-reviewer adjudication,
+includes entity binding, Legible Failures and When History Lies. Two reviewers have
+since submitted judgments on the same 96 items, conditionally agreeing with original
+references while raising a scope objection for 24 product-reference inputs. See the
+[disposition](research/payment-ownership/REVIEW_DISPOSITION.md). Reviewer-endorsed adjudication,
 ordinary-model comparison and independent confirmation remain incomplete.
 
 The [candidate-completeness proposal](research/candidate-completeness/PLAN.md)

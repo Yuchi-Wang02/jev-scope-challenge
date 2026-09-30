@@ -7,11 +7,11 @@ ambiguity smoke case fails. The prewritten main-grid stop rule was triggered;
 no adaptive follow-up ran. Read [the results and amendment](RESULTS_V02.md),
 [the frozen protocol](PROTOCOL.md), and [the online replay](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
 
-**Post-run author review:** 96/96 items received, with a candidate-scope objection
+**Post-run reviews:** two submissions covering the same 96/96 items received, with a candidate-scope objection
 affecting 48 product-reference review items /24 underlying inputs. Explicit-ID
 inputs remain 24/24 per condition. Product-reference scores are conditional on
 interpreting the displayed records as the target candidates. No original label
-is changed. Read the [audit and preserved submission](REVIEW_AUDIT.md).
+is changed. Read the [comparison and reporting disposition](REVIEW_DISPOSITION.md).
 
 **Execution amendment:** v0.1 stopped after an ambiguous-target smoke error.
 All six smoke responses were retained (5/6 correct). The subsequent
@@ -60,12 +60,14 @@ documented in [third-party notices](../../THIRD_PARTY_NOTICES.md).
 
 ## Review and reproduction
 
-**One author review: 96 items completed. Zero non-author reviewer submissions;
-two-reviewer adjudication pending.** The [second-reviewer handoff](review/reviewer_B_package.zip)
-contains only the original inputs, blank form, viewer and neutral instructions.
-Send that package alone, without this page, the audit or any results. The original
-[review instructions](review/README.md) and package preserve their preparation-time
-status. Existing labels stay provisional; agreement does not settle the scope issue.
+**Two submissions received: 96 items each, 192 annotation rows over the same
+96 items /48 inputs /12 parents.** Conditional labels agree; ambiguity fields
+agree on 48/96 items. Both reviewers raise the candidate-scope issue through
+notes or flags. No final reference update or reviewer-endorsed adjudication.
+See [preserved submissions and process limitations](REVIEW_DISPOSITION.md).
+The [second-reviewer handoff](review/reviewer_B_package.zip) and original
+[review instructions](review/README.md) remain unchanged historical instruments.
+Do not treat template status or intake receipt fields as current review counts.
 
 Offline checks, requiring Python and the root requirements:
 
@@ -75,6 +77,7 @@ python -m unittest discover -s tests -p test_payment_ownership.py -v
 python research/payment-ownership/report.py --verify
 python research/payment-ownership/verify_run.py
 python research/payment-ownership/audit_review.py --verify
+python research/payment-ownership/review_pair.py --verify
 python research/payment-ownership/review_check.py research/payment-ownership/review/reviewer_A.csv
 ```
 

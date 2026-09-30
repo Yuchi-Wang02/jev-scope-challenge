@@ -15,26 +15,26 @@ def publish(verify=False):
           'Read the [smoke stop audit](SMOKE_AUDIT.md). This is outcome-aware exploratory work.\n\n')
     md=report.result_markdown(s).replace('**Status:',note+'**Status:',1)
     md=md.replace('../../docs/payment_ownership.html','../../docs/payment_ownership_v02.html')
-    audit=('**2026-09-30 author-review update:** one author completed 96 review items; '
-           'no second reviewer or adjudicated reference update. The submission agrees '
-           'with original references but raises an unresolved candidate-scope issue '
+    audit=('**2026-09-30 two-review update:** two submissions cover the same 96 review items; '
+           'there is no reviewer-endorsed adjudication or reference update. Labels agree '
+           'conditionally, with an unresolved candidate-scope issue '
            'for 48 product-reference review items (24 underlying inputs). Explicit-ID '
            'inputs remain 24/24 per condition. Full-grid scores below use original '
            'references; product-reference correctness is conditional on a displayed-candidate '
-           'interpretation. Read the [review audit and preserved submission](REVIEW_AUDIT.md).\n\n')
+           'interpretation. Read the [comparison and reporting disposition](REVIEW_DISPOSITION.md).\n\n')
     md=md.replace('**Status: completed. Independent human annotations: 0.**',
-                  '**Execution: completed. One author review received; independent two-reviewer adjudication pending.**')
+                  '**Execution: completed. Two reviews received; conditional labels, no adjudicated reference update.**')
     md=md.replace('This is a static diagnostic',audit+'This is a static diagnostic',1)
     html=report.replay_html(s)
     html=html.replace('href="../research/',f'href="{GITHUB}research/')
     html=html.replace('RESULTS.md"','RESULTS_V02.md"')
     html=html.replace('independent human review pending.',
-                      'one author review received; second review and adjudication pending.')
+                      'two reviews received; product-reference labels remain conditional.')
     html=html.replace('has not been independently reviewed.',
-                      'has one author review with a scope objection; independent adjudication remains pending.')
-    review_banner='''<section class="tag"><strong>Author review received; candidate scope unresolved.</strong>
-<p>One author completed 96 review items. All agree with original references, with a cover-note objection affecting 48 product-reference items (24 underlying inputs). The input says the displayed orders are a selected subset without guaranteeing that the target is among them. No second review or reference update is complete.</p>
-<p>Explicit-ID inputs remain 24/24 in each condition. Product-reference correctness depends on interpreting the displayed orders as the candidate set. The saved full-grid scores and embedded freeze-time metadata are historical, not unconditional human validation. <a href="'''+GITHUB+'''research/payment-ownership/REVIEW_AUDIT.md">Read the audit</a></p></section>'''
+                      'has two review submissions with a scope objection; no adjudicated reference update has been made.')
+    review_banner='''<section class="tag"><strong>Two reviews received; candidate scope remains unresolved.</strong>
+<p>Both reviewers completed the same 96 items. Labels agree conditionally. Yuchi raised the scope issue in a cover note; Tiancheng marked all 48 product-reference items ambiguous (24 underlying inputs). The input calls the displayed orders a selected subset without guaranteeing that the target is among them. No reviewer-endorsed adjudication or reference update is complete.</p>
+<p>Explicit-ID inputs remain 24/24 in each condition. Product-reference correctness depends on interpreting the displayed orders as the candidate set. The saved full-grid scores and embedded freeze-time metadata are historical, not unconditional human validation. <a href="'''+GITHUB+'''research/payment-ownership/REVIEW_DISPOSITION.md">Read the comparison and disposition</a></p></section>'''
     html=html.replace('<section><label>Case',review_banner+'<section><label>Case',1)
     banner='''<section class="tag"><strong>Smoke: 5/6, including one ambiguity error.</strong>
 <p>Two orders both contain a Mug; the request does not identify which order. Jev returned VALID_DESTINATION with probability 0.97; the provisional reference is NOT_ESTABLISHED. This single constructed case awaits independent review.</p>

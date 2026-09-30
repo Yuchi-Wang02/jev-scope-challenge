@@ -2,7 +2,11 @@
 
 **Status: proposal for review. No dataset, frozen request manifest, new labels,
 model calls or results exist for this study. Do not run from this plan alone.**
-Prepared 2026-09-30 following the payment-study author review. This design is
+Revised 2026-09-30 after both payment-study submissions. The previous four-input
+proposal is retained in Git history at `0cbf005`. This revision adds irrelevant-omission
+controls before any dataset construction or inference. The proposed ceiling changes
+from 107 to 155 attempts; no calls are authorized or made by publishing this design.
+Prepared following the payment-study review. This design is
 informed by inspected development results and a discovered specification issue.
 
 ## Question and falsifiable prediction
@@ -28,23 +32,27 @@ unseen-order payment histories can differ without inventing an unavailable metho
 If 12 eligible users cannot be obtained, report that feasibility failure before
 changing the selection rule or proposed sample size.
 
-For each parent, construct four inputs:
+For each parent, construct six inputs:
 
 |Request identifies target by|Candidate coverage statement|Expected reference after review|
 |---|---|---|
 |Explicit visible order ID|Complete|Determined VALID or INVALID|
 |Explicit visible order ID|Incomplete|Same determined label|
 |Product name with one visible matching order|Complete|Same determined label|
-|Same product-name request|Incomplete|NOT_ESTABLISHED|
+|Same product-name request|Incomplete for the requested product|NOT_ESTABLISHED|
+|Explicit visible order ID|Omissions only for an unrelated product|Same determined label|
+|Same product-name request|Omissions only for an unrelated product; all requested-product candidates visible|Same determined label|
 
-Use six valid and six invalid determined parents. This gives 48 proposed inputs:
-18 VALID, 18 INVALID and 12 NOT_ESTABLISHED. Twelve parents, not 48 independent
+Use six valid and six invalid determined parents. This gives 72 proposed inputs:
+30 VALID, 30 INVALID and 12 NOT_ESTABLISHED. Twelve parents, not 72 independent
 samples. Keep records, destination, policy and request identical within each
 completeness pair. Use IDs for destinations in the first pilot to avoid adding
 card-description resolution as another factor. No gift-card destinations in this
 pilot: their exception can make validity independent of target identity.
 
-The two statements must unambiguously specify their scope. Draft wording:
+The three statements must unambiguously specify their scope. Use one predeclared
+wording family for the pilot; do not choose a paraphrase after model feedback.
+Draft wording:
 
 - Complete: "For requests identified by product name, the displayed orders
   include every order of this user containing that product."
@@ -53,7 +61,11 @@ The two statements must unambiguously specify their scope. Draft wording:
   history is not provided. The product-name request does not distinguish the
   displayed order from an omitted matching order."
 
-Both conditions explicitly state that an exact order ID uniquely identifies its
+- Irrelevant omission: "For requests identified by product name, every order
+  containing that product is displayed. At least one order containing a different
+  product is not displayed, but no omitted order contains the requested product."
+
+All conditions explicitly state that an exact order ID uniquely identifies its
 displayed order, displayed payment histories are complete, and the user payment
 method list is complete. The refund-destination rule stays identical. Final
 wording requires human review and a versioned freeze; these drafts are not a
@@ -86,9 +98,9 @@ dedicated-versus-general-model claim. Its checkpoint, thinking setting, readout,
 hardware and budget are not chosen here; it has no results and is outside this
 pilot's call allocation. A Jev-only pass or failure cannot settle substitution.
 
-Proposed pilot: six separate smoke requests plus 48 inputs x two mappings = 102
+Proposed pilot: six separate smoke requests plus 72 inputs x two mappings = 150
 scheduled HTTP requests; at most five retry attempts across the stage, hence
-**107 total attempts**, and at most 1,000,000 conservative planned input units.
+**155 total attempts**, and at most 1,000,000 conservative planned input units.
 Use the original serialized UTF-8 bytes +256 accounting proxy per attempt,
 including retries. Actual tokens and cost are reported separately. Verify current
 provider pricing before execution, without treating this proxy as exact tokens.
@@ -96,19 +108,19 @@ This is a new proposed allocation, not automatic use of the prior study's remain
 
 ## Metrics and stop rules
 
-Primary descriptive endpoint: parents correct on all four inputs in the primary
+Primary descriptive endpoint: parents correct on all six inputs in the primary
 mapping, denominator 12. Report the reversed mapping separately, plus strict
-eight-decision parent correctness. Never choose the better mapping after viewing
+twelve-decision parent correctness. Never choose the better mapping after viewing
 results. Also report complete product-reference pairs, stable explicit-ID pairs,
-false commitments on the 12 unknown inputs, unnecessary deferrals on the 36
+false commitments on the 12 unknown inputs, unnecessary deferrals on the 60
 determined inputs, wrong acceptance/rejection, mapping disagreements, and costs.
 Changes alone earn no credit; both answers must be correct. Report all baselines.
 
 An exploratory engineering screen would require at least 10/12 primary complete
-parents, at most 1/12 false commitments and at most 1/36 unnecessary deferrals.
+parents, at most 1/12 false commitments and at most 1/60 unnecessary deferrals.
 These cutoffs are proposed decision thresholds, not significance tests, power
 calculations or population guarantees. Freeze them before outputs. Report raw
-counts even if a screen passes. Token length and salience differ between the two
+counts even if a screen passes. Token length and salience differ between the three
 scope statements; a contrast cannot isolate the internal reason for a difference.
 
 Stop after the fixed grid regardless of scores. A near-perfect pass is a boundary
@@ -122,9 +134,9 @@ reported and do not alone bar the grid; unresolved input/reference defects do.
 
 ## Required before execution and deliverables
 
-1. Resolve the original study's interpretation issue separately. Preserve both
-   original reviews before adjudication; do not teach the second reviewer this
-   hypothesis before their original submission.
+1. Preserve the original study's [reporting disposition](../payment-ownership/REVIEW_DISPOSITION.md)
+   and both initial submissions. Do not reuse their agreement as validation of
+   the new wording or label semantics.
 2. Review this proposal, select and freeze the source users, exact requests,
    possible-world witnesses, scoring code, smoke inputs, mappings and call list.
 3. Obtain two independent initial reviews of the new inputs and witnesses, record
@@ -140,3 +152,32 @@ all baseline outputs, paired result table and replay. New source users reduce
 direct scene reuse, but the task grammar and hypothesis are development-informed.
 No broad confirmation or novel method follows from this pilot alone. Hugging Face
 publication remains a later packaging decision after review and license checks.
+
+## Design review: shortcuts and limits
+
+A rule that refuses product-reference queries whenever any order is omitted can
+solve the original four-cell design without checking which product is affected.
+The irrelevant-omission control contains omission language but requires the
+determined answer. Include this request-type-plus-omission heuristic and a simpler
+baseline that rejects every record mentioning an omitted order, alongside the
+semantic scope-aware program. Freeze literal token triggers before outputs.
+Report needless deferrals on explicit-ID and irrelevant-omission controls.
+
+This addition does not eliminate every lexical shortcut. A finite program that
+recognizes the three statement templates and the request type can solve all cases.
+The study can measure compliance with explicit coverage evidence; it cannot
+establish general reasoning about unknown retrieval recall. Sentence length and
+wording still vary, and only two option mappings are tested. These limits remain
+even after a perfect score. Do not broaden them into mechanism or model-necessity claims.
+
+The target-resolution requirement must be explicit in the frozen rubric: a unique
+target is required for this pilot's determinate labels. Gift-card exceptions and
+multiple ambiguous targets sharing a decision raise a different question (action
+validity without identity). They are outside this pilot, not automatically errors
+or a general rule that every uncertain identity requires refusal in every task.
+
+Before implementation, verify the 72-input label counts, that irrelevant omissions
+cannot add a requested-product candidate, and that all incomplete-relevant witnesses
+preserve each visible field while supporting opposite decisions. Reviewers must
+judge those properties before seeing model outputs. The proposal adds no new
+literature search or novelty evidence; that check remains necessary for a paper.

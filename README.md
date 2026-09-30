@@ -19,15 +19,15 @@ N1 uses an already-trained Kev LoRA with native causal logits; no new training
 does not mean an unadapted model. The latest payment-ownership diagnostic returns
 to live Jev with a new, publicly sourced simulated task.
 
-**Current evidence: real, replayable synthetic diagnostics; one author has
-reviewed 96 payment-study items, with a scope objection; no non-author review
-submission or held-out confirmation of a general method.** Several
+**Current evidence: real, replayable synthetic diagnostics; two reviewers have
+submitted judgments on the same 96 payment-study items, with a scope objection;
+no reviewer-endorsed reference update or held-out confirmation of a general method.** Several
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
 ## Latest: Right Payment, Wrong Order?
 
-**Jev matched all 48 original main references. Author review questions the
+**Jev matched all 48 original main references. Two reviews question the
 candidate scope of 24 product-reference inputs. One ambiguity smoke case failed.**
 A static refund-destination diagnostic uses 12 distinct simulated users from a
 pinned tau retail database. Switching target orders should change the answer in
@@ -51,8 +51,9 @@ agree with the construction, but the cover note identifies an unresolved issue:
 the displayed orders are called a selected subset without guaranteeing that the
 target is among them. This affects 48 product-reference review items /24 inputs.
 Explicit-ID inputs remain 24/24 in every condition; the remaining scores depend
-on a displayed-candidate interpretation. No references have been changed and no
-second reviewer has submitted. Read the [audit and original submission](research/payment-ownership/REVIEW_AUDIT.md).
+on a displayed-candidate interpretation. Tiancheng has now submitted the same 96 items, agreeing on conditional labels
+and marking all 48 product-reference items ambiguous. No references have been
+changed. Read the [comparison and reporting disposition](research/payment-ownership/REVIEW_DISPOSITION.md).
 
 The independent smoke score is **5/6**. With two Mug orders and no unique target,
 Jev selected VALID with returned probability 0.97 against the provisional

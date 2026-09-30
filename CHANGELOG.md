@@ -1,5 +1,17 @@
 # Release notes
 
+## 2026-09-30 — second review and conditional-label disposition
+
+Preserved Tiancheng's 96-item original, its one-date normalization and intake
+record. Added a 96-row comparison: labels/targets/destinations agree 96/96, while
+48 product-reference ambiguity flags differ. Both submissions qualify those
+labels with a candidate-scope objection. Published the [reporting disposition](research/payment-ownership/REVIEW_DISPOSITION.md),
+including process self-report limits and the unexplained timestamp discrepancy.
+No original label, score or response changes; no reviewer-endorsed adjudication.
+Updated current navigation, replay and offline checks. Revised the unrun next-study
+proposal to include irrelevant-omission controls: 72 inputs, at most 155 proposed
+HTTP attempts. This is a design change, with zero new data or model calls.
+
 ## 2026-09-30 — author review and candidate-scope audit
 
 Received Yuchi's 96-item author review and preserved the original CSV bytes and

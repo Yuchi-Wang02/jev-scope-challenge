@@ -6,10 +6,11 @@ from study import ROOT, REPO, rows, canonical, read, sha, verify_freeze
 from run_api_v02 import verify_execution
 from report import summarize
 from publish_v02 import publish
-from audit_review import verify as verify_review
+from review_pair import compare as verify_review
 
 def verify():
     verify_freeze();verify_execution();publish(True);review_status=verify_review()
+    assert read(ROOT/'review/comparison.json')==review_status
     records=rows(ROOT/'results/responses.jsonl');events=rows(ROOT/'results/attempts.jsonl')
     summary=summarize()
     assert summary['status']=='completed' and len(records)==198
@@ -41,7 +42,8 @@ def verify():
     return {'status':'passed','actual_requests':198,'main_correct':192,'smoke_correct':5,
             'source_freeze':'0569f8d','execution_amendment':'08fdda6','followup_calls':0,
             'author_review_items':review_status['author_review_items'],
-            'non_author_review_submissions':0,'adjudicated_reference_updates':0,
+            'non_author_review_submissions':review_status['non_author_review_submissions'],
+            'adjudicated_reference_updates':0,
             'scope':'Artifact consistency, not independent model replication or label validity'}
 
 if __name__=='__main__':print(json.dumps(verify(),indent=2))

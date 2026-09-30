@@ -1,5 +1,9 @@
 # Author review received; candidate scope remains unresolved
 
+**Historical first-submission audit.** For the later second submission and current
+reporting decision, read [REVIEW_DISPOSITION.md](REVIEW_DISPOSITION.md). Counts below
+describe receipt of the first submission.
+
 Date: 2026-09-30. This is a post-run semantic audit, not a protocol amendment,
 new inference run, or completed two-reviewer adjudication.
 

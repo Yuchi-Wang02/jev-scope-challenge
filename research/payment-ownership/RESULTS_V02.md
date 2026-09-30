@@ -2,9 +2,9 @@
 
 **Execution history:** the original all-correct smoke prerequisite failed (5/6). The [v0.2 amendment](EXECUTION_V02.md) was published before any main-grid call; it changed only that launch prerequisite. Original inputs and scoring were retained. Read the [smoke stop audit](SMOKE_AUDIT.md). This is outcome-aware exploratory work.
 
-**Execution: completed. One author review received; independent two-reviewer adjudication pending.**
+**Execution: completed. Two reviews received; conditional labels, no adjudicated reference update.**
 
-**2026-09-30 author-review update:** one author completed 96 review items; no second reviewer or adjudicated reference update. The submission agrees with original references but raises an unresolved candidate-scope issue for 48 product-reference review items (24 underlying inputs). Explicit-ID inputs remain 24/24 per condition. Full-grid scores below use original references; product-reference correctness is conditional on a displayed-candidate interpretation. Read the [review audit and preserved submission](REVIEW_AUDIT.md).
+**2026-09-30 two-review update:** two submissions cover the same 96 review items; there is no reviewer-endorsed adjudication or reference update. Labels agree conditionally, with an unresolved candidate-scope issue for 48 product-reference review items (24 underlying inputs). Explicit-ID inputs remain 24/24 per condition. Full-grid scores below use original references; product-reference correctness is conditional on a displayed-candidate interpretation. Read the [comparison and reporting disposition](REVIEW_DISPOSITION.md).
 
 This is a static diagnostic derived from a public simulated tau retail database.
 It is not a tau-bench agent score, real-customer evaluation, or confirmed generalization result.

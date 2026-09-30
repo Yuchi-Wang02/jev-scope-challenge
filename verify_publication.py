@@ -90,10 +90,14 @@ def verify():
     payment_review=json.loads((ROOT/'research/payment-ownership/review/submissions/yuchi/receipt.json').read_text(encoding='utf-8'))
     if (payment_review['review_items']!=96 or payment_review['second_reviewer_received'] or
         payment_review['labels_automatically_adopted']):
-        raise ValueError('Payment review status changed; update the publication audit explicitly')
+        raise ValueError('Historical first payment-review receipt changed')
+    review_pair=json.loads((ROOT/'research/payment-ownership/review/comparison.json').read_text(encoding='utf-8'))
+    if (review_pair['non_author_review_submissions']!=1 or review_pair['total_annotation_rows']!=192
+        or review_pair['adjudicated_reference_updates']!=0):
+        raise ValueError('Current payment review status changed; update publication audit')
     return {'status':'passed','read_only':True,**counts,'vendored_source_and_license_copies_checked':6,
         'citation_matches_schema_validated_bytes':True,'credential_pattern_matches':0,'public_weight_files':0,
-        'author_review_items':96,'non_author_review_submissions':0,
+        'author_review_items':96,'non_author_review_submissions':1,
         'adjudicated_reference_updates':0,'external_summary_files_checked':3,
         'scope':'technical consistency, not a legal or scientific certification'}
 

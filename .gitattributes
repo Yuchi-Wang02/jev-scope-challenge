@@ -3,4 +3,5 @@
 
 # Preserve the submitted human review byte-for-byte, including BOM and CRLF.
 research/payment-ownership/review/submissions/yuchi/payment_review_yuchi_excel.csv -text
+research/payment-ownership/review/submissions/tiancheng/*.csv -text
 

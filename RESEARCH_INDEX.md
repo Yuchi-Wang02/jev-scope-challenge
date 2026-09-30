@@ -17,7 +17,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
-|[Payment ownership](research/payment-ownership/RESULTS_V02.md)|12 source users /48 constructed views; 192 main + six smoke live Jev requests. Both full and related conditions, both mappings: 48/48; parser 48/48. Smoke 5/6. 245,241 input tokens, zero retries; no follow-up.|Public simulated tau source, AI-authored requests. One author reviewed 96 items, with a candidate-scope objection for 24 product-reference inputs; explicit-ID inputs remain 24/24 per condition. No second submission or adjudication. [Review audit](research/payment-ownership/REVIEW_AUDIT.md). A documented launch-gate amendment followed the smoke error and preceded all main calls. No main unknown-reference cases or ordinary-model comparison.|
+|[Payment ownership](research/payment-ownership/RESULTS_V02.md)|12 source users /48 constructed views; 192 main + six smoke live Jev requests. Both full and related conditions, both mappings: 48/48; parser 48/48. Smoke 5/6. 245,241 input tokens, zero retries; no follow-up.|Public simulated tau source, AI-authored requests. Two submissions cover the same 96 items, with conditional label agreement and a candidate-scope objection for 24 product-reference inputs; explicit-ID inputs remain 24/24 per condition. No adjudicated reference update. [Review disposition](research/payment-ownership/REVIEW_DISPOSITION.md). A documented launch-gate amendment followed the smoke error and preceded all main calls. No main unknown-reference cases or ordinary-model comparison.|
 |[Cancellation scope](results/REPORT.md)|12 four-view cases / 48 texts; 384 formal records across Jev and Qwen, plus six smoke records. Primary complete cases: Jev 12/12, Qwen 8/12; grammar code 12/12.|Local pre-execution freeze; public release followed execution. Repeated mappings and rounds are not independent examples.|
 |[Matched base](research/next-study/)|24 parents / 96 texts; 864 completed scientific forwards. N0/N1/K1 exploratory test: 85/111/98 correct out of 144 repeated decisions.|A 576-record stopped attempt is archived and excluded. The inspected test is now development/regression material.|
 |[Input boundary](research/layout-boundary/)|Same matched-base corpus; 2,016 new scientific forwards and 2,592 logical rows including shared native records. Rankings change with layout/split.|No new independent dataset. Another 864 parity forwards and six warmups are reported separately.|
@@ -63,20 +63,20 @@ shared records and zero-call controls should not be counted as additional runs.
 
 |Work|Current state|Required before interpreting it as confirmation|
 |---|---|---|
-|[Candidate completeness](research/candidate-completeness/PLAN.md)|Proposed 12 new parents /48 inputs crossing explicit-ID versus product-reference requests with complete versus incomplete candidate coverage. Design only; no new data or calls.|Review proposal, freeze inputs and witnesses, obtain two reviews, then authorize the concrete execution version.|
+|[Candidate completeness](research/candidate-completeness/PLAN.md)|Proposed 12 new parents /72 inputs crossing explicit-ID versus product-reference requests with complete, relevant-omission and irrelevant-omission candidate coverage. Design only; no new data or calls.|Review proposal, freeze inputs and witnesses, obtain two reviews, then authorize the concrete execution version.|
 |[Evidence-gap label review](research/evidence-gap/review/)|Blank review material; 216 reserved calibration/test texts remain unscored.|Independent policy/label review and adjudication.|
 |[Language-pair review](research/fact-execution/review/)|144 provisional AI-generated rewrite pairs, including a 12-pair procedural starter; no completed independent annotations or rewrite scores.|Verify preservation of facts, not only equal final decisions.|
 |[Cited-fact model comparison](research/fact-execution/CITED_FACT_PLAN.md)|A design with a strict grammar-code citation control and software checks.|A separately frozen model comparison; code tests are not model evidence.|
 |[ShARC external-data inventory](research/external-validation/) and [review protocol](research/external-validation/SHARC_REVIEW_PROTOCOL.md)|Train/dev source audit and train-only selection of 30 pairs / 60 blinded items. Public source summaries only; no public dataset copy, completed human review or model scores.|Two-reviewer review, adjudication and the declared selection workflow.|
 |[Head-only versus joint training](research/next-study/PLAN.zh-CN.md)|Historical second-phase design; no training run or new checkpoint.|Fresh data, matched tuning/compute budgets, seeds and a new approved execution protocol.|
 
-The [payment review audit](research/payment-ownership/REVIEW_AUDIT.md) records one
-author submission covering all 96 full/related items and a scope objection affecting
-48 of those items. Its 48 underlying inputs were already model-scored as exploratory
-development material. A [neutral second-reviewer package](research/payment-ownership/review/reviewer_B_package.zip)
-is ready; the second submission and adjudication are pending.
+The [payment review disposition](research/payment-ownership/REVIEW_DISPOSITION.md)
+records two submissions covering the same 96 full/related items and a scope objection
+affecting 48 of those items. The 48 underlying inputs were already model-scored as
+exploratory development material. Both original forms and process self-reports are
+preserved; no reviewer-endorsed adjudication or updated references are claimed.
 
-No non-author reviewer has submitted; the author review is not a completed two-reviewer validation. There is no held-out confirmation of
+There is no held-out confirmation of
 the evolving method, language-transfer result, new learned checkpoint, Hugging
 Face dataset/model release, or submitted paper from this project. Earlier
 calibration does not calibrate later raw probabilities. Public development inputs
