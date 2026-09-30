@@ -1,0 +1,18 @@
+{
+  "study": "sharc-dev-source-label-screen-native-choice-final-v1",
+  "status": "final_native_choice_policy_no_further_readout_repairs",
+  "first_journal_sha256": "e4fd6de17a6156bf54322f7a1cdcc110095ae4588ca1b0464c974922d22e6a27",
+  "second_journal_sha256": "2ca5f2c900e2df8e433b17a6ad8955902e9683bb382629081db1df650696aec3",
+  "first_repair_freeze_sha256_lf": "bfb90d46789ef0d079c7c654c055d1bb375d283a1495c6c36fc4ac4c7a6d3393",
+  "prior_attempts": 30,
+  "prior_input_tokens": 18819,
+  "remaining_attempts": 18,
+  "total_attempt_cap": 48,
+  "total_input_cap": 100000,
+  "plan_sha256": "f7a05a82ecb5b7203d1887acca63f9d27c6002b3b74a8594cba47979d500080c",
+  "source_hashes_lf": {
+    "research/source-label-screen/native_choice.py": "9980c97d712ad1db3c0f1daa6d9c50bf5bdd2e393d20af9ca25bb3170433ac9f",
+    "research/source-label-screen/final_repair.py": "4b4eabf514246c322e5360b8c167d0f2340452be5ed0739cd56ea90f35850ecb",
+    "research/source-label-screen/FINAL_READOUT.md": "fe79aa708982badfc43d1a12daca07affd742694ce4400444464f15ad3593790"
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "study": "sharc-dev-source-label-screen-native-choice-final-v1",
+  "status": "frozen_final_unstarted_suffix",
+  "reference_basis": "public source labels; no project human verification or adjudication",
+  "human_truth_automatically_verified": false,
+  "model_calls_executed_at_freeze": 0,
+  "reference_pairs": 12,
+  "items": 24,
+  "planned_non_model_controls": [
+    "constant_Yes",
+    "constant_No",
+    "constant_Irrelevant",
+    "constant_ASK",
+    "copy_last_history_answer"
+  ],
+  "qwen_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "limits": {
+    "http_attempts": 18,
+    "http_retries": 0,
+    "local_generations": 96,
+    "jev_planning_bytes_plus_allowance": 250000,
+    "jev_actual_input_tokens": 81181,
+    "local_input_tokens": 500000,
+    "local_generated_tokens": 110592,
+    "local_generation_wall_seconds": 3600,
+    "local_context_tokens": 32768
+  },
+  "counts": {
+    "http_attempts": 18,
+    "local_generations": 0
+  },
+  "jobs": [
+    {
+      "id": "d7aaf5898fee24bbe1383603_jev_order1",
+      "item_id": "d7aaf5898fee24bbe1383603",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "Disaster survivors must repay SBA disaster loans. SBA can only approve loans to applicants with a reasonable ability to repay the loan and other obligations from earnings. The terms of each loan are established in accordance with each borrower's ability to repay. The law gives SBA several powerful tools to make disaster loans affordable: low fixed interest rates, long-terms (up to 30 years), and refinancing of prior real estate liens (in some cases). As required by law, the interest rate for each loan is based on SBA's determination of whether an applicant has the ability to borrow or use their own resources to overcome the disaster.",
+          "question": "Will my loan be approved?",
+          "scenario": "I'm using Chrome browser right now.  I had costs from helping conserve lands in the area we are working on.  These costs include fundraisers and rentals.",
+          "history": [
+            {
+              "follow_up_question": "Do you have a reasonable ability to repay the loan and other obligations from earnings?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "2cc6844fd9fd83d93636ae9b_jev_order0",
+      "item_id": "2cc6844fd9fd83d93636ae9b",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Statutory Maternity Leave\n\nYou qualify for Statutory Maternity Leave if:\n\n* you’re an employee not a ‘worker’\n* you give your employer the correct notice",
+          "question": "Do I qualify for Statutory Maternity Leave?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Are you an employee and not a worker?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "b9a9e9048895f36bcfd3aa61_jev_order1",
+      "item_id": "b9a9e9048895f36bcfd3aa61",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Getting paid instead of taking holidays\n\nThe only time someone can get paid in place of taking statutory leave (known as ‘payment in lieu’) is when they leave their job. Employers must pay for untaken statutory leave (even if the worker is dismissed for gross misconduct).",
+          "question": "Can I get payment in lieu?",
+          "scenario": "I have questions about evidence. I will be heading to the hearing soon, but I've never rented privately.",
+          "history": [
+            {
+              "follow_up_question": "Are you leaving your job?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "fa377358c07bcd8659f87d6c_jev_order0",
+      "item_id": "fa377358c07bcd8659f87d6c",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "##Who May Receive a Grant?\n\nContrary to what you might see online or in the media, the federal government does not offer grants or “free money” to individuals to start a business, or cover personal expenses.",
+          "question": "Can I get a grant from federal government?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Is it to cover personal expenses?",
+              "follow_up_answer": "No"
+            },
+            {
+              "follow_up_question": "is it to start a business?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "1e87f84c67e32582d6430114_jev_order1",
+      "item_id": "1e87f84c67e32582d6430114",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "If you are a female Vietnam Veteran with a child who has a birth defect or you are a child of a female Vietnam Veteran with a birth defect, the child may be eligible for VA-financed health care.",
+          "question": "Is my child eligible for VA-financed health care?",
+          "scenario": "I make £14,000 and would like to keep making that until I return to Zimbabwe.",
+          "history": [
+            {
+              "follow_up_question": "Are you a female Vietnam Veteran?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "d8b76b9f96f81065c7bab478_jev_order1",
+      "item_id": "d8b76b9f96f81065c7bab478",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Other payments and services\n\nYou can access information, support and short term counselling. If you’re going through a difficult time, find out more about our social work services.",
+          "question": "Should I seek more information about the social work services?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Are you going through a difficult time?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "1617e2696b23e2c473056920_jev_order0",
+      "item_id": "1617e2696b23e2c473056920",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "Renters and homeowners alike may borrow up to $40,000 to replace damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc. As a rule of thumb, personal property is anything that is not considered real estate or a part of the actual structure. This loan may not be used replace extraordinarily expensive or irreplaceable items, such as antiques, collections, pleasure boats, recreational vehicles, fur coats, etc.",
+          "question": "Does my property qualify?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Is it damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc.?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "266a1834367a881a122a8da4_jev_order0",
+      "item_id": "266a1834367a881a122a8da4",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Getting paid instead of taking holidays\n\nThe only time someone can get paid in place of taking statutory leave (known as ‘payment in lieu’) is when they leave their job. Employers must pay for untaken statutory leave (even if the worker is dismissed for gross misconduct).",
+          "question": "Can I get payment in lieu?",
+          "scenario": "I have questions about evidence. I will be heading to the hearing soon, but I've never rented privately.",
+          "history": [
+            {
+              "follow_up_question": "Are you leaving your job?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "5e9efc921adc6f5c7e1b66c9_jev_order1",
+      "item_id": "5e9efc921adc6f5c7e1b66c9",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "#  4. Tax when you live abroad\n\nIf you’re not a UK resident, you don’t usually pay UK tax on your pension. But you might have to pay tax in the country you live in. There are a few exceptions - for example, UK civil service pensions will always be taxed in the UK.",
+          "question": "Do I need to pay UK tax on my pension?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Are you a UK resident?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cc8cda987f0382b68da05428_jev_order0",
+      "item_id": "cc8cda987f0382b68da05428",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## What you’ll need\n\nYou’ll need accurate information about your:\n\n* savings\n* income, including your partner’s (from payslips, for example)\n* existing benefits and pensions (including anyone living with you)\n* outgoings (such as rent, mortgage, childcare payments)",
+          "question": "Do I need information about this?",
+          "scenario": "I am requesting information about my savings account at Chase Bank.",
+          "history": [
+            {
+              "follow_up_question": "Is this information about your savings?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have accurate info about your income?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have info about your existing benefits?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "b30905ddfe75c8ae4d55e3ad_jev_order0",
+      "item_id": "b30905ddfe75c8ae4d55e3ad",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Other payments and services\n\nYou can access information, support and short term counselling. If you’re going through a difficult time, find out more about our social work services.",
+          "question": "Should I seek more information about the social work services?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Are you going through a difficult time?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "c3769875851e1666fc60a188_jev_order0",
+      "item_id": "c3769875851e1666fc60a188",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## Statutory Maternity Leave\n\nYou qualify for Statutory Maternity Leave if:\n\n* you’re an employee not a ‘worker’\n* you give your employer the correct notice",
+          "question": "Do I qualify for Statutory Maternity Leave?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Are you an employee and not a worker?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "57c0bef20709235670f2dba5_jev_order0",
+      "item_id": "57c0bef20709235670f2dba5",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "3. Person licensed to sell retail marijuana or retail marijuana products.  A person licensed to sell retail marijuana or retail marijuana products pursuant to this chapter may not:\n* Display any signs that are inconsistent with local laws or regulations;\n*  Use advertising material that is misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age;\n*  Have in that person's possession or upon the licensed premises any marijuana the sale of which is not permitted by the license;",
+          "question": "Can I display this sign?",
+          "scenario": "I am a 67 year old man who lives in the United Kingdom, and am currently there.",
+          "history": [
+            {
+              "follow_up_question": "Is the sign inconsistent with local laws or regulations?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "23b2d78fd0127586dd212125_jev_order0",
+      "item_id": "23b2d78fd0127586dd212125",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "## What you’ll need\n\nYou’ll need accurate information about your:\n\n* savings\n* income, including your partner’s (from payslips, for example)\n* existing benefits and pensions (including anyone living with you)\n* outgoings (such as rent, mortgage, childcare payments)",
+          "question": "Do I need information about this?",
+          "scenario": "I am requesting information about my savings account at Chase Bank.",
+          "history": [
+            {
+              "follow_up_question": "Is this information about your savings?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have accurate info about your income?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have info about your existing benefits?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "e843a696b8da8ea9d8e35d78_jev_order0",
+      "item_id": "e843a696b8da8ea9d8e35d78",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "### Equipment for medical and veterinary use\n\nYou may also be able to zero-rate some other medical and veterinary equipment when you sell it to:\n\n* charities that provide rescue or first aid services to humans or animals\n* someone buying it specifically for donation to one of these bodies",
+          "question": "May I be able to zero-rate this medical equipment?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Did you sell the equipment to charities that provide rescue or first aid services to humans or animals?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "28c5981d3502ff09143e1008_jev_order1",
+      "item_id": "28c5981d3502ff09143e1008",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "3. Person licensed to sell retail marijuana or retail marijuana products.  A person licensed to sell retail marijuana or retail marijuana products pursuant to this chapter may not:\n* Display any signs that are inconsistent with local laws or regulations;\n*  Use advertising material that is misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age;\n*  Have in that person's possession or upon the licensed premises any marijuana the sale of which is not permitted by the license;",
+          "question": "Can I display this sign?",
+          "scenario": "I am a 67 year old man who lives in the United Kingdom, and am currently there.",
+          "history": [
+            {
+              "follow_up_question": "Is the sign inconsistent with local laws or regulations?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "28c5981d3502ff09143e1008_jev_order0",
+      "item_id": "28c5981d3502ff09143e1008",
+      "backend": "jev",
+      "condition": "jev_order0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "3. Person licensed to sell retail marijuana or retail marijuana products.  A person licensed to sell retail marijuana or retail marijuana products pursuant to this chapter may not:\n* Display any signs that are inconsistent with local laws or regulations;\n*  Use advertising material that is misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age;\n*  Have in that person's possession or upon the licensed premises any marijuana the sale of which is not permitted by the license;",
+          "question": "Can I display this sign?",
+          "scenario": "I am a 67 year old man who lives in the United Kingdom, and am currently there.",
+          "history": [
+            {
+              "follow_up_question": "Is the sign inconsistent with local laws or regulations?",
+              "follow_up_answer": "Yes"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: Yes, No, Irrelevant, ASK.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a32c2de828a2679716828ffd_jev_order1",
+      "item_id": "a32c2de828a2679716828ffd",
+      "backend": "jev",
+      "condition": "jev_order1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "snippet": "Child Car Seat Laws",
+          "question": "Does my kid need to ride in a federally-approved child safety seat?",
+          "scenario": "",
+          "history": [
+            {
+              "follow_up_question": "Is this a child?",
+              "follow_up_answer": "No"
+            }
+          ]
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Select the next action for the user question using only the visible snippet, scenario and conversation history. Treat the snippet as the historical rule to interpret; do not apply outside facts or current policy. Follow its stated logical conditions. Do not assume an unanswered condition is false. Yes: the visible facts establish a positive answer under the rule. No: the visible facts establish a negative answer under the rule. Irrelevant: the question is not addressed by this rule. ASK: further information from the user is needed to decide. Select the action only; do not generate a follow-up question. Allowed actions in display order: ASK, Irrelevant, No, Yes.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tokenizer_config_files": [
+    {
+      "name": "LICENSE",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    {
+      "name": "README.md",
+      "bytes": 77661,
+      "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"
+    },
+    {
+      "name": "config.json",
+      "bytes": 3161,
+      "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 12807982,
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "upstream_lfs_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 16710,
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 76196,
+      "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d"
+    }
+  ]
+}
