@@ -1,0 +1,187 @@
+{
+  "status": "incomplete",
+  "parents": 12,
+  "views": 48,
+  "main_reference_counts": {
+    "VALID_DESTINATION": 24,
+    "INVALID_DESTINATION": 24
+  },
+  "independent_human_annotations": 0,
+  "smoke": {
+    "recorded": 0,
+    "correct": 0
+  },
+  "primary_recorded": 0,
+  "accounting": {
+    "attempts": 0,
+    "retries": 0,
+    "planned_input_units": 0,
+    "known_input_tokens": 0,
+    "unfinished": [],
+    "unknown_usage_attempts": 0,
+    "usage_estimated_cost_usd": 0.0,
+    "usage_cost_is_invoice": false
+  },
+  "metrics": {
+    "full_0": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    },
+    "full_1": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    },
+    "full_mean": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    },
+    "related_0": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    },
+    "related_1": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    },
+    "related_mean": {
+      "available": 0,
+      "correct": 0,
+      "total": 48,
+      "complete_four_view_parents": 0,
+      "parents": 12,
+      "wrong_valid_among_invalid": 0,
+      "invalid_reference_denominator": 24,
+      "needless_deferrals": 0,
+      "determined_denominator": 48,
+      "unknown_reference_denominator": 0,
+      "by_style": {
+        "explicit": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        },
+        "item_reference": {
+          "correct": 0,
+          "total": 24,
+          "complete_target_pairs": 0
+        }
+      }
+    }
+  },
+  "primary_transitions": [],
+  "full_order_disagreements": 0,
+  "controls": {
+    "finite_parser_correct": 48,
+    "always_valid_correct": 24,
+    "always_invalid_correct": 24,
+    "always_defer_correct": 0,
+    "always_valid_complete_parents": 3,
+    "always_invalid_complete_parents": 3,
+    "always_defer_complete_parents": 0
+  },
+  "median_request_latency_s": null,
+  "summed_successful_request_latency_s": 0,
+  "continuation": "INCOMPLETE",
+  "followup_calls": 0,
+  "basis": "Exploratory constructed component test; program labels; review pending; no other model scored."
+}

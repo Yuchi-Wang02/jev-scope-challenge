@@ -1,0 +1,30 @@
+{
+  "revision": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+  "db_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/db.json",
+  "db_sha256": "413a65160adbdb5fde0ffc0015c49b6d70250b10c18128de169b597af7766765",
+  "source_files": {
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/LICENSE",
+      "sha256_lf": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    "policy.md": {
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/policy.md",
+      "sha256_lf": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "tools.py": {
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/retail/tools.py",
+      "sha256_lf": "34f4fe9702d36f0dd4697700fbcd63d0cf5386e6eb8e7499aaa336243bad8750"
+    }
+  },
+  "eligible_user_counts": {
+    "flip": 19,
+    "stable_valid": 168,
+    "stable_invalid": 26
+  },
+  "selection": "SHA256 seeded lexicographic pair ranking; unique users across strata; no model-based selection",
+  "selected_users": 12,
+  "source_type": "public simulated database, not real customer records",
+  "projection": "user_id/payment_methods; order_id/user_id/items/payment_history. Other source keys excluded uniformly.",
+  "text_authorship": "AI-authored deterministic English requests; explicit IDs and unique-item/card-descriptor references",
+  "retrieved_at_utc": "2026-09-30T04:45:36.567713+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "study": "payment-ownership-v0.1",
+  "model": "jev-1.13.0",
+  "sha256_lf": {
+    "study.py": "3ade9249484245ed540e8467bc87546518b769903732e6756c7afa1077142e0a",
+    "run_api.py": "82db05c140bf07ff613ad6bc4d16c5d13dadf95ceb56b1638072ffd0cffc93d5",
+    "report.py": "fc43af92e2071565896f9ea1e310811dd18aa7dd640d7a8c92d46fe79ef1b633",
+    "PROTOCOL.md": "69711a741be7470e0ba28e516e6f4614a7debcc719110a4bdf33b19423f6567d",
+    "source_manifest.json": "804e05f5392c718858c8288ede471def00591e004157b7161fd94c97e2f91795",
+    "data/cases.jsonl": "e89fa8b99b3fc1703892ad7a43c7a69c5a817ba50003f7ee94c2731534a6a052",
+    "plans/primary.jsonl": "514f25f5f703926379407987a2e4389d0f75442dd6c358f3e943e1e4b8b73134",
+    "review/inputs.jsonl": "eae5a137244563c407fd41ae339b462ddff329e6f8996e2867d94cb8c66ecd70",
+    "review/mapping.jsonl": "703d45a50cdc8a38e98d98109cc66051afd978d29da2ee6625079adb221c58b2",
+    "vendor/selected_records.json": "7449bba5a32f3832c8f74bce10fb028c6037011e9b793be52b2f9af458b33523",
+    "vendor/LICENSE": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+    "vendor/policy.md": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467",
+    "vendor/tools.py": "34f4fe9702d36f0dd4697700fbcd63d0cf5386e6eb8e7499aaa336243bad8750",
+    "review/reviewer_A.csv": "c73c3469d1258bb43429f51be3f2d48a49d83881bdfa329eb081c46ec598f48b",
+    "review/reviewer_B.csv": "c73c3469d1258bb43429f51be3f2d48a49d83881bdfa329eb081c46ec598f48b"
+  },
+  "attempt_limit": 405,
+  "retry_limit": 15,
+  "planned_input_limit": 2000000,
+  "price_per_million_input_tokens": 0.042,
+  "primary_plan_units": 570476,
+  "human_reviews_at_freeze": 0,
+  "created_at_utc": "2026-09-30T04:54:26.101042+00:00"
+}
