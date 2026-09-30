@@ -79,9 +79,12 @@ def summarize(rows):
         raise ValueError('Unexpected pinned ShARC train grid')
     questions_by_tree = defaultdict(set)
     snippets_by_tree = defaultdict(set)
+    actions_by_tree_question = defaultdict(lambda: defaultdict(set))
     for row in rows:
-        questions_by_tree[str(row['tree_id'])].add(str(row['question']))
-        snippets_by_tree[str(row['tree_id'])].add(str(row['snippet']))
+        tree_id, question = str(row['tree_id']), str(row['question'])
+        questions_by_tree[tree_id].add(question)
+        snippets_by_tree[tree_id].add(str(row['snippet']))
+        actions_by_tree_question[tree_id][question].add(action(row))
     by_visible, ambiguous, kept = dedupe_visible(rows)
     duplicates = sum(len(group) > 1 for group in by_visible.values())
     transitions, changed_answers, trees = Counter(), Counter(), set()
@@ -102,11 +105,14 @@ def summarize(rows):
                                 for questions in questions_by_tree.values())
     multiple_snippets = sum(len(snippets) > 1
                             for snippets in snippets_by_tree.values())
+    irrelevant_variants = Counter(
+        sum(actions == {'Irrelevant'} for actions in questions.values())
+        for questions in actions_by_tree_question.values())
     if (len(by_visible) != 21850 or duplicates != 34 or len(ambiguous) != 1 or
             sum(map(len, ambiguous)) != 3 or len(kept) != 21849 or
             pairs != 3334 or changed != 3037 or len(trees) != 599 or
             multiple_questions != 628 or question_variants != {3: 628} or
-            multiple_snippets != 0):
+            multiple_snippets != 0 or irrelevant_variants != {2: 628}):
         raise ValueError('Pinned ShARC pair inventory drift')
     return {
         'status': 'train_only_visible_contrast_inventory_not_model_evaluation',
@@ -115,6 +121,8 @@ def summarize(rows):
         'question_variants_per_tree_distribution': {
             str(n): count for n, count in sorted(question_variants.items())},
         'tree_ids_with_multiple_visible_snippets': multiple_snippets,
+        'irrelevant_only_question_variants_per_tree_distribution': {
+            str(n): count for n, count in sorted(irrelevant_variants.items())},
         'duplicated_visible_input_groups': duplicates,
         'ambiguous_action_groups_excluded': len(ambiguous),
         'ambiguous_rows_excluded': sum(map(len, ambiguous)),

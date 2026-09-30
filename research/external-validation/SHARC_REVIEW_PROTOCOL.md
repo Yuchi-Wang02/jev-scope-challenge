@@ -21,12 +21,12 @@ utterance IDs, pair IDs or the selected text.
 The [official field guide](https://sharc-data.github.io/data.html) describes
 `tree_id` as a unique snippet-and-question combination. In the exact pinned
 train archive, however, each of the 628 `tree_id` groups contains one exact
-snippet and **three distinct exact question strings**. We do not infer the
-cause from that discrepancy. The pair selector therefore requires the exact
-snippet, question, scenario and follow-up question sequence to match, with
-only one history answer changing from No to Yes. The original paper describes
-negative-question generation, but that alone does not establish how every
-variant in this archive was assigned.
+snippet and **three distinct exact question strings**. Two of the three have
+only `Irrelevant` labels in every group. The pair selector therefore requires
+the exact snippet, question, scenario and follow-up question sequence to
+match, with only one history answer changing from No to Yes. The original
+paper describes negative-question generation. This structure is consistent
+with that account, but does not establish how every variant was assigned.
 
 ## Human review before inference
 

@@ -14,10 +14,13 @@ changes between No and Yes**. This explicitly checks visible content rather
 than assuming that a shared `tree_id` guarantees identical questions. The
 source's `tree_id` groups can contain multiple question variants. In the
 pinned train split, each of the 628 tree groups has one exact snippet but
-three distinct exact questions. This differs from the [official field guide's
+three distinct exact questions. Two question variants in every group have
+only `Irrelevant` action labels; the remaining variant has non-`Irrelevant`
+actions. This differs from the [official field guide's
 description](https://sharc-data.github.io/data.html) of `tree_id` as a unique
-snippet-and-question combination; we have not traced the cause. Exact visible
-fields, rather than `tree_id` alone, define these pairs.
+snippet-and-question combination. It is consistent with the original paper's
+negative-question construction, but we have not traced each variant's origin.
+Exact visible fields, rather than `tree_id` alone, define these pairs.
 
 Before pairing, identical visible inputs are collapsed to one row when their
 four-way action agrees. One visible-input group has contradictory action

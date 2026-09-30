@@ -8,6 +8,9 @@
     "3": 628
   },
   "tree_ids_with_multiple_visible_snippets": 0,
+  "irrelevant_only_question_variants_per_tree_distribution": {
+    "2": 628
+  },
   "duplicated_visible_input_groups": 34,
   "ambiguous_action_groups_excluded": 1,
   "ambiguous_rows_excluded": 3,
