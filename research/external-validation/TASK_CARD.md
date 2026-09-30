@@ -63,6 +63,10 @@ That observation motivates the proposed wrapper contract; it does not prove a
 task-specific budget or model capability. Hardware capacity alone is not a fair
 comparison protocol.
 
+The proposed [final-action interface](ACTION_INTERFACE.md) is now implemented and
+tested on synthetic parser fixtures. It has not scored model outputs or supplied
+a task-specific budget. Backend final-channel/termination integration remains open.
+
 ## Nearest-work screen and reuse ledger
 
 Primary abstracts and bibliographic records checked 2026-09-30. This is an

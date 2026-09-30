@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — prospective rule-action parser
+
+Implemented a separate four-action final parser for future work: exact bare JSON
+or one complete lowercase json fence, strict-compliance reporting, no substring
+extraction, duplicate keys, extra fields, label coercion or unverified completion.
+Added six synthetic test methods. This is not a model run or a change to any
+historical scoring rule; backend integration and the reviewed-task protocol remain open.
+
 ## 2026-09-30 — licensed ShARC review handoff and task boundaries
 
 Corrected the source audit using ShARC's explicit official CC BY-SA 3.0 notice.

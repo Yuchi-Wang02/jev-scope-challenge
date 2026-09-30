@@ -4,6 +4,21 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: separate future action parsing from model correctness
+
+- Objective: prevent a future comparison from treating one harmless JSON fence
+  as a reasoning error, without permissive answer extraction or historical rescoring.
+- Completed: four-action parser accepts exact bare or singly fenced JSON; tracks
+  strict compliance separately; rejects conflicting/multiple answers, duplicate
+  or extra fields, invalid labels and unverified termination. Six synthetic test
+  methods exercise these boundaries. No inference, downloads or API calls.
+- Gap: no backend-specific final-channel extraction/completion integration, task
+  budget, reviewed labels or end-to-end task predictions. Parser tests prove
+  implementation behavior, not model capability or a fair completed comparison.
+- Decision: retain all old parsers and scores. Integrate this contract only in a
+  separately frozen task protocol after the required review process.
+- Presentation: [contract and limits](research/external-validation/ACTION_INTERFACE.md).
+
 ## 2026-09-30: make the external-rule review queue distributable
 
 - Objective: move from private preparation to an attributable, usable external
