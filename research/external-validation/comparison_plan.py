@@ -218,6 +218,19 @@ def preserve(directory, plan, references):
     return 'created'
 
 
+def compile_reviewed(review_a, review_b, adjudication, review_dir, tokenizer_dir):
+    pack, selected, final, provenance = verified_review_inputs(
+        review_a, review_b, adjudication, review_dir)
+    render, files = tokenizer_renderer(tokenizer_dir)
+    plan, references = material(pack, selected, final, render)
+    plan['provenance'] = {**provenance, 'tokenizer_config_files': files,
+                          'compiler_sha256': sha(Path(__file__).read_bytes()),
+                          'shortcut_controls_sha256': sha((HERE / 'shortcut_controls.py').read_bytes()),
+                          'draft_protocol_sha256': sha((HERE / 'COMPARISON_DRAFT.md').read_bytes())}
+    plan['scoring_references_sha256'] = sha(readable(references))
+    return plan, references
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--review-a', required=True, type=Path)
@@ -228,15 +241,8 @@ def main():
     p.add_argument('--output-dir', type=Path, default=ROOT / '.local' / PLAN_ID)
     args = p.parse_args()
     private_directory(args.output_dir)
-    pack, selected, final, provenance = verified_review_inputs(
-        args.review_a, args.review_b, args.adjudication, args.review_dir)
-    render, files = tokenizer_renderer(args.tokenizer_dir)
-    plan, references = material(pack, selected, final, render)
-    plan['provenance'] = {**provenance, 'tokenizer_config_files': files,
-                          'compiler_sha256': sha(Path(__file__).read_bytes()),
-                          'shortcut_controls_sha256': sha((HERE / 'shortcut_controls.py').read_bytes()),
-                          'draft_protocol_sha256': sha((HERE / 'COMPARISON_DRAFT.md').read_bytes())}
-    plan['scoring_references_sha256'] = sha(readable(references))
+    plan, references = compile_reviewed(args.review_a, args.review_b,
+        args.adjudication, args.review_dir, args.tokenizer_dir)
     status = preserve(args.output_dir, plan, references)
     print(json.dumps({'status': status, 'counts': plan['counts'],
                       'model_inference_open': False, 'model_calls_executed': 0}))

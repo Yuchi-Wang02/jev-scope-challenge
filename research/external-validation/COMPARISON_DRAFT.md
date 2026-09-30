@@ -107,14 +107,14 @@ language models, neural reasoning or a new algorithm. A manually resolved graph
 would be an assisted condition, not an end-to-end code baseline. A stronger
 decomposition comparison remains necessary before broader method claims.
 
-Before a real run, implement and test append-only start/finish records, a
-single-attempt policy, resume rules that never automatically repeat an ambiguous
-started request, and whole-stage budgets. Preserve partial grids after transport
+The [execution core](RUNNER_DESIGN.md) now implements append-only start/finish
+records, a single-attempt policy, resume rules that never automatically repeat
+an ambiguous started request, and whole-stage budgets. Preserve partial grids after transport
 or execution errors; do not omit inconvenient failures or report an incomplete
 grid as a completed comparison. A wrong semantic answer is an observation, not
 a trigger to stop selectively. Protocol/schema failures stop for diagnosis.
-These runner behaviors are requirements, not claims about existing executable
-task support. The completed technical smoke runner is not this task runner.
+These behaviors have synthetic software checks, not a completed live task run.
+The completed technical smoke runner is separate from this new task runner.
 
 ## What the compiler actually verifies
 
@@ -152,7 +152,7 @@ prompt `Synthetic tokenizer check only. Return a final JSON object with action Y
 encoded to 27 direct-mode input tokens and 25 thinking-mode input tokens; both
 template boundary checks passed. Zero weights were loaded and zero forwards ran.
 This does not establish token counts or budget adequacy for the pending cohort.
-Before model execution, finish real-cohort tokenization,
-runner/accounting checks, and publish a separately named freeze tied to the
+Before model execution, finish real-cohort tokenization, cross-condition analysis
+and freeze/publication checks, and publish a separately named freeze tied to the
 finalized cohort, exact plan and execution code. Existing user API/local-model
 authorization applies; this draft does not introduce another permission request.

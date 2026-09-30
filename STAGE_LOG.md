@@ -4,6 +4,24 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: implement durable, bounded task execution without running the task
+
+- Objective: retain every attempted call and prevent interruptions or retries
+  from silently changing cost, sample size or the frozen grid.
+- Completed: [execution core and live-backend code](research/external-validation/RUNNER_DESIGN.md),
+  an exact committed-freeze/review-chain gate, OS locks, append-only start/finish
+  events, cumulative budgets and conservative handling of uncertain interruptions.
+- Audit: 14 targeted software tests cover safe partial resumption, no duplicate
+  completed calls, unknown usage, limits, malformed responses and missing freeze.
+  Execution receives no reference labels and cannot stop merely on a wrong answer.
+- Gap: this orchestrator has not made a live call. No execution freeze or reviewed
+  ShARC cohort exists. Failed-setup duration is not yet a durable journal field;
+  returned outputs and uncertain started calls have explicit preservation rules.
+- Next: build cross-condition result extraction with incomplete-grid reporting,
+  then finalize the exact reviewed plan/freeze when human materials are available.
+- Presentation: software reliability checks remain distinct from model evidence.
+  Zero new HTTP attempts, model forwards or human annotations in this stage.
+
 ## 2026-09-30: add transparent shortcut controls
 
 - Objective: test whether the selected history-answer contrasts might reward

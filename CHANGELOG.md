@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — durable comparison execution core
+
+Implemented a committed-freeze/review-chain gate, Jev/local backend factories,
+OS-owned locks and append-only call journals. Resumption preserves cumulative
+budgets and refuses ambiguous started calls or unaccounted sessions. Malformed
+generative outputs stay in the grid; transport, schema and usage failures halt
+without automatic retries. Fourteen synthetic tests exercise these boundaries.
+No execution freeze, real task run, new API request or model forward was created.
+
 ## 2026-09-30 — visible-input shortcut controls
 
 Added four constant actions and last-history-answer copying as explicit shallow

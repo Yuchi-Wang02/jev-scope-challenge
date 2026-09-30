@@ -78,8 +78,9 @@ The [direct-comparison draft](COMPARISON_DRAFT.md) specifies a 96-request Jev /
 adjudication before preparing private requests and separate scoring references.
 It cannot run inference. Five declared non-model controls (four constants and
 last-history-answer copying) are implemented as shallow checks, not general
-rule interpreters. Real reviewed inputs, the task runner and an exact execution
-freeze remain outstanding.
+rule interpreters. The [execution core](RUNNER_DESIGN.md) now has durable-call,
+budget and resumption tests. Real reviewed inputs, cross-condition analysis and
+an exact execution freeze remain outstanding; no live task run has occurred.
 
 ## Nearest-work screen and reuse ledger
 
