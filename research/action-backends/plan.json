@@ -1,0 +1,348 @@
+{
+  "purpose": "technical label-copy integration only; not research evaluation",
+  "cases": [
+    {
+      "id": "copy_0",
+      "state": {
+        "selected_action": "Yes",
+        "distractor_action": "No"
+      },
+      "reference": "Yes"
+    },
+    {
+      "id": "copy_1",
+      "state": {
+        "selected_action": "No",
+        "distractor_action": "Irrelevant"
+      },
+      "reference": "No"
+    },
+    {
+      "id": "copy_2",
+      "state": {
+        "selected_action": "Irrelevant",
+        "distractor_action": "ASK"
+      },
+      "reference": "Irrelevant"
+    },
+    {
+      "id": "copy_3",
+      "state": {
+        "selected_action": "ASK",
+        "distractor_action": "Yes"
+      },
+      "reference": "ASK"
+    }
+  ],
+  "jev_calls": [
+    {
+      "id": "copy_0_order_0",
+      "case_id": "copy_0",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Yes",
+          "distractor_action": "No"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_0_order_1",
+      "case_id": "copy_0",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Yes",
+          "distractor_action": "No"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_1_order_0",
+      "case_id": "copy_1",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "No",
+          "distractor_action": "Irrelevant"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_1_order_1",
+      "case_id": "copy_1",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "No",
+          "distractor_action": "Irrelevant"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_2_order_0",
+      "case_id": "copy_2",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Irrelevant",
+          "distractor_action": "ASK"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_2_order_1",
+      "case_id": "copy_2",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "Irrelevant",
+          "distractor_action": "ASK"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_3_order_0",
+      "case_id": "copy_3",
+      "options": [
+        "Yes",
+        "No",
+        "Irrelevant",
+        "ASK"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "ASK",
+          "distractor_action": "Yes"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly Yes.",
+              "B": "The selected action is exactly No.",
+              "C": "The selected action is exactly Irrelevant.",
+              "D": "The selected action is exactly ASK."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "copy_3_order_1",
+      "case_id": "copy_3",
+      "options": [
+        "ASK",
+        "Irrelevant",
+        "No",
+        "Yes"
+      ],
+      "request": {
+        "model": "jev-1.13.0",
+        "state": {
+          "selected_action": "ASK",
+          "distractor_action": "Yes"
+        },
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.",
+            "criteria": {
+              "A": "The selected action is exactly ASK.",
+              "B": "The selected action is exactly Irrelevant.",
+              "C": "The selected action is exactly No.",
+              "D": "The selected action is exactly Yes."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "qwen_calls": [
+    {
+      "id": "copy_0_direct",
+      "case_id": "copy_0",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"Yes\",\"distractor_action\":\"No\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_0_thinking",
+      "case_id": "copy_0",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"Yes\",\"distractor_action\":\"No\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_1_direct",
+      "case_id": "copy_1",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"No\",\"distractor_action\":\"Irrelevant\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_1_thinking",
+      "case_id": "copy_1",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"No\",\"distractor_action\":\"Irrelevant\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_2_direct",
+      "case_id": "copy_2",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"Irrelevant\",\"distractor_action\":\"ASK\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_2_thinking",
+      "case_id": "copy_2",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"Irrelevant\",\"distractor_action\":\"ASK\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_3_direct",
+      "case_id": "copy_3",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"ASK\",\"distractor_action\":\"Yes\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    },
+    {
+      "id": "copy_3_thinking",
+      "case_id": "copy_3",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048,
+      "prompt": "This is a technical label-copy check, not a policy judgment. Read the field selected_action in state and return exactly that action. Ignore the distractor_action field.\nstate: {\"selected_action\":\"ASK\",\"distractor_action\":\"Yes\"}\nReturn only a JSON object with exactly one key \"action\" whose value is Yes, No, Irrelevant, or ASK. Put the object in your final answer."
+    }
+  ],
+  "max_http_attempts": 8,
+  "retries": 0,
+  "max_jev_input_tokens": 50000,
+  "max_jev_planning_units": 50000,
+  "planned_jev_utf8_bytes_plus_256": 6224,
+  "max_local_calls": 8,
+  "max_local_input_tokens": 50000,
+  "max_generated_tokens": 9216,
+  "local_generation_deadline_seconds": 600,
+  "human_reviews": 0,
+  "source_dataset_items": 0
+}
