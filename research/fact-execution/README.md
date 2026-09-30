@@ -37,6 +37,9 @@ false commitments came with many more missed determined decisions and higher
 cost. Download/open its [offline evidence explorer](docs/line_explorer.html) to
 inspect all 72 inputs and 548 saved line judgments. Its raw records and
 limitations are separate from the frozen study above.
+The [12-parent paired audit](PARENT_PAIRED_AUDIT.md) recomputes the saved
+whole-state/line-wise tradeoff at its clustered analysis unit. It is derived
+development evidence with no new model calls or population inference.
 The [oracle decomposition](LINE_ORACLE_DECOMPOSITION.md) replays 16 classes of
 program-label corrections without new inference; those counterfactual scores
 are not model results.

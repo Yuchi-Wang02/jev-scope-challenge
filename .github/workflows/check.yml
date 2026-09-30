@@ -36,6 +36,7 @@ jobs:
       - run: python research/fact-execution/line_plan_tools.py verify
       - run: python research/fact-execution/line_run.py verify-freeze
       - run: python research/fact-execution/line_analyze.py --verify
+      - run: python research/fact-execution/paired_parent_audit.py verify
       - run: python research/fact-execution/line_oracle_decomposition.py --verify
       - run: python research/fact-execution/publish_line.py --verify
       - run: python research/fact-execution/joint_route_plan.py verify

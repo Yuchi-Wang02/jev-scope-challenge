@@ -20,6 +20,10 @@ before interpreting the project as a new architecture or upstream implementation
 
 Download and open the [offline line-evidence explorer](research/fact-execution/docs/line_explorer.html)
 to inspect all 72 inputs and 548 saved judgments behind the failed pilot.
+The [paired parent audit](research/fact-execution/PARENT_PAIRED_AUDIT.md)
+shows determined correctness fell in 10 of 12 parent groups while false
+commitments fell in eight; it recomputes saved decisions without new calls or
+an inferential claim.
 The [16-way post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
 uses unavailable construction labels to diagnose binding errors; it adds no
 model measurement.
