@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "G:\jev-scope-challenge\research\baseline-readiness\qwen35_smoke.py", line 84, in main
+    from transformers import (AutoTokenizer, GenerationConfig,
+  File "G:\jev-lab\envs\qwen35-probe\lib\site-packages\transformers\utils\import_utils.py", line 2096, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "G:\jev-lab\envs\qwen35-probe\lib\site-packages\transformers\utils\import_utils.py", line 2290, in _get_module
+    raise e
+  File "G:\jev-lab\envs\qwen35-probe\lib\site-packages\transformers\utils\import_utils.py", line 2288, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "C:\Users\yuchi\anaconda3\envs\torch\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "G:\jev-lab\envs\qwen35-probe\lib\site-packages\transformers\trainer_utils.py", line 66, in <module>
+    from peft import PeftMixedModel, PeftModel
+  File "C:\Users\yuchi\anaconda3\envs\torch\lib\site-packages\peft\__init__.py", line 17, in <module>
+    from .auto import (
+  File "C:\Users\yuchi\anaconda3\envs\torch\lib\site-packages\peft\auto.py", line 32, in <module>
+    from .peft_model import (
+  File "C:\Users\yuchi\anaconda3\envs\torch\lib\site-packages\peft\peft_model.py", line 37, in <module>
+    from transformers import Cache, DynamicCache, EncoderDecoderCache, HybridCache, PreTrainedModel
+ImportError: cannot import name 'HybridCache' from 'transformers' (G:\jev-lab\envs\qwen35-probe\lib\site-packages\transformers\__init__.py)

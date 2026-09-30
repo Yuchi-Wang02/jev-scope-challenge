@@ -81,6 +81,7 @@ def main():
         import transformers
         import tokenizers
         import huggingface_hub
+        import peft
         from transformers import (AutoTokenizer, GenerationConfig,
                                   Qwen3_5ForConditionalGeneration,
                                   StoppingCriteria, StoppingCriteriaList, set_seed)
@@ -90,6 +91,7 @@ def main():
                              'transformers': transformers.__version__,
                              'tokenizers': tokenizers.__version__,
                              'huggingface_hub': huggingface_hub.__version__,
+                             'peft': peft.__version__,
                              'cuda': torch.version.cuda,
                              'gpu': torch.cuda.get_device_name(0),
                              'fast_delta_kernels': modeling_qwen3_5.is_fast_path_available}
