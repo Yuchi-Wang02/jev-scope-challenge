@@ -4,6 +4,7 @@ Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
 [single-prefill Qwen control](research/finite-choice-readout/RESULTS.md), on the same public-source inputs.
 A later [implementation/data audit](research/implementation-audit/README.md) adds no model calls and identifies two invisible-change label conflicts in the pinned EXtrA release.
+The subsequent [QA4PC graph audit](research/qa4pc-audit/README.md) verifies 429 complete development compositions and retains eight cases with a missing formula variable; it adds no model results.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -73,6 +74,12 @@ final extraction and accounting, including one predeclared JSON-fence case.
 It does not add ShARC predictions, independent labels or a capability ranking.
 
 ## Analyses of saved outputs and software checks
+
+The [QA4PC structural audit](research/qa4pc-audit/README.md) covers 437 development
+scenarios and 1,600 question rows. Of these, 429 have complete graphs and reproduce
+their source labels; eight remain unexecutable with the complete-input contract.
+This is source consistency, not model accuracy or independent semantic validation.
+Its [next comparison design](research/qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md) is not run.
 
 The computational analyses below add no model forwards or independent human annotations. A large number of
 derived predictions is not a larger evaluated dataset.

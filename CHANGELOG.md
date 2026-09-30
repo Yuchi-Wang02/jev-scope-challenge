@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — QA4PC structural audit and next diagnostic design
+
+Audited pinned development records and shared graphs: 429 complete compositions
+agree with source labels; one graph omits Q1 for eight scenarios. Published
+original parser/executor checks, derived counts/IDs/hashes and overlap findings.
+Preserved source exceptions without relabeling. Added a design separating human
+graph assistance, predicted facts and execution. Zero model calls or new human
+labels; source dataset files remain local and reuse terms remain unresolved.
+
 ## 2026-09-30 — prior implementation and counterfactual-release audit
 
 Added a byte-pinned, reproducible audit of 100 EXtrA pairs. Two have identical

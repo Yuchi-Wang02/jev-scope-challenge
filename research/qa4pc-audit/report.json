@@ -1,0 +1,167 @@
+{
+  "status": "structural source audit; not model evaluation or semantic validation",
+  "shared_dev_test_trees_inspected": 193,
+  "dev_trees": 60,
+  "dev_scenarios": 437,
+  "dev_question_rows": 1600,
+  "unique_set_ids": 1600,
+  "source_label_counts": {
+    "maybe": 124,
+    "no": 206,
+    "yes": 107
+  },
+  "fact_label_counts": {
+    "maybe": 506,
+    "no": 739,
+    "yes": 355
+  },
+  "formula_representation_normalizations": 63,
+  "formula_node_counts": {
+    "And": 81,
+    "BoolOp": 153,
+    "Name": 446,
+    "Not": 54,
+    "Or": 72,
+    "UnaryOp": 54
+  },
+  "graph_inventory_issues": [
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "missing_variables": [
+        "Q1"
+      ],
+      "unused_questions": [],
+      "dev_scenarios": 8,
+      "logic_sha256": "7677d1c4c46e96abb3c5308f46ec834c986d7e6da0c03c1d0472eff8ddddb09a"
+    }
+  ],
+  "all_join_text_and_inventory_checks_passed": true,
+  "evaluable_scenarios": 429,
+  "evaluable_trees": 59,
+  "evaluable_utterance_ids_sha256": "05232093fbd9ecf37f21b40d3441c57a3bbb3004e82da683683bc4461b15e989",
+  "evaluable_released_label_counts": {
+    "maybe": 117,
+    "no": 206,
+    "yes": 106
+  },
+  "composed_label_counts": {
+    "maybe": 117,
+    "no": 206,
+    "yes": 106
+  },
+  "composition_mismatches": [],
+  "unavailable_scenarios": [
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "2e4bc701b1ec1add96c29a8e90cff53648e745bb",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "3802b5ea4d9ce0dd78e6b53b8f3190e7e0d49c78",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "3a3bbb94c668ec78e887a68663fa7f72ae180d7d",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "55eda2f949ea3bf9f24fca059fc169d7745d8485",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "916fc4da5b19d6473a7f9544b01e1af8b2355724",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "ae0f75c1edb0501b15bb8a81d9427a1fd8de1d09",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "b660b3c299e05444ac789fca61288a99af67d7bc",
+      "missing_variables": [
+        "Q1"
+      ]
+    },
+    {
+      "tree_id": "94ce16365b9e777c4e2a3ec5c1443749bf8cf2f0",
+      "utterance_id": "fa6eadbc987f852f1aa6e7b23600869b55a1f388",
+      "missing_variables": [
+        "Q1"
+      ]
+    }
+  ],
+  "distinct_direct_visible_inputs": 437,
+  "direct_visible_label_conflicts": [],
+  "overlap_with_inspected_materials": {
+    "source_screen": {
+      "tree_ids": [],
+      "utterance_ids": [],
+      "dev_scenarios_on_shared_trees": 0
+    },
+    "extra": {
+      "tree_ids": [
+        "6de20194ab323890c078be39594a06a1e4e68db8",
+        "879f8f07a2a479b1bc61760b2f62b73a973f52f4",
+        "b567078c5986d40efaeeebb008763f7d258a4a7b",
+        "e2fd0f29623cd93fcfba178a111e05469c84ccc8"
+      ],
+      "utterance_ids": [
+        "29553dc7245398dd02f04b685584182db48abf69",
+        "41424173594ac748f558a97e322d4029638b1cd1",
+        "4410bf61506023a7df5da014db38cc317f96f599",
+        "44916bc9fa24ff47b7a066b893b395852b8a841d",
+        "e3343758eb70a17e9945fe48bc08078213cfddbe"
+      ],
+      "dev_scenarios_on_shared_trees": 35
+    }
+  },
+  "test_scenarios_loaded": false,
+  "test_shared_graphs_inspected": true,
+  "model_calls": 0,
+  "new_human_labels": 0,
+  "source_labels_modified": false,
+  "upstream_code_executed": false,
+  "source": {
+    "repository": "Marzipan/QA4PC",
+    "revision": "2b1de7c5e588ec70afa1e753394ae25531e0d182",
+    "files": {
+      "trees_dev_test_qa4pc.json": {
+        "sha256": "04bf52c38d7ed98d2c926547046c37027749962755d8260c0960cac62f8e8b62",
+        "bytes": 115320,
+        "url": "https://huggingface.co/datasets/Marzipan/QA4PC/resolve/2b1de7c5e588ec70afa1e753394ae25531e0d182/trees_dev_test_qa4pc.json"
+      },
+      "dev_entailment_qa4pc.json": {
+        "sha256": "a50fa03a1abe60f385e2ba28cca12c5bf42678f938a294fd7ca9211ada7c4707",
+        "bytes": 257782,
+        "url": "https://huggingface.co/datasets/Marzipan/QA4PC/resolve/2b1de7c5e588ec70afa1e753394ae25531e0d182/dev_entailment_qa4pc.json"
+      },
+      "dev_qa_qa4pc.json": {
+        "sha256": "326be6d53018777528455bda616f9fe5b82d8a0569259118c1f1098df7a37d60",
+        "bytes": 581381,
+        "url": "https://huggingface.co/datasets/Marzipan/QA4PC/resolve/2b1de7c5e588ec70afa1e753394ae25531e0d182/dev_qa_qa4pc.json"
+      }
+    },
+    "prior_material_lf_sha256": {
+      "source_screen": "a1224b1faf71f84e31db7b3e887a1d59853160b2cfaaa46543365a34d3284091",
+      "extra": "4fb77b0537bb83bd827138304cd85df56ab166b7ce85896a82c1c1d009519256"
+    }
+  }
+}

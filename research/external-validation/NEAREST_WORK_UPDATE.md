@@ -8,8 +8,11 @@ EXtrA data and distinguishes the Verma author scripts from IBM/UrcaNet. The
 source action without changing our four visible input fields. Seven trees
 also overlap our inspected screen. These source-contract observations are not
 model scores or a blanket assessment of the authors' evaluation pipeline.
-QA4PC's author-associated data repository is now located; rows and license terms
-still need inspection. No upstream model implementation was executed or forked.
+The subsequent [QA4PC source audit](../qa4pc-audit/README.md) checks the development
+rows and shared graphs: 429 complete compositions agree with final source labels,
+while eight scenarios reference a missing formula variable. No explicit dataset
+license was located in its pinned README/root inventory. No upstream model
+implementation was executed or forked.
 
 ## Additional check during the public-source screen
 

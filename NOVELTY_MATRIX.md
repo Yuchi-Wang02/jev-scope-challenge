@@ -18,6 +18,10 @@ retains concrete source concerns without changing the frozen references.
 The [additional nearest-work check](research/external-validation/NEAREST_WORK_UPDATE.md)
 adds direct precedents for ShARC shortcut controls and condition-question
 expression trees; neither becomes a new contribution by using Jev.
+The [QA4PC source audit](research/qa4pc-audit/README.md) now implements standard
+three-valued composition checks on released annotations. Its 429/429 consistency
+result is a software/data check, not a model score or a novel executor. A proposed
+stage comparison must control human graph assistance in both corresponding arms.
 
 ## Components, precedents and what this repository adds
 

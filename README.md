@@ -9,6 +9,10 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
+Latest preparation: [QA4PC graph and label audit](research/qa4pc-audit/README.md)
+checks the source for the next fact-versus-execution diagnostic. It adds no model
+score: 429 complete compositions agree, and eight cases lack a formula variable.
+
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
 sufficient, and how input representation and rule execution affect the outcome.

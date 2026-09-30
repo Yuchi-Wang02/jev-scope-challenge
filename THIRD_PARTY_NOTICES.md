@@ -166,4 +166,17 @@ and no weights were acquired. Published output contains our own audit code and
 derived field/hash/count records, not those source files. Source data rights
 are not overwritten by this repository's MIT code license. The audit records
 upstream attribution, missing-license observations and restrictions on claiming
-an exact or same-information reproduction. QA4PC rows remain uninspected.
+an exact or same-information reproduction. QA4PC rows were not inspected at that
+stage; the subsequent audit below supersedes that inspection status.
+
+## QA4PC structural audit (2026-09-30)
+
+[QA4PC audit](research/qa4pc-audit/README.md) uses three public JSON files from
+Marzipan/QA4PC at `2b1de7c5e588ec70afa1e753394ae25531e0d182`, downloaded locally
+with exact hashes. It credits Saeidi, Yazdani and Vlachos (EMNLP 2021) for the
+condition-question/expression-tree approach. The audit implements ordinary
+strong Kleene logic in original code; no author implementation was copied,
+executed or forked. Published derived counts/IDs/hashes do not redistribute the
+source texts or complete label vectors. No explicit dataset license was found
+in the inspected pinned README and root file inventory; public accessibility
+is not treated as a new license grant. No new weights or model calls occurred.

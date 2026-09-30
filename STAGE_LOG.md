@@ -4,6 +4,28 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: QA4PC source graphs and stage-attribution feasibility
+
+- Objective: establish whether supplied graphs and condition labels support
+  separating fact interpretation from logical execution.
+- Reality: 437 dev scenarios /60 trees /1,600 condition rows join exactly. One
+  graph lacks Q1, affecting eight scenarios; the remaining 429 compositions
+  reproduce source final labels. No source edits or new inference.
+- Verification: original safe-parser implementation, exhaustive binary truth
+  tables, malformed-input tests, pinned byte checks and a second source download
+  reproduce the derived report. All 193 shared dev/test graphs were inspected;
+  test scenario and label files were not fetched.
+- Gap: source consistency is not independent semantic truth. Four EXtrA-overlap
+  trees cover 35 scenarios. Explicit reuse terms and comparison with the pending
+  training review queue remain to be resolved before any independence claim.
+- Decision: retain the eight unavailable scenarios; do not infer a repair.
+  Publish [the audit](research/qa4pc-audit/README.md), not upstream dataset text.
+- Next: implement the [bounded stage comparison](research/qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md),
+  with graph-assisted direct control, model facts plus code, and separately marked
+  supplied-fact execution. No model cohort or query plan is frozen yet.
+- Presentation: a transparent reading-versus-execution diagnostic, crediting
+  QA4PC's existing decomposition framework. No novel-method or replacement claim.
+
 ## 2026-09-30: inspect reusable implementations and the EXtrA release
 
 - Objective: locate prior implementations and a useful next causal contrast,
