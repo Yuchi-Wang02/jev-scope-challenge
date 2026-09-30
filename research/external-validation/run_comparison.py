@@ -16,6 +16,8 @@ PROTOCOL_PATH = HERE / 'EXECUTION_PROTOCOL.md'
 SOURCE_FILES = (
     'research/external-validation/run_comparison.py',
     'research/external-validation/comparison_backends.py',
+    'research/external-validation/analyze_comparison.py',
+    'research/external-validation/qwen_configuration.py',
     'research/external-validation/execution_journal.py',
     'research/external-validation/comparison_plan.py',
     'research/external-validation/shortcut_controls.py',

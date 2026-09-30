@@ -95,6 +95,7 @@ def qwen_backend(model_dir, jobs):
         raise ValueError('Pinned runtime version mismatch')
     sys.path.insert(0, str(ROOT / 'research/generation-calibration'))
     from settings import make_config, assert_order, cpu_checks
+    from qwen_configuration import loaded_configurations
     from interface import GeneratedPresencePenalty
     files = json.loads((ROOT / 'research/baseline-readiness/qwen35-smoke-repaired/run.json').read_text())['model_files']
     setup_start = time.monotonic()
@@ -103,6 +104,7 @@ def qwen_backend(model_dir, jobs):
         if path.stat().st_size != record['bytes'] or file_hash(path) != record['sha256']:
             raise ValueError('Pinned model file mismatch')
     config_checks = cpu_checks(model_dir)
+    loaded_configs = {row['thinking']: row for row in loaded_configurations(model_dir)}
     tokenizer = AutoTokenizer.from_pretrained(model_dir, local_files_only=True, trust_remote_code=False)
     for job in jobs:
         rendered = tokenizer.apply_chat_template([{'role': 'user', 'content': job['prompt']}],
@@ -125,6 +127,7 @@ def qwen_backend(model_dir, jobs):
                 'torch': torch.__version__, 'peft': peft.__version__,
                 'gpu': torch.cuda.get_device_name(0), 'model': 'Qwen/Qwen3.5-4B',
                 'revision': QWEN_REVISION, 'files': files, 'cpu_checks': config_checks,
+                'loaded_configuration_checks': list(loaded_configs.values()),
                 'verification_seconds': verification_seconds,
                 'load_seconds': time.monotonic() - load_start, 'warmup_forwards': 0}
     trace = {}
@@ -144,6 +147,10 @@ def qwen_backend(model_dir, jobs):
         if unused:
             raise ValueError('Unused generation parameters')
         effective_record = effective.to_dict()
+        expected_config = dict(loaded_configs[job['thinking']]['effective_generation_config'])
+        expected_config['max_new_tokens'] = job['max_new_tokens']
+        if effective_record != expected_config:
+            raise ValueError('Actual loaded generation configuration differs from its no-weight audit')
         class Deadline(StoppingCriteria):
             def __call__(self, input_ids, scores, **kwargs):
                 return time.monotonic() - start >= remaining_seconds

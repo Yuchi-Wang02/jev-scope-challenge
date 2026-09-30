@@ -12,20 +12,10 @@ def ratio(numerator, denominator):
             'rate': numerator / denominator if denominator else None}
 
 
-def score_condition(pairs, predictions, *, condition):
-    """One prediction per item, one pair per tree, one condition per call.
-
-    pairs: exact dictionaries with pair_id, tree_id, item_ids, reference_actions.
-    predictions: exact dictionaries with item_id and action (semantic action or
-    None for a recorded failed output). Missing rows are an integrity failure,
-    not inferred abstentions. No repeats, mappings or seeds may be pooled here.
-    """
-    if not isinstance(condition, str) or not condition.strip():
-        raise ValueError('A named condition is required')
+def validate_pairs(pairs):
+    """Validate the shared cohort without inventing any predictions or scores."""
     if not isinstance(pairs, list) or not pairs:
         raise ValueError('A nonempty finalized pair list is required')
-    if not isinstance(predictions, list):
-        raise ValueError('Predictions must be a list')
     pair_ids, tree_ids, item_ids = set(), set(), set()
     for pair in pairs:
         if not isinstance(pair, dict) or set(pair) != {
@@ -45,6 +35,22 @@ def score_condition(pairs, predictions, *, condition):
                     not isinstance(ref, str) or ref not in ACTIONS):
                 raise ValueError('Repeated/invalid item or unresolved reference')
             item_ids.add(item)
+    return pair_ids, tree_ids, item_ids
+
+
+def score_condition(pairs, predictions, *, condition):
+    """One prediction per item, one pair per tree, one condition per call.
+
+    pairs: exact dictionaries with pair_id, tree_id, item_ids, reference_actions.
+    predictions: exact dictionaries with item_id and action (semantic action or
+    None for a recorded failed output). Missing rows are an integrity failure,
+    not inferred abstentions. No repeats, mappings or seeds may be pooled here.
+    """
+    if not isinstance(condition, str) or not condition.strip():
+        raise ValueError('A named condition is required')
+    if not isinstance(predictions, list):
+        raise ValueError('Predictions must be a list')
+    pair_ids, tree_ids, item_ids = validate_pairs(pairs)
     by_item = {}
     for row in predictions:
         if not isinstance(row, dict) or set(row) != {'item_id', 'action'}:

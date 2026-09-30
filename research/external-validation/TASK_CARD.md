@@ -79,8 +79,10 @@ adjudication before preparing private requests and separate scoring references.
 It cannot run inference. Five declared non-model controls (four constants and
 last-history-answer copying) are implemented as shallow checks, not general
 rule interpreters. The [execution core](RUNNER_DESIGN.md) now has durable-call,
-budget and resumption tests. Real reviewed inputs, cross-condition analysis and
-an exact execution freeze remain outstanding; no live task run has occurred.
+budget and resumption tests. The [cross-condition analyzer](ANALYSIS_CONTRACT.md)
+now passes synthetic journal checks and an offline audit of 16 historical
+technical-smoke records. Real reviewed inputs and an exact execution freeze
+remain outstanding; no live task run has occurred.
 
 ## Nearest-work screen and reuse ledger
 

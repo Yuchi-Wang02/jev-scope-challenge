@@ -4,6 +4,27 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: audit raw records before comparing conditions
+
+- Objective: make a future comparison inspectable across common inputs, output
+  failures, repeated option orders and actual resource accounting.
+- Completed: [offline analyzer](research/external-validation/ANALYSIS_CONTRACT.md),
+  failure-inclusive condition metrics, shallow controls, order-sensitivity counts,
+  resource uncertainty and distinct grid/error/budget flags.
+- Audit: eight synthetic tests and re-extraction of 16 pinned historical technical
+  records. Initial real-record audit failed on null/false output flags. Inspection
+  identified the exact Transformers load-path difference; the new check reproduces
+  that path rather than weakening equality. Five in-memory mutations are rejected.
+  No historical scores or source records changed; no new inference occurred.
+- Gap: historical readout consistency and software tests are not a live task run.
+  Two ShARC reviews, adjudication, exact input tokenization and the execution freeze
+  are still absent. This stage supplies no new evidence for model replacement.
+- Next: bring the reviewed cohort through the existing pipeline when available.
+  Avoid accumulating cosmetic preparation or re-running closed grids to manufacture
+  activity. A separate live technical check needs its own explicit bounded purpose.
+- Presentation: show what can now be audited and the configuration repair, keeping
+  technical readiness distinct from research findings or publication readiness.
+
 ## 2026-09-30: implement durable, bounded task execution without running the task
 
 - Objective: retain every attempted call and prevent interruptions or retries

@@ -105,10 +105,11 @@ ordinary bad outputs do not selectively stop the grid.
 
 The full task remains closed until independent review, human adjudication,
 exact-cohort tokenization and a separately published execution freeze. The
-cross-condition result analyzer and final freeze/publication checks are still
-outstanding. They must verify a common cohort, extract per-condition predictions
-from journals, score all five controls, and preserve incomplete grids and resource
-limits alongside scores. Do not present callback tests as task evaluation.
+cross-condition [result analyzer](ANALYSIS_CONTRACT.md) now verifies a common
+cohort, extracts predictions from journals, scores all five controls, and preserves
+incomplete grids and resource limits alongside scores. Final freeze/publication
+checks and a live task run remain outstanding. Do not present callback tests or
+offline historical-record replay as task evaluation.
 
 ```bash
 python -m unittest discover -s tests -p test_rule_execution_journal.py -v

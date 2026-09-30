@@ -69,6 +69,16 @@ def visible_state(item):
     return {**{k: item[k] for k in fields[:3]}, 'history': safe}
 
 
+def task_instruction(order):
+    return INSTRUCTIONS + ' Allowed actions in display order: ' + ', '.join(order) + '.'
+
+
+def qwen_prompt(state, order):
+    return task_instruction(order) + '\nstate: ' + canonical(state) + (
+        '\nReturn only a JSON object with exactly one key "action" whose value '
+        'is one of the allowed actions. Put the object in your final answer.')
+
+
 def verified_review_inputs(review_a, review_b, adjudication, review_dir):
     """Recompute existing review artifacts rather than trust a status flag."""
     paths = [Path(p).resolve() for p in (review_a, review_b, adjudication)]
@@ -132,15 +142,13 @@ def material(pack, selected, final, render):
         for item in ids:
             state = visible_state(items[item])
             for order_index, order in enumerate(ORDERS):
-                instruction = INSTRUCTIONS + ' Allowed actions in display order: ' + ', '.join(order) + '.'
+                instruction = task_instruction(order)
                 jobs.append({'id': f'{item}_jev_order{order_index}', 'item_id': item,
                              'backend': 'jev', 'condition': f'jev_order{order_index}',
                              'options': list(order), 'request': jev_request(state, instruction, order)})
                 for thinking in (False, True):
                     mode = 'thinking' if thinking else 'direct'
-                    prompt = instruction + '\nstate: ' + canonical(state) + (
-                        '\nReturn only a JSON object with exactly one key "action" whose value '
-                        'is one of the allowed actions. Put the object in your final answer.')
+                    prompt = qwen_prompt(state, order)
                     cap = 2048 if thinking else 256
                     rendered, input_ids = render(prompt, thinking, cap)
                     if (not isinstance(rendered, str) or not isinstance(input_ids, list) or
@@ -179,7 +187,7 @@ def material(pack, selected, final, render):
     return plan, references
 
 
-def tokenizer_renderer(model_dir):
+def checked_tokenizer(model_dir):
     """Load only pinned tokenizer/config files, never weights or remote code."""
     for key in ('HF_HUB_OFFLINE', 'TRANSFORMERS_OFFLINE', 'HF_HUB_DISABLE_TELEMETRY'):
         os.environ[key] = '1'
@@ -194,6 +202,11 @@ def tokenizer_renderer(model_dir):
             raise ValueError('Pinned tokenizer/configuration mismatch')
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_dir, local_files_only=True,
                                                             trust_remote_code=False)
+    return tokenizer, files
+
+
+def tokenizer_renderer(model_dir):
+    tokenizer, files = checked_tokenizer(model_dir)
     def render(prompt, thinking, cap):
         text = tokenizer.apply_chat_template([{'role': 'user', 'content': prompt}],
                     tokenize=False, add_generation_prompt=True, enable_thinking=thinking)

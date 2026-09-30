@@ -152,7 +152,8 @@ prompt `Synthetic tokenizer check only. Return a final JSON object with action Y
 encoded to 27 direct-mode input tokens and 25 thinking-mode input tokens; both
 template boundary checks passed. Zero weights were loaded and zero forwards ran.
 This does not establish token counts or budget adequacy for the pending cohort.
-Before model execution, finish real-cohort tokenization, cross-condition analysis
-and freeze/publication checks, and publish a separately named freeze tied to the
+The [cross-condition analyzer](ANALYSIS_CONTRACT.md) is now implemented, with
+synthetic tests and offline historical-record checks. Before model execution,
+finish real-cohort tokenization and freeze/publication checks, and publish a separately named freeze tied to the
 finalized cohort, exact plan and execution code. Existing user API/local-model
 authorization applies; this draft does not introduce another permission request.
