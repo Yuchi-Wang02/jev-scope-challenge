@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — closer external-task precedents and baseline obligations
+
+Added a focused primary-source audit of EXtrA-ShaRC and LDPC, including the
+distinction between frozen decomposition modules and a task-trained auxiliary
+model. Updated the task card and novelty matrix; documented symmetric assistance,
+all-stage costs and reproduction-versus-adaptation requirements. No new dataset,
+human labels, task predictions, upstream code imports or historical rescoring.
+
 ## 2026-09-30 — live four-action backend integration
 
 Completed the fixed 8-request Jev and 8-generation Qwen3.5 technical label-copy

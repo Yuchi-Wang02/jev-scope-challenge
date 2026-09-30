@@ -4,6 +4,25 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: narrow the external-task contribution after closer prior work
+
+- Objective: decide whether the next comparison could distinguish anything
+  beyond established conversational rule reading and standard decomposition.
+- Completed: a [primary-source update](research/external-validation/NEAREST_WORK_UPDATE.md)
+  adds two closer precedents, records inspection limits and upstream provenance,
+  and defines training/help/cost obligations for any adapted baseline.
+- Audit: no counterfactual-testing or general decomposition novelty claim is
+  supported. A fully frozen pipeline is a constraint to compare, not evidence
+  of novelty. No upstream implementation was forked, imported or executed.
+- Gap: no useful model boundary has been demonstrated on the new task. Two
+  independent ShARC reviews, adjudication and a task-specific run freeze remain
+  outstanding. The EXtrA full-paper and reproduction audit are not complete.
+- Next: retain the frozen queue, complete the source/method comparison without
+  reading queued predictions, then run the reviewed direct comparison before
+  investing in a decomposition intervention.
+- Presentation: use a question-led research card with explicit prior work and
+  no claim that this is a newly invented benchmark or method.
+
 ## 2026-09-30: exercise both four-action backends once
 
 - Objective: replace adapter assumptions with bounded live transport, mapping,

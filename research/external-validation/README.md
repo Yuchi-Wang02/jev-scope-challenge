@@ -74,6 +74,10 @@ selection have software checks, but **zero completed human reviews or model
 outputs** have been added. See the [task card](TASK_CARD.md) for the current
 comparison question, prior-work boundary, missing controls and next gates.
 
+The [nearest-work update](NEAREST_WORK_UPDATE.md) adds closer 2024/2025 precedents
+and specifies which contribution claims and baseline shortcuts they rule out.
+It changes the planned comparison obligations, not the frozen queue or labels.
+
 To recompute the structural summary from the pinned source (network required,
 no model or API credential):
 

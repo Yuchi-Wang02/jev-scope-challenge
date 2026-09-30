@@ -71,8 +71,10 @@ a task-specific budget. The independent-review gate remains unchanged.
 
 ## Nearest-work screen and reuse ledger
 
-Primary abstracts and bibliographic records checked 2026-09-30. This is an
-initial screen, not full-paper review, exhaustive novelty search or reproduction.
+Primary abstracts and bibliographic records checked 2026-09-30. The first four
+rows are an initial screen. The [focused update](NEAREST_WORK_UPDATE.md) adds
+two closer precedents with explicit inspection depth and baseline obligations.
+Neither review is an exhaustive novelty search or reproduction.
 
 |Source|Already established|Consequence for this project|Reuse this stage|
 |---|---|---|---|
@@ -80,6 +82,8 @@ initial screen, not full-paper review, exhaustive novelty search or reproduction
 |[Explicit Memory Tracker, Gao et al. 2020](https://aclanthology.org/2020.acl-main.88/)|Tracks whether rule conditions are satisfied and generates clarification questions.|A condition-status memory is not by itself a novel mechanism.|Abstract inspected; linked author implementation not run or forked.|
 |[Discern, Gao et al. 2020](https://aclanthology.org/2020.emnlp-main.191/)|Discourse segmentation with per-unit entailment supports decisions and follow-up questions.|Rule splitting plus entailment cannot be claimed as first proposed here.|Abstract inspected; linked author implementation not run or forked.|
 |[Explicit Alignment and Many-to-many Entailment, Luo et al. 2023](https://arxiv.org/abs/2310.13409)|Explicit document/user alignment and many-to-many entailment for conversational reading.|Any binding/alignment intervention must be distinguished from this line of work.|Abstract inspected; no code or weights imported.|
+|[EXtrA-ShaRC, Ramos and Lipani 2024](https://um.org/umap2024/proceedings/)|Counterfactual-profile evaluation.|Changed-condition testing is not itself new.|Official abstract and pinned author README inspected; no fork or imported implementation.|
+|[LDPC, Erwin et al. 2025](https://arxiv.org/html/2501.11335v1)|Few-shot decomposition with logic execution.|Do not claim a new decomposition paradigm or describe the full prior pipeline as training-free.|Targeted full-text sections inspected; no implementation run.|
 
 The possible contribution is a **controlled, costed replacement-boundary study**
 on reviewed decision contrasts, if the comparison reveals a useful, reproducible

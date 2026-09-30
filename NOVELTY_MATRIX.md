@@ -108,6 +108,17 @@ parser, generated-token presence penalty and completion-based cap selection are
 ordinary engineering preparation. They do not supply the missing natural-language
 comparison or constitute an algorithmic contribution.
 
+## 2026-09-30 addition: external rule-action comparison
+
+The [focused nearest-work update](research/external-validation/NEAREST_WORK_UPDATE.md)
+adds EXtrA-ShaRC and LDPC, with primary sources and inspection limits. We cannot
+claim novelty for changed-condition testing or rule decomposition with logic.
+A frozen end-to-end pipeline is a testable constraint, not a novelty certificate.
+The [task card](research/external-validation/TASK_CARD.md) remains a candidate
+replacement-boundary comparison; human review, task predictions, confirmation
+and any useful new method remain incomplete. Published adapter checks establish
+technical readiness only. New citations are not forks or reproduced baselines.
+
 ## Decision sufficiency: a specification example, not a method claim
 
 The [executable contract lab](research/decision-sufficiency/README.md) distinguishes
