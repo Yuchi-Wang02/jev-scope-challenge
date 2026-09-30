@@ -69,9 +69,14 @@ CSV alone supplies that endorsement. The original STOP_NO_FOLLOWUP remains in fo
 
 The original candidate is closed as an exploratory pilot with conditional scope
 evidence. Do not spend its remaining budget to turn the disagreement into a failure.
-The separate [new proposal](../candidate-completeness/PLAN.md) must explicitly
-declare relevant candidate coverage and test irrelevant omissions as a control.
-It has no generated dataset or model results. A proposal review is not execution.
+The separate [proposal as written at intake](../candidate-completeness/PLAN.md)
+required explicit relevant-candidate coverage and irrelevant-omission controls.
+At this disposition's initial publication it had no generated dataset or model
+results. That historical proposal remains unchanged. The subsequent
+[candidate-coverage grids](../candidate-completeness/RESULTS.md) and
+[fixed-budget reasoning control](../candidate-completeness/REASONING_RESULTS.md)
+are now complete; their new 72 inputs still have zero independent human reviews.
+The two submissions discussed here do not validate those new inputs.
 
 Offline reproduction: `python research/payment-ownership/review_pair.py --verify`.
 This verifies files and comparisons; it cannot certify reviewer independence or truth.
