@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — complete444-call rule-direction diagnostic
+
+Published before-call freeze5bd9675, all108 synthetic inputs and444 requests.
+Executed222 Jev requests and222 local Qwen generations. Both score84/108 in both
+orders with the same24 critical direction errors; controls and invalids retained.
+Added raw journals, independent recount/token decode, cost accounting and an
+interactive replay. Closed the grid without prompt search or adaptive follow-up.
+
 ## 2026-09-30 — refresh actual local comparator inventory
 
 Inspected four known cache locations without loading models or downloading

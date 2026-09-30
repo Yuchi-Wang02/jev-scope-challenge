@@ -4,6 +4,29 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: freeze and complete the rule-direction diagnostic
+
+- Objective: isolate necessary/sufficient condition interpretation under explicit
+  finite semantics, without relabeling or rerunning the inspected source cohorts.
+- Freeze: public5bd9675 before inference;108 inputs, two orders, two backends,
+  six smoke per backend;444 planned decisions. No adaptive follow-up.
+- Reality: all444 complete, no invalids, retries or overruns. Both models84/108
+  in both orders; all24 errors occupy the same two critical logical cells.
+- Audit: separate raw-response recount reproduced444 actions and token totals;
+  pinned tokenizer redecoded222 input/output sequences. Grammar control and
+  exhaustive witnesses agree on all108 constructed references.
+- Gap: the clean signal is a known logical error pattern on authored templates,
+  not a new algorithm or proof of internal reasoning. No independent language
+  review, stronger comparator or alternative representation experiment.
+- Decision: close this grid. Preserve successful equivalence/unknown controls
+  beside errors. If pursued, preregister a new representation contrast with equal
+  assistance for both backends and stronger ordinary-model comparison.
+- Presentation: [complete results](research/rule-direction/RESULTS.md) and
+  [all-case replay](https://yuchi-wang02.github.io/jev-scope-challenge/rule_direction.html).
+- User stop instruction: finish this round and pause. No further inference or
+  follow-up study starts after this result is saved. Future work above remains
+  proposed, not queued for execution.
+
 ## 2026-09-30: audit all 24 interface scenarios; prepare retrospective review
 
 - Objective: separate source agreement from supported decisions before adding an

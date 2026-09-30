@@ -11,6 +11,14 @@ without changing that document or any frozen study. Pair it with the
 and documented failures of particular compositions. A novel general method or
 paper-level contribution has not been established.**
 
+The [rule-direction result](research/rule-direction/RESULTS.md) is a compact,
+reproducible failure signature shared by both tested configurations. Sufficient
+versus necessary conditions, truth tables and controlled
+logic diagnostics have direct precedents; the [protocol's related work](research/rule-direction/PROTOCOL.md)
+credits RuleTaker, ProofWriter and FOLIO. No intervention or new general algorithm
+was tested. Stronger baselines, language review and independent new materials
+remain necessary before a paper-level contribution claim.
+
 The [latest semantic audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md) adds
 traceable review concerns and retrospective review tooling. Source-label audits,
 three-way evidence judgments and blinded annotation forms are established

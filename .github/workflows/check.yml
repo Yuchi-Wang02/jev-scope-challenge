@@ -72,5 +72,8 @@ jobs:
       - run: python research/source-label-screen/jev_audit.py --verify
       - run: python research/source-label-screen/report.py verify
       - run: python research/finite-choice-readout/analyze_finite.py verify
+      - run: python research/rule-direction/analyze.py verify
+      - run: python research/rule-direction/verify_counts.py
+      - run: python research/rule-direction/publish.py verify
       - run: python research/source-label-screen/replay.py --verify
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run

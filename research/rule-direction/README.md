@@ -1,5 +1,11 @@
 # One "Only". Different Decision.
 
+Current status: **all 444 decisions completed; both models score 84/108 in both
+orders, with the same 24 errors**. [Complete results](RESULTS.md) ·
+[Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/rule_direction.html).
+The critical direction-pair score is 0/12 for each fact polarity. Equivalence
+and unstated-fact controls pass. No follow-up was run; this cohort is closed.
+
 Status at preparation: **108 authored inputs, 444 planned decisions, zero model
 calls**. [Frozen protocol](PROTOCOL.md), [full request plan](request_plan.json),
 [cases and possible-world witnesses](cases.json), [budget manifest](manifest.json),
@@ -8,14 +14,14 @@ calls**. [Frozen protocol](PROTOCOL.md), [full request plan](request_plan.json),
 Does adding `only` to `Q if P` change the decision when it should? This narrow
 diagnostic distinguishes sufficient, necessary and equivalent fictional rules.
 An exhaustive four-world oracle and a separate known-grammar program agree on
-all108 cases. That establishes constructed software semantics, not independent
+all 108 cases. That establishes constructed software semantics, not independent
 human validation or a natural-language reasoning breakthrough.
 
 The two backends use the same visible facts, rule and question: Jev native choices
 and the existing Qwen3.5-4B short greedy semantic-label configuration, each with
 two display orders. Full equivalence and unstated-fact controls are retained.
 Twelve vocabulary families repeat three logical patterns; they are not twelve
-independent real-world policies. Always-maybe scores60/108 by construction.
+independent real-world policies. Always-maybe scores 60/108 by construction.
 
 This is separate from the [closed QA4PC source audit](../qa4pc-answer-interface/SOURCE_AUDIT.md)
 and does not confirm or repair its labels. The [earlier decision-sufficiency lab](../decision-sufficiency/)
@@ -32,6 +38,9 @@ Existing project adapters, tokenization checks and journal are reused unchanged.
 python -m unittest discover -s tests -p test_rule_direction.py -v
 python research/rule-direction/plan.py prepare --model-dir PATH_TO_PINNED_QWEN35
 python research/rule-direction/plan.py verify --model-dir PATH_TO_PINNED_QWEN35
+python research/rule-direction/analyze.py verify
+python research/rule-direction/verify_counts.py
+python research/rule-direction/publish.py verify
 ```
 
 The tokenizer/configuration checks require the existing pinned runtime.

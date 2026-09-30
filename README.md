@@ -9,7 +9,14 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
-Latest execution: [Same facts. Different answer interface.](research/qa4pc-answer-interface/RESULTS.md)
+Latest execution: **[One "Only". Different Decision.](research/rule-direction/RESULTS.md)**
+Jev and Qwen3.5-4B both score84/108 in both tested orders, making the same24
+errors when sufficient and necessary conditions require different decisions.
+All444 calls are retained. [Replay every case](https://yuchi-wang02.github.io/jev-scope-challenge/rule_direction.html).
+Twelve authored vocabulary families repeat three formal patterns; this is a
+synthetic diagnostic under explicit constraint semantics, not a general benchmark.
+
+Earlier execution: [Same facts. Different answer interface.](research/qa4pc-answer-interface/RESULTS.md)
 All 648 jobs completed on 12 new policy clusters. Generated outputs are fully
 parseable; semantic labels improve mapping consistency but do not improve mean
 source agreement. The finite/generated-letter difference is entirely five exact

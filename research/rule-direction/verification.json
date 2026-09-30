@@ -1,0 +1,36 @@
+{
+  "verified": true,
+  "new_model_calls": 0,
+  "recounted_decisions": 444,
+  "tokenizer_output_sequences_verified": 222,
+  "tokenizer_input_sequences_verified": 222,
+  "records": {
+    "jev": {
+      "raw_results": 222,
+      "correct_by_mapping": [
+        84,
+        84
+      ],
+      "invalid_by_mapping": [
+        0,
+        0
+      ],
+      "input_tokens": 103554,
+      "output_tokens": 8436
+    },
+    "qwen": {
+      "raw_results": 222,
+      "correct_by_mapping": [
+        84,
+        84
+      ],
+      "invalid_by_mapping": [
+        0,
+        0
+      ],
+      "input_tokens": 37620,
+      "output_tokens": 444
+    }
+  },
+  "report_sha256": "4668d765399ebba6c4451cefc2ba1046e94a66b5f6c3c91feb14a7a9706bd6be"
+}
