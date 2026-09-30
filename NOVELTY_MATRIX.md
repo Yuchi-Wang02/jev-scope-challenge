@@ -149,3 +149,14 @@ and explicit probability-mass/runtime accounting strengthen the baseline record,
 not a dedicated-model replacement claim. Inputs are reused, source truth remains
 unadjudicated, and prompt/verbalizer/readout changes are confounded. No upstream
 implementation was forked; ShARC-derived input plans retain CC BY-SA attribution.
+
+## Implementation and data reuse audit
+
+The [source inspection](research/implementation-audit/README.md) finds that a
+named heuristic's setup uses annotation-derived question inventories; comparing
+it as a text-only baseline would conceal assistance. EXtrA already supplies
+counterfactual profiles, but the pinned release has two identical-visible-input
+pairs with conflicting actions under our input contract and policy overlap with
+our inspected screen. These are dataset/contract diagnostics, not a new method.
+QA4PC's supplied graphs offer a possible assisted-stage comparison; using them
+requires attribution, validated scope and symmetric access, not novelty language.

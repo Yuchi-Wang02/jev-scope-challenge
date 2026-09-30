@@ -3,6 +3,7 @@
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
 [single-prefill Qwen control](research/finite-choice-readout/RESULTS.md), on the same public-source inputs.
+A later [implementation/data audit](research/implementation-audit/README.md) adds no model calls and identifies two invisible-change label conflicts in the pinned EXtrA release.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 

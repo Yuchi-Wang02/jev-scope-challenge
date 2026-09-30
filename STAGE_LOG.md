@@ -4,6 +4,25 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: inspect reusable implementations and the EXtrA release
+
+- Objective: locate prior implementations and a useful next causal contrast,
+  rather than construct another uncredited decomposition pipeline.
+- Reality: audited all 100 EXtrA original/counterfactual pairs, spanning 40 trees.
+  Two pairs have identical four-field visible inputs but different source actions;
+  three entire pairs are unchanged. Seven trees overlap our prior screen.
+- Verification: byte-pinned sources, ID-based joins, full-field comparison,
+  per-pair hashes and executable replay. No new model calls or human labels.
+- Gap: the Verma smart heuristic uses annotation-derived question inventories;
+  it is not a drop-in same-information baseline. LDPC implementation availability
+  remains unestablished by the bounded search. QA4PC data metadata was located,
+  but contents and reuse terms are not yet validated.
+- Decision: do not score EXtrA as fresh independent confirmation or repair its
+  labels ourselves. Publish [the audit](research/implementation-audit/README.md)
+  without redistributing upstream files or claiming an implementation reproduction.
+- Next: inspect QA4PC's supplied graphs and fact labels for controlled stage
+  attribution. Explicitly account for that human assistance in every model arm.
+
 ## 2026-09-30: close the one-prefill ordinary-model control
 
 - Objective: measure an existing finite-choice readout against the prior direct

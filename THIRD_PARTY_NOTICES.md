@@ -155,3 +155,15 @@ ideas](research/decision-sufficiency/RELATED_WORK.md). No additional repository
 fork, vendored implementation or model execution occurred. Original code is MIT;
 the synthetic contract examples follow the repo's CC BY 4.0 data policy.
 
+
+## Implementation audit (2026-09-30)
+
+[Source/code inspection record](research/implementation-audit/README.md) pins
+EXtrA-ShaRC, the Verma author scripts, IBM/UrcaNet and QA4PC metadata. Two EXtrA
+JSON files and two source scripts were downloaded into ignored local storage
+for inspection. No fork was created, no author code was executed or vendored,
+and no weights were acquired. Published output contains our own audit code and
+derived field/hash/count records, not those source files. Source data rights
+are not overwritten by this repository's MIT code license. The audit records
+upstream attribution, missing-license observations and restrictions on claiming
+an exact or same-information reproduction. QA4PC rows remain uninspected.

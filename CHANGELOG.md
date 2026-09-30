@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — prior implementation and counterfactual-release audit
+
+Added a byte-pinned, reproducible audit of 100 EXtrA pairs. Two have identical
+visible inputs but different actions under our four-field contract; 40 source
+trees include seven shared with our prior screen. Added an input/help/license
+inventory for prior implementations and located QA4PC data metadata. No new
+model results, source-label edits, fork, upstream code execution or weights.
+
 ## 2026-09-30 — single-prefill control completed without prompt search
 
 Published 56 real Qwen3.5-4B prefills: eight smoke and 48 main decisions. Source

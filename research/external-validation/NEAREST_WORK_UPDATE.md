@@ -1,5 +1,16 @@
 # Nearest-work update: what the next comparison must establish
 
+## Follow-up implementation and release audit
+
+The [completed reuse audit](../implementation-audit/README.md) checks actual
+EXtrA data and distinguishes the Verma author scripts from IBM/UrcaNet. The
+100 released pairs span 40 trees; two pairs change annotation evidence and
+source action without changing our four visible input fields. Seven trees
+also overlap our inspected screen. These source-contract observations are not
+model scores or a blanket assessment of the authors' evaluation pipeline.
+QA4PC's author-associated data repository is now located; rows and license terms
+still need inspection. No upstream model implementation was executed or forked.
+
 ## Additional check during the public-source screen
 
 Checked 2026-09-30, before interpreting that screen's cross-model scores.
