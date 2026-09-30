@@ -1,0 +1,84 @@
+{
+  "study": "qa4pc-stage-attribution-dev-v1",
+  "plan_sha256": "a6296efb34aa6e80d79b825152847a66c29060cb980a3fe213d7e7783cf2df29",
+  "references_sha256": "af6a8f03de870362643fb18b358e83f77913cd5b024fb6a537d64672205e50c0",
+  "manifest_sha256": "6e40fb2b0bd67c78252f0f3f7eb089ba2684c0aa2d9d78ad4bee1e58f2b41287",
+  "source_hashes_lf": {
+    "research/qa4pc-stage-attribution/plan.py": "7f6159150553ca1f2146e26c3070c86646fdd818bbe08e7f885974b0a3667983",
+    "research/qa4pc-stage-attribution/runner.py": "5448831aab27503a8f6ae8a9b4a643ea1399059212bf8c914c94ebee22443229",
+    "research/qa4pc-stage-attribution/journal.py": "f5598fabfeb9fbf29d8b4869ba072e21ccc3f54871c199318da98fb674136773",
+    "research/qa4pc-stage-attribution/cohort.py": "4079e43258e57feeb0aaae8cdb93b6b88f840cdc9dfff30283fc57f1e37d6672",
+    "research/qa4pc-stage-attribution/cohort.json": "325ddc98afbdbdabdf6da2130079f0df8af9d2ed924a2faf8a467230d6e03830",
+    "research/qa4pc-stage-attribution/PROTOCOL.md": "9b31a4996f074a9152d897b00c939e733383bb945fcd222efd2fefc85874a17d",
+    "research/qa4pc-audit/audit.py": "dcf320e89986456b0475a46f4f044d4b01bcd8c3d6e993d6cd4bfa873c57a130",
+    "research/external-validation/comparison_plan.py": "62c1bf8f6ad66cef3b8a44f698129e330fd56548a8b8c72d8db5c0a3ac47135d",
+    "research/external-validation/comparison_backends.py": "12f56e0da585ca85a96b202e9e39325b6818d8a829e9e41a6588c89ea0d5e67b",
+    "research/action-backends/adapters.py": "775f31111e8eab97d18b414b5dfdce6083fd2bfcbea9b35fc46b0025e464e43e",
+    "research/payment-ownership/run_api_v02.py": "70d57ef899de752a449d3c87c5e4c1cbcb4f36c326c66f031a058ce3e102ec28",
+    "research/payment-ownership/study.py": "3ade9249484245ed540e8467bc87546518b769903732e6756c7afa1077142e0a",
+    "research/baseline-readiness/qwen35-smoke-repaired/run.json": "8f56b14a0b6865ffc490c88ff3f0c1abf8b7bf8d62bc061d9cd1dd71d67eab91"
+  },
+  "tokenizer_files": [
+    {
+      "name": "LICENSE",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    {
+      "name": "README.md",
+      "bytes": 77661,
+      "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"
+    },
+    {
+      "name": "config.json",
+      "bytes": 3161,
+      "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 12807982,
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "upstream_lfs_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 16710,
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 76196,
+      "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d"
+    }
+  ],
+  "source_revision": "2b1de7c5e588ec70afa1e753394ae25531e0d182",
+  "source_file_pins": {
+    "trees_dev_test_qa4pc.json": [
+      "04bf52c38d7ed98d2c926547046c37027749962755d8260c0960cac62f8e8b62",
+      115320
+    ],
+    "dev_entailment_qa4pc.json": [
+      "a50fa03a1abe60f385e2ba28cca12c5bf42678f938a294fd7ca9211ada7c4707",
+      257782
+    ],
+    "dev_qa_qa4pc.json": [
+      "326be6d53018777528455bda616f9fe5b82d8a0569259118c1f1098df7a37d60",
+      581381
+    ]
+  }
+}

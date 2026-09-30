@@ -12,7 +12,10 @@ trees /zero exact utterance IDs. Excluding them, the incomplete graph and four
 EXtrA trees leaves 52 eligible trees /365 scenarios. A label-independent hash
 selection fixes 12 trees /24 scenarios /56 condition questions. This implies
 512 main decisions across two models, two mappings and D/G/F/L, still unrun.
-The remaining gap is executable prompts, smoke/budget checks and runner freeze.
+The compiler and runner subsequently froze 524 jobs: 512 main and 12 smoke,
+77,528 local input tokens and 1,416,558 Jev planning units. Five new execution
+tests and the 293-test full suite passed before execution. Next is the committed
+Jev/Qwen run; no performance result is claimed by this preparation entry.
 
 - Objective: establish whether supplied graphs and condition labels support
   separating fact interpretation from logical execution.

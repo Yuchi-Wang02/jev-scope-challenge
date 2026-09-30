@@ -1,10 +1,12 @@
 # Facts, rules, or both? — cohort preparation
 
-**Cohort selected before model execution, 2026-09-30. Zero model calls.**
+**Execution grid frozen before model execution, 2026-09-30. Zero model calls at
+this freeze.**
 This is the next step after the [QA4PC structural audit](../qa4pc-audit/README.md)
 and [stage-attribution design](../qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md).
-Exact prompts, token budgets, smoke cases and the runner freeze remain unfinished.
-The published IDs are a selection manifest, not an executed experiment.
+The [protocol](PROTOCOL.md), [524-job manifest](plan_manifest.json),
+[code/input freeze](freeze.json), compiler and runner are now complete.
+This is a prospective freeze, not an executed result.
 
 ## Fixed selection
 
@@ -58,14 +60,20 @@ For each of two fixed option mappings and each of Jev /existing Qwen3.5-4B:
 - 24 supplied-fact model execution decisions (L), explicitly label-assisted.
 
 This is **128 scored decisions per model/mapping, 512 total**: 256 Jev decisions
-and 256 local decisions. Smoke and retry allowances are not included in that
-number and must be separately frozen before launch. Code applied to released
+and 256 local decisions. Six independent smoke decisions per backend bring the
+total to 524; zero automatic retries. Code applied to released
 facts is a software control, not another model decision. D/G/F/L contracts and
 interpretation limits are explained in the linked design.
 
-Next work is to implement and validate the compiler/runner, check input lengths,
-freeze the precise plan and then execute under existing user authorization.
-This manifest alone does not authorize arbitrary retries or prompt searches.
+The compiled local inputs total **77,528 tokens**. Jev serialized request UTF-8
+bytes plus 4,096 per request total **1,416,558 planning units**, below the
+2,000,000 cap; this proxy is not actual billed tokens. Next: execute the committed
+freeze under existing authorization. No arbitrary retries or prompt searches.
+
+The runner uses a three-class adaptation of this repository's durable journal
+and native-choice diagnostics, and adapts its earlier Qwen single-prefill reader.
+Old studies and their frozen source files are unchanged; no third-party code was
+forked or newly executed to create this runner.
 
 ## Reproduce the preparation
 

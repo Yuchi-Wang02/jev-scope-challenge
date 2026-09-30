@@ -82,7 +82,8 @@ This is source consistency, not model accuracy or independent semantic validatio
 Its [next comparison design](research/qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md) is not run.
 The [selected next cohort](research/qa4pc-stage-attribution/README.md) has 12 trees,
 24 scenarios and 56 condition questions after whole-tree overlap exclusions;
-no compiled query grid or model predictions yet.
+its 524-job grid (512 main plus 12 smoke) is now frozen, with zero model predictions
+at freeze time. See its protocol for fixed input budgets and zero automatic retries.
 
 The computational analyses below add no model forwards or independent human annotations. A large number of
 derived predictions is not a larger evaluated dataset.
