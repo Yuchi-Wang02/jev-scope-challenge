@@ -4,6 +4,12 @@
 keep the record block and policy fixed, then ask about either of two requests.
 Both request IDs have the same prefix; half the scenes use near-matching IDs.
 
+[Open the interactive input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
+to switch all 24 pairs /48 views and inspect their exact planned prompts.
+References are computed from visible text using the declared grammar; the page
+contains no model predictions and makes no inference call. Its references are
+public and available on demand, so it is not a blinded review instrument.
+
 Read the new [execution protocol](EXECUTION_PROTOCOL.md),
 [execution manifest](preparation/execution_manifest.json), and
 [500-row execution plan](preparation/execution_queries.jsonl).
@@ -44,3 +50,8 @@ The earlier design manifests describe their creation-time state as
 provides the later runner/scorer freeze. `analyze.py --verify` requires complete
 real evidence and intentionally fails before a run; CI uses the preparation
 and execution-freeze checks plus in-memory software tests instead.
+
+The explorer can also be opened from the standalone [HTML file](../../docs/request_switch.html).
+`python docs/build_request_switch.py verify` checks that it exactly matches the
+frozen inputs and its [template](../../docs/request_switch_template.html), without
+reading scientific model outputs or changing the execution freeze.

@@ -40,6 +40,7 @@ python research/request-ownership/prepare.py verify
 python research/request-ownership/execution.py verify-freeze
 python docs/build_four_line_challenge.py verify
 python docs/build_risk_tradeoff.py verify
+python docs/build_request_switch.py verify
 python verify_publication.py
 ```
 
@@ -51,6 +52,9 @@ The request-ownership check verifies an unscored execution freeze. Its scorer
 requires complete real evidence and intentionally cannot produce model results
 before an approved run. In-memory software fixtures test the scorer without
 writing model records or calling a model.
+The request-switch explorer is also checked against all 24 pairs, 48 visible
+texts and 500 planned prompts. Its program references are recomputed from the
+visible grammar, and the builder never reads scientific model predictions.
 The four-line challenge verifier rebuilds the standalone page from the pinned
 S01 input texts and all 32 saved S01 model decisions across backends, mappings
 and rounds. It also recomputes the four grammar-specific code decisions and

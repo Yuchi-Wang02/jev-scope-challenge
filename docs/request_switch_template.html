@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore 24 paired decision scenes. Keep the records fixed, change the requested ID, and inspect program-derived references. No model predictions are shown.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:,">
+<title>Same records. Different request. — Target-switch explorer</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d353b;background:#f5f2eb;color-scheme:light;--green:#196853;--line:#cbd4ca;--muted:#526963}
+*{box-sizing:border-box}body{margin:0}a{color:var(--green)}button,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.4}button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #d8792d;outline-offset:3px}[hidden]{display:none!important}.shell{max-width:1240px;margin:auto;padding:0 28px}.hero{background:#17313c;color:#f9f7ed}.hero-inner{padding-top:43px;padding-bottom:38px;display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:end}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#8dd9c2}.hero h1{font-size:clamp(40px,5.2vw,67px);line-height:1.02;letter-spacing:-.055em;margin:17px 0 20px}.hero h1 span{color:#f6b978}.hero p{font-size:16px;line-height:1.6;max-width:670px;color:#d3e0d9;margin:0}.hero-note{border:1px solid #557873;border-radius:17px;padding:22px;background:#203f48}.hero-note .numbers{font-size:29px;line-height:1.3;letter-spacing:-.04em;color:#fff;font-weight:750;margin:7px 0 13px}.hero-note p{font-size:13px}.hero-note a{color:#a9e3ca}.main{padding-top:28px;padding-bottom:42px}.toolbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:end}.select-wrap label{font-size:12px;color:var(--muted);display:block;margin-bottom:7px;font-weight:750}.toolbar select{width:100%;min-height:44px;border:1px solid #9db0a5;border-radius:8px;background:white;color:#203f37;padding:9px 12px}.nav{min-height:44px;min-width:84px;border:1px solid #a3b6aa;background:transparent;color:#315d4e;border-radius:8px;padding:10px 14px;font-size:13px;font-weight:750}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 23px}.badge{font-size:11px;font-weight:750;padding:6px 9px;border-radius:6px;border:1px solid #c6d3c6;color:#4b6456;background:#edf3e9}.grid{display:grid;grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);gap:22px;align-items:start}.panel{background:#fffdf9;border:1px solid var(--line);border-radius:15px;overflow:hidden}.panel-head{padding:22px 24px 16px}.panel-head h2{font-size:23px;letter-spacing:-.035em;margin:0 0 7px}.hint{font-size:13px;line-height:1.55;color:var(--muted);margin:0}.switcher{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:17px 0}.target-button{background:#f8faf5;border:1px solid #aebdac;border-radius:10px;text-align:left;padding:12px;color:#294a3f;overflow-wrap:anywhere}.target-button small{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}.target-button code{font:700 13px ui-monospace,Consolas,monospace;line-height:1.4}.target-button[aria-pressed=true]{border:2px solid var(--green);background:#e6f1e8;padding:11px;box-shadow:0 0 0 1px #c5dfce}.target-header{background:#183f44;color:#f5f6ed;padding:15px 24px;font:13px/1.7 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.record-list{list-style:none;padding:7px 24px 18px;margin:0}.record{border-bottom:1px solid #e1e5da;padding:13px 0;display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px}.record:last-child{border-bottom:0}.line-no{font-size:11px;color:#708278;padding-top:3px}.record-text{font:13px/1.65 ui-monospace,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.owner-tag{display:block;font-size:10px;font-weight:750;letter-spacing:.02em;margin-top:6px;color:var(--green)}.record.foreign .record-text{color:#6d716c}.record.foreign .owner-tag{color:#83502b}.record.target .record-text{background:#edf5ec;box-shadow:0 0 0 4px #edf5ec;border-radius:2px}.tools{padding:15px 24px;border-top:1px solid #dce4d9;background:#f2f6ef}.check{font-size:12px;font-weight:650;display:flex;gap:8px;align-items:center;line-height:1.5}.check input{width:16px;height:16px;accent-color:var(--green);flex-shrink:0}.policy{margin:0;padding:21px 24px;background:#f4f6ef;border-top:1px solid #d5dfd0}.policy h3{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#496251;margin:0 0 11px}.policy pre{font-family:inherit;font-size:13px;line-height:1.65;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.side{display:grid;gap:19px}.body{padding:0 24px 23px}.primary{border:0;border-radius:8px;background:#f0b573;color:#243b3b;padding:12px 16px;font-size:13px;font-weight:800}.secondary{background:white;border:1px solid #9bb2a2;border-radius:8px;color:#265d46;padding:10px 14px;font-size:12px;font-weight:750}.refs{margin:18px 0 0;padding-top:15px;border-top:1px solid var(--line)}.ref-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;margin:10px 0;align-items:center}.ref-row code{overflow-wrap:anywhere}.action{font-size:11px;font-weight:800;padding:5px 8px;border-radius:5px;color:#1d6148;background:#e3f1e5}.action.insufficient{background:#f8edcf;color:#795711}.action.deny{background:#f8e7df;color:#964525}.rule{padding:15px 17px;background:#edf3e9;border-radius:9px;margin-top:16px;font-size:13px;line-height:1.55;color:#385846}.rule strong{color:#204834}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:13px 0 0}.query-label{display:block;font-size:12px;font-weight:750;color:#536756;margin-bottom:7px}.query-select{width:100%;padding:9px;border:1px solid #afbdab;background:white;border-radius:7px;font-size:12px;color:#2b4b3a}.query-meta{font-size:11px;line-height:1.5;color:#637561;margin:11px 0;overflow-wrap:anywhere}details{margin-top:13px}summary{font-size:13px;color:#23624a;font-weight:750;cursor:pointer}.prompt{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.6 ui-monospace,Consolas,monospace;background:#f0f4ea;border:1px solid #dbe3d4;border-radius:8px;padding:13px;max-height:430px;overflow:auto;margin-bottom:0}.copy-status{font-size:11px;color:#526c57;line-height:1.5}.fallback{width:100%;min-height:180px;margin-top:12px;font:11px/1.5 ui-monospace,Consolas,monospace;padding:10px;border:1px solid #a7baa7;border-radius:6px}.bottom{margin-top:27px;border-top:1px solid var(--line);padding-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.bottom h2{font-size:17px;letter-spacing:-.025em;margin:0 0 10px}.bottom p{font-size:12px;line-height:1.7;color:#506750;margin:8px 0}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}.links a{font-size:12px;font-weight:750}.hash{overflow-wrap:anywhere;font-family:ui-monospace,Consolas,monospace}.footer{border-top:1px solid var(--line);margin-top:23px;padding-top:17px;color:#64765f;font-size:11px;line-height:1.7}.skip{position:absolute;top:-80px;left:10px;z-index:2;padding:12px;background:white;color:#17313c}.skip:focus{top:10px}
+@media(max-width:870px){.hero-inner{grid-template-columns:1fr;padding-top:32px;gap:23px}.hero-note{max-width:590px}.grid{grid-template-columns:1fr}.bottom{grid-template-columns:1fr;gap:16px}.hero h1{font-size:51px}.shell{padding-left:22px;padding-right:22px}}
+@media(max-width:480px){.shell{padding-left:15px;padding-right:15px}.hero h1{font-size:40px}.hero p{font-size:14px}.hero-note .numbers{font-size:26px}.toolbar{grid-template-columns:1fr 1fr}.select-wrap{grid-row:1;grid-column:1/-1}.nav{min-width:0}.panel-head,.body{padding-left:17px;padding-right:17px}.record-list{padding-left:17px;padding-right:17px}.target-header,.policy,.tools{padding-left:17px;padding-right:17px}.target-button code{font-size:12px}.switcher{gap:8px}.target-button{padding:10px}.target-button[aria-pressed=true]{padding:9px}.record-text{font-size:12px}.hero-note{padding:18px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the scene explorer</a>
+<header class="hero"><div class="shell hero-inner">
+  <div><div class="eyebrow">Prepared inputs · No model predictions</div><h1>Same records.<br><span>Different request.</span></h1><p>Nothing in the evidence changes. Only the requested ID does. Explore the paired inputs, then reveal the two program-derived reference answers.</p></div>
+  <aside class="hero-note"><div class="eyebrow">One controlled change</div><div class="numbers">24 pairs · 48 target views</div><p>Both IDs use the same prefix. In half the scenes, they differ by just one character. These are constructed examples with zero independent human annotations.</p></aside>
+</div></header>
+<main id="main" class="shell main">
+  <div class="toolbar"><button id="previous" class="nav" type="button">← Previous</button><div class="select-wrap"><label for="scene">Choose one of all 24 prepared scenes</label><select id="scene"></select></div><button id="next" class="nav" type="button">Next →</button></div>
+  <div id="scene-meta" class="meta" aria-live="polite"></div>
+  <div class="grid">
+    <section class="panel" aria-labelledby="records-heading"><div class="panel-head"><h2 id="records-heading">One shared record block</h2><p class="hint">Switch the target below. The records and policy stay exactly the same.</p><div id="targets" class="switcher" role="group" aria-label="Choose the requested target"></div></div><div id="target-header" class="target-header" aria-live="polite"></div><ol id="records" class="record-list"></ol><div class="tools"><label class="check"><input id="highlight" type="checkbox">Show the text-ID gate's ownership selection</label><p class="hint" style="font-size:11px;margin-top:9px">This optional overlay compares explicit IDs in visible text. It keeps every record on screen and is not a model judgment.</p></div><div class="policy"><h3>Policy — also unchanged</h3><pre id="policy"></pre></div></section>
+    <div class="side">
+      <section class="panel" aria-labelledby="question-heading"><div class="panel-head"><h2 id="question-heading">Does the answer need to change?</h2><p class="hint">Read the rule and decide separately for each target: ALLOW, DENY, or INSUFFICIENT. INSUFFICIENT means the supplied evidence cannot determine whether to allow or deny.</p></div><div class="body"><button id="reveal" class="primary" type="button" aria-expanded="false" aria-controls="references">Reveal program references</button><div id="references" class="refs" hidden><div id="reference-rows"></div><p class="hint" style="font-size:11px">Computed from the displayed grammar by program rules. These are not model outputs or independent human labels.</p></div><div class="rule"><strong>The planned test: both targets must be correct.</strong><br>Changing an answer is not enough. A complete pair requires the correct decision on each view, with false commitments reported separately.</div></div></section>
+      <section class="panel" aria-labelledby="query-heading"><div class="panel-head"><h2 id="query-heading">Inspect the planned model input</h2><p class="hint">These are exact frozen prompts for the active target. Nothing is sent to a model by this page.</p></div><div class="body"><label for="query" class="query-label">Query from the 500-row scientific plan</label><select id="query" class="query-select"></select><p id="query-meta" class="query-meta"></p><details id="prompt-details"><summary>Show the exact prompt</summary><pre id="prompt" class="prompt"></pre></details><div class="controls"><button id="copy" class="secondary" type="button">Copy selected prompt</button><span id="copy-status" class="copy-status" role="status" aria-live="polite"></span></div><textarea id="copy-fallback" class="fallback" hidden readonly aria-label="Selected prompt for manual copying"></textarea><p class="hint" style="font-size:11px;margin-top:13px">Pasting this into another interface is an informal check. Comparable scores require the frozen model, candidate readout, full query grid and budget.</p></div></section>
+    </div>
+  </div>
+  <div class="bottom"><section><h2>What this preparation tests</h2><p>An earlier saved-output audit exposed a target/distractor ID-prefix shortcut. This design gives both requests the same prefix and holds the record block fixed while changing the requested owner. It reuses inspected sentence and policy grammar; it is not a fresh natural-language benchmark.</p><p>Implicit references, aliases, mixed-owner lines and contradictory target facts are outside these examples. The browser highlight is an ordinary explicit-ID equality rule.</p><div class="links"><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/fact-execution/VISIBLE_ID_GATE_AUDIT.md">Earlier audit and regressions</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/request-ownership/data/README.md">Data provenance</a></div></section><section><h2>Inputs to inspect, not scores to promote</h2><p>The frozen plan contains 500 scientific forwards /188,797 input tokens, plus two one-token unscored warmups. Those are planned costs, not measurements from this page. No model predictions, accuracy leaderboard or user annotation collection are included here.</p><p>The references can be inspected in the embedded data and public source, so this page is not a blinded review tool. Every interaction stays in the browser; there are no inference, analytics or submission requests.</p><div class="links"><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/request-ownership/EXECUTION_PROTOCOL.md">Execution protocol</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/research/request-ownership/preparation/execution_queries.jsonl">All planned queries</a><a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/issues/new/choose">Challenge an example</a></div></section></div>
+  <footer class="footer"><p>Prepared inputs and program references by Yuchi Wang / Jev Scope Challenge, with AI-assisted construction. Original data: CC BY 4.0; original code: MIT. The planned local model uses a historical upstream-trained Kev adapter; Laya is related work only. <a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/blob/main/THIRD_PARTY_NOTICES.md">Credits and exact upstream versions</a> · <a href="https://github.com/Yuchi-Wang02/jev-scope-challenge">Research repository</a> · <a href="index.html">Original four-message challenge</a></p><p>Execution configuration: <span id="config-hash" class="hash"></span></p></footer>
+</main>
+<noscript><p style="padding:24px">JavaScript is needed to switch between the embedded scenes. All inputs and program-derived references are also available in the <a href="https://github.com/Yuchi-Wang02/jev-scope-challenge/tree/main/research/request-ownership">research directory</a>. This page contains no model predictions.</p></noscript>
+<script id="request-switch-data" type="application/json">__REQUEST_SWITCH_DATA__</script>
+<script>
+'use strict';
+(() => {
+  const data = JSON.parse(document.getElementById('request-switch-data').textContent);
+  const $ = id => document.getElementById(id);
+  const familyNames = {joint_approval:'Joint approval',reversal_exception:'Reversal exception',route_lookup:'Route lookup'};
+  const armNames = {joint_full:'Joint route · full records',direct_full:'Direct · full records',direct_filtered:'Direct · ID-filtered records'};
+  let sceneIndex = 0, targetIndex = 0;
+  function add(parent,tag,className,text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    parent.appendChild(element); return element;
+  }
+  data.scenes.forEach((scene,index) => {
+    const near = scene.id_relation === 'one_character_near';
+    const option = add($('scene'),'option','',`${String(index+1).padStart(2,'0')} / 24 · ${familyNames[scene.family]} · ${near?'IDs differ by 1 character':'IDs differ by 5 characters'}`);
+    option.value = scene.parent;
+  });
+  $('config-hash').textContent = data.config_hash;
+  function selectedView() { return data.scenes[sceneIndex].views[targetIndex]; }
+  function readHash() {
+    let value;
+    try { value = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
+    for (let index=0;index<data.scenes.length;index++) {
+      const target = data.scenes[index].views.findIndex(view => view.view_id === value);
+      if (target >= 0) { sceneIndex=index; targetIndex=target; return; }
+    }
+  }
+  function updateHash() {
+    try { history.replaceState(null,'','#'+encodeURIComponent(selectedView().view_id)); } catch (_) { /* Local file previews may restrict history. */ }
+  }
+  function renderRecords() {
+    const view = selectedView(), highlight = $('highlight').checked;
+    $('records').replaceChildren();
+    view.lines.forEach(line => {
+      const item = add($('records'),'li','record'+(highlight?(line.status==='KEEP'?' target':line.status==='DROP'?' foreign':''):''));
+      add(item,'span','line-no',String(line.line_index+1).padStart(2,'0'));
+      const body = add(item,'div','');
+      add(body,'pre','record-text',line.text);
+      if (highlight) add(body,'span','owner-tag',line.status === 'KEEP' ? 'KEEP · this requested ID' : line.status === 'DROP' ? 'DROP · another explicit ID' : 'UNKNOWN · retained');
+    });
+  }
+  function renderQuery() {
+    const query = selectedView().queries[Number($('query').value)];
+    $('prompt').textContent = query.prompt;
+    $('query-meta').textContent = `${query.input_tokens} input tokens · ${query.order.length} candidate choices · ${query.query_id}`;
+    $('copy-status').textContent = '';
+    $('copy-fallback').hidden = true;
+    $('copy-fallback').value = query.prompt;
+  }
+  function renderTarget() {
+    const scene = data.scenes[sceneIndex], view = selectedView();
+    $('targets').replaceChildren();
+    scene.views.forEach((item,index) => {
+      const button = add($('targets'),'button','target-button');
+      button.type='button'; button.setAttribute('aria-pressed',String(index===targetIndex));
+      button.setAttribute('aria-label',`Request ${index+1}: ${item.target}`);
+      add(button,'small','',`Request ${index+1}${index===targetIndex?' · selected':''}`);
+      add(button,'code','',item.target);
+      button.addEventListener('click',() => {targetIndex=index;renderTarget();$('targets').children[index].focus();});
+    });
+    $('target-header').textContent = view.state.split('\n')[0];
+    $('policy').textContent = view.policy;
+    renderRecords();
+    $('query').replaceChildren();
+    view.queries.forEach((query,index) => {
+      const label = armNames[query.arm]+(query.arm==='joint_full'?` · line ${query.line_index+1}`:` · order ${query.mapping+1}`);
+      const option = add($('query'),'option','',label); option.value=String(index);
+    });
+    $('query').value = String(view.queries.findIndex(query => query.arm==='direct_full' && query.mapping===0));
+    renderQuery(); updateHash();
+  }
+  function renderScene() {
+    const scene=data.scenes[sceneIndex];
+    $('scene').value=scene.parent;
+    $('previous').disabled=sceneIndex===0; $('next').disabled=sceneIndex===data.scenes.length-1;
+    $('scene-meta').replaceChildren();
+    [familyNames[scene.family],scene.id_relation==='one_character_near'?'One-character ID contrast':'Five-character ID contrast',`Pair ${sceneIndex+1} of 24`].forEach(value => add($('scene-meta'),'span','badge',value));
+    $('references').hidden=true; $('reveal').textContent='Reveal program references'; $('reveal').setAttribute('aria-expanded','false');
+    $('reference-rows').replaceChildren();
+    scene.views.forEach(view => {const row=add($('reference-rows'),'div','ref-row');add(row,'code','',view.target);add(row,'span','action '+view.program_reference.toLowerCase(),view.program_reference);});
+    renderTarget();
+  }
+  $('scene').addEventListener('change',() => {sceneIndex=data.scenes.findIndex(scene=>scene.parent===$('scene').value);targetIndex=0;renderScene();});
+  $('previous').addEventListener('click',()=>{if(sceneIndex>0){sceneIndex--;targetIndex=0;renderScene();}});
+  $('next').addEventListener('click',()=>{if(sceneIndex<data.scenes.length-1){sceneIndex++;targetIndex=0;renderScene();}});
+  $('highlight').addEventListener('change',renderRecords);
+  $('query').addEventListener('change',renderQuery);
+  $('reveal').addEventListener('click',()=>{const reveal=$('references').hidden;$('references').hidden=!reveal;$('reveal').textContent=reveal?'Hide program references':'Reveal program references';$('reveal').setAttribute('aria-expanded',String(reveal));});
+  $('copy').addEventListener('click',async()=>{
+    const text=selectedView().queries[Number($('query').value)].prompt;
+    try {await navigator.clipboard.writeText(text);$('copy-status').textContent='Exact selected prompt copied. No model was called.';}
+    catch (_) {$('copy-fallback').value=text;$('copy-fallback').hidden=false;$('copy-fallback').focus();$('copy-fallback').select();$('copy-status').textContent='Clipboard unavailable; select and copy the exact text below.';}
+  });
+  window.addEventListener('hashchange',()=>{readHash();renderScene();});
+  readHash();renderScene();
+})();
+</script>
+</body>
+</html>

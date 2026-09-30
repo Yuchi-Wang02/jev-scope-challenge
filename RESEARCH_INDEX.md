@@ -59,6 +59,10 @@ Its model outputs remain zero. A [guarded execution freeze](research/request-own
 now binds the 500-query union, 188,797 scientific input tokens, two unscored
 warmups, runner, scorer and paired endpoint. A distinct local-run approval is
 pending; completed prior-run approvals do not transfer to these new scenes.
+The [input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
+displays all paired texts and their program references, without reading model
+outputs. Its visible-ID overlay is a software rule; the page is not a blinded
+human-review tool or a new evaluation result.
 The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
 related extraction work and demonstrates that one exclusive label cannot carry
 two facts from the same line. That software test is not a model measurement.

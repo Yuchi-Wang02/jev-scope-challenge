@@ -104,6 +104,9 @@ plans remain unscored. The [guarded execution protocol](research/request-ownersh
 now freezes 500 scientific forwards /188,797 input tokens plus two unscored
 warmups, with a paired scorer and overwrite protection. A distinct local run
 approval is pending; this is not independent confirmation.
+The [interactive input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
+lets you switch every target, inspect exact planned prompts and reveal
+program-derived references. It displays prepared inputs, with no model predictions.
 
 ## Inspect or reproduce without an API key
 
