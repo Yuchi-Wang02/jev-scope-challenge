@@ -1,0 +1,16 @@
+{
+  "execution": "payment-ownership-v0.2",
+  "created_at_utc": "2026-09-30T04:58:05.795946+00:00",
+  "primary_outputs_seen": 0,
+  "smoke_outputs_seen": 6,
+  "smoke_correct": 5,
+  "original_freeze_commit": "0569f8d",
+  "sha256_lf": {
+    "run_api_v02.py": "70d57ef899de752a449d3c87c5e4c1cbcb4f36c326c66f031a058ce3e102ec28",
+    "EXECUTION_V02.md": "c614e36d5c0d71a8bd52c35c1aa20c65de6bcfd40015e2aa601b1751a77e88a8",
+    "SMOKE_AUDIT.md": "5e7c8f76422d68b9916fd03937ecc32d12b6388a8bd97d0e54bc53c9d6b1e8bf",
+    "results/checkpoints/v01_smoke_responses.jsonl": "a3ce6ae5e5e55a63e36ded411bb4ac0addbdc8ad225145e62299b768871a7113"
+  },
+  "shared_total_attempt_cap": 405,
+  "shared_planned_input_unit_cap": 2000000
+}

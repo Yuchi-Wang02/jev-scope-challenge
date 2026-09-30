@@ -29,11 +29,11 @@ main missing-evidence cases; unknown-state reliability cannot be estimated.
 
 ## Actual execution
 
-- Smoke: 0/0; main terminal records: 0/192.
-- HTTP attempts: 0; retries: 0; unknown-usage attempts: 0.
-- Provider-reported input tokens: 0; conservative planned input units used: 0.
-- Usage-estimated cost: $0.00000000, at $0.042/M input tokens. This is not an invoice.
-- Median successful request latency: None seconds; includes network/service latency.
+- Smoke: 5/6; main terminal records: 0/192.
+- HTTP attempts: 6; retries: 0; unknown-usage attempts: 0.
+- Provider-reported input tokens: 4,661; conservative planned input units used: 12,668.
+- Usage-estimated cost: $0.00019576, at $0.042/M input tokens. This is not an invoice.
+- Median successful request latency: 0.1392291500014835 seconds; includes network/service latency.
 - Full-input option-order disagreements: 0/48.
 
 All raw responses, probabilities, timing, failures and accounting events are retained.

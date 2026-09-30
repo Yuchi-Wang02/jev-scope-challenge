@@ -4,6 +4,12 @@
 This directory contains new live-Jev preparation, not a tau-bench agent evaluation.
 Read [the frozen protocol](PROTOCOL.md) and, after execution, [the results](RESULTS.md).
 
+**Execution amendment:** v0.1 stopped after an ambiguous-target smoke error.
+All six smoke responses were retained (5/6 correct). The subsequent
+[v0.2 amendment](EXECUTION_V02.md) changes the launch prerequisite from perfect
+semantic accuracy to valid API responses, before any main-grid output is observed.
+The [stop audit](SMOKE_AUDIT.md) records the error and outcome-aware change.
+
 ## What changes
 
 Twelve distinct simulated users each supply two source orders. Switching the
@@ -58,9 +64,11 @@ python research/payment-ownership/report.py --verify
 python research/payment-ownership/review_check.py research/payment-ownership/review/reviewer_A.csv
 ```
 
-The live runner requires an authorized API key supplied privately, validates the
-freeze, appends all attempts, and resumes only safely completed jobs. `--phase smoke`
-must finish before `--phase primary`. Do not overwrite published evidence to
+The live runners require an authorized API key supplied privately, validate their
+freezes, append all attempts, and resume only safely completed jobs. The original
+`run_api.py` preserves the failed all-correct smoke prerequisite. The amended
+`run_api_v02.py --phase primary` uses the separately frozen execution amendment.
+Do not overwrite published evidence to
 replicate: use an isolated copy with a new run identity and output location.
 
 The [nearest-work assessment](RELATED_WORK.md) distinguishes replication,
