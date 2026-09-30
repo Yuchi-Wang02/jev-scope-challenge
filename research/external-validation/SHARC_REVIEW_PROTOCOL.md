@@ -88,3 +88,44 @@ reviewer independence:
 python research/external-validation/prepare_sharc_review.py check-review \
   --review-csv .local/sharc-train-contrast-review-v0.1/blank_review.csv
 ```
+
+When two **separate completed** reviewer CSVs exist, the
+[reconciliation tool](review_reconcile.py) can compare them:
+
+```bash
+python research/external-validation/review_reconcile.py \
+  --review-a .local/reviewer-a.csv --review-b .local/reviewer-b.csv
+```
+
+It refuses missing items, incomplete rows and the same declared reviewer ID
+in both files. Only then does it reveal pair links in the private
+`adjudication_queue.json`, alongside both reviewers' actions and reasons; it
+also creates a blank `adjudication_blank.csv`. Neither output contains source
+`answer`/`evidence`, provisional stratum or primary/reserve role. The tool
+does not decide which reviewer is right, fill adjudicated actions, activate
+reserves or open model inference. Distinct names in CSVs cannot prove that two
+humans worked independently. **No reviewer CSV or adjudication output exists
+yet.**
+
+An adjudicator later saves a *copy* of `adjudication_blank.csv` with a final
+action for both items, `VALID` or `INVALID` for the pair, a reason, identity
+and date on all 30 rows. `VALID` requires two clear actions; persistent
+`UNCLEAR` requires `INVALID`. The [finalizer](review_finalize.py) checks that
+the saved pair queue matches both original reviewer files, validates every
+adjudication row, and replaces invalid primaries with the first valid reserve
+in the same frozen source stratum. It stops when reserves run out. Clear human
+actions that disagree with the source remain eligible, including a pair
+whose two adjudicated actions are the same.
+
+```bash
+python research/external-validation/review_finalize.py \
+  --review-a .local/reviewer-a.csv --review-b .local/reviewer-b.csv \
+  --adjudication .local/adjudicator.csv
+```
+
+This writes `reviewed_selection.json` privately and refuses to overwrite a
+different prior result. It is an integrity check on declared reviews and
+reserve order, not proof that the reviewers were independent or correct.
+Even a complete reviewed selection leaves model inference closed until a
+separate experiment protocol is frozen and approved. The finalizer has been
+tested on synthetic fixtures only; no human adjudication has occurred.

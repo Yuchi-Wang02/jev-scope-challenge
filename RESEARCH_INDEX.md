@@ -45,8 +45,9 @@ Its [one-answer-flip inventory](research/external-validation/SHARC_PAIR_AUDIT.md
 counts exact train-only contrasts, excludes one contradictory visible-input
 group and likewise contains no model evaluation.
 The [ShARC review protocol](research/external-validation/SHARC_REVIEW_PROTOCOL.md)
-freezes 30 train-only pairs as 60 blinded items. Its annotations and model
-scores remain zero.
+freezes 30 train-only pairs as 60 blinded items and defines a two-reviewer,
+adjudication and reserve-selection workflow. Its annotations and model scores
+remain zero.
 
 Different tables have different denominators. Do not compare a six-view
 complete-parent score with an eighteen-order complete-parent score, add repeated

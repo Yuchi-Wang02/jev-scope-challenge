@@ -91,14 +91,21 @@ def safe_history(row):
             for turn in row['history']]
 
 
+def item_id(row):
+    return digest([STUDY, 'item-id', str(row['tree_id']),
+                   str(row['utterance_id'])])[:24]
+
+
+def pair_id(candidate):
+    return digest([STUDY, 'adjudication-pair', identity(candidate)])[:24]
+
+
 def review_pack(selected):
     items = []
     for candidate in selected:
         for row in candidate['rows']:
             items.append({
-                'item_id': digest([STUDY, 'item-id',
-                                   str(row['tree_id']),
-                                   str(row['utterance_id'])])[:24],
+                'item_id': item_id(row),
                 'snippet': str(row['snippet']),
                 'question': str(row['question']),
                 'scenario': str(row['scenario']),
@@ -131,6 +138,10 @@ def blank_csv(pack):
 def validate_review_rows(header, rows, pack):
     if tuple(header or ()) != CSV_FIELDS:
         raise ValueError('Unexpected review CSV columns')
+    if any(set(row) != set(CSV_FIELDS) or
+           any(not isinstance(value, str) for value in row.values())
+           for row in rows):
+        raise ValueError('Malformed review CSV row')
     expected = {item['item_id'] for item in pack['items']}
     observed = [row['item_id'] for row in rows]
     if (len(observed) != len(expected) or len(set(observed)) != len(observed)
@@ -163,7 +174,7 @@ def check_review_csv(path, pack):
         return validate_review_rows(reader.fieldnames, list(reader), pack)
 
 
-def prepare():
+def selected_pairs():
     rows = load_train_rows()
     summary = summarize(rows)
     _, _, kept = dedupe_visible(rows)
@@ -171,7 +182,11 @@ def prepare():
     if {key: len(value) for key, value in candidates.items()} != {
             'No/Yes': 1897, 'ASK/No': 553, 'ASK/Yes': 587}:
         raise ValueError('Pinned changed-action pool drift')
-    selected = choose(candidates)
+    return summary, choose(candidates)
+
+
+def prepare_with_selection():
+    summary, selected = selected_pairs()
     pack = review_pack(selected)
     csv_bytes = blank_csv(pack)
     canonical_selection = [
@@ -204,7 +219,11 @@ def prepare():
         'source_rows_committed': 0,
         'source_and_item_ids_committed': 0,
     }
-    return manifest, readable(pack), csv_bytes
+    return manifest, readable(pack), csv_bytes, selected
+
+
+def prepare():
+    return prepare_with_selection()[:3]
 
 
 def verify_manifest(manifest):

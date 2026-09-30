@@ -85,6 +85,10 @@ class SharcReviewPreparationTests(unittest.TestCase):
         blank[1]['action'] = 'Yes'
         with self.assertRaises(ValueError):
             validate_review_rows(CSV_FIELDS, blank, pack)
+        malformed = [dict(blank[0]), dict(blank[1])]
+        malformed[1]['date'] = None
+        with self.assertRaises(ValueError):
+            validate_review_rows(CSV_FIELDS, malformed, pack)
 
 
 if __name__ == '__main__':
