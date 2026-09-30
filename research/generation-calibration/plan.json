@@ -1,0 +1,912 @@
+{
+  "purpose": "synthetic interface development only",
+  "human_reviews": 0,
+  "cases": [
+    {
+      "id": "copy",
+      "task": "Copy the symbol field as the answer letter.",
+      "data": {
+        "symbol": "C"
+      },
+      "options": null,
+      "prompt": "Copy the symbol field as the answer letter.\nData: {\"symbol\":\"C\"}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "C"
+    },
+    {
+      "id": "threshold",
+      "task": "Eligible means age is at least 18. Choose A for eligible, B for ineligible, C for missing age.",
+      "data": {
+        "age": 17
+      },
+      "options": null,
+      "prompt": "Eligible means age is at least 18. Choose A for eligible, B for ineligible, C for missing age.\nData: {\"age\":17}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "B"
+    },
+    {
+      "id": "missing",
+      "task": "Eligible means age is at least 18. Choose A for eligible, B for ineligible, C for missing age. A null age is missing.",
+      "data": {
+        "age": null
+      },
+      "options": null,
+      "prompt": "Eligible means age is at least 18. Choose A for eligible, B for ineligible, C for missing age. A null age is missing.\nData: {\"age\":null}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "C"
+    },
+    {
+      "id": "sum",
+      "task": "Choose the sum of the numbers.",
+      "data": [
+        14,
+        9
+      ],
+      "options": {
+        "A": 23,
+        "B": 21,
+        "C": 25
+      },
+      "prompt": "Choose the sum of the numbers.\nData: [14,9]\nOptions: {\"A\":23,\"B\":21,\"C\":25}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "A"
+    },
+    {
+      "id": "intersection",
+      "task": "Choose the list of names occurring in both lists.",
+      "data": [
+        [
+          "birch",
+          "cedar"
+        ],
+        [
+          "cedar",
+          "elm"
+        ]
+      ],
+      "options": {
+        "A": [
+          "birch"
+        ],
+        "B": [
+          "cedar"
+        ],
+        "C": []
+      },
+      "prompt": "Choose the list of names occurring in both lists.\nData: [[\"birch\",\"cedar\"],[\"cedar\",\"elm\"]]\nOptions: {\"A\":[\"birch\"],\"B\":[\"cedar\"],\"C\":[]}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "B"
+    },
+    {
+      "id": "latest",
+      "task": "The event with the greatest integer sequence number gives the current status. Choose that status.",
+      "data": [
+        {
+          "seq": 2,
+          "status": "denied"
+        },
+        {
+          "seq": 1,
+          "status": "granted"
+        }
+      ],
+      "options": {
+        "A": "denied",
+        "B": "granted",
+        "C": "unknown"
+      },
+      "prompt": "The event with the greatest integer sequence number gives the current status. Choose that status.\nData: [{\"seq\":2,\"status\":\"denied\"},{\"seq\":1,\"status\":\"granted\"}]\nOptions: {\"A\":\"denied\",\"B\":\"granted\",\"C\":\"unknown\"}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "A"
+    },
+    {
+      "id": "conjunction",
+      "task": "A means both switches are true. B means at least one is false. C means a switch is missing.",
+      "data": {
+        "left": true,
+        "right": false
+      },
+      "options": null,
+      "prompt": "A means both switches are true. B means at least one is false. C means a switch is missing.\nData: {\"left\":true,\"right\":false}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "B"
+    },
+    {
+      "id": "minimum",
+      "task": "Choose the smallest number in the data.",
+      "data": [
+        9,
+        3,
+        7
+      ],
+      "options": {
+        "A": 3,
+        "B": 7,
+        "C": 9
+      },
+      "prompt": "Choose the smallest number in the data.\nData: [9,3,7]\nOptions: {\"A\":3,\"B\":7,\"C\":9}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "A"
+    },
+    {
+      "id": "lookup",
+      "task": "Choose the color of record R038. Use the exact ID.",
+      "data": [
+        {
+          "id": "R000",
+          "color": "green"
+        },
+        {
+          "id": "R001",
+          "color": "amber"
+        },
+        {
+          "id": "R002",
+          "color": "blue"
+        },
+        {
+          "id": "R003",
+          "color": "green"
+        },
+        {
+          "id": "R004",
+          "color": "amber"
+        },
+        {
+          "id": "R005",
+          "color": "blue"
+        },
+        {
+          "id": "R006",
+          "color": "green"
+        },
+        {
+          "id": "R007",
+          "color": "amber"
+        },
+        {
+          "id": "R008",
+          "color": "blue"
+        },
+        {
+          "id": "R009",
+          "color": "green"
+        },
+        {
+          "id": "R010",
+          "color": "amber"
+        },
+        {
+          "id": "R011",
+          "color": "blue"
+        },
+        {
+          "id": "R012",
+          "color": "green"
+        },
+        {
+          "id": "R013",
+          "color": "amber"
+        },
+        {
+          "id": "R014",
+          "color": "blue"
+        },
+        {
+          "id": "R015",
+          "color": "green"
+        },
+        {
+          "id": "R016",
+          "color": "amber"
+        },
+        {
+          "id": "R017",
+          "color": "blue"
+        },
+        {
+          "id": "R018",
+          "color": "green"
+        },
+        {
+          "id": "R019",
+          "color": "amber"
+        },
+        {
+          "id": "R020",
+          "color": "blue"
+        },
+        {
+          "id": "R021",
+          "color": "green"
+        },
+        {
+          "id": "R022",
+          "color": "amber"
+        },
+        {
+          "id": "R023",
+          "color": "blue"
+        },
+        {
+          "id": "R024",
+          "color": "green"
+        },
+        {
+          "id": "R025",
+          "color": "amber"
+        },
+        {
+          "id": "R026",
+          "color": "blue"
+        },
+        {
+          "id": "R027",
+          "color": "green"
+        },
+        {
+          "id": "R028",
+          "color": "amber"
+        },
+        {
+          "id": "R029",
+          "color": "blue"
+        },
+        {
+          "id": "R030",
+          "color": "green"
+        },
+        {
+          "id": "R031",
+          "color": "amber"
+        },
+        {
+          "id": "R032",
+          "color": "blue"
+        },
+        {
+          "id": "R033",
+          "color": "green"
+        },
+        {
+          "id": "R034",
+          "color": "amber"
+        },
+        {
+          "id": "R035",
+          "color": "blue"
+        },
+        {
+          "id": "R036",
+          "color": "green"
+        },
+        {
+          "id": "R037",
+          "color": "amber"
+        },
+        {
+          "id": "R038",
+          "color": "blue"
+        },
+        {
+          "id": "R039",
+          "color": "green"
+        },
+        {
+          "id": "R040",
+          "color": "amber"
+        },
+        {
+          "id": "R041",
+          "color": "blue"
+        },
+        {
+          "id": "R042",
+          "color": "green"
+        },
+        {
+          "id": "R043",
+          "color": "amber"
+        },
+        {
+          "id": "R044",
+          "color": "blue"
+        },
+        {
+          "id": "R045",
+          "color": "green"
+        },
+        {
+          "id": "R046",
+          "color": "amber"
+        },
+        {
+          "id": "R047",
+          "color": "blue"
+        },
+        {
+          "id": "R048",
+          "color": "green"
+        },
+        {
+          "id": "R049",
+          "color": "amber"
+        },
+        {
+          "id": "R050",
+          "color": "blue"
+        },
+        {
+          "id": "R051",
+          "color": "green"
+        },
+        {
+          "id": "R052",
+          "color": "amber"
+        },
+        {
+          "id": "R053",
+          "color": "blue"
+        },
+        {
+          "id": "R054",
+          "color": "green"
+        },
+        {
+          "id": "R055",
+          "color": "amber"
+        },
+        {
+          "id": "R056",
+          "color": "blue"
+        },
+        {
+          "id": "R057",
+          "color": "green"
+        },
+        {
+          "id": "R058",
+          "color": "amber"
+        },
+        {
+          "id": "R059",
+          "color": "blue"
+        },
+        {
+          "id": "R060",
+          "color": "green"
+        },
+        {
+          "id": "R061",
+          "color": "amber"
+        },
+        {
+          "id": "R062",
+          "color": "blue"
+        },
+        {
+          "id": "R063",
+          "color": "green"
+        },
+        {
+          "id": "R064",
+          "color": "amber"
+        },
+        {
+          "id": "R065",
+          "color": "blue"
+        },
+        {
+          "id": "R066",
+          "color": "green"
+        },
+        {
+          "id": "R067",
+          "color": "amber"
+        },
+        {
+          "id": "R068",
+          "color": "blue"
+        },
+        {
+          "id": "R069",
+          "color": "green"
+        },
+        {
+          "id": "R070",
+          "color": "amber"
+        },
+        {
+          "id": "R071",
+          "color": "blue"
+        },
+        {
+          "id": "R072",
+          "color": "green"
+        },
+        {
+          "id": "R073",
+          "color": "amber"
+        },
+        {
+          "id": "R074",
+          "color": "blue"
+        },
+        {
+          "id": "R075",
+          "color": "green"
+        },
+        {
+          "id": "R076",
+          "color": "amber"
+        },
+        {
+          "id": "R077",
+          "color": "blue"
+        },
+        {
+          "id": "R078",
+          "color": "green"
+        },
+        {
+          "id": "R079",
+          "color": "amber"
+        },
+        {
+          "id": "R080",
+          "color": "blue"
+        },
+        {
+          "id": "R081",
+          "color": "green"
+        },
+        {
+          "id": "R082",
+          "color": "amber"
+        },
+        {
+          "id": "R083",
+          "color": "blue"
+        },
+        {
+          "id": "R084",
+          "color": "green"
+        },
+        {
+          "id": "R085",
+          "color": "amber"
+        },
+        {
+          "id": "R086",
+          "color": "blue"
+        },
+        {
+          "id": "R087",
+          "color": "green"
+        },
+        {
+          "id": "R088",
+          "color": "amber"
+        },
+        {
+          "id": "R089",
+          "color": "blue"
+        },
+        {
+          "id": "R090",
+          "color": "green"
+        },
+        {
+          "id": "R091",
+          "color": "amber"
+        },
+        {
+          "id": "R092",
+          "color": "blue"
+        },
+        {
+          "id": "R093",
+          "color": "green"
+        },
+        {
+          "id": "R094",
+          "color": "amber"
+        },
+        {
+          "id": "R095",
+          "color": "blue"
+        }
+      ],
+      "options": {
+        "A": "green",
+        "B": "amber",
+        "C": "blue"
+      },
+      "prompt": "Choose the color of record R038. Use the exact ID.\nData: [{\"id\":\"R000\",\"color\":\"green\"},{\"id\":\"R001\",\"color\":\"amber\"},{\"id\":\"R002\",\"color\":\"blue\"},{\"id\":\"R003\",\"color\":\"green\"},{\"id\":\"R004\",\"color\":\"amber\"},{\"id\":\"R005\",\"color\":\"blue\"},{\"id\":\"R006\",\"color\":\"green\"},{\"id\":\"R007\",\"color\":\"amber\"},{\"id\":\"R008\",\"color\":\"blue\"},{\"id\":\"R009\",\"color\":\"green\"},{\"id\":\"R010\",\"color\":\"amber\"},{\"id\":\"R011\",\"color\":\"blue\"},{\"id\":\"R012\",\"color\":\"green\"},{\"id\":\"R013\",\"color\":\"amber\"},{\"id\":\"R014\",\"color\":\"blue\"},{\"id\":\"R015\",\"color\":\"green\"},{\"id\":\"R016\",\"color\":\"amber\"},{\"id\":\"R017\",\"color\":\"blue\"},{\"id\":\"R018\",\"color\":\"green\"},{\"id\":\"R019\",\"color\":\"amber\"},{\"id\":\"R020\",\"color\":\"blue\"},{\"id\":\"R021\",\"color\":\"green\"},{\"id\":\"R022\",\"color\":\"amber\"},{\"id\":\"R023\",\"color\":\"blue\"},{\"id\":\"R024\",\"color\":\"green\"},{\"id\":\"R025\",\"color\":\"amber\"},{\"id\":\"R026\",\"color\":\"blue\"},{\"id\":\"R027\",\"color\":\"green\"},{\"id\":\"R028\",\"color\":\"amber\"},{\"id\":\"R029\",\"color\":\"blue\"},{\"id\":\"R030\",\"color\":\"green\"},{\"id\":\"R031\",\"color\":\"amber\"},{\"id\":\"R032\",\"color\":\"blue\"},{\"id\":\"R033\",\"color\":\"green\"},{\"id\":\"R034\",\"color\":\"amber\"},{\"id\":\"R035\",\"color\":\"blue\"},{\"id\":\"R036\",\"color\":\"green\"},{\"id\":\"R037\",\"color\":\"amber\"},{\"id\":\"R038\",\"color\":\"blue\"},{\"id\":\"R039\",\"color\":\"green\"},{\"id\":\"R040\",\"color\":\"amber\"},{\"id\":\"R041\",\"color\":\"blue\"},{\"id\":\"R042\",\"color\":\"green\"},{\"id\":\"R043\",\"color\":\"amber\"},{\"id\":\"R044\",\"color\":\"blue\"},{\"id\":\"R045\",\"color\":\"green\"},{\"id\":\"R046\",\"color\":\"amber\"},{\"id\":\"R047\",\"color\":\"blue\"},{\"id\":\"R048\",\"color\":\"green\"},{\"id\":\"R049\",\"color\":\"amber\"},{\"id\":\"R050\",\"color\":\"blue\"},{\"id\":\"R051\",\"color\":\"green\"},{\"id\":\"R052\",\"color\":\"amber\"},{\"id\":\"R053\",\"color\":\"blue\"},{\"id\":\"R054\",\"color\":\"green\"},{\"id\":\"R055\",\"color\":\"amber\"},{\"id\":\"R056\",\"color\":\"blue\"},{\"id\":\"R057\",\"color\":\"green\"},{\"id\":\"R058\",\"color\":\"amber\"},{\"id\":\"R059\",\"color\":\"blue\"},{\"id\":\"R060\",\"color\":\"green\"},{\"id\":\"R061\",\"color\":\"amber\"},{\"id\":\"R062\",\"color\":\"blue\"},{\"id\":\"R063\",\"color\":\"green\"},{\"id\":\"R064\",\"color\":\"amber\"},{\"id\":\"R065\",\"color\":\"blue\"},{\"id\":\"R066\",\"color\":\"green\"},{\"id\":\"R067\",\"color\":\"amber\"},{\"id\":\"R068\",\"color\":\"blue\"},{\"id\":\"R069\",\"color\":\"green\"},{\"id\":\"R070\",\"color\":\"amber\"},{\"id\":\"R071\",\"color\":\"blue\"},{\"id\":\"R072\",\"color\":\"green\"},{\"id\":\"R073\",\"color\":\"amber\"},{\"id\":\"R074\",\"color\":\"blue\"},{\"id\":\"R075\",\"color\":\"green\"},{\"id\":\"R076\",\"color\":\"amber\"},{\"id\":\"R077\",\"color\":\"blue\"},{\"id\":\"R078\",\"color\":\"green\"},{\"id\":\"R079\",\"color\":\"amber\"},{\"id\":\"R080\",\"color\":\"blue\"},{\"id\":\"R081\",\"color\":\"green\"},{\"id\":\"R082\",\"color\":\"amber\"},{\"id\":\"R083\",\"color\":\"blue\"},{\"id\":\"R084\",\"color\":\"green\"},{\"id\":\"R085\",\"color\":\"amber\"},{\"id\":\"R086\",\"color\":\"blue\"},{\"id\":\"R087\",\"color\":\"green\"},{\"id\":\"R088\",\"color\":\"amber\"},{\"id\":\"R089\",\"color\":\"blue\"},{\"id\":\"R090\",\"color\":\"green\"},{\"id\":\"R091\",\"color\":\"amber\"},{\"id\":\"R092\",\"color\":\"blue\"},{\"id\":\"R093\",\"color\":\"green\"},{\"id\":\"R094\",\"color\":\"amber\"},{\"id\":\"R095\",\"color\":\"blue\"}]\nOptions: {\"A\":\"green\",\"B\":\"amber\",\"C\":\"blue\"}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "C"
+    },
+    {
+      "id": "count",
+      "task": "Choose the number of occurrences of red.",
+      "data": [
+        "red",
+        "blue",
+        "red",
+        "green",
+        "red",
+        "red"
+      ],
+      "options": {
+        "A": 2,
+        "B": 3,
+        "C": 4
+      },
+      "prompt": "Choose the number of occurrences of red.\nData: [\"red\",\"blue\",\"red\",\"green\",\"red\",\"red\"]\nOptions: {\"A\":2,\"B\":3,\"C\":4}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "C"
+    },
+    {
+      "id": "alphabetical",
+      "task": "Choose the alphabetically first word.",
+      "data": [
+        "fox",
+        "ant",
+        "dog"
+      ],
+      "options": {
+        "A": "ant",
+        "B": "dog",
+        "C": "fox"
+      },
+      "prompt": "Choose the alphabetically first word.\nData: [\"fox\",\"ant\",\"dog\"]\nOptions: {\"A\":\"ant\",\"B\":\"dog\",\"C\":\"fox\"}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "A"
+    },
+    {
+      "id": "nested",
+      "task": "Use only current.choice as the chosen letter; outer.answer is a different field.",
+      "data": {
+        "outer": {
+          "answer": "C"
+        },
+        "current": {
+          "choice": "B"
+        }
+      },
+      "options": null,
+      "prompt": "Use only current.choice as the chosen letter; outer.answer is a different field.\nData: {\"outer\":{\"answer\":\"C\"},\"current\":{\"choice\":\"B\"}}\nReturn only a JSON object with exactly one key \"answer\" whose value is the chosen letter A, B, or C. Put this JSON in your final answer.",
+      "reference": "B"
+    }
+  ],
+  "calls": [
+    {
+      "id": "direct-copy-17",
+      "case_id": "copy",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-copy-43",
+      "case_id": "copy",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-threshold-17",
+      "case_id": "threshold",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-threshold-43",
+      "case_id": "threshold",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-missing-17",
+      "case_id": "missing",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-missing-43",
+      "case_id": "missing",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-sum-17",
+      "case_id": "sum",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-sum-43",
+      "case_id": "sum",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-intersection-17",
+      "case_id": "intersection",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-intersection-43",
+      "case_id": "intersection",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-latest-17",
+      "case_id": "latest",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-latest-43",
+      "case_id": "latest",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-conjunction-17",
+      "case_id": "conjunction",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-conjunction-43",
+      "case_id": "conjunction",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-minimum-17",
+      "case_id": "minimum",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-minimum-43",
+      "case_id": "minimum",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-lookup-17",
+      "case_id": "lookup",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-lookup-43",
+      "case_id": "lookup",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-count-17",
+      "case_id": "count",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-count-43",
+      "case_id": "count",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-alphabetical-17",
+      "case_id": "alphabetical",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-alphabetical-43",
+      "case_id": "alphabetical",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-nested-17",
+      "case_id": "nested",
+      "thinking": false,
+      "seed": 17,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "direct-nested-43",
+      "case_id": "nested",
+      "thinking": false,
+      "seed": 43,
+      "max_new_tokens": 256
+    },
+    {
+      "id": "thinking-copy-17",
+      "case_id": "copy",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-copy-43",
+      "case_id": "copy",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-threshold-17",
+      "case_id": "threshold",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-threshold-43",
+      "case_id": "threshold",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-missing-17",
+      "case_id": "missing",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-missing-43",
+      "case_id": "missing",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-sum-17",
+      "case_id": "sum",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-sum-43",
+      "case_id": "sum",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-intersection-17",
+      "case_id": "intersection",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-intersection-43",
+      "case_id": "intersection",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-latest-17",
+      "case_id": "latest",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-latest-43",
+      "case_id": "latest",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-conjunction-17",
+      "case_id": "conjunction",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-conjunction-43",
+      "case_id": "conjunction",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-minimum-17",
+      "case_id": "minimum",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-minimum-43",
+      "case_id": "minimum",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-lookup-17",
+      "case_id": "lookup",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-lookup-43",
+      "case_id": "lookup",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-count-17",
+      "case_id": "count",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-count-43",
+      "case_id": "count",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-alphabetical-17",
+      "case_id": "alphabetical",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-alphabetical-43",
+      "case_id": "alphabetical",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-nested-17",
+      "case_id": "nested",
+      "thinking": true,
+      "seed": 17,
+      "max_new_tokens": 2048
+    },
+    {
+      "id": "thinking-nested-43",
+      "case_id": "nested",
+      "thinking": true,
+      "seed": 43,
+      "max_new_tokens": 2048
+    }
+  ],
+  "max_generated_tokens": 55296,
+  "inference_deadline_seconds": 1800,
+  "max_total_input_tokens": 200000
+}
