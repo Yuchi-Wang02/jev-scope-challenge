@@ -1,6 +1,6 @@
 # Research map and evidence status
 
-This repository contains one original Jev/Qwen comparison and six subsequent
+This repository contains one original Jev/Qwen comparison and seven subsequent
 diagnostics. Later studies use a **historical pinned Kev-4B checkpoint based on
 Qwen3-4B-Base**. Kev and Jev are distinct systems. Laya was inspected as related
 work; it was not executed here. Read [credits and reuse](THIRD_PARTY_NOTICES.md)
@@ -17,6 +17,7 @@ before interpreting the project as a new architecture or upstream implementation
 |[Evidence guards](research/evidence-guards/)|Reuses evidence-gap scores. 13 methods produce 8,424 derived predictions, with a known-grammar pure-code reference.|Post-hoc analysis with zero new model forwards; derived rows are not new samples.|
 |[Fact extraction + execution](research/fact-execution/)|Reuses the 72 original development texts for a new task: 1,656 scientific forwards. Kev-LoRA/native primary direct 31/72 vs facts + code 44/72; 14/18 missing fields became asserted values.|552 parity forwards and six warmups are separate. 144 provisional rewrite pairs remain unreviewed and unscored.|
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|Same 72 original development texts; 548 new N1/native forwards. False commitments 6/24, but correct determined decisions only 11/48; 29/72 overall.|Prewritten screening rule failed. 548 calls / 133,977 input tokens, no budget-matched direct control; no rewrite, reserved or Jev scores.|
+|[Joint routing pilot](research/fact-execution/JOINT_RESULTS.md)|Same 72 original texts; 514 new N1/native forwards. Joint 34/72 versus 31/72 for both matched direct controls; 60/66 other-request lines were assigned target fields.|Both screen conditions failed: 11/24 false commitments, 21/48 determined correct. Two warmups are separate. Controls match either calls or input tokens; no independent review, rewrite, reserved or Jev scores.|
 
 Download and open the [offline line-evidence explorer](research/fact-execution/docs/line_explorer.html)
 to inspect all 72 inputs and 548 saved judgments behind the failed pilot.
@@ -34,14 +35,15 @@ The [16-way post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_D
 uses unavailable construction labels to diagnose binding errors; it adds no
 model measurement.
 The [joint-routing candidate](research/fact-execution/JOINT_ROUTE_PROTOCOL.md)
-has published prompts and a call-matched direct plan, but no new scores. Its
-input-token budgets differ and are disclosed.
-An [ID-only token-matched direct control](research/fact-execution/JOINT_TOKEN_CONTROL.md)
-is now prepared at 95,849 versus 95,889 planned input tokens, but uses 286
-rather than 228 calls. Both comparisons remain unscored.
+has now run with a call-matched direct control and an
+[ID-only token-matched direct control](research/fact-execution/JOINT_TOKEN_CONTROL.md).
+The latter uses 95,849 versus joint's 95,889 input tokens, but 286 rather than
+228 calls. Both direct controls reached 31/72 with identical per-view predictions.
 The [joint N1 execution freeze](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)
-pins 514 unique forwards and 191,738 planned input tokens across the candidate
-and direct union. CI verifies the frozen plan only; the run has not occurred.
+pins the 514 unique forwards and 191,738 input tokens that were executed across
+the candidate and shared direct union. CI now verifies the raw results as well
+as the unchanged pre-inference source. The [saved-query viewer](docs/joint_route.html)
+shows every route and direct judgment; its filters make no model calls.
 The [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) compares
 related extraction work and demonstrates that one exclusive label cannot carry
 two facts from the same line. That software test is not a model measurement.

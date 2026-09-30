@@ -82,13 +82,17 @@ separately. Laya was inspected as related work and was not run here.
 |[Evidence gap](research/evidence-gap/) and [evidence guards](research/evidence-guards/)|Missing evidence, missing fields and abstention are distinct tests.|Development results and post-hoc controls; reserved inputs unscored.|
 |[Correct Code, Wrong Facts](research/fact-execution/)|Facts plus a verified executor reached 44/72 versus 31/72 direct, but asserted values for 14/18 missing fields.|Original development only; 144 provisional rewrites await human review.|
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html) and the [12-parent paired audit](research/fact-execution/PARENT_PAIRED_AUDIT.md).|
+|[Joint routing results](research/fact-execution/JOINT_RESULTS.md)|514 new forwards: joint 34/72 versus 31/72 for both matched direct controls; 60/66 other-request lines became target evidence.|Failed both screening conditions. [Inspect all saved queries online](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html); no rewrite, reserved or Jev scores.|
 |[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
-|[Joint-route pilot](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md)|A 514-forward N1/direct comparison is encoded and frozen.|**Not run**; [scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md), [candidate plan](research/fact-execution/JOINT_ROUTE_PROTOCOL.md) and [token control](research/fact-execution/JOINT_TOKEN_CONTROL.md) are available for review.|
 |[Flip one answer](research/external-validation/SHARC_PAIR_AUDIT.md)|The public ShARC train split contains 3,334 strict one-history-answer contrasts; 3,037 change provisional action label.|A [30-pair blinded review queue](research/external-validation/SHARC_REVIEW_PROTOCOL.md) is frozen; zero reviews, model calls or new benchmark claims.|
 
 The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
 motivates the joint-route test but uses unavailable construction labels; its
-counterfactual 29/72 to 68/72 change is **not** a model score. The
+counterfactual 29/72 to 68/72 change is **not** a model score. The executed
+[joint-route protocol](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md) stays
+unchanged as a historical pre-inference artifact. Its
+[scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) still applies:
+the completed run scored no packed multi-fact line. The
 [research map](RESEARCH_INDEX.md) separates every completed result, derived
 analysis, pending review and unrun plan.
 

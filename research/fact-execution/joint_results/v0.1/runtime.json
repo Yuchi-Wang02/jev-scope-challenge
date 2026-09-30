@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "config_hash": "63088098bbd3e4e839b81f3da6e75b74101bc66ecb7aeb2271730cc4a1498e8a",
+  "execution_commit": "2df85df6c1bd0484025e73332f95cdddd22755aa",
+  "python": "3.10.18",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.55.4",
+    "peft": "0.17.1",
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.1.2"
+  },
+  "scientific_forwards": 514,
+  "warmup_forwards": 2,
+  "rewrite_model_records": 0,
+  "reserved_model_records": 0,
+  "paid_api_calls": 0,
+  "jev_api_calls": 0,
+  "new_training": false,
+  "start_utc": "2026-09-30T02:07:34Z",
+  "elapsed_s": 62.85864649999712,
+  "peak_allocated_mib": 8108.65234375,
+  "sdpa_kernel": "math_only",
+  "backbone_dtype": "bfloat16",
+  "adapter_exact_tensors": 504
+}

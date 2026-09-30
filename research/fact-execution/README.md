@@ -43,15 +43,19 @@ development evidence with no new model calls or population inference.
 The [oracle decomposition](LINE_ORACLE_DECOMPOSITION.md) replays 16 classes of
 program-label corrections without new inference; those counterfactual scores
 are not model results.
-The [joint-routing preparation](JOINT_ROUTE_PROTOCOL.md) then tests a
-one-line/one-owner hypothesis. It contains query plans and tokenizer-only
-costs, with zero new model forwards.
+The [joint-routing preparation](JOINT_ROUTE_PROTOCOL.md) froze a
+one-line/one-owner hypothesis. The [completed joint pilot](JOINT_RESULTS.md)
+now reports 514 scientific forwards: joint 34/72, both matched direct controls
+31/72, and 60/66 other-request lines assigned to target fields. Both prewritten
+screen conditions failed. [Inspect all saved queries](docs/joint_explorer.html)
+offline or use [the identical online viewer](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html).
 The [second direct control](JOINT_TOKEN_CONTROL.md) matches its planned input
 token budget to within 40 tokens using distinct prompt orders selected without
 labels, while explicitly retaining the 58-call difference.
-The [joint execution freeze](JOINT_EXECUTION_PROTOCOL.md) now contains exact
-encoded plans, a guarded local runner and a raw-score recomputation checker.
-It is a pre-inference artifact, not a model result.
+The [joint execution freeze](JOINT_EXECUTION_PROTOCOL.md) contains the exact
+encoded plans, guarded local runner and raw-score recomputation checker used
+for that run. It remains an unchanged historical pre-inference artifact;
+the new report and viewer were generated after the completed execution.
 The [scope audit](JOINT_ROUTE_SCOPE_AUDIT.md) documents prior extraction work
 and a tested one-line/two-fact case that the exclusive route cannot express.
 The [One Line, Two Facts stress test](MULTIFACT_LINE_STRESS.md) expands that
@@ -64,6 +68,8 @@ python research/fact-execution/data_tools.py verify
 python research/fact-execution/fact_run.py build
 python research/fact-execution/fact_analyze.py --verify
 python research/fact-execution/publish_facts.py --verify
+python research/fact-execution/joint_analyze.py --verify
+python research/fact-execution/publish_joint.py --verify
 python -m unittest discover -s tests -v
 ```
 

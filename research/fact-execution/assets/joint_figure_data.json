@@ -1,0 +1,72 @@
+{
+  "status": "post_hoc_original_development_only",
+  "views": 72,
+  "parents": 12,
+  "independent_human_annotations": 0,
+  "outcomes": [
+    {
+      "name": "Direct: one call",
+      "correct": 31,
+      "wrong_actions": 36,
+      "needless_deferrals": 5,
+      "calls": 72,
+      "tokens": 23523
+    },
+    {
+      "name": "Direct: call-matched",
+      "correct": 31,
+      "wrong_actions": 36,
+      "needless_deferrals": 5,
+      "calls": 228,
+      "tokens": 76855
+    },
+    {
+      "name": "Direct: input-token-matched",
+      "correct": 31,
+      "wrong_actions": 36,
+      "needless_deferrals": 5,
+      "calls": 286,
+      "tokens": 95849
+    },
+    {
+      "name": "Joint route + code",
+      "correct": 34,
+      "wrong_actions": 11,
+      "needless_deferrals": 27,
+      "calls": 228,
+      "tokens": 95889
+    },
+    {
+      "name": "Always defer: offline control",
+      "correct": 24,
+      "wrong_actions": 0,
+      "needless_deferrals": 48,
+      "calls": 0,
+      "tokens": 0
+    },
+    {
+      "name": "Known grammar: offline control",
+      "correct": 72,
+      "wrong_actions": 0,
+      "needless_deferrals": 0,
+      "calls": 0,
+      "tokens": 0
+    }
+  ],
+  "scope": {
+    "target": {
+      "lines": 162,
+      "correct_routes": 160,
+      "errors": {
+        "wrong_field": 2
+      }
+    },
+    "other_request": {
+      "lines": 66,
+      "correct_routes": 6,
+      "errors": {
+        "wrong_request": 60
+      }
+    }
+  }
+}

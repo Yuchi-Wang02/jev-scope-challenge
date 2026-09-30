@@ -1,5 +1,22 @@
 # Release notes
 
+## 2026-09-29 — completed joint-route N1 development pilot
+
+Executed the separately approved frozen 514-forward joint/direct union plus two
+warmups on cached historical Kev-LoRA N1. Joint reached 34/72 correct, with
+11/24 false commitments and 21/48 correct determined decisions, failing both
+screen conditions. The call- and input-token-matched direct methods each reached
+31/72. All 72 single-direct inputs, logits, candidate probabilities and actions
+exactly reproduced the earlier N1 run. The observed scope failure is 60/66
+other-request lines assigned target fields, versus 160/162 exact target routes.
+
+Published every raw/derived record, the post-run result report, a static research
+figure and an offline/online saved-query viewer. Added raw-result and publication
+checks to CI. Frozen scientific source and protocols are unchanged. No training,
+new model download, paid API, Jev, packed-line, rewrite or reserved inference ran;
+independent human annotations remain zero. UTC execution began on September 30;
+the local America/New_York date was September 29.
+
 ## 2026-09-29 — cost explorer baseline correction
 
 Added always-defer and the existing visible-text known-grammar parser to the

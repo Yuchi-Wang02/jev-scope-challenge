@@ -42,6 +42,8 @@ jobs:
       - run: python research/fact-execution/joint_route_plan.py verify
       - run: python research/fact-execution/joint_token_control.py verify
       - run: python research/fact-execution/joint_execution.py verify-freeze
+      - run: python research/fact-execution/joint_analyze.py --verify
+      - run: python research/fact-execution/publish_joint.py --verify
       - run: python docs/build_four_line_challenge.py verify
       - run: python docs/build_risk_tradeoff.py verify
       - run: python verify_publication.py

@@ -1,0 +1,184 @@
+{
+  "status": "post_hoc_public_original_development_only",
+  "config_hash": "63088098bbd3e4e839b81f3da6e75b74101bc66ecb7aeb2271730cc4a1498e8a",
+  "arm": "N1",
+  "original_inputs": 72,
+  "parent_clusters": 12,
+  "reference_fields": 168,
+  "visible_lines": 228,
+  "independent_human_annotations": 0,
+  "rewrite_model_records": 0,
+  "reserved_model_records": 0,
+  "scientific_forwards": 514,
+  "warmup_forwards": 2,
+  "unique_scientific_input_tokens": 191738,
+  "methods": {
+    "joint": {
+      "method": "joint",
+      "correct_decisions": 34,
+      "false_commitments": 11,
+      "determined_correct": 21,
+      "false_insufficient": 27,
+      "wrong_supported_actions": 0,
+      "complete_parents": 1,
+      "model_calls": 228,
+      "input_tokens": 95889,
+      "summed_forward_latency_s": 25.933395700223628,
+      "by_variant": {
+        "conflict": {
+          "correct": 12,
+          "decisions": 12
+        },
+        "decisive_missing": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "flip": {
+          "correct": 12,
+          "decisions": 12
+        },
+        "full": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "hold": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "nondecisive_missing": {
+          "correct": 7,
+          "decisions": 12
+        }
+      }
+    },
+    "direct_single": {
+      "method": "direct_single",
+      "correct_decisions": 31,
+      "false_commitments": 23,
+      "determined_correct": 30,
+      "false_insufficient": 5,
+      "wrong_supported_actions": 13,
+      "complete_parents": 0,
+      "model_calls": 72,
+      "input_tokens": 23523,
+      "summed_forward_latency_s": 6.8051829999894835,
+      "by_variant": {
+        "conflict": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "decisive_missing": {
+          "correct": 0,
+          "decisions": 12
+        },
+        "flip": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "full": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "hold": {
+          "correct": 6,
+          "decisions": 12
+        },
+        "nondecisive_missing": {
+          "correct": 10,
+          "decisions": 12
+        }
+      }
+    },
+    "direct_call_matched": {
+      "method": "direct_call_matched",
+      "correct_decisions": 31,
+      "false_commitments": 23,
+      "determined_correct": 30,
+      "false_insufficient": 5,
+      "wrong_supported_actions": 13,
+      "complete_parents": 0,
+      "model_calls": 228,
+      "input_tokens": 76855,
+      "summed_forward_latency_s": 22.12703310001234,
+      "by_variant": {
+        "conflict": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "decisive_missing": {
+          "correct": 0,
+          "decisions": 12
+        },
+        "flip": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "full": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "hold": {
+          "correct": 5,
+          "decisions": 12
+        },
+        "nondecisive_missing": {
+          "correct": 11,
+          "decisions": 12
+        }
+      }
+    },
+    "direct_token_matched": {
+      "method": "direct_token_matched",
+      "correct_decisions": 31,
+      "false_commitments": 23,
+      "determined_correct": 30,
+      "false_insufficient": 5,
+      "wrong_supported_actions": 13,
+      "complete_parents": 0,
+      "model_calls": 286,
+      "input_tokens": 95849,
+      "summed_forward_latency_s": 27.743654900055844,
+      "by_variant": {
+        "conflict": {
+          "correct": 1,
+          "decisions": 12
+        },
+        "decisive_missing": {
+          "correct": 0,
+          "decisions": 12
+        },
+        "flip": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "full": {
+          "correct": 7,
+          "decisions": 12
+        },
+        "hold": {
+          "correct": 5,
+          "decisions": 12
+        },
+        "nondecisive_missing": {
+          "correct": 11,
+          "decisions": 12
+        }
+      }
+    }
+  },
+  "joint_correct_fields": 130,
+  "joint_exact_fact_vectors": 34,
+  "joint_missing_as_reported_value": 11,
+  "joint_missed_conflicts": 0,
+  "joint_route_audit": {
+    "correct_route": 166,
+    "wrong_request": 60,
+    "wrong_field": 2
+  },
+  "fixed_development_screening_rule": {
+    "max_false_commitments": 7,
+    "min_determined_correct": 34,
+    "passed": false
+  },
+  "interpretation_limit": "Known synthetic development grammar and program labels; no independent human review, rewrite transfer, reserved confirmation or Jev run. Calls and input tokens trade off across the two direct controls; not equal total compute."
+}
