@@ -24,8 +24,10 @@ result is a software/data check, not a model score or a novel executor. A propos
 stage comparison must control human graph assistance in both corresponding arms.
 The [completed Jev portion](research/qa4pc-stage-attribution/RESULTS.md) does so:
 facts+code has no consistent advantage over graph-direct despite more calls.
-Qwen's original gate stopped before main evaluation. This is a bounded negative
-intervention result with an incomplete comparator, not a novel decomposition method.
+Qwen's original gate stopped before main evaluation; a separately frozen amendment
+then completed only its unexecuted jobs. Facts+code also fails to improve Qwen
+over graph-direct, and answer mapping changes many decisions. This is a bounded
+negative intervention/interface-sensitivity result, not a novel decomposition method.
 
 ## Components, precedents and what this repository adds
 

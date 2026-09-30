@@ -147,7 +147,19 @@ def summarize(plan,refs,journals):
                 'invalid_either':sum((x['executed'][arm] and x['predictions'][arm] is None) or
                                     (y['executed'][arm] and y['predictions'][arm] is None) for x,y in zip(a,b)),
                 'unexecuted_either':sum(not x['executed'][arm] or not y['executed'][arm] for x,y in zip(a,b))}
+    letters=defaultdict(Counter);masses=[];ties=[]
+    for job in plan['jobs']:
+        if job['backend']!='qwen' or job['phase']!='main':continue
+        r=results['qwen'].get(job['id'])
+        if not r or r['status']!='ok':continue
+        d=r['detail'];p=d['parsed'];letters[f"{job['arm']}_mapping{job['mapping']}"][p['letter'] or 'TIE']+=1
+        masses.append(p['full_vocabulary_candidate_mass'])
+        if p['exact_tie']:ties.append({'job_id':job['id'],'logits':d['candidate_logits']})
+    diagnostics={'main_exact_ties':ties,'letter_counts':{k:dict(v) for k,v in letters.items()},
+        'candidate_mass':{'count':len(masses),'minimum':min(masses) if masses else None,
+            'mean':sum(masses)/len(masses) if masses else None,'maximum':max(masses) if masses else None}}
     return {'study':plan['study'],'status':'outcome-aware gate amendment; exploratory source agreement; no new human adjudication',
+        'qwen_readout_diagnostics':diagnostics,
         'continuation_plan_sha256':read(HERE/'continuation_freeze.json')['plan_sha256'],
         'plan_sha256':plan_hash,'journal_lf_sha256':journal_hashes,'metrics':stats,'transitions':paired,
         'order_sensitivity':orders,'cost':cost,'smoke_results':smokes,'per_item':per_items,'new_human_labels':0}

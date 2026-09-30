@@ -1,5 +1,9 @@
 # Jev completed; Qwen stopped at the frozen smoke gate
 
+**Historical original-run report.** A separately frozen outcome-aware amendment
+later completed only the unexecuted Qwen jobs. See [combined results](CONTINUATION_RESULTS.md).
+The original failure and the original report's counts below remain unchanged.
+
 **2026-09-30. Real execution: 262 Jev HTTP requests and two Qwen physical prefills.
 No retries, new weights, new human labels, or Qwen main decisions.**
 

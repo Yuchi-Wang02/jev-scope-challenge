@@ -1,13 +1,15 @@
 # Facts, rules, or both? — cohort preparation
 
-**Jev complete; Qwen stopped at its second smoke, 2026-09-30.**
-Read [actual results and costs](RESULTS.md) and [the stage reflection](INTERPRETATION.md).
-There are 262 real Jev requests and two Qwen prefills; zero Qwen main outputs.
+**Both main grids complete after an outcome-aware Qwen gate amendment, 2026-09-30.**
+Read [combined results and costs](CONTINUATION_RESULTS.md) and [the next decision](NEXT_DECISION.md).
+There are 262 real Jev requests and 262 Qwen prefills. The
+[original stopped run](RESULTS.md) remains preserved, not retroactively passed.
 
-**Next execution frozen:** the [outcome-aware continuation](CONTINUATION_PROTOCOL.md)
-schedules only the 260 previously unexecuted Qwen jobs. Its
+The [outcome-aware continuation](CONTINUATION_PROTOCOL.md)
+executed only the 260 previously unexecuted Qwen jobs. Its
 [manifest](continuation_manifest.json) verifies exact original job hashes.
-The original gate failure remains unchanged; no successor result is claimed here.
+The original gate failure remains unchanged; all new results are in the separate
+[successor journal](results/qwen_continuation.jsonl) and combined report.
 This is the next step after the [QA4PC structural audit](../qa4pc-audit/README.md)
 and [stage-attribution design](../qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md).
 The [protocol](PROTOCOL.md), [524-job manifest](plan_manifest.json),

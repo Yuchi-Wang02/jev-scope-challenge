@@ -4,6 +4,29 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: completed Qwen continuation and close the QA4PC cohort
+
+- Objective: complete the original main comparison without replaying failed work
+  or changing prompts to improve scores.
+- Reality: 260 successor prefills completed, 77,150 input tokens, zero retries
+  or overruns. Combined Qwen 262 prefills /77,528 input tokens. Original two
+  prefills and failed gate retained, both model loads charged separately.
+- Results: Qwen D 13/24,19/24; G 14/24,16/24; F 12/24,14/24;
+  L 19/24,22/24; facts 22/56,38/56. Ten main exact ties remain invalid.
+  Facts+code has no consistent advantage for either model, at 2.33x G calls.
+- Verification: separately replayed journals with disjoint exact-job sets;
+  independent raw-choice/logit and source-label count replay; original report
+  still verifies unchanged. No human semantic validation was added.
+- Gap: outcome-aware gate amendment and substantial mapping sensitivity limit
+  general model claims. Ordinary-model generated-label and stronger controls
+  remain absent, as do new independent human labels.
+- Decision: close these 24 scenarios to more prompt/precision/verbalizer search.
+  Treat them as replay/regression material, not a future confirmation set.
+- Next: inspect existing generation controls and answer-interface prior art,
+  then freeze a bounded comparison on separate source trees. No new grid is
+  frozen by this decision. [Results](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md)
+  and [next decision](research/qa4pc-stage-attribution/NEXT_DECISION.md).
+
 ## 2026-09-30: QA4PC Jev completion and Qwen smoke stop
 
 Follow-up preparation: the [named gate amendment](research/qa4pc-stage-attribution/CONTINUATION_PROTOCOL.md)

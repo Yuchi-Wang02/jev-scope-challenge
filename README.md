@@ -9,11 +9,11 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
-Latest execution: [QA4PC facts versus execution](research/qa4pc-stage-attribution/RESULTS.md).
-Jev completed 262 requests; fact calls plus code did not consistently improve
-on graph-assisted direct decisions. Qwen stopped at a semantic smoke gate and
-has no main score. The [source audit](research/qa4pc-audit/README.md) and failed
-comparator remain visible alongside the results.
+Latest execution: [QA4PC facts versus execution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md).
+Jev and Qwen main grids are complete after an explicit Qwen gate amendment.
+Fact calls plus code did not consistently improve either model over graph-direct;
+Qwen decisions change substantially with answer mapping. The original stop,
+[source audit](research/qa4pc-audit/README.md), invalids and costs remain visible.
 
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is

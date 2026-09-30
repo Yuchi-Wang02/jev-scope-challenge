@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — exact Qwen suffix completed under named gate amendment
+
+Executed 260 previously unexecuted Qwen jobs with unchanged inputs/readout.
+Combined coverage is all 262 original Qwen jobs; original stop and both loads
+remain recorded. Direct source agreement is 13/24 and 19/24; graph-direct
+14/24 and 16/24; facts+code 12/24 and 14/24. Published ten exact ties, mapping
+changes, raw successor journal, combined costs and independent count replay.
+Close this cohort to further tuning; new-interface controls require new material.
+
 ## 2026-09-30 — QA4PC real Jev grid and preserved Qwen gate failure
 
 Published 262 Jev requests and two Qwen prefills under the committed 524-job plan.

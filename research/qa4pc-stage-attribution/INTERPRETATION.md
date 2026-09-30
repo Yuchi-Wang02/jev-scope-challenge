@@ -1,5 +1,9 @@
 # Stage reflection: execution succeeded, comparison is incomplete
 
+This reflection records the original stop. The subsequent named amendment has
+now completed; read [combined results](CONTINUATION_RESULTS.md) and
+[the new decision](NEXT_DECISION.md). Its original assessment below is historical.
+
 ## Objective and reality
 
 We intended to compare where Jev and an ordinary small model lose agreement:
