@@ -50,3 +50,9 @@ No new acquisition or scientific run is frozen by this refresh. Preserve the
 closed cohorts, independent review queue and raw failure records. The historical
 [metadata snapshot](README.md) is retained with its original runtime and
 availability statements; it must not be read as today's cache inventory.
+
+Publication check: an initial current-status banner was added to that historical
+README, but its existing verifier requires byte-for-byte regeneration from the
+historical snapshot. The banner caused that check to fail and was removed;
+current-status links live in the stage log and next-decision page instead. The
+historical report generator and scientific records were not changed.
