@@ -11,6 +11,14 @@ without changing that document or any frozen study. Pair it with the
 and documented failures of particular compositions. A novel general method or
 paper-level contribution has not been established.**
 
+The public-source screen also requires a stricter measurement distinction:
+matching a ShARC label is not proof that a decision follows from its visible
+rule. The [all-pair evidence audit](research/source-label-screen/SOURCE_REVIEW.md)
+retains concrete source concerns without changing the frozen references.
+The [additional nearest-work check](research/external-validation/NEAREST_WORK_UPDATE.md)
+adds direct precedents for ShARC shortcut controls and condition-question
+expression trees; neither becomes a new contribution by using Jev.
+
 ## Components, precedents and what this repository adds
 
 |Component or observation|Existing work or ordinary component|Current contribution and boundary|

@@ -15,6 +15,13 @@ yet both source actions are Yes. This is a concrete evidence-sufficiency issue,
 not merely a generic disclaimer about dataset noise. Other pairs invite a
 necessary-versus-sufficient-condition or question-scope objection.
 
+All 24 saved rows were rechecked byte-content-equivalently after JSON parsing
+against the official development records from archive SHA-256
+`72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e`.
+The title-only snippet is present in the original source rows
+`0ca136591dacd9c5a609f6f2c5e56af0726b0fbc` and
+`6cc5b2c34d87b6eadccc7b04481e52339c1cbcd0`; it was not produced by prompt truncation.
+
 All original references, model calls, failed outputs and denominators remain
 unchanged. No preferred model, new label, filtered score or excluded cohort is
 chosen from this audit. An independently adjudicated task could legitimately

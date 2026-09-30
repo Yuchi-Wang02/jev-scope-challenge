@@ -1,5 +1,28 @@
 # Nearest-work update: what the next comparison must establish
 
+## Additional check during the public-source screen
+
+Checked 2026-09-30, before interpreting that screen's cross-model scores.
+[Verma et al., EMNLP 2020](https://aclanthology.org/2020.emnlp-main.589.pdf),
+sections 1–2, already identifies ShARC shortcuts involving the last history
+answer, history length, clause order and empty context. It supplies a heuristic
+program and a modified dataset. Our frozen last-answer-copy control is a limited
+check of an established shortcut; it is not that full program or a novel idea.
+No author code or data from that work was imported or executed in this check.
+
+[Saeidi, Yazdani and Vlachos, EMNLP 2021](https://aclanthology.org/2021.emnlp-main.678/)
+describes condition questions combined through expression trees, including
+identification of missing information. Here the official abstract was inspected;
+this addition is not a full implementation audit or replication. The generic
+decomposition-plus-execution proposal therefore has an earlier direct precedent.
+
+These precedents and our [12-pair source audit](../source-label-screen/SOURCE_REVIEW.md)
+further narrow the contribution: a new interface comparison may be useful, but
+shortcut detection, missing-information tracking and rule decomposition are not
+new general methods. The source audit does not establish new gold labels.
+
+## Earlier focused review
+
 Checked 2026-09-30. Focused primary-source review, not an exhaustive novelty
 search or reproduction. No task predictions, new labels or upstream training
 runs were produced. The frozen review queue is unchanged.
