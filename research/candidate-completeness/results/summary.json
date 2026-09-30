@@ -1,0 +1,2518 @@
+{
+  "study": "candidate-completeness-v1",
+  "status": "exploratory; zero independent reviews of these new inputs",
+  "cases": 72,
+  "independent_parent_scenarios": 12,
+  "jev": {
+    "mappings": {
+      "0": {
+        "correct": 63,
+        "n": 72,
+        "complete_parents": 3,
+        "parent_n": 12,
+        "parent_complete": {
+          "c01": false,
+          "c02": false,
+          "c03": false,
+          "c04": false,
+          "c05": true,
+          "c06": false,
+          "c07": false,
+          "c08": true,
+          "c09": false,
+          "c10": true,
+          "c11": false,
+          "c12": false
+        },
+        "cells": {
+          "explicit__complete": {
+            "correct": 12,
+            "n": 12
+          },
+          "explicit__relevant_omission": {
+            "correct": 3,
+            "n": 12
+          },
+          "explicit__irrelevant_omission": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__complete": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__relevant_omission": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__irrelevant_omission": {
+            "correct": 12,
+            "n": 12
+          }
+        },
+        "paired": {
+          "product_required_change": {
+            "both_correct": 12,
+            "n": 12
+          },
+          "product_harmless_omission": {
+            "both_correct": 12,
+            "n": 12
+          },
+          "explicit_relevant_stability": {
+            "both_correct": 3,
+            "n": 12
+          },
+          "explicit_irrelevant_stability": {
+            "both_correct": 12,
+            "n": 12
+          }
+        },
+        "false_commitments": {
+          "count": 0,
+          "n": 12
+        },
+        "unnecessary_deferrals": {
+          "count": 9,
+          "n": 60
+        },
+        "wrong_accepts": {
+          "count": 0,
+          "n": 30
+        },
+        "wrong_rejects": {
+          "count": 0,
+          "n": 30
+        },
+        "prediction_counts": {
+          "NOT_ESTABLISHED": 21,
+          "VALID_DESTINATION": 25,
+          "INVALID_DESTINATION": 26
+        },
+        "screen_pass": false,
+        "errors": [
+          {
+            "case_id": "c01_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c02_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c03_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c04_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c06_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c07_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c09_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c11_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c12_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          }
+        ]
+      },
+      "1": {
+        "correct": 67,
+        "n": 72,
+        "complete_parents": 7,
+        "parent_n": 12,
+        "parent_complete": {
+          "c01": false,
+          "c02": true,
+          "c03": false,
+          "c04": true,
+          "c05": true,
+          "c06": true,
+          "c07": false,
+          "c08": true,
+          "c09": false,
+          "c10": true,
+          "c11": false,
+          "c12": true
+        },
+        "cells": {
+          "explicit__complete": {
+            "correct": 12,
+            "n": 12
+          },
+          "explicit__relevant_omission": {
+            "correct": 7,
+            "n": 12
+          },
+          "explicit__irrelevant_omission": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__complete": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__relevant_omission": {
+            "correct": 12,
+            "n": 12
+          },
+          "product__irrelevant_omission": {
+            "correct": 12,
+            "n": 12
+          }
+        },
+        "paired": {
+          "product_required_change": {
+            "both_correct": 12,
+            "n": 12
+          },
+          "product_harmless_omission": {
+            "both_correct": 12,
+            "n": 12
+          },
+          "explicit_relevant_stability": {
+            "both_correct": 7,
+            "n": 12
+          },
+          "explicit_irrelevant_stability": {
+            "both_correct": 12,
+            "n": 12
+          }
+        },
+        "false_commitments": {
+          "count": 0,
+          "n": 12
+        },
+        "unnecessary_deferrals": {
+          "count": 5,
+          "n": 60
+        },
+        "wrong_accepts": {
+          "count": 0,
+          "n": 30
+        },
+        "wrong_rejects": {
+          "count": 0,
+          "n": 30
+        },
+        "prediction_counts": {
+          "VALID_DESTINATION": 25,
+          "INVALID_DESTINATION": 30,
+          "NOT_ESTABLISHED": 17
+        },
+        "screen_pass": false,
+        "errors": [
+          {
+            "case_id": "c01_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c03_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c07_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c09_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          },
+          {
+            "case_id": "c11_explicit_relevant_omission",
+            "reference": "VALID_DESTINATION",
+            "prediction": "NOT_ESTABLISHED"
+          }
+        ]
+      }
+    },
+    "strict_complete_parents": 3,
+    "parent_n": 12,
+    "option_order_disagreements": {
+      "count": 4,
+      "n": 72
+    },
+    "smoke_correct": 6,
+    "smoke_n": 6,
+    "main_input_tokens": 221964,
+    "all_input_tokens": 226329,
+    "main_latency_median_s": 0.14864210000087041,
+    "all_measured_latency_s": 22.86792580006295,
+    "accounting": {
+      "attempts": 150,
+      "retries": 0,
+      "planned_input_units": 522016,
+      "known_input_tokens": 226329,
+      "unfinished": [],
+      "unknown_usage_attempts": 0
+    },
+    "usage_estimated_cost_usd": 0.009505818000000001
+  },
+  "qwen_native": {
+    "mappings": {
+      "0": {
+        "correct": 34,
+        "n": 72,
+        "complete_parents": 0,
+        "parent_n": 12,
+        "parent_complete": {
+          "c01": false,
+          "c02": false,
+          "c03": false,
+          "c04": false,
+          "c05": false,
+          "c06": false,
+          "c07": false,
+          "c08": false,
+          "c09": false,
+          "c10": false,
+          "c11": false,
+          "c12": false
+        },
+        "cells": {
+          "explicit__complete": {
+            "correct": 6,
+            "n": 12
+          },
+          "explicit__relevant_omission": {
+            "correct": 10,
+            "n": 12
+          },
+          "explicit__irrelevant_omission": {
+            "correct": 6,
+            "n": 12
+          },
+          "product__complete": {
+            "correct": 6,
+            "n": 12
+          },
+          "product__relevant_omission": {
+            "correct": 0,
+            "n": 12
+          },
+          "product__irrelevant_omission": {
+            "correct": 6,
+            "n": 12
+          }
+        },
+        "paired": {
+          "product_required_change": {
+            "both_correct": 0,
+            "n": 12
+          },
+          "product_harmless_omission": {
+            "both_correct": 6,
+            "n": 12
+          },
+          "explicit_relevant_stability": {
+            "both_correct": 6,
+            "n": 12
+          },
+          "explicit_irrelevant_stability": {
+            "both_correct": 6,
+            "n": 12
+          }
+        },
+        "false_commitments": {
+          "count": 12,
+          "n": 12
+        },
+        "unnecessary_deferrals": {
+          "count": 0,
+          "n": 60
+        },
+        "wrong_accepts": {
+          "count": 26,
+          "n": 30
+        },
+        "wrong_rejects": {
+          "count": 0,
+          "n": 30
+        },
+        "prediction_counts": {
+          "VALID_DESTINATION": 68,
+          "INVALID_DESTINATION": 4
+        },
+        "screen_pass": false,
+        "errors": [
+          {
+            "case_id": "c01_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c03_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c05_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c07_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c09_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c11_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          }
+        ]
+      },
+      "1": {
+        "correct": 30,
+        "n": 72,
+        "complete_parents": 0,
+        "parent_n": 12,
+        "parent_complete": {
+          "c01": false,
+          "c02": false,
+          "c03": false,
+          "c04": false,
+          "c05": false,
+          "c06": false,
+          "c07": false,
+          "c08": false,
+          "c09": false,
+          "c10": false,
+          "c11": false,
+          "c12": false
+        },
+        "cells": {
+          "explicit__complete": {
+            "correct": 6,
+            "n": 12
+          },
+          "explicit__relevant_omission": {
+            "correct": 6,
+            "n": 12
+          },
+          "explicit__irrelevant_omission": {
+            "correct": 6,
+            "n": 12
+          },
+          "product__complete": {
+            "correct": 6,
+            "n": 12
+          },
+          "product__relevant_omission": {
+            "correct": 0,
+            "n": 12
+          },
+          "product__irrelevant_omission": {
+            "correct": 6,
+            "n": 12
+          }
+        },
+        "paired": {
+          "product_required_change": {
+            "both_correct": 0,
+            "n": 12
+          },
+          "product_harmless_omission": {
+            "both_correct": 6,
+            "n": 12
+          },
+          "explicit_relevant_stability": {
+            "both_correct": 6,
+            "n": 12
+          },
+          "explicit_irrelevant_stability": {
+            "both_correct": 6,
+            "n": 12
+          }
+        },
+        "false_commitments": {
+          "count": 12,
+          "n": 12
+        },
+        "unnecessary_deferrals": {
+          "count": 0,
+          "n": 60
+        },
+        "wrong_accepts": {
+          "count": 30,
+          "n": 30
+        },
+        "wrong_rejects": {
+          "count": 0,
+          "n": 30
+        },
+        "prediction_counts": {
+          "VALID_DESTINATION": 72
+        },
+        "screen_pass": false,
+        "errors": [
+          {
+            "case_id": "c01_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c02_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c03_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c04_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c05_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c06_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c07_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c08_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c09_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c10_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c11_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_relevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_explicit_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_complete",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_relevant_omission",
+            "reference": "NOT_ESTABLISHED",
+            "prediction": "VALID_DESTINATION"
+          },
+          {
+            "case_id": "c12_product_irrelevant_omission",
+            "reference": "INVALID_DESTINATION",
+            "prediction": "VALID_DESTINATION"
+          }
+        ]
+      }
+    },
+    "strict_complete_parents": 0,
+    "parent_n": 12,
+    "option_order_disagreements": {
+      "count": 4,
+      "n": 72
+    },
+    "smoke_correct": 2,
+    "smoke_n": 6,
+    "main_input_tokens": 178656,
+    "all_input_tokens": 181360,
+    "main_latency_median_s": 0.29298399999242974,
+    "all_measured_latency_s": 44.64494759999798,
+    "readout_audit": {
+      "candidate_mass_min": 0.54952705767937,
+      "candidate_mass_median": 0.9982601591500577,
+      "low_mass_count": 0,
+      "top_token_in_ABC_count": 142,
+      "letter_counts": {
+        "A": 68,
+        "C": 72,
+        "B": 4
+      },
+      "peak_allocated_mib": 8805.4267578125
+    }
+  },
+  "baselines": {
+    "scope_aware": {
+      "correct": 72,
+      "n": 72,
+      "complete_parents": 12,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": true,
+        "c02": true,
+        "c03": true,
+        "c04": true,
+        "c05": true,
+        "c06": true,
+        "c07": true,
+        "c08": true,
+        "c09": true,
+        "c10": true,
+        "c11": true,
+        "c12": true
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 0,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 30,
+        "NOT_ESTABLISHED": 12,
+        "INVALID_DESTINATION": 30
+      },
+      "screen_pass": true,
+      "errors": []
+    },
+    "ignore_scope": {
+      "correct": 60,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 12,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 36,
+        "INVALID_DESTINATION": 36
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        }
+      ]
+    },
+    "keyword_all": {
+      "correct": 36,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 0,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 0,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 0,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 36,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 12,
+        "NOT_ESTABLISHED": 48,
+        "INVALID_DESTINATION": 12
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        }
+      ]
+    },
+    "keyword_product": {
+      "correct": 60,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 0,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 12,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 0,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 12,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 24,
+        "NOT_ESTABLISHED": 24,
+        "INVALID_DESTINATION": 24
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        }
+      ]
+    },
+    "constant_VALID_DESTINATION": {
+      "correct": 30,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 6,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 6,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 6,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 6,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 6,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 6,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 6,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 6,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 12,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 30,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "VALID_DESTINATION": 72
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "VALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "VALID_DESTINATION"
+        }
+      ]
+    },
+    "constant_INVALID_DESTINATION": {
+      "correct": 30,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 6,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 6,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 6,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 6,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 6,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 6,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 6,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 6,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 12,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 0,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 30,
+        "n": 30
+      },
+      "prediction_counts": {
+        "INVALID_DESTINATION": 72
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c01_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c01_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c01_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c01_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c01_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c02_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c03_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c04_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c05_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c06_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c07_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c08_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c09_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c10_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c11_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "INVALID_DESTINATION"
+        },
+        {
+          "case_id": "c12_product_relevant_omission",
+          "reference": "NOT_ESTABLISHED",
+          "prediction": "INVALID_DESTINATION"
+        }
+      ]
+    },
+    "constant_NOT_ESTABLISHED": {
+      "correct": 12,
+      "n": 72,
+      "complete_parents": 0,
+      "parent_n": 12,
+      "parent_complete": {
+        "c01": false,
+        "c02": false,
+        "c03": false,
+        "c04": false,
+        "c05": false,
+        "c06": false,
+        "c07": false,
+        "c08": false,
+        "c09": false,
+        "c10": false,
+        "c11": false,
+        "c12": false
+      },
+      "cells": {
+        "explicit__complete": {
+          "correct": 0,
+          "n": 12
+        },
+        "explicit__relevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "explicit__irrelevant_omission": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__complete": {
+          "correct": 0,
+          "n": 12
+        },
+        "product__relevant_omission": {
+          "correct": 12,
+          "n": 12
+        },
+        "product__irrelevant_omission": {
+          "correct": 0,
+          "n": 12
+        }
+      },
+      "paired": {
+        "product_required_change": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "product_harmless_omission": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "explicit_relevant_stability": {
+          "both_correct": 0,
+          "n": 12
+        },
+        "explicit_irrelevant_stability": {
+          "both_correct": 0,
+          "n": 12
+        }
+      },
+      "false_commitments": {
+        "count": 0,
+        "n": 12
+      },
+      "unnecessary_deferrals": {
+        "count": 60,
+        "n": 60
+      },
+      "wrong_accepts": {
+        "count": 0,
+        "n": 30
+      },
+      "wrong_rejects": {
+        "count": 0,
+        "n": 30
+      },
+      "prediction_counts": {
+        "NOT_ESTABLISHED": 72
+      },
+      "screen_pass": false,
+      "errors": [
+        {
+          "case_id": "c01_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c01_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c02_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c03_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c04_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c05_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c06_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c07_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c08_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c09_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c10_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_explicit_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_explicit_relevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_explicit_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_product_complete",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c11_product_irrelevant_omission",
+          "reference": "VALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_explicit_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_explicit_relevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_explicit_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_product_complete",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        },
+        {
+          "case_id": "c12_product_irrelevant_omission",
+          "reference": "INVALID_DESTINATION",
+          "prediction": "NOT_ESTABLISHED"
+        }
+      ]
+    }
+  },
+  "paired_comparison": {
+    "0": {
+      "jev_only_complete_parents": 3,
+      "qwen_only_complete_parents": 0
+    },
+    "1": {
+      "jev_only_complete_parents": 7,
+      "qwen_only_complete_parents": 0
+    }
+  }
+}

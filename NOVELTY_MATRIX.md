@@ -78,9 +78,14 @@ references while raising a scope objection for 24 product-reference inputs. See 
 [disposition](research/payment-ownership/REVIEW_DISPOSITION.md). Reviewer-endorsed adjudication,
 ordinary-model comparison and independent confirmation remain incomplete.
 
-The [candidate-completeness proposal](research/candidate-completeness/PLAN.md)
-tests an explicitly supplied coverage condition. It is development-informed,
-unrun, and solvable by its declared grammar baseline. Closed/open candidate-set
-reasoning and abstention are not claimed as new. A new controlled contrast could
-provide evidence about a model's behavior; neither novelty nor a model mechanism
-is established by proposing it.
+The [completed candidate-coverage diagnostic](research/candidate-completeness/RESULTS.md)
+tests an explicitly supplied coverage condition on 12 disjoint source users.
+Jev's unnecessary explicit-ID deferrals contrast with Qwen's predominantly
+accepting native readout. The known-grammar baseline solves all 72 inputs.
+Closed/open candidate-set reasoning and abstention are not new; see the
+[bounded context-sufficiency review](research/candidate-completeness/RELATED_WORK.md).
+Current contribution is an inspectable controlled failure and negative controls,
+not a new abstention algorithm or causal model explanation. New independent labels,
+an ordinary-model reasoning control and transfer beyond one template family remain
+gates before stronger claims. A fixed-budget reasoning control is the next design,
+not a completed result at this milestone.

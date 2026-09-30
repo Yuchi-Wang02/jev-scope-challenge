@@ -41,6 +41,31 @@ presentation. It does not claim a paper is ready.
   conclusion. Novelty screen cites prior sufficiency/abstention work; no new
   algorithm, broad model ranking or paper-level confirmation is claimed.
 
+## 2026-09-30: completed coverage grids and changed interpretation
+
+- Objective: distinguish relevant candidate incompleteness from harmless omissions,
+  with an ordinary instruction-model comparator and complete cost accounting.
+- Completed: data freeze `680fb6f`, local-readout freeze `c327d59`; 150 Jev calls,
+  zero retries, 226,329 input tokens, estimated $0.009505818; 150 Qwen native
+  prefills, 181,360 prompt tokens. All planned inputs retained; no extra inference.
+- Evidence: Jev 63/72 and 67/72 by mapping, strict complete parents 3/12; Qwen
+  34/72 and 30/72, strict parents 0/12; grammar code 72/72. Jev correctly defers
+  on ambiguous product references but over-defers on explicit IDs. Qwen mostly
+  accepts under both option orders, not merely the first letter.
+- Plan/reality gap: the observed Jev issue is unnecessary deferral, not the initially
+  suspected foreign-order payment substitution. The native Qwen comparison cannot
+  establish its reasoning ceiling. New labels remain program-derived; the earlier
+  two reviews concern other inputs. One template family remains easy for code.
+- Decision: stop both fixed grids without adaptive prompt search. Next prepare one
+  fixed-budget Qwen reasoning control to test whether native readout understates
+  this checkpoint's capability. Disclose it as outcome-aware and keep these data
+  exploratory. New-material confirmation waits for semantic review and design.
+- Presentation: [complete report](research/candidate-completeness/RESULTS.md),
+  replay of every input/response, all baseline scores and neutral review package.
+  Hook: "One visible match: when is caution wrong?" No general Jev defeat or
+  dedicated-model replacement claim. Publication/CI checks establish consistency,
+  not scientific validity. No Hugging Face release yet.
+
 ## Long-term direction and gates
 
 The project asks when models plus programs can provide reliable typed decisions,

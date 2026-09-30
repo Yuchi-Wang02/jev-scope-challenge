@@ -7,7 +7,7 @@
 [Credits](THIRD_PARTY_NOTICES.md) · [Citation](CITATION.cff)
 
 [Milestone audits and next decisions](STAGE_LOG.md) ·
-[New candidate-coverage preparation](research/candidate-completeness/README.md)
+[Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
@@ -28,7 +28,25 @@ no reviewer-endorsed reference update or held-out confirmation of a general meth
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
-## Latest: Right Payment, Wrong Order?
+## Latest: One visible match — when is caution wrong?
+
+On 12 new simulated users /72 constructed inputs, Jev handles missing candidates
+for product-name requests but sometimes defers even when a visible exact order ID
+settles the target. All main Jev errors occur in that explicit-ID / relevant-omission
+condition. Correct decisions: **63/72 and 67/72** across two option orders; strict
+complete parents **3/12**. The frozen exploratory screen fails.
+
+An ordinary Qwen3-4B native readout with thinking disabled scores **34/72 and 30/72**,
+with 0/12 complete parents; it predominantly accepts the destination. Known-grammar
+code scores 72/72. This compares two fixed interfaces, not model reasoning ceilings
+or the necessity of dedicated training. New human review is pending.
+
+[Full report and costs](research/candidate-completeness/RESULTS.md) ·
+[Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·
+[Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·
+[Review-only package](research/candidate-completeness/review/README.md)
+
+## Prior: Right Payment, Wrong Order?
 
 **Jev matched all 48 original main references. Two reviews question the
 candidate scope of 24 product-reference inputs. One ambiguity smoke case failed.**
@@ -74,7 +92,7 @@ no intended insufficient-evidence answers. No tau-bench agent score is claimed.
 - [Replay exact requests, all six smoke cases and actual responses](https://yuchi-wang02.github.io/jev-scope-challenge/payment_ownership_v02.html).
 - [Review the inputs independently](research/payment-ownership/review/README.md).
 - [Download the second-reviewer handoff only](research/payment-ownership/review/reviewer_B_package.zip), without results or the first review.
-- [Read the proposed candidate-completeness study](research/candidate-completeness/PLAN.md): design only, no new calls.
+- [Read the completed candidate-completeness follow-up](research/candidate-completeness/RESULTS.md): new data, separate protocols and pending human review.
 - [Inspect source, license and scope](research/payment-ownership/README.md).
 
 ## Earlier diagnostic: right facts, wrong request

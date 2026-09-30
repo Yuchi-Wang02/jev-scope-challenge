@@ -1,5 +1,16 @@
 # Release notes
 
+## 2026-09-30 — candidate-coverage fixed Jev and ordinary Qwen grids
+
+Published data/protocol freeze `680fb6f` before Jev calls and local readout freeze
+`c327d59` after six Jev smoke outputs but before either main grid. Completed 150
+Jev requests (226,329 input tokens, zero retries, estimated $0.009505818) and 150
+local Qwen3-4B native prefills (181,360 prompt tokens, no downloads/training).
+Jev 63/72 and 67/72; Qwen 34/72 and 30/72; strict parents 3/12 and 0/12. Jev errors
+are unnecessary explicit-ID deferrals, not foreign-order payment substitution.
+Retained failures and frozen inputs, added replay, review-only package and full
+offline accounting. New human review remains pending. Both fixed grids are closed.
+
 ## 2026-09-30 — second review and conditional-label disposition
 
 Preserved Tiancheng's 96-item original, its one-date normalization and intake

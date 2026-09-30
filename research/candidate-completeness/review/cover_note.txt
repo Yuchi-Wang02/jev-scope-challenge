@@ -1,0 +1,9 @@
+Reviewer name/identifier:
+Relationship to the project / author role:
+Start and finish dates (include timezone if time is provided):
+Before/during review, exposure to model summaries or specific outputs:
+Exposure to program labels or any previous review/discussion:
+AI assistance (what and how), if any:
+Discussion with others (what and when), if any:
+Overall uncertainties or comments:
+Permission for public attribution (name or reviewer ID preference):

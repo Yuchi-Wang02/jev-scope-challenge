@@ -2,7 +2,7 @@
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed model run
-is the [payment-ownership Jev diagnostic](research/payment-ownership/RESULTS_V02.md).
+is the [candidate-coverage Jev / Qwen native diagnostic](research/candidate-completeness/RESULTS.md).
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -17,6 +17,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[Candidate coverage](research/candidate-completeness/RESULTS.md)|12 disjoint source users /72 inputs; 150 Jev requests and 150 Qwen3-4B native prefills including six smoke each. Jev 63/72 and 67/72; Qwen 34/72 and 30/72. Strict parents 3/12 and 0/12; grammar code 72/72.|Synthetic coverage premises, one wording family, zero new independent reviews. Jev errors are unnecessary explicit-ID deferrals. Native Qwen is not a reasoning-ceiling comparator. Both freezes published before main outputs. No adaptive follow-up on these grids.|
 |[Payment ownership](research/payment-ownership/RESULTS_V02.md)|12 source users /48 constructed views; 192 main + six smoke live Jev requests. Both full and related conditions, both mappings: 48/48; parser 48/48. Smoke 5/6. 245,241 input tokens, zero retries; no follow-up.|Public simulated tau source, AI-authored requests. Two submissions cover the same 96 items, with conditional label agreement and a candidate-scope objection for 24 product-reference inputs; explicit-ID inputs remain 24/24 per condition. No adjudicated reference update. [Review disposition](research/payment-ownership/REVIEW_DISPOSITION.md). A documented launch-gate amendment followed the smoke error and preceded all main calls. No main unknown-reference cases or ordinary-model comparison.|
 |[Cancellation scope](results/REPORT.md)|12 four-view cases / 48 texts; 384 formal records across Jev and Qwen, plus six smoke records. Primary complete cases: Jev 12/12, Qwen 8/12; grammar code 12/12.|Local pre-execution freeze; public release followed execution. Repeated mappings and rounds are not independent examples.|
 |[Matched base](research/next-study/)|24 parents / 96 texts; 864 completed scientific forwards. N0/N1/K1 exploratory test: 85/111/98 correct out of 144 repeated decisions.|A 576-record stopped attempt is archived and excluded. The inspected test is now development/regression material.|
@@ -63,7 +64,7 @@ shared records and zero-call controls should not be counted as additional runs.
 
 |Work|Current state|Required before interpreting it as confirmation|
 |---|---|---|
-|[Candidate completeness](research/candidate-completeness/PLAN.md)|Proposed 12 new parents /72 inputs crossing explicit-ID versus product-reference requests with complete, relevant-omission and irrelevant-omission candidate coverage. Design only; no new data or calls.|Review proposal, freeze inputs and witnesses, obtain two reviews, then authorize the concrete execution version.|
+|[Candidate coverage review](research/candidate-completeness/review/README.md)|72 review-only inputs, offline interface and blank reviewer template. Jev/native model runs are now complete (table above), but these new labels have no independent human review.|Obtain separate review exports and document adjudication; do not claim later review makes these inspected inputs fresh confirmation.|
 |[Evidence-gap label review](research/evidence-gap/review/)|Blank review material; 216 reserved calibration/test texts remain unscored.|Independent policy/label review and adjudication.|
 |[Language-pair review](research/fact-execution/review/)|144 provisional AI-generated rewrite pairs, including a 12-pair procedural starter; no completed independent annotations or rewrite scores.|Verify preservation of facts, not only equal final decisions.|
 |[Cited-fact model comparison](research/fact-execution/CITED_FACT_PLAN.md)|A design with a strict grammar-code citation control and software checks.|A separately frozen model comparison; code tests are not model evidence.|

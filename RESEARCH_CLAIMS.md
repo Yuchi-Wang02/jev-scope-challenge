@@ -1,7 +1,7 @@
 # Current research claims
 
 This ledger summarizes the completed series through the
-[payment-ownership Jev diagnostic](research/payment-ownership/RESULTS_V02.md).
+[candidate-coverage diagnostic](research/candidate-completeness/RESULTS.md).
 It interprets saved evidence; it adds no experiment, approval or new research
 commitment. Study-specific protocols, results and earlier claims retain their
 historical scope. See the [research map](RESEARCH_INDEX.md) for execution status
@@ -18,6 +18,7 @@ independent samples. Follow each report for all controls, budgets and failures.
 
 |Claim|Observed evidence|Interpretation and limit|
 |---|---|---|
+|C12. Caution can exceed the relevant uncertainty.|[Candidate coverage](research/candidate-completeness/RESULTS.md): Jev matches all product-request references but unnecessarily defers on 9/12 and 5/12 explicit-ID / relevant-omission cases, depending on option order. Strict complete parents 3/12; Qwen native 0/12; grammar code 12/12.|Program-derived references, constructed premises, zero new independent reviews. A bounded interface behavior, not an internal-mechanism claim. Qwen's native no-thinking weakness does not establish its reasoning ceiling or dedicated-model necessity.|
 |C1. Jev led the original cancellation probe.|[Original report](results/REPORT.md): Jev 12/12 complete cases versus Qwen3-4B 8/12 in the primary round; known-grammar code also 12/12.|A gap on 12 constructed cases and a fixed readout, not proof of Jev's necessity or general model superiority. Later Kev studies are not new Jev measurements.|
 |C2. Adaptation, readout and input representation matter in this pilot.|[Matched-base results](research/next-study/) record N0/N1/K1 at 85/111/98 correct out of 144 repeated old-test decisions. [Layout results](research/layout-boundary/) move pointer accuracy from 98/144 to 127/144 and LoRA/native from 111/144 to 121/144 under declared layouts.|The readout comparison changes representation as well as the output path. The old test panel is now inspected development evidence, not an isolated head-capacity or training-necessity test.|
 |C3. Decisive and nondecisive deletion expose different obligations.|[Evidence-gap results](research/evidence-gap/): the pointer answers nondecisive deletion correctly in 31/36 repeated decisions, decisive deletion in 3/36, and both in 1/36 paired units.|An answer-preservation score alone hides failure to recognize insufficient evidence. Only 12 development parents /72 texts were scored; 216 reserved texts remain unscored.|

@@ -115,3 +115,10 @@ Coverage declarations and omitted-order possible worlds are synthetic additions,
 not source database facts. The runner adapts this repository's own payment runner;
 no new Kev/Laya code or model is used by the Jev pilot.
 
+The ordinary-model comparator executes Qwen/Qwen3-4B instruction weights at
+revision `1cfa9a7208912126459214e8b04321603b3df60c` (Apache-2.0), already cached
+locally. It adapts this repository's own native-logit reader to three choices.
+The [local freeze](research/candidate-completeness/local_freeze.json) records
+checkpoint/tokenizer hashes. No Qwen weights are redistributed. The hosted Jev
+adapter uses the same API as the prior pilot; no Jev implementation is copied.
+

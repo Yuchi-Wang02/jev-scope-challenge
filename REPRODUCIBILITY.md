@@ -12,6 +12,9 @@ commit. Use Python 3.10 and `pip install -r requirements.txt`. The following
 checks use committed artifacts only, without credentials, weights or inference:
 
 ```bash
+python research/candidate-completeness/analyze.py --verify
+python research/candidate-completeness/publish.py --verify
+python research/candidate-completeness/review_tools.py --verify
 python -m unittest discover -s tests -v
 python verify_evidence.py
 python analyze.py --verify
