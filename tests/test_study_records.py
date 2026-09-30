@@ -6,11 +6,18 @@ from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'research/next-study'))
 import analyze_study
 from study import HERE,read_rows
-from verify_study import verify
+from verify_study import check_summary,verify
 
 
 @unittest.skipUnless((HERE/'results/N0.jsonl').exists(),'Completed pilot records not yet present')
 class StudyRecordTests(unittest.TestCase):
+    def test_float_only_summary_tolerance(self):
+        check_summary({'n':1,'metric':.3}, {'n':1,'metric':.30000000000000004})
+        for actual in ({'n':2,'metric':.3}, {'n':1.,'metric':.3},
+                       {'n':1,'metric':.300001}, {'n':1,'metric':float('nan')}):
+            with self.assertRaises(ValueError):
+                check_summary(actual, {'n':1,'metric':.3})
+
     def test_bad_logits_and_foreign_token_sequence_are_rejected(self):
         for defect in ('logits','token_ids'):
             def broken(path):

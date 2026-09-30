@@ -86,7 +86,15 @@ text-filled page stays under ignored `.local/`. A reviewer can clear an
 incomplete item before export; export includes every queue ID and leaves
 unreviewed rows blank. The CSV starts blank; its presence, the machine
 manifest and a passed verifier do **not** count as independent annotations.
-Each reviewer should fill a separate copy of the CSV. The read-only checker
+The page opens without displaying any earlier draft. A reviewer must enter a
+stable ID and select **Start / resume**; local drafts are keyed by both the
+pack digest and that ID. **Switch reviewer** clears the displayed draft before
+another ID is entered. This prevents accidental cross-reviewer display on a
+shared page, not deliberate access or collaboration: reviewers should use
+separate browser profiles and each fill a separate copy of the CSV. Older
+drafts from the previous shared browser-storage key are not silently imported;
+anyone who used that earlier page should export their CSV before replacing it.
+The read-only checker
 accepts partial exports, rejects foreign or duplicated IDs, incomplete rows,
 invalid action names and malformed dates, but does not judge semantic truth or
 reviewer independence:

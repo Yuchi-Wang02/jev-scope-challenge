@@ -5,8 +5,30 @@ can change Windows line endings. Verify its fingerprint/hashes here and inject
 the verified manifest into that preserved analyzer without any file writes.
 """
 import json
+import math
 import analyze_study
 from study import HERE,canonical,sha
+
+
+def check_summary(actual, expected, path='summary'):
+    """Allow only last-bit float drift across Python versions; pin all other fields."""
+    if type(actual) is not type(expected):
+        raise ValueError(path+' type mismatch')
+    if isinstance(expected, dict):
+        if actual.keys() != expected.keys():
+            raise ValueError(path+' keys mismatch')
+        for key in expected:
+            check_summary(actual[key], expected[key], path+'.'+str(key))
+    elif isinstance(expected, list):
+        if len(actual) != len(expected):
+            raise ValueError(path+' length mismatch')
+        for index, (value, saved) in enumerate(zip(actual, expected)):
+            check_summary(value, saved, path+f'[{index}]')
+    elif isinstance(expected, float):
+        if not math.isclose(actual, expected, rel_tol=0, abs_tol=1e-12):
+            raise ValueError(path+' numeric mismatch')
+    elif actual != expected:
+        raise ValueError(path+' exact mismatch')
 
 
 def verified_manifest():
@@ -35,8 +57,8 @@ def verify():
         summary=analyze_study.analyze(write=False)
     finally:
         analyze_study.freeze=old
-    if summary != json.loads((HERE/'results/summary.json').read_text(encoding='utf-8')):
-        raise ValueError('Study summary differs from saved evidence')
+    check_summary(summary,
+                  json.loads((HERE/'results/summary.json').read_text(encoding='utf-8')))
     return summary
 
 
