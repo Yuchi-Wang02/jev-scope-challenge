@@ -118,7 +118,9 @@ def markdown(report):
         lines.append(f"|{name}|{c['finished']}/{c['planned_items']}|" + '|'.join(values) + '|')
     lines += ['', 'Each order has 24 items /12 parent pairs; do not pool them as independent samples.',
         'The unique-argmax rows re-read the same API responses and incur no new calls.',
-        'Invalid/truncated outputs remain in denominators. No score for incomplete conditions.', '',
+        'Invalid/truncated outputs remain in denominators. No score for incomplete conditions.',
+        'Each exact job has one response. Differences between the two mappings describe',
+        'observed sensitivity; this grid does not separately estimate backend nondeterminism.', '',
         '## Non-model controls', '', '|Control|Item agreement|Both pair members agree|', '|---|---:|---:|']
     for name, m in report['controls'].items():
         lines.append(f"|{name}|{ratio(m['item_accuracy'])}|{ratio(m['pair_both_correct'])}|")
