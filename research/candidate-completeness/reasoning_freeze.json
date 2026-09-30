@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-09-30T07:10:59.467287+00:00",
+  "model": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "max_new_tokens": 512,
+  "max_decisions": 150,
+  "max_batches": 38,
+  "max_physical_forwards": 19494,
+  "max_processed_token_positions": 1000000,
+  "reserved_token_positions": 570700,
+  "closing_token_id": 151668,
+  "model_eos_token_id": 151645,
+  "pad_token_id": 151643,
+  "candidate_ids": {
+    "A": [
+      32
+    ],
+    "B": [
+      33
+    ],
+    "C": [
+      34
+    ],
+    " A": [
+      362
+    ],
+    " B": [
+      425
+    ],
+    " C": [
+      356
+    ]
+  },
+  "sha256_lf": {
+    "REASONING_PROTOCOL.md": "b1f9b6c4737fd4074a1b6df151c20273f0af9ee5e4d82867696c416a019c0ac9",
+    "reasoning_run.py": "30eb6c18b8d46b18b4485e332018ab548ec482052a8a28a616c91b2a0c95cff0",
+    "plans/reasoning.jsonl": "664af3384e8bc926c52ea84c33b631cd031cf329812faf348bcbcdd9833aa820",
+    "plans/reasoning_batches.jsonl": "66b7c29c67c3bfc98d62c190e1bd3f5a53e07180161f09b8fec61ad379400e18",
+    "local_freeze.json": "dfb8ccfdef7423b22c2fad18ac57cd94a59df03517653ea3b467eb09308fbc36",
+    "checkpoint_audit.json": "1cf8335d0b7677a0d266c9a40c53c075234dc26a792978fdc25f2d17e2232a21"
+  },
+  "timing_disclosure": "After all Jev/native outputs; before all reasoning-control outputs"
+}

@@ -2,6 +2,7 @@
 import copy
 import importlib.util
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -14,6 +15,7 @@ try:
     L=load('candidate_analysis_local',P/'local_run.py');sys.modules['local_run']=L
     R=load('candidate_analysis_api',P/'run.py');sys.modules['run']=R
     A=load('candidate_analysis',P/'analyze.py');V=load('candidate_review_tools',P/'review_tools.py')
+    B=load('candidate_reasoning_run',P/'reasoning_run.py')
 finally:
     for n,m in saved.items():
         if m is None:sys.modules.pop(n,None)
@@ -49,5 +51,26 @@ class CoverageAnalysisTests(unittest.TestCase):
         self.assertTrue(all(not {'reference','prediction','parent_id','case_id'}&set(r['state']) for r in inputs))
         self.assertNotIn('results/',files['review.html'])
         self.assertEqual(V.validate(P/'review/reviewer.csv')['complete'],0)
+
+    def test_reasoning_batches_reserve_padding_and_all_decisions(self):
+        f=B.verify();batches=S.rows(P/'plans/reasoning_batches.jsonl')
+        self.assertEqual(len(batches),38)
+        self.assertEqual(len({j for b in batches for j in b['job_ids']}),150)
+        self.assertLessEqual(sum(b['reserved_token_positions'] for b in batches),f['max_processed_token_positions'])
+        self.assertEqual(sum(b['reserved_forwards'] for b in batches),19494)
+        official=S.read(P/'checkpoint_audit.json');local=S.read(P/'local_freeze.json')
+        self.assertTrue(all(local['model_files_sha256'][n]==h for n,h in official['weight_lfs_sha256'].items()))
+
+    def test_unfinished_reasoning_batch_is_not_replayed(self):
+        old=(B.OUT,B.LEDGER)
+        try:
+            with tempfile.TemporaryDirectory() as d:
+                B.OUT=Path(d)/'output.jsonl';B.LEDGER=Path(d)/'ledger.jsonl'
+                S.write_rows(B.LEDGER,[{'event':'started','batch_id':'smoke_000'}])
+                with self.assertRaises(RuntimeError):B.completion()
+                S.write_rows(B.LEDGER,[{'event':'started','batch_id':'smoke_000'},
+                    {'event':'finished','batch_id':'smoke_000','ok':True,'responses':[{'job_id':'mock-for-resume-test-only'}]}])
+                with self.assertRaises(RuntimeError):B.completion()
+        finally:B.OUT,B.LEDGER=old
 
 if __name__=='__main__':unittest.main()
