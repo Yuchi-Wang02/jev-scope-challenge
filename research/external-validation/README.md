@@ -74,6 +74,11 @@ selection have software checks, but **zero completed human reviews or model
 outputs** have been added. See the [task card](TASK_CARD.md) for the current
 comparison question, prior-work boundary, missing controls and next gates.
 
+A separately named [public-dev source-label diagnostic](../source-label-screen/README.md)
+now has a prospective [exploration amendment](../source-label-screen/EXPLORATION_AMENDMENT.md).
+It uses original source labels without claiming project human verification. This
+exception does not open the training review queue or change its frozen protocol.
+
 The [nearest-work update](NEAREST_WORK_UPDATE.md) adds closer 2024/2025 precedents
 and specifies which contribution claims and baseline shortcuts they rule out.
 It changes the planned comparison obligations, not the frozen queue or labels.

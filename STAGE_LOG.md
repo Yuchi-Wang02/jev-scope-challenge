@@ -4,6 +4,25 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: freeze the bounded public-dev source-label screen
+
+- Objective: obtain real natural-language feedback while the distinct training
+  review proceeds, without upgrading source labels to human-confirmed truth.
+- Completed: [prospective amendment and protocol](research/source-label-screen/PROTOCOL.md),
+  deterministic 12-tree selection, 24 original inputs, exact 48-request /96-generation
+  plan, separate references, code/data hashes, attribution and resource limits.
+- Audit: five software tests cover whole-tree overlap exclusion, conflicting
+  visible labels, duplicate-rule units, deterministic selection, reference leakage,
+  context rejection and missing freeze. Actual tokenization gives 28,256 local
+  input tokens. Source distribution is Yes 10 /No 8 /ASK 6, not a prevalence estimate.
+- Gap: no live call has occurred at this freeze milestone. Source truth and
+  semantic near-duplicate independence are unverified. No source-Irrelevant group.
+- Next: verify the committed freeze, run each backend once, preserve failures,
+  re-audit raw records and publish descriptive agreement/costs before choosing
+  whether this candidate warrants any intervention. No prompt or seed search.
+- Presentation: original train review remains closed. This separate dev screen
+  is explicitly exploratory and cannot supply independent confirmation after tuning.
+
 ## 2026-09-30: check a parallel source-label diagnostic without opening the review queue
 
 - Objective: avoid making project-added human review a prerequisite for every

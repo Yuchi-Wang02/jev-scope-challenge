@@ -1,0 +1,597 @@
+{
+  "study": "sharc-dev-source-label-screen-v1",
+  "source_archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+  "source_split": "dev",
+  "labels": "original source labels, not project-adjudicated",
+  "modifications": "Original selected rows preserved; model state uses four visible fields only.",
+  "selected": [
+    {
+      "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+      "source_ids": [
+        "39a95f17140e0f6617ff28f7c758453861e9c3e7",
+        "9e3688ecb7dd70994c9637b72ce244ca54286f4d"
+      ],
+      "group": "invariant",
+      "source_actions": [
+        "Yes",
+        "Yes"
+      ],
+      "pair_id": "e04ea602dfbf5af87eb8810f",
+      "rows": [
+        {
+          "utterance_id": "39a95f17140e0f6617ff28f7c758453861e9c3e7",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "source_url": "https://www.gov.uk/benefits-calculators",
+          "snippet": "## What you’ll need\n\nYou’ll need accurate information about your:\n\n* savings\n* income, including your partner’s (from payslips, for example)\n* existing benefits and pensions (including anyone living with you)\n* outgoings (such as rent, mortgage, childcare payments)",
+          "question": "Do I need information about this?",
+          "scenario": "I am requesting information about my savings account at Chase Bank.",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Is this information about your savings?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have accurate info about your income?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have info about your existing benefits?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "9e3688ecb7dd70994c9637b72ce244ca54286f4d",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "source_url": "https://www.gov.uk/benefits-calculators",
+          "snippet": "## What you’ll need\n\nYou’ll need accurate information about your:\n\n* savings\n* income, including your partner’s (from payslips, for example)\n* existing benefits and pensions (including anyone living with you)\n* outgoings (such as rent, mortgage, childcare payments)",
+          "question": "Do I need information about this?",
+          "scenario": "I am requesting information about my savings account at Chase Bank.",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Is this information about your savings?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have accurate info about your income?",
+              "follow_up_answer": "Yes"
+            },
+            {
+              "follow_up_question": "Do you have info about your existing benefits?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+      "source_ids": [
+        "0ca136591dacd9c5a609f6f2c5e56af0726b0fbc",
+        "6cc5b2c34d87b6eadccc7b04481e52339c1cbcd0"
+      ],
+      "group": "invariant",
+      "source_actions": [
+        "Yes",
+        "Yes"
+      ],
+      "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+      "rows": [
+        {
+          "utterance_id": "0ca136591dacd9c5a609f6f2c5e56af0726b0fbc",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "source_url": "https://www.dmv.org/vt-vermont/safety-laws.php",
+          "snippet": "Child Car Seat Laws",
+          "question": "Does my kid need to ride in a federally-approved child safety seat?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Is this a child?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "6cc5b2c34d87b6eadccc7b04481e52339c1cbcd0",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "source_url": "https://www.dmv.org/vt-vermont/safety-laws.php",
+          "snippet": "Child Car Seat Laws",
+          "question": "Does my kid need to ride in a federally-approved child safety seat?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Is this a child?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+      "source_ids": [
+        "2dd0fc817a637db7cb8204263930456991e9f78d",
+        "7fccae167b524bcb9c10640ac27bf6e3a0ad4194"
+      ],
+      "group": "invariant",
+      "source_actions": [
+        "No",
+        "No"
+      ],
+      "pair_id": "1f6921ba38872b45dfc280f6",
+      "rows": [
+        {
+          "utterance_id": "2dd0fc817a637db7cb8204263930456991e9f78d",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "source_url": "https://www.usa.gov/grants",
+          "snippet": "##Who May Receive a Grant?\n\nContrary to what you might see online or in the media, the federal government does not offer grants or “free money” to individuals to start a business, or cover personal expenses.",
+          "question": "Can I get a grant from federal government?",
+          "scenario": "",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Is it to cover personal expenses?",
+              "follow_up_answer": "No"
+            },
+            {
+              "follow_up_question": "is it to start a business?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "7fccae167b524bcb9c10640ac27bf6e3a0ad4194",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "source_url": "https://www.usa.gov/grants",
+          "snippet": "##Who May Receive a Grant?\n\nContrary to what you might see online or in the media, the federal government does not offer grants or “free money” to individuals to start a business, or cover personal expenses.",
+          "question": "Can I get a grant from federal government?",
+          "scenario": "",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Is it to cover personal expenses?",
+              "follow_up_answer": "No"
+            },
+            {
+              "follow_up_question": "is it to start a business?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+      "source_ids": [
+        "df6ea113ad4881b5b6c1a90783c5182c4b45eae4",
+        "ef8b5f7411bed09eb5f0229d74aab1397cfd7824"
+      ],
+      "group": "invariant",
+      "source_actions": [
+        "ASK",
+        "ASK"
+      ],
+      "pair_id": "1684dcbe3c670d4ed4ffd62e",
+      "rows": [
+        {
+          "utterance_id": "df6ea113ad4881b5b6c1a90783c5182c4b45eae4",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/569",
+          "snippet": "If you are a female Vietnam Veteran with a child who has a birth defect or you are a child of a female Vietnam Veteran with a birth defect, the child may be eligible for VA-financed health care.",
+          "question": "Is my child eligible for VA-financed health care?",
+          "scenario": "I make £14,000 and would like to keep making that until I return to Zimbabwe.",
+          "answer": "does your child have a birth defect?",
+          "history": [
+            {
+              "follow_up_question": "Are you a female Vietnam Veteran?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "ef8b5f7411bed09eb5f0229d74aab1397cfd7824",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/569",
+          "snippet": "If you are a female Vietnam Veteran with a child who has a birth defect or you are a child of a female Vietnam Veteran with a birth defect, the child may be eligible for VA-financed health care.",
+          "question": "Is my child eligible for VA-financed health care?",
+          "scenario": "I make £14,000 and would like to keep making that until I return to Zimbabwe.",
+          "answer": "Are you the child of a Vietnam Veteran?",
+          "history": [
+            {
+              "follow_up_question": "Are you a female Vietnam Veteran?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+      "source_ids": [
+        "6b19f2b84b44e076770cbc1b656e45b77d04fc87",
+        "80019ac397032532ee180a4d333930b4ac5e3f81"
+      ],
+      "group": "clarification_change",
+      "source_actions": [
+        "No",
+        "ASK"
+      ],
+      "pair_id": "49c43c8cf5e2199809a4189b",
+      "rows": [
+        {
+          "utterance_id": "6b19f2b84b44e076770cbc1b656e45b77d04fc87",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "source_url": "http://legislature.maine.gov/statutes/7/title7sec2453.html",
+          "snippet": "3. Person licensed to sell retail marijuana or retail marijuana products.  A person licensed to sell retail marijuana or retail marijuana products pursuant to this chapter may not:\n* Display any signs that are inconsistent with local laws or regulations;\n*  Use advertising material that is misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age;\n*  Have in that person's possession or upon the licensed premises any marijuana the sale of which is not permitted by the license;",
+          "question": "Can I display this sign?",
+          "scenario": "I am a 67 year old man who lives in the United Kingdom, and am currently there.",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Is the sign inconsistent with local laws or regulations?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "80019ac397032532ee180a4d333930b4ac5e3f81",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "source_url": "http://legislature.maine.gov/statutes/7/title7sec2453.html",
+          "snippet": "3. Person licensed to sell retail marijuana or retail marijuana products.  A person licensed to sell retail marijuana or retail marijuana products pursuant to this chapter may not:\n* Display any signs that are inconsistent with local laws or regulations;\n*  Use advertising material that is misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age;\n*  Have in that person's possession or upon the licensed premises any marijuana the sale of which is not permitted by the license;",
+          "question": "Can I display this sign?",
+          "scenario": "I am a 67 year old man who lives in the United Kingdom, and am currently there.",
+          "answer": "Is the sign misleading, deceptive or false, or that is designed to appeal to a person under 21 years of age?",
+          "history": [
+            {
+              "follow_up_question": "Is the sign inconsistent with local laws or regulations?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+      "source_ids": [
+        "310e94d6ac8eb3930953a83d7cf03efc90a9b1f5",
+        "aa0aac5b14825b508a0f97c71f08bf50b0d50fb5"
+      ],
+      "group": "clarification_change",
+      "source_actions": [
+        "ASK",
+        "Yes"
+      ],
+      "pair_id": "9d37e76cc7404ee007c1b49c",
+      "rows": [
+        {
+          "utterance_id": "310e94d6ac8eb3930953a83d7cf03efc90a9b1f5",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "source_url": "https://www.gov.uk/vat-businesses/charging-vat-to-charities",
+          "snippet": "### Equipment for medical and veterinary use\n\nYou may also be able to zero-rate some other medical and veterinary equipment when you sell it to:\n\n* charities that provide rescue or first aid services to humans or animals\n* someone buying it specifically for donation to one of these bodies",
+          "question": "May I be able to zero-rate this medical equipment?",
+          "scenario": "",
+          "answer": "Did you sell the equipment to someone buying it specifically for donation to one of these bodies?",
+          "history": [
+            {
+              "follow_up_question": "Did you sell the equipment to charities that provide rescue or first aid services to humans or animals?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "aa0aac5b14825b508a0f97c71f08bf50b0d50fb5",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "source_url": "https://www.gov.uk/vat-businesses/charging-vat-to-charities",
+          "snippet": "### Equipment for medical and veterinary use\n\nYou may also be able to zero-rate some other medical and veterinary equipment when you sell it to:\n\n* charities that provide rescue or first aid services to humans or animals\n* someone buying it specifically for donation to one of these bodies",
+          "question": "May I be able to zero-rate this medical equipment?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Did you sell the equipment to charities that provide rescue or first aid services to humans or animals?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+      "source_ids": [
+        "75ac2abcf7ba94235223751411583cc4a8130c3b",
+        "ca11b1d25c29375935f30df05cf0243798a7ce74"
+      ],
+      "group": "clarification_change",
+      "source_actions": [
+        "ASK",
+        "Yes"
+      ],
+      "pair_id": "c1c77c8c33c8fe915c827751",
+      "rows": [
+        {
+          "utterance_id": "75ac2abcf7ba94235223751411583cc4a8130c3b",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "source_url": "https://www.gov.uk/tax-on-pension/tax-when-you-live-abroad",
+          "snippet": "#  4. Tax when you live abroad\n\nIf you’re not a UK resident, you don’t usually pay UK tax on your pension. But you might have to pay tax in the country you live in. There are a few exceptions - for example, UK civil service pensions will always be taxed in the UK.",
+          "question": "Do I need to pay UK tax on my pension?",
+          "scenario": "",
+          "answer": "Are you receiving a UK civil service pension?",
+          "history": [
+            {
+              "follow_up_question": "Are you a UK resident?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "ca11b1d25c29375935f30df05cf0243798a7ce74",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "source_url": "https://www.gov.uk/tax-on-pension/tax-when-you-live-abroad",
+          "snippet": "#  4. Tax when you live abroad\n\nIf you’re not a UK resident, you don’t usually pay UK tax on your pension. But you might have to pay tax in the country you live in. There are a few exceptions - for example, UK civil service pensions will always be taxed in the UK.",
+          "question": "Do I need to pay UK tax on my pension?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Are you a UK resident?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+      "source_ids": [
+        "28386289e8d9ba4db10331105bd3d2aa0ce33203",
+        "9eb069704ba10aa75ff668cabf22ee28e1c3d802"
+      ],
+      "group": "clarification_change",
+      "source_actions": [
+        "No",
+        "ASK"
+      ],
+      "pair_id": "3eb969b9fba197de8e61d35e",
+      "rows": [
+        {
+          "utterance_id": "28386289e8d9ba4db10331105bd3d2aa0ce33203",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "source_url": "https://www.gov.uk/maternity-pay-leave/eligibility",
+          "snippet": "## Statutory Maternity Leave\n\nYou qualify for Statutory Maternity Leave if:\n\n* you’re an employee not a ‘worker’\n* you give your employer the correct notice",
+          "question": "Do I qualify for Statutory Maternity Leave?",
+          "scenario": "",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Are you an employee and not a worker?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "9eb069704ba10aa75ff668cabf22ee28e1c3d802",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "source_url": "https://www.gov.uk/maternity-pay-leave/eligibility",
+          "snippet": "## Statutory Maternity Leave\n\nYou qualify for Statutory Maternity Leave if:\n\n* you’re an employee not a ‘worker’\n* you give your employer the correct notice",
+          "question": "Do I qualify for Statutory Maternity Leave?",
+          "scenario": "",
+          "answer": "Do you give your employer the correct notice?",
+          "history": [
+            {
+              "follow_up_question": "Are you an employee and not a worker?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+      "source_ids": [
+        "28096e5fcec268a1bd7f9d2e79b541487334f324",
+        "81e46924aabc47d2af7459a8b090a86f45dcd90f"
+      ],
+      "group": "decisive_change",
+      "source_actions": [
+        "Yes",
+        "No"
+      ],
+      "pair_id": "fa852bc7719887ea3c01db16",
+      "rows": [
+        {
+          "utterance_id": "28096e5fcec268a1bd7f9d2e79b541487334f324",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/1503",
+          "snippet": "Disaster survivors must repay SBA disaster loans. SBA can only approve loans to applicants with a reasonable ability to repay the loan and other obligations from earnings. The terms of each loan are established in accordance with each borrower's ability to repay. The law gives SBA several powerful tools to make disaster loans affordable: low fixed interest rates, long-terms (up to 30 years), and refinancing of prior real estate liens (in some cases). As required by law, the interest rate for each loan is based on SBA's determination of whether an applicant has the ability to borrow or use their own resources to overcome the disaster.",
+          "question": "Will my loan be approved?",
+          "scenario": "I'm using Chrome browser right now.  I had costs from helping conserve lands in the area we are working on.  These costs include fundraisers and rentals.",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Do you have a reasonable ability to repay the loan and other obligations from earnings?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "81e46924aabc47d2af7459a8b090a86f45dcd90f",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/1503",
+          "snippet": "Disaster survivors must repay SBA disaster loans. SBA can only approve loans to applicants with a reasonable ability to repay the loan and other obligations from earnings. The terms of each loan are established in accordance with each borrower's ability to repay. The law gives SBA several powerful tools to make disaster loans affordable: low fixed interest rates, long-terms (up to 30 years), and refinancing of prior real estate liens (in some cases). As required by law, the interest rate for each loan is based on SBA's determination of whether an applicant has the ability to borrow or use their own resources to overcome the disaster.",
+          "question": "Will my loan be approved?",
+          "scenario": "I'm using Chrome browser right now.  I had costs from helping conserve lands in the area we are working on.  These costs include fundraisers and rentals.",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Do you have a reasonable ability to repay the loan and other obligations from earnings?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+      "source_ids": [
+        "c27c14c303021c73fe2aa604ee0f6ecfd9fcbdd5",
+        "ed034f98bdb0c2298b3e92c2e32d001c3fbfa704"
+      ],
+      "group": "decisive_change",
+      "source_actions": [
+        "Yes",
+        "No"
+      ],
+      "pair_id": "2e06c418c91ae0b22b00e33c",
+      "rows": [
+        {
+          "utterance_id": "c27c14c303021c73fe2aa604ee0f6ecfd9fcbdd5",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "source_url": "https://www.gov.uk/holiday-entitlement-rights/taking-holiday-before-leaving-a-job",
+          "snippet": "## Getting paid instead of taking holidays\n\nThe only time someone can get paid in place of taking statutory leave (known as ‘payment in lieu’) is when they leave their job. Employers must pay for untaken statutory leave (even if the worker is dismissed for gross misconduct).",
+          "question": "Can I get payment in lieu?",
+          "scenario": "I have questions about evidence. I will be heading to the hearing soon, but I've never rented privately.",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Are you leaving your job?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "ed034f98bdb0c2298b3e92c2e32d001c3fbfa704",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "source_url": "https://www.gov.uk/holiday-entitlement-rights/taking-holiday-before-leaving-a-job",
+          "snippet": "## Getting paid instead of taking holidays\n\nThe only time someone can get paid in place of taking statutory leave (known as ‘payment in lieu’) is when they leave their job. Employers must pay for untaken statutory leave (even if the worker is dismissed for gross misconduct).",
+          "question": "Can I get payment in lieu?",
+          "scenario": "I have questions about evidence. I will be heading to the hearing soon, but I've never rented privately.",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Are you leaving your job?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+      "source_ids": [
+        "07868304da5e1c36291f1f913ddc7983548641b2",
+        "e8bc1b5b8a717e59495456881430ce9b0d4fe268"
+      ],
+      "group": "decisive_change",
+      "source_actions": [
+        "Yes",
+        "No"
+      ],
+      "pair_id": "ddbc1d07a6c156a44de3bb03",
+      "rows": [
+        {
+          "utterance_id": "07868304da5e1c36291f1f913ddc7983548641b2",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/1503",
+          "snippet": "Renters and homeowners alike may borrow up to $40,000 to replace damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc. As a rule of thumb, personal property is anything that is not considered real estate or a part of the actual structure. This loan may not be used replace extraordinarily expensive or irreplaceable items, such as antiques, collections, pleasure boats, recreational vehicles, fur coats, etc.",
+          "question": "Does my property qualify?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Is it damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc.?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "e8bc1b5b8a717e59495456881430ce9b0d4fe268",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "source_url": "https://www.benefits.gov/benefits/benefit-details/1503",
+          "snippet": "Renters and homeowners alike may borrow up to $40,000 to replace damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc. As a rule of thumb, personal property is anything that is not considered real estate or a part of the actual structure. This loan may not be used replace extraordinarily expensive or irreplaceable items, such as antiques, collections, pleasure boats, recreational vehicles, fur coats, etc.",
+          "question": "Does my property qualify?",
+          "scenario": "",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Is it damaged or destroyed personal property such as clothing, furniture, appliances, automobiles, etc.?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+      "source_ids": [
+        "a177c11cce6b8c1d749203e114fb60db2f0b08bf",
+        "b3fa478bc2ed95c3cf608afa78e1436040db4b38"
+      ],
+      "group": "decisive_change",
+      "source_actions": [
+        "No",
+        "Yes"
+      ],
+      "pair_id": "72f81bb33bd4928366bce9d8",
+      "rows": [
+        {
+          "utterance_id": "a177c11cce6b8c1d749203e114fb60db2f0b08bf",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "source_url": "https://www.humanservices.gov.au/individuals/subjects/thinking-about-aged-care",
+          "snippet": "## Other payments and services\n\nYou can access information, support and short term counselling. If you’re going through a difficult time, find out more about our social work services.",
+          "question": "Should I seek more information about the social work services?",
+          "scenario": "",
+          "answer": "No",
+          "history": [
+            {
+              "follow_up_question": "Are you going through a difficult time?",
+              "follow_up_answer": "No"
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "utterance_id": "b3fa478bc2ed95c3cf608afa78e1436040db4b38",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "source_url": "https://www.humanservices.gov.au/individuals/subjects/thinking-about-aged-care",
+          "snippet": "## Other payments and services\n\nYou can access information, support and short term counselling. If you’re going through a difficult time, find out more about our social work services.",
+          "question": "Should I seek more information about the social work services?",
+          "scenario": "",
+          "answer": "Yes",
+          "history": [
+            {
+              "follow_up_question": "Are you going through a difficult time?",
+              "follow_up_answer": "Yes"
+            }
+          ],
+          "evidence": []
+        }
+      ]
+    }
+  ]
+}

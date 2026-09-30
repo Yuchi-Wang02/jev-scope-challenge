@@ -1,6 +1,16 @@
-# Parallel exploration with public source labels: feasibility only
+# Parallel exploration with public source labels
 
-2026-09-30. No selected grid, execution freeze or model predictions yet.
+2026-09-30. The [prospective protocol](PROTOCOL.md) and explicit
+[exploration amendment](EXPLORATION_AMENDMENT.md) now specify the separate run.
+No model predictions exist at preparation time. Exact inputs and source pins are
+published by `screen.py prepare` before execution; all source-derived artifacts
+carry the [attribution and CC BY-SA 3.0 notice](ATTRIBUTION.md).
+
+Frozen materials: [exact plan](plan.json), [source references](references.json),
+[original selected rows](selection.json), [code/data freeze](freeze.json).
+There are 48 Jev requests and 96 local generations; actual local input encoding
+totals 28,256 tokens. Source labels are Yes 10, No 8 and ASK 6. These are planned
+inputs and source references, not completed model results or human judgments.
 
 The reviewed [training-pair pilot](../external-validation/TASK_CARD.md) remains
 closed to inference pending its two reviews and adjudication. That commitment
@@ -36,9 +46,9 @@ Only a later selection of one pair per distinct tree could define the sample.
 Actions other than literal Yes/No/Irrelevant are provisionally mapped to ASK;
 source disagreement must not automatically be reported as a model mistake.
 
-## Next decision to make before inference
+## Design basis and fixed scope
 
-A useful small candidate is 12 distinct parent trees / 24 unchanged source inputs:
+The frozen screen uses 12 distinct parent trees / 24 unchanged source inputs:
 four No/Yes pairs, four ASK/decisive pairs, and four invariant pairs. Selection
 must use a declared deterministic hash order, settle distinct-tree allocation,
 and freeze all requests before any prediction. This adds an invariant group
@@ -57,9 +67,9 @@ controls and failures would be reported. It is a diagnostic comparison, not new
 counterfactual methodology or a dedicated-model necessity claim. The existing
 [nearest-work findings](../external-validation/NEAREST_WORK_UPDATE.md) apply.
 
-Before any run, publish an explicit prospective amendment distinguishing this
-unreviewed dev diagnostic from the review-first training study, and preserve
-that earlier gate. No training review item may be scored in this branch. Retain
+The published prospective amendment distinguishes this unreviewed dev diagnostic
+from the review-first training study and preserves that earlier gate. No training
+review item may be scored in this branch. Retain
 source attribution and CC BY-SA 3.0 obligations if adapted inputs are published;
 the attribution inside the [existing review ZIP](../external-validation/public-review/README.md)
 identifies the original dataset and authors. No third-party rows are published
@@ -68,4 +78,9 @@ by this feasibility page.
 ```bash
 # Public archive download and structural counts only; no model or credential.
 python research/source-label-screen/source_inventory.py
+# After a clean committed freeze, with existing pinned local model files:
+python research/source-label-screen/screen.py verify --model-dir /path/to/pinned/qwen35
+python research/source-label-screen/screen.py jev --model-dir /path/to/pinned/qwen35
+python research/source-label-screen/screen.py qwen --model-dir /path/to/pinned/qwen35
+python research/source-label-screen/screen.py analyze --model-dir /path/to/pinned/qwen35
 ```

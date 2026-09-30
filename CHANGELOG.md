@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — separate public-source diagnostic frozen before inference
+
+Published an explicit exploration amendment, deterministic 12-tree /24-input
+dev selection, unchanged source rows, separate source labels and 144 exact jobs.
+Existing training-review gates remain intact. Five targeted software tests pass;
+actual local input encoding totals 28,256 tokens. No predictions exist at this
+freeze milestone. The diagnostic measures source agreement, not verified truth.
+
 ## 2026-09-30 — raw-record comparison analysis
 
 Added common-cohort journal analysis, all five controls, incomplete-grid reporting
