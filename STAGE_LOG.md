@@ -4,6 +4,45 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: add transparent shortcut controls
+
+- Objective: test whether the selected history-answer contrasts might reward
+  trivial copying, before interpreting a future model score as rule understanding.
+- Completed: four constant-action controls and last-history-answer copying,
+  restricted to visible state and integrated with the prospective paired scorer
+  in synthetic tests. The plan declares all five; none are chosen after results.
+- Audit: a deliberately opposite-rule fixture makes the unchanged copy answer
+  fail. This exposes the shortcut's limitation rather than treating it as truth.
+  References and review metadata are rejected at the control input boundary.
+- Gap: no real control scores or model predictions exist. These shallow controls
+  cannot establish that general deterministic rule interpretation is inferior.
+- Next: retain them in the reviewed pilot and report all outcomes; implement
+  task-run accounting without previewing pending task predictions.
+- Presentation: show controls alongside model results, with their exact behavior
+  and scope. A model advantage over a shortcut is not an algorithmic contribution.
+
+## 2026-09-30: compile a reviewed comparison without opening inference
+
+- Objective: turn the next comparison's input/fairness requirements into an
+  inspectable plan, while preserving independent review and historical evidence.
+- Completed: [draft contract](research/external-validation/COMPARISON_DRAFT.md)
+  and compiler for 96 Jev requests /192 local generations after review. The
+  compiler recomputes the review/adjudication chain, separates references from
+  requests, declares work limits and refuses conflicting output files.
+- Audit: synthetic tests exercise the complete 24-pair grid, prove that changing
+  reference actions alone leaves requests unchanged, reject source-label leakage
+  and altered final cohorts, and stop missing-review paths before source access.
+  A separate real-tokenizer check verified nine non-weight files and both template
+  branches on one disclosed synthetic prompt; no weight load or forward occurred.
+- Gap: no real ShARC review chain or task plan exists yet. The tokenizer-loading
+  path passed the small check, but actual cohort tokenization and the task runner
+  remain before a separately published execution
+  freeze. No model calls ran.
+- Next: implement the remaining accounting requirements using software
+  fixtures while human review proceeds; do not use pending task outputs for tuning.
+- Presentation: label all counts as planned and keep synthetic tests distinct
+  from model results. A compileable design does not establish research validity.
+
 ## 2026-09-30: check the counterfactual precedent and implement paired scoring
 
 - Objective: determine whether the planned contrast differs from the nearest

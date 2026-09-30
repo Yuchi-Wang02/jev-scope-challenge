@@ -73,6 +73,14 @@ The [prospective paired scorer](PAIRED_METRICS.md) now checks per-condition
 denominators, pair correctness, changed/invariant strata and invalid outputs
 on synthetic software fixtures. It has not scored the queued task inputs.
 
+The [direct-comparison draft](COMPARISON_DRAFT.md) specifies a 96-request Jev /
+192-generation Qwen candidate grid. Its compiler revalidates saved reviews and
+adjudication before preparing private requests and separate scoring references.
+It cannot run inference. Five declared non-model controls (four constants and
+last-history-answer copying) are implemented as shallow checks, not general
+rule interpreters. Real reviewed inputs, the task runner and an exact execution
+freeze remain outstanding.
+
 ## Nearest-work screen and reuse ledger
 
 Primary abstracts and bibliographic records checked 2026-09-30. The first four

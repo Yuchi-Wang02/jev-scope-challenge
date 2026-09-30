@@ -1,5 +1,21 @@
 # Release notes
 
+## 2026-09-30 — visible-input shortcut controls
+
+Added four constant actions and last-history-answer copying as explicit shallow
+non-model controls for the prospective pilot. Four software tests cover exact
+fallback behavior, reference-free inputs, paired scoring and a counterexample
+where copying fails. No real task control scores or model outputs were produced.
+
+## 2026-09-30 — review-gated comparison plan compiler
+
+Added an inference-closed comparison draft and private plan compiler. Revalidates
+both reviewer forms, saved reconciliation, human adjudication and frozen reserves;
+separates scoring labels from requests and enforces declared planning limits.
+Six synthetic tests cover the 288-job grid, reference noninterference, missing
+reviews, cohort tampering, context limits and preservation of existing outputs.
+No real ShARC plan, model predictions or human-review claims were generated.
+
 ## 2026-09-30 — counterfactual method check and prospective paired metrics
 
 Inspected the EXtrA author's thesis method/results sections and recorded
