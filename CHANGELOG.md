@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — counterfactual method check and prospective paired metrics
+
+Inspected the EXtrA author's thesis method/results sections and recorded
+substantial single-condition overlap. Added per-condition scoring with paired
+correctness, change/invariance counts, failure-inclusive denominators and strict
+cohort-shape checks. Six synthetic test methods cover misleading aggregate
+accuracy and missing-data cases. No queued ShARC model inputs were scored.
+
 ## 2026-09-30 — closer external-task precedents and baseline obligations
 
 Added a focused primary-source audit of EXtrA-ShaRC and LDPC, including the

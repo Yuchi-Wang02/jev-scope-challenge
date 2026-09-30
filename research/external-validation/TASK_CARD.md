@@ -69,6 +69,10 @@ now adds eight live Jev calls and eight local label-copy generations with checke
 final-channel/termination extraction. It supplies neither ShARC predictions nor
 a task-specific budget. The independent-review gate remains unchanged.
 
+The [prospective paired scorer](PAIRED_METRICS.md) now checks per-condition
+denominators, pair correctness, changed/invariant strata and invalid outputs
+on synthetic software fixtures. It has not scored the queued task inputs.
+
 ## Nearest-work screen and reuse ledger
 
 Primary abstracts and bibliographic records checked 2026-09-30. The first four

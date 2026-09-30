@@ -25,6 +25,26 @@ The inspected repository revision is
 `261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64`.
 Our existing ShARC package retains its separate CC BY-SA 3.0 attribution.
 
+### Follow-up: author thesis method check
+
+The [UCL-deposited author thesis](https://discovery.ucl.ac.uk/id/eprint/10222976/2/Jerome_Ramos___UCL_PhD_Thesis_final.pdf)
+provides a fuller EXtrA account. Sections 3.2.3–3.2.4 (pages 52–53) describe
+100 sampled development conversations with one profile rule manually changed
+and outputs/explanations updated as needed. Section 3.5.4 and Table 3.4
+(pages 62–63) report aggregate original/counterfactual performance and identify
+instance-level outcome analysis as future work. These pages were text-read;
+pages 52 and 63 were also visually checked. This is an author thesis account,
+not verification that its wording exactly matches the ACM conference version.
+Local source: 2,392,604 bytes, SHA-256
+`5e50f86f09fcfafb7f0b9e726ef00b62056314746f73d8b6cb76833fa48fec04`.
+The PDF is not redistributed here.
+
+Our selection changes a history answer rather than manually editing a profile,
+but single-condition contrast is already present in that precedent. This is a
+material overlap, not evidence of a new experimental paradigm. The aggregate
+comparison also motivates retaining [paired correctness](PAIRED_METRICS.md).
+That metric is ordinary evaluation practice, not our algorithmic contribution.
+
 ## Changes to our contribution judgment
 
 The following are project inferences from those precedents, not statements by
@@ -78,8 +98,9 @@ authorization remains valid subject to the research gates already adopted.
 
 ## Remaining uncertainty and next decision
 
-- Retrieve and inspect the complete EXtrA paper before asserting how its
-  counterfactual construction differs from our one-history-answer selection.
+- The thesis method check establishes substantial single-condition overlap.
+  The complete ACM paper and released-example construction still need comparison
+  before claiming a narrower distinction or an exact reproduction.
 - Establish implementation availability and exact components before promising
   a reproduced LDPC baseline. Do not install an old environment merely to claim
   reuse; choose reproduction or an explicitly named adaptation for a reason.

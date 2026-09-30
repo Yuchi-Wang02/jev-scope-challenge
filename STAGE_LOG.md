@@ -4,6 +4,24 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: check the counterfactual precedent and implement paired scoring
+
+- Objective: determine whether the planned contrast differs from the nearest
+  method and prevent aggregate scores from concealing paired failures.
+- Completed: inspected relevant EXtrA author-thesis pages, including method
+  and result-table images. Confirmed substantial one-condition overlap; recorded
+  source hash and inspection limits in the [update](research/external-validation/NEAREST_WORK_UPDATE.md).
+  Implemented a [prospective scorer](research/external-validation/PAIRED_METRICS.md).
+- Audit: synthetic counterexamples show equal item accuracy with different
+  pair success. The scorer retains failed outputs, refuses missing/duplicate
+  records and does not pool repeated conditions or label absent strata as zero.
+- Gap: these checks establish calculations, not human labels, a useful model
+  comparison or novelty. No task predictions or additional API calls occurred.
+- Next: complete review/adjudication and the task-run contract; integrate scorer
+  with authenticated finalized references and recorded backend outputs then.
+- Presentation: keep software tests visibly distinct from model results. The
+  public question remains open, with prior work stated before any contribution.
+
 ## 2026-09-30: narrow the external-task contribution after closer prior work
 
 - Objective: decide whether the next comparison could distinguish anything
