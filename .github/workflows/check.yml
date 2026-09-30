@@ -58,6 +58,7 @@ jobs:
       - run: python research/candidate-completeness/reasoning_report.py --verify
       - run: python research/candidate-completeness/plot_results.py --verify
       - run: python research/decision-sufficiency/build.py --verify
+      - run: python research/baseline-readiness/preflight.py verify
       - run: python docs/build_four_line_challenge.py verify
       - run: python docs/build_risk_tradeoff.py verify
       - run: python docs/build_request_switch.py verify

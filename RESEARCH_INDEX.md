@@ -50,6 +50,7 @@ derived predictions is not a larger evaluated dataset.
 
 |Analysis|What it adds|Interpretation boundary|
 |---|---|---|
+|[Ordinary-model readiness audit](research/baseline-readiness/README.md)|Pinned metadata for four checkpoints, installed-runtime registry and GPU inspection; identifies the greedy-control departure from Qwen's recommended thinking decoding.|Zero weights downloaded and zero inference. Weight bytes are not runtime memory; architecture registration is not a successful load. Closed-grid scores are unchanged.|
 |[Decision-sufficiency specification lab](research/decision-sufficiency/README.md)|20 artificial examples, five invalid-input controls; a finite database enumerator checks 730 valid and rejects 180 inconsistent contracts. Distinguishes predicate-only answers from unique-target requirements.|Zero model calls or human annotations. Applies existing certain-answer semantics; software test counts are not empirical results. Does not relabel earlier experiments or authorize refunds.|
 |[Evidence guards](research/evidence-guards/)|13 methods over saved evidence-gap scores; 8,424 derived predictions and a grammar-code reference.|Post-hoc development analysis.|
 |[Parent-paired audit](research/fact-execution/PARENT_PAIRED_AUDIT.md)|Recomputes line-pilot changes across 12 parents: determined correctness falls in 10; false commitments fall in eight.|Clustered descriptive analysis, not population inference.|

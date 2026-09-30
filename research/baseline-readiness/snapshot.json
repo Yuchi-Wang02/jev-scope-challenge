@@ -1,0 +1,348 @@
+{
+  "captured_at_utc": "2026-09-30T08:04:43.999317+00:00",
+  "purpose": "Resource and interface audit, not an inference comparison",
+  "local_runtime": {
+    "python": "3.10.18",
+    "transformers": "4.55.4",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "total_gpu_memory_bytes": 17094475776,
+    "registered_model_types": {
+      "qwen3": true,
+      "qwen3_5": false,
+      "qwen3_5_text": false,
+      "qwen3_5_moe": false
+    }
+  },
+  "models": [
+    {
+      "model": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "hub_info_url": "https://huggingface.co/api/models/Qwen/Qwen3-4B/revision/1cfa9a7208912126459214e8b04321603b3df60c?blobs=true",
+      "hub_info_sha256": "5cb6bdc20cdba862b2a5058e04fb98b86a14eff568aac77f39c1b155afb87e01",
+      "license_reported_by_hub": "apache-2.0",
+      "model_type": "qwen3",
+      "architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "checkpoint_transformers_version": "4.51.0",
+      "config_dtype": "bfloat16",
+      "text_model_type": null,
+      "quantization_config": null,
+      "generation_config": {
+        "bos_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95,
+        "transformers_version": "4.51.0"
+      },
+      "tensor_storage_bytes_from_index": 8044936192,
+      "weight_file_bytes": 8044982000,
+      "weight_files": [
+        {
+          "name": "model-00001-of-00003.safetensors",
+          "file_bytes": 3957900840,
+          "lfs_sha256": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223"
+        },
+        {
+          "name": "model-00002-of-00003.safetensors",
+          "file_bytes": 3987450520,
+          "lfs_sha256": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5"
+        },
+        {
+          "name": "model-00003-of-00003.safetensors",
+          "file_bytes": 99630640,
+          "lfs_sha256": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1"
+        }
+      ],
+      "sources": {
+        "config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+          "sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+          "bytes": 726
+        },
+        "generation_config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/generation_config.json",
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "bytes": 239
+        },
+        "model.safetensors.index.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/model.safetensors.index.json",
+          "sha256": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2",
+          "bytes": 32819
+        },
+        "README.md": {
+          "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+          "sha256": "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47",
+          "bytes": 16857
+        }
+      },
+      "readme_has_explicit_greedy_warning": true,
+      "readme_mentions_32768_output_recommendation": true,
+      "weights_downloaded": false,
+      "runtime_load_tested": false,
+      "model_type_registered_in_existing_runtime": true,
+      "weight_file_gib": 7.492,
+      "tensor_storage_gib": 7.492,
+      "index_minus_weight_files_bytes": -45808
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "hub_info_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B?blobs=true",
+      "hub_info_sha256": "26f40f41ba7c98db70b705990ebb4ddf0e8d8ff65fe5e91134f3c1a72ad25434",
+      "license_reported_by_hub": "apache-2.0",
+      "model_type": "qwen3",
+      "architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "checkpoint_transformers_version": "4.51.0",
+      "config_dtype": "bfloat16",
+      "text_model_type": null,
+      "quantization_config": null,
+      "generation_config": {
+        "bos_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95,
+        "transformers_version": "4.51.0"
+      },
+      "tensor_storage_bytes_from_index": 16381470720,
+      "weight_file_bytes": 16381516776,
+      "weight_files": [
+        {
+          "name": "model-00001-of-00005.safetensors",
+          "file_bytes": 3996250744,
+          "lfs_sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f"
+        },
+        {
+          "name": "model-00002-of-00005.safetensors",
+          "file_bytes": 3993160032,
+          "lfs_sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282"
+        },
+        {
+          "name": "model-00003-of-00005.safetensors",
+          "file_bytes": 3959604768,
+          "lfs_sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836"
+        },
+        {
+          "name": "model-00004-of-00005.safetensors",
+          "file_bytes": 3187841392,
+          "lfs_sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a"
+        },
+        {
+          "name": "model-00005-of-00005.safetensors",
+          "file_bytes": 1244659840,
+          "lfs_sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+        }
+      ],
+      "sources": {
+        "config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+          "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+          "bytes": 728
+        },
+        "generation_config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/generation_config.json",
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "bytes": 239
+        },
+        "model.safetensors.index.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model.safetensors.index.json",
+          "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+          "bytes": 32878
+        },
+        "README.md": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+          "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6",
+          "bytes": 16660
+        }
+      },
+      "readme_has_explicit_greedy_warning": true,
+      "readme_mentions_32768_output_recommendation": true,
+      "weights_downloaded": false,
+      "runtime_load_tested": false,
+      "model_type_registered_in_existing_runtime": true,
+      "weight_file_gib": 15.256,
+      "tensor_storage_gib": 15.256,
+      "index_minus_weight_files_bytes": -46056
+    },
+    {
+      "model": "Qwen/Qwen3-8B-FP8",
+      "revision": "220b46e3b2180893580a4454f21f22d3ebb187d3",
+      "hub_info_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-FP8?blobs=true",
+      "hub_info_sha256": "8555ff690ccefa09f5cf95239164b438718408101458254dd86d1259188d516b",
+      "license_reported_by_hub": "apache-2.0",
+      "model_type": "qwen3",
+      "architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "checkpoint_transformers_version": "4.51.0",
+      "config_dtype": "bfloat16",
+      "text_model_type": null,
+      "quantization_config": {
+        "activation_scheme": "dynamic",
+        "fmt": "e4m3",
+        "quant_method": "fp8",
+        "weight_block_size": [
+          128,
+          128
+        ]
+      },
+      "generation_config": {
+        "bos_token_id": 151643,
+        "do_sample": true,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "pad_token_id": 151643,
+        "temperature": 0.6,
+        "top_k": 20,
+        "top_p": 0.95,
+        "transformers_version": "4.51.0"
+      },
+      "tensor_storage_bytes_from_index": 9438648320,
+      "weight_file_bytes": 9436628784,
+      "weight_files": [
+        {
+          "name": "model-00001-of-00002.safetensors",
+          "file_bytes": 4953240624,
+          "lfs_sha256": "83bb444edc7d4a1ed91ab67ad19620e2ed74724cdd62ede330fcaa7748c64404"
+        },
+        {
+          "name": "model-00002-of-00002.safetensors",
+          "file_bytes": 4483388160,
+          "lfs_sha256": "c59d27856ca358b24770802ea52f1785258830f61ff3ac72a4b3896fad648f9b"
+        }
+      ],
+      "sources": {
+        "config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B-FP8/resolve/220b46e3b2180893580a4454f21f22d3ebb187d3/config.json",
+          "sha256": "79e454d6cc36c41ab0e9418c8f78a033afa9ac88e5a58d67c1471de315c8d29a",
+          "bytes": 896
+        },
+        "generation_config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B-FP8/resolve/220b46e3b2180893580a4454f21f22d3ebb187d3/generation_config.json",
+          "sha256": "36efbc59151975193688a7e86804764f697478c6542fe0acbf1f40f119f4fdc9",
+          "bytes": 213
+        },
+        "model.safetensors.index.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B-FP8/resolve/220b46e3b2180893580a4454f21f22d3ebb187d3/model.safetensors.index.json",
+          "sha256": "e7bb72e12dcae27a9968ded73109349d4d7f193c2496533d89ffa7184eeea5ae",
+          "bytes": 55847
+        },
+        "README.md": {
+          "url": "https://huggingface.co/Qwen/Qwen3-8B-FP8/resolve/220b46e3b2180893580a4454f21f22d3ebb187d3/README.md",
+          "sha256": "27c5d08b13bff69ddccff08e89c06d5e92a576dedec15317adf3d39c113a3117",
+          "bytes": 17487
+        }
+      },
+      "readme_has_explicit_greedy_warning": true,
+      "readme_mentions_32768_output_recommendation": true,
+      "weights_downloaded": false,
+      "runtime_load_tested": false,
+      "model_type_registered_in_existing_runtime": true,
+      "weight_file_gib": 8.789,
+      "tensor_storage_gib": 8.79,
+      "index_minus_weight_files_bytes": 2019536
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "hub_info_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-4B?blobs=true",
+      "hub_info_sha256": "07f60443c41a6d87b14a17ef8b435f958d179a93ccd0cf6128cf4daa04bd152f",
+      "license_reported_by_hub": "apache-2.0",
+      "model_type": "qwen3_5",
+      "architectures": [
+        "Qwen3_5ForConditionalGeneration"
+      ],
+      "checkpoint_transformers_version": "4.57.0.dev0",
+      "config_dtype": null,
+      "text_model_type": "qwen3_5_text",
+      "quantization_config": null,
+      "generation_config": null,
+      "tensor_storage_bytes_from_index": 9319737856,
+      "weight_file_bytes": 9319828096,
+      "weight_files": [
+        {
+          "name": "model.safetensors-00001-of-00002.safetensors",
+          "file_bytes": 5329398688,
+          "lfs_sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+        },
+        {
+          "name": "model.safetensors-00002-of-00002.safetensors",
+          "file_bytes": 3990429408,
+          "lfs_sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+        }
+      ],
+      "sources": {
+        "config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json",
+          "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+          "bytes": 3161
+        },
+        "generation_config.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/generation_config.json",
+          "status": "absent_from_pinned_file_listing",
+          "bytes": 0,
+          "sha256": null
+        },
+        "model.safetensors.index.json": {
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/model.safetensors.index.json",
+          "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+          "bytes": 76196
+        },
+        "README.md": {
+          "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+          "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+          "bytes": 77661
+        }
+      },
+      "readme_has_explicit_greedy_warning": false,
+      "readme_mentions_32768_output_recommendation": true,
+      "weights_downloaded": false,
+      "runtime_load_tested": false,
+      "model_type_registered_in_existing_runtime": false,
+      "weight_file_gib": 8.68,
+      "tensor_storage_gib": 8.68,
+      "index_minus_weight_files_bytes": -90240
+    }
+  ],
+  "network": {
+    "logical_fetches": 2,
+    "redirect_hops": 2,
+    "final_response_body_bytes": 153857,
+    "recovered_payload_files": 17,
+    "recovered_payload_bytes": 230305
+  },
+  "limits": {
+    "logical_fetches": 20,
+    "final_response_body_bytes": 8388608
+  },
+  "model_forwards": 0,
+  "weight_download_bytes": 0,
+  "capture_recovery": {
+    "used_saved_payloads": true,
+    "prior_failure": "Initial capture stopped on the unlisted Qwen3.5-4B generation_config.json (404); 17 successful payloads retained, plus one failed fetch. No weights or inference. Redirect count and failed response size were not retained for that initial attempt."
+  },
+  "notes": [
+    "Weight storage is not peak runtime memory.",
+    "Registry support is not a tested load, forward, generation, or quantization kernel.",
+    "Vendor scores are not reproduced or used to declare a stronger model on our task.",
+    "No tokenizers, model source code or weights are executed by this capture."
+  ]
+}

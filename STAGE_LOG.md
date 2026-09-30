@@ -130,6 +130,30 @@ presentation. It does not claim a paper is ready.
   before allocating new model experiments. Existing 72-input review and stronger
   ordinary comparators remain the primary research gates. Zero new model calls.
 
+## 2026-09-30: distinguish a conforming run from a capable comparator
+
+- Objective: make the stronger ordinary-model comparison concrete while human
+  semantic review remains pending.
+- Evidence: [metadata/runtime audit](research/baseline-readiness/README.md) pins
+  four checkpoints and their weights' listed sizes without downloading them.
+  The installed Transformers 4.55.4 registry supports qwen3 but not qwen3_5.
+  Qwen3-8B BF16 weights consume about 15.26 GiB before runtime overhead; FP8 and
+  Qwen3.5-4B have smaller stored artifacts but untested runtime compatibility.
+- Material correction: our existing Qwen3-4B card explicitly warns against
+  greedy decoding for thinking. The repaired 512-token run conforms to its
+  protocol, but cannot stand in for vendor-recommended reasoning capability.
+  Added the qualification to current reports and navigation; no score changed.
+- Execution limits: only public metadata fetched and an installed-registry/GPU
+  probe run. Retained/recovered metadata after an absent generation_config.json;
+  disclosed an FP8 size-declaration discrepancy and the failed initial check.
+  Zero new weights, model forwards or paid API calls; old environments unchanged.
+- Plan versus reality: a suitable stronger comparator is still not ready. The
+  next protocol must distinguish a capability reference from budget-constrained
+  configurations and preserve parsing failures, truncation and seed variation.
+  Asked whether another model resource already exists; do not assume credentials.
+- Decision: do not repeat the closed grid with a different setting. Use new
+  reviewed material and a supported, explicitly budgeted comparator when ready.
+
 ## Long-term direction and gates
 
 The project asks when models plus programs can provide reliable typed decisions,

@@ -58,6 +58,13 @@ These are scientific scope gates, not repeated permission requests for already
 authorized bounded Jev/local runs. Independent work can continue on methods,
 provenance, reusable verification and literature while reviews are pending.
 
+The [completed metadata/runtime audit](../baseline-readiness/README.md) finds that
+the existing 512-token greedy control differs from Qwen's recommended thinking
+decoding. Separate a capable-model reference from fixed-budget engineering
+comparisons in the next protocol. Larger/full-precision, quantized and newer
+architecture options have different resource/support limits; none was acquired
+or inference-tested by that audit. The old grids remain closed.
+
 A specific alternative interpretation needs adjudication after the neutral first
 reviews: explicit-ID requests also mention a product, while the relevant-omission
 premise describes what "a product-name request" does not distinguish. Our labels

@@ -19,6 +19,7 @@ python research/candidate-completeness/reasoning_analyze.py --verify
 python research/candidate-completeness/reasoning_report.py --verify
 python research/candidate-completeness/plot_results.py --verify
 python research/decision-sufficiency/build.py --verify
+python research/baseline-readiness/preflight.py verify
 python -m unittest discover -s tests -v
 python verify_evidence.py
 python analyze.py --verify

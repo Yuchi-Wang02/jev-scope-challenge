@@ -49,6 +49,9 @@ A separately frozen **512-token deliberation control** raises Qwen to **58/72 an
 inputs per mapping. Strict complete parents stay 0/12. All truncated outputs and
 a stopped six-case sampling-configuration deviation are retained. Read the
 [full reasoning control and work accounting](research/candidate-completeness/REASONING_RESULTS.md).
+Its greedy decoding differs from Qwen's recommendation for thinking mode;
+the [comparator audit](research/baseline-readiness/README.md) records that limit
+and what a stronger ordinary-model comparison still requires.
 
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·

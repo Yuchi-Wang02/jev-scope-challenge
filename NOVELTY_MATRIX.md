@@ -94,6 +94,13 @@ unknown-reference case committed in both mappings. This is a baseline check,
 not a new reasoning method. The [post-result literature check](research/candidate-completeness/RELATED_WORK_POSTRUN.md)
 also identifies direct precedents in prompt-induced abstention and evidence boundaries.
 
+The [ordinary-model readiness audit](research/baseline-readiness/README.md) further
+qualifies the fixed-budget result: Qwen's pinned model card recommends sampling
+for thinking and warns against greedy decoding. Our greedy run followed its own
+protocol but is not the recommended-settings capability reference. Model-family
+claims need that missing comparison, separately reviewed material, and explicit
+precision/template/budget controls. The audit acquired no model or inference data.
+
 ## Decision sufficiency: a specification example, not a method claim
 
 The [executable contract lab](research/decision-sufficiency/README.md) distinguishes

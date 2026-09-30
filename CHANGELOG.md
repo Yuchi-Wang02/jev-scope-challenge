@@ -1,5 +1,15 @@
 # Release notes
 
+## 2026-09-30 — comparator readiness and interpretation correction
+
+Added a bounded metadata/runtime audit for Qwen3-4B, Qwen3-8B, Qwen3-8B-FP8 and
+Qwen3.5-4B, with pinned source hashes and no weight download or inference. The
+exact historical Qwen3-4B model card warns against greedy thinking decoding.
+Qualified the 512-token control as a budgeted configuration, not a recommended
+capability baseline; original protocols, responses and scores remain intact.
+The audit retains a missing generation-config file and an FP8 index/file-size
+discrepancy instead of inventing defaults or treating metadata as measured memory.
+
 ## 2026-09-30 — executable decision-sufficiency specification
 
 Added a separate zero-model lab for predicate-only versus unique-target-required

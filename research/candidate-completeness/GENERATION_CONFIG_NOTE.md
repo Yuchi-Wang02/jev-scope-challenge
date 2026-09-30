@@ -32,3 +32,14 @@ This repair does not guarantee identical floating-point outputs across devices,
 batch sizes or library releases. It fixes the decoding-mode mismatch we observed.
 The protocol, runtime version, effective parameters and actual work ledger should
 be checked together; an intended setting in source code alone is incomplete evidence.
+
+## Protocol fidelity is different from model-recommended decoding
+
+The [Qwen3-4B card at our pinned revision](https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md)
+recommends sampling for thinking and warns against greedy decoding. The repair
+above makes the run conform to our declared greedy protocol; it is not a claim
+that greedy is the model's recommended or strongest reasoning setting. The six
+sampled smoke records were an execution deviation, not evidence that sampling is
+an inferior method. We have not measured a recommended-settings control. See the
+[post-run comparator audit](../baseline-readiness/README.md). No historical input,
+configuration, label or raw output has been changed by this qualification.
