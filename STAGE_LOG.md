@@ -4,6 +4,28 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: preserve two API stops and finish the original 48 requests
+
+- Objective: obtain native decisions while keeping probability-field quality and
+  protocol failures separately auditable.
+- Reality: the original strict run stopped after 23 requests at a probability
+  sum of 0.99. A separately frozen repair stopped after seven new requests at
+  native choice C=0.38 versus displayed maximum B=0.39. Both ledgers remain intact.
+- Repair: [final native-choice policy](research/source-label-screen/FINAL_READOUT.md)
+  accepts only valid native action/core fields for the primary view and reports
+  metadata issues plus unique displayed argmax separately. It sends only the
+  remaining 18 requests; no response is re-requested or probability normalized.
+- Evidence: [offline API audit](research/source-label-screen/results/jev_audit.json)
+  accounts for all 48 distinct original jobs, 30,196 input /2,160 output tokens,
+  and exactly those two metadata anomalies. API latency sum is 7.361 seconds,
+  excluding setup and pauses. Source agreement is not scored in this audit.
+- Gap: the initially frozen strict experiment did not complete. The final view
+  is an adaptive interface repair, not improved model reasoning or confirmation.
+  Qwen's original fixed grid is still running; no cross-model ranking is justified.
+- Next: finish or budget-stop that live grid, verify raw token outputs, publish
+  both strict and repaired views with cost and failed-output denominators, and
+  then make the next research decision. No further readout repair in this screen.
+
 ## 2026-09-30: freeze the bounded public-dev source-label screen
 
 - Objective: obtain real natural-language feedback while the distinct training

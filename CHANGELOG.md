@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — 48 real API responses retained across explicit readout repairs
+
+The new source-label screen hit a nonunit probability sum and then a native
+choice/displayed-maximum mismatch. Preserved both stopped ledgers and froze each
+repair before sending only never-started requests. All 48 original API jobs now
+have responses, with no repeats. Published the raw records and offline audit;
+Qwen is still running at this entry, so no cross-model source-agreement claim.
+
 ## 2026-09-30 — separate public-source diagnostic frozen before inference
 
 Published an explicit exploration amendment, deterministic 12-tree /24-input

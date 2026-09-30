@@ -77,6 +77,13 @@ now makes 60 frozen visible inputs available for independent annotation. It has
 zero completed reviews and no model results; it is a public-training development
 pilot, not a new benchmark or a hidden test. [Review package](research/external-validation/public-review/README.md).
 
+A separate [public-dev source-label screen](research/source-label-screen/README.md)
+is now running under an explicit exploration amendment. Its original 48 Jev
+requests have returned across two disclosed readout repairs, preserving a
+probability-sum anomaly and a native-choice/displayed-maximum mismatch. The fixed
+Qwen grid is still running at this update. Source labels are not project-reviewed
+truth, and no cross-model ranking is claimed from the partial experiment.
+
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·
 [Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·

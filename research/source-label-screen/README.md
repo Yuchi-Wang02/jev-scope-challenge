@@ -6,6 +6,16 @@ No model predictions exist at preparation time. Exact inputs and source pins are
 published by `screen.py prepare` before execution; all source-derived artifacts
 carry the [attribution and CC BY-SA 3.0 notice](ATTRIBUTION.md).
 
+Current execution status: all 48 distinct Jev requests have returned, after two
+explicitly frozen readout repairs; the original strict run remains incomplete.
+The fixed local Qwen grid is still running at this status update. No cross-model
+source-agreement result is claimed yet. The [API audit](results/jev_audit.json)
+reproduces every raw response under its phase's original readout and separately
+extracts the final native choice. Total usage: 30,196 input /2,160 output tokens,
+zero repeated job IDs, one nonunit probability sum and one choice/maximum mismatch.
+See the [first repair](READOUT_REPAIR.md) and [final policy](FINAL_READOUT.md).
+The observed anomalies do not by themselves establish wrong source-rule decisions.
+
 Frozen materials: [exact plan](plan.json), [source references](references.json),
 [original selected rows](selection.json), [code/data freeze](freeze.json).
 There are 48 Jev requests and 96 local generations; actual local input encoding
@@ -83,4 +93,6 @@ python research/source-label-screen/screen.py verify --model-dir /path/to/pinned
 python research/source-label-screen/screen.py jev --model-dir /path/to/pinned/qwen35
 python research/source-label-screen/screen.py qwen --model-dir /path/to/pinned/qwen35
 python research/source-label-screen/screen.py analyze --model-dir /path/to/pinned/qwen35
+# Reproduce completed API evidence offline, without keys, weights or calls:
+python research/source-label-screen/jev_audit.py --verify
 ```

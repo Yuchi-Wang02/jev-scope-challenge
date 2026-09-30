@@ -45,6 +45,14 @@ predictions and is not a blinded human-review instrument.
 
 ## Runtime preparation with actual generation
 
+**Separate diagnostic in progress:** the [public-dev source-label screen](research/source-label-screen/README.md)
+uses 12 previously unscored dev trees /24 unchanged inputs, including invariant
+pairs. All 48 original API requests now have responses; two explicit readout
+repairs preserve the original failures and never repeat a request. The fixed
+96-generation local grid is still running at this update. This is unreviewed
+source agreement, not an addition to completed studies or independent confirmation.
+The training-review queue below remains unscored.
+
 The [Qwen3.5-4B technical smoke](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)
 completed one BF16 GPU load and six generic generation calls (550 generated tokens,
 one truncated thinking output). It preserves a zero-forward dependency failure
