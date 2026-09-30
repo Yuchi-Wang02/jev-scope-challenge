@@ -4,6 +4,27 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: fresh-cluster answer-interface execution freeze
+
+- Objective: separate finite readout from generated output before extending fact
+  pipelines or attributing model differences to specialization.
+- Reality at freeze: 12 new trees /24 scenarios, six permutations, 648 compiled
+  jobs; all original smoke and main outputs remain unchanged. No new inference.
+- Improvement over the initial idea: an identical-input generated-letter route
+  bridges finite letters and generated semantics. Otherwise format and readout
+  would change together with no intermediate control.
+- Audit: label/order-invariant selection, whole-tree exclusions, exact six-way
+  coverage, no reference-label leakage, byte-identical letter inputs, strict
+  parsing and invalid-aware majority rules. Greedy configuration audited without
+  weights; actual loaded settings still require execution-time checks.
+- Gap: known task labels, small unreviewed clusters, bundled binding/position
+  changes, opaque API internals and no strong-model or matched-cost conclusion.
+- Next: execute the fixed grid, report every invalid and all six permutations,
+  independently replay counts, then close the new cohort rather than optimize it.
+- Presentation: "Same facts. Different answer interface." [Study entry](research/qa4pc-answer-interface/README.md).
+  Existing primary studies already cover order sensitivity and calibration;
+  this is a comparison control, not an invented method.
+
 ## 2026-09-30: completed Qwen continuation and close the QA4PC cohort
 
 - Objective: complete the original main comparison without replaying failed work

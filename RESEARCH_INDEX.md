@@ -1,11 +1,14 @@
 # Research map and evidence status
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
-[current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
+[current novelty assessment](NOVELTY_MATRIX.md). An earlier completed grid is the
 [single-prefill Qwen control](research/finite-choice-readout/RESULTS.md), on the same public-source inputs.
 A later [implementation/data audit](research/implementation-audit/README.md) adds no model calls and identifies two invisible-change label conflicts in the pinned EXtrA release.
 The subsequent [QA4PC graph audit](research/qa4pc-audit/README.md) verifies 429 complete development compositions and retains eight cases with a missing formula variable.
 Its [amended stage-attribution run](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md) now completes both models while preserving Qwen's original smoke stop.
+The next [answer-interface grid](research/qa4pc-answer-interface/README.md) is
+frozen on 12 new policy clusters, with six mappings and three Qwen output routes;
+preparation is separate from completed model evidence.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 

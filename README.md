@@ -15,6 +15,11 @@ Fact calls plus code did not consistently improve either model over graph-direct
 Qwen decisions change substantially with answer mapping. The original stop,
 [source audit](research/qa4pc-audit/README.md), invalids and costs remain visible.
 
+Next frozen grid: [Same facts. Different answer interface.](research/qa4pc-answer-interface/README.md)
+New policy clusters, all six mappings, and an identical-prompt generated-letter
+bridge between finite readout and semantic-label generation. Preparation is
+complete; the linked study reports its execution status separately.
+
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
 sufficient, and how input representation and rule execution affect the outcome.
@@ -34,7 +39,7 @@ no reviewer-endorsed reference update or held-out confirmation of a general meth
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
-## Latest: Can one prefill replace a generated decision?
+## Earlier control: Can one prefill replace a generated decision?
 
 A frozen Qwen3.5-4B letter readout uses one forward and zero generated tokens per
 input. On the same 24 inspected ShARC inputs, source agreement is **13/24 and

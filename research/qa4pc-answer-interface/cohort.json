@@ -1,0 +1,267 @@
+{
+  "study": "qa4pc-answer-interface-dev-v1",
+  "status": "selected before new model inference",
+  "selection_rule": "Whole-tree exclusions, study-salted SHA256 tree rank, then scenario rank; no label or output selection.",
+  "dev_trees": 60,
+  "dev_scenarios": 437,
+  "exclusions": {
+    "incomplete_graph": {
+      "trees": 1,
+      "scenarios": 8
+    },
+    "pending_training_review_queue": {
+      "trees": 3,
+      "scenarios": 29
+    },
+    "prior_source_screen": {
+      "trees": 0,
+      "scenarios": 0
+    },
+    "inspected_extra": {
+      "trees": 4,
+      "scenarios": 35
+    },
+    "prior_stage_attribution": {
+      "trees": 12,
+      "scenarios": 89
+    }
+  },
+  "excluded_union_trees": 20,
+  "excluded_union_scenarios": 161,
+  "eligible_trees": 40,
+  "eligible_tree_ids_sha256": "3ede21a15e62ac26262841e65fa4fc5e74a36f4cf6da2f7b449d7a2acf76e3c9",
+  "selected_trees": 12,
+  "selected_scenarios": 24,
+  "selected_label_counts": {
+    "maybe": 6,
+    "no": 13,
+    "yes": 5
+  },
+  "selected": [
+    {
+      "tree_id": "95d2d25b10d09209f7505c11a1e07eb029a0810b",
+      "tree_rank": "1fbf161fba9d9a50f36d7828949144af0da90ebb331a7fddc7a4a9cebd9b6be8",
+      "scenarios": [
+        {
+          "utterance_id": "81a382468639877688c5b08037853adf14d25e6b",
+          "scenario_rank": "0376359a4d7cf52b9912949d78ff97a66170805e7cc636eb29a99347776cc715",
+          "direct_visible_sha256": "7534639ce28d6d61052e89f978b329bed0933b82dd49ce6320e1fcc75c535c7d"
+        },
+        {
+          "utterance_id": "cbe3acedbfa2e2884f5cde22959ecfbf4b4be7e2",
+          "scenario_rank": "41ad3b6a759bbb3d8da916a2a7f887253dd692f234c6cfce6e15286e48512961",
+          "direct_visible_sha256": "ca24e32a369f68c8830b3fea88387c45f929f2f212efe723c607524dde35317a"
+        }
+      ]
+    },
+    {
+      "tree_id": "8034fa59293fec3669d41a392e1b2062350a6847",
+      "tree_rank": "208b2f018dce659c62c304afc3aa5daf8a9cb539d605b70396bae94f925c5262",
+      "scenarios": [
+        {
+          "utterance_id": "5a9c8998854d08ae0b4526a78a78d2994c5c07f0",
+          "scenario_rank": "40083757bef67221a0147de359ec0cc94505aeda57d760d71c8968efd03b8c00",
+          "direct_visible_sha256": "50e641e337bfd7b1e8aece2a2219bf84413a44007309b54118e27a2320cb5ccc"
+        },
+        {
+          "utterance_id": "c1724e0ef22508c069ebc329a6ec8a114579a203",
+          "scenario_rank": "eb00de7c388b50b00d5283c78287f5417eeb35daefdd642dfa69966a8cf2ba9a",
+          "direct_visible_sha256": "3bf2f1ee6a4f5eae319d0b308feb95a14501078c0551894be566806597fee03f"
+        }
+      ]
+    },
+    {
+      "tree_id": "ec33da9155d683bf47c11405608fca2b2e2bb637",
+      "tree_rank": "21eef9f48edbcda279b213290f16dc14ab912196032c7f9311947fad8965c380",
+      "scenarios": [
+        {
+          "utterance_id": "eb8d0133522537b0f89f0f8be0d96ab5e9aab38a",
+          "scenario_rank": "44ae550f5217ea75693c3d60d142300b004661f8d36e25a53f3b59782c35c6b6",
+          "direct_visible_sha256": "2c59ee1c768f18c4fd032d0f95610fce375aa5eac1deebd52285f18419729d35"
+        },
+        {
+          "utterance_id": "449e3844d757c89e99b535c3070df83f66fa7063",
+          "scenario_rank": "7451896dccc1e48f1b4a60eeac981bcfd829075f572e360f122f68218c3d4823",
+          "direct_visible_sha256": "2d4e6d74c18a6ca42e274f3b4818f36fd426f8b27fb663d74a15cb6390fa3bca"
+        }
+      ]
+    },
+    {
+      "tree_id": "2eeb6b5ed46cea8a9c0e9b1b1fcd0fc9fbbf8af9",
+      "tree_rank": "27a46bf3612949e2b1d10ae4674fac6fb5a9c07d23d1a3f51a702479f00e95ae",
+      "scenarios": [
+        {
+          "utterance_id": "a76e901506bd8a808b83fb61b9274afe394a0953",
+          "scenario_rank": "0c893af89b5e76be36d57ae4be57cc45996aabf9a87d3725fbf772270ccc39e9",
+          "direct_visible_sha256": "e6589562859c71df3ff78e59adeb6cc56f65b3a59f37c1af26c06f15ae5f27c5"
+        },
+        {
+          "utterance_id": "2a1b6e9e696f7b006aef6572a407ce7bbe68d3be",
+          "scenario_rank": "23898359c59b0986f7f4e4f21c41477f645fd4a5b9efc319612d2625b789fcd6",
+          "direct_visible_sha256": "cedd960fb611e9a4dff51a185c1c9ef9f3a709f39ce239b70af0217fc8b777ee"
+        }
+      ]
+    },
+    {
+      "tree_id": "f44401af0e0821896d2085315e38f81f46c718c4",
+      "tree_rank": "2a476d0f4014ee41be7407c169bf806b473fa3bd6df0dcf84c5cd01f045e6b0e",
+      "scenarios": [
+        {
+          "utterance_id": "6903c93d15179692eb1244bd3f35158f19c9ddf6",
+          "scenario_rank": "14f695de68838d177dcf44276bf24505e98e88fbfd5fe353838861d3a58f1b2c",
+          "direct_visible_sha256": "f3364142b7b49883bfcde166e2937bfce569e43367afa359c7440785741d756f"
+        },
+        {
+          "utterance_id": "0e1b91c441eed76118786861e494e991e2f665b9",
+          "scenario_rank": "74bcf1c706f9764e6bfdb9fad5367a4d7a44f8e0250c82adec1d5ad0b6a335df",
+          "direct_visible_sha256": "cccbde9ba6b4c08c408705bdfa13df2e7f19493ee2699ec9f131bf335a30a486"
+        }
+      ]
+    },
+    {
+      "tree_id": "2a9a97559011094fef6cda24fdb3aa3681da31ad",
+      "tree_rank": "3099522647493108ce23384638eee84ba90d12594de455524c44a5ea917e21ae",
+      "scenarios": [
+        {
+          "utterance_id": "9ffb450ac338ce72186ffda25b1d08cc4e08f645",
+          "scenario_rank": "441465d3ad99608b8f5b2224d8256321a1f3435ef0264ab346d1c6d78c6763e8",
+          "direct_visible_sha256": "72efb70ee725c56183d9c8c9e99c669e0d325ca9b39e5a32e3c210c36ce68e44"
+        },
+        {
+          "utterance_id": "3b77b085b29d800f87a4c167f3da23c3e9e4457c",
+          "scenario_rank": "5520698c4f99280e67bcf56eb7ea9bd583f1ad55c0bc51ee9196ff23d55b9c09",
+          "direct_visible_sha256": "25eb0870cc54a2ad04772106d52dbe806f175e7cd0dfc13c6ca3aea66d8ff015"
+        }
+      ]
+    },
+    {
+      "tree_id": "b39c85baca8d016ae4d61d9afae753f85c31fa01",
+      "tree_rank": "35464977eccbda4c84d94765e756d83416a7a2b3c4f1ba1ee94e35faab766cdb",
+      "scenarios": [
+        {
+          "utterance_id": "50cef1d135281e02a7696b35278d2b49f190aa36",
+          "scenario_rank": "1349f993b9fa858aa5907e311eb0fbfc7ebae9cf942a350217f179b04126c937",
+          "direct_visible_sha256": "10d60ff3685ef6113ec456dadce4bcc16aff01c29766d83df66c97977cfe4764"
+        },
+        {
+          "utterance_id": "75e2021efea3193538a1d002244c806bb636fd24",
+          "scenario_rank": "1bf124c3bfd046c5077e2462ad833e8dd64e785d5c5049c8d053f158022cf67d",
+          "direct_visible_sha256": "e2e6e5b88483bea75c880006e4ebfdfdc1663db1834d005a9b08a7dd96042b0d"
+        }
+      ]
+    },
+    {
+      "tree_id": "f8a5281086240ac5a81b3e306677ebb17bccfeea",
+      "tree_rank": "3795544a88638c0a6659a0e97bad42a0144f2f279188d15f34ed758aec52504b",
+      "scenarios": [
+        {
+          "utterance_id": "8dceb351329d172e6563e584c3da81717a8878e5",
+          "scenario_rank": "040539dac3cff8dd0520483be83b093802b292a3da1ea24cceeec68089831278",
+          "direct_visible_sha256": "39400f0b41b7852c7db872a3939cfbf9d99da20edd9156ece065f8839914391c"
+        },
+        {
+          "utterance_id": "7e34e009da76d89cd6d962199b2f0a32ced9ebdb",
+          "scenario_rank": "1fe4563891a36f0ae7c739721c7449b7c3145e9b649f0a2a23e8309665a144fd",
+          "direct_visible_sha256": "1e029995a6a9ca0ea23237da376c0c4f8f32cb5cbc34f9fabc85cafdead23095"
+        }
+      ]
+    },
+    {
+      "tree_id": "a6bf82d7b888f49ac44576ecfb1bcb14f0318589",
+      "tree_rank": "4157a5ad0aa16eac6c148fcd62876b894bff2149310bbca53bdb89b164406b85",
+      "scenarios": [
+        {
+          "utterance_id": "b52bfa4f2421530d85bbe38b2f00356f882d0096",
+          "scenario_rank": "aaa07ce9dba39474824577d18e8408aad7c6f8bb6631c748b0166904640c969a",
+          "direct_visible_sha256": "1360cd466aa2648a0cdca8c53ba61044d1661c5eadd9c6acb1556f3a0ed9ee1d"
+        },
+        {
+          "utterance_id": "ed9a09db588872ec4fa5fa9779a048d8eb40ef9c",
+          "scenario_rank": "c2e616ae9990d5c5255a3baf47a535dbb708085e17ffa3da8f8acf8b2f7f9cea",
+          "direct_visible_sha256": "c083b77861c31f08299009d8c33b2503b654288f2bf3d57b8b511803712cd7a8"
+        }
+      ]
+    },
+    {
+      "tree_id": "31ff00724567ea17ee26265cc9097a750ad3464b",
+      "tree_rank": "4a1e08cc77dc62e90106eb8b5e3d5d7ef7d91aea8c3b75d611195cc298349fc5",
+      "scenarios": [
+        {
+          "utterance_id": "9e1f29ec881863786203eb63203781e9a23e779c",
+          "scenario_rank": "51a2018ca378007782d10db1dbf6e36f9eb3a3221931dd80d30933b9176d92e4",
+          "direct_visible_sha256": "57cb2330e36694248814986eff431f660fdda36cc01daf3256d68f93bad34941"
+        },
+        {
+          "utterance_id": "982782a51d2817a2b5c5ba97b7c81b666b940250",
+          "scenario_rank": "59e567ea1ecb1b5269dd485c9e15d9a558834ad93f6b0c109ce8fa69a78f05d7",
+          "direct_visible_sha256": "73dabb5093f060f290636ceb57f255eacfc1ecd336807b7896a100e3870f4828"
+        }
+      ]
+    },
+    {
+      "tree_id": "1065dbb24430b3b8e20a359506fd1130d91d3eab",
+      "tree_rank": "5338e4e3a2cfb3638114de36208e2a5f35c19bf34a32d9766ec6833528766a3b",
+      "scenarios": [
+        {
+          "utterance_id": "685119bc49b1b34f9f4dec34d04b0b6023f7bfd7",
+          "scenario_rank": "0f13e45d21a2997c81eb6284391f946bc952151e17a0973dc19ea5a416fdf98a",
+          "direct_visible_sha256": "8e508eee108bab3e12e46d0dfd224a635b981c0054a2923742b9fc9ba891188f"
+        },
+        {
+          "utterance_id": "a9402a4d552ed5eadd072f9b0d2852b65a10335f",
+          "scenario_rank": "1877d6824ebbcf8532a8452e2257fb3229c1590e0a774031be707d1e7136090b",
+          "direct_visible_sha256": "cc5a27dae577654eec7c8f742e806c1543e9be8d5a1dbe1b71eb8f93a062d77a"
+        }
+      ]
+    },
+    {
+      "tree_id": "316a5289e5026bb599241e9132223f7666d27565",
+      "tree_rank": "5797bc2441e1dacd218ecd1109091ddd81dbcfebdd0de7054062c47de9c33a6d",
+      "scenarios": [
+        {
+          "utterance_id": "f1488993629418b7a01dc30d2235e9ae22d4a845",
+          "scenario_rank": "1805506accedcc62cf52b73d24b3d3e3085969625158129864ab38bfbcb9e0ae",
+          "direct_visible_sha256": "0b031c2acb5802939d723adc7fed7040ee4bf7e4f5854d6dd2e91c91d4012a69"
+        },
+        {
+          "utterance_id": "b4ed19f8ee8db73a16b4e5c52253ec9559b3d605",
+          "scenario_rank": "285a1210acb97e937950b711d7c96a1829acec5ecd0d77ae30e9601b762f1606",
+          "direct_visible_sha256": "9f94cbfdfa6f32c2c3108c119788f81f9a16db416bbff472c0e395dc586a720c"
+        }
+      ]
+    }
+  ],
+  "model_calls_at_selection": 0,
+  "project_human_labels": 0,
+  "claim": "Disjoint policy IDs from prior project model cohorts and pending review queue; not unseen policies, training-contamination freedom, or independent semantic confirmation.",
+  "source": {
+    "qa4pc_revision": "2b1de7c5e588ec70afa1e753394ae25531e0d182",
+    "qa4pc_file_pins": {
+      "trees_dev_test_qa4pc.json": [
+        "04bf52c38d7ed98d2c926547046c37027749962755d8260c0960cac62f8e8b62",
+        115320
+      ],
+      "dev_entailment_qa4pc.json": [
+        "a50fa03a1abe60f385e2ba28cca12c5bf42678f938a294fd7ca9211ada7c4707",
+        257782
+      ],
+      "dev_qa_qa4pc.json": [
+        "326be6d53018777528455bda616f9fe5b82d8a0569259118c1f1098df7a37d60",
+        581381
+      ]
+    },
+    "pending_queue_selection_sha256": "140053a26902255df677953b473045c93380976b8e12c94fbd93d5dda8d700a0",
+    "sharc_archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+    "dependencies_lf_sha256": {
+      "research/qa4pc-answer-interface/cohort.py": "521fb3f72aee742cd548d217be2152f97de470eb81ae2a94c2e0683535767280",
+      "research/qa4pc-audit/audit.py": "dcf320e89986456b0475a46f4f044d4b01bcd8c3d6e993d6cd4bfa873c57a130",
+      "research/source-label-screen/selection.json": "a1224b1faf71f84e31db7b3e887a1d59853160b2cfaaa46543365a34d3284091",
+      "research/implementation-audit/extra_release_audit.json": "4fb77b0537bb83bd827138304cd85df56ab166b7ce85896a82c1c1d009519256",
+      "research/qa4pc-stage-attribution/cohort.json": "325ddc98afbdbdabdf6da2130079f0df8af9d2ed924a2faf8a467230d6e03830",
+      "research/external-validation/prepare_sharc_review.py": "5fe669f103022dda4ca79f5b83c8b65c7b53e30c07231b11edbad81f6b762156",
+      "research/external-validation/inspect_sharc_pairs.py": "db2fa916246aea43ddd25e511ac1677a811d24070f62b0b6a3256afd531f1e03",
+      "research/external-validation/inspect_sharc.py": "a1a439948fb0a541517992e4f0776dafb365afe0ffc7d4165ad71487a559e3de",
+      "research/external-validation/sharc_review_manifest.json": "46c92209ccdd5c75783f6675f98dd14ba569aaf3f7666f0924174a219c68e77b"
+    }
+  }
+}

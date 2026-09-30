@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-30 — freeze fresh-cluster answer-interface comparison
+
+Selected 12 of 40 eligible QA4PC trees /24 scenarios after whole-tree exclusions.
+Compiled 648 jobs across Jev native, Qwen finite-letter, generated-letter and
+generated-semantic routes, all six mappings. Added exact-output adapters,
+no-weight greedy configuration audit, journal-backed runner and focused prior-
+method check. Zero model calls at this publication; original cohorts stay closed.
+Corrected stale "latest" wording in research navigation without rewriting results.
+
 ## 2026-09-30 — exact Qwen suffix completed under named gate amendment
 
 Executed 260 previously unexecuted Qwen jobs with unchanged inputs/readout.

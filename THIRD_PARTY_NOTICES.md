@@ -1,5 +1,14 @@
 # Credits, reuse and license boundaries
 
+The [QA4PC answer-interface study](research/qa4pc-answer-interface/README.md)
+uses the same pinned QA4PC upstream source and redistribution boundary as the
+stage-attribution study. It reuses this repository's own journal and adapts its
+own selection, API/logit observation and generation-configuration code. No
+additional upstream code was copied or executed and no repository was forked.
+Its [focused related-work check](research/qa4pc-answer-interface/RELATED_WORK.md)
+credits prior option-order/token-sensitivity, voting and contextual-calibration
+methods; those methods are not claimed as new contributions.
+
 ## ShARC review material (distribution amendment, 2026-09-30)
 
 The [60-item review package](research/external-validation/public-review/README.md)
