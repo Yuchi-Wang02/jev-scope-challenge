@@ -6,6 +6,11 @@ An executable manifest, exact input contracts and runner checks must precede
 inference. Existing API authorization remains in force; these are implementation
 gates, not another approval request.
 
+**Follow-up:** [cohort preparation](../qa4pc-stage-attribution/README.md) subsequently
+fixed 12 trees /24 scenarios /56 condition questions. The full query/compiler
+freeze and all model execution remain pending; the original design status above
+describes this document's creation.
+
 ## Falsifiable question
 
 On a bounded QA4PC development cohort with complete supplied graphs, does replacing

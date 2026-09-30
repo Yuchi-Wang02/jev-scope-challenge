@@ -6,6 +6,14 @@ presentation. It does not claim a paper is ready.
 
 ## 2026-09-30: QA4PC source graphs and stage-attribution feasibility
 
+Follow-up: [cohort preparation](research/qa4pc-stage-attribution/README.md)
+reconstructed the frozen pending training queue and found three overlapping
+trees /zero exact utterance IDs. Excluding them, the incomplete graph and four
+EXtrA trees leaves 52 eligible trees /365 scenarios. A label-independent hash
+selection fixes 12 trees /24 scenarios /56 condition questions. This implies
+512 main decisions across two models, two mappings and D/G/F/L, still unrun.
+The remaining gap is executable prompts, smoke/budget checks and runner freeze.
+
 - Objective: establish whether supplied graphs and condition labels support
   separating fact interpretation from logical execution.
 - Reality: 437 dev scenarios /60 trees /1,600 condition rows join exactly. One

@@ -80,6 +80,9 @@ scenarios and 1,600 question rows. Of these, 429 have complete graphs and reprod
 their source labels; eight remain unexecutable with the complete-input contract.
 This is source consistency, not model accuracy or independent semantic validation.
 Its [next comparison design](research/qa4pc-audit/NEXT_EXPERIMENT_DESIGN.md) is not run.
+The [selected next cohort](research/qa4pc-stage-attribution/README.md) has 12 trees,
+24 scenarios and 56 condition questions after whole-tree overlap exclusions;
+no compiled query grid or model predictions yet.
 
 The computational analyses below add no model forwards or independent human annotations. A large number of
 derived predictions is not a larger evaluated dataset.

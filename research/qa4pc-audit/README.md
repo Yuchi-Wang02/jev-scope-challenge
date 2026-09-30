@@ -91,6 +91,11 @@ downloading source data. **CI does not independently rerun the source-byte audit
 
 ## Decision and remaining gap
 
+**Subsequent preparation:** the [next cohort](../qa4pc-stage-attribution/README.md)
+now checks the pending training queue, excludes its three overlapping trees, and
+selects 12 trees /24 scenarios. It still has zero model results. The decision
+below records the transition at audit completion.
+
 QA4PC can support a controlled **assisted decomposition diagnostic** on complete
 development graphs. It cannot by itself establish a new method or validate the
 original business-payment task. The incomplete graph stays a reported source

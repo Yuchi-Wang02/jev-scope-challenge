@@ -2,6 +2,11 @@
 
 ## 2026-09-30 — QA4PC structural audit and next diagnostic design
 
+Subsequent preparation selected 12 trees /24 scenarios by fixed hash ordering,
+excluding three trees overlapping the pending training review queue as well as
+the incomplete graph and EXtrA overlap. Zero predictions; compiler/runner freeze
+remains pending. Derived main-call count is 512, not an executed grid.
+
 Audited pinned development records and shared graphs: 429 complete compositions
 agree with source labels; one graph omits Q1 for eight scenarios. Published
 original parser/executor checks, derived counts/IDs/hashes and overlap findings.
