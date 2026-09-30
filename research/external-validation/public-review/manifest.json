@@ -1,0 +1,24 @@
+{
+  "publication_date": "2026-09-30",
+  "study": "sharc-train-contrast-review-v0.1",
+  "license": "CC-BY-SA-3.0",
+  "license_source": "https://sharc-data.github.io/data.html",
+  "source_archive_sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e",
+  "frozen_selection_sha256": "140053a26902255df677953b473045c93380976b8e12c94fbd93d5dda8d700a0",
+  "frozen_visible_pack_sha256": "a84e976cde5033efce7e393a5a19e43461990684711d44f94f765c987d2b8524",
+  "public_visible_items": 60,
+  "public_opaque_review_ids": 60,
+  "public_source_ids": 0,
+  "public_source_labels": 0,
+  "completed_human_reviews": 0,
+  "model_forwards": 0,
+  "zip_sha256": "bc8ea7c26b550d46cc12d1f682e4785260ecbbeecdf5534aa6d7733fba96a4eb",
+  "zip_bytes": 67166,
+  "members": {
+    "ATTRIBUTION.md": "1e89ecc18424927b1678ff5d69fc4aa9809872eca74e2ed042e4add3acbdac3d",
+    "README.md": "98df2c77bd3661e7e0c544b535fd2413fbd99f1764c653f862d62258a35d9758",
+    "blank_review.csv": "edd9053a5c1c1a0ab2bd27644ff1019e33bdb35e8f429823ae29d7f7ac39fa0b",
+    "cover_note.txt": "5857f33812d6c7a067728ddfc0071fcc816acae7dcf7c1081163db53a7a9180d",
+    "review.html": "8df3bb54a8d40561f3b02260f15038c21f6d48f36d712a8ff8602d29c50e9c5a"
+  }
+}

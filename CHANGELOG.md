@@ -1,5 +1,16 @@
 # Release notes
 
+## 2026-09-30 — licensed ShARC review handoff and task boundaries
+
+Corrected the source audit using ShARC's explicit official CC BY-SA 3.0 notice.
+Published a separately licensed, attributed ZIP containing the same 60 frozen
+visible review items, a blank CSV, offline page and process cover note. Original
+protocols, selection hashes and private exports are unchanged. Added an offline
+bundle verifier and tests against input drift, label leakage and filled forms.
+The task card records absent invariant controls/Irrelevant references, public-train
+limits, an initial nearest-work screen, and a proposed fair final-output contract.
+Zero new human annotations or model calls; the human-review gate stays closed.
+
 ## 2026-09-30 — independent generation/interface calibration
 
 Completed a predeclared 48-call Qwen3.5 calibration on 12 new elementary fixtures,

@@ -1,5 +1,22 @@
 # Credits, reuse and license boundaries
 
+## ShARC review material (distribution amendment, 2026-09-30)
+
+The [60-item review package](research/external-validation/public-review/README.md)
+redistributes a selection from ShARC's official training archive, under the
+CC BY-SA 3.0 notice on the [official data page](https://sharc-data.github.io/data.html).
+Credit: Marzieh Saeidi, Max Bartolo, Patrick Lewis, Sameer Singh, Tim Rocktäschel,
+Mike Sheldon, Guillaume Bouchard and Sebastian Riedel, *Interpretation of Natural
+Language Rules in Conversational Machine Reading*, EMNLP 2018.
+The ZIP carries full attribution, source/license links and changes. Its whole
+review-package presentation is CC BY-SA 3.0; the root MIT license does not
+relicense that material. No author endorsement is implied. No ShARC/EMT/Discern
+implementation or weights were copied, forked or executed in this stage.
+See the [amendment](research/external-validation/PUBLICATION_AMENDMENT.md) and
+[initial nearest-work screen](research/external-validation/TASK_CARD.md).
+
+## Repository and earlier reuse
+
 This is an independent research repository by Yuchi Wang, developed with AI
 assistance. It is not a GitHub fork of Kev or Laya. GitHub repository metadata
 reported `fork: false` on 2026-09-29. Copying a small upstream module into a

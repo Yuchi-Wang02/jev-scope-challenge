@@ -4,6 +4,29 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: make the external-rule review queue distributable
+
+- Objective: move from private preparation to an attributable, usable external
+  natural-language review handoff and a precise next-comparison question.
+- Completed: corrected the license inventory from the official ShARC data page;
+  created a CC BY-SA 3.0 package containing the identical 60 frozen visible items,
+  blank CSV, offline interface, cover note and source credit. Added an offline
+  verifier, leakage/drift checks, and a task card with primary-source prior-work
+  screening. Original selection, protocols and private files remain unchanged.
+- Gap: zero ShARC human reviews and zero task predictions. This source-balanced
+  train selection has no deliberately invariant pairs or Irrelevant reference
+  examples. It cannot support a representative four-class or confirmation claim.
+- Decision: use this queue only as the declared development pilot. Preserve the
+  human-review gate; implement a separate fair output contract before the later
+  model freeze. Do not rerun closed grids or confuse interface failures with
+  reasoning failures. Full-paper novelty review and new-material confirmation
+  remain separate work, not completed by the abstract-level screen.
+- Presentation: [task card](research/external-validation/TASK_CARD.md),
+  [review handoff](research/external-validation/public-review/README.md), and
+  [distribution amendment](research/external-validation/PUBLICATION_AMENDMENT.md).
+  The public question is "One fact changes. Should the decision change?";
+  no claimed model failure or new algorithm accompanies it.
+
 ## 2026-09-30: calibrate output completion and audit format failures
 
 - Objective: exercise a strict final-answer interface and choose a finite output

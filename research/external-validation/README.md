@@ -35,11 +35,14 @@ length is more compatible with a bounded decision readout than a full legal
 contract.
 These counts describe dataset structure; no Jev, Kev or Qwen prediction exists.
 
-The official ShARC archive contains no license file. The
-[UCLNLP Hugging Face dataset card](https://huggingface.co/datasets/UCLNLP/sharc/blob/main/README.md)
-lists CC BY-SA 3.0. We have not copied the archive or its text into this
-repository; any later redistribution should first resolve attribution and
-license handling against the authoritative source. The Hugging Face Dataset
+The official ShARC archive contains no license file. On 2026-09-30 we corrected
+the earlier incomplete inventory: the [official data page](https://sharc-data.github.io/data.html)
+explicitly states **CC BY-SA 3.0**, also listed by the
+[UCLNLP Hugging Face dataset card](https://huggingface.co/datasets/UCLNLP/sharc/blob/main/README.md).
+The [publication amendment](PUBLICATION_AMENDMENT.md) now permits one attributed,
+licensed review package with 60 visible training inputs. The original archive
+is not vendored, and frozen source/selection summaries remain unchanged.
+The Hugging Face Dataset
 Viewer API refused this dataset because its loader uses arbitrary Python code,
 so the inspector reads the official archive directly and pins its bytes.
 
@@ -62,13 +65,14 @@ the pinned **training** split contains exact visible-input contrasts suitable
 for later human review. It publishes aggregate counts and selection logic
 only, with no third-party row text or model score.
 
-A [blinded review queue](SHARC_REVIEW_PROTOCOL.md) is now frozen at 30 pairs
-from 30 `tree_id` groups, exported as 60 independently shuffled items only
-to ignored private storage. The [offline review-page template](review_template.html)
-can render that private pack one item at a time and export a checker-compatible
-CSV; the generated page and its source text are not committed. Review
-reconciliation and frozen reserve selection have software checks, but no human
-labels or model outputs have been added.
+A [blinded review queue](SHARC_REVIEW_PROTOCOL.md) is frozen at 30 pairs
+from 30 `tree_id` groups. Its original private export is preserved. A separately
+licensed [downloadable review package](public-review/README.md) now presents the
+same 60 shuffled items, with blank CSV, offline page, cover note and attribution.
+This changes distribution only. Review reconciliation and frozen reserve
+selection have software checks, but **zero completed human reviews or model
+outputs** have been added. See the [task card](TASK_CARD.md) for the current
+comparison question, prior-work boundary, missing controls and next gates.
 
 To recompute the structural summary from the pinned source (network required,
 no model or API credential):

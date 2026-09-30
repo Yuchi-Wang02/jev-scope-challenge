@@ -65,6 +65,12 @@ found their inner objects matched the references. Frozen strict results are reta
 This is a warning about evaluation interfaces, not evidence of a Jev advantage or
 a new reasoning method.
 
+The next external rule-action candidate is [One fact changes. Should the decision
+change?](research/external-validation/TASK_CARD.md). A licensed ShARC review package
+now makes 60 frozen visible inputs available for independent annotation. It has
+zero completed reviews and no model results; it is a public-training development
+pilot, not a new benchmark or a hidden test. [Review package](research/external-validation/public-review/README.md).
+
 [Full report and costs](research/candidate-completeness/RESULTS.md) ·
 [Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/candidate_coverage.html) ·
 [Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·

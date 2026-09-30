@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
@@ -81,12 +82,18 @@ def verify():
         'research/external-validation/sharc_source_summary.json',
         'research/external-validation/sharc_pair_summary.json',
         'research/external-validation/sharc_review_manifest.json',
+        'research/external-validation/public-review/manifest.json',
+        'research/external-validation/public-review/review_package.zip',
     }
     external_data={name for name in names
                    if name.startswith('research/external-validation/') and
                    Path(name).suffix.lower() in ('.json','.jsonl','.csv','.parquet','.zip')}
     if external_data!=allowed_external_data:
         raise ValueError('Unexpected public external-validation data file(s)')
+    # Historical freeze stays unchanged; this explicit amendment publishes only
+    # the licensed, answer-hidden review bundle and checks it without .local/.
+    subprocess.run([sys.executable, str(external/'publish_review.py'), 'verify'], cwd=ROOT,
+                   check=True, capture_output=True, text=True)
     payment_review=json.loads((ROOT/'research/payment-ownership/review/submissions/yuchi/receipt.json').read_text(encoding='utf-8'))
     if (payment_review['review_items']!=96 or payment_review['second_reviewer_received'] or
         payment_review['labels_automatically_adopted']):
@@ -99,6 +106,7 @@ def verify():
         'citation_matches_schema_validated_bytes':True,'credential_pattern_matches':0,'public_weight_files':0,
         'author_review_items':96,'non_author_review_submissions':1,
         'adjudicated_reference_updates':0,'external_summary_files_checked':3,
+        'external_public_visible_review_items':60,'external_completed_reviews':0,
         'scope':'technical consistency, not a legal or scientific certification'}
 
 
