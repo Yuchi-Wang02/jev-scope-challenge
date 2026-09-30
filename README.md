@@ -1,133 +1,143 @@
-# Cancel the Right Thing: Jev vs a Frozen 4B
+# Jev Scope Challenge
 
-[Research map and status](RESEARCH_INDEX.md) · [Credits and reuse](THIRD_PARTY_NOTICES.md) ·
-[Citation](CITATION.cff) · [Reproduction guide](REPRODUCIBILITY.md)
+**From cancellation scope to evidence ownership.**
 
-**Same words. Different scope. Opposite decisions.**
+[Research map](RESEARCH_INDEX.md) · [Current claims](RESEARCH_CLAIMS.md) ·
+[Novelty and reuse](NOVELTY_MATRIX.md) · [Reproduction guide](REPRODUCIBILITY.md) ·
+[Credits](THIRD_PARTY_NOTICES.md) · [Citation](CITATION.cff)
 
-Can an off-the-shelf 4B handle the same cancellation decisions as Jev without fine-tuning?
-We ran a direct live comparison on 12 predefined four-way cases. Swap the action's
-target or the instruction's role, then swap the clause order. Every input, prompt,
-prediction and failure is inspectable.
+This is an exploratory research series about how models and programs turn
+language into decisions: which request a fact belongs to, whether evidence is
+sufficient, and how input representation and rule execution affect the outcome.
+The longer-term question is whether existing small models can become reliable
+software decision components without new training. That question remains open.
 
-**Jev led this probe: 12/12 vs 8/12 complete cases.**
+The project began with a live **Jev vs frozen Qwen3-4B** cancellation challenge.
+Jev won that probe, and a parser tailored to its grammar also solved every case.
+Later studies examine **historical pinned Kev/Qwen checkpoints**, not new Jev
+measurements or current upstream Kev. N1 uses an already-trained Kev LoRA with
+native causal logits; no new training does not mean an unadapted model.
 
-The direction persisted across both candidate mappings and the repeat. This identifies a gap for this frozen readout on these inputs, not all open models.
+**Current evidence: real, replayable synthetic diagnostics; zero independent
+human annotations; no held-out confirmation of a general method.** Several
+experiments reuse the same development texts. New forwards, candidate orders
+and derived analyses are not additional independent examples.
 
-**[Play the four-line challenge online](https://yuchi-wang02.github.io/jev-scope-challenge/)**
-before seeing the model decisions. A [standalone HTML copy](docs/four_line_challenge.html)
-also runs offline. Both replay the saved S01 case; your choices trigger no model
-or API call.
-The reveal also shows the grammar-specific Python control that solved all 12
-predefined cases; this synthetic probe does not show that Jev is necessary.
+## Latest completed diagnostic: right facts, wrong request
 
-The separate [Can 548 calls beat always deferring? calculator](https://yuchi-wang02.github.io/jev-scope-challenge/risk_tradeoff.html)
-compares three saved historical Kev-LoRA development paths with zero-model-call
-always-defer and grammar-specific code controls. Charging only needless deferrals
-makes the line reader never optimal; charging every deferral gives it a narrow
-winning range among the model paths and always-defer, where the grammar-specific
-code still has lower loss. These are hypothetical cost assumptions on 72 synthetic
-views, not new Jev results or measured real-world utility. The controls correct an
-earlier three-path comparison that emphasized a pairwise crossover.
+Keep a two-request record block fixed and change only the requested ID. Both
+IDs use the same prefix. A complete pair requires both resulting decisions to
+be correct; changing the answer alone earns no credit.
 
-![All predefined case results](assets/scope-results.png)
+On 24 constructed scenes /48 views, the historical Kev-LoRA N1 joint reader
+correctly routed **99/100 target lines**, but also accepted **85/100 foreign
+lines** as target-field evidence. An explicit-ID program gate vetoed foreign
+contributions to the same saved routes:
 
-## The four-line challenge
+|Method|Complete pairs /24|False commitments /12 uncertain views|
+|---|---:|---:|
+|Joint routing + program execution|2|7|
+|Same joint routes + visible-ID gate + program execution|23|0|
+|Direct full-record ensemble|2|9|
+|Direct ID-filtered ensemble|2|10|
+|Known-grammar program|24|0|
 
-Target: **mobile plan**. All four messages have the same word multiset.
+The gate corrected 30 view decisions without a regression in this run; one
+wrong-field extraction remains. Direct filtering produced four corrections
+and three regressions. The complete report includes all eight fixed methods,
+including single-order anchors and always-defer.
 
-| Version | Customer message | Correct decision |
-|---|---|---|
-| A | Cancel the phone insurance. Keep the mobile plan active. | KEEP |
-| B | Cancel the mobile plan. Keep the phone insurance active. | CANCEL |
-| C | Keep the mobile plan active. Cancel the phone insurance. | KEEP |
-| D | Keep the phone insurance active. Cancel the mobile plan. | CANCEL |
+This **passes the prewritten directional diagnostic**. It does not establish
+statistical significance, unseen-language transfer, a new extraction algorithm,
+or the necessity of a model: the known-grammar program solves every pair. New
+scene instances reuse inspected sentence and policy grammar.
 
-A/B must flip correctly; A/C must hold correctly. A keyword count cannot tell
-them apart. There are also quoted-example and superseded-request cases.
-The [interactive challenge](https://yuchi-wang02.github.io/jev-scope-challenge/) reveals both candidate
-mappings for every S01 message after you answer; the full explorer below covers
-all 12 predefined cases and both rounds.
+- [Read all results, failures and actual costs](research/request-ownership/RESULTS.md).
+- [Explore all paired inputs and exact prompts](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html). This page shows program references, not model predictions.
+- [Inspect raw outputs and derived records](research/request-ownership/results/v0.1/).
 
-## Actual results — primary round
+Actual work was **500 scientific forwards /188,797 input tokens plus two
+one-token warmups**. Gated routes and single-order anchors share those outputs;
+they are not extra calls. No new Jev call, download or training occurred.
+The [study README](research/request-ownership/README.md) explains the preserved
+pre-execution protocols and the later completed runtime.
 
-| System | Complete cases | Correct decisions | Wrong cancellations |
+## Original study: cancel the right thing
+
+**Same words. Different scope. Opposite decisions.** Can a frozen 4B handle the
+same cancellation decisions as Jev? Twelve predefined cases change the action's
+target or instruction role, then the clause order. Every prompt and result is
+inspectable, including both candidate mappings and a separate repeat.
+
+**[Play the four-line challenge](https://yuchi-wang02.github.io/jev-scope-challenge/)**
+before revealing the saved S01 model decisions and grammar-code reference.
+The [standalone copy](docs/four_line_challenge.html) also runs offline.
+
+|System|Complete cases /12|Correct decisions /96|Wrong cancellations /48|
 |---|---:|---:|---:|
-| Jev 1.13.0 | 12/12 | 96/96 | 0/48 |
-| Frozen Qwen3-4B | 8/12 | 83/96 | 10/48 |
-| always_keep | 0/12 | 48/96 | 0/48 |
-| keyword | 0/12 | 48/96 | 48/48 |
-| known_grammar | 12/12 | 96/96 | 0/48 |
+|Jev 1.13.0|12|96|0|
+|Frozen Qwen3-4B|8|83|10|
+|Always keep|0|48|0|
+|Keyword rule|0|48|48|
+|Known-grammar program|12|96|0|
 
+A complete case requires all four texts correct under both candidate mappings.
+The 96 primary decisions are repeated measurements of 48 texts. Round 1 repeats
+the result; it is not selected instead of round 0 or added as independent data.
+The comparison identifies a gap for this readout on these inputs, not a ranking
+of all open models or a demonstration that Jev is necessary.
 
-A complete case requires **8/8 correct decisions**: four messages under both
-A/B candidate mappings. The 96 decisions are repeated measurements of 48 texts,
-not 96 independent samples. Round 1 is a repeat check, never selected over round 0.
-Both models produced 192 formal records; see [full results](results/REPORT.md),
-[decision CSV](results/decisions.csv), and [raw records](results/).
+See the [original report](results/REPORT.md), [decision CSV](results/decisions.csv),
+[raw evidence](results/), [protocol](PROTOCOL.md), and
+[complete saved-result explorer](docs/explorer.html). The original local freeze
+preceded inference; public release followed execution. It was not an externally
+timestamped preregistration.
 
-The known-grammar parser is explicitly tailored to this controlled grammar;
-it is not a general natural-language replacement. Its success is part of the result.
+The original Qwen run used revision `1cfa9a7208912126459214e8b04321603b3df60c`,
+BF16, thinking disabled and native next-token A/B readout. Jev used 195 HTTP
+attempts including smoke and 89,563 known input tokens, with **USD 0.003762
+usage-estimated API cost**, not an account invoice. Local GPU resources are
+reported separately; hosted/local latency does not isolate architecture speed.
 
-## Where the research went next
+## What the intervening studies show
 
-The live Jev comparison above is the original study. Later diagnostics use a
-**historical pinned Kev/Qwen checkpoint**; they are not new Jev measurements or
-evaluations of current Kev. Kev's reused code and trained artifacts are credited
-separately. Laya was inspected as related work and was not run here.
+The [research map](RESEARCH_INDEX.md) separates completed inference, saved-output
+analyses, software checks and unrun preparations. It records the matched-base
+and input-layout controls, missing-evidence studies, facts-plus-code experiment,
+failed line and joint pilots, and post-hoc ID replay with two regressions.
 
-|Follow-up|What it established|Status|
-|---|---|---|
-|[Matched base](research/next-study/) and [input boundary](research/layout-boundary/)|Performance changes with adaptation, readout and input layout.|Completed synthetic diagnostics; see exact records and budgets.|
-|[Evidence gap](research/evidence-gap/) and [evidence guards](research/evidence-guards/)|Missing evidence, missing fields and abstention are distinct tests.|Development results and post-hoc controls; reserved inputs unscored.|
-|[Correct Code, Wrong Facts](research/fact-execution/)|Facts plus a verified executor reached 44/72 versus 31/72 direct, but asserted values for 14/18 missing fields.|Original development only; 144 provisional rewrites await human review.|
-|[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html) and the [12-parent paired audit](research/fact-execution/PARENT_PAIRED_AUDIT.md).|
-|[Joint routing results](research/fact-execution/JOINT_RESULTS.md)|514 new forwards: joint 34/72 versus 31/72 for both matched direct controls; 60/66 other-request lines became target evidence.|Failed both screening conditions. [Inspect all saved queries online](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html); no rewrite, reserved or Jev scores.|
-|[Visible-ID gate replay](research/fact-execution/VISIBLE_ID_GATE_AUDIT.md)|An ordinary text-ID gate changes saved joint outcomes from 34/72 to 70/72: 38 corrections and two regressions. Full grammar code remains 72/72.|Post-hoc, zero new forwards; original screen stays failed. Reveals a perfect ID-prefix shortcut in the joint-pilot inputs.|
-|[Same records, different request](research/request-ownership/RESULTS.md)|500 new forwards on same-prefix target-switch pairs: joint 2/24 complete pairs, joint plus ID gate 23/24; false commitments 7/12 to 0/12. Direct filtering stays at 2/24; grammar code is 24/24.|Passes its prewritten directional diagnostic. Constructed development scenes using inspected grammar; zero independent human annotations.|
-|[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
-|[Flip one answer](research/external-validation/SHARC_PAIR_AUDIT.md)|The public ShARC train split contains 3,334 strict one-history-answer contrasts; 3,037 change provisional action label.|A [30-pair blinded review queue](research/external-validation/SHARC_REVIEW_PROTOCOL.md) is frozen; zero reviews, model calls or new benchmark claims.|
+The [cost calculator](https://yuchi-wang02.github.io/jev-scope-challenge/risk_tradeoff.html)
+compares saved development decisions with always-defer and known-grammar code.
+It exposes how hypothetical deferral costs change the comparison; it does not
+measure deployment utility or make new model calls.
 
-The [post-hoc oracle decomposition](research/fact-execution/LINE_ORACLE_DECOMPOSITION.md)
-motivates the joint-route test but uses unavailable construction labels; its
-counterfactual 29/72 to 68/72 change is **not** a model score. The executed
-[joint-route protocol](research/fact-execution/JOINT_EXECUTION_PROTOCOL.md) stays
-unchanged as a historical pre-inference artifact. Its
-[scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) still applies:
-the completed run scored no packed multi-fact line. The
-[research map](RESEARCH_INDEX.md) separates every completed result, derived
-analysis, pending review and unrun plan.
+The [current claim ledger](RESEARCH_CLAIMS.md) links supported observations and
+unsupported broader claims. The [novelty matrix](NOVELTY_MATRIX.md) distinguishes
+upstream work, ordinary program composition, our diagnostic evidence and untested
+extensions. Independent human review, language transfer, multi-model confirmation,
+new training, Hugging Face releases and a project paper remain incomplete.
+Prepared review packs do not select or authorize the next experiment.
 
-The completed [target-switch diagnostic](research/request-ownership/RESULTS.md)
-holds each two-request record block fixed and changes only the requested ID.
-Both IDs share one namespace. Its 24 constructed scenes /48 views were scored
-once with 500 scientific forwards /188,797 input tokens plus two unscored
-warmups. The gate repairs 30 view decisions with no regression in this run;
-one target-line field error remains. The [frozen protocol](research/request-ownership/EXECUTION_PROTOCOL.md)
-is preserved, and the complete raw evidence is public. This is not independent
-confirmation or a new Jev comparison.
-The [interactive input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
-lets you switch every target, inspect exact planned prompts and reveal
-program-derived references. It displays prepared inputs, with no model predictions.
+## Inspect results without a model or API key
 
-## Inspect or reproduce without an API key
-
-Use Python 3.10 (the executed environment was Python 3.10.18):
+Clone with full Git history, use Python 3.10, then:
 
 ```bash
 pip install -r requirements.txt
-python -m unittest discover -s tests -v
 python verify_evidence.py
 python analyze.py --verify
-python analyze.py
+python research/request-ownership/execution.py verify-freeze
+python research/request-ownership/analyze.py --verify
+python research/request-ownership/plot_results.py verify
+python verify_publication.py
 ```
 
-This checks and recomputes the committed real results; it makes no model calls.
-Download/open [the standalone result explorer](docs/explorer.html) to inspect
-all four variants, mappings, rounds, probabilities and exact requests offline.
-It replays saved results; changing a selector does not run a model.
+These commands check the original and latest evidence without inference or
+rewriting results. The [reproduction guide](REPRODUCIBILITY.md) contains the
+complete series checks and the distinction between offline recomputation,
+fresh inference and independent scientific replication.
 
-## Run your own live comparison
+## Run a separate original-study replication
 
 ```bash
 python replicate.py --backend jev --phase smoke --output .local/my-replication --dry-run
@@ -136,79 +146,35 @@ python replicate.py --backend jev --phase smoke --output .local/my-replication
 python replicate.py --backend jev --phase formal --output .local/my-replication
 ```
 
-Use a fresh output directory: the replication entry point protects the published
-results and stores each execution's runtime in its own session directory. A full
-cache hit creates no backend and makes no model calls. Unknown HTTP costs stop
-execution until reconciled. See [post-run tooling changes](CHANGELOG.md).
+Use a fresh output directory and your own API budget. This entry point protects
+the published evidence; a full cache hit makes no model calls. Unknown HTTP costs
+stop execution until reconciled. The historical `run.py` stays frozen; see
+[post-run tooling notes](CHANGELOG.md).
 
-For Qwen, install the CUDA-compatible PyTorch 2.8.0 build for your platform
-([official instructions](https://pytorch.org/get-started/locally/)) plus
-`transformers==4.55.4` and `accelerate==1.10.1`; then:
+For the original Qwen backend, install CUDA-compatible PyTorch 2.8.0
+([official instructions](https://pytorch.org/get-started/locally/)),
+`transformers==4.55.4` and `accelerate==1.10.1`, then use `--backend qwen` with
+its own fresh output directory. It resolves the pinned revision; approximately
+8 GB of weights are required and are not included. Other hardware and fresh
+inference installations have not been independently reproduced.
 
-```bash
-python replicate.py --backend qwen --phase smoke --output .local/my-replication
-python replicate.py --backend qwen --phase formal --output .local/my-replication
-```
+This CLI covers the original cancellation study. Later frozen GPU runners
+preserve their published output directories and require separately versioned
+replications; this repository is not yet a unified live evaluation framework.
 
-The pinned weights require about 8 GB on disk and were already cached for our
-run. They are not included. With no local override, the runner resolves the pinned
-HF revision. The historical runner accepted a local snapshot path override.
-Actual runtime versions, tokenizer/template hashes and hardware are in `results/`.
-Fresh inference installations and other hardware have not been independently reproduced.
-`run.py` is preserved as the original frozen runner, including its historical
-limitations. The newer replication entry point does not accept local path overrides.
+## Contribute and credit
 
-## Matched-base follow-up (completed)
+[Challenge a case or report a reproduction](https://github.com/Yuchi-Wang02/jev-scope-challenge/issues/new/choose).
+Name the study, commit and record ID; include visible evidence, your reasoning,
+exact prompts and costs where applicable. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+for the distinction between a label objection, a reproduction and a new extension.
+Wins, failures and mapping sensitivity all belong in the record.
 
-The follow-up asks **Is the Decision Model Better Than the Model It Came From?**
-We completed 864 real forward records using a matched Qwen Base, its original
-LM head before and after Kev's public LoRA, and the trained pointer path. On its
-12-parent exploratory test, the three paths scored **85/144, 111/144, 98/144**
-correct decisions, but only **0/12, 1/12, 0/12** fully correct parents. This is
-an exploratory synthetic diagnostic with AI-reviewed labels, not a broad model
-ranking. See [the research note and result explorer](research/next-study/README.md).
-The stopped first attempt and numerical-control amendment are preserved too.
-
-## Cost, scope and provenance
-
-- Live Jev: `jev-1.13.0`; frozen Qwen: `Qwen/Qwen3-4B` at revision
-  `1cfa9a7208912126459214e8b04321603b3df60c`, BF16, thinking disabled, native
-  next-token A/B readout. No fine-tuning, teacher, calibration or test-time search.
-- Jev used 195 HTTP attempts including smoke,
-  89,563 known input tokens, and
-  **USD 0.003762 usage-estimated API cost**.
-  This is not an account invoice. Local GPU time/memory are reported separately.
-- Short, original, synthetic English messages; **no independent human label audit**.
-  Labels were constructed from rules and AI reviewed. Approval to execute does
-  not mean a human audited every label.
-- Purposive templates and explicit markers make this a small diagnostic probe.
-  It does not establish production safety, equivalence, general model superiority,
-  or whether dedicated training is necessary. Hosted/local latency is not a
-  controlled architecture comparison.
-- [Protocol](PROTOCOL.md) and [freeze manifest](manifest.json) were saved before
-  live calls. The data were not made harder after inspecting predictions.
-
-## Extend the challenge
-
-Recompute the published results first, then [open a structured challenge or
-reproduction issue](https://github.com/Yuchi-Wang02/jev-scope-challenge/issues/new/choose).
-A useful contribution is a new clear four-way case, a label objection with its
-reasoning, or results from another backend with exact prompts and costs. The
-[contribution guide](CONTRIBUTING.md) explains the minimum evidence and how to
-keep a versioned extension separate from this fixed v0.1 test. Report wins,
-losses and mapping sensitivity.
-
-The series asks *You Might Not Need Jev*; this release does not announce that
-Jev is useless. Independent project, not affiliated with or endorsed by TypeSafe.
-Paired behavior tests and native logits are established ideas; see
-[CheckList](https://aclanthology.org/2020.acl-main.442/) and
-[SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev).
-
-Created by Yuchi Wang with AI-assisted experiment design, implementation and
-analysis. Original code: [MIT](LICENSE). Original synthetic data: [CC BY 4.0](data/README.md).
-The vendored Kev implementation remains **Apache-2.0**, with its full license,
-exact source commit and unchanged-source checks. Kev/Qwen model weights retain
-their upstream terms. [Credits and reuse](THIRD_PARTY_NOTICES.md) distinguish
-copied code, executed weights and research inspiration, including Laya.
-Use [CITATION.cff](CITATION.cff) and the relevant study commit when citing this
-work; also credit the upstream components used in that result.
+Created by Yuchi Wang with AI-assisted design, implementation and analysis.
+This repository is not a GitHub fork of Kev or Laya. It vendors pinned Kev code
+and has executed upstream-trained artifacts, with **Apache-2.0** retained.
+Laya is related work only: no Laya code, weights, data or scores are used here.
+Original code is [MIT](LICENSE); original synthetic data are [CC BY 4.0](data/README.md).
+Upstream models and provider materials keep their own terms. See
+[exact credits and reuse](THIRD_PARTY_NOTICES.md) and [CITATION.cff](CITATION.cff).
+No affiliation or endorsement by TypeSafe or upstream authors is implied.

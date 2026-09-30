@@ -59,8 +59,10 @@ means the Kev adapter/head was untrained.
 
 Kev's [native/adapted probe](https://github.com/jaredpalmer/kev/blob/0c142becde423a0c68ec857f7831dac0315588a1/scripts/base_mmlu_probe.py)
 predates our N0/N1 comparison. Laya's diagnostic is a close neighbor to the
-scope/current/quoted-instruction questions. See the [source register](research/next-study/related_work.md)
-and [novelty matrix](research/next-study/novelty_matrix.md). CheckList, Contrast
+scope/current/quoted-instruction questions. See the matched-base
+[source register](research/next-study/related_work.md) and
+[study-specific novelty matrix](research/next-study/novelty_matrix.md), plus the
+[current series-wide matrix](NOVELTY_MATRIX.md). CheckList, Contrast
 Sets, SemIf/OpenJev, ReflexBench and Binder are research precedents, not systems
 whose published scores we independently reproduced here.
 

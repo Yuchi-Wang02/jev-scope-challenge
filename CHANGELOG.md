@@ -1,5 +1,40 @@
 # Release notes
 
+## 2026-09-29 — series documentation audit and current evidence map
+
+Reorganized the README around the original cancellation study and the latest
+completed ownership diagnostic. The research index now separates completed
+inference, saved-output/software analyses and prepared but unrun work. Corrected
+the fact-execution overview's stale target-switch status and added series-wide
+[claims](RESEARCH_CLAIMS.md) and [novelty/reuse](NOVELTY_MATRIX.md) ledgers.
+Earlier matched-base ledgers remain study-specific historical records.
+
+This is a documentation update. Scientific sources, inputs, frozen protocols,
+raw outputs, derived results, licenses and upstream files are unchanged. No
+new inference, training, annotation or experiment design is included. The
+current ledgers describe evidence and limits; they do not select a future
+paper claim or certify novelty. Older entries below describe their release-time
+state and must be read with the later completed-run entry.
+
+## 2026-09-29 — completed target-switch diagnostic
+
+Published the separately approved 500-scientific-forward run plus two warmups
+at commit `56a9882e644da003ce602999e37dae5841768ad8`, executed from the frozen
+source at `ff8de16f0241b720d14f659b58a7ceaacd2f7100`. Scientific work used
+188,797 input tokens on 24 constructed scenes /48 target views with
+same-prefix request IDs. Joint routing plus the visible-ID gate completed
+23/24 pairs versus 2/24 ungated, reducing false commitments from 7/12 to 0/12.
+Direct filtering remained at 2/24 pairs, with four corrections and three
+regressions; known-grammar code completed all 24 pairs.
+
+The prewritten directional rule passed. All raw/derived records, fixed methods,
+the remaining field error, actual costs and a source-backed figure are in the
+[completed report](research/request-ownership/RESULTS.md). New scene instances
+reuse inspected policy and sentence grammar; independent human annotations
+remain zero. The gated method reuses saved joint outputs and adds no model
+forward. No new Jev call, training, download, rewrite or reserved score occurred.
+The original preparation and execution protocols preserve their earlier status.
+
 ## 2026-09-29 — visible-ID replay and target-switch preparation
 
 Added an explicitly post-hoc visible-text request-ID gate over the saved joint

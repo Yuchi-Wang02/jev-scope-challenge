@@ -1,0 +1,64 @@
+# Current novelty and reuse boundaries
+
+This is a series-wide synthesis of the repository's existing source registers
+and completed diagnostics, with a bounded primary-source check. It is not an
+exhaustive literature review or a claim of priority. It extends the scope of
+the historical [matched-base matrix](research/next-study/novelty_matrix.md)
+without changing that document or any frozen study. Pair it with the
+[current claim ledger](RESEARCH_CLAIMS.md) and [attribution inventory](THIRD_PARTY_NOTICES.md).
+
+**Current contribution: inspectable experimental artifacts, diagnostic contrasts,
+and documented failures of particular compositions. A novel general method or
+paper-level contribution has not been established.**
+
+## Components, precedents and what this repository adds
+
+|Component or observation|Existing work or ordinary component|Current contribution and boundary|
+|---|---|---|
+|Cancellation scope and quoted/current instructions|Laya's pinned [Feishu diagnostic](https://github.com/NandhaKishorM/laya/blob/9d955671415fc19f069b9cc998928075c1f255ec/research/benchmarks/feishu_zh/README.md) is a close task neighbor. [CheckList](https://aclanthology.org/2020.acl-main.442/) and [Contrast Sets](https://aclanthology.org/2020.findings-emnlp.117/) precede this project's behavioral and controlled-change tests.|Our constructed cases and saved Jev/Qwen comparison are inspectable artifacts. Scope testing, matched perturbations and complete-pair scoring are not claimed as new evaluation theory.|
+|Base/native versus adapted/native versus pointer|Kev's [native/adapted probe](https://github.com/jaredpalmer/kev/blob/0c142becde423a0c68ec857f7831dac0315588a1/scripts/base_mmlu_probe.py) and [historical model implementation](https://github.com/jaredpalmer/kev/blob/29d71c78368657b3a522729a01c748ea15272abc/kev/model.py) are direct precedents and reused implementation.|Pinned loaders, budgets, local parity audits and new diagnostic records. No pointer-architecture invention or clean isolation of head capacity. N1/K1 contain upstream-trained adaptation.|
+|State/question layout and answer-order controls|Input serialization and candidate perturbations already belong to model/interface evaluation; the upstream Kev encoder defines these boundaries.|The [layout ablation](research/layout-boundary/) documents a ranking change and byte-identical native controls in this historical stack. It is an engineering diagnostic, not a generally optimal layout or new architecture.|
+|Null subtraction, order averaging and confidence thresholds|[Calibrate Before Use](https://proceedings.mlr.press/v139/zhao21c.html) estimates answer bias with content-free input; [Surface Form Competition](https://aclanthology.org/2021.emnlp-main.564/) supplies a likelihood-ratio precedent. Averaging and thresholding are standard controls.|Our meaningful no-evidence null and typed-score subtraction are an ablation, not those papers' exact setting or a new calibration algorithm. [Evidence-gap results](research/evidence-gap/) show why higher total accuracy can coexist with more false commitments.|
+|Missing-field guards and finite-world policy execution|Known-grammar parsing, explicit policy rules and enumeration are ordinary program components. [Binder](https://arxiv.org/abs/2210.02875) is an existing language-model/symbolic-program composition framework.|[Guards](research/evidence-guards/) and [facts plus execution](research/fact-execution/RESULTS.md) isolate consequences of adding declared policy knowledge. This is a different implementation, not a Binder reproduction or a new neural-symbolic paradigm.|
+|Evidence spans, support/refute/insufficient states, and linked fields|[FEVER](https://aclanthology.org/N18-1074/) links verification labels to sentence evidence; [DocRED](https://aclanthology.org/P19-1074/) studies document-level entities and relations.|The [line and joint pilots](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md) audit a narrow prompted interface on controlled records. Evidence selection, attribution and joint binding are not first introduced here. Both executed pilot screens failed.|
+|Visible-ID gating of saved routes|Extracting an explicit ID from a supported sentence and testing equality is ordinary deterministic validation. Composition with an extractor does not make equality a new learned method.|The [post-hoc replay](research/fact-execution/VISIBLE_ID_GATE_AUDIT.md) records 38 corrections, two regressions and a perfect prefix shortcut. These are useful failure cases, not independent validation or proof that gating always helps.|
+|Same-prefix target switching|The controlled-change idea has the behavioral/contrastive precedents above; the gate and executor are existing components in this repo.|[24 new scenes](research/request-ownership/RESULTS.md) remove the old prefix cue while reusing sentence/policy templates. Joint 2/24 becomes gated 23/24 complete pairs; direct filtering stays 2/24 and grammar code reaches 24/24. The result identifies a bounded attribution failure; it does not establish a new general algorithm.|
+|Field error remaining after correct request selection|Entity/field relationships are part of established information extraction; explicit scope validation cannot certify every semantic dimension.|The latest saved trace separates a correct ID decision from an incorrect field assignment. It is an observable pipeline failure, not evidence of the model's internal causal mechanism.|
+|Multi-fact lines, language rewrites and external rule tasks|Richer relation extraction and language/program composition already exist in the cited work. Wider task coverage is not novel merely because it is new to this repo.|The [multi-fact analysis](research/fact-execution/MULTIFACT_LINE_STRESS.md) checks representational reachability; [rewrite](research/fact-execution/review/) and [external-data](research/external-validation/) artifacts are preparation. Transfer has not been tested or established.|
+
+## Reuse is separate from scientific novelty
+
+- The repository is not a GitHub fork of Kev or Laya. It does vendor unchanged,
+  pinned Kev source under Apache-2.0 and executes pinned pretrained Qwen and
+  upstream-trained Kev artifacts. The [reuse inventory](THIRD_PARTY_NOTICES.md)
+  records exact revisions, licenses and checksums.
+- Laya is a related-work and design reference. No Laya implementation,
+  checkpoint, dataset or saved result records are incorporated in these
+  experiments, and no Laya model evaluation ran here.
+- Citation of a source is not replication of its results. Binder, FEVER,
+  DocRED, CheckList, Contrast Sets and the calibration papers are precedents;
+  this repository does not report new evaluations on their benchmarks.
+- A new implementation or a combination of standard components can be useful.
+  That usefulness does not establish that the method is new, necessary,
+  computationally superior or robust outside the declared grammar.
+
+## What the present evidence does and does not distinguish
+
+The current results distinguish several observable pipeline errors: wrong
+actions despite sufficient evidence, unjustified commitment when evidence is
+missing, foreign records accepted as evidence, and target records assigned to
+the wrong field. Raw traces, pure-code and always-defer controls, failed screens,
+and disclosed regressions make those distinctions inspectable.
+
+They do not yet distinguish a broadly necessary model capability from a weakness
+of one prompt/readout/representation. Pure code already solves the declared
+grammar, independent human annotations remain zero, and multiple later analyses
+reuse 12 familiar development parents. The latest 24 scenes add new instances,
+not unseen language structure. No claim of independent confirmation, model
+necessity, broad small-model substitution or language transfer follows.
+
+This matrix records unresolved contribution boundaries. It does not select or
+authorize a new experiment. The older [source register](research/next-study/related_work.md),
+[missing-evidence register](research/evidence-gap/related_work.md) and
+[extraction scope audit](research/fact-execution/JOINT_ROUTE_SCOPE_AUDIT.md)
+retain their narrower context and additional sources.

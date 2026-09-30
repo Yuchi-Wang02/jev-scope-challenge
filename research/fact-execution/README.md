@@ -53,8 +53,16 @@ The subsequent [visible-ID gate audit](VISIBLE_ID_GATE_AUDIT.md) reuses those
 saved outputs: a grammar-specific identity veto yields 70/72, with 38 corrections
 and two regressions, versus full known-grammar code at 72/72. No new inference
 ran, and the original screen remains failed. The audit also exposes the original
-target/distractor ID-prefix confound and motivates an unscored
-[target-switch preparation](../request-ownership/PROTOCOL.md).
+target/distractor ID-prefix confound. The subsequent
+[completed target-switch diagnostic](../request-ownership/RESULTS.md) used two
+same-prefix IDs in 24 newly constructed scenes / 48 views and executed 500
+scientific forwards plus two warmups. Joint routing improved from 2/24 complete
+pairs to 23/24 with an explicit-ID gate; false commitments fell from 7/12 to
+0/12. Direct filtering stayed at 2/24, while grammar code solved 24/24. Its frozen
+directional screen passes, but it reuses inspected sentence/policy grammar and
+has zero independent human annotations. It is not language-transfer confirmation
+or a new Jev measurement. The [preserved protocol](../request-ownership/PROTOCOL.md)
+records its preparation-time state; the completed report supplies current status.
 The [second direct control](JOINT_TOKEN_CONTROL.md) matches its planned input
 token budget to within 40 tokens using distinct prompt orders selected without
 labels, while explicitly retaining the 58-call difference.
