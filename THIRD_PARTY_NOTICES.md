@@ -105,3 +105,13 @@ model reuse; it is not a complete transitive dependency SBOM.
 No affiliation or endorsement by TypeSafe, the Kev or Laya maintainers, or Qwen
 is implied. No trained checkpoint, peer-reviewed paper, or general-purpose
 reliability guarantee is claimed by this repository.
+# Candidate-completeness addition (2026-09-30)
+
+The candidate-completeness diagnostic uses the same pinned Sierra tau2-bench
+source as the payment study, with a disjoint source-user selection. Its
+[manifest](research/candidate-completeness/source_manifest.json) and retained
+[MIT license](research/candidate-completeness/vendor/LICENSE) identify that reuse.
+Coverage declarations and omitted-order possible worlds are synthetic additions,
+not source database facts. The runner adapts this repository's own payment runner;
+no new Kev/Laya code or model is used by the Jev pilot.
+

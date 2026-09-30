@@ -1,0 +1,36 @@
+{
+  "created_at_utc": "2026-09-30T06:45:46.544474+00:00",
+  "model": "jev-1.13.0",
+  "attempt_limit": 155,
+  "retry_limit": 5,
+  "planned_input_limit": 1000000,
+  "sha256_lf": {
+    "study.py": "deec64dd7e515ebbd4a156811d4e7cc17b6a43c912ac94f346a0365187cd85fb",
+    "run.py": "5a98ce2915e1f24ecca662461152c7bac9077fafc00a1fc1f1dbc46404710882",
+    "PROTOCOL.md": "0ad4dc4a65392cc11edd75a989ffb90bd458a6b17ea7496f565758c9ae837f4f",
+    "data/cases.jsonl": "546ed53e2d9d2905840d3cad65f7e3e09ababd7c955159b25b7d59926dd324ca",
+    "data/witnesses.jsonl": "9ada9cba6ee1b57ed67b48147c81a8595cb21f6d595a9df53b948deec7a01987",
+    "source_manifest.json": "a0c55d433438b3a0d7548bc331bd65e548a5103b085f52d07dbb9a8c3e4d083e",
+    "vendor/selected_records.json": "274fd8cb50fdcf101735d4cf9ec92d77cf6f028bd3e32176b817534222db9f1c",
+    "vendor/LICENSE": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+    "plans/primary.jsonl": "5ad5ad13be45a0cd985433e63f1a9694a9d9bbae7816553ff6f60974f3c0a25e"
+  },
+  "dependencies_sha256_lf": {
+    "research/payment-ownership/study.py": "3ade9249484245ed540e8467bc87546518b769903732e6756c7afa1077142e0a"
+  },
+  "data_checks": {
+    "cases": 72,
+    "parents": 12,
+    "planned_calls": 150,
+    "planned_input_units": 522016,
+    "software_baseline_correct": {
+      "scope_aware": 72,
+      "ignore_scope": 60,
+      "keyword_all": 36,
+      "keyword_product": 60
+    },
+    "human_reviewed": 0,
+    "new_model_calls": 0
+  },
+  "review_status": "exploratory, before independent human review"
+}

@@ -6,6 +6,9 @@
 [Novelty and reuse](NOVELTY_MATRIX.md) · [Reproduction guide](REPRODUCIBILITY.md) ·
 [Credits](THIRD_PARTY_NOTICES.md) · [Citation](CITATION.cff)
 
+[Milestone audits and next decisions](STAGE_LOG.md) ·
+[New candidate-coverage preparation](research/candidate-completeness/README.md)
+
 This is an exploratory research series about how models and programs turn
 language into decisions: which request a fact belongs to, whether evidence is
 sufficient, and how input representation and rule execution affect the outcome.

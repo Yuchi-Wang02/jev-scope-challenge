@@ -50,6 +50,7 @@ jobs:
       - run: python research/request-ownership/analyze.py --verify
       - run: python research/request-ownership/plot_results.py verify
       - run: python research/payment-ownership/verify_run.py
+      - run: python research/candidate-completeness/study.py verify-freeze
       - run: python docs/build_four_line_challenge.py verify
       - run: python docs/build_risk_tradeoff.py verify
       - run: python docs/build_request_switch.py verify
