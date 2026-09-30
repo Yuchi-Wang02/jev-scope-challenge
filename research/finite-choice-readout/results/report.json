@@ -1,0 +1,4119 @@
+{
+  "study": "sharc-finite-letter-prefill-v1",
+  "status": "complete",
+  "source_basis": "same public source labels, no new human review",
+  "source_truth_verified": false,
+  "independent_human_reviews": 0,
+  "parent_scenes": 12,
+  "smoke": {
+    "planned": 8,
+    "passed": 8
+  },
+  "conditions": {
+    "prefill_order0": {
+      "complete": true,
+      "planned": 24,
+      "finished": 24,
+      "metric": {
+        "condition": "prefill_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 13,
+          "denominator": 24,
+          "rate": 0.5416666666666666
+        },
+        "pair_both_correct": {
+          "numerator": 3,
+          "denominator": 12,
+          "rate": 0.25
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 10,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 7,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 3,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 2,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 3,
+          "first_only": 4,
+          "second_only": 3,
+          "neither_correct": 2
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 0,
+            "prediction_changed": 1,
+            "prediction_same": 7,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 3,
+            "prediction_changed": 1,
+            "prediction_same": 3,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 3,
+              "denominator": 4,
+              "rate": 0.75
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          }
+        ]
+      },
+      "prior_direct_metric": {
+        "condition": "qwen_direct_order0",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 11,
+          "denominator": 24,
+          "rate": 0.4583333333333333
+        },
+        "pair_both_correct": {
+          "numerator": 3,
+          "denominator": 12,
+          "rate": 0.25
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 2,
+          "denominator": 18,
+          "rate": 0.1111111111111111
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 8,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 1,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 2,
+            "No": 3,
+            "Irrelevant": 2,
+            "ASK": 1,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 4,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 3,
+          "first_only": 3,
+          "second_only": 2,
+          "neither_correct": 4
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 1,
+            "prediction_changed": 2,
+            "prediction_same": 6,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 2,
+            "prediction_changed": 2,
+            "prediction_same": 2,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 2,
+              "denominator": 4,
+              "rate": 0.5
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Irrelevant",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "ASK",
+              "ASK"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "item_id": "a32c2de828a2679716828ffd",
+          "reference": "Yes",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "improved"
+        },
+        {
+          "item_id": "d8b76b9f96f81065c7bab478",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "b9a9e9048895f36bcfd3aa61",
+          "reference": "No",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "57c0bef20709235670f2dba5",
+          "reference": "ASK",
+          "previous_direct": "Irrelevant",
+          "prefill": "No",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "cc8cda987f0382b68da05428",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "23b2d78fd0127586dd212125",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "fa377358c07bcd8659f87d6c",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": "No",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "2cc6844fd9fd83d93636ae9b",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "5e9efc921adc6f5c7e1b66c9",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "c29a3c0fe3cb3d3b0a2f3986",
+          "reference": "Yes",
+          "previous_direct": "ASK",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "improved"
+        },
+        {
+          "item_id": "d7aaf5898fee24bbe1383603",
+          "reference": "No",
+          "previous_direct": "ASK",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "bc586afbac44074cfa5daea7",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "1617e2696b23e2c473056920",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "e843a696b8da8ea9d8e35d78",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "616b75e65e892adb7603b65e",
+          "reference": "No",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "1e87f84c67e32582d6430114",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "ASK",
+          "action_changed": true,
+          "status": "improved"
+        },
+        {
+          "item_id": "b30905ddfe75c8ae4d55e3ad",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "regressed"
+        },
+        {
+          "item_id": "266a1834367a881a122a8da4",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "bd0a359a36899374b184d3b0",
+          "reference": "ASK",
+          "previous_direct": "Irrelevant",
+          "prefill": "ASK",
+          "action_changed": true,
+          "status": "improved"
+        },
+        {
+          "item_id": "28c5981d3502ff09143e1008",
+          "reference": "No",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "5feacf5c91602effdbd87938",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "c3769875851e1666fc60a188",
+          "reference": "No",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "f4c70c6a1f5455c754aa99e4",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "2a94f1c7f6af4f77203aaead",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "regressed"
+        }
+      ],
+      "improved": 4,
+      "regressed": 2,
+      "changed_action": 10,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7016,
+        "known_output_tokens": 0,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 4.50099999998929,
+        "recorded_latency_median_seconds": 0.1879999999946449,
+        "recorded_latency_p95_nearest_rank_seconds": 0.20399999999790452,
+        "shared_setup_cost_allocated": false
+      },
+      "probability_mass": {
+        "minimum": 0.9861633935555112,
+        "mean": 0.9928717339358671,
+        "maximum": 0.9971989016616991,
+        "observations": 24
+      },
+      "unconstrained_top_is_legal": 24
+    },
+    "prefill_order1": {
+      "complete": true,
+      "planned": 24,
+      "finished": 24,
+      "metric": {
+        "condition": "prefill_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 10,
+          "denominator": 24,
+          "rate": 0.4166666666666667
+        },
+        "pair_both_correct": {
+          "numerator": 2,
+          "denominator": 12,
+          "rate": 0.16666666666666666
+        },
+        "invalid_output": {
+          "numerator": 1,
+          "denominator": 24,
+          "rate": 0.041666666666666664
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 6,
+          "denominator": 6,
+          "rate": 1.0
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 10,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 7,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 1
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 6,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 2,
+          "first_only": 3,
+          "second_only": 3,
+          "neither_correct": 4
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 0,
+            "prediction_changed": 0,
+            "prediction_same": 8,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 0,
+              "denominator": 8,
+              "rate": 0.0
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 2,
+            "prediction_changed": 0,
+            "prediction_same": 3,
+            "incomplete_pair": 1,
+            "pair_both_correct": {
+              "numerator": 2,
+              "denominator": 4,
+              "rate": 0.5
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              null,
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": null
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          }
+        ]
+      },
+      "prior_direct_metric": {
+        "condition": "qwen_direct_order1",
+        "tree_units": 12,
+        "pairs": 12,
+        "items": 24,
+        "item_accuracy": {
+          "numerator": 12,
+          "denominator": 24,
+          "rate": 0.5
+        },
+        "pair_both_correct": {
+          "numerator": 3,
+          "denominator": 12,
+          "rate": 0.25
+        },
+        "invalid_output": {
+          "numerator": 0,
+          "denominator": 24,
+          "rate": 0.0
+        },
+        "decisive_when_reference_ask": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "ask_when_reference_decisive": {
+          "numerator": 0,
+          "denominator": 18,
+          "rate": 0.0
+        },
+        "confusion": {
+          "Yes": {
+            "Yes": 9,
+            "No": 1,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "No": {
+            "Yes": 2,
+            "No": 3,
+            "Irrelevant": 3,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "Irrelevant": {
+            "Yes": 0,
+            "No": 0,
+            "Irrelevant": 0,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          },
+          "ASK": {
+            "Yes": 4,
+            "No": 0,
+            "Irrelevant": 2,
+            "ASK": 0,
+            "INVALID_OUTPUT": 0
+          }
+        },
+        "correctness_counts": {
+          "both_correct": 3,
+          "first_only": 4,
+          "second_only": 2,
+          "neither_correct": 3
+        },
+        "change_strata": {
+          "reference_changed": {
+            "pairs": 8,
+            "both_correct": 1,
+            "prediction_changed": 3,
+            "prediction_same": 5,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 1,
+              "denominator": 8,
+              "rate": 0.125
+            }
+          },
+          "reference_same": {
+            "pairs": 4,
+            "both_correct": 2,
+            "prediction_changed": 2,
+            "prediction_same": 2,
+            "incomplete_pair": 0,
+            "pair_both_correct": {
+              "numerator": 2,
+              "denominator": 4,
+              "rate": 0.5
+            }
+          }
+        },
+        "pair_records": [
+          {
+            "pair_id": "1684dcbe3c670d4ed4ffd62e",
+            "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+            "item_ids": [
+              "1e87f84c67e32582d6430114",
+              "bd0a359a36899374b184d3b0"
+            ],
+            "references": [
+              "ASK",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "1f6921ba38872b45dfc280f6",
+            "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+            "item_ids": [
+              "fa377358c07bcd8659f87d6c",
+              "2a94f1c7f6af4f77203aaead"
+            ],
+            "references": [
+              "No",
+              "No"
+            ],
+            "predictions": [
+              "No",
+              "No"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "2e06c418c91ae0b22b00e33c",
+            "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+            "item_ids": [
+              "266a1834367a881a122a8da4",
+              "b9a9e9048895f36bcfd3aa61"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "3eb969b9fba197de8e61d35e",
+            "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+            "item_ids": [
+              "c3769875851e1666fc60a188",
+              "2cc6844fd9fd83d93636ae9b"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "49c43c8cf5e2199809a4189b",
+            "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+            "item_ids": [
+              "28c5981d3502ff09143e1008",
+              "57c0bef20709235670f2dba5"
+            ],
+            "references": [
+              "No",
+              "ASK"
+            ],
+            "predictions": [
+              "Irrelevant",
+              "Irrelevant"
+            ],
+            "correctness": "neither_correct",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "72f81bb33bd4928366bce9d8",
+            "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+            "item_ids": [
+              "b30905ddfe75c8ae4d55e3ad",
+              "d8b76b9f96f81065c7bab478"
+            ],
+            "references": [
+              "No",
+              "Yes"
+            ],
+            "predictions": [
+              "No",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "9d37e76cc7404ee007c1b49c",
+            "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+            "item_ids": [
+              "e843a696b8da8ea9d8e35d78",
+              "5feacf5c91602effdbd87938"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "c1c77c8c33c8fe915c827751",
+            "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+            "item_ids": [
+              "bc586afbac44074cfa5daea7",
+              "5e9efc921adc6f5c7e1b66c9"
+            ],
+            "references": [
+              "ASK",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "second_only",
+            "reference_changed": true,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "ddbc1d07a6c156a44de3bb03",
+            "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+            "item_ids": [
+              "1617e2696b23e2c473056920",
+              "616b75e65e892adb7603b65e"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+            "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+            "item_ids": [
+              "f4c70c6a1f5455c754aa99e4",
+              "a32c2de828a2679716828ffd"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "No"
+            ],
+            "correctness": "first_only",
+            "reference_changed": false,
+            "prediction_changed": true
+          },
+          {
+            "pair_id": "e04ea602dfbf5af87eb8810f",
+            "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+            "item_ids": [
+              "23b2d78fd0127586dd212125",
+              "cc8cda987f0382b68da05428"
+            ],
+            "references": [
+              "Yes",
+              "Yes"
+            ],
+            "predictions": [
+              "Yes",
+              "Yes"
+            ],
+            "correctness": "both_correct",
+            "reference_changed": false,
+            "prediction_changed": false
+          },
+          {
+            "pair_id": "fa852bc7719887ea3c01db16",
+            "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+            "item_ids": [
+              "c29a3c0fe3cb3d3b0a2f3986",
+              "d7aaf5898fee24bbe1383603"
+            ],
+            "references": [
+              "Yes",
+              "No"
+            ],
+            "predictions": [
+              "Yes",
+              "Irrelevant"
+            ],
+            "correctness": "first_only",
+            "reference_changed": true,
+            "prediction_changed": true
+          }
+        ]
+      },
+      "transitions": [
+        {
+          "item_id": "cc8cda987f0382b68da05428",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "28c5981d3502ff09143e1008",
+          "reference": "No",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "5feacf5c91602effdbd87938",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "e843a696b8da8ea9d8e35d78",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "fa377358c07bcd8659f87d6c",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": null,
+          "action_changed": true,
+          "status": "regressed"
+        },
+        {
+          "item_id": "b30905ddfe75c8ae4d55e3ad",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "regressed"
+        },
+        {
+          "item_id": "d8b76b9f96f81065c7bab478",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "23b2d78fd0127586dd212125",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "b9a9e9048895f36bcfd3aa61",
+          "reference": "No",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "57c0bef20709235670f2dba5",
+          "reference": "ASK",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "616b75e65e892adb7603b65e",
+          "reference": "No",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "5e9efc921adc6f5c7e1b66c9",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "a32c2de828a2679716828ffd",
+          "reference": "Yes",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "improved"
+        },
+        {
+          "item_id": "1617e2696b23e2c473056920",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "d7aaf5898fee24bbe1383603",
+          "reference": "No",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "2cc6844fd9fd83d93636ae9b",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "c29a3c0fe3cb3d3b0a2f3986",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "2a94f1c7f6af4f77203aaead",
+          "reference": "No",
+          "previous_direct": "No",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "regressed"
+        },
+        {
+          "item_id": "bc586afbac44074cfa5daea7",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "f4c70c6a1f5455c754aa99e4",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "c3769875851e1666fc60a188",
+          "reference": "No",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "266a1834367a881a122a8da4",
+          "reference": "Yes",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "bd0a359a36899374b184d3b0",
+          "reference": "ASK",
+          "previous_direct": "Irrelevant",
+          "prefill": "Yes",
+          "action_changed": true,
+          "status": "unchanged_agreement"
+        },
+        {
+          "item_id": "1e87f84c67e32582d6430114",
+          "reference": "ASK",
+          "previous_direct": "Yes",
+          "prefill": "Yes",
+          "action_changed": false,
+          "status": "unchanged_agreement"
+        }
+      ],
+      "improved": 1,
+      "regressed": 3,
+      "changed_action": 9,
+      "resources": {
+        "attempts_started": 24,
+        "results_recorded": 24,
+        "unresolved_attempts": 0,
+        "result_status_counts": {
+          "ok": 24
+        },
+        "known_input_tokens": 7016,
+        "known_output_tokens": 0,
+        "usage_incomplete": false,
+        "recorded_latency_count": 24,
+        "recorded_call_latency_seconds": 4.406000000031781,
+        "recorded_latency_median_seconds": 0.17950000000564614,
+        "recorded_latency_p95_nearest_rank_seconds": 0.21800000000803266,
+        "shared_setup_cost_allocated": false
+      },
+      "probability_mass": {
+        "minimum": 0.9829229085786481,
+        "mean": 0.9916628380321391,
+        "maximum": 0.9965429272080581,
+        "observations": 24
+      },
+      "unconstrained_top_is_legal": 24
+    }
+  },
+  "order_effects": {
+    "available": true,
+    "valid_in_both": 23,
+    "changed_valid_action": 3
+  },
+  "controls": {
+    "constant_Yes": {
+      "condition": "constant_Yes",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 10,
+        "denominator": 24,
+        "rate": 0.4166666666666667
+      },
+      "pair_both_correct": {
+        "numerator": 2,
+        "denominator": 12,
+        "rate": 0.16666666666666666
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 10,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 8,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 6,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 2,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 4
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 2,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 2,
+            "denominator": 4,
+            "rate": 0.5
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_No": {
+      "condition": "constant_No",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 8,
+        "denominator": 24,
+        "rate": 0.3333333333333333
+      },
+      "pair_both_correct": {
+        "numerator": 1,
+        "denominator": 12,
+        "rate": 0.08333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 10,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 8,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 6,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 1,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 5
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 1,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_Irrelevant": {
+      "condition": "constant_Irrelevant",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "pair_both_correct": {
+        "numerator": 0,
+        "denominator": 12,
+        "rate": 0.0
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 10,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 8,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 6,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 0,
+        "first_only": 0,
+        "second_only": 0,
+        "neither_correct": 12
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 4,
+            "rate": 0.0
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Irrelevant",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "constant_ASK": {
+      "condition": "constant_ASK",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 6,
+        "denominator": 24,
+        "rate": 0.25
+      },
+      "pair_both_correct": {
+        "numerator": 1,
+        "denominator": 12,
+        "rate": 0.08333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 18,
+        "denominator": 18,
+        "rate": 1.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 10,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 8,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 6,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 1,
+        "first_only": 2,
+        "second_only": 2,
+        "neither_correct": 7
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 0,
+          "prediction_changed": 0,
+          "prediction_same": 8,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 8,
+            "rate": 0.0
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 1,
+          "prediction_changed": 0,
+          "prediction_same": 4,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 1,
+            "denominator": 4,
+            "rate": 0.25
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": false
+        }
+      ]
+    },
+    "copy_last_history_answer": {
+      "condition": "copy_last_history_answer",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 14,
+        "denominator": 24,
+        "rate": 0.5833333333333334
+      },
+      "pair_both_correct": {
+        "numerator": 4,
+        "denominator": 12,
+        "rate": 0.3333333333333333
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1.0
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0.0
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 8,
+          "No": 2,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 2,
+          "No": 6,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 2,
+          "No": 4,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 4,
+        "first_only": 3,
+        "second_only": 3,
+        "neither_correct": 2
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 4,
+          "prediction_changed": 8,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 4,
+            "denominator": 8,
+            "rate": 0.5
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 0,
+          "prediction_changed": 4,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 0,
+            "denominator": 4,
+            "rate": 0.0
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "first_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "first_only",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        }
+      ]
+    }
+  },
+  "jev_native_context": {
+    "jev_native_order0": {
+      "condition": "jev_native_order0",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 18,
+        "denominator": 24,
+        "rate": 0.75
+      },
+      "pair_both_correct": {
+        "numerator": 8,
+        "denominator": 12,
+        "rate": 0.6666666666666666
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 1,
+        "denominator": 6,
+        "rate": 0.16666666666666666
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 3,
+        "denominator": 18,
+        "rate": 0.16666666666666666
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 5,
+          "No": 0,
+          "Irrelevant": 2,
+          "ASK": 3,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 8,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 1,
+          "Irrelevant": 0,
+          "ASK": 5,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 8,
+        "first_only": 0,
+        "second_only": 2,
+        "neither_correct": 2
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 5,
+          "prediction_changed": 8,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 5,
+            "denominator": 8,
+            "rate": 0.625
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 3,
+          "prediction_changed": 1,
+          "prediction_same": 3,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 3,
+            "denominator": 4,
+            "rate": 0.75
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        }
+      ]
+    },
+    "jev_native_order1": {
+      "condition": "jev_native_order1",
+      "tree_units": 12,
+      "pairs": 12,
+      "items": 24,
+      "item_accuracy": {
+        "numerator": 18,
+        "denominator": 24,
+        "rate": 0.75
+      },
+      "pair_both_correct": {
+        "numerator": 8,
+        "denominator": 12,
+        "rate": 0.6666666666666666
+      },
+      "invalid_output": {
+        "numerator": 0,
+        "denominator": 24,
+        "rate": 0.0
+      },
+      "decisive_when_reference_ask": {
+        "numerator": 1,
+        "denominator": 6,
+        "rate": 0.16666666666666666
+      },
+      "ask_when_reference_decisive": {
+        "numerator": 3,
+        "denominator": 18,
+        "rate": 0.16666666666666666
+      },
+      "confusion": {
+        "Yes": {
+          "Yes": 5,
+          "No": 0,
+          "Irrelevant": 2,
+          "ASK": 3,
+          "INVALID_OUTPUT": 0
+        },
+        "No": {
+          "Yes": 0,
+          "No": 8,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "Irrelevant": {
+          "Yes": 0,
+          "No": 0,
+          "Irrelevant": 0,
+          "ASK": 0,
+          "INVALID_OUTPUT": 0
+        },
+        "ASK": {
+          "Yes": 0,
+          "No": 1,
+          "Irrelevant": 0,
+          "ASK": 5,
+          "INVALID_OUTPUT": 0
+        }
+      },
+      "correctness_counts": {
+        "both_correct": 8,
+        "first_only": 0,
+        "second_only": 2,
+        "neither_correct": 2
+      },
+      "change_strata": {
+        "reference_changed": {
+          "pairs": 8,
+          "both_correct": 5,
+          "prediction_changed": 8,
+          "prediction_same": 0,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 5,
+            "denominator": 8,
+            "rate": 0.625
+          }
+        },
+        "reference_same": {
+          "pairs": 4,
+          "both_correct": 3,
+          "prediction_changed": 1,
+          "prediction_same": 3,
+          "incomplete_pair": 0,
+          "pair_both_correct": {
+            "numerator": 3,
+            "denominator": 4,
+            "rate": 0.75
+          }
+        }
+      },
+      "pair_records": [
+        {
+          "pair_id": "1684dcbe3c670d4ed4ffd62e",
+          "tree_id": "95222ed436cbf83e71c65f1021aee2a7e7211313",
+          "item_ids": [
+            "1e87f84c67e32582d6430114",
+            "bd0a359a36899374b184d3b0"
+          ],
+          "references": [
+            "ASK",
+            "ASK"
+          ],
+          "predictions": [
+            "ASK",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "1f6921ba38872b45dfc280f6",
+          "tree_id": "12c6078ef968d7be91a1f43dc0a3d61eda3386a3",
+          "item_ids": [
+            "fa377358c07bcd8659f87d6c",
+            "2a94f1c7f6af4f77203aaead"
+          ],
+          "references": [
+            "No",
+            "No"
+          ],
+          "predictions": [
+            "No",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "2e06c418c91ae0b22b00e33c",
+          "tree_id": "3b64cdc91ab7a9a4317c7dd588615f833e4ca6aa",
+          "item_ids": [
+            "266a1834367a881a122a8da4",
+            "b9a9e9048895f36bcfd3aa61"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "Yes",
+            "No"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "3eb969b9fba197de8e61d35e",
+          "tree_id": "b7cf719d78a47a7a2613fe4dc23b6221d0af64cc",
+          "item_ids": [
+            "c3769875851e1666fc60a188",
+            "2cc6844fd9fd83d93636ae9b"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "49c43c8cf5e2199809a4189b",
+          "tree_id": "2c9551481f5390a1cb108ea9f682cb4859f95cb7",
+          "item_ids": [
+            "28c5981d3502ff09143e1008",
+            "57c0bef20709235670f2dba5"
+          ],
+          "references": [
+            "No",
+            "ASK"
+          ],
+          "predictions": [
+            "No",
+            "ASK"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "72f81bb33bd4928366bce9d8",
+          "tree_id": "abcc4e0c73a48667dfc9c3735f44a0946af673a2",
+          "item_ids": [
+            "b30905ddfe75c8ae4d55e3ad",
+            "d8b76b9f96f81065c7bab478"
+          ],
+          "references": [
+            "No",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "9d37e76cc7404ee007c1b49c",
+          "tree_id": "3e736618f875de698bb1014c687ea46902070cc4",
+          "item_ids": [
+            "e843a696b8da8ea9d8e35d78",
+            "5feacf5c91602effdbd87938"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "c1c77c8c33c8fe915c827751",
+          "tree_id": "a99e2fe2f6b849dda4ec5ce89679531c8d2f0e1d",
+          "item_ids": [
+            "bc586afbac44074cfa5daea7",
+            "5e9efc921adc6f5c7e1b66c9"
+          ],
+          "references": [
+            "ASK",
+            "Yes"
+          ],
+          "predictions": [
+            "No",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "ddbc1d07a6c156a44de3bb03",
+          "tree_id": "9181696eb905c30e76d94eddfc4d722393334e93",
+          "item_ids": [
+            "1617e2696b23e2c473056920",
+            "616b75e65e892adb7603b65e"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "dfafd6c2c3bf08cc9ef44d03",
+          "tree_id": "e9282accd6fcfbce424d3bfd2800541f30f7c335",
+          "item_ids": [
+            "f4c70c6a1f5455c754aa99e4",
+            "a32c2de828a2679716828ffd"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "ASK",
+            "Irrelevant"
+          ],
+          "correctness": "neither_correct",
+          "reference_changed": false,
+          "prediction_changed": true
+        },
+        {
+          "pair_id": "e04ea602dfbf5af87eb8810f",
+          "tree_id": "566837f88b9807265aac87e768200b3ba7b63c4a",
+          "item_ids": [
+            "23b2d78fd0127586dd212125",
+            "cc8cda987f0382b68da05428"
+          ],
+          "references": [
+            "Yes",
+            "Yes"
+          ],
+          "predictions": [
+            "Yes",
+            "Yes"
+          ],
+          "correctness": "both_correct",
+          "reference_changed": false,
+          "prediction_changed": false
+        },
+        {
+          "pair_id": "fa852bc7719887ea3c01db16",
+          "tree_id": "54879c752f337f93735b3d61294fbe982b6dd9e5",
+          "item_ids": [
+            "c29a3c0fe3cb3d3b0a2f3986",
+            "d7aaf5898fee24bbe1383603"
+          ],
+          "references": [
+            "Yes",
+            "No"
+          ],
+          "predictions": [
+            "ASK",
+            "No"
+          ],
+          "correctness": "second_only",
+          "reference_changed": true,
+          "prediction_changed": true
+        }
+      ]
+    }
+  },
+  "resources": {
+    "attempts": 56,
+    "finished": 56,
+    "input_tokens": 14448,
+    "output_tokens": 0,
+    "unknown_usage": false,
+    "physical_forwards_reported": 56,
+    "closed_session_seconds": 10.672000000005937,
+    "session_incomplete": false,
+    "overruns": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "session_seconds": 0
+    },
+    "sessions": [
+      {
+        "model": "Qwen/Qwen3.5-4B",
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "python": "3.10.18 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:08:55) [MSC v.1929 64 bit (AMD64)]",
+        "torch": "2.8.0+cu128",
+        "transformers": "5.3.0",
+        "peft": "0.18.1",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "model_files": [
+          {
+            "name": "LICENSE",
+            "bytes": 11544,
+            "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+          },
+          {
+            "name": "README.md",
+            "bytes": 77661,
+            "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"
+          },
+          {
+            "name": "config.json",
+            "bytes": 3161,
+            "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"
+          },
+          {
+            "name": "tokenizer.json",
+            "bytes": 12807982,
+            "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+            "upstream_lfs_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "bytes": 16710,
+            "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+          },
+          {
+            "name": "chat_template.jinja",
+            "bytes": 7756,
+            "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+          },
+          {
+            "name": "merges.txt",
+            "bytes": 3353259,
+            "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+          },
+          {
+            "name": "vocab.json",
+            "bytes": 6722759,
+            "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+          },
+          {
+            "name": "model.safetensors.index.json",
+            "bytes": 76196,
+            "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d"
+          },
+          {
+            "name": "model.safetensors-00001-of-00002.safetensors",
+            "bytes": 5329398688,
+            "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+            "upstream_lfs_sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+          },
+          {
+            "name": "model.safetensors-00002-of-00002.safetensors",
+            "bytes": 3990429408,
+            "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+            "upstream_lfs_sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+          }
+        ],
+        "verification_seconds": 6.062000000005355,
+        "load_seconds": 3.562999999994645,
+        "warmup_forwards": 0,
+        "execution_commit": "47d77bd41a10488d8501e06444a1c008f4d36b28"
+      }
+    ]
+  },
+  "new_model_calls_during_analysis": 0,
+  "parent_comparison_sha256": "68cff88a9f02bbe361f53979feff99c9d1a35f024e5c6afa5e7c1402765870d1",
+  "journal_sha256": "835492d78337e5b88a6f3ff614dfd931e26a4cb88fb584d688249212e97214ef"
+}

@@ -4,6 +4,24 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-09-30: close the one-prefill ordinary-model control
+
+- Objective: measure an existing finite-choice readout against the prior direct
+  JSON interface on exactly the same source inputs, with explicit compute bounds.
+- Reality: 56/56 physical prefills, smoke 8/8, 14,448 input tokens, zero generated
+  tokens and 10.672 session seconds. Source agreement 13/24 and 10/24, pairs 3/12
+  and 2/12; one exact stored-logit tie counted invalid. No retries or overruns.
+- Gap: the observed lower callback times accompany prompt/verbalizer changes and
+  a different session. Neither consistent semantic gain nor a new method emerged.
+  Human labels and independent confirmation remain missing for this source slice.
+- Audit: immutable pre-execution freeze, logit/decision and cost replay, all
+  per-item transitions retained. This does not validate source truth.
+- Decision: close without prompt/precision search. Publish the measured tradeoff
+  and all cases in the shared replay. Preserve this as a baseline, not a success
+  story about replacing Jev. [Full stage audit](research/finite-choice-readout/INTERPRETATION.md).
+- Next: audit whether the next task adds a distinct decision need and causal
+  contrast. Keep the separate pending human-review queue unscored.
+
 ## 2026-09-30: close the public-source screen and audit its measurement target
 
 - Objective: complete the frozen 12-tree Jev / Qwen3.5 comparison with paired

@@ -1,5 +1,13 @@
 # Release notes
 
+## 2026-09-30 — single-prefill control completed without prompt search
+
+Published 56 real Qwen3.5-4B prefills: eight smoke and 48 main decisions. Source
+agreement 13/24 and 10/24, one exact tie invalid; no consistent improvement over
+prior JSON. Added raw logits, candidate mass, per-item transitions, full costs,
+offline replay and the new arm in the interactive source-case viewer. No new API
+calls, source labels, human reviews or independent examples.
+
 ## 2026-09-30 — completed public-source screen, full replay and source audit
 
 All 48 original Jev requests and 96 Qwen3.5 generations are retained. Source

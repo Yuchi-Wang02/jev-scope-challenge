@@ -17,6 +17,10 @@ def payload():
     api = {r['job_id']: r for r in report.load('results/jev_audit.json')['records']}
     local = {e['job_id']: e['result'] for e in read_events(HERE / 'results/qwen.jsonl')
              if e['event'] == 'call_finish'}
+    finite_dir = ROOT / 'research/finite-choice-readout'
+    finite_report = json.loads((finite_dir / 'results/report.json').read_bytes())
+    finite = {e['job_id']: e['result'] for e in read_events(finite_dir / 'results/qwen.jsonl')
+              if e['event'] == 'call_finish'}
     pairs = {p['pair_id']: p for p in report.load('selection.json')['selected']}
     jobs = {j['id']: j for j in plan['jobs']}
     output = []
@@ -31,6 +35,7 @@ def payload():
                 key = f'{ident}_jev_order{order}'
                 a = api[key]
                 view = {'options': jobs[key]['options'], 'jev': a, 'local': {}}
+                view['prefill'] = finite[f'{ident}_prefill_order{order}']
                 for mode in ('direct', 'thinking'):
                     key = f'{ident}_qwen_{mode}_order{order}'
                     r = local.get(key)
@@ -46,7 +51,7 @@ def payload():
             items.append({'id': ident, 'state': visible_state(source), 'source_action': action,
                           'views': views})
         output.append({'id': ref['pair_id'], 'group': pair['group'], 'items': items})
-    return {'pairs': output, 'comparison': comparison}
+    return {'pairs': output, 'comparison': comparison, 'finite': finite_report}
 
 
 def render(data):

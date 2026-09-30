@@ -28,7 +28,25 @@ no reviewer-endorsed reference update or held-out confirmation of a general meth
 experiments reuse the same development texts. New forwards, candidate orders
 and derived analyses are not additional independent examples.
 
-## Latest: One answer changes. Does the decision follow?
+## Latest: Can one prefill replace a generated decision?
+
+A frozen Qwen3.5-4B letter readout uses one forward and zero generated tokens per
+input. On the same 24 inspected ShARC inputs, source agreement is **13/24 and
+10/24**, versus the earlier JSON interface's **11/24 and 12/24**. One exact logit
+tie is invalid. Main callback sums are **4.501 and 4.406 seconds**, compared with
+12.986 and 13.251 in the earlier JSON session. Different prompts and sessions
+prevent a controlled speedup claim. There is no consistent semantic gain across
+both mappings, and the copy-last control remains ahead at 14/24.
+
+All **56 prefills** (8 smoke +48 main), raw candidate logits, probability mass,
+transitions and costs are retained. This is a standard readout baseline on reused
+data, with zero new human reviews, not a new method or model-replacement result.
+
+[Results](research/finite-choice-readout/RESULTS.md) ·
+[Interpretation and stop decision](research/finite-choice-readout/INTERPRETATION.md) ·
+[Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/source_label_screen.html)
+
+## Parent study: One answer changes. Does the decision follow?
 
 On 12 ShARC development trees /24 unchanged inputs, Jev native choice matches
 source labels **18/24 in both orders**, versus Qwen3.5-4B direct **11/24 and 12/24**.

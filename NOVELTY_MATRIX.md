@@ -138,3 +138,14 @@ benchmark score or evidence of language-model failure. No new model experiment,
 independent annotation, theorem or operational demand has been established.
 Keep this branch as documentation unless a real predicate-before-identity need
 and separately reviewed natural-language test justify further work.
+
+## Single-prefill finite-choice control: a measured baseline
+
+The [completed Qwen3.5 control](research/finite-choice-readout/RESULTS.md) uses
+standard single-token candidate logits, softmax normalization and option mapping.
+It adds no algorithmic novelty. Source agreement is 13/24 and 10/24, without
+consistent gain over direct JSON; one exact tie is invalid. The negative result
+and explicit probability-mass/runtime accounting strengthen the baseline record,
+not a dedicated-model replacement claim. Inputs are reused, source truth remains
+unadjudicated, and prompt/verbalizer/readout changes are confounded. No upstream
+implementation was forked; ShARC-derived input plans retain CC BY-SA attribution.

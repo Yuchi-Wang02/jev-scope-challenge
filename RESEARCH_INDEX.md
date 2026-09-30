@@ -2,7 +2,7 @@
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). The latest completed grid is the
-[public-source Jev / Qwen3.5 diagnostic](research/source-label-screen/RESULTS.md).
+[single-prefill Qwen control](research/finite-choice-readout/RESULTS.md), on the same public-source inputs.
 The tables below separate actual model runs, analyses of existing evidence,
 and preparation that has no model result.
 
@@ -17,6 +17,7 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
+|[Single-prefill Qwen control](research/finite-choice-readout/RESULTS.md)|8 smoke +48 main physical forwards; 14,448 input and zero generated tokens; 10.672 session seconds. Source agreement 13/24 and 10/24, pairs 3/12 and 2/12; one exact tie invalid.|Same inspected 24 ShARC inputs, zero new human reviews. Prompt/verbalizer/readout change together. No consistent gain over JSON or copy-last; different sessions prevent controlled speedup claims. Closed without prompt search.|
 |[Public-source contrast](research/source-label-screen/RESULTS.md)|12 ShARC dev trees /24 inputs; 48 distinct Jev requests and 96 Qwen3.5 generations. Jev native source agreement 18/24 in both mappings; Qwen direct 11/24 and 12/24; thinking 5/24 and 6/24 with 37/48 truncated. Last-answer copy 14/24. Local generation: 92,559 tokens, 2,983.875 seconds.|Zero project human reviews; title-only and other source-evidence concerns. Two prospective API readout repairs preserve strict failures. Source agreement is not verified correctness or independent confirmation. All raw data and both API readouts retained.|
 |[Candidate coverage](research/candidate-completeness/RESULTS.md)|12 disjoint source users /72 inputs; 150 Jev requests and 150 Qwen3-4B native prefills including six smoke each. Jev 63/72 and 67/72; Qwen 34/72 and 30/72. Strict parents 3/12 and 0/12; grammar code 72/72.|Synthetic coverage premises, one wording family, zero new independent reviews. Jev errors are unnecessary explicit-ID deferrals. Native Qwen is not a reasoning-ceiling comparator. Both freezes published before main outputs. No adaptive follow-up on these grids.|
 |[Fixed-budget Qwen control](research/candidate-completeness/REASONING_RESULTS.md)|Same 72 inputs, six smoke +144 main decisions; 69,771 generated tokens and 19,129 batched physical forwards. Scores 58/72 and 59/72; all 12 unknown-reference cases per mapping still receive a determined answer; strict parents 0/12.|Outcome-aware extra-compute comparison, not new independent data. 69/144 main traces truncated. An earlier six-case sampled smoke attempt is preserved separately; an explicit greedy repair preceded all v2 outputs. No third configuration searched.|

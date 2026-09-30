@@ -1,9 +1,13 @@
 # Can one prefill replace a generated decision?
 
-Current status: **56 jobs frozen; no model outputs yet.** Eight independent
-interface checks precede 48 task prefills on the same 24 public ShARC inputs and
-two option mappings. Planned input: 14,448 tokens. The ordinary model is the
-existing pinned Qwen3.5-4B; no API requests or downloads are needed.
+Current status: **complete, 56/56 prefills retained.** Eight interface checks
+passed before 48 task prefills on the same 24 public ShARC inputs and two option
+mappings. Source agreement is **13/24 and 10/24**, with **3/12 and 2/12** fully
+matching pairs. One exact maximum tie is invalid. Total input: 14,448 tokens;
+zero generated tokens; 10.672 session seconds. No API requests or downloads.
+
+[Results and costs](RESULTS.md) · [Stage interpretation](INTERPRETATION.md) ·
+[Interactive replay](https://yuchi-wang02.github.io/jev-scope-challenge/source_label_screen.html)
 
 This control asks how decisions and compute change when a model selects among
 four next-token letters instead of generating semantic JSON. The prompt,

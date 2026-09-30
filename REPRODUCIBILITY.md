@@ -187,6 +187,7 @@ The [source-label screen](research/source-label-screen/README.md) preserves all
 python research/source-label-screen/jev_audit.py --verify
 python research/source-label-screen/report.py verify
 python research/source-label-screen/replay.py --verify
+python research/finite-choice-readout/analyze_finite.py verify
 ```
 
 These checks reproduce original API phase handling, final native/argmax views,
