@@ -55,6 +55,11 @@ a stopped six-case sampling-configuration deviation are retained. Read the
 [Frozen local readout](research/candidate-completeness/LOCAL_PROTOCOL.md) ·
 [Review-only package](research/candidate-completeness/review/README.md)
 
+While review is pending, a separate [specification lab: Unknown order. Known answer?](research/decision-sufficiency/README.md)
+makes the difference between identifying an order and determining a narrow policy
+predicate executable. It contains artificial examples and program verification,
+with **zero model results** and no change to the experiments above.
+
 ## Prior: Right Payment, Wrong Order?
 
 **Jev matched all 48 original main references. Two reviews question the

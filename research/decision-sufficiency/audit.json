@@ -1,0 +1,1788 @@
+{
+  "status": "Specification prototype, not model evidence",
+  "model_calls": 0,
+  "human_annotations": 0,
+  "authored_examples": [
+    {
+      "case_id": "s01",
+      "title": "One known order, original method",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION"
+      },
+      "explanation": "Both interfaces have enough information.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s02",
+      "title": "One known order, another ordinary method",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_B"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "INVALID_DESTINATION"
+      },
+      "explanation": "An ordinary method in the profile is not enough.",
+      "result": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "INVALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s03",
+      "title": "Two orders, same original method",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "order_2",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "The predicate is invariant; identity is not established.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_2",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s04",
+      "title": "Two orders, destination invalid for both",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_C"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "order_2",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "Certain falsity also need not identify the order.",
+      "result": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_2",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s05",
+      "title": "Two orders, opposite answers",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "order_2",
+            "product": "mug",
+            "original_methods": [
+              "card_B"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "One consistent target accepts; another rejects.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_2",
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_2",
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          },
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s06",
+      "title": "Two orders, existing gift-card exception",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "order_2",
+            "product": "mug",
+            "original_methods": [
+              "card_B"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "The stated exception holds for either target, but does not authorize execution.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_2",
+            "original_method": "card_B",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s07",
+      "title": "One visible match, unknown completeness",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "possible",
+          "omitted_original_methods": [
+            "card_A",
+            "card_B"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "The missing candidate can reverse the predicate.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          },
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s08",
+      "title": "Unknown completeness, gift-card exception",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "possible",
+          "omitted_original_methods": [
+            "card_A",
+            "card_B"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "A visible match guarantees existence; the exception covers every possible target.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_B",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s09",
+      "title": "Omitted candidates share the same original method",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "at_least_one",
+          "omitted_original_methods": [
+            "card_A"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "The supplied domain is a synthetic contract assertion, not an inferred fact.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s10",
+      "title": "Omitted candidates cannot use this destination",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_C"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "at_least_one",
+          "omitted_original_methods": [
+            "card_A"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "No consistent target has card_C as its original method.",
+      "result": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s11",
+      "title": "Unique identity, unresolved original payment",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A",
+              "card_B"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "Knowing which order does not resolve its payment predicate.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_B",
+            "outcome": "INVALID_DESTINATION"
+          },
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s12",
+      "title": "Unique identity, gift card bypasses missing original",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A",
+              "card_B"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION"
+      },
+      "explanation": "The exception suffices for this component despite an unresolved original method.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_B",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s13",
+      "title": "No matching order in a complete query",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "No target is not a vacuously valid refund destination.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": false,
+            "target_id": null,
+            "original_method": null,
+            "outcome": "NOT_ESTABLISHED"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "NOT_ESTABLISHED": {
+            "target_exists": false,
+            "target_id": null,
+            "original_method": null,
+            "outcome": "NOT_ESTABLISHED"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s14",
+      "title": "No visible match, existence unknown, gift card",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "possible",
+          "omitted_original_methods": [
+            "card_A",
+            "card_B"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "A world with no matching target prevents a determined component answer.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_B",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": false,
+            "target_id": null,
+            "original_method": null,
+            "outcome": "NOT_ESTABLISHED"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "NOT_ESTABLISHED": {
+            "target_exists": false,
+            "target_id": null,
+            "original_method": null,
+            "outcome": "NOT_ESTABLISHED"
+          },
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s15",
+      "title": "Existence guaranteed, unseen identity, gift card",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_G"
+        },
+        "records": [],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "at_least_one",
+          "omitted_original_methods": [
+            "card_A",
+            "card_B"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "Existence and the exception suffice for the predicate, not an order ID.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": false,
+        "target_id": null,
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          },
+          {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_B",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": null,
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s16",
+      "title": "Visible exact ID with a loose completeness bound",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "order_id",
+            "value": "order_1"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "order_id",
+            "value": "order_1"
+          },
+          "additional_matches": "possible",
+          "omitted_original_methods": [
+            "card_B"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION"
+      },
+      "explanation": "The unique-ID constraint excludes an additional matching order; possible is an upper bound.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s17",
+      "title": "Destination not identified",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": null
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED"
+      },
+      "explanation": "A missing destination is not a known invalid destination.",
+      "result": {
+        "predicate_only": "NOT_ESTABLISHED",
+        "unique_target_required": "NOT_ESTABLISHED",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "NOT_ESTABLISHED"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "NOT_ESTABLISHED": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "NOT_ESTABLISHED"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s18",
+      "title": "Named but nonexistent gift card",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "gift_NOT_IN_PROFILE"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "INVALID_DESTINATION"
+      },
+      "explanation": "Names do not create the existing-gift-card exception; the method universe is complete.",
+      "result": {
+        "predicate_only": "INVALID_DESTINATION",
+        "unique_target_required": "INVALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "INVALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "INVALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s19",
+      "title": "An unrelated record changes neither interface",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "unrelated",
+            "product": "lamp",
+            "original_methods": [
+              "card_B"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION"
+      },
+      "explanation": "The contract and selection remain scoped to mug.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_1",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_1",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "s20",
+      "title": "Exact unseen ID, existence and payment guaranteed",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "order_id",
+            "value": "order_9"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [],
+        "retrieval": {
+          "query": {
+            "kind": "order_id",
+            "value": "order_9"
+          },
+          "additional_matches": "at_least_one",
+          "omitted_original_methods": [
+            "card_A"
+          ]
+        }
+      },
+      "expected": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION"
+      },
+      "explanation": "The synthetic contract guarantees this exact ID exists with one original method.",
+      "result": {
+        "predicate_only": "VALID_DESTINATION",
+        "unique_target_required": "VALID_DESTINATION",
+        "identity_established": true,
+        "target_id": "order_9",
+        "execution_authorized": false,
+        "projected_worlds": [
+          {
+            "target_exists": true,
+            "target_id": "order_9",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        ],
+        "witnesses_by_outcome": {
+          "VALID_DESTINATION": {
+            "target_exists": true,
+            "target_id": "order_9",
+            "original_method": "card_A",
+            "outcome": "VALID_DESTINATION"
+          }
+        }
+      }
+    }
+  ],
+  "invalid_contract_examples": [
+    {
+      "case_id": "e01_duplicate_id",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          },
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected_status": "INVALID_CONTRACT",
+      "error": "duplicate order ID"
+    },
+    {
+      "case_id": "e02_empty_domain",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": []
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected_status": "INVALID_CONTRACT",
+      "error": "record.original_methods: empty domain"
+    },
+    {
+      "case_id": "e03_wrong_query_scope",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "lamp"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected_status": "INVALID_CONTRACT",
+      "error": "retrieval contract does not cover the requested selector"
+    },
+    {
+      "case_id": "e04_impossible_unique_id",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "order_id",
+            "value": "order_1"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "card_A"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "order_id",
+            "value": "order_1"
+          },
+          "additional_matches": "at_least_one",
+          "omitted_original_methods": [
+            "card_A"
+          ]
+        }
+      },
+      "expected_status": "INVALID_CONTRACT",
+      "error": "unique ID cannot have both a visible and an omitted matching order"
+    },
+    {
+      "case_id": "e05_outside_finite_universe",
+      "contract": {
+        "version": 1,
+        "payment_methods": {
+          "card_A": "ordinary",
+          "card_B": "ordinary",
+          "card_C": "ordinary",
+          "gift_G": "gift_card"
+        },
+        "original_method_universe": [
+          "card_A",
+          "card_B",
+          "card_C"
+        ],
+        "request": {
+          "selector": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "destination_id": "card_A"
+        },
+        "records": [
+          {
+            "order_id": "order_1",
+            "product": "mug",
+            "original_methods": [
+              "unlisted_card"
+            ]
+          }
+        ],
+        "retrieval": {
+          "query": {
+            "kind": "product",
+            "value": "mug"
+          },
+          "additional_matches": "none",
+          "omitted_original_methods": []
+        }
+      },
+      "expected_status": "INVALID_CONTRACT",
+      "error": "record.original_methods: outside declared universe"
+    }
+  ],
+  "finite_audit": {
+    "valid_contracts_checked": 730,
+    "inconsistent_contracts_rejected": 180,
+    "decision_relevant_projections_checked": 1900,
+    "contracts_where_interfaces_differ": 192,
+    "max_visible_records": 2,
+    "max_omitted_records_in_brute_force": 2,
+    "original_payment_domain_size": 2,
+    "model_calls": 0,
+    "independent_human_annotations": 0,
+    "scope": "Finite software verification, not a dataset score or new theorem"
+  },
+  "source_sha256_lf": {
+    "semantics.py": "83a8d66e9a94e0dcc71d34ad71677031393dda0a3e0948793e106439769e1b74",
+    "examples.py": "da005d338c681ac4633fd0f0279568b688f7a3153f3aaea5bdbdfae2d587af32",
+    "audit.py": "f17120109f80614365c6549b811270dea6c08ba27baad21afe6898a120673bb1",
+    "CONTRACT.md": "43e750a19518098446a44a92113b38926841e482089503d4cf70100432022066"
+  }
+}

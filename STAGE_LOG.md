@@ -109,6 +109,27 @@ presentation. It does not claim a paper is ready.
   justified caution; show both over-deferral and unsupported commitment, code
   success, extra cost and failed execution. No model replacement or novelty claim.
 
+## 2026-09-30: make the identity/predicate distinction executable
+
+- Objective: progress on the next task definition while candidate-coverage human
+  review is pending, without reopening the closed model grids.
+- Delivered: [specification lab](research/decision-sufficiency/README.md), 20
+  authored cases, five invalid-contract cases, a standard-library CLI, projected
+  witnesses and an interactive page. A separately implemented database enumerator
+  agrees on 730 valid finite contracts and rejects 180 inconsistent ones.
+- Learned: different unknown identities can share a known policy predicate. A
+  no-target possibility, unresolved destination and inconsistent contract need
+  distinct handling. None of these component answers authorizes an operation.
+- Novelty audit: certain answers and query-scoped completeness are direct prior
+  work. This is a specification/control artifact, not a new inference algorithm.
+- Plan versus reality: the program solves this finite schema; no unmet user need
+  for predicate-before-identity has been established, and language comprehension
+  has been removed from the input. No new empirical research claim is supported.
+- Decision: retain the useful public example, do not turn it into another model
+  leaderboard. Require a concrete interface need and independent semantic review
+  before allocating new model experiments. Existing 72-input review and stronger
+  ordinary comparators remain the primary research gates. Zero new model calls.
+
 ## Long-term direction and gates
 
 The project asks when models plus programs can provide reliable typed decisions,

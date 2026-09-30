@@ -1,5 +1,15 @@
 # Release notes
 
+## 2026-09-30 — executable decision-sufficiency specification
+
+Added a separate zero-model lab for predicate-only versus unique-target-required
+contracts, with 20 authored examples, five invalid-input controls, exact witnesses,
+and a second complete-database enumerator. Checked 730 valid finite contracts and
+rejected 180 inconsistent ones. These are software counts, not model scores or
+human annotations. Added an interactive explanation and primary-source novelty
+boundary: possible-world consensus and query completeness are established ideas.
+Earlier policies, labels, responses and human-review packages remain unchanged.
+
 ## 2026-09-30 — fixed-budget reasoning control and execution audit
 
 Completed one repaired greedy Qwen3-4B control: 150 decisions, 69,771 generated

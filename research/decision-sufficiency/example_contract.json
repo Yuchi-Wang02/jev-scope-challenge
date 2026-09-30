@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "payment_methods": {
+    "card_A": "ordinary",
+    "card_B": "ordinary",
+    "card_C": "ordinary",
+    "gift_G": "gift_card"
+  },
+  "original_method_universe": [
+    "card_A",
+    "card_B",
+    "card_C"
+  ],
+  "request": {
+    "selector": {
+      "kind": "product",
+      "value": "mug"
+    },
+    "destination_id": "gift_G"
+  },
+  "records": [
+    {
+      "order_id": "order_1",
+      "product": "mug",
+      "original_methods": [
+        "card_A"
+      ]
+    },
+    {
+      "order_id": "order_2",
+      "product": "mug",
+      "original_methods": [
+        "card_B"
+      ]
+    }
+  ],
+  "retrieval": {
+    "query": {
+      "kind": "product",
+      "value": "mug"
+    },
+    "additional_matches": "none",
+    "omitted_original_methods": []
+  }
+}

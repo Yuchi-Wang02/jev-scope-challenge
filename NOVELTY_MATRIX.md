@@ -53,8 +53,9 @@ and disclosed regressions make those distinctions inspectable.
 They do not yet distinguish a broadly necessary model capability from a weakness
 of one prompt/readout/representation. Pure code already solves the declared
 grammar, human submissions do not settle the payment scope objection, and multiple later analyses
-reuse 12 familiar development parents. The latest 24 scenes add new instances,
-not unseen language structure. No claim of independent confirmation, model
+reuse 12 familiar development parents. The target-switch study's 24 scenes and
+candidate-coverage study's 12 new source users add instances, not evidence of
+unseen language structure. No claim of independent confirmation, model
 necessity, broad small-model substitution or language transfer follows.
 
 This matrix records unresolved contribution boundaries. It does not select or
@@ -86,9 +87,21 @@ Closed/open candidate-set reasoning and abstention are not new; see the
 [bounded context-sufficiency review](research/candidate-completeness/RELATED_WORK.md).
 Current contribution is an inspectable controlled failure and negative controls,
 not a new abstention algorithm or causal model explanation. New independent labels,
-an ordinary-model reasoning control and transfer beyond one template family remain
+capable ordinary-model comparison and transfer beyond one template family remain
 gates before stronger claims. The [fixed-budget reasoning control](research/candidate-completeness/REASONING_RESULTS.md)
 is now complete: it improves Qwen's aggregate correctness while leaving every
 unknown-reference case committed in both mappings. This is a baseline check,
 not a new reasoning method. The [post-result literature check](research/candidate-completeness/RELATED_WORK_POSTRUN.md)
 also identifies direct precedents in prompt-induced abstention and evidence boundaries.
+
+## Decision sufficiency: a specification example, not a method claim
+
+The [executable contract lab](research/decision-sufficiency/README.md) distinguishes
+a predicate answer that is invariant across candidate orders from identifying one
+order. [Certain-answer and query-completeness literature](research/decision-sufficiency/RELATED_WORK.md)
+directly precedes this distinction's possible-world implementation. The program
+already solves the declared finite schema; 730 finite software checks are not a
+benchmark score or evidence of language-model failure. No new model experiment,
+independent annotation, theorem or operational demand has been established.
+Keep this branch as documentation unless a real predicate-before-identity need
+and separately reviewed natural-language test justify further work.

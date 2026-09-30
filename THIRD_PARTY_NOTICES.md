@@ -122,3 +122,12 @@ The [local freeze](research/candidate-completeness/local_freeze.json) records
 checkpoint/tokenizer hashes. No Qwen weights are redistributed. The hosted Jev
 adapter uses the same API as the prior pilot; no Jev implementation is copied.
 
+## Decision-sufficiency specification lab (2026-09-30)
+
+The [new lab](research/decision-sufficiency/README.md) uses newly authored artificial
+contracts, not source database rows, weights or model outputs. Its finite
+possible-world implementation applies established [certain-answer and completeness
+ideas](research/decision-sufficiency/RELATED_WORK.md). No additional repository
+fork, vendored implementation or model execution occurred. Original code is MIT;
+the synthetic contract examples follow the repo's CC BY 4.0 data policy.
+
