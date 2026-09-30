@@ -105,7 +105,9 @@ def markdown(report):
         'This is source-label agreement on 12 selected public dev trees /24 inputs.',
         '**Zero project human reviews.** The original strict API experiment stopped;',
         'the final native-choice view follows two disclosed engineering repairs.',
-        'Source disagreement is not automatically a proved model error.', '',
+        'Source disagreement is not automatically a proved model error.',
+        'The [all-pair source audit](SOURCE_REVIEW.md) identifies a title-only rule and',
+        'necessary-versus-sufficient-condition concerns without replacing any labels.', '',
         '## Per-condition source agreement', '',
         '|Condition|Finished / planned|Item agreement|Both pair members agree|Invalid output|',
         '|---|---:|---:|---:|---:|']
