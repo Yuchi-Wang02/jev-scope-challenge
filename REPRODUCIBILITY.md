@@ -38,6 +38,8 @@ python research/fact-execution/publish_joint.py --verify
 python research/fact-execution/scope_gate_audit.py verify
 python research/request-ownership/prepare.py verify
 python research/request-ownership/execution.py verify-freeze
+python research/request-ownership/analyze.py --verify
+python research/request-ownership/plot_results.py verify
 python docs/build_four_line_challenge.py verify
 python docs/build_risk_tradeoff.py verify
 python docs/build_request_switch.py verify
@@ -48,10 +50,14 @@ The full [CI workflow](.github/workflows/check.yml) also verifies generated
 publication bundles and other preparation artifacts. Offline consistency is
 different from reproducing model inference in a new environment or auditing
 labels independently. Our original outputs and failed attempt remain available.
-The request-ownership check verifies an unscored execution freeze. Its scorer
-requires complete real evidence and intentionally cannot produce model results
-before an approved run. In-memory software fixtures test the scorer without
-writing model records or calling a model.
+The request-ownership checks verify the original execution freeze and the
+completed 500-row scientific run. Its scorer requires complete raw evidence,
+exact execution-commit sources and runtime/weight/tensor audits. In-memory
+software fixtures test the scorer without writing model records or calling a model.
+The figure verifier recomputes chart rows from validated raw evidence and checks
+SVG metadata and published asset hashes without loading Matplotlib. Rendering
+used Matplotlib 3.10.0, recorded in its manifest; cross-version pixel identity is
+not claimed. `plot_results.py build` regenerates only the figure artifacts.
 The request-switch explorer is also checked against all 24 pairs, 48 visible
 texts and 500 planned prompts. Its program references are recomputed from the
 visible grammar, and the builder never reads scientific model predictions.

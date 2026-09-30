@@ -1,0 +1,12 @@
+{
+  "status": "rendered_scientific_figure",
+  "matplotlib_version": "3.10.0",
+  "config_hash": "0bc456cae12a6d99e734824c268c080ee7f1af6f6d11c20d8f198ea99344b658",
+  "generator_sha256_lf": "28250d961113d9721c1923912d42f2514eb63f9e2891297347794fde81c766cd",
+  "asset_sha256": {
+    "ownership_results.svg": "9fa15d7d5d15f6daa8d4ab8ee02efd46020cacb43e887013afaa5a428b4d9f14",
+    "ownership_results.png": "8ae1347d59ec8a1a369c1e144ca4990e2e9bd26d6416110ee9ffb3cdc9afa1b0",
+    "chart_data.json": "dee9fdb00651e9210c97df278478d5878134a9941d752dc683cb22a423eeb43a"
+  },
+  "verification_limit": "Verifies source-derived chart rows, SVG metadata and saved assets; it does not rerender across Matplotlib versions."
+}

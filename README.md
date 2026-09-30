@@ -84,6 +84,7 @@ separately. Laya was inspected as related work and was not run here.
 |[Line evidence pilot](research/fact-execution/LINE_EVIDENCE_RESULTS.md)|548 forwards reduced false commitments to 6/24 but yielded only 11/48 correct determined decisions.|Failed its prewritten screening rule; [inspect every line judgment](research/fact-execution/docs/line_explorer.html) and the [12-parent paired audit](research/fact-execution/PARENT_PAIRED_AUDIT.md).|
 |[Joint routing results](research/fact-execution/JOINT_RESULTS.md)|514 new forwards: joint 34/72 versus 31/72 for both matched direct controls; 60/66 other-request lines became target evidence.|Failed both screening conditions. [Inspect all saved queries online](https://yuchi-wang02.github.io/jev-scope-challenge/joint_route.html); no rewrite, reserved or Jev scores.|
 |[Visible-ID gate replay](research/fact-execution/VISIBLE_ID_GATE_AUDIT.md)|An ordinary text-ID gate changes saved joint outcomes from 34/72 to 70/72: 38 corrections and two regressions. Full grammar code remains 72/72.|Post-hoc, zero new forwards; original screen stays failed. Reveals a perfect ID-prefix shortcut in the joint-pilot inputs.|
+|[Same records, different request](research/request-ownership/RESULTS.md)|500 new forwards on same-prefix target-switch pairs: joint 2/24 complete pairs, joint plus ID gate 23/24; false commitments 7/12 to 0/12. Direct filtering stays at 2/24; grammar code is 24/24.|Passes its prewritten directional diagnostic. Constructed development scenes using inspected grammar; zero independent human annotations.|
 |[One Line, Two Facts](research/fact-execution/MULTIFACT_LINE_STRESS.md)|With faithful one-owner routing, two target facts on one line allow 0/56 exact fact vectors versus 56/56 in a mixed-scope control.|Software reachability only; zero model calls or new independent examples.|
 |[Flip one answer](research/external-validation/SHARC_PAIR_AUDIT.md)|The public ShARC train split contains 3,334 strict one-history-answer contrasts; 3,037 change provisional action label.|A [30-pair blinded review queue](research/external-validation/SHARC_REVIEW_PROTOCOL.md) is frozen; zero reviews, model calls or new benchmark claims.|
 
@@ -97,13 +98,14 @@ the completed run scored no packed multi-fact line. The
 [research map](RESEARCH_INDEX.md) separates every completed result, derived
 analysis, pending review and unrun plan.
 
-The next [target-switch diagnostic](research/request-ownership/)
+The completed [target-switch diagnostic](research/request-ownership/RESULTS.md)
 holds each two-request record block fixed and changes only the requested ID.
-Both IDs share one namespace. Its 24 constructed scenes / 48 views and query
-plans remain unscored. The [guarded execution protocol](research/request-ownership/EXECUTION_PROTOCOL.md)
-now freezes 500 scientific forwards /188,797 input tokens plus two unscored
-warmups, with a paired scorer and overwrite protection. A distinct local run
-approval is pending; this is not independent confirmation.
+Both IDs share one namespace. Its 24 constructed scenes /48 views were scored
+once with 500 scientific forwards /188,797 input tokens plus two unscored
+warmups. The gate repairs 30 view decisions with no regression in this run;
+one target-line field error remains. The [frozen protocol](research/request-ownership/EXECUTION_PROTOCOL.md)
+is preserved, and the complete raw evidence is public. This is not independent
+confirmation or a new Jev comparison.
 The [interactive input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
 lets you switch every target, inspect exact planned prompts and reveal
 program-derived references. It displays prepared inputs, with no model predictions.

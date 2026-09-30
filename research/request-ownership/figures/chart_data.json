@@ -1,0 +1,109 @@
+{
+  "title": "Same records, different request",
+  "population": "24 constructed parent pairs / 48 target views; zero independent human annotations",
+  "model": "Historical Kev-LoRA N1, native causal logits; no new Jev evaluation",
+  "execution_commit": "ff8de16f0241b720d14f659b58a7ceaacd2f7100",
+  "config_hash": "0bc456cae12a6d99e734824c268c080ee7f1af6f6d11c20d8f198ea99344b658",
+  "physical_scientific_forwards": 500,
+  "scientific_input_tokens": 188797,
+  "warmup_forwards": 2,
+  "rows": [
+    {
+      "method": "joint_full",
+      "label": "Joint routing, full records",
+      "complete_pairs_correct": 2,
+      "parent_pairs": 24,
+      "false_commitments": 7,
+      "uncertain_views": 12,
+      "correct_decisions": 17,
+      "views": 48,
+      "model_calls": 200,
+      "input_tokens": 85214
+    },
+    {
+      "method": "joint_gated",
+      "label": "Joint routing + ID gate",
+      "complete_pairs_correct": 23,
+      "parent_pairs": 24,
+      "false_commitments": 0,
+      "uncertain_views": 12,
+      "correct_decisions": 47,
+      "views": 48,
+      "model_calls": 200,
+      "input_tokens": 85214
+    },
+    {
+      "method": "direct_full",
+      "label": "Direct, full records",
+      "complete_pairs_correct": 2,
+      "parent_pairs": 24,
+      "false_commitments": 9,
+      "uncertain_views": 12,
+      "correct_decisions": 20,
+      "views": 48,
+      "model_calls": 200,
+      "input_tokens": 71050
+    },
+    {
+      "method": "direct_filtered",
+      "label": "Direct, filtered records",
+      "complete_pairs_correct": 2,
+      "parent_pairs": 24,
+      "false_commitments": 10,
+      "uncertain_views": 12,
+      "correct_decisions": 21,
+      "views": 48,
+      "model_calls": 100,
+      "input_tokens": 32533
+    },
+    {
+      "method": "single_full",
+      "label": "Direct, full (one order)",
+      "complete_pairs_correct": 3,
+      "parent_pairs": 24,
+      "false_commitments": 9,
+      "uncertain_views": 12,
+      "correct_decisions": 21,
+      "views": 48,
+      "model_calls": 48,
+      "input_tokens": 16314
+    },
+    {
+      "method": "single_filtered",
+      "label": "Direct, filtered (one order)",
+      "complete_pairs_correct": 3,
+      "parent_pairs": 24,
+      "false_commitments": 10,
+      "uncertain_views": 12,
+      "correct_decisions": 22,
+      "views": 48,
+      "model_calls": 48,
+      "input_tokens": 14974
+    },
+    {
+      "method": "known_grammar",
+      "label": "Known-grammar code",
+      "complete_pairs_correct": 24,
+      "parent_pairs": 24,
+      "false_commitments": 0,
+      "uncertain_views": 12,
+      "correct_decisions": 48,
+      "views": 48,
+      "model_calls": 0,
+      "input_tokens": 0
+    },
+    {
+      "method": "always_defer",
+      "label": "Always defer",
+      "complete_pairs_correct": 0,
+      "parent_pairs": 24,
+      "false_commitments": 0,
+      "uncertain_views": 12,
+      "correct_decisions": 12,
+      "views": 48,
+      "model_calls": 0,
+      "input_tokens": 0
+    }
+  ],
+  "limits": "Shared outputs and anchors are not extra calls. Code knows the inspected grammar. No confidence intervals or generalization claim."
+}

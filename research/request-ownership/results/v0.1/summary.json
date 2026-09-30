@@ -1,0 +1,2800 @@
+{
+  "status": "verified_completed_run_constructed_pairs",
+  "arm": "N1",
+  "parent_pairs": 24,
+  "views": 48,
+  "independent_human_annotations": 0,
+  "reference_provenance": "program construction, not independent human labels",
+  "methods": {
+    "joint_full": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 2,
+      "correct_decisions": 17,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 7,
+      "determined_correct": 12,
+      "needless_deferrals": 24,
+      "wrong_determined_actions": 0,
+      "model_calls": 200,
+      "input_tokens": 85214,
+      "summed_saved_forward_latency_s": 22.3991684000066
+    },
+    "joint_gated": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 23,
+      "correct_decisions": 47,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 0,
+      "determined_correct": 35,
+      "needless_deferrals": 1,
+      "wrong_determined_actions": 0,
+      "model_calls": 200,
+      "input_tokens": 85214,
+      "summed_saved_forward_latency_s": 22.3991684000066
+    },
+    "direct_full": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 2,
+      "correct_decisions": 20,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 9,
+      "determined_correct": 17,
+      "needless_deferrals": 8,
+      "wrong_determined_actions": 11,
+      "model_calls": 200,
+      "input_tokens": 71050,
+      "summed_saved_forward_latency_s": 19.241806200123392
+    },
+    "direct_filtered": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 2,
+      "correct_decisions": 21,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 10,
+      "determined_correct": 19,
+      "needless_deferrals": 5,
+      "wrong_determined_actions": 12,
+      "model_calls": 100,
+      "input_tokens": 32533,
+      "summed_saved_forward_latency_s": 9.183902500080876
+    },
+    "single_full": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 3,
+      "correct_decisions": 21,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 9,
+      "determined_correct": 18,
+      "needless_deferrals": 8,
+      "wrong_determined_actions": 10,
+      "model_calls": 48,
+      "input_tokens": 16314,
+      "summed_saved_forward_latency_s": 4.55898460005119
+    },
+    "single_filtered": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 3,
+      "correct_decisions": 22,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 10,
+      "determined_correct": 20,
+      "needless_deferrals": 6,
+      "wrong_determined_actions": 10,
+      "model_calls": 48,
+      "input_tokens": 14974,
+      "summed_saved_forward_latency_s": 4.325382700073533
+    },
+    "known_grammar": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 24,
+      "correct_decisions": 48,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 0,
+      "determined_correct": 36,
+      "needless_deferrals": 0,
+      "wrong_determined_actions": 0,
+      "model_calls": 0,
+      "input_tokens": 0,
+      "summed_saved_forward_latency_s": null
+    },
+    "always_defer": {
+      "views": 48,
+      "parent_pairs": 24,
+      "complete_pairs_correct": 0,
+      "correct_decisions": 12,
+      "uncertain_views": 12,
+      "determined_views": 36,
+      "false_commitments": 0,
+      "determined_correct": 0,
+      "needless_deferrals": 36,
+      "wrong_determined_actions": 0,
+      "model_calls": 0,
+      "input_tokens": 0,
+      "summed_saved_forward_latency_s": null
+    }
+  },
+  "strata": {
+    "family": {
+      "joint_approval": {
+        "joint_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 9,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 7,
+          "needless_deferrals": 5,
+          "wrong_determined_actions": 0,
+          "model_calls": 56,
+          "input_tokens": 19240,
+          "summed_saved_forward_latency_s": 5.264947100018617
+        },
+        "joint_gated": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 8,
+          "correct_decisions": 16,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 56,
+          "input_tokens": 19240,
+          "summed_saved_forward_latency_s": 5.264947100018617
+        },
+        "direct_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 7,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 1,
+          "model_calls": 56,
+          "input_tokens": 15948,
+          "summed_saved_forward_latency_s": 5.027291700083879
+        },
+        "direct_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 6,
+          "needless_deferrals": 5,
+          "wrong_determined_actions": 1,
+          "model_calls": 28,
+          "input_tokens": 7516,
+          "summed_saved_forward_latency_s": 2.317684300011024
+        },
+        "single_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 7,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 1,
+          "model_calls": 16,
+          "input_tokens": 4546,
+          "summed_saved_forward_latency_s": 1.4388713000371354
+        },
+        "single_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 6,
+          "needless_deferrals": 6,
+          "wrong_determined_actions": 0,
+          "model_calls": 16,
+          "input_tokens": 4271,
+          "summed_saved_forward_latency_s": 1.308176500009722
+        },
+        "known_grammar": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 8,
+          "correct_decisions": 16,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 4,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 12,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      },
+      "reversal_exception": {
+        "joint_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 4,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 3,
+          "determined_correct": 3,
+          "needless_deferrals": 9,
+          "wrong_determined_actions": 0,
+          "model_calls": 56,
+          "input_tokens": 20077,
+          "summed_saved_forward_latency_s": 5.308795500008273
+        },
+        "joint_gated": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 8,
+          "correct_decisions": 16,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 56,
+          "input_tokens": 20077,
+          "summed_saved_forward_latency_s": 5.308795500008273
+        },
+        "direct_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 3,
+          "determined_correct": 5,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 7,
+          "model_calls": 56,
+          "input_tokens": 17013,
+          "summed_saved_forward_latency_s": 5.100595300027635
+        },
+        "direct_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 8,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 6,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 6,
+          "model_calls": 28,
+          "input_tokens": 7884,
+          "summed_saved_forward_latency_s": 2.490916200069478
+        },
+        "single_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 3,
+          "determined_correct": 5,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 7,
+          "model_calls": 16,
+          "input_tokens": 4848,
+          "summed_saved_forward_latency_s": 1.4552907000033883
+        },
+        "single_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 8,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 6,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 6,
+          "model_calls": 16,
+          "input_tokens": 4486,
+          "summed_saved_forward_latency_s": 1.4159711000393145
+        },
+        "known_grammar": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 8,
+          "correct_decisions": 16,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 4,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 12,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      },
+      "route_lookup": {
+        "joint_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 4,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 2,
+          "needless_deferrals": 10,
+          "wrong_determined_actions": 0,
+          "model_calls": 88,
+          "input_tokens": 45897,
+          "summed_saved_forward_latency_s": 11.825425799979712
+        },
+        "joint_gated": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 7,
+          "correct_decisions": 15,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 11,
+          "needless_deferrals": 1,
+          "wrong_determined_actions": 0,
+          "model_calls": 88,
+          "input_tokens": 45897,
+          "summed_saved_forward_latency_s": 11.825425799979712
+        },
+        "direct_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 5,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 3,
+          "model_calls": 88,
+          "input_tokens": 38089,
+          "summed_saved_forward_latency_s": 9.113919200011878
+        },
+        "direct_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 7,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 5,
+          "model_calls": 44,
+          "input_tokens": 17133,
+          "summed_saved_forward_latency_s": 4.375302000000374
+        },
+        "single_full": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 8,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 2,
+          "determined_correct": 6,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 2,
+          "model_calls": 16,
+          "input_tokens": 6920,
+          "summed_saved_forward_latency_s": 1.664822600010666
+        },
+        "single_filtered": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 8,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 4,
+          "determined_correct": 8,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 4,
+          "model_calls": 16,
+          "input_tokens": 6217,
+          "summed_saved_forward_latency_s": 1.6012351000244962
+        },
+        "known_grammar": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 8,
+          "correct_decisions": 16,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 16,
+          "parent_pairs": 8,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 4,
+          "uncertain_views": 4,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 12,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      }
+    },
+    "id_relation": {
+      "all_characters_distant": {
+        "joint_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 9,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 4,
+          "determined_correct": 7,
+          "needless_deferrals": 11,
+          "wrong_determined_actions": 0,
+          "model_calls": 100,
+          "input_tokens": 42790,
+          "summed_saved_forward_latency_s": 11.332951199961826
+        },
+        "joint_gated": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 18,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 100,
+          "input_tokens": 42790,
+          "summed_saved_forward_latency_s": 11.332951199961826
+        },
+        "direct_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 10,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 9,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 6,
+          "model_calls": 100,
+          "input_tokens": 35688,
+          "summed_saved_forward_latency_s": 9.61935580005229
+        },
+        "direct_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 10,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 9,
+          "needless_deferrals": 2,
+          "wrong_determined_actions": 7,
+          "model_calls": 50,
+          "input_tokens": 16331,
+          "summed_saved_forward_latency_s": 4.616522800002713
+        },
+        "single_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 10,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 9,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 5,
+          "model_calls": 24,
+          "input_tokens": 8186,
+          "summed_saved_forward_latency_s": 2.2805086000298616
+        },
+        "single_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 11,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 10,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 5,
+          "model_calls": 24,
+          "input_tokens": 7510,
+          "summed_saved_forward_latency_s": 2.1771813000232214
+        },
+        "known_grammar": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 18,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 18,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      },
+      "one_character_near": {
+        "joint_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 8,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 3,
+          "determined_correct": 5,
+          "needless_deferrals": 13,
+          "wrong_determined_actions": 0,
+          "model_calls": 100,
+          "input_tokens": 42424,
+          "summed_saved_forward_latency_s": 11.066217200044775
+        },
+        "joint_gated": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 11,
+          "correct_decisions": 23,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 17,
+          "needless_deferrals": 1,
+          "wrong_determined_actions": 0,
+          "model_calls": 100,
+          "input_tokens": 42424,
+          "summed_saved_forward_latency_s": 11.066217200044775
+        },
+        "direct_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 10,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 4,
+          "determined_correct": 8,
+          "needless_deferrals": 5,
+          "wrong_determined_actions": 5,
+          "model_calls": 100,
+          "input_tokens": 35362,
+          "summed_saved_forward_latency_s": 9.622450400071102
+        },
+        "direct_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 11,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 10,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 5,
+          "model_calls": 50,
+          "input_tokens": 16202,
+          "summed_saved_forward_latency_s": 4.567379700078163
+        },
+        "single_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 11,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 4,
+          "determined_correct": 9,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 5,
+          "model_calls": 24,
+          "input_tokens": 8128,
+          "summed_saved_forward_latency_s": 2.278476000021328
+        },
+        "single_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 11,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 5,
+          "determined_correct": 10,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 5,
+          "model_calls": 24,
+          "input_tokens": 7464,
+          "summed_saved_forward_latency_s": 2.1482014000503113
+        },
+        "known_grammar": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 18,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 6,
+          "uncertain_views": 6,
+          "determined_views": 18,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 18,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      }
+    },
+    "pair_kind": {
+      "determined_determined": {
+        "joint_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 3,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 3,
+          "needless_deferrals": 21,
+          "wrong_determined_actions": 0,
+          "model_calls": 112,
+          "input_tokens": 47304,
+          "summed_saved_forward_latency_s": 12.394428500032518
+        },
+        "joint_gated": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 11,
+          "correct_decisions": 23,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 23,
+          "needless_deferrals": 1,
+          "wrong_determined_actions": 0,
+          "model_calls": 112,
+          "input_tokens": 47304,
+          "summed_saved_forward_latency_s": 12.394428500032518
+        },
+        "direct_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 13,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 13,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 7,
+          "model_calls": 112,
+          "input_tokens": 40050,
+          "summed_saved_forward_latency_s": 10.804952300066361
+        },
+        "direct_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 13,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 13,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 8,
+          "model_calls": 56,
+          "input_tokens": 18182,
+          "summed_saved_forward_latency_s": 5.163273900077911
+        },
+        "single_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 14,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 14,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 6,
+          "model_calls": 24,
+          "input_tokens": 8268,
+          "summed_saved_forward_latency_s": 2.298902900016401
+        },
+        "single_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 14,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 14,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 6,
+          "model_calls": 24,
+          "input_tokens": 7533,
+          "summed_saved_forward_latency_s": 2.196393500067643
+        },
+        "known_grammar": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 24,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 0,
+          "uncertain_views": 0,
+          "determined_views": 24,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 24,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      },
+      "determined_insufficient": {
+        "joint_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 2,
+          "correct_decisions": 14,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 7,
+          "determined_correct": 9,
+          "needless_deferrals": 3,
+          "wrong_determined_actions": 0,
+          "model_calls": 88,
+          "input_tokens": 37910,
+          "summed_saved_forward_latency_s": 10.004739899974084
+        },
+        "joint_gated": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 88,
+          "input_tokens": 37910,
+          "summed_saved_forward_latency_s": 10.004739899974084
+        },
+        "direct_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 9,
+          "determined_correct": 4,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 4,
+          "model_calls": 88,
+          "input_tokens": 31000,
+          "summed_saved_forward_latency_s": 8.43685390005703
+        },
+        "direct_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 8,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 10,
+          "determined_correct": 6,
+          "needless_deferrals": 2,
+          "wrong_determined_actions": 4,
+          "model_calls": 44,
+          "input_tokens": 14351,
+          "summed_saved_forward_latency_s": 4.020628600002965
+        },
+        "single_full": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 7,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 9,
+          "determined_correct": 4,
+          "needless_deferrals": 4,
+          "wrong_determined_actions": 4,
+          "model_calls": 24,
+          "input_tokens": 8046,
+          "summed_saved_forward_latency_s": 2.260081700034789
+        },
+        "single_filtered": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 1,
+          "correct_decisions": 8,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 10,
+          "determined_correct": 6,
+          "needless_deferrals": 2,
+          "wrong_determined_actions": 4,
+          "model_calls": 24,
+          "input_tokens": 7441,
+          "summed_saved_forward_latency_s": 2.12898920000589
+        },
+        "known_grammar": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 12,
+          "correct_decisions": 24,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 12,
+          "needless_deferrals": 0,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        },
+        "always_defer": {
+          "views": 24,
+          "parent_pairs": 12,
+          "complete_pairs_correct": 0,
+          "correct_decisions": 12,
+          "uncertain_views": 12,
+          "determined_views": 12,
+          "false_commitments": 0,
+          "determined_correct": 0,
+          "needless_deferrals": 12,
+          "wrong_determined_actions": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "summed_saved_forward_latency_s": null
+        }
+      }
+    }
+  },
+  "paired_comparisons": [
+    {
+      "candidate": "joint_full",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 2,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 20,
+      "view_transitions": {
+        "correction": 11,
+        "regression": 14,
+        "stayed_correct": 6,
+        "stayed_wrong": 17
+      },
+      "changed_actions": 37
+    },
+    {
+      "candidate": "joint_gated",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 21,
+      "complete_pair_losses": 0,
+      "complete_pair_ties": 3,
+      "view_transitions": {
+        "correction": 30,
+        "regression": 0,
+        "stayed_correct": 17,
+        "stayed_wrong": 1
+      },
+      "changed_actions": 30
+    },
+    {
+      "candidate": "joint_gated",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 21,
+      "complete_pair_losses": 0,
+      "complete_pair_ties": 3,
+      "view_transitions": {
+        "correction": 27,
+        "regression": 0,
+        "stayed_correct": 20,
+        "stayed_wrong": 1
+      },
+      "changed_actions": 28
+    },
+    {
+      "candidate": "direct_full",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 2,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 20,
+      "view_transitions": {
+        "correction": 14,
+        "regression": 11,
+        "stayed_correct": 6,
+        "stayed_wrong": 17
+      },
+      "changed_actions": 37
+    },
+    {
+      "candidate": "direct_filtered",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 2,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 20,
+      "view_transitions": {
+        "correction": 17,
+        "regression": 13,
+        "stayed_correct": 4,
+        "stayed_wrong": 14
+      },
+      "changed_actions": 42
+    },
+    {
+      "candidate": "direct_filtered",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 2,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 20,
+      "view_transitions": {
+        "correction": 4,
+        "regression": 3,
+        "stayed_correct": 17,
+        "stayed_wrong": 24
+      },
+      "changed_actions": 9
+    },
+    {
+      "candidate": "single_full",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 3,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 19,
+      "view_transitions": {
+        "correction": 15,
+        "regression": 11,
+        "stayed_correct": 6,
+        "stayed_wrong": 16
+      },
+      "changed_actions": 37
+    },
+    {
+      "candidate": "single_full",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 1,
+      "complete_pair_losses": 0,
+      "complete_pair_ties": 23,
+      "view_transitions": {
+        "correction": 1,
+        "regression": 0,
+        "stayed_correct": 20,
+        "stayed_wrong": 27
+      },
+      "changed_actions": 2
+    },
+    {
+      "candidate": "single_filtered",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 3,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 19,
+      "view_transitions": {
+        "correction": 18,
+        "regression": 13,
+        "stayed_correct": 4,
+        "stayed_wrong": 13
+      },
+      "changed_actions": 42
+    },
+    {
+      "candidate": "single_filtered",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 3,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 19,
+      "view_transitions": {
+        "correction": 5,
+        "regression": 3,
+        "stayed_correct": 17,
+        "stayed_wrong": 23
+      },
+      "changed_actions": 10
+    },
+    {
+      "candidate": "known_grammar",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 22,
+      "complete_pair_losses": 0,
+      "complete_pair_ties": 2,
+      "view_transitions": {
+        "correction": 31,
+        "regression": 0,
+        "stayed_correct": 17,
+        "stayed_wrong": 0
+      },
+      "changed_actions": 31
+    },
+    {
+      "candidate": "known_grammar",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 22,
+      "complete_pair_losses": 0,
+      "complete_pair_ties": 2,
+      "view_transitions": {
+        "correction": 28,
+        "regression": 0,
+        "stayed_correct": 20,
+        "stayed_wrong": 0
+      },
+      "changed_actions": 28
+    },
+    {
+      "candidate": "always_defer",
+      "baseline": "joint_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 0,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 22,
+      "view_transitions": {
+        "correction": 7,
+        "regression": 12,
+        "stayed_correct": 5,
+        "stayed_wrong": 24
+      },
+      "changed_actions": 19
+    },
+    {
+      "candidate": "always_defer",
+      "baseline": "direct_full",
+      "parent_pairs": 24,
+      "complete_pair_gains": 0,
+      "complete_pair_losses": 2,
+      "complete_pair_ties": 22,
+      "view_transitions": {
+        "correction": 9,
+        "regression": 17,
+        "stayed_correct": 3,
+        "stayed_wrong": 19
+      },
+      "changed_actions": 37
+    }
+  ],
+  "paired_comparisons_by_stratum": {
+    "family": {
+      "joint_approval": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 5,
+          "view_transitions": {
+            "correction": 6,
+            "regression": 4,
+            "stayed_correct": 3,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 6,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 0,
+            "stayed_correct": 9,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 7
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 7,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 9
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 5,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 6,
+            "stayed_correct": 3,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 1,
+            "stayed_correct": 6,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 1
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 5,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 6,
+            "stayed_correct": 3,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 0
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 1,
+            "stayed_correct": 6,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 2
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 6,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 0,
+            "stayed_correct": 9,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 7
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 7,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 9
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 5
+          },
+          "changed_actions": 9
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 7,
+            "stayed_correct": 0,
+            "stayed_wrong": 5
+          },
+          "changed_actions": 12
+        }
+      ],
+      "reversal_exception": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 4,
+            "stayed_correct": 2,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 8,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 12,
+            "regression": 0,
+            "stayed_correct": 4,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 8,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 10,
+            "regression": 0,
+            "stayed_correct": 6,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 10
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 2,
+            "stayed_correct": 2,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 6,
+            "regression": 2,
+            "stayed_correct": 2,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 0,
+            "stayed_correct": 6,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 2
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 2,
+            "stayed_correct": 2,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 0,
+            "stayed_correct": 6,
+            "stayed_wrong": 10
+          },
+          "changed_actions": 0
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 6,
+            "regression": 2,
+            "stayed_correct": 2,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 13
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 0,
+            "stayed_correct": 6,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 2
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 8,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 12,
+            "regression": 0,
+            "stayed_correct": 4,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 8,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 10,
+            "regression": 0,
+            "stayed_correct": 6,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 10
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 3,
+            "stayed_correct": 1,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 5,
+            "stayed_correct": 1,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 15
+        }
+      ],
+      "route_lookup": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 6,
+            "stayed_correct": 1,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 7,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 11,
+            "regression": 0,
+            "stayed_correct": 4,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 11
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 6,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 8,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 9
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 6,
+            "regression": 3,
+            "stayed_correct": 1,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 4,
+            "stayed_correct": 0,
+            "stayed_wrong": 5
+          },
+          "changed_actions": 16
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 2,
+            "stayed_correct": 5,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 3,
+            "stayed_correct": 1,
+            "stayed_wrong": 5
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 1,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 2
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 6,
+          "view_transitions": {
+            "correction": 8,
+            "regression": 4,
+            "stayed_correct": 0,
+            "stayed_wrong": 4
+          },
+          "changed_actions": 16
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 5,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 2,
+            "stayed_correct": 5,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 8,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 12,
+            "regression": 0,
+            "stayed_correct": 4,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 12
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 7,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 9
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 8,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 2,
+            "stayed_correct": 2,
+            "stayed_wrong": 10
+          },
+          "changed_actions": 4
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 8,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 7,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 5,
+            "stayed_correct": 2,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 10
+        }
+      ]
+    },
+    "id_relation": {
+      "all_characters_distant": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 6,
+            "regression": 7,
+            "stayed_correct": 3,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 19
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 15,
+            "regression": 0,
+            "stayed_correct": 9,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 15
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 14,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 14
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 6,
+            "stayed_correct": 3,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 19
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 8,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 21
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 1,
+            "regression": 1,
+            "stayed_correct": 9,
+            "stayed_wrong": 13
+          },
+          "changed_actions": 3
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 6,
+            "stayed_correct": 3,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 18
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 12,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 14
+          },
+          "changed_actions": 1
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 21
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 1,
+            "stayed_correct": 9,
+            "stayed_wrong": 12
+          },
+          "changed_actions": 4
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 15,
+            "regression": 0,
+            "stayed_correct": 9,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 15
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 14,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 14
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 7,
+            "stayed_correct": 2,
+            "stayed_wrong": 11
+          },
+          "changed_actions": 11
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 5,
+            "regression": 9,
+            "stayed_correct": 1,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 20
+        }
+      ],
+      "one_character_near": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 5,
+            "regression": 7,
+            "stayed_correct": 3,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 18
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 10,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 15,
+            "regression": 0,
+            "stayed_correct": 8,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 15
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 10,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 13,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 14
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 5,
+            "stayed_correct": 3,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 18
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 6,
+            "stayed_correct": 2,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 21
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 2,
+            "stayed_correct": 8,
+            "stayed_wrong": 11
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 8,
+            "regression": 5,
+            "stayed_correct": 3,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 19
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 1,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 13
+          },
+          "changed_actions": 1
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 6,
+            "stayed_correct": 2,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 21
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 2,
+            "stayed_correct": 8,
+            "stayed_wrong": 11
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 16,
+            "regression": 0,
+            "stayed_correct": 8,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 16
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 14,
+            "regression": 0,
+            "stayed_correct": 10,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 14
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 5,
+            "stayed_correct": 3,
+            "stayed_wrong": 13
+          },
+          "changed_actions": 8
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 8,
+            "stayed_correct": 2,
+            "stayed_wrong": 10
+          },
+          "changed_actions": 17
+        }
+      ]
+    },
+    "pair_kind": {
+      "determined_determined": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 12,
+            "stayed_correct": 1,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 20
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 20,
+            "regression": 0,
+            "stayed_correct": 3,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 20
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 10,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 10,
+            "regression": 0,
+            "stayed_correct": 13,
+            "stayed_wrong": 1
+          },
+          "changed_actions": 11
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 12,
+            "regression": 2,
+            "stayed_correct": 1,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 20
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 13,
+            "regression": 3,
+            "stayed_correct": 0,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 23
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 1,
+            "regression": 1,
+            "stayed_correct": 12,
+            "stayed_wrong": 10
+          },
+          "changed_actions": 3
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 13,
+            "regression": 2,
+            "stayed_correct": 1,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 20
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 1,
+            "regression": 0,
+            "stayed_correct": 13,
+            "stayed_wrong": 10
+          },
+          "changed_actions": 2
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 14,
+            "regression": 3,
+            "stayed_correct": 0,
+            "stayed_wrong": 7
+          },
+          "changed_actions": 23
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 1,
+            "stayed_correct": 12,
+            "stayed_wrong": 9
+          },
+          "changed_actions": 4
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 12,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 0,
+          "view_transitions": {
+            "correction": 21,
+            "regression": 0,
+            "stayed_correct": 3,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 21
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 11,
+            "regression": 0,
+            "stayed_correct": 13,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 11
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 12,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 3,
+            "stayed_correct": 0,
+            "stayed_wrong": 21
+          },
+          "changed_actions": 3
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 13,
+            "stayed_correct": 0,
+            "stayed_wrong": 11
+          },
+          "changed_actions": 20
+        }
+      ],
+      "determined_insufficient": [
+        {
+          "candidate": "joint_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 2,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 2,
+            "stayed_correct": 5,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 17
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 10,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 10,
+            "regression": 0,
+            "stayed_correct": 14,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 10
+        },
+        {
+          "candidate": "joint_gated",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 17,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 17
+        },
+        {
+          "candidate": "direct_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 9,
+            "stayed_correct": 5,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 17
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 10,
+            "stayed_correct": 4,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 19
+        },
+        {
+          "candidate": "direct_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 2,
+            "stayed_correct": 5,
+            "stayed_wrong": 14
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 2,
+            "regression": 9,
+            "stayed_correct": 5,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 17
+        },
+        {
+          "candidate": "single_full",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 12,
+          "view_transitions": {
+            "correction": 0,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 17
+          },
+          "changed_actions": 0
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 9,
+          "view_transitions": {
+            "correction": 4,
+            "regression": 10,
+            "stayed_correct": 4,
+            "stayed_wrong": 6
+          },
+          "changed_actions": 19
+        },
+        {
+          "candidate": "single_filtered",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 1,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 3,
+            "regression": 2,
+            "stayed_correct": 5,
+            "stayed_wrong": 14
+          },
+          "changed_actions": 6
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 10,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 2,
+          "view_transitions": {
+            "correction": 10,
+            "regression": 0,
+            "stayed_correct": 14,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 10
+        },
+        {
+          "candidate": "known_grammar",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 11,
+          "complete_pair_losses": 0,
+          "complete_pair_ties": 1,
+          "view_transitions": {
+            "correction": 17,
+            "regression": 0,
+            "stayed_correct": 7,
+            "stayed_wrong": 0
+          },
+          "changed_actions": 17
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "joint_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 2,
+          "complete_pair_ties": 10,
+          "view_transitions": {
+            "correction": 7,
+            "regression": 9,
+            "stayed_correct": 5,
+            "stayed_wrong": 3
+          },
+          "changed_actions": 16
+        },
+        {
+          "candidate": "always_defer",
+          "baseline": "direct_full",
+          "parent_pairs": 12,
+          "complete_pair_gains": 0,
+          "complete_pair_losses": 1,
+          "complete_pair_ties": 11,
+          "view_transitions": {
+            "correction": 9,
+            "regression": 4,
+            "stayed_correct": 3,
+            "stayed_wrong": 8
+          },
+          "changed_actions": 17
+        }
+      ]
+    }
+  },
+  "joint_diagnostics": {
+    "joint_full": {
+      "fields": 112,
+      "correct_fields": 64,
+      "exact_fact_vectors": 14,
+      "missing_as_reported_value": 9,
+      "route_errors": {
+        "correct_route": 114,
+        "wrong_request": 85,
+        "wrong_field": 1
+      },
+      "scope": {
+        "target": {
+          "lines": 100,
+          "selected_as_target_field": 100,
+          "exact_route_correct": 99
+        },
+        "other": {
+          "lines": 100,
+          "selected_as_target_field": 85,
+          "exact_route_correct": 15
+        }
+      }
+    },
+    "joint_gated": {
+      "fields": 112,
+      "correct_fields": 110,
+      "exact_fact_vectors": 47,
+      "missing_as_reported_value": 0,
+      "route_errors": {
+        "correct_route": 199,
+        "wrong_field": 1
+      },
+      "scope": {
+        "target": {
+          "lines": 100,
+          "selected_as_target_field": 100,
+          "exact_route_correct": 99
+        },
+        "other": {
+          "lines": 100,
+          "selected_as_target_field": 0,
+          "exact_route_correct": 100
+        }
+      }
+    }
+  },
+  "gate_audit": {
+    "visible_lines": 200,
+    "KEEP": 100,
+    "DROP": 100,
+    "UNKNOWN": 0,
+    "target_lines": 100,
+    "foreign_lines": 100,
+    "target_retained": 100,
+    "foreign_accepted": 0
+  },
+  "scientific_forwards": 500,
+  "unique_scientific_input_tokens": 188797,
+  "observed_costs_by_arm": {
+    "joint_full": {
+      "model_calls": 200,
+      "input_tokens": 85214,
+      "summed_saved_forward_latency_s": 22.3991684000066
+    },
+    "direct_full": {
+      "model_calls": 200,
+      "input_tokens": 71050,
+      "summed_saved_forward_latency_s": 19.241806200123392
+    },
+    "direct_filtered": {
+      "model_calls": 100,
+      "input_tokens": 32533,
+      "summed_saved_forward_latency_s": 9.183902500080876
+    }
+  },
+  "joint_gated_cost": {
+    "underlying_saved_forwards": 200,
+    "underlying_saved_input_tokens": 85214,
+    "projected_retained_forwards": 100,
+    "projected_retained_input_tokens": 42627,
+    "projected_latency_measured": false,
+    "gate_cpu_time_measured": false,
+    "new_skipped_inference_run": false
+  },
+  "directional_diagnostic": {
+    "rule": "joint_gated complete pairs > joint_full AND false commitments <= joint_full",
+    "complete_pair_gain": 21,
+    "false_commitment_change": -7,
+    "passed": true,
+    "confirmation": false
+  },
+  "interpretation_limit": "Constructed paired scenes reuse inspected language/policy grammar. No independent human review or natural-language transfer. Derived method costs share raw forwards and must not be summed as experiment size. Calls and input tokens differ; no equal total compute or calibrated probabilities. Stored full-vocabulary candidate mass is range-checked but cannot be reconstructed from the saved candidate-only logits.",
+  "config_hash": "0bc456cae12a6d99e734824c268c080ee7f1af6f6d11c20d8f198ea99344b658",
+  "execution_commit": "ff8de16f0241b720d14f659b58a7ceaacd2f7100",
+  "warmup_forwards": 2,
+  "rewrite_model_records": 0,
+  "reserved_model_records": 0,
+  "original_development_model_records": 0,
+  "attempted_scientific_forwards": 500,
+  "attempted_warmup_forwards": 2,
+  "paid_api_calls": 0,
+  "jev_api_calls": 0,
+  "new_training": false
+}

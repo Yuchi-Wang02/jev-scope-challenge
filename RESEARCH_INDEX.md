@@ -55,10 +55,14 @@ The [target-switch preparation](research/request-ownership/PROTOCOL.md) uses
 24 newly constructed scenes / 48 paired views, with the same record block
 queried for two same-namespace IDs. It reuses existing policy/sentence templates;
 new scenes are not new independent policies or reviewed natural language.
-Its model outputs remain zero. A [guarded execution freeze](research/request-ownership/EXECUTION_PROTOCOL.md)
-now binds the 500-query union, 188,797 scientific input tokens, two unscored
-warmups, runner, scorer and paired endpoint. A distinct local-run approval is
-pending; completed prior-run approvals do not transfer to these new scenes.
+The [completed target-switch diagnostic](research/request-ownership/RESULTS.md)
+contains 500 new scientific forwards /188,797 input tokens and two unscored
+warmups. Joint routing changes from 2/24 complete pairs and 7/12 false
+commitments to 23/24 and 0/12 with the explicit-ID gate. Direct filtering stays
+at 2/24 pairs, and known-grammar code is 24/24. The frozen directional rule
+passes; this remains a constructed development diagnostic with no independent
+human annotations. The [execution protocol](research/request-ownership/EXECUTION_PROTOCOL.md)
+and scientific freeze retain their pre-inference contents.
 The [input explorer](https://yuchi-wang02.github.io/jev-scope-challenge/request_switch.html)
 displays all paired texts and their program references, without reading model
 outputs. Its visible-ID overlay is a software rule; the page is not a blinded

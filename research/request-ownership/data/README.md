@@ -12,8 +12,11 @@ reference action change. Parent scenes are the unit of paired analysis.
 
 Labels are cross-checked with existing possible-world enumeration, a separate
 direct policy solver and a parser of the displayed grammar. Agreement between
-these programs is not independent human validation. Model calls, scored views
-and independent human annotations are all **zero**.
+these programs is not independent human validation. Independent human
+annotations remain **zero**. The data were frozen before inference; the later
+[completed diagnostic](../RESULTS.md) scores these 48 views with 500 scientific
+forwards plus two unscored warmups. Preparation manifests retain their original
+zero-inference creation-time state.
 
 Only `state` and `policy` enter the prompt-builder API. Gold, construction
 records, family, target slot and scene identity are not model evidence. Public
