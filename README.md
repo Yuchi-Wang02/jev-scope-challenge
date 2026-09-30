@@ -14,9 +14,10 @@ prediction and failure is inspectable.
 
 The direction persisted across both candidate mappings and the repeat. This identifies a gap for this frozen readout on these inputs, not all open models.
 
-**Try the four-line challenge before seeing the model decisions:** download the
-[standalone HTML](docs/four_line_challenge.html) from GitHub and open it locally.
-It replays the saved S01 case offline; your choices trigger no model or API call.
+**[Play the four-line challenge online](https://yuchi-wang02.github.io/jev-scope-challenge/)**
+before seeing the model decisions. A [standalone HTML copy](docs/four_line_challenge.html)
+also runs offline. Both replay the saved S01 case; your choices trigger no model
+or API call.
 
 ![All predefined case results](assets/scope-results.png)
 
@@ -33,7 +34,7 @@ Target: **mobile plan**. All four messages have the same word multiset.
 
 A/B must flip correctly; A/C must hold correctly. A keyword count cannot tell
 them apart. There are also quoted-example and superseded-request cases.
-The [interactive challenge](docs/four_line_challenge.html) reveals both candidate
+The [interactive challenge](https://yuchi-wang02.github.io/jev-scope-challenge/) reveals both candidate
 mappings for every S01 message after you answer; the full explorer below covers
 all 12 predefined cases and both rounds.
 
