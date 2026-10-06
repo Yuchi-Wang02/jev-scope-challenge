@@ -10,3 +10,6 @@ __pycache__/
 .playwright-cli/
 output/playwright/
 
+# Runtime coordination file, not part of the intent-pilot evidence.
+research/intent-retry-pilot/results/jev.lock
+

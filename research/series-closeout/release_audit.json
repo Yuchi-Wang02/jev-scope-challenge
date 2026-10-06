@@ -1,0 +1,2163 @@
+{
+  "captured_at_utc": "2026-10-06T03:12:53.611419+00:00",
+  "stage": "Local reviewable release candidate and saved-result replay",
+  "status": "affected_scope_verified_locally_not_published",
+  "base_commit": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+  "payload_git_tree_excluding_this_receipt": "9355009442a861f3a7a0bab8d960aa83ac97526a",
+  "hash_scope": "Git-materialized candidate paths only; this receipt excluded to avoid self hashing. Unchanged tracked files are in the tree but omitted from the candidate list.",
+  "candidate_files_excluding_this_receipt": 213,
+  "candidate_bytes_excluding_this_receipt": 5438407,
+  "modified_files": 12,
+  "new_files_excluding_this_receipt": 201,
+  "new_model_calls": 0,
+  "new_downloads_or_installs": 0,
+  "new_human_reviews": 0,
+  "commits_pushes_tags_releases_upstream_messages": 0,
+  "scientific_goal_complete": false,
+  "verification": {
+    "environment": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "win32",
+    "git_materialized_checkout": true,
+    "existing_environment_used": true,
+    "actual_index_sha256_before": "9eb34f7bdf8e29c5873e6ec3a6df8d226aebb7fc6348a9394e8c01b38b45206d",
+    "actual_index_sha256_after": "9eb34f7bdf8e29c5873e6ec3a6df8d226aebb7fc6348a9394e8c01b38b45206d",
+    "real_index_unchanged": true,
+    "new_evidence_tree_byte_differences": [],
+    "external_cache_present_in_checkout": false,
+    "bytecode_present_in_checkout": false,
+    "offline_commands_passed": 14,
+    "focused_unit_tests_passed": 78,
+    "full_historical_ci_run": true,
+    "remote_ci_run": false,
+    "fresh_dependency_install": false,
+    "native_environment_replay": false,
+    "commands": [
+      {
+        "command": "python -B research/rule-direction/capable-reference/prepare.py verify",
+        "returncode": 0,
+        "stdout": "{\"input_reserve_tokens\": 512944, \"cost_reserve_microusd\": 19212128, \"estimated_input_tokens\": 58288}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B research/rule-direction/capable-reference/analyze.py verify",
+        "returncode": 0,
+        "stdout": "{\"complete\": true, \"attempts\": 222, \"terminal_results\": 222, \"halted\": false}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B -m unittest discover -s research/rule-direction/capable-reference -p test_runner.py -v",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_approval_binds_model_freeze_and_explicit_budget (test_runner.JournalTests.test_approval_binds_model_freeze_and_explicit_budget) ... ok\ntest_changed_approval_is_not_silently_used_on_resume (test_runner.JournalTests.test_changed_approval_is_not_silently_used_on_resume) ... ok\ntest_corrupt_or_truncated_journal_cannot_resume (test_runner.JournalTests.test_corrupt_or_truncated_journal_cannot_resume) ... ok\ntest_cost_cap_checked_before_start (test_runner.JournalTests.test_cost_cap_checked_before_start) ... ok\ntest_durable_start_precedes_call_and_completed_resume_does_not_repeat (test_runner.JournalTests.test_durable_start_precedes_call_and_completed_resume_does_not_repeat) ... ok\ntest_http_error_stops_with_reserve_retained_and_no_retry (test_runner.JournalTests.test_http_error_stops_with_reserve_retained_and_no_retry) ... ok\ntest_input_and_attempt_caps (test_runner.JournalTests.test_input_and_attempt_caps) ... ok\ntest_redirect_handler_never_creates_redirected_request (test_runner.JournalTests.test_redirect_handler_never_creates_redirected_request) ... ok\ntest_resume_starts_only_unstarted_jobs (test_runner.JournalTests.test_resume_starts_only_unstarted_jobs) ... ok\ntest_semantic_wrong_and_format_invalid_do_not_control_continuation (test_runner.JournalTests.test_semantic_wrong_and_format_invalid_do_not_control_continuation) ... ok\ntest_unresolved_start_never_retries (test_runner.JournalTests.test_unresolved_start_never_retries) ... ok\ntest_compiler_preserves_all_original_prompts_without_gold_in_payload (test_runner.OriginalContractTests.test_compiler_preserves_all_original_prompts_without_gold_in_payload) ... ok\ntest_reporting_preserves_full_controls_and_does_not_count_pending_as_correct (test_runner.OriginalContractTests.test_reporting_preserves_full_controls_and_does_not_count_pending_as_correct) ... ok\ntest_model_schema_http_and_usage_are_enforced (test_runner.ParsingTests.test_model_schema_http_and_usage_are_enforced) ... ok\ntest_only_exact_final_lowercase_labels (test_runner.ParsingTests.test_only_exact_final_lowercase_labels) ... ok\ntest_refusal_is_invalid_but_does_not_halt (test_runner.ParsingTests.test_refusal_is_invalid_but_does_not_halt) ... ok\ntest_thinking_never_becomes_the_answer (test_runner.ParsingTests.test_thinking_never_becomes_the_answer) ... ok\ntest_transport_redacts_credential_echo_before_any_record_is_returned (test_runner.ParsingTests.test_transport_redacts_credential_echo_before_any_record_is_returned) ... ok\ntest_truncation_cannot_be_scored_even_if_label_visible (test_runner.ParsingTests.test_truncation_cannot_be_scored_even_if_label_visible) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.073s\n\nOK\n"
+      },
+      {
+        "command": "python -B research/series-closeout/confidence_recheck.py verify",
+        "returncode": 0,
+        "stdout": "{\"command\": \"verify\", \"status\": \"passed\", \"main_decisions\": 216, \"decimal_0.99\": {\"accepted\": {\"total\": 173, \"correct\": 164, \"wrong\": 9}, \"rejected\": {\"total\": 43, \"correct\": 4, \"wrong\": 39}, \"exact_decimal_boundary\": {\"total\": 45, \"correct\": 36, \"wrong\": 9, \"accepted\": 45, \"rejected\": 0}, \"missing_or_invalid_confidence_rejected\": 0}, \"report_sha256\": \"c57ae495dbf4c6afc1fb6d716d78e4b347e3b0df81cabb222f8b5ef7f83cb1f5\", \"external_reference_reopened\": false, \"external_reference_verification\": \"Prior saved provenance retained; ZIP and member bytes were not rechecked.\"}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B -m unittest discover -s research/series-closeout -p test_confidence_recheck.py -v",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_equality_count_does_not_include_above_threshold (test_confidence_recheck.DecimalBoundaryTests.test_equality_count_does_not_include_above_threshold) ... ok\ntest_exact_boundary_accepted_including_wrong_prediction (test_confidence_recheck.DecimalBoundaryTests.test_exact_boundary_accepted_including_wrong_prediction) ... ok\ntest_immediately_above_is_accepted (test_confidence_recheck.DecimalBoundaryTests.test_immediately_above_is_accepted) ... ok\ntest_immediately_below_is_rejected_without_epsilon (test_confidence_recheck.DecimalBoundaryTests.test_immediately_below_is_rejected_without_epsilon) ... ok\ntest_json_parser_preserves_decimal_digits (test_confidence_recheck.DecimalBoundaryTests.test_json_parser_preserves_decimal_digits) ... ok\ntest_missing_and_invalid_confidence_are_distinct_and_rejected (test_confidence_recheck.DecimalBoundaryTests.test_missing_and_invalid_confidence_are_distinct_and_rejected) ... ok\ntest_partition_retains_unscored_rows_and_reconciles_errors (test_confidence_recheck.DecimalBoundaryTests.test_partition_retains_unscored_rows_and_reconciles_errors) ... ok\ntest_threshold_and_mode_validation (test_confidence_recheck.DecimalBoundaryTests.test_threshold_and_mode_validation) ... ok\ntest_wrong_binary_fraction_rejects_exact_099_and_095 (test_confidence_recheck.DecimalBoundaryTests.test_wrong_binary_fraction_rejects_exact_099_and_095) ... ok\ntest_zero_and_one_json_integers_are_valid (test_confidence_recheck.DecimalBoundaryTests.test_zero_and_one_json_integers_are_valid) ... ok\ntest_optional_archive_must_match_saved_archive_and_members (test_confidence_recheck.PriorProvenanceTests.test_optional_archive_must_match_saved_archive_and_members) ... ok\ntest_verification_without_zip_retains_prior_metadata_without_reopening (test_confidence_recheck.PriorProvenanceTests.test_verification_without_zip_retains_prior_metadata_without_reopening) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n"
+      },
+      {
+        "command": "python -B research/series-closeout/build_replay.py verify",
+        "returncode": 0,
+        "stdout": "{\"command\": \"verify\", \"status\": \"passed\", \"output\": \"docs/decision_boundary.html\", \"cases\": 108, \"main_records_compared\": 648, \"all_backend_results_checked\": 666, \"strict_sonnet_correct\": 215, \"corrected_099_kept\": 173, \"corrected_099_errors\": 9, \"sha256\": \"b603122e828e89466aae32dd24ca17be3eaa699c691e157aee33222a3e3f3a3f\"}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B research/intent-retry-pilot/run_jev.py verify",
+        "returncode": 0,
+        "stdout": "{\"jobs\":147,\"new_calls\":0,\"verified\":true}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B research/intent-retry-pilot/verify_pilot.py",
+        "returncode": 0,
+        "stdout": "{\"structural_checks\": \"passed\", \"visible\": 72, \"parents\": 12, \"primary_requests\": 144, \"reference_assisted_worlds\": 90, \"human_label_validation\": false, \"model_calls\": 0}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B -m unittest discover -s research/intent-retry-pilot -p test_runner.py -v",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_caps_are_checked_before_next_attempt (test_runner.ExecutionTests.test_caps_are_checked_before_next_attempt) ... ok\ntest_duplicate_finish_and_negative_usage_are_rejected (test_runner.ExecutionTests.test_duplicate_finish_and_negative_usage_are_rejected) ... ok\ntest_freeze_drift_rejected_without_calls (test_runner.ExecutionTests.test_freeze_drift_rejected_without_calls) ... ok\ntest_incomplete_attempt_never_auto_replays (test_runner.ExecutionTests.test_incomplete_attempt_never_auto_replays) ... ok\ntest_nested_lock_refuses_concurrent_writer (test_runner.ExecutionTests.test_nested_lock_refuses_concurrent_writer) ... ok\ntest_only_one_retry_per_job_and_terminal_failure_stays_terminal (test_runner.ExecutionTests.test_only_one_retry_per_job_and_terminal_failure_stays_terminal) ... ok\ntest_partial_journal_tail_is_not_truncated (test_runner.ExecutionTests.test_partial_journal_tail_is_not_truncated) ... ok\ntest_pending_retry_resumes_as_retry_not_new_attempt_zero (test_runner.ExecutionTests.test_pending_retry_resumes_as_retry_not_new_attempt_zero) ... ok\ntest_retry_cap_shared_between_phases (test_runner.ExecutionTests.test_retry_cap_shared_between_phases) ... ok\ntest_retry_counts_both_attempts_and_unknown_usage (test_runner.ExecutionTests.test_retry_counts_both_attempts_and_unknown_usage) ... ok\ntest_smoke_gate_then_resume_without_reissue (test_runner.ExecutionTests.test_smoke_gate_then_resume_without_reissue) ... ok\ntest_successful_finish_missing_terminal_recovers_without_request (test_runner.ExecutionTests.test_successful_finish_missing_terminal_recovers_without_request) ... ok\ntest_wrong_smoke_blocks_primary_but_is_preserved (test_runner.ExecutionTests.test_wrong_smoke_blocks_primary_but_is_preserved) ... ok\ntest_invalid_probability_metadata_is_visible_without_invented_keys (test_runner.ResponseTests.test_invalid_probability_metadata_is_visible_without_invented_keys) ... ok\ntest_json_rejects_duplicate_keys_and_nonfinite_constants (test_runner.ResponseTests.test_json_rejects_duplicate_keys_and_nonfinite_constants) ... ok\ntest_native_choice_maps_under_permutation (test_runner.ResponseTests.test_native_choice_maps_under_permutation) ... ok\ntest_probability_rounding_and_argmax_do_not_rewrite_native_choice (test_runner.ResponseTests.test_probability_rounding_and_argmax_do_not_rewrite_native_choice) ... ok\ntest_redaction_recurses_and_removes_headers (test_runner.ResponseTests.test_redaction_recurses_and_removes_headers) ... ok\ntest_wrong_version_choice_usage_and_mapping (test_runner.ResponseTests.test_wrong_version_choice_usage_and_mapping) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.167s\n\nOK\n"
+      },
+      {
+        "command": "python -B -m unittest discover -s research/intent-retry-pilot/integration -p test_gate.py -v",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_completed_status_and_unknown_status (test_gate.GateTests.test_completed_status_and_unknown_status) ... ok\ntest_discovery_lookup_id_must_match_returned_record (test_gate.GateTests.test_discovery_lookup_id_must_match_returned_record) ... ok\ntest_error_or_missing_result_never_becomes_verified (test_gate.GateTests.test_error_or_missing_result_never_becomes_verified) ... ok\ntest_events_require_strict_success_flag_and_do_not_mutate_input (test_gate.GateTests.test_events_require_strict_success_flag_and_do_not_mutate_input) ... ok\ntest_flight_binding_route_date (test_gate.GateTests.test_flight_binding_route_date) ... ok\ntest_latest_failed_discovery_is_not_cherry_picked_away (test_gate.GateTests.test_latest_failed_discovery_is_not_cherry_picked_away) ... ok\ntest_latest_failed_verification_is_not_cherry_picked_away (test_gate.GateTests.test_latest_failed_verification_is_not_cherry_picked_away) ... ok\ntest_malformed_enum_values_fail_closed_without_exception (test_gate.GateTests.test_malformed_enum_values_fail_closed_without_exception) ... ok\ntest_name_and_country_are_checked (test_gate.GateTests.test_name_and_country_are_checked) ... ok\ntest_other_verification_type_does_not_authorize_cancel (test_gate.GateTests.test_other_verification_type_does_not_authorize_cancel) ... ok\ntest_pending_wrong_reservation (test_gate.GateTests.test_pending_wrong_reservation) ... ok\ntest_prefixes_have_different_requirements (test_gate.GateTests.test_prefixes_have_different_requirements) ... ok\ntest_profile_account_and_traveler_bindings (test_gate.GateTests.test_profile_account_and_traveler_bindings) ... ok\ntest_request_and_response_traveler_ids_both_bound (test_gate.GateTests.test_request_and_response_traveler_ids_both_bound) ... ok\ntest_requested_identity_values_are_not_profile_evidence (test_gate.GateTests.test_requested_identity_values_are_not_profile_evidence) ... ok\ntest_strict_profile_checks_each_identity_field (test_gate.GateTests.test_strict_profile_checks_each_identity_field) ... ok\ntest_strict_profile_is_additional_not_silent_oracle (test_gate.GateTests.test_strict_profile_is_additional_not_silent_oracle) ... ok\ntest_unrelated_read_preserves_permission (test_gate.GateTests.test_unrelated_read_preserves_permission) ... ok\ntest_unsupported_scope_does_not_become_permission (test_gate.GateTests.test_unsupported_scope_does_not_become_permission) ... ok\ntest_verification_before_discovery_does_not_count (test_gate.GateTests.test_verification_before_discovery_does_not_count) ... ok\ntest_verified_requires_boolean_true (test_gate.GateTests.test_verified_requires_boolean_true) ... ok\ntest_visible_booking_call_requires_refresh_even_after_error (test_gate.GateTests.test_visible_booking_call_requires_refresh_even_after_error) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.001s\n\nOK\n"
+      },
+      {
+        "command": "python -B research/intent-retry-pilot/cohort-screen/verify_artifacts.py",
+        "returncode": 0,
+        "stdout": "{\n  \"status\": \"pass\",\n  \"selected_pairs\": 12,\n  \"decisions\": {\n    \"CONTROL\": 7,\n    \"PENDING\": 2,\n    \"EXCLUDE\": 3,\n    \"INCLUDE\": 0\n  },\n  \"external_source_verification\": {\n    \"manifest_files\": 116,\n    \"manifest_bytes\": 1203231,\n    \"source_cache_rechecked\": false,\n    \"files_verified\": 0,\n    \"bytes_verified\": 0,\n    \"note\": \"External source cache was not reopened; manifest provenance only.\"\n  },\n  \"shipped_source_files_verified\": {\n    \"atomicity-repro\": 7,\n    \"integration\": 14\n  },\n  \"frozen_hash_counts\": {\n    \"atomicity-repro\": 4,\n    \"proposed-fix\": 14,\n    \"integration\": 9,\n    \"intent-retry-pilot\": 12\n  },\n  \"canonical_states_equal_utf8_source\": 4,\n  \"original_environment_attempts_all_runs\": 12,\n  \"original_environment_expected_errors_all_runs\": 4,\n  \"derivative_environment_attempts_all_runs\": 20,\n  \"derivative_expected_tool_errors_all_runs\": 5,\n  \"derivative_preserved_harness_assertion_failures\": 1,\n  \"canonical_derivative_cases_passed\": 5,\n  \"all_software_reproduction_tool_attempts\": 32,\n  \"portable_staged_replay_tool_attempts\": 8,\n  \"portable_staged_inputs_unchanged\": 71,\n  \"portable_staged_bytecode_absent_before_and_after\": true,\n  \"model_calls_added\": 0,\n  \"note\": \"Checks saved sources, selected counts and recorded runs; executes no environment or model.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B -m unittest discover -s research/intent-retry-pilot/cohort-screen -p test_source_verification.py -v",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_default_distinguishes_manifest_from_observation (test_source_verification.SourceVerificationTests.test_default_distinguishes_manifest_from_observation) ... ok\ntest_explicit_changed_size_fails (test_source_verification.SourceVerificationTests.test_explicit_changed_size_fails) ... ok\ntest_explicit_good_directory_rechecks_every_file (test_source_verification.SourceVerificationTests.test_explicit_good_directory_rechecks_every_file) ... ok\ntest_explicit_missing_directory_fails (test_source_verification.SourceVerificationTests.test_explicit_missing_directory_fails) ... ok\ntest_explicit_missing_file_fails (test_source_verification.SourceVerificationTests.test_explicit_missing_file_fails) ... ok\ntest_explicit_same_size_corruption_fails_hash_check (test_source_verification.SourceVerificationTests.test_explicit_same_size_corruption_fails_hash_check) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.013s\n\nOK\n"
+      },
+      {
+        "command": "python -B research/topic-screen-2026-10-05/verify_screen.py",
+        "returncode": 0,
+        "stdout": "{\n  \"verified_at_utc\": \"2026-10-06T03:12:52.542767+00:00\",\n  \"status\": \"passed\",\n  \"check_count\": 83,\n  \"checks\": [\n    \"six papers and two research implementation chains\",\n    \"packet revision matches selection specification\",\n    \"six fixed source tasks without replacement\",\n    \"four distinct user contexts; independence not claimed\",\n    \"retail/0: visibility and non-evaluation status\",\n    \"retail/1: visibility and non-evaluation status\",\n    \"retail/2: visibility and non-evaluation status\",\n    \"airline/0: visibility and non-evaluation status\",\n    \"airline/1: visibility and non-evaluation status\",\n    \"airline/2: visibility and non-evaluation status\",\n    \"packet record counts\",\n    \"retail: all selected user records retained\",\n    \"retail/yusuf_rossi_9620: record ownership retained\",\n    \"retail/0: exact record pointers\",\n    \"retail/1: exact record pointers\",\n    \"retail/2: exact record pointers\",\n    \"all ordered retail products retained\",\n    \"airline: all selected user records retained\",\n    \"airline/emma_kim_9957: record ownership retained\",\n    \"airline/raj_sanchez_7340: record ownership retained\",\n    \"airline/noah_muller_9847: record ownership retained\",\n    \"airline/0: exact record pointers\",\n    \"airline/1: exact record pointers\",\n    \"airline/2: exact record pointers\",\n    \"exact related flight objects retained\",\n    \"every reservation flight date exists\",\n    \"requested keyboard unavailable; accepted fallback available\",\n    \"thermostat source fields; no automatic Home/Assistant synonym validation\",\n    \"T-shirt availability count\",\n    \"known reference anomaly preserved\",\n    \"Raj fixed-policy-time elapsed arithmetic and target fields\",\n    \"Emma target fields\",\n    \"Emma and Raj dated flights available\",\n    \"Noah latest-created and delayed-trip cues differ\",\n    \"exactly two declared paper diagnostics\",\n    \"counterfactual precondition: /records/retail/products/1656367028/variants/9025753381/available\",\n    \"counterfactual precondition: /records/retail/products/1656367028/variants/6342039236/available\",\n    \"counterfactual changes exactly two declared availability bindings\",\n    \"available/unavailable marginals unchanged\",\n    \"native complete-object selection changes with the relation\",\n    \"unrelated-record removal preserves bounded cancellation grounds\",\n    \"artifact hash: case_packet.json\",\n    \"artifact hash: retail_policy.source.md\",\n    \"artifact hash: airline_policy.source.md\",\n    \"artifact hash: TAU_LICENSE\",\n    \"artifact hash: screen_spec.json\",\n    \"artifact hash: resource_snapshot.json\",\n    \"artifact hash: paper_traces.json\",\n    \"local link: README.md -> screen_spec.json\",\n    \"local link: README.md -> EVIDENCE.md\",\n    \"local link: README.md -> CASES.md\",\n    \"local link: README.md -> case_packet.json\",\n    \"local link: README.md -> TAU_LICENSE\",\n    \"local link: README.md -> paper_traces.json\",\n    \"local link: README.md -> sources.json\",\n    \"local link: README.md -> resource_snapshot.json\",\n    \"local link: README.md -> COMPLETION_AUDIT.md\",\n    \"local link: README.md -> verification.json\",\n    \"local link: EVIDENCE.md -> resource_snapshot.json\",\n    \"local link: EVIDENCE.md -> ../baseline-readiness/QWEN35_SMOKE_RESULTS.md\",\n    \"local link: CASES.md -> case_packet.json\",\n    \"local link: CASES.md -> retail_policy.source.md\",\n    \"local link: CASES.md -> airline_policy.source.md\",\n    \"local link: CASES.md -> TAU_LICENSE\",\n    \"local link: CASES.md -> paper_traces.json\",\n    \"local link: COMPLETION_AUDIT.md -> screen_spec.json\",\n    \"local link: COMPLETION_AUDIT.md -> sources.json\",\n    \"local link: COMPLETION_AUDIT.md -> EVIDENCE.md\",\n    \"local link: COMPLETION_AUDIT.md -> EVIDENCE.md\",\n    \"local link: COMPLETION_AUDIT.md -> EVIDENCE.md\",\n    \"local link: COMPLETION_AUDIT.md -> screen_spec.json\",\n    \"local link: COMPLETION_AUDIT.md -> CASES.md\",\n    \"local link: COMPLETION_AUDIT.md -> case_packet.json\",\n    \"local link: COMPLETION_AUDIT.md -> EVIDENCE.md\",\n    \"local link: COMPLETION_AUDIT.md -> CASES.md\",\n    \"local link: COMPLETION_AUDIT.md -> paper_traces.json\",\n    \"local link: COMPLETION_AUDIT.md -> CASES.md\",\n    \"local link: COMPLETION_AUDIT.md -> verify_screen.py\",\n    \"local link: COMPLETION_AUDIT.md -> resource_snapshot.json\",\n    \"local link: COMPLETION_AUDIT.md -> README.md\",\n    \"local link: COMPLETION_AUDIT.md -> sources.json\",\n    \"local link: COMPLETION_AUDIT.md -> TAU_LICENSE\",\n    \"local link: COMPLETION_AUDIT.md -> verification.json\"\n  ],\n  \"source_comparison_performed\": false,\n  \"exact_source_tasks_compared\": 0,\n  \"exact_source_objects_compared\": 0,\n  \"pinned_cache_files_hashed\": 0,\n  \"not_established\": [\n    \"semantic correctness of user intent or policy interpretation\",\n    \"independent human review\",\n    \"sample independence\",\n    \"new method novelty\",\n    \"model performance or causal attribution\"\n  ],\n  \"verifier_network_calls\": 0,\n  \"verifier_model_calls\": 0\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": "python -B verify_publication.py",
+        "returncode": 0,
+        "stdout": "{\n  \"status\": \"passed\",\n  \"read_only\": true,\n  \"markdown_files\": 208,\n  \"html_files\": 24,\n  \"html_templates_skipped\": 16,\n  \"local_links\": 1116,\n  \"vendored_source_and_license_copies_checked\": 6,\n  \"citation_matches_schema_validated_bytes\": true,\n  \"credential_pattern_matches\": 0,\n  \"public_weight_files\": 0,\n  \"author_review_items\": 96,\n  \"non_author_review_submissions\": 1,\n  \"adjudicated_reference_updates\": 0,\n  \"external_summary_files_checked\": 3,\n  \"external_public_visible_review_items\": 60,\n  \"external_completed_reviews\": 0,\n  \"scope\": \"technical consistency, not a legal or scientific certification\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "browser": {
+      "all_states": {
+        "status": "passed",
+        "all_selection_states": 216,
+        "main_outputs_display_checked": 648,
+        "browser_errors": [],
+        "external_requests": [],
+        "shortcut_previous_next_matrix_checks": true
+      },
+      "responsive": {
+        "status": "passed",
+        "viewport_checks": [
+          {
+            "viewport": 1440,
+            "body": 1440
+          },
+          {
+            "viewport": 390,
+            "body": 390
+          },
+          {
+            "viewport": 320,
+            "body": 320
+          }
+        ],
+        "invalid_final_text_preserved": true,
+        "screenshots": 3
+      }
+    },
+    "browser_scope": "Existing Edge via Playwright CLI, loopback static server; embedded data validated against raw records by build_replay.py. Visual inspection of desktop, 390px top, and invalid response screenshots.",
+    "final_working_copy_publication_check": {
+      "status": "passed",
+      "markdown_files": 208,
+      "html_files": 24,
+      "templates_skipped": 16,
+      "local_links": 1116,
+      "credential_pattern_matches": 0,
+      "public_weight_files": 0,
+      "scope": "Technical consistency only; public originals and current local candidate included."
+    },
+    "git_diff_check_passed": true,
+    "full_historical_ci_scope": "All Python command steps locally; not GitHub checkout/setup/install actions or remote Ubuntu execution.",
+    "full_offline_ci_followup": {
+      "started_at_utc": "2026-10-06T03:18:22.708989+00:00",
+      "completed_at_utc": "2026-10-06T03:19:53.217207+00:00",
+      "status": "passed",
+      "scope": "All 77 Python command steps in both repository CI jobs; pip install skipped because exact required versions already present.",
+      "base_commit": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "materialized_tree": "af93b793ada49f214f0cbe4d8b40f489fdd971d3",
+      "python": "3.10.18 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:08:55) [MSC v.1929 64 bit (AMD64)]",
+      "dependencies": {
+        "numpy": "2.1.2",
+        "matplotlib": "3.10.9",
+        "httpx": "0.28.1"
+      },
+      "platform": "win32",
+      "fresh_install": false,
+      "github_actions_executed": false,
+      "new_model_calls": 0,
+      "new_installations": 0,
+      "real_index_unchanged": true,
+      "tracked_materialized_file_changes": [],
+      "new_stage_files": [],
+      "unittest_test_count": 393,
+      "seconds": 90.473,
+      "command_count": 77,
+      "original_job_commands": 64,
+      "closeout_job_commands": 13,
+      "private_full_log_sha256": "a14309f0e2f44cac0a42bba0f82c4e24b749b2cb37358392b3bf58ab9b3e9817",
+      "commands": [
+        {
+          "job": "verify",
+          "command": "python -m unittest discover -s tests -v",
+          "returncode": 0,
+          "seconds": 35.547,
+          "stdout_sha256": "b3f0959d5e213c8dec1e3480fab1fdd3e7dfb8394bc1a0fbe0c84e884c8d51d6",
+          "stderr_sha256": "4e424b8af319ba0dded3b67b09e8c1d733179ae12beb7959d1b1884b90d8a609"
+        },
+        {
+          "job": "verify",
+          "command": "python verify_evidence.py",
+          "returncode": 0,
+          "seconds": 0.118,
+          "stdout_sha256": "0368ff36e3c1a3c2d5304433fc21ea15373185935e6a89f7609f1716f3be6a6f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python analyze.py --verify",
+          "returncode": 0,
+          "seconds": 0.45,
+          "stdout_sha256": "b4816db2e3b3190bb05e84ea2f7a0a69b071d743e801079957b89ba01fde12b1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/next-study/verify_study.py",
+          "returncode": 0,
+          "seconds": 0.102,
+          "stdout_sha256": "44e6e2cfac9c24cfce84f41a00152e35380a719e57f3e2a0c3d4c3e6629e8ee2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/layout-boundary/layout_study.py build",
+          "returncode": 0,
+          "seconds": 0.087,
+          "stdout_sha256": "a8200721f96adfa2f57dcdc3a460e03e65b39c0086977b902806c3e74b662e11",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/layout-boundary/verify_layout.py",
+          "returncode": 0,
+          "seconds": 0.305,
+          "stdout_sha256": "1683bd7292f4b21325d84285184023dae3b895956d17687b1eade027eff60f1a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-gap/gap_run.py build",
+          "returncode": 0,
+          "seconds": 0.084,
+          "stdout_sha256": "4f16386b55bfc65d7a950f4a39c6ffc1c18bba36a51a90b971334242a8ea3a31",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-gap/verify_gap.py",
+          "returncode": 0,
+          "seconds": 0.387,
+          "stdout_sha256": "c12cf8dbb9c5b2d6ead619e17c1c4bd312f4b48e945d94d50990bbe6cf930c8a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-gap/review_tools.py verify",
+          "returncode": 0,
+          "seconds": 0.083,
+          "stdout_sha256": "77d9a07e4cfb41916d803edea733072129a43fe33716a7eeabb3bab48a32fb4a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-gap/release_tools.py --verify",
+          "returncode": 0,
+          "seconds": 0.124,
+          "stdout_sha256": "225c498979d370c5deeddaa42296008086cb55a598187701e8574019c6e57a43",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-guards/guard_study.py prepare",
+          "returncode": 0,
+          "seconds": 0.088,
+          "stdout_sha256": "89ba41044b29aca65fad63a9d5ab8af15b9062dbddf8a3c98cee35706490b7e2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-guards/verify_guards.py",
+          "returncode": 0,
+          "seconds": 0.596,
+          "stdout_sha256": "62783bad2df89e9b2a5d1730b98deb7d7cd03219e38dbd65b988f2dcd79ac0e8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/evidence-guards/publish_guards.py --verify",
+          "returncode": 0,
+          "seconds": 0.144,
+          "stdout_sha256": "cf69cf4c55be049f384ab904eeea0aea37dd1213597bc6d0a91c58f4c3443f3c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/data_tools.py verify",
+          "returncode": 0,
+          "seconds": 0.086,
+          "stdout_sha256": "f37ae52183559b27b2b6e17ab0e49a4765885767c0a90434bfdd2a4c35b8b253",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/fact_run.py build",
+          "returncode": 0,
+          "seconds": 0.091,
+          "stdout_sha256": "4f16386b55bfc65d7a950f4a39c6ffc1c18bba36a51a90b971334242a8ea3a31",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/fact_analyze.py --verify",
+          "returncode": 0,
+          "seconds": 1.354,
+          "stdout_sha256": "f43ac83a8ee33d18d1cc989416f6d30b43d1089ac6b8463aa6bd1d31a7a188a3",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/publish_facts.py --verify",
+          "returncode": 0,
+          "seconds": 0.116,
+          "stdout_sha256": "bd8df0a1323104358f8ae18d52a2e777237c09df12ed1d2a7c52121ef81dc52b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/review_pair_tools.py",
+          "returncode": 0,
+          "seconds": 0.063,
+          "stdout_sha256": "759a02d53002427723e5269ead026f820fb66313e3d2d781d38d71c96a1b9b95",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/review_starter.py --verify",
+          "returncode": 0,
+          "seconds": 0.066,
+          "stdout_sha256": "0fc7ba8cfd364dd9187c1685d5320b6724e6e09d38b9197b5a3008c94b0dd9c6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/line_evidence.py",
+          "returncode": 0,
+          "seconds": 0.086,
+          "stdout_sha256": "060d081ef493a327f208f161042d44f4272d42a0405ad8906a546074e14e7476",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/line_plan_tools.py verify",
+          "returncode": 0,
+          "seconds": 0.107,
+          "stdout_sha256": "3a2486f03717cb069a733197404c37197aa4f60273684df681472c1b03f64f92",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/line_run.py verify-freeze",
+          "returncode": 0,
+          "seconds": 0.175,
+          "stdout_sha256": "3af54ba9e04e52d252444a5464f53e0ff355b5d4bc5ff92c344a85834aa62a67",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/line_analyze.py --verify",
+          "returncode": 0,
+          "seconds": 0.665,
+          "stdout_sha256": "4905c5c4a2884c3e63a59ee92601c2dcb04c3e6398e98a9fa71e2f472e6144a6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/paired_parent_audit.py verify",
+          "returncode": 0,
+          "seconds": 0.073,
+          "stdout_sha256": "7a53e1ba02013183385a8c3b9bd38821205d6ae28b353e4b88652f7693354f1e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/line_oracle_decomposition.py --verify",
+          "returncode": 0,
+          "seconds": 0.7,
+          "stdout_sha256": "759ad1665514675b92481465f4716c6f953ca60242a9e49c1b522c460708fc8b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/publish_line.py --verify",
+          "returncode": 0,
+          "seconds": 0.678,
+          "stdout_sha256": "63eb45fea7602bf6b738f1adb404996fd491160682a221b51305f44055fffd92",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/joint_route_plan.py verify",
+          "returncode": 0,
+          "seconds": 0.106,
+          "stdout_sha256": "dea5f3ea5e53e0dbb10f72e6b91526e253003ecc0e24807a4e378906edbb1bc6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/joint_token_control.py verify",
+          "returncode": 0,
+          "seconds": 1.925,
+          "stdout_sha256": "fc630a332e14531721bac66c5f0db506849cc5ba87d5e3ba40d53114a800e73f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/joint_execution.py verify-freeze",
+          "returncode": 0,
+          "seconds": 1.986,
+          "stdout_sha256": "058b7a6b24285fb15621992298c82b212c854a7f5e3f8d0d0ca0c9a72d69d488",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/joint_analyze.py --verify",
+          "returncode": 0,
+          "seconds": 2.897,
+          "stdout_sha256": "0cc8543d023eef68215f36e760f302a474d0d64baa669844c71e385b9856dda1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/publish_joint.py --verify",
+          "returncode": 0,
+          "seconds": 3.01,
+          "stdout_sha256": "753badc953c6c821670230671f88a175b3b3ed51e62c4ad869ba367974e107e2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/fact-execution/scope_gate_audit.py verify",
+          "returncode": 0,
+          "seconds": 2.981,
+          "stdout_sha256": "296fb68cd8627fc8b35e1553ab0bf6884c8027f0884f7cf4c212b726695211e6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/request-ownership/prepare.py verify",
+          "returncode": 0,
+          "seconds": 0.146,
+          "stdout_sha256": "c0d4967a8f8467705ceaa4254f730f7ea88e00de1c6614dc8b4068d6110da1ae",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/request-ownership/execution.py verify-freeze",
+          "returncode": 0,
+          "seconds": 0.218,
+          "stdout_sha256": "4885278639132a037b0f74d817339255b0066845cf498773bb027202278aafe9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/request-ownership/analyze.py --verify",
+          "returncode": 0,
+          "seconds": 1.312,
+          "stdout_sha256": "a3690dc6a17c059a91111ad578b2008875b332d327aa88b908399db2d28d666e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/request-ownership/plot_results.py verify",
+          "returncode": 0,
+          "seconds": 1.375,
+          "stdout_sha256": "1ef2d95336bbf6e1853a229274ae1bebba67a32b59bfc66701fb1bbf1d2a03d0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/payment-ownership/verify_run.py",
+          "returncode": 0,
+          "seconds": 0.492,
+          "stdout_sha256": "b5bfa1134595eb1d8e210954e1b24b38c552aeb237d2bebdb18063a4bd474259",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/study.py verify-freeze",
+          "returncode": 0,
+          "seconds": 0.118,
+          "stdout_sha256": "6d7e5fc693777bcdee71d9dae268c54011623005915b11c293f3230eddc75c9c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/analyze.py --verify",
+          "returncode": 0,
+          "seconds": 1.726,
+          "stdout_sha256": "9c7af928413ee1096bd340b7701002ae10742058ac557c60cbb5f90e07519897",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/publish.py --verify",
+          "returncode": 0,
+          "seconds": 3.456,
+          "stdout_sha256": "70f66f26666a2011e35bcbbd1cc6126c8e53e67b5ba996f1975aa4cfcc920d2f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/review_tools.py --verify",
+          "returncode": 0,
+          "seconds": 0.109,
+          "stdout_sha256": "f0dc3902b47c6aef7e02dbf904b4344a033781758e8d101079c420dfa8c61255",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/reasoning_analyze.py --verify",
+          "returncode": 0,
+          "seconds": 1.874,
+          "stdout_sha256": "1b1cf8a27513ef98f1269523196356270ac527e6fe0bc7b4f6a3c4efd7caee61",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/reasoning_report.py --verify",
+          "returncode": 0,
+          "seconds": 3.452,
+          "stdout_sha256": "4a523e346cd358ce0f33f1695d9df1b2fb69bd1c7d4eb8fd2c151a3d2f3a8322",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/candidate-completeness/plot_results.py --verify",
+          "returncode": 0,
+          "seconds": 15.304,
+          "stdout_sha256": "af1cf156ab46f716ea2faa2a92e77a916706cb2f3de61d500668148d8525bb21",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/decision-sufficiency/build.py --verify",
+          "returncode": 0,
+          "seconds": 0.112,
+          "stdout_sha256": "d51dd0fd00001e27260636ad39de5a2cbb15de67c33b68a3c4f017c835d871c0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/baseline-readiness/preflight.py verify",
+          "returncode": 0,
+          "seconds": 0.072,
+          "stdout_sha256": "cee39336195005d7518dacf9f0342f06fbeb544916eeb511dd7606fa66c1f030",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/baseline-readiness/qwen35_report.py --verify",
+          "returncode": 0,
+          "seconds": 0.219,
+          "stdout_sha256": "5595afde6a6f9d898737c04cbffbbde1164ed4ff70f18d1318620b87b91e1de6",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/generation-calibration/prepare.py",
+          "returncode": 0,
+          "seconds": 0.057,
+          "stdout_sha256": "7b2ee0d13482e3151d4d33d0fb7a4ae0634437661b6d65ad1bc84c1c4c50ac02",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/generation-calibration/analyze.py --verify",
+          "returncode": 0,
+          "seconds": 0.31,
+          "stdout_sha256": "4f7ef4031f6311be0845c0ddfe8a5a7b5d484fb7ae222fe3e7d17f5f3db64cb9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/external-validation/publish_review.py verify",
+          "returncode": 0,
+          "seconds": 0.106,
+          "stdout_sha256": "579af4e67c4de12997937c94aeb021117b99433bdd016a49f54bd82ebcc13b47",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/action-backends/plan.py",
+          "returncode": 0,
+          "seconds": 0.058,
+          "stdout_sha256": "e72835e7187147c3f6061e50f81468a2c2aa5a04b50a606ae33dd080b2847b88",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/action-backends/analyze.py --verify",
+          "returncode": 0,
+          "seconds": 0.78,
+          "stdout_sha256": "2e0a45c5c3b1569e91b338fe19126b1da9eca05263a77eb8ba7bc1649abdcd0c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python docs/build_four_line_challenge.py verify",
+          "returncode": 0,
+          "seconds": 0.07,
+          "stdout_sha256": "74c8a01eaa5470a2e6469e94932cc83d64f0ffd713990e6e99b1b55089a79672",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python docs/build_risk_tradeoff.py verify",
+          "returncode": 0,
+          "seconds": 0.114,
+          "stdout_sha256": "6643d1d472fe17698513785f3a0e7e01731eb735c443577fb4ac8ba2ebfe3251",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python docs/build_request_switch.py verify",
+          "returncode": 0,
+          "seconds": 0.24,
+          "stdout_sha256": "33dfff8cca4b8fc65b4ec8e2b650661f204f1db952f5cb265ae81b10d5531119",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python verify_publication.py",
+          "returncode": 0,
+          "seconds": 0.957,
+          "stdout_sha256": "0158792f8a52e6a64e3a42c93900a79646114dc11d32a7bfe04ce190d96a5283",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/source-label-screen/jev_audit.py --verify",
+          "returncode": 0,
+          "seconds": 0.135,
+          "stdout_sha256": "25473a5ec69d896a86f268249edace4d9ad8bc2d169f0c429c3a90f059350860",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/source-label-screen/report.py verify",
+          "returncode": 0,
+          "seconds": 0.17,
+          "stdout_sha256": "e2f26239347653c55714937b4975a6e8ff94d1b99de2428c3e7b94f612968517",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/finite-choice-readout/analyze_finite.py verify",
+          "returncode": 0,
+          "seconds": 0.135,
+          "stdout_sha256": "8916e66f8c9ddf5f5ebb81b3cbc9a03182eb0991c4eedaf06862ab3c988a853a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/rule-direction/analyze.py verify",
+          "returncode": 0,
+          "seconds": 0.175,
+          "stdout_sha256": "27dd29b42c132a71f6737583a20d0b0f3ab15a97ec78f986835e9e453667f09e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/rule-direction/verify_counts.py",
+          "returncode": 0,
+          "seconds": 0.073,
+          "stdout_sha256": "dfbd24b27f9417e6d2e010d20daf5ae73f289fc2e108cce23b4622e8b6facc05",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/rule-direction/publish.py verify",
+          "returncode": 0,
+          "seconds": 0.059,
+          "stdout_sha256": "0eb2b6b619aad439d1e54a0847af5270358ce4629174ee0ca8cf2f5fb7c8714c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python research/source-label-screen/replay.py --verify",
+          "returncode": 0,
+          "seconds": 0.151,
+          "stdout_sha256": "39dce6d5be99067c587760554f1d7bdbcc6c40f6a95d2b238e0beaa49d9b8d91",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify",
+          "command": "python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run",
+          "returncode": 0,
+          "seconds": 0.103,
+          "stdout_sha256": "287b79992715432e7bd12278e8de5e23f2df1f4fde8cf57c231fe31d8c038eff",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/rule-direction/capable-reference/prepare.py verify",
+          "returncode": 0,
+          "seconds": 0.075,
+          "stdout_sha256": "b145bbc14454b69f654131ea1bcfbe5062e88f5efe640bc5e09a217c92735e57",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/rule-direction/capable-reference/analyze.py verify",
+          "returncode": 0,
+          "seconds": 0.121,
+          "stdout_sha256": "e7bdb897cd70d84a63d44df567b694d0ef6c8fe024003afcb7a6f05102db0b11",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B -m unittest discover -s research/rule-direction/capable-reference -p test_runner.py -v",
+          "returncode": 0,
+          "seconds": 0.203,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "6feb1a90adda5878e12528e73c91983fdcd279c9288d710770188dc7b135f408"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/series-closeout/confidence_recheck.py verify",
+          "returncode": 0,
+          "seconds": 0.098,
+          "stdout_sha256": "5f468f77d2b1dfcaade5885feebb1ae752928937730630b499fe7a24d4013068",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B -m unittest discover -s research/series-closeout -p test_confidence_recheck.py -v",
+          "returncode": 0,
+          "seconds": 0.123,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "25153bac9f671f93ea254b210f64c01a454bf59e2c5a2aeb5dca992b0b6a1a26"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/series-closeout/build_replay.py verify",
+          "returncode": 0,
+          "seconds": 0.117,
+          "stdout_sha256": "2aef894e79d8199562867a354dd4707c6e9a4a35c19c7b815f47387b56ddca91",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/intent-retry-pilot/run_jev.py verify",
+          "returncode": 0,
+          "seconds": 0.074,
+          "stdout_sha256": "ab8c271f81864cf774083129fcfc1ab09796740b6c5b84dcae591b2b56381011",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/intent-retry-pilot/verify_pilot.py",
+          "returncode": 0,
+          "seconds": 0.07,
+          "stdout_sha256": "f36e0d1bab0f1445b989285197ae36b4430affe6d22185813bec9480214846e2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B -m unittest discover -s research/intent-retry-pilot -p test_runner.py -v",
+          "returncode": 0,
+          "seconds": 0.253,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "ea968f2b5fae70e50beb8d4ef25b229a08a9525027fe965d756e6ab92cf72999"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B -m unittest discover -s research/intent-retry-pilot/integration -p test_gate.py -v",
+          "returncode": 0,
+          "seconds": 0.076,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "d9d6e3352981488ec2aa4bcfe705fcbc3a6313c705134caf2115e68684ed795d"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/intent-retry-pilot/cohort-screen/verify_artifacts.py",
+          "returncode": 0,
+          "seconds": 0.072,
+          "stdout_sha256": "b384b2056de2f4e206c465aed308aca9a3f010e88a43f86537632f6cc87dede8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B -m unittest discover -s research/intent-retry-pilot/cohort-screen -p test_source_verification.py -v",
+          "returncode": 0,
+          "seconds": 0.099,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "8cced0fe8faca2f71b741285b19fdb7deba96d10ad84cacd6bc627003cae5373"
+        },
+        {
+          "job": "verify-closeout",
+          "command": "python -B research/topic-screen-2026-10-05/verify_screen.py",
+          "returncode": 0,
+          "seconds": 0.077,
+          "stdout_sha256": "c3c51727bb531642d1ca37daa95bd75f9047612a62201bfc1fe0b0a2f4587a3a",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "after_execution_changes": [
+        "CHANGELOG.md",
+        "RELEASE_CANDIDATE.md"
+      ],
+      "after_execution_change_scope": "Only two current-document paragraphs record the completed CI follow-up; experiment, source, runtime and test files remain unchanged. This receipt is excluded from its own payload hash list."
+    },
+    "post_ci_documentation_publication_check": {
+      "status": "passed",
+      "read_only": true,
+      "markdown_files": 208,
+      "html_files": 24,
+      "html_templates_skipped": 16,
+      "local_links": 1116,
+      "vendored_source_and_license_copies_checked": 6,
+      "citation_matches_schema_validated_bytes": true,
+      "credential_pattern_matches": 0,
+      "public_weight_files": 0,
+      "author_review_items": 96,
+      "non_author_review_submissions": 1,
+      "adjudicated_reference_updates": 0,
+      "external_summary_files_checked": 3,
+      "external_public_visible_review_items": 60,
+      "external_completed_reviews": 0,
+      "scope": "technical consistency, not a legal or scientific certification"
+    }
+  },
+  "historical_preservation": {
+    "portable_snapshot_total": 62,
+    "portable_snapshot_current_matches": 61,
+    "changes": [
+      {
+        "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/README.md",
+        "saved_sha256": "adcd6c6446024d34f06b4505f2bd34b2c2170cb93ddb02267187ed587b539fff",
+        "current_sha256": "1eba76a730da793d7fe805a058bd189fec39ad73cce3d868eade7e48343be78b"
+      }
+    ],
+    "prior_synthesis_receipt_current_document_changes": [
+      "TECHNICAL_REPORT.md",
+      "README.md",
+      "RESEARCH_INDEX.md",
+      "CHANGELOG.md",
+      "STAGE_LOG.md"
+    ],
+    "note": "Timestamped receipts remain unchanged. Later current-navigation updates are disclosed, not resealed; current freeze contracts remain separate."
+  },
+  "publication_state_at_preparation": {
+    "remote_main": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+    "existing_tags": [
+      "prereg-v0.1",
+      "prereg-v0.1-final"
+    ],
+    "github_releases_count": 0,
+    "suggested_tag_not_created": "diagnostics-v0.2.0"
+  },
+  "remaining": [
+    "Publication decision and remote CI/Pages verification",
+    "Independent language/reference validation for relevant cohorts",
+    "No new general method or independently confirmed replacement result"
+  ],
+  "candidate_files": [
+    {
+      "path": ".gitattributes",
+      "change": "modified",
+      "bytes": 672,
+      "sha256_git_materialized": "b5364c7678ff4ffdc47c76d832416aec151bd812a3dc1422e5b60f9608edde50"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "change": "modified",
+      "bytes": 6214,
+      "sha256_git_materialized": "2db529384aba7da4e6dd61804b406e86bc5e33520ad8b5af80385c63004ddd63"
+    },
+    {
+      "path": ".gitignore",
+      "change": "modified",
+      "bytes": 238,
+      "sha256_git_materialized": "684babc1dba2d10c331c129ff351fb1036ed1544db89113e2582f14ea0cef186"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "change": "modified",
+      "bytes": 28189,
+      "sha256_git_materialized": "ae233fe52132735242f5127b01d824bf58e770651f797d21644e235ce9c710d7"
+    },
+    {
+      "path": "NOVELTY_MATRIX.md",
+      "change": "modified",
+      "bytes": 18437,
+      "sha256_git_materialized": "3c95d23a2af92f9c2443670715291b9722725c8b777eaed447b3aec2ed0711d5"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "bytes": 23257,
+      "sha256_git_materialized": "50b5fc0223ba89d28528f3fe5490c4d6bc106d1422f0515ae83e6e7b74ec271a"
+    },
+    {
+      "path": "RELEASE_CANDIDATE.md",
+      "change": "new",
+      "bytes": 7876,
+      "sha256_git_materialized": "7377429662b2343d4c20cb8f61538e3391656158dbf197b0e136005644fc3269"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "change": "modified",
+      "bytes": 15409,
+      "sha256_git_materialized": "1ebe4435ee2cc1a42e49ad9210e009d88e541240fc9a6f0fefd347a8e9be3ccc"
+    },
+    {
+      "path": "RESEARCH_CLAIMS.md",
+      "change": "modified",
+      "bytes": 17364,
+      "sha256_git_materialized": "09c78ed21af953caf8db20d34a3ff66ca9fd3a0f592e0d02d079e483cbd3a3de"
+    },
+    {
+      "path": "RESEARCH_INDEX.md",
+      "change": "modified",
+      "bytes": 23373,
+      "sha256_git_materialized": "fae7f70a3bd5cf5bd769abf9ed9a79674fd318a75285c6ae8cb527ae2d18c8d4"
+    },
+    {
+      "path": "STAGE_LOG.md",
+      "change": "modified",
+      "bytes": 49392,
+      "sha256_git_materialized": "1ee8e4705fad04e9a4b2124954572eac02e9d7eb7b8b13b1369a9e268a1c24a2"
+    },
+    {
+      "path": "TECHNICAL_REPORT.md",
+      "change": "new",
+      "bytes": 17663,
+      "sha256_git_materialized": "371ab8c8fcbdc7eef699524d79c4a4fcc336a71d6c611c32d2b7e97f90ccce27"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "change": "modified",
+      "bytes": 15201,
+      "sha256_git_materialized": "c623544db23db8cad703e0f16a779c6334e916ec6be2f818bbce567704c3b6b4"
+    },
+    {
+      "path": "docs/README.zh-CN.md",
+      "change": "modified",
+      "bytes": 2420,
+      "sha256_git_materialized": "02bab7aa94ed39984afcc9111b2d7e6bbac17abe322d50b725afce96beee103a"
+    },
+    {
+      "path": "docs/decision_boundary.html",
+      "change": "new",
+      "bytes": 676986,
+      "sha256_git_materialized": "b603122e828e89466aae32dd24ca17be3eaa699c691e157aee33222a3e3f3a3f"
+    },
+    {
+      "path": "research/intent-retry-pilot/AGENTABSTAIN_FEASIBILITY.md",
+      "change": "new",
+      "bytes": 17585,
+      "sha256_git_materialized": "2f130b1a22a23eaea019e80b33e683b0459bbb94a88af82a2423b3825b2316f4"
+    },
+    {
+      "path": "research/intent-retry-pilot/DATA_NOTES.md",
+      "change": "new",
+      "bytes": 3988,
+      "sha256_git_materialized": "ba76e70b6058a42f1a22cc2f958e375cc335b3ab1c65a3699772dbb39e380ac4"
+    },
+    {
+      "path": "research/intent-retry-pilot/DIALOGUE_SOURCE_SCREEN.md",
+      "change": "new",
+      "bytes": 14316,
+      "sha256_git_materialized": "154adcae6bc23ee6a5eab5ee6d554e9663fc567bb1ff157a62c5b5efad4e19db"
+    },
+    {
+      "path": "research/intent-retry-pilot/NATURAL_INCIDENT_SCREEN.md",
+      "change": "new",
+      "bytes": 10199,
+      "sha256_git_materialized": "b990029b6f0337983dbca1e8fcdbde51188e8dbaf2dc77f471774b79c37080d3"
+    },
+    {
+      "path": "research/intent-retry-pilot/PRIOR_ART_CHECK.md",
+      "change": "new",
+      "bytes": 8282,
+      "sha256_git_materialized": "8face1194d6caa966090df0c9ff5a604d8f310e24858ba61397a0d81802bc834"
+    },
+    {
+      "path": "research/intent-retry-pilot/PROTOCOL.md",
+      "change": "new",
+      "bytes": 11710,
+      "sha256_git_materialized": "69ca077cbe49de90cd60f756acbcdd9ad5df9cb0fef43cca1eb8af92a3a5759c"
+    },
+    {
+      "path": "research/intent-retry-pilot/README.md",
+      "change": "new",
+      "bytes": 8601,
+      "sha256_git_materialized": "76d8b2ff25d068678ff1508f41110331163dfde3d3efd66360213ad2d07a56de"
+    },
+    {
+      "path": "research/intent-retry-pilot/RESULTS.md",
+      "change": "new",
+      "bytes": 6918,
+      "sha256_git_materialized": "e8c0ea63f7b108953e861c0c7a639153d2f164125816418fdffad3cd92b12d13"
+    },
+    {
+      "path": "research/intent-retry-pilot/SOURCES.md",
+      "change": "new",
+      "bytes": 6712,
+      "sha256_git_materialized": "5313543fe677d198ea923562282213a5104bcf4c1bb65ebd4852be8fab60ad4d"
+    },
+    {
+      "path": "research/intent-retry-pilot/SOURCE_SCREEN_DECISION.md",
+      "change": "new",
+      "bytes": 12100,
+      "sha256_git_materialized": "7a3ea44631eb98485897c2a5c15e2746287855ed7bde9f8cf3d85758ac83c3e6"
+    },
+    {
+      "path": "research/intent-retry-pilot/TOOLTALK_CALL_PATH.md",
+      "change": "new",
+      "bytes": 7163,
+      "sha256_git_materialized": "c9e374f6c6ab7af37af3ad09e3840248982fc19986d78ac8da8f0a6a97e3d3fb"
+    },
+    {
+      "path": "research/intent-retry-pilot/TOOLTALK_CHECKER_AUDIT.md",
+      "change": "new",
+      "bytes": 3455,
+      "sha256_git_materialized": "07ef168ac0919a6e6b9c4e2627a6c81f4771bcc8413f7b37e8c14dd3aff30ff1"
+    },
+    {
+      "path": "research/intent-retry-pilot/analyze_pilot.py",
+      "change": "new",
+      "bytes": 7537,
+      "sha256_git_materialized": "28ce22db0c365f725d2ba368f69dca67528400ffd8c277a2efcd7c54a232cc43"
+    },
+    {
+      "path": "research/intent-retry-pilot/audit_sources/TOOLTALK_LICENSE",
+      "change": "new",
+      "bytes": 1141,
+      "sha256_git_materialized": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "research/intent-retry-pilot/audit_sources/tooltalk_message.py",
+      "change": "new",
+      "bytes": 8125,
+      "sha256_git_materialized": "8cad12aec95c6befd7aefe0f938918d42a3b2d642eaedd8e142a3993db8118b8"
+    },
+    {
+      "path": "research/intent-retry-pilot/build_pilot.py",
+      "change": "new",
+      "bytes": 17763,
+      "sha256_git_materialized": "7623d9013d5463fe0a40f2e32024cee68cafe16bc4d80ae41c49313598128e1b"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/CONSTRAINTS_REVIEW.md",
+      "change": "new",
+      "bytes": 25719,
+      "sha256_git_materialized": "5e1c4e7f69253350e056c1ec519ff14af35addf8ad140d2c41ef417eb6f13ed9"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/EMERGENT_REVIEW.md",
+      "change": "new",
+      "bytes": 28797,
+      "sha256_git_materialized": "aee73523a546f92bda84feca96cbefd205c0ffaa625629b1d5c61941c57e8c46"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/EVIDENCE_REVIEW.md",
+      "change": "new",
+      "bytes": 23171,
+      "sha256_git_materialized": "a0988e73c5d183fcc79d622552afd487b0d1b705f05e79264800bc5de2a6fd24"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/NEAREST_WORK.md",
+      "change": "new",
+      "bytes": 1560,
+      "sha256_git_materialized": "30c4547254594c52a2e056cbd20589986493743baf19ad2656e21e5a1505f34c"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/PROTOCOL.md",
+      "change": "new",
+      "bytes": 3124,
+      "sha256_git_materialized": "00c2269e265debc172e1ae4e920006eac23861f9bbd9cf7eeda35bfffc55b0aa"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/README.md",
+      "change": "new",
+      "bytes": 8431,
+      "sha256_git_materialized": "452315afbffd1e1d70b69ecf04dd3a69b975d7608bc529944a096f3bb45916e1"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/PROTOCOL.md",
+      "change": "new",
+      "bytes": 2757,
+      "sha256_git_materialized": "1198a87eee9a490a4ec4de85b34d5c8ec625f0f5201e9366b916c7c20fb21a98"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/README.md",
+      "change": "new",
+      "bytes": 7035,
+      "sha256_git_materialized": "1eba76a730da793d7fe805a058bd189fec39ad73cce3d868eade7e48343be78b"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/UPSTREAM_NOTICES.md",
+      "change": "new",
+      "bytes": 2131,
+      "sha256_git_materialized": "61df864c580ab3bac465ce573a19cdd25682322639d55340e46069240d0c140f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/encoding_repair.json",
+      "change": "new",
+      "bytes": 581,
+      "sha256_git_materialized": "bad4553800a0f3ce139e637f06143b39fd0c279f0830c368aff52edbbcd518af"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/freeze.json",
+      "change": "new",
+      "bytes": 607,
+      "sha256_git_materialized": "5fca5ea5ea778845e7a5844b29b2f0d0b86bff801862c1537a63f060b63f7916"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/history/attempt-001-freeze.json",
+      "change": "new",
+      "bytes": 453,
+      "sha256_git_materialized": "c9a44cc1e7afeb17d410183e08d2deac38a147e5bc66cedf6b074d9e08528fc8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/history/attempt-001-reproduce.py",
+      "change": "new",
+      "bytes": 7225,
+      "sha256_git_materialized": "663beded9588d4f0aa2281b23ea93af90f62c5319a086ba8012e52c72e613199"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/ATTRIBUTION.md",
+      "change": "new",
+      "bytes": 1983,
+      "sha256_git_materialized": "d01cbd92af9021027162b8aa211d05c2896bc58fd9100856c208180fb398976b"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/LICENSE-MIT",
+      "change": "new",
+      "bytes": 1081,
+      "sha256_git_materialized": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/PORTABLE_PROTOCOL.md",
+      "change": "new",
+      "bytes": 4178,
+      "sha256_git_materialized": "9984931b19589b49b3b522d149a9045043ff7713617aab86e5252cf39f5c1cff"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/PROTOCOL.md",
+      "change": "new",
+      "bytes": 4754,
+      "sha256_git_materialized": "fca8e125ade0b67caf47150392d9c8e3b4b8f42734446d9aef9c134a946def0f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/README.md",
+      "change": "new",
+      "bytes": 11856,
+      "sha256_git_materialized": "da66078931bfc6d1ae3400c1a248781f3005b5461586a1b59e3be2060b0d4ac5"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/cases.json",
+      "change": "new",
+      "bytes": 1040,
+      "sha256_git_materialized": "70b5e61951c75226cf36f4bdf3e9259f8c5a55ccd1162dad44e7a208f60606f8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/derivative/dataset/environments/personal_profile_and_contacts/__init__.py",
+      "change": "new",
+      "bytes": 0,
+      "sha256_git_materialized": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/derivative/dataset/environments/personal_profile_and_contacts/environment.py",
+      "change": "new",
+      "bytes": 8712,
+      "sha256_git_materialized": "436d3030619429a2cd02e63a3db159fc699a870f0a9c8bf96558426cc8a02622"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/derivative/dataset/environments/personal_profile_and_contacts/schema.py",
+      "change": "new",
+      "bytes": 991,
+      "sha256_git_materialized": "c2b02ca2e528e85a21fce0e9d7a1faacb6c5b42a7389a1350e5c87dfb96448b9"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/freeze.json",
+      "change": "new",
+      "bytes": 1941,
+      "sha256_git_materialized": "c6bf2c705fed802ed4bbe5f02ac8a50de55dc383298106caeb9b5e525e951c50"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/harness_repair.json",
+      "change": "new",
+      "bytes": 779,
+      "sha256_git_materialized": "a929ab974885c588902fcf99520953e50455edf3939e60759eebefa7b52adff6"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/history/attempt-001-freeze.json",
+      "change": "new",
+      "bytes": 1503,
+      "sha256_git_materialized": "d711369864c4ee75f232d95a56c75ebccedd4bc49bad78f51eb7d97622a49990"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/history/attempt-001-regress.py",
+      "change": "new",
+      "bytes": 11523,
+      "sha256_git_materialized": "e7e18c679bec015e8c5eda42d75e59158cde7ffbb0525da1fc206a32d498050a"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/preflight-001/preflight.json",
+      "change": "new",
+      "bytes": 1055,
+      "sha256_git_materialized": "f62002ce68d29663a470f52ce9a82fc6ede8a12cf5e7048daef4ca2f04c58f8f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/portable-execution.log",
+      "change": "new",
+      "bytes": 8119,
+      "sha256_git_materialized": "67aded621e4510234c9c3e7a166eea86e5d1a7e48b1dffb53bc84f3eb9eb8961"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/source-preflight/preflight.json",
+      "change": "new",
+      "bytes": 1055,
+      "sha256_git_materialized": "f62002ce68d29663a470f52ce9a82fc6ede8a12cf5e7048daef4ca2f04c58f8f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/staging-inputs.json",
+      "change": "new",
+      "bytes": 16879,
+      "sha256_git_materialized": "81141f5489a3d50178b785e1970cf1aa47588b0ef123f4feca6adc0f09c7c7e9"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/verification.json",
+      "change": "new",
+      "bytes": 5600,
+      "sha256_git_materialized": "446ba8dd7ae84511e0f46487a6304891dd5b577cd0bbb1a8478faa528e8724e8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable-freeze.json",
+      "change": "new",
+      "bytes": 923,
+      "sha256_git_materialized": "5782237d1c3869f0d6df34b51741cce50c8c9472f2413962502f61fb8778c9a0"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable-preservation.json",
+      "change": "new",
+      "bytes": 11210,
+      "sha256_git_materialized": "9d1183faf63bda4fef2572f6963021635ed6adb53e665959224680f2c58858c8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable-runner.diff",
+      "change": "new",
+      "bytes": 2619,
+      "sha256_git_materialized": "961bc75a1adc95955e3d1f37a9d17e1316c8bc6c5343ca3116b7f5b73e7de709"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable_preflight.py",
+      "change": "new",
+      "bytes": 3098,
+      "sha256_git_materialized": "b38581eb7c11816a967e6f325a1ffa072a5b5857f8a012ef8b9adad7562e7b2d"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable_regress.py",
+      "change": "new",
+      "bytes": 12720,
+      "sha256_git_materialized": "3eb28c02541fc59ed1ac2c2153a70703cbdc2fc8f5bc18ad7a0be7d74b6c12b8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/preserved-original-files.json",
+      "change": "new",
+      "bytes": 3565,
+      "sha256_git_materialized": "fc0da89d3b8a03b0cff235ab5becec61498af8f4ca125f7d906e39e4d968d4c8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/regress.py",
+      "change": "new",
+      "bytes": 11867,
+      "sha256_git_materialized": "84b134bb65c7061e65c0cfe6556f423dd17d6985e263f3ba04d4c84d6f7e5ab8"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/requirements-lock.txt",
+      "change": "new",
+      "bytes": 1332,
+      "sha256_git_materialized": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/attempts.jsonl",
+      "change": "new",
+      "bytes": 12015,
+      "sha256_git_materialized": "83b24763a1391ae8eb95c941d3679b160266f7c984058fd810e5142795d01489"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/failure.json",
+      "change": "new",
+      "bytes": 1434,
+      "sha256_git_materialized": "91d8350b554ff338df896323cf998385010d12016538bb5474f44e1c96b94482"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/invalid_visibility_with_bio.json",
+      "change": "new",
+      "bytes": 10825,
+      "sha256_git_materialized": "30a1abb991c78fc80333f8dcb220ca0bea75722d77f49592591b933c00c929b1"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/no_action.json",
+      "change": "new",
+      "bytes": 2582,
+      "sha256_git_materialized": "e2a015c939c42e7d410d0800df512152255fffa7f3c218fa27d6cea5458d0007"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/privacy_only.json",
+      "change": "new",
+      "bytes": 10492,
+      "sha256_git_materialized": "2defc5ae737a08e8ffc78d701d77c309f06780dd516c219e5351e33705803828"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-001/runtime.json",
+      "change": "new",
+      "bytes": 8497,
+      "sha256_git_materialized": "eb5ff30ff7ca81348491afa41445eb2e0da7286647ccec07fe423ab91377e620"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/attempts.jsonl",
+      "change": "new",
+      "bytes": 23650,
+      "sha256_git_materialized": "5bd530e5cb815f165c3539c0e84cd72116a8963e92fbffcda9f72117a43d993f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/invalid_visibility_with_bio.json",
+      "change": "new",
+      "bytes": 10864,
+      "sha256_git_materialized": "d2cd871a54cbde7b1afc888e2829f9e1348a61363fd83af5db6503f4e784851f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/invalid_visibility_without_bio.json",
+      "change": "new",
+      "bytes": 10232,
+      "sha256_git_materialized": "aaee42591a40182e70b8bf7b0679ea8fa264a52f5af84fbc1be68b9d0d5ecb5d"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/no_action.json",
+      "change": "new",
+      "bytes": 2582,
+      "sha256_git_materialized": "e2a015c939c42e7d410d0800df512152255fffa7f3c218fa27d6cea5458d0007"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/privacy_only.json",
+      "change": "new",
+      "bytes": 10492,
+      "sha256_git_materialized": "78b426809583701a77a23991fb2f234546e6999ead5b61ff5c9b4fe0f3a3162d"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/runtime.json",
+      "change": "new",
+      "bytes": 8497,
+      "sha256_git_materialized": "eb5ff30ff7ca81348491afa41445eb2e0da7286647ccec07fe423ab91377e620"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/summary.json",
+      "change": "new",
+      "bytes": 1564,
+      "sha256_git_materialized": "e6ef9011896e815c1d4bfd5d533f90afff8002549d19c7a9aa042d1696722636"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/attempt-002/valid_bio_and_visibility.json",
+      "change": "new",
+      "bytes": 10509,
+      "sha256_git_materialized": "89995e56ce546a58afbde457d5f818d8e713f3bbb145a8cf1892d0959e7d070a"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/attempts.jsonl",
+      "change": "new",
+      "bytes": 23650,
+      "sha256_git_materialized": "a178c1fd79aab795e64918c6ad88b6e69cf9d7ab7d603dba96685b1ca0bbad8d"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_with_bio.json",
+      "change": "new",
+      "bytes": 10864,
+      "sha256_git_materialized": "d2cd871a54cbde7b1afc888e2829f9e1348a61363fd83af5db6503f4e784851f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_without_bio.json",
+      "change": "new",
+      "bytes": 10232,
+      "sha256_git_materialized": "aaee42591a40182e70b8bf7b0679ea8fa264a52f5af84fbc1be68b9d0d5ecb5d"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/no_action.json",
+      "change": "new",
+      "bytes": 2582,
+      "sha256_git_materialized": "e2a015c939c42e7d410d0800df512152255fffa7f3c218fa27d6cea5458d0007"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/privacy_only.json",
+      "change": "new",
+      "bytes": 10492,
+      "sha256_git_materialized": "5ed3da5b051fe33cb07742e08825750c28714314a4fe2c0a2765adc72c7b737c"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/runtime.json",
+      "change": "new",
+      "bytes": 8497,
+      "sha256_git_materialized": "eb5ff30ff7ca81348491afa41445eb2e0da7286647ccec07fe423ab91377e620"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/summary.json",
+      "change": "new",
+      "bytes": 2074,
+      "sha256_git_materialized": "69566a738cdd96070d4d77ed9bdf56ab54b0ed05d1a5ac763684b651e5365c50"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/valid_bio_and_visibility.json",
+      "change": "new",
+      "bytes": 10509,
+      "sha256_git_materialized": "a6c42a46e726676753f8c77f848ab65c0deadde9a8ef68c79cb6ba3d28c91576"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/validate-before-mutate.patch",
+      "change": "new",
+      "bytes": 1041,
+      "sha256_git_materialized": "4ddd9f89831cef67bf1a8112b884a8f752aa740addc8aab9f5cc1e7182b03039"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/reproduce.py",
+      "change": "new",
+      "bytes": 7434,
+      "sha256_git_materialized": "1b9cd883b78ff161b2024e6a1ec1c83bd4b4806e6386d9dec5402ffef2a035ec"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/attempts.jsonl",
+      "change": "new",
+      "bytes": 7944,
+      "sha256_git_materialized": "8ecfbb524697d2446490fea25f7dd31be63402065c070896be9a04128928720e"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/invalid_visibility_with_bio.json",
+      "change": "new",
+      "bytes": 7046,
+      "sha256_git_materialized": "4922f64bddedd67bab8cb8df0de85559fe3e6177b982169f8221952290acee27"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/invalid_visibility_without_bio.json",
+      "change": "new",
+      "bytes": 6261,
+      "sha256_git_materialized": "c0bf89163d77fc25acdb3dced3767f39e5cf7489880b45486833482fef74b7d0"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/no_action.json",
+      "change": "new",
+      "bytes": 2239,
+      "sha256_git_materialized": "5c34322fa384794de1d8b95f25752f764cca494fa330c9e29d68f976014ce5d9"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/privacy_only.json",
+      "change": "new",
+      "bytes": 6603,
+      "sha256_git_materialized": "74188942f054be5de1cc76ca87e219fc92fa3f9161f41878b82057c5dc058e60"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-001/summary.json",
+      "change": "new",
+      "bytes": 1068,
+      "sha256_git_materialized": "e811863f410961aa3f466f0b12242ca112eb58253bb98bbbff2e36345b6a9aa1"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/attempts.jsonl",
+      "change": "new",
+      "bytes": 7889,
+      "sha256_git_materialized": "0ac56f3a96d3eed8deb1f753a3951b63a47191a27e386c1423fd76e7be9be12f"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/invalid_visibility_with_bio.json",
+      "change": "new",
+      "bytes": 7001,
+      "sha256_git_materialized": "062c8b2e7006b5a1df0de434143c3998d83056e07f6387b8d11a2228efb18529"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/invalid_visibility_without_bio.json",
+      "change": "new",
+      "bytes": 6236,
+      "sha256_git_materialized": "e277aa0fae3965c9c7d00161ff05ff6c44248f1c7e75899f012a09d3f4b1932c"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/no_action.json",
+      "change": "new",
+      "bytes": 2229,
+      "sha256_git_materialized": "f21952425695040376c0b02ed6b2327a879f496cf9a66e67e3aefbdc4d8a5075"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/privacy_only.json",
+      "change": "new",
+      "bytes": 6578,
+      "sha256_git_materialized": "b8e6c55f1c1e659d9a344d03db80ff9f4dbf174cd22417648331cc2495d21882"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/results/attempt-002/summary.json",
+      "change": "new",
+      "bytes": 1068,
+      "sha256_git_materialized": "e811863f410961aa3f466f0b12242ca112eb58253bb98bbbff2e36345b6a9aa1"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/sources.json",
+      "change": "new",
+      "bytes": 2605,
+      "sha256_git_materialized": "ad57ae945b865d9624c70e4fde2c0cc15004ba9c27fe9e600e30f24e607bc634"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/LICENSE-MIT",
+      "change": "new",
+      "bytes": 1081,
+      "sha256_git_materialized": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/commit_check.py",
+      "change": "new",
+      "bytes": 2114,
+      "sha256_git_materialized": "bcf03d9c7323af1d0b2592f0c3853a5abc2916d15d6a72c641b3e564a4489c24"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/dataset/environments/personal_profile_and_contacts/__init__.py",
+      "change": "new",
+      "bytes": 0,
+      "sha256_git_materialized": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/dataset/environments/personal_profile_and_contacts/environment.py",
+      "change": "new",
+      "bytes": 8676,
+      "sha256_git_materialized": "f9c6eb9dd79776e7405baed84a170bd7978682c1d7c01b023d4d53112f18cb15"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/dataset/environments/personal_profile_and_contacts/schema.py",
+      "change": "new",
+      "bytes": 991,
+      "sha256_git_materialized": "c2b02ca2e528e85a21fce0e9d7a1faacb6c5b42a7389a1350e5c87dfb96448b9"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/initial_state.json",
+      "change": "new",
+      "bytes": 760,
+      "sha256_git_materialized": "59119c536a5e4fb5fc8575e30bd7381ffc5fb3a9221443f1c00db3abbfe4c103"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/upstream/task.yaml",
+      "change": "new",
+      "bytes": 1598,
+      "sha256_git_materialized": "79555e1d1e5b8156d2c3646c276aa8f74328dede11cd41f3a2d279f05cf950cf"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/completion_audit.json",
+      "change": "new",
+      "bytes": 14122,
+      "sha256_git_materialized": "4e438139dfcbd97ffcc731d3acd45490279bc6d5ae8ceb306951cf399c91e53e"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/decisions.json",
+      "change": "new",
+      "bytes": 2834,
+      "sha256_git_materialized": "dcff01fc14ad0d86d458ab22254a8ef82b0faf3de45c7f8d6428f93834525330"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/selection.json",
+      "change": "new",
+      "bytes": 1018,
+      "sha256_git_materialized": "c6d486067fe9ede866e67be61d6b2d00460c2c9f612c6375ab82fd7a7e9775e3"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/sources.json",
+      "change": "new",
+      "bytes": 57508,
+      "sha256_git_materialized": "7eb9e57e7b7e97e1384dda2bed38baf6221c094331f6cfe7da7f4b9c8795e892"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/test_source_verification.py",
+      "change": "new",
+      "bytes": 2465,
+      "sha256_git_materialized": "62f77fba7c36a7827c114c0ab6d94c1809eb9097412cbb472c3a7ff47ced22de"
+    },
+    {
+      "path": "research/intent-retry-pilot/cohort-screen/verify_artifacts.py",
+      "change": "new",
+      "bytes": 7298,
+      "sha256_git_materialized": "f59a39485d9e7969ae3474307a09f9750407df4be8519c05d82a4c910deb9e7b"
+    },
+    {
+      "path": "research/intent-retry-pilot/data/references.json",
+      "change": "new",
+      "bytes": 26933,
+      "sha256_git_materialized": "372da2846228a8af1f9e49e7ace6f67b8ea0e159b574cf75842d4e4e96051c23"
+    },
+    {
+      "path": "research/intent-retry-pilot/data/review_blank.json",
+      "change": "new",
+      "bytes": 17573,
+      "sha256_git_materialized": "899b4b8dc03f1df6268778c20d1b7c0aa417299a40d2c9ed5e52f4db58229355"
+    },
+    {
+      "path": "research/intent-retry-pilot/data/visible.json",
+      "change": "new",
+      "bytes": 67842,
+      "sha256_git_materialized": "12d64b77e54226b40007beb54c78d7a856a1a6a9e0ccb7f0e3b5a758843b4301"
+    },
+    {
+      "path": "research/intent-retry-pilot/demo.py",
+      "change": "new",
+      "bytes": 11084,
+      "sha256_git_materialized": "958384da0b9ef7b1d8a4b23e6f7a8f7e5b759ab1d9e5ee4f0b734269eb7c0001"
+    },
+    {
+      "path": "research/intent-retry-pilot/demo_results.json",
+      "change": "new",
+      "bytes": 43670,
+      "sha256_git_materialized": "8c79668cfc3f4862c1decda85a5ca1d2416a8ae291c4bb220db3f83c849f8514"
+    },
+    {
+      "path": "research/intent-retry-pilot/freeze.json",
+      "change": "new",
+      "bytes": 1724,
+      "sha256_git_materialized": "09c59f4e7d6a70f037f8746e51110166f29d0121495cc7439dc7f7d048ca876d"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/PROTOCOL.md",
+      "change": "new",
+      "bytes": 5111,
+      "sha256_git_materialized": "7476b3814846f26ef1e7562683f1a043ecc0b395c81fb890d568a956a539b039"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/README.md",
+      "change": "new",
+      "bytes": 6613,
+      "sha256_git_materialized": "e7bebf499cb0c9e2df0c79a049d469ca2a1b7fbe5cbba3e9554d4bebbc4396a6"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/UPSTREAM_NOTICES.md",
+      "change": "new",
+      "bytes": 1869,
+      "sha256_git_materialized": "b550aa9b6a698e9304b9f52357f1e7404db0f22a1a720359e6ee7248b6014ae5"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/completion_audit.json",
+      "change": "new",
+      "bytes": 3009,
+      "sha256_git_materialized": "03a69f2240695d0216814df4ed0a36ce1de04d78613f8aac363bc8f3849f3ac3"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/contract.json",
+      "change": "new",
+      "bytes": 206,
+      "sha256_git_materialized": "9b9e558a457ec8963478159e2e21071b7002843e049db6a7d39153fa6bf1d367"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/dependencies.json",
+      "change": "new",
+      "bytes": 26798,
+      "sha256_git_materialized": "b38ddb337c72a414d733c1c3589117e5283794fa29d3f810b817a0103f1c1fa2"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/freeze.json",
+      "change": "new",
+      "bytes": 1060,
+      "sha256_git_materialized": "b3553e482b9d126a2a2a9be53930d029f026312bce01b5bd85343743a9c38ff2"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/gate.py",
+      "change": "new",
+      "bytes": 9577,
+      "sha256_git_materialized": "04b1df651e632396c0ce2b94a015ae1215d716f3d0997cc41a5eff45518469d6"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/requirements-lock.txt",
+      "change": "new",
+      "bytes": 1332,
+      "sha256_git_materialized": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/attempt_events.jsonl",
+      "change": "new",
+      "bytes": 7280,
+      "sha256_git_materialized": "c6014aef31941a12620c0f21e8397d0b7e1a6e8f7ec6fc9385fbbe91bc40812a"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/evaluator_only.json",
+      "change": "new",
+      "bytes": 2333,
+      "sha256_git_materialized": "cd453489a5a15684788e1ae1088c25135da139be6a6824a5bbd3a896e8fb4712"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/gate_decisions.json",
+      "change": "new",
+      "bytes": 2819,
+      "sha256_git_materialized": "74114b30b383c2f92ec68f08b2bccbdf832fdb99d8963e11ef67dc393b33647d"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/summary.json",
+      "change": "new",
+      "bytes": 1526,
+      "sha256_git_materialized": "8e7d409c38e4e4fd0cafe2765c87d9698e94213579d33c75d655fe8723cd26c1"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/trajectories.json",
+      "change": "new",
+      "bytes": 23035,
+      "sha256_git_materialized": "75b80159fa6786e2928debe796629ef8e5d1aaa1246f1ace03acdab4747609f3"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/results/attempt-001/visible.json",
+      "change": "new",
+      "bytes": 216373,
+      "sha256_git_materialized": "c170a12c556ed38116c44ecf7e9b6bcd1d089d9ca70f4a9e5c3318db381d4c91"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/run_integration.py",
+      "change": "new",
+      "bytes": 11604,
+      "sha256_git_materialized": "681ba498a1d11881673223ba568246066bb1489b38a50b50e4a54fa326a7df74"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/sources.json",
+      "change": "new",
+      "bytes": 7306,
+      "sha256_git_materialized": "06add4894395896e3e01afd3fecd7cf78d1cb14900d27acacf66d15474e45bf8"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/test_gate.py",
+      "change": "new",
+      "bytes": 11289,
+      "sha256_git_materialized": "416df9fc0fb82e7438ceaf08e6c04fa69063340e09818115fbf7de765bb78928"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/README.md",
+      "change": "new",
+      "bytes": 5138,
+      "sha256_git_materialized": "ecf954a0ac7e060f1d7e6ceed93cf5a41195645607d7d8eda6544aa7b39627d1"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/environments/flight_and_travel_management/__init__.py",
+      "change": "new",
+      "bytes": 0,
+      "sha256_git_materialized": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/environments/flight_and_travel_management/environment.py",
+      "change": "new",
+      "bytes": 86152,
+      "sha256_git_materialized": "822e2a1fb3931149b5d6cf9368f939cfd0de1d592730d9510ca2ea4b4b422d61"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/environments/flight_and_travel_management/schema.py",
+      "change": "new",
+      "bytes": 15773,
+      "sha256_git_materialized": "d45755bd82866d5f23a12176a1aa26119cd44636e4edf59b8f5e52c33d73591d"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/tasks/critical_tool_failure/preview_002/abstain/initial_states/flight_and_travel_management.json",
+      "change": "new",
+      "bytes": 8655,
+      "sha256_git_materialized": "c7dc2c5e72d5098e2117537a495fc72d6d66262253678144764695f3d3089659"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/tasks/critical_tool_failure/preview_002/abstain/task.yaml",
+      "change": "new",
+      "bytes": 1254,
+      "sha256_git_materialized": "0f8a3564025df70a3debe26a7613d2deb889a654c9670bd43b5431989b8ff329"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/tasks/critical_tool_failure/preview_002/act/initial_states/flight_and_travel_management.json",
+      "change": "new",
+      "bytes": 8655,
+      "sha256_git_materialized": "c7dc2c5e72d5098e2117537a495fc72d6d66262253678144764695f3d3089659"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/tasks/critical_tool_failure/preview_002/act/task.yaml",
+      "change": "new",
+      "bytes": 2178,
+      "sha256_git_materialized": "ab9828cdf3b52cc0881d6d090ce7298d8a31b2df7bc38fd4652eb75af4499c77"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/dataset/tasks/critical_tool_failure/preview_002/metadata.yaml",
+      "change": "new",
+      "bytes": 579,
+      "sha256_git_materialized": "676f85968ee724d2ea38885d677421d3df89d518e191f1b1b47d89702fd8ac52"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/github/LICENSE",
+      "change": "new",
+      "bytes": 1081,
+      "sha256_git_materialized": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/github/abstention_factory/__init__.py",
+      "change": "new",
+      "bytes": 53,
+      "sha256_git_materialized": "f9e8762deb480b24b9968a947dc093048a7598c276e43ac3bd1a8810dd77808f"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/github/abstention_factory/environments/__init__.py",
+      "change": "new",
+      "bytes": 559,
+      "sha256_git_materialized": "3d4615c73f651effb2b3ab6e9491d1fb24d40d45cd70966b84e1c93996b02020"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/github/abstention_factory/runtime/__init__.py",
+      "change": "new",
+      "bytes": 1155,
+      "sha256_git_materialized": "e99c6e17a4913168fc656c0964fa8bc818ff1114e4cae3984aff2e242961ac53"
+    },
+    {
+      "path": "research/intent-retry-pilot/integration/upstream/github/abstention_factory/runtime/base.py",
+      "change": "new",
+      "bytes": 8951,
+      "sha256_git_materialized": "d48bb65e21c2e1d1ff9c14360323a93034153a3623c7f20a7e1c77d58f5424ad"
+    },
+    {
+      "path": "research/intent-retry-pilot/plans/jev.jsonl",
+      "change": "new",
+      "bytes": 354842,
+      "sha256_git_materialized": "6a64fbf6c048c7fdc433f7b56a2706c68e5be7ac1b0249a267238fbe5e37aa90"
+    },
+    {
+      "path": "research/intent-retry-pilot/plans/preparation.json",
+      "change": "new",
+      "bytes": 614,
+      "sha256_git_materialized": "bac9f8a8730566ac21ddd3eedb936ac3b21996f510d47b7b32be779891e066dd"
+    },
+    {
+      "path": "research/intent-retry-pilot/results/analysis.json",
+      "change": "new",
+      "bytes": 610909,
+      "sha256_git_materialized": "4f671b4b911d3719da36e45831e90e3ae5f414cfcc77b56c3f18d83ae9513fa5"
+    },
+    {
+      "path": "research/intent-retry-pilot/results/completion_audit.json",
+      "change": "new",
+      "bytes": 5060,
+      "sha256_git_materialized": "53ffb17021910e83ed3d83d25ee3a3a046c69fc3c150d0fa0ccec926d7786727"
+    },
+    {
+      "path": "research/intent-retry-pilot/results/jev_attempts.jsonl",
+      "change": "new",
+      "bytes": 168169,
+      "sha256_git_materialized": "919ad72ee3b3075a8cb653cc48830f6c606931f2bae12a92629aed3a31903b70"
+    },
+    {
+      "path": "research/intent-retry-pilot/results/jev_responses.jsonl",
+      "change": "new",
+      "bytes": 138586,
+      "sha256_git_materialized": "26f6550ad67a8a8a238563cb4ef56702132b2c28647da35d2291695f535e2e02"
+    },
+    {
+      "path": "research/intent-retry-pilot/results/tooltalk_checker_repro.json",
+      "change": "new",
+      "bytes": 1465,
+      "sha256_git_materialized": "6e0ff4114cb041c9bd807bf0a0d547b1ad7c8f33dc63fd325f4b8d7348d984cb"
+    },
+    {
+      "path": "research/intent-retry-pilot/run_jev.py",
+      "change": "new",
+      "bytes": 20485,
+      "sha256_git_materialized": "3d2e27c0661ed251790b365d14fe1fc0492e00103db9d8c1e1909d5dda23278d"
+    },
+    {
+      "path": "research/intent-retry-pilot/seed_references.json",
+      "change": "new",
+      "bytes": 1874,
+      "sha256_git_materialized": "8a80a2efdb5c49bafbd30ea88e73d60d5ec582c5d745b795f5e6008d88546260"
+    },
+    {
+      "path": "research/intent-retry-pilot/test_runner.py",
+      "change": "new",
+      "bytes": 11894,
+      "sha256_git_materialized": "240b83d45cc911ca5f80582de6bd9705ec83e5637f36ffa055113e6e73fd0f83"
+    },
+    {
+      "path": "research/intent-retry-pilot/tooltalk_checker_repro.py",
+      "change": "new",
+      "bytes": 3489,
+      "sha256_git_materialized": "d30b1815d6391a0e45067d4ed532141e98acb0b7b2a62a2d94da16ee4f426b77"
+    },
+    {
+      "path": "research/intent-retry-pilot/tooltalk_receiver_fix.patch",
+      "change": "new",
+      "bytes": 488,
+      "sha256_git_materialized": "033429d6079581d867e2b828509012f72489d7c4ce96661ec58d22f61534a881"
+    },
+    {
+      "path": "research/intent-retry-pilot/verify_pilot.py",
+      "change": "new",
+      "bytes": 3543,
+      "sha256_git_materialized": "4bd130f1ca3833545b5218f178772506d1ba332188346d9ad854d785c9fef1d5"
+    },
+    {
+      "path": "research/intent-retry-pilot/visible_seeds.json",
+      "change": "new",
+      "bytes": 7675,
+      "sha256_git_materialized": "8a8da9c39a437bba801f633cb57abc87a8a11d86aca8fbe1db53e0503678819c"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/PROTOCOL.md",
+      "change": "new",
+      "bytes": 7268,
+      "sha256_git_materialized": "a8f954dbae9c3c3ad915e3049b3923c4d9249d8a4b884f688c33bbeb4e64eb80"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/README.md",
+      "change": "new",
+      "bytes": 5561,
+      "sha256_git_materialized": "9098a2e710d68bc993c5279f7cdaf05a274de06a30519ce49db1cc7f9967ebd7"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/RESULTS.md",
+      "change": "new",
+      "bytes": 8394,
+      "sha256_git_materialized": "2f9a9a9b4e4b8b85157150168d99956fc4e2e18ffa674e95152f58941eef2e25"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/analyze.py",
+      "change": "new",
+      "bytes": 9357,
+      "sha256_git_materialized": "076102a32732637effd9f1ea1891306695f29c7be3fb5c3d278cee9063f7f688"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/approval.json",
+      "change": "new",
+      "bytes": 400,
+      "sha256_git_materialized": "f66576a74eeb4a1001d736d47adc15c944f3d3c9f50b0a646526da15d03cfc5e"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/completion_audit.json",
+      "change": "new",
+      "bytes": 3370,
+      "sha256_git_materialized": "4f8c503883813cffaa4f6f117d40a6026ad69014a083827f85f4d54b45ff2f3e"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/count_tokens.py",
+      "change": "new",
+      "bytes": 5578,
+      "sha256_git_materialized": "fead238ea138e8ac5f55ab797e6821d6b531d04bde22b0028358362c54122467"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/freeze.json",
+      "change": "new",
+      "bytes": 2179,
+      "sha256_git_materialized": "a8208904091b9f3548e4b67bfa57489ba6a9dfab5b1e095a30448218dd9c34d4"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/model_metadata.json",
+      "change": "new",
+      "bytes": 1517,
+      "sha256_git_materialized": "d0bdd069e80f64e0e715984281faafddd9cfa4cea8ddf6e245f7bef194a8e4c3"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/preparation-history/count_tokens-before-rate-limit.py",
+      "change": "new",
+      "bytes": 4064,
+      "sha256_git_materialized": "b30fa8a79375ac0a177152bf2947a55666afff44c0aa2f4b047ed4f606bb329d"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/preparation-history/token-count-rate-limit.json",
+      "change": "new",
+      "bytes": 488,
+      "sha256_git_materialized": "c01575e5df722bb580e3e8e3d8983ee0a7289878756ea116e1ac4863af42b0f0"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/preparation_audit.json",
+      "change": "new",
+      "bytes": 1188,
+      "sha256_git_materialized": "327f320c7f50aef96de4d89ac1542aca74f3a0a7811af3771e854a73a63fa2c2"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/prepare.py",
+      "change": "new",
+      "bytes": 7296,
+      "sha256_git_materialized": "d46e3525c94ca6e988701bdb273346bfcdc9bfa92172ed33a39902e990c8daa1"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/requests.json",
+      "change": "new",
+      "bytes": 294764,
+      "sha256_git_materialized": "56ada4d1b60bfa428b55278ddec2f4f92d645ed9aed6db0d39aa663545e530e4"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/results/journal.jsonl",
+      "change": "new",
+      "bytes": 383682,
+      "sha256_git_materialized": "ed3479816b0e460ce9fd4ed1e720721c810e4690879bca29ca2a713551e4341b"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/results/report.json",
+      "change": "new",
+      "bytes": 99139,
+      "sha256_git_materialized": "b7cc382c3dbf39762796da10b7ed10f561e86e92a1a0422bc014a20abd546621"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/results/verification.json",
+      "change": "new",
+      "bytes": 10167,
+      "sha256_git_materialized": "fdea04211727f6f9c018a86f90e54a18b06c53eb7a72bc43476bf725f482eddd"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/runner.py",
+      "change": "new",
+      "bytes": 15455,
+      "sha256_git_materialized": "d937363780290f3ae9233ee5adf817cd2394973a80b8d53bb4af25462deabfd6"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/test_runner.py",
+      "change": "new",
+      "bytes": 13531,
+      "sha256_git_materialized": "1aba1346fd20c140eba04b64a0ceff898dbdbfdb08e23a855e3c976ab1e0b781"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/token_count_attempts.jsonl",
+      "change": "new",
+      "bytes": 79032,
+      "sha256_git_materialized": "5adba9a9fbd768a358b433c34c45ad8f9e7542474808ca7a160cc0a744cbb169"
+    },
+    {
+      "path": "research/rule-direction/capable-reference/token_counts.json",
+      "change": "new",
+      "bytes": 99991,
+      "sha256_git_materialized": "c1298dcec757e82ac7ff50365fa97274976ed6fad95f6736abf13ee786be5e36"
+    },
+    {
+      "path": "research/series-closeout/build_replay.py",
+      "change": "new",
+      "bytes": 22059,
+      "sha256_git_materialized": "7eb2e66219269a8d130d1539a50cf924d7c79b5e7f4dd5f89e67237d73087c25"
+    },
+    {
+      "path": "research/series-closeout/completion_audit.json",
+      "change": "new",
+      "bytes": 3380,
+      "sha256_git_materialized": "9d89bfc5e7034b8018f970afdb37b75215a3ef1265e55bbf05d9a715e7a0aeb7"
+    },
+    {
+      "path": "research/series-closeout/confidence_recheck.py",
+      "change": "new",
+      "bytes": 16182,
+      "sha256_git_materialized": "c501476f77311e98342f791a0c132337e59e2474fb9da4719b065f2c5eb69e14"
+    },
+    {
+      "path": "research/series-closeout/confidence_report.json",
+      "change": "new",
+      "bytes": 193526,
+      "sha256_git_materialized": "c57ae495dbf4c6afc1fb6d716d78e4b347e3b0df81cabb222f8b5ef7f83cb1f5"
+    },
+    {
+      "path": "research/series-closeout/replay_template.html",
+      "change": "new",
+      "bytes": 37831,
+      "sha256_git_materialized": "637a0cf83599af2ccf212ad0bcb698b02758a788fe50226786e3faaaed83b811"
+    },
+    {
+      "path": "research/series-closeout/test_confidence_recheck.py",
+      "change": "new",
+      "bytes": 5721,
+      "sha256_git_materialized": "b5ba10367457e010396a8293e5508d4489847a578ccecc4f5be4fa86c4f516a5"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/CASES.md",
+      "change": "new",
+      "bytes": 10604,
+      "sha256_git_materialized": "fa2bf3593f1929ebbfcb7031a18ed39b869509a649cef1b08b0c9e1fd78d35b4"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/COMPLETION_AUDIT.md",
+      "change": "new",
+      "bytes": 8448,
+      "sha256_git_materialized": "bca66f2f6add59894380ed1de336613e06bbc594119cdcb90983c301f38e09ef"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/EVIDENCE.md",
+      "change": "new",
+      "bytes": 12815,
+      "sha256_git_materialized": "3da47729f08528739b4c8181c2c84a5594cb7fe3a604a55f80df34046b141bf7"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/README.md",
+      "change": "new",
+      "bytes": 5965,
+      "sha256_git_materialized": "5c35d0d6d2a18a028011d1fbd09a0831b91f52df890e0c8f54f6c75fdd10b51a"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/TAU_LICENSE",
+      "change": "new",
+      "bytes": 1072,
+      "sha256_git_materialized": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/airline_policy.source.md",
+      "change": "new",
+      "bytes": 7676,
+      "sha256_git_materialized": "10dc0525421521208be39cee235bba84a16e2bcba9899eb93d92cd81d2f62fc4"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/case_packet.json",
+      "change": "new",
+      "bytes": 357632,
+      "sha256_git_materialized": "937a2b9071d24e7cc7cf8c2f48d5cffb2cb14dd90a537c43e073ad117664970d"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/paper_traces.json",
+      "change": "new",
+      "bytes": 2389,
+      "sha256_git_materialized": "35c58e2a3c5e4271b965b07d8782ab323601a92080dc72d1ffaae94a672cdf7a"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/resource_snapshot.json",
+      "change": "new",
+      "bytes": 8169,
+      "sha256_git_materialized": "95e14ca87391fad9447ca7322e76d82282248f8d6fb88bd285a7bdc9309beec5"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/retail_policy.source.md",
+      "change": "new",
+      "bytes": 6699,
+      "sha256_git_materialized": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/screen_spec.json",
+      "change": "new",
+      "bytes": 2239,
+      "sha256_git_materialized": "ac4d4e8b99f023391cfefe4cdeb29951bc851c31005d183ba046be8b0732bfdc"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/sources.json",
+      "change": "new",
+      "bytes": 16361,
+      "sha256_git_materialized": "e31ec2bc69bd8697f8f20045258e48ef5d9a131e76dfa88742481f2745a64a6e"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/verification.json",
+      "change": "new",
+      "bytes": 9713,
+      "sha256_git_materialized": "b480781a22bbf255005afd191dd04e4b01452f9e17197f3ca6aff8bc83eacf6d"
+    },
+    {
+      "path": "research/topic-screen-2026-10-05/verify_screen.py",
+      "change": "new",
+      "bytes": 13161,
+      "sha256_git_materialized": "324cad85ddb9a638fb2584871e0a21c0c442e676e8fc0368b6eda5406b16ba61"
+    }
+  ],
+  "independent_software_review": {
+    "reviewer_type": "Collaborating AI agent; not independent human or scientific validation",
+    "candidate_files_excluding_receipt": 213,
+    "working_copy_raw_bytes": 5438221,
+    "working_copy_path_and_sha256_list_digest": "9317987dfd5936a43781e734d547358f6d12981fd30344d6684b16b972139af0",
+    "git_materialized_byte_difference_explanation": "Root text normalization changes 607 bytes; protected new evidence trees have zero byte differences.",
+    "current_freeze_contracts": 6,
+    "current_freeze_items_matched": 64,
+    "vendored_source_copies_matched": 21,
+    "candidate_local_links_valid": 517,
+    "targeted_secret_pattern_matches": 0,
+    "model_weight_files": 0,
+    "largest_file_bytes": 676986,
+    "limits": "Pattern scan cannot detect every secret; no legal or semantic certification.",
+    "scope_note": "Independent candidate review preceded the two documentation-only CI-status updates; its original raw inventory digest is retained as a prior snapshot."
+  },
+  "updated_at_utc": "2026-10-06T03:21:20.589642+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "scripted read-only integration completed",
+  "independent_parent_pairs": 1,
+  "native_prefix_records": 6,
+  "added_profile_records": 2,
+  "grounded_pending_actions": 6,
+  "task_tool_attempts": 6,
+  "successful_task_tool_calls": 5,
+  "expected_tool_failures": 1,
+  "cancellation_attempts": 0,
+  "model_calls": 0,
+  "sources_hash_verified": 14,
+  "before_and_after_discovery_pair_identical": true,
+  "all_business_state_unchanged": true,
+  "dependency_versions": {
+    "fastmcp": "4.0.11",
+    "fastmcp-slim": "4.0.11",
+    "mcp": "2.3.0",
+    "pydantic": "2.13.5",
+    "PyYAML": "6.0.3"
+  },
+  "python": "3.13.5",
+  "execution_path": "unchanged single environment BaseEnvironment.call_tool; real local FastMCP dispatch; no agent SDK or stdio server",
+  "strict_gate_includes_authored_task_contract": true,
+  "full_original_task_success_evaluated": false,
+  "verification_tool_does_not_compare_identity_details": true,
+  "network_audit_events": [
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-10-06T00:55:18.490731+00:00",
+  "phase": "before reproduction execution",
+  "planned_tool_attempts": 6,
+  "planned_model_calls": 0,
+  "sha256": {
+    "PROTOCOL.md": "1198a87eee9a490a4ec4de85b34d5c8ec625f0f5201e9366b916c7c20fb21a98",
+    "reproduce.py": "663beded9588d4f0aa2281b23ea93af90f62c5319a086ba8012e52c72e613199",
+    "sources.json": "ad57ae945b865d9624c70e4fde2c0cc15004ba9c27fe9e600e30f24e607bc634"
+  }
+}

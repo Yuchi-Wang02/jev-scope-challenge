@@ -1,8 +1,9 @@
 # Current research claims
 
 This ledger summarizes the completed series through the
-[rule-direction diagnostic](research/rule-direction/RESULTS.md), following the
-answer-interface comparison and its semantic source audit.
+[capable rule-direction reference](research/rule-direction/capable-reference/RESULTS.md)
+and [stage technical report](TECHNICAL_REPORT.md), including later bounded
+source screens and an offline confidence-threshold correction.
 It interprets saved evidence; it adds no experiment, approval or new research
 commitment. Study-specific protocols, results and earlier claims retain their
 historical scope. See the [research map](RESEARCH_INDEX.md) for execution status
@@ -19,6 +20,9 @@ independent samples. Follow each report for all controls, budgets and failures.
 
 |Claim|Observed evidence|Interpretation and limit|
 |---|---|---|
+|C23. High reported confidence did not produce a zero-error 0.99 subset in the old direction grid.|[Decimal-boundary recheck](research/series-closeout/confidence_report.json): 173/216 main decisions retained, with 9 errors; exactly 0.99 accounts for 45 records and 9 errors. The supplied retrospective draft's float-to-Fraction calculation reported 128/0.|Post hoc reanalysis, no new calls, no calibrated deployment guarantee. Original scores remain unchanged. The wider retrospective patch and its statistical tests are not adopted.|
+|C22. The clear retry-intent pilot did not expose the proposed failure.|[Completed Jev pilot](research/intent-retry-pilot/RESULTS.md): clear authorization 96/96 and explicit deferral 24/24; ambiguous-reference matches 2/24. Subsequent source screens did not supply a ready cohort.|12 constructed parents, no independent human review. Ambiguity was flagged before inference; 22 mismatches are not 22 validated model errors. Park expansion rather than add difficulty until failures appear.|
+|C21. One capable ordinary-model configuration largely resolves the old shared direction signature.|[Sonnet supplementary arm](research/rule-direction/capable-reference/RESULTS.md): 107/108 and 108/108; strict 215/216 repeated main decisions. Old errors resolved 23/24 and 24/24, old 84 controls retained in both mappings. One invalid format, zero valid wrong labels.|Unchanged old Qwen prompts, different model/wrapper/compute, no new independent inputs or human review. Not a same-cost replacement, a causal effect of thinking or a new method. Close this arm; retain the original C20 observation within its configuration scope.|
 |C20. The measured configurations miss the same necessary/sufficient direction boundary.|On108 authored inputs, both Jev and Qwen score84/108 in each of two mappings. All24 errors are necessary+positive =>yes or sufficient+negative =>no; both should be maybe under the stated contract.|Twelve vocabulary families share three patterns. This meets the frozen exploratory screen but does not establish a mechanism, population prevalence, novelty or a dedicated-model disadvantage.|
 |C19. Composition checks and model consensus do not independently validate source semantics.|Outcome-aware inspection of all 24 latest scenarios flags four decisive-evidence gaps and four rule-scope issues. One unanimous-model source mismatch still lacks the policy's visible prerequisites.|AI-assisted review flags, not eight corrected labels. Original source-agreement metrics stay unchanged. No human adjudication or replacement ranking.|
 |C18. Valid generated output does not necessarily improve decision agreement.|[Fresh-cluster interface grid](research/qa4pc-answer-interface/RESULTS.md): all 324 generations are strict valid labels. Generated semantics 87/144 versus generated letters 89/144 and Jev 101/144 across six repeated mappings; stable items18/24 versus 15/24. Finite85/144 differs from generated letters only at five exact ties.|12 trees /24 scenarios; upstream references, zero new human adjudication. Same-prompt letter bridge isolates this run's tie-handling difference. Semantic format remains a bundled intervention, not a position-bias mechanism. No ordinary-model ceiling or specialization conclusion.|

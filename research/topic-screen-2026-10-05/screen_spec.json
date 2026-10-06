@@ -1,0 +1,21 @@
+{
+  "status": "bounded topic screen; not an inference protocol",
+  "date_local": "2026-10-05",
+  "timezone": "America/New_York",
+  "repository_base": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+  "question": "Does a real intermediate representation lose task-relevant relations in a way distinct from known entity-binding, provenance, or semantic-formalization errors?",
+  "limits": {"papers": 6, "implementation_chains": 2, "source_parent_cases": 6, "paper_traces": 2, "new_model_calls": 0, "weight_downloads": 0, "human_reviews_claimed": 0},
+  "papers": ["2606.30531v1", "2605.11039v1", "2607.20827v1", "2511.08798v2", "2503.22674v2", "ijcai-2025-0516"],
+  "implementations": [
+    {"repository": "Yuchi-Wang02/jev-scope-challenge", "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda", "path": "research/qa4pc-stage-attribution"},
+    {"repository": "R-Suresh/EntityBindingFailures", "revision": "af311d10f52680576d83cdaf3d05d5b090445de4", "path": "code/run_entity_binding_experiment.py"}
+  ],
+  "source": {"repository": "sierra-research/tau2-bench", "revision": "5bfa7e37b36656b37dc6d022156be6563c1007f3", "kind": "public simulated tasks, not observed customer interactions"},
+  "selection": {
+    "rule": "Inspect the first three task IDs in numeric ascending order in each of retail and airline. All source IDs are integer strings. Inspect eligibility and retain exclusions; do not replace a rejected case with a later ID.",
+    "ids": {"retail": ["0", "1", "2"], "airline": ["0", "1", "2"]},
+    "eligibility": ["A named or resolvable action target with related attributes or records", "A relation can matter to a specific action or clearly bounded policy predicate", "Complete source task and policy can be inspected", "User-private intent and evaluator answers can be separated from agent-available information"],
+    "exposure": "Task 0 in each family was read to inspect the schema before this specification was saved. No model results were used for selection; no blind or prospective human review is claimed."
+  },
+  "scope": "No benchmark generation, API calls, training, human-label fabrication, application of the retrospective patch, git commit, push, fork, or publication. Paper code is read as source, not executed."
+}

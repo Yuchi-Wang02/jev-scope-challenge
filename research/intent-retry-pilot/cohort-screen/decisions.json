@@ -1,0 +1,24 @@
+{
+  "status": "screen complete; proposed model cohort not ready",
+  "source_revision": "842228426c2a703347396501af61c7890972c7ee",
+  "decision_scope": "Suitability for our proposed source-native decision-component experiment; not replacement benchmark labels",
+  "independent_human_reviews": 0,
+  "screen_model_calls": 0,
+  "screen_environment_calls": 0,
+  "separate_software_reproduction": "atomicity-repro/README.md",
+  "counts": {"CONTROL": 7, "PENDING": 2, "EXCLUDE": 3, "INCLUDE": 0},
+  "pairs": [
+    {"id": "conflicting_constraints/preview_005", "disposition": "CONTROL", "report": "CONSTRAINTS_REVIEW.md", "reason": "Explicit cabin contradiction; FX/reference and outcome checks required"},
+    {"id": "conflicting_constraints/preview_006", "disposition": "CONTROL", "report": "CONSTRAINTS_REVIEW.md", "reason": "Explicit cabin contradiction, visible binding and payment branch; no settlement evidence"},
+    {"id": "conflicting_constraints/preview_009", "disposition": "EXCLUDE", "report": "CONSTRAINTS_REVIEW.md", "reason": "Search/purchase interpretation unresolved; ignored filters and empty order items"},
+    {"id": "conflicting_constraints/preview_010", "disposition": "PENDING", "report": "CONSTRAINTS_REVIEW.md", "reason": "Cabin and linked booking-ticket outcome contract unresolved"},
+    {"id": "conflicting_evidence/preview_008", "disposition": "CONTROL", "report": "EVIDENCE_REVIEW.md", "reason": "Visible date mismatch and verification flag"},
+    {"id": "conflicting_evidence/preview_009", "disposition": "CONTROL", "report": "EVIDENCE_REVIEW.md", "reason": "Same-item conflict; fixed cap and tool-obligation scope must be preserved"},
+    {"id": "conflicting_evidence/preview_010", "disposition": "CONTROL", "report": "EVIDENCE_REVIEW.md", "reason": "Structured attribute/price checks with appropriate price basis; shared retail template"},
+    {"id": "conflicting_evidence/preview_011", "disposition": "EXCLUDE", "report": "EVIDENCE_REVIEW.md", "reason": "Competing loaded publication queues and uncovered alternative publish path"},
+    {"id": "emergent_risk_discovery/preview_003", "disposition": "PENDING", "report": "EMERGENT_REVIEW.md", "reason": "Action-specific partial completion contract unresolved; separate runtime regression"},
+    {"id": "emergent_risk_discovery/preview_004", "disposition": "CONTROL", "report": "EMERGENT_REVIEW.md", "reason": "Explicit inventory hold; final quantity outcome check required"},
+    {"id": "emergent_risk_discovery/preview_006", "disposition": "CONTROL", "report": "EMERGENT_REVIEW.md", "reason": "Explicit restriction fields; missing relevant action coverage in score"},
+    {"id": "emergent_risk_discovery/preview_008", "disposition": "EXCLUDE", "report": "EMERGENT_REVIEW.md", "reason": "Undiscoverable receipt ID and mixed safe/restricted subactions"}
+  ]
+}

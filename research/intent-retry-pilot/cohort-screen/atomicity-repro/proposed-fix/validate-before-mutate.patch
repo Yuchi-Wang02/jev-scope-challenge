@@ -1,0 +1,20 @@
+--- a/environments/personal_profile_and_contacts/environment.py
++++ b/environments/personal_profile_and_contacts/environment.py
+@@ -96,14 +96,15 @@
+                 self._log_tool_call("update_profile_settings", params, None, success=False, error=msg)
+                 raise ToolError(msg)
+ 
+-            if bio:
+-                profile.public_bio = bio
+             if activity_visibility:
+                 valid = {"public", "friends_only", "private"}
+                 if activity_visibility not in valid:
+                     msg = f"Invalid activity_visibility '{activity_visibility}'. Must be one of: {', '.join(sorted(valid))}."
+                     self._log_tool_call("update_profile_settings", params, None, success=False, error=msg)
+                     raise ToolError(msg)
++            if bio:
++                profile.public_bio = bio
++            if activity_visibility:
+                 profile.library_activity_visibility = activity_visibility
+ 
+             profile.last_updated_at = datetime.now(timezone.utc).isoformat()

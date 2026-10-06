@@ -1,0 +1,11 @@
+--- a/src/tooltalk/apis/message.py
++++ b/src/tooltalk/apis/message.py
+@@ -207,7 +207,7 @@
+         # parameters besides message must be the same
+         if predict_params["session_token"] != ground_truth_params["session_token"]:
+             return False
+-        if predict_params['receiver'] != predict_params['receiver']:
++        if predict_params['receiver'] != ground_truth_params['receiver']:
+             return False
+ 
+         # messages must be relatively the same

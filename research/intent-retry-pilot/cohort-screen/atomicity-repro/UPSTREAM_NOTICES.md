@@ -1,0 +1,10 @@
+# Attribution, licenses and transformations
+
+This directory retains seven pinned upstream files listed in [sources.json](sources.json); it also uses the unchanged runtime files retained in [integration](../../integration/UPSTREAM_NOTICES.md).
+
+- **Runtime and evaluator:** [AntiQuality/agentabstain](https://github.com/AntiQuality/agentabstain/tree/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3), revision `cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3`. Copyright 2026 The AgentAbstain Authors. MIT license text is retained at `upstream/LICENSE-MIT`.
+- **Environment implementation, schema and simulated fixture:** [antiquality/agentabstain dataset](https://huggingface.co/datasets/antiquality/agentabstain/tree/842228426c2a703347396501af61c7890972c7ee), revision `842228426c2a703347396501af61c7890972c7ee`. Attribution: Xun Liu, Yi Evie Zhang, Vira Kasprova, Parisa Rabbani, Pardis Sadat Zahraei, Tianyu Zhang, Ali Ebrahimpour-Boroojeny, and Varun Chandrasekaran, *AgentAbstain: Do LLM Agents Know When Not to Act?*, 2026, [arXiv:2607.10059](https://arxiv.org/abs/2607.10059). The dataset declares [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). These files and their derivatives are not relicensed by this repository's default license.
+
+Transformations introduced here: an original scripted controller with developer-selected invalid visibility; normalized tool results; namespaced copies of native logs for isolated evaluator input; before/after state exports; and reports. The original evaluator method is executed in isolation without altering its body. The initial controller's Windows encoding error and correction are recorded separately. Source files were not edited.
+
+Any derivative environment and patch under `proposed-fix/` are local modifications explicitly distinguished from upstream. Retain this attribution, the CC BY 4.0 link and the modification record when sharing that subset. Benchmark personal fields are synthetic public fixture data. This is not an official or endorsed AgentAbstain release. No repository fork or upstream submission has been created in this stage.

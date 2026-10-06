@@ -1,0 +1,65 @@
+{
+  "captured_at_utc": "2026-10-06T02:53:11.066889+00:00",
+  "stage": "Local series synthesis and retrospective numerical correction",
+  "status": "completed_with_research_and_publication_limits",
+  "goal_completed": false,
+  "new_model_calls": 0,
+  "new_training_or_downloads": 0,
+  "commits_pushes_releases_upstream_messages": 0,
+  "external_retrospective_patch_applied": false,
+  "original_labels_or_runs_modified": false,
+  "review": {
+    "independent_ai_prose_review": "Completed against existing studies; no blocking scientific wording issue",
+    "independent_raw_confidence_recounts": 2,
+    "new_independent_human_reviews": 0
+  },
+  "verification": {
+    "confidence_boundary_tests_passed": 12,
+    "confidence_report_recomputed": true,
+    "confidence_reference_zip_rechecked_by_implementing_agent": true,
+    "default_verify_explicitly_retains_prior_zip_metadata": true,
+    "sonnet_freeze_files_verified": 13,
+    "sonnet_historical_source_contracts_verified": 7,
+    "sonnet_saved_report_recomputed": true,
+    "publication_check": {
+      "markdown_files": 207,
+      "html_files": 23,
+      "local_links": 1092,
+      "credential_pattern_matches": 0,
+      "vendored_source_and_license_copies_checked": 6,
+      "citation_matches_schema_validated_bytes": true
+    },
+    "git_diff_check_passed": true,
+    "full_ci_run": false,
+    "scope": "Affected offline calculations, current prose, local links, historical preservation and existing publication checks; no scientific/legal certification"
+  },
+  "confidence_099": {
+    "retained": 173,
+    "wrong": 9,
+    "exact_boundary_retained": 45,
+    "exact_boundary_wrong": 9,
+    "legacy_retained": 128,
+    "legacy_wrong": 0
+  },
+  "base_commit": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+  "remaining": [
+    "No validated general intervention or model replacement claim",
+    "Independent label adjudication and new natural-task confirmation remain absent for the relevant cohorts",
+    "External retrospective full patch, cross-study statistical conclusions and broader license audit are not integrated",
+    "Current artifacts are local; no new public release or paper submission"
+  ],
+  "sha256_lf": {
+    "TECHNICAL_REPORT.md": "4a71f619946c802db54b8d92c3e39382ad31c61d8bd702a3433c0337045665dc",
+    "README.md": "019765d67a3b06600e8d24c73a7cb6fb6c44dc0e32fd20ef8dc7c94889221be3",
+    "RESEARCH_INDEX.md": "b3e1a6595bb9a53ef33bf9d19d3e2c4f9d51c6e0f94b44a01467fcc6b75d352b",
+    "RESEARCH_CLAIMS.md": "09c78ed21af953caf8db20d34a3ff66ca9fd3a0f592e0d02d079e483cbd3a3de",
+    "NOVELTY_MATRIX.md": "3c95d23a2af92f9c2443670715291b9722725c8b777eaed447b3aec2ed0711d5",
+    "CHANGELOG.md": "1bb345722f1d9cc376576edce4ebe3a1d8ce2bf2bdf50aac747d29deb16aef72",
+    "STAGE_LOG.md": "f1bb67c768ab5cc2bec1ab24d1c7b76b1566a449a9dedad7d1c4cfc7a432cc8c",
+    "THIRD_PARTY_NOTICES.md": "c623544db23db8cad703e0f16a779c6334e916ec6be2f818bbce567704c3b6b4",
+    "docs/README.zh-CN.md": "02bab7aa94ed39984afcc9111b2d7e6bbac17abe322d50b725afce96beee103a",
+    "research/series-closeout/confidence_recheck.py": "c501476f77311e98342f791a0c132337e59e2474fb9da4719b065f2c5eb69e14",
+    "research/series-closeout/test_confidence_recheck.py": "b5ba10367457e010396a8293e5508d4489847a578ccecc4f5be4fa86c4f516a5",
+    "research/series-closeout/confidence_report.json": "7f64017684198dde31310a29be44ea69b498f88cd4273f7b359876e389ed48db"
+  }
+}

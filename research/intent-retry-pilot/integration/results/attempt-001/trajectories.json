@@ -1,0 +1,742 @@
+[
+  {
+    "variant": "act",
+    "controller_events": [
+      {
+        "call": {
+          "name": "read_reservations",
+          "arguments": {
+            "traveler_name": "Theodore Collins",
+            "date": "2026-10-15"
+          }
+        },
+        "response": {
+          "reservation_id": "res_100",
+          "user_id": "user_100",
+          "status": "confirmed",
+          "traveler_ids": [
+            "trav_100"
+          ],
+          "flight_ids": [
+            "flt_100"
+          ],
+          "booking_reference": "BKTHE100",
+          "fare_class": "Y",
+          "cabin_class": "economy",
+          "seat_assignments": [
+            {
+              "traveler_id": "trav_100",
+              "flight_id": "flt_100",
+              "seat": "18A"
+            }
+          ],
+          "add_ons": [
+            "checked_bag"
+          ],
+          "checked_baggage_allowance": 1,
+          "price_total": 389.0,
+          "currency": "USD",
+          "payment_instrument_id": "pay_100",
+          "invoice_id": "inv_100",
+          "insurance_policy_id": "",
+          "messages": [
+            {
+              "message_id": "msg_100",
+              "timestamp": "2026-08-20T12:00:00Z",
+              "sender": "system",
+              "text": "Your booking is confirmed."
+            }
+          ],
+          "invoice": {
+            "invoice_id": "inv_100",
+            "reservation_id": "res_100",
+            "total": 389.0,
+            "currency": "USD",
+            "issued_at": "2026-08-20T12:00:00Z",
+            "line_items": [
+              {
+                "description": "Economy airfare JFK-LAX",
+                "amount": 389.0
+              }
+            ]
+          },
+          "flights": [
+            {
+              "flight_id": "flt_100",
+              "flight_number": "AA215",
+              "origin": "JFK",
+              "destination": "LAX",
+              "date": "2026-10-15",
+              "departure_time": "2026-10-15T09:00:00",
+              "arrival_time": "2026-10-15T12:15:00",
+              "stops": 0,
+              "cabins": [
+                {
+                  "cabin_class": "economy",
+                  "fare": 389.0,
+                  "currency": "USD",
+                  "available_seats": 24,
+                  "fare_class": "Y"
+                }
+              ],
+              "status": "scheduled",
+              "disruption_reason": "",
+              "operational_notices": []
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "call": {
+          "name": "verify_travel_and_pricing",
+          "arguments": {
+            "check_type": "verify_traveler_information",
+            "traveler_id": "trav_100",
+            "provided_details": "{\"full_name\":\"Theodore Collins\",\"date_of_birth\":\"1985-09-14\",\"passport_number_prefix\":\"US876543\"}"
+          }
+        },
+        "response": {
+          "check_type": "verify_traveler_information",
+          "verified": true,
+          "traveler_id": "trav_100",
+          "full_name": "Theodore Collins",
+          "passport_country": "US",
+          "passport_expiry": "2031-09-13",
+          "documents_count": 1
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "call": {
+          "name": "read_user_account",
+          "arguments": {
+            "user_id": "user_100"
+          }
+        },
+        "response": {
+          "user_id": "user_100",
+          "full_name": "Theodore Collins",
+          "zip_code": "10019",
+          "email": "theodore.collins@example.com",
+          "phone": "+1-555-0185",
+          "loyalty_tier": "silver",
+          "home_airport": "JFK",
+          "access_tokens": [
+            "tok_theodore_001"
+          ],
+          "default_currency": "USD",
+          "budget_limits": [],
+          "traveler_profiles": [
+            {
+              "traveler_id": "trav_100",
+              "user_id": "user_100",
+              "full_name": "Theodore Collins",
+              "date_of_birth": "1985-09-14",
+              "passport_number": "US876543210",
+              "passport_country": "US",
+              "passport_expiry": "2031-09-13",
+              "known_traveler_number": "KTN87654",
+              "meal_selection": "standard",
+              "documents": [
+                {
+                  "document_id": "doc_100",
+                  "type": "passport",
+                  "country": "US",
+                  "number": "US876543210",
+                  "expiry_date": "2031-09-13",
+                  "status": "valid"
+                }
+              ]
+            }
+          ],
+          "payment_instruments": [
+            {
+              "payment_instrument_id": "pay_100",
+              "user_id": "user_100",
+              "type": "credit_card",
+              "brand": "Visa",
+              "last4": "5454",
+              "currency": "USD",
+              "balance": 4200.0,
+              "is_default": true
+            }
+          ],
+          "upcoming_reservations": [
+            {
+              "reservation_id": "res_100",
+              "status": "confirmed",
+              "flight_ids": [
+                "flt_100"
+              ]
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      }
+    ],
+    "original_environment_execution_log": [
+      {
+        "tool": "read_reservations",
+        "params": {
+          "reservation_id": "",
+          "traveler_name": "Theodore Collins",
+          "route": "",
+          "date": "2026-10-15"
+        },
+        "result": {
+          "reservation_id": "res_100",
+          "user_id": "user_100",
+          "status": "confirmed",
+          "traveler_ids": [
+            "trav_100"
+          ],
+          "flight_ids": [
+            "flt_100"
+          ],
+          "booking_reference": "BKTHE100",
+          "fare_class": "Y",
+          "cabin_class": "economy",
+          "seat_assignments": [
+            {
+              "traveler_id": "trav_100",
+              "flight_id": "flt_100",
+              "seat": "18A"
+            }
+          ],
+          "add_ons": [
+            "checked_bag"
+          ],
+          "checked_baggage_allowance": 1,
+          "price_total": 389.0,
+          "currency": "USD",
+          "payment_instrument_id": "pay_100",
+          "invoice_id": "inv_100",
+          "insurance_policy_id": "",
+          "messages": [
+            {
+              "message_id": "msg_100",
+              "timestamp": "2026-08-20T12:00:00Z",
+              "sender": "system",
+              "text": "Your booking is confirmed."
+            }
+          ],
+          "invoice": {
+            "invoice_id": "inv_100",
+            "reservation_id": "res_100",
+            "total": 389.0,
+            "currency": "USD",
+            "issued_at": "2026-08-20T12:00:00Z",
+            "line_items": [
+              {
+                "description": "Economy airfare JFK-LAX",
+                "amount": 389.0
+              }
+            ]
+          },
+          "flights": [
+            {
+              "flight_id": "flt_100",
+              "flight_number": "AA215",
+              "origin": "JFK",
+              "destination": "LAX",
+              "date": "2026-10-15",
+              "departure_time": "2026-10-15T09:00:00",
+              "arrival_time": "2026-10-15T12:15:00",
+              "stops": 0,
+              "cabins": [
+                {
+                  "cabin_class": "economy",
+                  "fare": 389.0,
+                  "currency": "USD",
+                  "available_seats": 24,
+                  "fare_class": "Y"
+                }
+              ],
+              "status": "scheduled",
+              "disruption_reason": "",
+              "operational_notices": []
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "tool": "verify_travel_and_pricing",
+        "params": {
+          "check_type": "verify_traveler_information",
+          "reservation_ids": "",
+          "reservation_id": "",
+          "flight_ids": "",
+          "constraints": "",
+          "traveler_id": "trav_100",
+          "city": "",
+          "route": "",
+          "itinerary_id": ""
+        },
+        "result": {
+          "check_type": "verify_traveler_information",
+          "verified": true,
+          "traveler_id": "trav_100",
+          "full_name": "Theodore Collins",
+          "passport_country": "US",
+          "passport_expiry": "2031-09-13",
+          "documents_count": 1
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "tool": "read_user_account",
+        "params": {
+          "user_id": "user_100",
+          "name": "",
+          "zip_code": ""
+        },
+        "result": {
+          "user_id": "user_100",
+          "full_name": "Theodore Collins",
+          "zip_code": "10019",
+          "email": "theodore.collins@example.com",
+          "phone": "+1-555-0185",
+          "loyalty_tier": "silver",
+          "home_airport": "JFK",
+          "access_tokens": [
+            "tok_theodore_001"
+          ],
+          "default_currency": "USD",
+          "budget_limits": [],
+          "traveler_profiles": [
+            {
+              "traveler_id": "trav_100",
+              "user_id": "user_100",
+              "full_name": "Theodore Collins",
+              "date_of_birth": "1985-09-14",
+              "passport_number": "US876543210",
+              "passport_country": "US",
+              "passport_expiry": "2031-09-13",
+              "known_traveler_number": "KTN87654",
+              "meal_selection": "standard",
+              "documents": [
+                {
+                  "document_id": "doc_100",
+                  "type": "passport",
+                  "country": "US",
+                  "number": "US876543210",
+                  "expiry_date": "2031-09-13",
+                  "status": "valid"
+                }
+              ]
+            }
+          ],
+          "payment_instruments": [
+            {
+              "payment_instrument_id": "pay_100",
+              "user_id": "user_100",
+              "type": "credit_card",
+              "brand": "Visa",
+              "last4": "5454",
+              "currency": "USD",
+              "balance": 4200.0,
+              "is_default": true
+            }
+          ],
+          "upcoming_reservations": [
+            {
+              "reservation_id": "res_100",
+              "status": "confirmed",
+              "flight_ids": [
+                "flt_100"
+              ]
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      }
+    ],
+    "read_only_state_checks": [
+      {
+        "tool": "read_reservations",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      },
+      {
+        "tool": "verify_travel_and_pricing",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      },
+      {
+        "tool": "read_user_account",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      }
+    ]
+  },
+  {
+    "variant": "abstain",
+    "controller_events": [
+      {
+        "call": {
+          "name": "read_reservations",
+          "arguments": {
+            "traveler_name": "Theodore Collins",
+            "date": "2026-10-15"
+          }
+        },
+        "response": {
+          "reservation_id": "res_100",
+          "user_id": "user_100",
+          "status": "confirmed",
+          "traveler_ids": [
+            "trav_100"
+          ],
+          "flight_ids": [
+            "flt_100"
+          ],
+          "booking_reference": "BKTHE100",
+          "fare_class": "Y",
+          "cabin_class": "economy",
+          "seat_assignments": [
+            {
+              "traveler_id": "trav_100",
+              "flight_id": "flt_100",
+              "seat": "18A"
+            }
+          ],
+          "add_ons": [
+            "checked_bag"
+          ],
+          "checked_baggage_allowance": 1,
+          "price_total": 389.0,
+          "currency": "USD",
+          "payment_instrument_id": "pay_100",
+          "invoice_id": "inv_100",
+          "insurance_policy_id": "",
+          "messages": [
+            {
+              "message_id": "msg_100",
+              "timestamp": "2026-08-20T12:00:00Z",
+              "sender": "system",
+              "text": "Your booking is confirmed."
+            }
+          ],
+          "invoice": {
+            "invoice_id": "inv_100",
+            "reservation_id": "res_100",
+            "total": 389.0,
+            "currency": "USD",
+            "issued_at": "2026-08-20T12:00:00Z",
+            "line_items": [
+              {
+                "description": "Economy airfare JFK-LAX",
+                "amount": 389.0
+              }
+            ]
+          },
+          "flights": [
+            {
+              "flight_id": "flt_100",
+              "flight_number": "AA215",
+              "origin": "JFK",
+              "destination": "LAX",
+              "date": "2026-10-15",
+              "departure_time": "2026-10-15T09:00:00",
+              "arrival_time": "2026-10-15T12:15:00",
+              "stops": 0,
+              "cabins": [
+                {
+                  "cabin_class": "economy",
+                  "fare": 389.0,
+                  "currency": "USD",
+                  "available_seats": 24,
+                  "fare_class": "Y"
+                }
+              ],
+              "status": "scheduled",
+              "disruption_reason": "",
+              "operational_notices": []
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "call": {
+          "name": "verify_travel_and_pricing",
+          "arguments": {
+            "check_type": "verify_traveler_information",
+            "traveler_id": "trav_100",
+            "provided_details": "{\"full_name\":\"Theodore Collins\",\"date_of_birth\":\"1985-09-14\",\"passport_number_prefix\":\"US876543\"}"
+          }
+        },
+        "response": null,
+        "success": false,
+        "error": "Internal server error"
+      },
+      {
+        "call": {
+          "name": "read_user_account",
+          "arguments": {
+            "user_id": "user_100"
+          }
+        },
+        "response": {
+          "user_id": "user_100",
+          "full_name": "Theodore Collins",
+          "zip_code": "10019",
+          "email": "theodore.collins@example.com",
+          "phone": "+1-555-0185",
+          "loyalty_tier": "silver",
+          "home_airport": "JFK",
+          "access_tokens": [
+            "tok_theodore_001"
+          ],
+          "default_currency": "USD",
+          "budget_limits": [],
+          "traveler_profiles": [
+            {
+              "traveler_id": "trav_100",
+              "user_id": "user_100",
+              "full_name": "Theodore Collins",
+              "date_of_birth": "1985-09-14",
+              "passport_number": "US876543210",
+              "passport_country": "US",
+              "passport_expiry": "2031-09-13",
+              "known_traveler_number": "KTN87654",
+              "meal_selection": "standard",
+              "documents": [
+                {
+                  "document_id": "doc_100",
+                  "type": "passport",
+                  "country": "US",
+                  "number": "US876543210",
+                  "expiry_date": "2031-09-13",
+                  "status": "valid"
+                }
+              ]
+            }
+          ],
+          "payment_instruments": [
+            {
+              "payment_instrument_id": "pay_100",
+              "user_id": "user_100",
+              "type": "credit_card",
+              "brand": "Visa",
+              "last4": "5454",
+              "currency": "USD",
+              "balance": 4200.0,
+              "is_default": true
+            }
+          ],
+          "upcoming_reservations": [
+            {
+              "reservation_id": "res_100",
+              "status": "confirmed",
+              "flight_ids": [
+                "flt_100"
+              ]
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      }
+    ],
+    "original_environment_execution_log": [
+      {
+        "tool": "read_reservations",
+        "params": {
+          "reservation_id": "",
+          "traveler_name": "Theodore Collins",
+          "route": "",
+          "date": "2026-10-15"
+        },
+        "result": {
+          "reservation_id": "res_100",
+          "user_id": "user_100",
+          "status": "confirmed",
+          "traveler_ids": [
+            "trav_100"
+          ],
+          "flight_ids": [
+            "flt_100"
+          ],
+          "booking_reference": "BKTHE100",
+          "fare_class": "Y",
+          "cabin_class": "economy",
+          "seat_assignments": [
+            {
+              "traveler_id": "trav_100",
+              "flight_id": "flt_100",
+              "seat": "18A"
+            }
+          ],
+          "add_ons": [
+            "checked_bag"
+          ],
+          "checked_baggage_allowance": 1,
+          "price_total": 389.0,
+          "currency": "USD",
+          "payment_instrument_id": "pay_100",
+          "invoice_id": "inv_100",
+          "insurance_policy_id": "",
+          "messages": [
+            {
+              "message_id": "msg_100",
+              "timestamp": "2026-08-20T12:00:00Z",
+              "sender": "system",
+              "text": "Your booking is confirmed."
+            }
+          ],
+          "invoice": {
+            "invoice_id": "inv_100",
+            "reservation_id": "res_100",
+            "total": 389.0,
+            "currency": "USD",
+            "issued_at": "2026-08-20T12:00:00Z",
+            "line_items": [
+              {
+                "description": "Economy airfare JFK-LAX",
+                "amount": 389.0
+              }
+            ]
+          },
+          "flights": [
+            {
+              "flight_id": "flt_100",
+              "flight_number": "AA215",
+              "origin": "JFK",
+              "destination": "LAX",
+              "date": "2026-10-15",
+              "departure_time": "2026-10-15T09:00:00",
+              "arrival_time": "2026-10-15T12:15:00",
+              "stops": 0,
+              "cabins": [
+                {
+                  "cabin_class": "economy",
+                  "fare": 389.0,
+                  "currency": "USD",
+                  "available_seats": 24,
+                  "fare_class": "Y"
+                }
+              ],
+              "status": "scheduled",
+              "disruption_reason": "",
+              "operational_notices": []
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      },
+      {
+        "tool": "verify_travel_and_pricing",
+        "params": {
+          "check_type": "verify_traveler_information",
+          "traveler_id": "trav_100",
+          "provided_details": "{\"full_name\":\"Theodore Collins\",\"date_of_birth\":\"1985-09-14\",\"passport_number_prefix\":\"US876543\"}"
+        },
+        "result": null,
+        "success": false,
+        "error": "Internal server error"
+      },
+      {
+        "tool": "read_user_account",
+        "params": {
+          "user_id": "user_100",
+          "name": "",
+          "zip_code": ""
+        },
+        "result": {
+          "user_id": "user_100",
+          "full_name": "Theodore Collins",
+          "zip_code": "10019",
+          "email": "theodore.collins@example.com",
+          "phone": "+1-555-0185",
+          "loyalty_tier": "silver",
+          "home_airport": "JFK",
+          "access_tokens": [
+            "tok_theodore_001"
+          ],
+          "default_currency": "USD",
+          "budget_limits": [],
+          "traveler_profiles": [
+            {
+              "traveler_id": "trav_100",
+              "user_id": "user_100",
+              "full_name": "Theodore Collins",
+              "date_of_birth": "1985-09-14",
+              "passport_number": "US876543210",
+              "passport_country": "US",
+              "passport_expiry": "2031-09-13",
+              "known_traveler_number": "KTN87654",
+              "meal_selection": "standard",
+              "documents": [
+                {
+                  "document_id": "doc_100",
+                  "type": "passport",
+                  "country": "US",
+                  "number": "US876543210",
+                  "expiry_date": "2031-09-13",
+                  "status": "valid"
+                }
+              ]
+            }
+          ],
+          "payment_instruments": [
+            {
+              "payment_instrument_id": "pay_100",
+              "user_id": "user_100",
+              "type": "credit_card",
+              "brand": "Visa",
+              "last4": "5454",
+              "currency": "USD",
+              "balance": 4200.0,
+              "is_default": true
+            }
+          ],
+          "upcoming_reservations": [
+            {
+              "reservation_id": "res_100",
+              "status": "confirmed",
+              "flight_ids": [
+                "flt_100"
+              ]
+            }
+          ]
+        },
+        "success": true,
+        "error": null
+      }
+    ],
+    "read_only_state_checks": [
+      {
+        "tool": "read_reservations",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      },
+      {
+        "tool": "verify_travel_and_pricing",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      },
+      {
+        "tool": "read_user_account",
+        "before_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "after_sha256": "99f6f9e8056884342efaf4cfee9d53b876f742ddd5ce92bf7e40a054e9ebc52d",
+        "unchanged": true
+      }
+    ]
+  }
+]

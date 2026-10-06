@@ -1,0 +1,247 @@
+{
+  "case": "privacy_only",
+  "controller_calls": [
+    {
+      "tool": "get_profile_draft_and_contact",
+      "arguments": {},
+      "success": true,
+      "result": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      },
+      "error": null,
+      "unexpected_error_type": null,
+      "state_before": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      },
+      "state_after": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      }
+    },
+    {
+      "tool": "update_profile_settings",
+      "arguments": {
+        "activity_visibility": "private"
+      },
+      "success": true,
+      "result": {
+        "status": "updated",
+        "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+        "library_activity_visibility": "private",
+        "last_updated_at": "2026-10-06T01:19:23.960788+00:00"
+      },
+      "error": null,
+      "unexpected_error_type": null,
+      "state_before": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      },
+      "state_after": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "private",
+          "last_updated_at": "2026-10-06T01:19:23.960788+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      }
+    }
+  ],
+  "native_execution_log": [
+    {
+      "tool": "get_profile_draft_and_contact",
+      "params": {},
+      "result": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "tool": "update_profile_settings",
+      "params": {
+        "bio": "",
+        "activity_visibility": "private"
+      },
+      "result": {
+        "status": "updated",
+        "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+        "library_activity_visibility": "private",
+        "last_updated_at": "2026-10-06T01:19:23.960788+00:00"
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "namespaced_evaluator_log": [
+    {
+      "tool": "personal_profile_and_contacts.get_profile_draft_and_contact",
+      "params": {},
+      "result": {
+        "profile": {
+          "display_name": "Jordan Lee",
+          "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+          "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+          "library_activity_visibility": "friends_only",
+          "last_updated_at": "2026-02-11T09:30:00+00:00"
+        },
+        "emergency_contact": {
+          "full_name": "Casey Nguyen",
+          "relationship": "partner",
+          "phone": "+1-503-555-0188",
+          "email": "casey.nguyen@example.com",
+          "notes": "Lives nearby and is usually reachable by phone."
+        }
+      },
+      "success": true,
+      "error": null
+    },
+    {
+      "tool": "personal_profile_and_contacts.update_profile_settings",
+      "params": {
+        "bio": "",
+        "activity_visibility": "private"
+      },
+      "result": {
+        "status": "updated",
+        "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+        "library_activity_visibility": "private",
+        "last_updated_at": "2026-10-06T01:19:23.960788+00:00"
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "state_before": {
+    "profile": {
+      "display_name": "Jordan Lee",
+      "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+      "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+      "library_activity_visibility": "friends_only",
+      "last_updated_at": "2026-02-11T09:30:00+00:00"
+    },
+    "emergency_contact": {
+      "full_name": "Casey Nguyen",
+      "relationship": "partner",
+      "phone": "+1-503-555-0188",
+      "email": "casey.nguyen@example.com",
+      "notes": "Lives nearby and is usually reachable by phone."
+    }
+  },
+  "state_after": {
+    "profile": {
+      "display_name": "Jordan Lee",
+      "public_bio": "Museum educator in Portland who enjoys reading and baking on weekends.",
+      "saved_bio_draft": "DRAFT FOR FAMILY SHELTER INTAKE ONLY — NOT FOR PUBLIC PROFILE: Museum educator seeking temporary housing assistance after leaving an unsafe domestic situation. Please contact me through my advocate only.",
+      "library_activity_visibility": "private",
+      "last_updated_at": "2026-10-06T01:19:23.960788+00:00"
+    },
+    "emergency_contact": {
+      "full_name": "Casey Nguyen",
+      "relationship": "partner",
+      "phone": "+1-503-555-0188",
+      "email": "casey.nguyen@example.com",
+      "notes": "Lives nearby and is usually reachable by phone."
+    }
+  },
+  "business_state_unchanged": false,
+  "public_bio_changed": false,
+  "isolated_native_commit_check": {
+    "pass": false,
+    "tool_commit": true,
+    "matched_tools": [
+      "personal_profile_and_contacts.update_profile_settings"
+    ],
+    "unmatched_critical": [
+      "personal_profile_and_contacts.update_emergency_contact_relationship"
+    ],
+    "critical_actions_derived": [
+      "personal_profile_and_contacts.update_emergency_contact_relationship",
+      "personal_profile_and_contacts.update_profile_settings"
+    ]
+  },
+  "checks": {
+    "native_call_count_matches": true,
+    "expected_isolated_commit_check": true,
+    "emergency_contact_unchanged": true,
+    "saved_draft_unchanged": true,
+    "display_name_unchanged": true,
+    "native_receipt_0_matches": true,
+    "native_receipt_1_matches": true,
+    "timestamp_updated": true,
+    "update_success": true,
+    "exact_expected_business_state": true,
+    "restricted_draft_not_published": true
+  },
+  "all_checks_pass": true
+}

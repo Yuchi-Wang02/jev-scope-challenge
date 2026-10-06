@@ -1,0 +1,20 @@
+{
+  "status": "portable source/result preflight passed",
+  "original_manifest_entries": 29,
+  "source_and_result_files_verified": 26,
+  "excluded_ignored_bytecode": [
+    "upstream/dataset/environments/personal_profile_and_contacts/__pycache__/__init__.cpython-313.pyc",
+    "upstream/dataset/environments/personal_profile_and_contacts/__pycache__/environment.cpython-313.pyc",
+    "upstream/dataset/environments/personal_profile_and_contacts/__pycache__/schema.cpython-313.pyc"
+  ],
+  "simulated_absent_bytecode_passes_preflight": true,
+  "original_full_manifest_rejects_simulated_absence": true,
+  "missing_required_source_rejected": true,
+  "simulation": "raise FileNotFoundError for specified absent paths; all other hashes computed from actual source bytes",
+  "files_deleted_or_hashes_fabricated": false,
+  "environment_calls": 0,
+  "model_calls": 0,
+  "full_portable_regression_executed": false,
+  "frozen_runner_adapted": false,
+  "preflight_script_sha256": "b38581eb7c11816a967e6f325a1ffa072a5b5857f8a012ef8b9adad7562e7b2d"
+}

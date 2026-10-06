@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-06T00:58:20.565068+00:00",
+  "phase": "before UTF-8 corrected attempt-002",
+  "planned_tool_attempts": 6,
+  "planned_model_calls": 0,
+  "supersedes": "history/attempt-001-freeze.json",
+  "sha256": {
+    "PROTOCOL.md": "1198a87eee9a490a4ec4de85b34d5c8ec625f0f5201e9366b916c7c20fb21a98",
+    "reproduce.py": "1b9cd883b78ff161b2024e6a1ec1c83bd4b4806e6386d9dec5402ffef2a035ec",
+    "sources.json": "ad57ae945b865d9624c70e4fde2c0cc15004ba9c27fe9e600e30f24e607bc634",
+    "encoding_repair.json": "bad4553800a0f3ce139e637f06143b39fd0c279f0830c368aff52edbbcd518af"
+  }
+}

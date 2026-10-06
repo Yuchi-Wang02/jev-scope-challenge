@@ -1,0 +1,27 @@
+{
+  "version": "intent-retry-jev-v1",
+  "created_at_utc": "2026-10-06T00:09:11.954916+00:00",
+  "model": "jev-1.13.0",
+  "attempt_limit": 156,
+  "retry_limit": 9,
+  "planned_input_limit": 1000000,
+  "price_per_million_input_tokens_usd": 0.042,
+  "price_source": "https://docs.typesafe.ai/models",
+  "scientific_status": "exploratory; AI-authored provisional references; no human review",
+  "authorization": "Existing user authorization for bounded Jev research calls; no other provider authorized by this manifest",
+  "ordinary_capable_arm": "not configured; do not infer model superiority",
+  "sha256": {
+    "PROTOCOL.md": "69ca077cbe49de90cd60f756acbcdd9ad5df9cb0fef43cca1eb8af92a3a5759c",
+    "DATA_NOTES.md": "ba76e70b6058a42f1a22cc2f958e375cc335b3ab1c65a3699772dbb39e380ac4",
+    "build_pilot.py": "7623d9013d5463fe0a40f2e32024cee68cafe16bc4d80ae41c49313598128e1b",
+    "analyze_pilot.py": "28ce22db0c365f725d2ba368f69dca67528400ffd8c277a2efcd7c54a232cc43",
+    "verify_pilot.py": "4bd130f1ca3833545b5218f178772506d1ba332188346d9ad854d785c9fef1d5",
+    "run_jev.py": "3d2e27c0661ed251790b365d14fe1fc0492e00103db9d8c1e1909d5dda23278d",
+    "test_runner.py": "240b83d45cc911ca5f80582de6bd9705ec83e5637f36ffa055113e6e73fd0f83",
+    "demo.py": "958384da0b9ef7b1d8a4b23e6f7a8f7e5b759ab1d9e5ee4f0b734269eb7c0001",
+    "data/visible.json": "12d64b77e54226b40007beb54c78d7a856a1a6a9e0ccb7f0e3b5a758843b4301",
+    "data/references.json": "372da2846228a8af1f9e49e7ace6f67b8ea0e159b574cf75842d4e4e96051c23",
+    "data/review_blank.json": "899b4b8dc03f1df6268778c20d1b7c0aa417299a40d2c9ed5e52f4db58229355",
+    "plans/jev.jsonl": "6a64fbf6c048c7fdc433f7b56a2706c68e5be7ac1b0249a267238fbe5e37aa90"
+  }
+}

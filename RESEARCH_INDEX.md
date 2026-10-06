@@ -1,9 +1,16 @@
 # Research map and evidence status
 
-Latest: [One "Only". Different Decision.](research/rule-direction/RESULTS.md)
-completes444 frozen decisions. Both backends show the same biconditional-like
-error signature across12 authored vocabulary families and both tested orders.
-Classical synthetic constraints and zero human language reviews limit the claim.
+Current synthesis: [A Valid Answer Is Not a Verified Decision](TECHNICAL_REPORT.md).
+The latest [capable reference](research/rule-direction/capable-reference/RESULTS.md)
+completes 222 Sonnet requests: 107/108 and 108/108, one invalid format, no valid
+wrong labels. It narrows the [original shared direction signature](research/rule-direction/RESULTS.md)
+to the configurations actually tested. Twelve authored vocabulary families,
+repeated mappings and unequal compute limit this comparison. See the
+[stage release notes](RELEASE_NOTES.md) for the publication scope.
+
+The [new replay](docs/decision_boundary.html) makes every saved main decision
+inspectable; the [release packet](RELEASE_CANDIDATE.md) lists the reviewed
+publication scope and checks. It does not start a new study.
 
 Start with the [series claims and limits](RESEARCH_CLAIMS.md) and
 [current novelty assessment](NOVELTY_MATRIX.md). An earlier completed grid is the
@@ -31,7 +38,9 @@ as related work and was not executed. See [credits and reuse](THIRD_PARTY_NOTICE
 
 |Study|Actual evidence and result|Scope and remaining limits|
 |---|---|---|
-|[Rule direction](research/rule-direction/RESULTS.md)|222 Jev requests and222 Qwen semantic-label generations; both84/108 in both orders. Both critical direction-pair types0/12; unknown triples12/12. No invalids, retries or follow-up.|12 authored vocabulary families repeat3 logical patterns. Synthetic classical constraints, zero human reviews or stronger-model comparison. Output signature, not internal mechanism or specialized-model disadvantage.|
+|[Capable direction reference](research/rule-direction/capable-reference/RESULTS.md)|222 Sonnet 5.5 requests including six smoke; strict main 107/108 and 108/108. Old errors resolved 23/24 and 24/24; all 84 previous controls retained per mapping. One invalid format, zero retries; nominal $0.129346.|Same old inputs; 12 vocabulary families, three logical patterns, no new human review. Adaptive/high requested, different model/interface/compute. Narrows original shared signature; closes this arm without a method claim.|
+|[Retry versus additional intent](research/intent-retry-pilot/RESULTS.md)|147 Jev calls including three smoke. Clear-authorization references matched 96/96; explicit deferral 24/24; ambiguous-reference matches 2/24. No retries.|12 synthetic parents, two repeated orders, zero independent human review. Ambiguous labels were flagged before inference; do not call 22 mismatches confirmed failures. Expansion parked after bounded source screening.|
+|[Original rule direction](research/rule-direction/RESULTS.md)|222 Jev requests and 222 Qwen semantic-label generations; both 84/108 in both orders. Both critical direction-pair types 0/12; unknown triples 12/12. No invalids or retries.|12 authored vocabulary families repeat three logical patterns. Original run had zero human reviews or stronger-model comparison. See the separate completed supplement above; historical results remain unchanged. Output signature, not internal mechanism or specialized-model disadvantage.|
 |[Six-way answer interfaces](research/qa4pc-answer-interface/RESULTS.md)|162 Jev requests,162 Qwen prefills,324 Qwen generations. Across six repeated mappings: native 101/144, finite 85/144, generated letters 89/144, generated semantics 87/144. Five finite ties; zero generated invalids. All 162 paired letter first-logit vectors agree exactly.|12 new trees /24 scenarios, zero human labels. Semantic consistency improves but mean agreement does not. Finite/generated-letter differences are tie handling. Four-vote aggregation costs six calls. No stronger-model, matched-budget or specialization conclusion.|
 |[QA4PC amended stage attribution](research/qa4pc-stage-attribution/CONTINUATION_RESULTS.md)|262 Jev requests and 262 Qwen prefills. Jev G 20/24 both mappings, F 19/24 and 20/24. Qwen G 14/24 and 16/24, F 12/24 and 14/24; direct D 13/24 and 19/24. Ten Qwen main ties.|12 trees /24 scenarios, zero new human labels. Outcome-aware semantic-gate amendment preserves original stop. F uses 2.33x G calls without consistent gain. Mapping/readout sensitivity, label assistance and absence of stronger/generated-label controls limit model claims.|
 |[Single-prefill Qwen control](research/finite-choice-readout/RESULTS.md)|8 smoke +48 main physical forwards; 14,448 input and zero generated tokens; 10.672 session seconds. Source agreement 13/24 and 10/24, pairs 3/12 and 2/12; one exact tie invalid.|Same inspected 24 ShARC inputs, zero new human reviews. Prompt/verbalizer/readout change together. No consistent gain over JSON or copy-last; different sessions prevent controlled speedup claims. Closed without prompt search.|
@@ -89,6 +98,26 @@ final extraction and accounting, including one predeclared JSON-fence case.
 It does not add ShARC predictions, independent labels or a capability ranking.
 
 ## Analyses of saved outputs and software checks
+
+The [confidence-boundary recheck](research/series-closeout/confidence_report.json)
+is an offline post hoc calculation on the original 216 main Jev direction
+decisions. An inclusive decimal 0.99 cutoff retains 173 decisions with nine
+errors; a supplied draft's binary-float-to-Fraction comparison omitted 45
+boundary records and reported 128/0. Raw runs and original scores are unchanged.
+This does not calibrate a threshold or adopt the rest of that retrospective patch.
+
+The [relation-loss feasibility screen](research/topic-screen-2026-10-05/README.md)
+found insufficient evidence for the proposed real-interface mechanism. The
+[twelve-pair operational screen](research/intent-retry-pilot/cohort-screen/README.md)
+yielded seven controls, two pending contracts, three exclusions and no accepted
+substantive comparison item. Neither screen adds model observations.
+
+The [ToolTalk receiver-check reproduction](research/intent-retry-pilot/TOOLTALK_CHECKER_AUDIT.md)
+uses five controlled software cases. The [AgentAbstain atomicity reproduction
+and repair](research/intent-retry-pilot/cohort-screen/atomicity-repro/README.md)
+retains 32 local tool calls across attempts and corrections on one fixture,
+with zero model calls. They establish limited implementation defects and local
+repairs, not benchmark-wide score effects, new reasoning methods or upstream acceptance.
 
 The [QA4PC structural audit](research/qa4pc-audit/README.md) covers 437 development
 scenarios and 1,600 question rows. Of these, 429 have complete graphs and reproduce

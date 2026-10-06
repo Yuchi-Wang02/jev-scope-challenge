@@ -1,0 +1,309 @@
+{
+  "created_at_utc": "2026-10-05T04:19:33.600539+00:00",
+  "scope": "Six papers, two research pipelines and pinned tau2 case source definitions. Primary-source retrieval is not model inference.",
+  "retrievals": [
+    {
+      "key": "papers/2606.30531v1.html",
+      "url": "https://arxiv.org/html/2606.30531v1",
+      "resolved_url": "https://arxiv.org/html/2606.30531v1",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.430437+00:00",
+      "sha256": "49a03d2ae1083c327b983e3aa411b17926ce4ef53a02aa48f5db6a0574c066b7",
+      "bytes": 238532
+    },
+    {
+      "key": "papers/2605.11039v1.html",
+      "url": "https://arxiv.org/html/2605.11039v1",
+      "resolved_url": "https://arxiv.org/html/2605.11039v1",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.430196+00:00",
+      "sha256": "b1833b39309914568a2f7b79608672ff2f3d93dbe0a505d9602b0cdacbb66aec",
+      "bytes": 391159
+    },
+    {
+      "key": "papers/2607.20827v1.html",
+      "url": "https://arxiv.org/html/2607.20827v1",
+      "resolved_url": "https://arxiv.org/html/2607.20827v1",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.430736+00:00",
+      "sha256": "3876e629436b312256b16bdf3f8973257a2d28bacbaf64a3f61698233d2e9a32",
+      "bytes": 565831
+    },
+    {
+      "key": "papers/2511.08798v2.html",
+      "url": "https://arxiv.org/html/2511.08798v2",
+      "resolved_url": "https://arxiv.org/html/2511.08798v2",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.431043+00:00",
+      "sha256": "71094887e25ce4da9fa4c1e32d05be8554cb73948fc6367aa56089e2ee191a66",
+      "bytes": 918872
+    },
+    {
+      "key": "papers/2503.22674v2.html",
+      "url": "https://arxiv.org/html/2503.22674v2",
+      "resolved_url": "https://arxiv.org/html/2503.22674v2",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.431279+00:00",
+      "sha256": "05abf2824984c7070463cfc4aaf4f5790ef20b808166fe7e1eaa3fe56ee4c631",
+      "bytes": 1085358
+    },
+    {
+      "key": "papers/hf-2606.30531.md",
+      "url": "https://huggingface.co/papers/2606.30531.md",
+      "status": "unavailable",
+      "retrieved_at_utc": "2026-10-05T04:03:31.522154+00:00",
+      "error": "404 Client Error: Not Found for url: https://huggingface.co/papers/2606.30531.md"
+    },
+    {
+      "key": "papers/ijcai2025-0516.pdf",
+      "url": "https://www.ijcai.org/proceedings/2025/0516.pdf",
+      "resolved_url": "https://www.ijcai.org/proceedings/2025/0516.pdf",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.743707+00:00",
+      "sha256": "758fa1ec10bd6d07f4e28aa76e943c3bcbd8db5cb02e1fdb239d5cac3c1b3354",
+      "bytes": 490034
+    },
+    {
+      "key": "entity-tree.json",
+      "url": "https://api.github.com/repos/R-Suresh/EntityBindingFailures/git/trees/af311d10f52680576d83cdaf3d05d5b090445de4?recursive=1",
+      "resolved_url": "https://api.github.com/repos/R-Suresh/EntityBindingFailures/git/trees/af311d10f52680576d83cdaf3d05d5b090445de4?recursive=1",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.759752+00:00",
+      "sha256": "98447e6aed1086fc5aa2e6d3adb674e6d41ee00190e12b2bcfb88e9a9ed000f7",
+      "bytes": 10294
+    },
+    {
+      "key": "tau-tree.json",
+      "url": "https://api.github.com/repos/sierra-research/tau2-bench/git/trees/5bfa7e37b36656b37dc6d022156be6563c1007f3?recursive=1",
+      "resolved_url": "https://api.github.com/repos/sierra-research/tau2-bench/git/trees/5bfa7e37b36656b37dc6d022156be6563c1007f3?recursive=1",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:03:31.769730+00:00",
+      "sha256": "b79b963aae9f09d72419451c3b1fff1297c94e3764d11da6db5f229123074957",
+      "bytes": 504205
+    },
+    {
+      "key": "entity/code/run_entity_binding_experiment.py",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/code/run_entity_binding_experiment.py",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/code/run_entity_binding_experiment.py",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.121130+00:00",
+      "sha256": "8bd8172f9683cf283e6c67fed08b26d0377dfb8b8e61fb0a1d708d8190d8f83a",
+      "bytes": 8426
+    },
+    {
+      "key": "entity/docs/methods.md",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/docs/methods.md",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/docs/methods.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.121363+00:00",
+      "sha256": "d183df28874c82cce4138191bacd871c9d1464b0bfe050e73fefd60acbcc7c48",
+      "bytes": 2256
+    },
+    {
+      "key": "entity/docs/schema.md",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/docs/schema.md",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/docs/schema.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.121826+00:00",
+      "sha256": "282931ec89f04888adf7e9371378afd038ecffcff2b0c8d953b721e7efd72800",
+      "bytes": 2848
+    },
+    {
+      "key": "entity/LICENSE",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/LICENSE",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.122092+00:00",
+      "sha256": "5b97e9827d5527fff37235915a0f79c02faeced36d53c620adc5be2f952e2415",
+      "bytes": 1091
+    },
+    {
+      "key": "entity/LICENSE-DATA.md",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/LICENSE-DATA.md",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/LICENSE-DATA.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.122376+00:00",
+      "sha256": "c2448aa1238110e0aa7cbc0977b54a80e9fff34a1722ecf00751f4786a5f019e",
+      "bytes": 599
+    },
+    {
+      "key": "entity/README.md",
+      "url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/README.md",
+      "resolved_url": "https://raw.githubusercontent.com/R-Suresh/EntityBindingFailures/af311d10f52680576d83cdaf3d05d5b090445de4/README.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.225954+00:00",
+      "sha256": "73133e70bf944718e6f97152b6f3948f02c4e5a83d539b813df1fcddc4beff70",
+      "bytes": 4636
+    },
+    {
+      "key": "tau/data/tau2/domains/retail/db.json",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/db.json",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/db.json",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.229416+00:00",
+      "sha256": "413a65160adbdb5fde0ffc0015c49b6d70250b10c18128de169b597af7766765",
+      "bytes": 2811616
+    },
+    {
+      "key": "tau/data/tau2/domains/retail/policy.md",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/policy.md",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/policy.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.252642+00:00",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467",
+      "bytes": 6699
+    },
+    {
+      "key": "tau/data/tau2/domains/retail/tasks.json",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/tasks.json",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/retail/tasks.json",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.304601+00:00",
+      "sha256": "8e03ebce7901bd6218e7a7dc3105faa9324091a68058f7fe61c65262868812e8",
+      "bytes": 345982
+    },
+    {
+      "key": "tau/src/tau2/domains/retail/data_model.py",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/retail/data_model.py",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/retail/data_model.py",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.328467+00:00",
+      "sha256": "f5ad09590953855cc49d2ab2ad5c0594be408cae74d1500fb278e5a6bf2c50d6",
+      "bytes": 8799
+    },
+    {
+      "key": "tau/src/tau2/domains/retail/tools.py",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/retail/tools.py",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/retail/tools.py",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.335606+00:00",
+      "sha256": "34f4fe9702d36f0dd4697700fbcd63d0cf5386e6eb8e7499aaa336243bad8750",
+      "bytes": 29202
+    },
+    {
+      "key": "tau/data/tau2/domains/airline/db.json",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/db.json",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/db.json",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.348170+00:00",
+      "sha256": "1af9fea6e03ca7ca15a22bb3fcaf3e351393e3fc9070b6777947da8996f7531b",
+      "bytes": 7042725
+    },
+    {
+      "key": "tau/data/tau2/domains/airline/policy.md",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/policy.md",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/policy.md",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.406100+00:00",
+      "sha256": "10dc0525421521208be39cee235bba84a16e2bcba9899eb93d92cd81d2f62fc4",
+      "bytes": 7676
+    },
+    {
+      "key": "tau/data/tau2/domains/airline/tasks.json",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/tasks.json",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/data/tau2/domains/airline/tasks.json",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.410562+00:00",
+      "sha256": "ccd8ba737b4cc371415af70151187788f728d6108d0916e73bb4317b40542052",
+      "bytes": 155528
+    },
+    {
+      "key": "tau/src/tau2/domains/airline/data_model.py",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/airline/data_model.py",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/airline/data_model.py",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.415138+00:00",
+      "sha256": "a8083e2f590e4b9b66a65d7cd50b7a0247e4fa33d6961aaeb02e4d92488b3cff",
+      "bytes": 10402
+    },
+    {
+      "key": "tau/src/tau2/domains/airline/tools.py",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/airline/tools.py",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/src/tau2/domains/airline/tools.py",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.471827+00:00",
+      "sha256": "3987f21c286314cb48764f97052934ff4fd60e27a0b2e4a43423911adf8eaa26",
+      "bytes": 28123
+    },
+    {
+      "key": "tau/LICENSE",
+      "url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/sierra-research/tau2-bench/5bfa7e37b36656b37dc6d022156be6563c1007f3/LICENSE",
+      "status": "downloaded",
+      "retrieved_at_utc": "2026-10-05T04:04:20.552758+00:00",
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+      "bytes": 1072
+    }
+  ],
+  "own_repository_sources": [
+    {
+      "path": "research/qa4pc-stage-attribution/plan.py",
+      "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "sha256": "7f6159150553ca1f2146e26c3070c86646fdd818bbe08e7f885974b0a3667983"
+    },
+    {
+      "path": "research/qa4pc-stage-attribution/runner.py",
+      "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "sha256": "5448831aab27503a8f6ae8a9b4a643ea1399059212bf8c914c94ebee22443229"
+    },
+    {
+      "path": "research/qa4pc-stage-attribution/analyze.py",
+      "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "sha256": "c394af5347542faef0d36bb9a0d4ca624a062ab961ebef1909cde03aa0d98699"
+    },
+    {
+      "path": "research/qa4pc-audit/audit.py",
+      "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "sha256": "dcf320e89986456b0475a46f4f044d4b01bcd8c3d6e993d6cd4bfa873c57a130"
+    },
+    {
+      "path": "research/baseline-readiness/local_inventory.py",
+      "revision": "022950f6dd6c6b1f9d1758293b8a9ba8f3fafeda",
+      "sha256": "3b7fe87ec373d2997e18f66cde0fa5fb772bc779d9ac640b89ab2a90f7848c71"
+    }
+  ],
+  "distributed_artifacts": [
+    {
+      "path": "case_packet.json",
+      "sha256": "937a2b9071d24e7cc7cf8c2f48d5cffb2cb14dd90a537c43e073ad117664970d",
+      "bytes": 357632
+    },
+    {
+      "path": "retail_policy.source.md",
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467",
+      "bytes": 6699
+    },
+    {
+      "path": "airline_policy.source.md",
+      "sha256": "10dc0525421521208be39cee235bba84a16e2bcba9899eb93d92cd81d2f62fc4",
+      "bytes": 7676
+    },
+    {
+      "path": "TAU_LICENSE",
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+      "bytes": 1072
+    },
+    {
+      "path": "screen_spec.json",
+      "sha256": "ac4d4e8b99f023391cfefe4cdeb29951bc851c31005d183ba046be8b0732bfdc",
+      "bytes": 2239
+    },
+    {
+      "path": "resource_snapshot.json",
+      "sha256": "95e14ca87391fad9447ca7322e76d82282248f8d6fb88bd285a7bdc9309beec5",
+      "bytes": 8169
+    },
+    {
+      "path": "paper_traces.json",
+      "sha256": "35c58e2a3c5e4271b965b07d8782ab323601a92080dc72d1ffaae94a672cdf7a",
+      "bytes": 2389
+    }
+  ],
+  "attribution": {
+    "case_source": "Sierra Research tau2-bench",
+    "revision": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "license": "MIT; included unchanged as TAU_LICENSE",
+    "modifications": "Subset and analyst metadata only; complete selected task and record objects preserved. Policies and notice byte-preserved.",
+    "external_research_code": "Inspected in ignored cache, not incorporated, executed, forked or published. EntityBindingFailures code and data licenses are distinct."
+  }
+}

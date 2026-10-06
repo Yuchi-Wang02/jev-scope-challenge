@@ -1,0 +1,65 @@
+[
+  {
+    "item_id": "seed-001",
+    "parent_domain": "purchase",
+    "label": "RESUME_EXISTING",
+    "desired_total": 1,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-002",
+    "parent_domain": "purchase",
+    "label": "START_ADDITIONAL",
+    "desired_total": 2,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-003",
+    "parent_domain": "purchase",
+    "label": "CLARIFY",
+    "desired_total": null,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-004",
+    "parent_domain": "message",
+    "label": "RESUME_EXISTING",
+    "desired_total": 1,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-005",
+    "parent_domain": "message",
+    "label": "START_ADDITIONAL",
+    "desired_total": 2,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-006",
+    "parent_domain": "message",
+    "label": "CLARIFY",
+    "desired_total": null,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-007",
+    "parent_domain": "job",
+    "label": "RESUME_EXISTING",
+    "desired_total": 1,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-008",
+    "parent_domain": "job",
+    "label": "START_ADDITIONAL",
+    "desired_total": 2,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  },
+  {
+    "item_id": "seed-009",
+    "parent_domain": "job",
+    "label": "CLARIFY",
+    "desired_total": null,
+    "provenance": "AI-authored illustrative seed; no independent human review"
+  }
+]

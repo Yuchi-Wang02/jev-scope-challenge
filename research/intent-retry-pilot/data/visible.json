@@ -1,0 +1,2186 @@
+[
+  {
+    "item_id": "i-42b7879f816b",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Keep the order I already placed; don't place a second one."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-8b05286b5193",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "I just need confirmation of the notebook purchase you completed, nothing else."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-b275212aad5d",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Keep that order, and place another identical order. I'll use the second notebook as a gift."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-db22175df75c",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "I'd like a second notebook delivered to me as well; leave the completed purchase in place."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-3b5e483e20ce",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Pause before doing anything else. I need to decide whether I want an extra notebook."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-45fcf8fabc08",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one blue notebook and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Hold off on any more ordering until I tell you whether I need a second copy."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-001",
+        "payload": {
+          "tool": "place_order",
+          "product": "blue notebook",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-001",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-91e3836ff883",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Sort out the mug order that timed out; I don't want an extra mug if it already went through."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-b9d2a04318b5",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Please finish that original purchase. A duplicate would leave me with a mug I didn't ask for."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-c8a215160236",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Finish the purchase that timed out and place a separate identical one too; I need a mug for each of us."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-5f6c2c399c84",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Whether or not the first request went through, make sure I receive two mugs, using that purchase and one more."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-436a86cc864e",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, go ahead with that."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-4c15e661fa86",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one black mug and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "That sounds fine; please proceed."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-002",
+        "payload": {
+          "tool": "place_order",
+          "product": "black mug",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-deadd637e93d",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "About yesterday's folder: I'm checking the original order, not requesting another."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-7e354138d8cc",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Can you bring back the confirmation for that completed folder purchase? Keep the quantity I originally wanted."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-6a60d5dea1e3",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "The first folder order should stay as it is. Order an identical one for my other course too."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-9d5053c0049c",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "I need a separate folder for another class now; buy the same one again in addition to yesterday's."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-9ccaa8be464b",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Let's go with that option."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-6f7a46cb75c0",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one green folder and send it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, that's what I want you to handle."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-003",
+        "payload": {
+          "tool": "place_order",
+          "product": "green folder",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-003",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-4cacbe82250a",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Try to complete the pen purchase that failed. My original request hasn't changed."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-bf315244b317",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Please recover the failed order; a single pen is still all I need."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-49876c9674b6",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Recover the failed pen order and create an additional identical order; I need one pen for each desk."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-d4280dd70bff",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original pen purchase, plus a second purchase of the same pen. Both should go to my address."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-2f88e64d6c53",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Don't retry yet. I'll tell you whether I want just that pen or another as well."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-5c2c0e791814",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Buy one red pen and ship it to my saved address."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Pause the failed purchase for now; I need to check how many pens we need."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-004",
+        "payload": {
+          "tool": "place_order",
+          "product": "red pen",
+          "quantity": 1,
+          "ship_to": "saved_address"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-4f80b11a7876",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Show me confirmation of the message you sent; don't send a fresh copy."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-3f0fe0aa2721",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "I only meant the earlier message. Please check that one, rather than messaging Alex again."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-faba470d62be",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Alex asked for the same message to appear again at the top of the inbox. Send a fresh copy as well."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-23ceb68c4f9d",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Leave the earlier message there and send Alex that exact text a second time as a reminder."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-480f6b575cfe",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Don't send anything more until I decide whether Alex needs a reminder."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-2f73c6200855",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Wait for me to confirm whether I want a second message before taking another action."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-005",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-005",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-220c3cb906b7",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Make sure the original noon message arrives, but don't send Alex two copies."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-5440b43f93be",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Please resolve the uncertain send. I intended a single notification, even if the receipt got lost."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-1e0049625777",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Ensure the original notification is delivered, then send the same text as an additional reminder. I want both messages delivered."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-ec2679f6c76c",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Complete that uncertain send and send another copy as well; Alex asked for two separate reminders."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-7b1c3f14f2c8",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Sure, do that."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-aeca538721f5",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The meeting starts at noon."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, take care of it."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-006",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The meeting starts at noon."
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-cfb75457d363",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "I am asking about the message from yesterday. Please retrieve its confirmation without sending it again."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-254d96caea69",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "No new reminder is needed; I just want the receipt for the draft message already delivered."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-5329ca607844",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Yesterday's message was delivered, but Alex asked me to bump it today. Send the identical text again."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-4206f3c663a1",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Send Alex a fresh reminder using yesterday's exact text. The earlier delivered message should remain."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-c49cc93dd0cc",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "That's the one; go ahead."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-a31b09933a2a",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: Please review the draft."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Please proceed with that."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-007",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "Please review the draft."
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-007",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-1e230b31d2c4",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Send the notification that failed. I still want only the original message delivered."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-7f0d1dbc230c",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Recover the failed send without turning it into multiple notifications."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-a379baab9a30",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Get the original room notification delivered, then send an identical reminder too. Alex requested both."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-dd0a07aea987",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Complete the failed message and send a second identical message as well; keep these as two notifications."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-e0c1d27a7bc6",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Please wait before retrying. I'm checking whether Alex wants a reminder as well."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-c10e3b8880d4",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message: The room is available."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Hold all further sends until I confirm whether I need one notification or two."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-008",
+        "payload": {
+          "tool": "send_message",
+          "to": "alex@example.test",
+          "body": "The room is available."
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-fd0bcd8ea832",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Return the submitted job's receipt; I don't need a second run."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-1c58d00fec1d",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Keep the render job already submitted. I'm checking its status, not asking for another submission."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-8d5b718986d2",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Keep that submitted job and launch a separate identical run so I can compare the two outputs."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-051311500311",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "I need an independent repeat using the same scene and settings, in addition to the run already submitted."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-e7861e6d4613",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Don't launch anything else yet. I need to decide whether an independent repeat is useful."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-e119f6593992",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed; its receipt is recorded."
+        },
+        {
+          "role": "user",
+          "content": "Pause further submissions while I check whether I need a second run."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-009",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-17",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-009",
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-7a38ea1540ae",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Recover that job submission if necessary; don't launch a duplicate if the first one exists."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-6844bd0010e1",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "I only requested one run. Resolve the uncertain submission under the original request."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-c1faebf752f7",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Ensure the original job is submitted and launch a second identical job. I want two independent runs to compare."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-e50fa06ddf9f",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Regardless of the uncertain receipt, arrange the original run plus a separate repeat with the same settings."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-566e38e82b54",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Go ahead with that approach."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-95fa12e0e4e9",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-23 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool timed out without a receipt. The operation may or may not have completed. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, please do that."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-010",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-23",
+          "settings": "saved_settings"
+        },
+        "status": "UNKNOWN",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-0ce4fece8c15",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "For yesterday's render, I just want its submission receipt; no additional compute is needed."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-a37d0f098efc",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Look up the original job I submitted yesterday. Don't submit a new run."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-d54967873702",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Keep yesterday's job and launch another run with identical inputs for the repeatability check."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-b1cb9c08ebb1",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Submit an independent repetition of yesterday's render as well; I need both runs in the comparison."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-8dfeb340f916",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "Okay, use that option."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-7d36272bf0e0",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-31 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The operation completed yesterday; its receipt is recorded. I can confirm or recover the earlier operation alone, or arrange that operation plus an identical additional one. Which scope do you want?"
+        },
+        {
+          "role": "user",
+          "content": "That's fine; proceed with it."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-011",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-31",
+          "settings": "saved_settings"
+        },
+        "status": "COMMITTED",
+        "receipt": "receipt-011",
+        "elapsed_since_request": "one day"
+      }
+    }
+  },
+  {
+    "item_id": "i-f447e6b29adb",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Retry the submission that failed; a single run is still the plan."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-03b914568244",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Get the original render job submitted. I haven't requested any additional runs."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-42f2fc47a0c0",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Recover the failed submission and also submit an identical second job for an independent repetition."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-9954d93a72aa",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "I now need the original render plus one separate run with the same settings. Submit both."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-f162b8f96f20",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Hold the retry until I decide whether this experiment needs one run or two."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  },
+  {
+    "item_id": "i-76c2b0494ec2",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-42 using the saved render settings."
+        },
+        {
+          "role": "assistant",
+          "content": "The tool reported failure before execution. No effect was created."
+        },
+        {
+          "role": "user",
+          "content": "Don't submit further jobs yet; I'll confirm whether to include a repeat."
+        }
+      ],
+      "existing_operation": {
+        "handle": "operation-012",
+        "payload": {
+          "tool": "submit_render",
+          "scene": "scene-42",
+          "settings": "saved_settings"
+        },
+        "status": "FAILED_BEFORE_EFFECT",
+        "receipt": null,
+        "elapsed_since_request": "one minute"
+      }
+    }
+  }
+]

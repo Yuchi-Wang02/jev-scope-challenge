@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-10-06T01:24:32.672614+00:00",
+  "phase": "free input-token preparation only",
+  "completed_counts": 121,
+  "http_attempts": 122,
+  "last_status": 429,
+  "reason": "HTTP429 stopped initial token-count preparation; no model generations",
+  "change": "Explicit one-time continuation after rate limit; preserve earlier records, reuse successful counts, pace remaining calls at 2 seconds; a further error stops without retry",
+  "model_generations": 0
+}

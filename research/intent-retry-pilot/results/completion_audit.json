@@ -1,0 +1,96 @@
+{
+  "captured_at_utc": "2026-10-06T00:12:28.234649+00:00",
+  "stage": "Jev exploratory arm completed; broader research comparison incomplete",
+  "verified": {
+    "primary_terminal": 144,
+    "smoke_terminal": 3,
+    "retries": 0,
+    "clear_reference_matches": 96,
+    "clear_decisions": 96,
+    "explicit_deferral_matches": 24,
+    "explicit_deferral_decisions": 24,
+    "unresolved_reference_matches": 2,
+    "unresolved_reference_decisions": 24,
+    "two_order_disagreements": 0,
+    "independent_human_reviews": 0,
+    "ordinary_capable_model_runs": 0
+  },
+  "independent_ai_recount": "Second AI checked raw native choices, request mappings, version, accounting, frozen hashes; not a human review",
+  "remaining": [
+    "Independent interpretation and naturalness evidence",
+    "Capable ordinary-model comparison before specialized-vs-general claims",
+    "Distinct method and fresh data only if evidence justifies them"
+  ],
+  "sha256": {
+    "freeze.json": "09c59f4e7d6a70f037f8746e51110166f29d0121495cc7439dc7f7d048ca876d",
+    "results/jev_attempts.jsonl": "919ad72ee3b3075a8cb653cc48830f6c606931f2bae12a92629aed3a31903b70",
+    "results/jev_responses.jsonl": "26f6550ad67a8a8a238563cb4ef56702132b2c28647da35d2291695f535e2e02",
+    "results/analysis.json": "4f671b4b911d3719da36e45831e90e3ae5f414cfcc77b56c3f18d83ae9513fa5",
+    "RESULTS.md": "e8c0ea63f7b108953e861c0c7a639153d2f164125816418fdffad3cd92b12d13",
+    "README.md": "76d8b2ff25d068678ff1508f41110331163dfde3d3efd66360213ad2d07a56de",
+    "PRIOR_ART_CHECK.md": "8face1194d6caa966090df0c9ff5a604d8f310e24858ba61397a0d81802bc834",
+    "SOURCE_SCREEN_DECISION.md": "7a3ea44631eb98485897c2a5c15e2746287855ed7bde9f8cf3d85758ac83c3e6",
+    "NATURAL_INCIDENT_SCREEN.md": "b990029b6f0337983dbca1e8fcdbde51188e8dbaf2dc77f471774b79c37080d3",
+    "DIALOGUE_SOURCE_SCREEN.md": "154adcae6bc23ee6a5eab5ee6d554e9663fc567bb1ff157a62c5b5efad4e19db",
+    "AGENTABSTAIN_FEASIBILITY.md": "2f130b1a22a23eaea019e80b33e683b0459bbb94a88af82a2423b3825b2316f4",
+    "TOOLTALK_CHECKER_AUDIT.md": "07ef168ac0919a6e6b9c4e2627a6c81f4771bcc8413f7b37e8c14dd3aff30ff1",
+    "TOOLTALK_CALL_PATH.md": "c9e374f6c6ab7af37af3ad09e3840248982fc19986d78ac8da8f0a6a97e3d3fb",
+    "tooltalk_checker_repro.py": "d30b1815d6391a0e45067d4ed532141e98acb0b7b2a62a2d94da16ee4f426b77",
+    "tooltalk_receiver_fix.patch": "033429d6079581d867e2b828509012f72489d7c4ce96661ec58d22f61534a881",
+    "audit_sources/tooltalk_message.py": "8cad12aec95c6befd7aefe0f938918d42a3b2d642eaedd8e142a3993db8118b8",
+    "audit_sources/TOOLTALK_LICENSE": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "results/tooltalk_checker_repro.json": "6e0ff4114cb041c9bd807bf0a0d547b1ad7c8f33dc63fd325f4b8d7348d984cb"
+  },
+  "source_screen_follow_up": {
+    "captured_at_utc": "2026-10-06T00:30:46.825609+00:00",
+    "scope": "bounded source screen and isolated checker reproduction",
+    "previous_completed_pilot_readme_sha256": "c2ae50a5eb81a7ce8ac2c18dfbbc4edb35c360c48b5efc743be47c4854af98b4",
+    "pilot_freeze_hashes_unchanged": 12,
+    "new_model_calls": 0,
+    "full_upstream_runtime_executions": 0,
+    "isolated_checker_cases": 5,
+    "independent_human_reviews_added": 0,
+    "forks_commits_pushes_upstream_messages": 0,
+    "decision": "Park retry/new-intent expansion; retain bounded checker repair; design source-native marginal-value comparison",
+    "next_experiment_state": "design only; original-runtime integration and comparative model arms not executed"
+  },
+  "integration_follow_up": {
+    "captured_at_utc": "2026-10-06T00:44:40.272045+00:00",
+    "audit": "integration/completion_audit.json",
+    "audit_sha256": "03a69f2240695d0216814df4ed0a36ce1de04d78613f8aac363bc8f3849f3ac3",
+    "status": "completed within declared scope",
+    "new_model_calls": 0,
+    "task_tool_attempts": 6,
+    "cancellation_attempts": 0
+  },
+  "cohort_screen_follow_up": {
+    "captured_at_utc": "2026-10-06T01:33:41.861500+00:00",
+    "audit": "cohort-screen/completion_audit.json",
+    "audit_sha256": "4e438139dfcbd97ffcc731d3acd45490279bc6d5ae8ceb306951cf399c91e53e",
+    "source_pairs": 12,
+    "decision_counts": {
+      "CONTROL": 7,
+      "PENDING": 2,
+      "EXCLUDE": 3,
+      "INCLUDE": 0
+    },
+    "new_model_calls": 0,
+    "local_tool_attempts_including_retained_corrections": 32,
+    "derivative_fix_local_cases_passed": 5,
+    "full_portable_derivative_replay": true,
+    "decision": "Do not launch this candidate grid; retain bounded software repair and consider one low-cost rule-direction closeout arm",
+    "portable_scope": "same host/locked installed venv, bytecode-free staged source tree"
+  },
+  "capability_reference_closeout": {
+    "captured_at_utc": "2026-10-06T02:36:15.561754+00:00",
+    "results": "../../rule-direction/capable-reference/RESULTS.md",
+    "scope": "222 completed Sonnet requests on rule-direction only; no new intent-retry model arm",
+    "strict_main_correct_by_mapping": [
+      107,
+      108
+    ],
+    "denominator_each": 108,
+    "invalid_outputs": 1,
+    "nominal_usd": 0.129346
+  }
+}

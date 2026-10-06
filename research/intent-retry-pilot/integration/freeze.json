@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-06T00:41:27.562072+00:00",
+  "stage": "before first sandbox task tool call",
+  "model_calls_planned": 0,
+  "planned_task_tool_attempts": 6,
+  "planned_cancellation_attempts": 0,
+  "sha256": {
+    "PROTOCOL.md": "7476b3814846f26ef1e7562683f1a043ecc0b395c81fb890d568a956a539b039",
+    "UPSTREAM_NOTICES.md": "b550aa9b6a698e9304b9f52357f1e7404db0f22a1a720359e6ee7248b6014ae5",
+    "contract.json": "9b9e558a457ec8963478159e2e21071b7002843e049db6a7d39153fa6bf1d367",
+    "sources.json": "06add4894395896e3e01afd3fecd7cf78d1cb14900d27acacf66d15474e45bf8",
+    "requirements-lock.txt": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab",
+    "dependencies.json": "b38ddb337c72a414d733c1c3589117e5283794fa29d3f810b817a0103f1c1fa2",
+    "run_integration.py": "681ba498a1d11881673223ba568246066bb1489b38a50b50e4a54fa326a7df74",
+    "gate.py": "04b1df651e632396c0ce2b94a015ae1215d716f3d0997cc41a5eff45518469d6",
+    "test_gate.py": "416df9fc0fb82e7438ceaf08e6c04fa69063340e09818115fbf7de765bb78928"
+  }
+}

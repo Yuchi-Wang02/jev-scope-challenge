@@ -1,0 +1,51 @@
+[
+  {
+    "file": "upstream/dataset/environments/personal_profile_and_contacts/__init__.py",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/environments/personal_profile_and_contacts/environment.py",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/environment.py",
+    "sha256": "f9c6eb9dd79776e7405baed84a170bd7978682c1d7c01b023d4d53112f18cb15",
+    "bytes": 8676,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/environments/personal_profile_and_contacts/schema.py",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/schema.py",
+    "sha256": "c2b02ca2e528e85a21fce0e9d7a1faacb6c5b42a7389a1350e5c87dfb96448b9",
+    "bytes": 991,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/task.yaml",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/abstain/task.yaml",
+    "sha256": "79555e1d1e5b8156d2c3646c276aa8f74328dede11cd41f3a2d279f05cf950cf",
+    "bytes": 1598,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/initial_state.json",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/abstain/initial_states/personal_profile_and_contacts.json",
+    "sha256": "59119c536a5e4fb5fc8575e30bd7381ffc5fb3a9221443f1c00db3abbfe4c103",
+    "bytes": 760,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/commit_check.py",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/eval/evaluators/commit_check.py",
+    "sha256": "bcf03d9c7323af1d0b2592f0c3853a5abc2916d15d6a72c641b3e564a4489c24",
+    "bytes": 2114,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/LICENSE",
+    "sha256": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91",
+    "bytes": 1081,
+    "license": "MIT"
+  }
+]

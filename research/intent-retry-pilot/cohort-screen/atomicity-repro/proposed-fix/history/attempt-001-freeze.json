@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-06T01:04:34.214196+00:00",
+  "phase": "before first proposed-fix regression execution",
+  "planned_resets": 5,
+  "planned_tool_attempts": 8,
+  "planned_expected_tool_errors": 2,
+  "planned_model_calls": 0,
+  "derivative_not_upstream": true,
+  "sha256": {
+    "ATTRIBUTION.md": "d01cbd92af9021027162b8aa211d05c2896bc58fd9100856c208180fb398976b",
+    "cases.json": "70b5e61951c75226cf36f4bdf3e9259f8c5a55ccd1162dad44e7a208f60606f8",
+    "derivative/dataset/environments/personal_profile_and_contacts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "derivative/dataset/environments/personal_profile_and_contacts/environment.py": "436d3030619429a2cd02e63a3db159fc699a870f0a9c8bf96558426cc8a02622",
+    "derivative/dataset/environments/personal_profile_and_contacts/schema.py": "c2b02ca2e528e85a21fce0e9d7a1faacb6c5b42a7389a1350e5c87dfb96448b9",
+    "LICENSE-MIT": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91",
+    "preserved-original-files.json": "fc0da89d3b8a03b0cff235ab5becec61498af8f4ca125f7d906e39e4d968d4c8",
+    "PROTOCOL.md": "fca8e125ade0b67caf47150392d9c8e3b4b8f42734446d9aef9c134a946def0f",
+    "regress.py": "e7e18c679bec015e8c5eda42d75e59158cde7ffbb0525da1fc206a32d498050a",
+    "requirements-lock.txt": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab",
+    "validate-before-mutate.patch": "4ddd9f89831cef67bf1a8112b884a8f752aa740addc8aab9f5cc1e7182b03039"
+  }
+}

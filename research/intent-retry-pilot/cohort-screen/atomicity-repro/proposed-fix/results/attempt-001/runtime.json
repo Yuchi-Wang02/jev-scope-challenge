@@ -1,0 +1,351 @@
+{
+  "python_version": "3.13.5",
+  "python_implementation": "CPython",
+  "packages": [
+    {
+      "name": "aiofile",
+      "expected_version": "3.12.3",
+      "installed_version": "3.12.3"
+    },
+    {
+      "name": "annotated-types",
+      "expected_version": "0.8.0",
+      "installed_version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "expected_version": "4.15.1",
+      "installed_version": "4.15.1"
+    },
+    {
+      "name": "attrs",
+      "expected_version": "26.1.0",
+      "installed_version": "26.1.0"
+    },
+    {
+      "name": "Authlib",
+      "expected_version": "1.8.0",
+      "installed_version": "1.8.0"
+    },
+    {
+      "name": "beartype",
+      "expected_version": "0.22.9",
+      "installed_version": "0.22.9"
+    },
+    {
+      "name": "cachetools",
+      "expected_version": "7.2.1",
+      "installed_version": "7.2.1"
+    },
+    {
+      "name": "caio",
+      "expected_version": "0.12.9",
+      "installed_version": "0.12.9"
+    },
+    {
+      "name": "cffi",
+      "expected_version": "2.1.1",
+      "installed_version": "2.1.1"
+    },
+    {
+      "name": "click",
+      "expected_version": "8.5.0",
+      "installed_version": "8.5.0"
+    },
+    {
+      "name": "cryptography",
+      "expected_version": "50.0.2",
+      "installed_version": "50.0.2"
+    },
+    {
+      "name": "cyclopts",
+      "expected_version": "5.1.1",
+      "installed_version": "5.1.1"
+    },
+    {
+      "name": "dnspython",
+      "expected_version": "2.8.0",
+      "installed_version": "2.8.0"
+    },
+    {
+      "name": "docstring_parser",
+      "expected_version": "0.18.0",
+      "installed_version": "0.18.0"
+    },
+    {
+      "name": "email-validator",
+      "expected_version": "2.3.0",
+      "installed_version": "2.3.0"
+    },
+    {
+      "name": "exceptiongroup",
+      "expected_version": "1.3.1",
+      "installed_version": "1.3.1"
+    },
+    {
+      "name": "fastmcp",
+      "expected_version": "4.0.11",
+      "installed_version": "4.0.11"
+    },
+    {
+      "name": "fastmcp-slim",
+      "expected_version": "4.0.11",
+      "installed_version": "4.0.11"
+    },
+    {
+      "name": "griffelib",
+      "expected_version": "2.3.0",
+      "installed_version": "2.3.0"
+    },
+    {
+      "name": "h11",
+      "expected_version": "0.16.0",
+      "installed_version": "0.16.0"
+    },
+    {
+      "name": "httpcore2",
+      "expected_version": "2.13.1",
+      "installed_version": "2.13.1"
+    },
+    {
+      "name": "httpx2",
+      "expected_version": "2.13.1",
+      "installed_version": "2.13.1"
+    },
+    {
+      "name": "idna",
+      "expected_version": "3.20",
+      "installed_version": "3.20"
+    },
+    {
+      "name": "jaraco.classes",
+      "expected_version": "3.4.0",
+      "installed_version": "3.4.0"
+    },
+    {
+      "name": "jaraco.context",
+      "expected_version": "6.1.2",
+      "installed_version": "6.1.2"
+    },
+    {
+      "name": "jaraco.functools",
+      "expected_version": "4.6.0",
+      "installed_version": "4.6.0"
+    },
+    {
+      "name": "joserfc",
+      "expected_version": "1.7.5",
+      "installed_version": "1.7.5"
+    },
+    {
+      "name": "jsonref",
+      "expected_version": "1.1.0",
+      "installed_version": "1.1.0"
+    },
+    {
+      "name": "jsonschema",
+      "expected_version": "4.26.0",
+      "installed_version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-path",
+      "expected_version": "0.5.0",
+      "installed_version": "0.5.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "expected_version": "2025.9.1",
+      "installed_version": "2025.9.1"
+    },
+    {
+      "name": "keyring",
+      "expected_version": "25.7.0",
+      "installed_version": "25.7.0"
+    },
+    {
+      "name": "markdown-it-py",
+      "expected_version": "4.2.0",
+      "installed_version": "4.2.0"
+    },
+    {
+      "name": "mcp",
+      "expected_version": "2.3.0",
+      "installed_version": "2.3.0"
+    },
+    {
+      "name": "mcp-types",
+      "expected_version": "2.3.0",
+      "installed_version": "2.3.0"
+    },
+    {
+      "name": "mdurl",
+      "expected_version": "0.1.2",
+      "installed_version": "0.1.2"
+    },
+    {
+      "name": "more-itertools",
+      "expected_version": "11.1.0",
+      "installed_version": "11.1.0"
+    },
+    {
+      "name": "openapi-pydantic",
+      "expected_version": "0.6.0",
+      "installed_version": "0.6.0"
+    },
+    {
+      "name": "opentelemetry-api",
+      "expected_version": "1.45.0",
+      "installed_version": "1.45.0"
+    },
+    {
+      "name": "packaging",
+      "expected_version": "26.3",
+      "installed_version": "26.3"
+    },
+    {
+      "name": "pathable",
+      "expected_version": "0.6.0",
+      "installed_version": "0.6.0"
+    },
+    {
+      "name": "platformdirs",
+      "expected_version": "4.12.3",
+      "installed_version": "4.12.3"
+    },
+    {
+      "name": "py-key-value-aio",
+      "expected_version": "0.4.6",
+      "installed_version": "0.4.6"
+    },
+    {
+      "name": "pycparser",
+      "expected_version": "3.0",
+      "installed_version": "3.0"
+    },
+    {
+      "name": "pydantic",
+      "expected_version": "2.13.5",
+      "installed_version": "2.13.5"
+    },
+    {
+      "name": "pydantic-settings",
+      "expected_version": "2.15.0",
+      "installed_version": "2.15.0"
+    },
+    {
+      "name": "pydantic_core",
+      "expected_version": "2.46.5",
+      "installed_version": "2.46.5"
+    },
+    {
+      "name": "Pygments",
+      "expected_version": "2.21.0",
+      "installed_version": "2.21.0"
+    },
+    {
+      "name": "PyJWT",
+      "expected_version": "2.15.1",
+      "installed_version": "2.15.1"
+    },
+    {
+      "name": "pyperclip",
+      "expected_version": "1.11.0",
+      "installed_version": "1.11.0"
+    },
+    {
+      "name": "python-dotenv",
+      "expected_version": "1.2.4",
+      "installed_version": "1.2.4"
+    },
+    {
+      "name": "python-multipart",
+      "expected_version": "0.0.32",
+      "installed_version": "0.0.32"
+    },
+    {
+      "name": "pywin32",
+      "expected_version": "312",
+      "installed_version": "312"
+    },
+    {
+      "name": "pywin32-ctypes",
+      "expected_version": "0.2.3",
+      "installed_version": "0.2.3"
+    },
+    {
+      "name": "PyYAML",
+      "expected_version": "6.0.3",
+      "installed_version": "6.0.3"
+    },
+    {
+      "name": "referencing",
+      "expected_version": "0.37.0",
+      "installed_version": "0.37.0"
+    },
+    {
+      "name": "rich",
+      "expected_version": "15.0.0",
+      "installed_version": "15.0.0"
+    },
+    {
+      "name": "rich-rst",
+      "expected_version": "2.2.0",
+      "installed_version": "2.2.0"
+    },
+    {
+      "name": "rpds-py",
+      "expected_version": "2026.9.1",
+      "installed_version": "2026.9.1"
+    },
+    {
+      "name": "sse-starlette",
+      "expected_version": "3.5.0",
+      "installed_version": "3.5.0"
+    },
+    {
+      "name": "starlette",
+      "expected_version": "1.7.0",
+      "installed_version": "1.7.0"
+    },
+    {
+      "name": "truststore",
+      "expected_version": "0.10.4",
+      "installed_version": "0.10.4"
+    },
+    {
+      "name": "typing-inspection",
+      "expected_version": "0.4.4",
+      "installed_version": "0.4.4"
+    },
+    {
+      "name": "typing_extensions",
+      "expected_version": "4.16.0",
+      "installed_version": "4.16.0"
+    },
+    {
+      "name": "uncalled-for",
+      "expected_version": "0.4.0",
+      "installed_version": "0.4.0"
+    },
+    {
+      "name": "uvicorn",
+      "expected_version": "0.54.0",
+      "installed_version": "0.54.0"
+    },
+    {
+      "name": "watchfiles",
+      "expected_version": "1.3.0",
+      "installed_version": "1.3.0"
+    },
+    {
+      "name": "websockets",
+      "expected_version": "17.2",
+      "installed_version": "17.2"
+    }
+  ],
+  "all_locked_versions_match": true,
+  "lock_sha256": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab",
+  "environment_source": "derivative\\dataset\\environments\\personal_profile_and_contacts\\environment.py",
+  "base_environment_source": "integration/upstream/github/abstention_factory/runtime/base.py",
+  "dispatch": "unchanged BaseEnvironment.call_tool with real FastMCP; local class dispatch, no server/transport"
+}

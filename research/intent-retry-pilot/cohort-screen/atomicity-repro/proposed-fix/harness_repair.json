@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-06T01:05:52.729164+00:00",
+  "first_attempt": "results/attempt-001",
+  "observed_tool_attempts": 4,
+  "observed_successes": 3,
+  "observed_expected_tool_errors": 1,
+  "cause": "The test equated controller and native error strings; real FastMCP adds a tool-name prefix to the controller error. The native failure, expected business error and complete unchanged state were preserved.",
+  "change": "Compare exact native error and exact FastMCP wrapper separately; retain raw strings, receipt and state assertions. No derivative environment change.",
+  "derivative_environment_sha256": "436d3030619429a2cd02e63a3db159fc699a870f0a9c8bf96558426cc8a02622",
+  "planned_next_attempt": "results/attempt-002",
+  "planned_next_tool_attempts": 8
+}

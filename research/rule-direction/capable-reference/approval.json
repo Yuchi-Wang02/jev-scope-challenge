@@ -1,0 +1,9 @@
+{
+  "status": "approved",
+  "model": "claude-sonnet-5-5",
+  "max_usd": 20,
+  "freeze_sha256": "a8208904091b9f3548e4b67bfa57489ba6a9dfab5b1e095a30448218dd9c34d4",
+  "authorization_note": "User replied 去吧 after explicit request to approve this 222-decision Sonnet 5.5 arm with a USD20 cap and zero retries.",
+  "authorized_at_utc": "2026-10-06T02:20:47.020109+00:00",
+  "user_response": "去吧"
+}

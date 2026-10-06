@@ -1,0 +1,43 @@
+{
+  "status": "isolated checker regression reproduced",
+  "upstream_commit": "e05f4ce6132c80ed33392b81535b077d56ab28fd",
+  "source_sha256": "8cad12aec95c6befd7aefe0f938918d42a3b2d642eaedd8e142a3993db8118b8",
+  "original_method_extracted_without_body_edits": true,
+  "controlled_dependency": "semantic_str_compare replaced by explicit scalar test values",
+  "full_upstream_runtime_executed": false,
+  "model_calls": 0,
+  "real_messages_sent": 0,
+  "cases": [
+    {
+      "case": "matching_recipient",
+      "controlled_message_similarity": 1.0,
+      "original_accepts": true,
+      "one_line_fix_accepts": true
+    },
+    {
+      "case": "wrong_recipient_identical_text",
+      "controlled_message_similarity": 1.0,
+      "original_accepts": true,
+      "one_line_fix_accepts": false
+    },
+    {
+      "case": "wrong_session",
+      "controlled_message_similarity": 1.0,
+      "original_accepts": false,
+      "one_line_fix_accepts": false
+    },
+    {
+      "case": "dissimilar_message",
+      "controlled_message_similarity": 0.0,
+      "original_accepts": false,
+      "one_line_fix_accepts": false
+    },
+    {
+      "case": "wrong_recipient_threshold_boundary",
+      "controlled_message_similarity": 0.8,
+      "original_accepts": true,
+      "one_line_fix_accepts": false
+    }
+  ],
+  "claim_limit": "Shows receiver validation defect conditional on similarity passing; does not quantify benchmark-score impact."
+}

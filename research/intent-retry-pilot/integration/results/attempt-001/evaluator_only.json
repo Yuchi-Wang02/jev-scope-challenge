@@ -1,0 +1,66 @@
+[
+  {
+    "record_id": "c842",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "act",
+    "stage": "before_discovery",
+    "payload_sha256": "bf8be17ac4776c4ea538640cf55f583859179d02979c2e712a8212d5fcc6ca48",
+    "proposal_origin": null
+  },
+  {
+    "record_id": "e105",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "act",
+    "stage": "after_discovery",
+    "payload_sha256": "48cdbf2fe2f433e55acedea0b57461932e8c76087c2a08ddb1a82022421f2bc1",
+    "proposal_origin": "scripted_from_discovery"
+  },
+  {
+    "record_id": "a391",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "act",
+    "stage": "after_verification",
+    "payload_sha256": "65362511139f8c218d1c198991bd1ff05b74c229ed7caf2675d2b44f93df19f8",
+    "proposal_origin": "scripted_from_discovery"
+  },
+  {
+    "record_id": "d760",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "act",
+    "stage": "after_added_profile_read",
+    "payload_sha256": "f0c9d57a1f679a46bb7affdbae503bc9f40213d89b9fa638bec86faf0907b36e",
+    "proposal_origin": "scripted_from_discovery"
+  },
+  {
+    "record_id": "f214",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "abstain",
+    "stage": "before_discovery",
+    "payload_sha256": "bf8be17ac4776c4ea538640cf55f583859179d02979c2e712a8212d5fcc6ca48",
+    "proposal_origin": null
+  },
+  {
+    "record_id": "b908",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "abstain",
+    "stage": "after_discovery",
+    "payload_sha256": "48cdbf2fe2f433e55acedea0b57461932e8c76087c2a08ddb1a82022421f2bc1",
+    "proposal_origin": "scripted_from_discovery"
+  },
+  {
+    "record_id": "g623",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "abstain",
+    "stage": "after_verification",
+    "payload_sha256": "d4f29eae1c9ea097ab501412d57b7b0050b9128dd8fd657592c2cf1e425339ba",
+    "proposal_origin": "scripted_from_discovery"
+  },
+  {
+    "record_id": "h457",
+    "parent_pair": "critical_tool_failure/preview_002",
+    "variant": "abstain",
+    "stage": "after_added_profile_read",
+    "payload_sha256": "866066be353d9a436b09b998f4e11d095bc6c2ad00b37cbfdbf9e40991bf9e56",
+    "proposal_origin": "scripted_from_discovery"
+  }
+]

@@ -4,6 +4,55 @@ This log separates completed work from research validity. Each milestone records
 the objective, actual evidence, plan-versus-reality gap, next action and public
 presentation. It does not claim a paper is ready.
 
+## 2026-10-05: author approves the diagnostics milestone release
+
+- Scope: publish the reviewed closeout package, run remote CI, check Pages and
+  create the `diagnostics-v0.2.0` milestone. [Release notes](RELEASE_NOTES.md).
+- Preparation: all 77 workflow Python commands passed locally with exact
+  dependencies; 393 unit tests, unchanged materialized files and real index.
+- Publication edits: current navigation and replay status lose their draft
+  wording. Frozen protocols, source records, results and dated audit snapshots
+  retain their historical content. This authorization adds no model experiment.
+- Evidence boundary: remote CI and Pages are verified against the actual pushed
+  commit during release execution; the local checks alone do not prove them.
+
+## 2026-10-05: prepare a reviewable closeout release
+
+- Objective: make the accumulated evidence usable and reproducible for a new
+  reader before any further model run or paper framing.
+- Deliverable: [release packet](RELEASE_CANDIDATE.md),
+  [three-model saved-result replay](docs/decision_boundary.html), and an added
+  offline CI job with no credentials, model downloads or external cache required.
+- Repair: distinguish optional source-cache provenance from actually verified
+  files; preserve captured bytes through Git instead of resealing old records.
+- Verification: the [release audit](research/series-closeout/release_audit.json)
+  records local commands, checkout representation and browser checks. Earlier
+  receipts remain historical; full remote CI and fresh Linux setup are not claimed.
+- Gap and stop: the research question remains open. This stage adds no new
+  inference, human labels, method evidence, commit, push or release.
+
+## 2026-10-05: complete the capable reference and consolidate the evidence
+
+- Objective: determine whether the original shared direction signature extends
+  to one capable ordinary model, then reconcile the series with external review.
+- Execution: user-approved frozen Sonnet arm completed 222/222 calls with zero
+  retries. Strict main results are 107/108 and 108/108; one explanation-plus-label
+  response remains invalid. All previous 84 correct controls per mapping survive.
+- Interpretation: retire this finite grid as the current main paper candidate.
+  The old Jev/nonthinking Qwen signature is preserved but cannot be generalized
+  to this reference. Unequal compute and old inputs do not identify a mechanism.
+- Correction: independent decimal reanalysis of the old Jev confidence field
+  retains 173 decisions with 9 errors at >=0.99, rather than the supplied draft's
+  128/0. No historical raw result or primary score changes.
+- Consolidation: [technical report](TECHNICAL_REPORT.md), current claims, novelty
+  and research index now include the strong reference, stopped candidates and
+  separate software repairs. The external retrospective patch was not applied.
+- Remaining gap: no new independently validated method, natural task cohort,
+  general small-model replacement boundary, paper submission or public release.
+  The later source screens supply no ready experiment to launch automatically.
+- Public state: current additions are local. Frozen studies and historical
+  replay pages retain their original scope; no commit, push or release in this stage.
+
 ## 2026-09-30: freeze and complete the rule-direction diagnostic
 
 - Objective: isolate necessary/sufficient condition interpretation under explicit

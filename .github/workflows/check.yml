@@ -77,3 +77,28 @@ jobs:
       - run: python research/rule-direction/publish.py verify
       - run: python research/source-label-screen/replay.py --verify
       - run: python replicate.py --backend qwen --phase smoke --output .local/ci-smoke --dry-run
+  verify-closeout:
+    name: Verify saved closeout evidence (no inference)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      # These checks use only the standard library and shipped records. They
+      # require no credentials, weights, Downloads archive, or external cache.
+      - run: python -B research/rule-direction/capable-reference/prepare.py verify
+      - run: python -B research/rule-direction/capable-reference/analyze.py verify
+      - run: python -B -m unittest discover -s research/rule-direction/capable-reference -p test_runner.py -v
+      - run: python -B research/series-closeout/confidence_recheck.py verify
+      - run: python -B -m unittest discover -s research/series-closeout -p test_confidence_recheck.py -v
+      - run: python -B research/series-closeout/build_replay.py verify
+      - run: python -B research/intent-retry-pilot/run_jev.py verify
+      - run: python -B research/intent-retry-pilot/verify_pilot.py
+      - run: python -B -m unittest discover -s research/intent-retry-pilot -p test_runner.py -v
+      - run: python -B -m unittest discover -s research/intent-retry-pilot/integration -p test_gate.py -v
+      - run: python -B research/intent-retry-pilot/cohort-screen/verify_artifacts.py
+      - run: python -B -m unittest discover -s research/intent-retry-pilot/cohort-screen -p test_source_verification.py -v
+      - run: python -B research/topic-screen-2026-10-05/verify_screen.py

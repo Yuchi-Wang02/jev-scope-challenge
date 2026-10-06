@@ -5,3 +5,11 @@
 research/payment-ownership/review/submissions/yuchi/payment_review_yuchi_excel.csv -text
 research/payment-ownership/review/submissions/tiancheng/*.csv -text
 
+# Preserve recorded byte hashes in the new local evidence trees. Some captured
+# files use CRLF; normalizing them on first add would invalidate their manifests.
+# This preserves history rather than changing files or resealing experiments.
+research/intent-retry-pilot/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/rule-direction/capable-reference/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/series-closeout/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/topic-screen-2026-10-05/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+

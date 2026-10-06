@@ -1,0 +1,46 @@
+{
+  "captured_at_utc": "2026-10-06T00:44:40.272045+00:00",
+  "scope": "One pair scripted integration; not the overall research goal",
+  "status": "completed within declared scope",
+  "evidence": {
+    "source_files_unchanged": 14,
+    "pre_run_files_unchanged": 9,
+    "unit_test_methods_passed": 22,
+    "visible_records": 8,
+    "independent_parent_pairs": 1,
+    "task_tool_attempts": 6,
+    "expected_failures": 1,
+    "cancellation_attempts": 0,
+    "model_calls": 0,
+    "observed_external_network_connections": 0,
+    "recorded_loopback_connections": 7,
+    "independent_ai_artifact_review": "Passed: source hashes, native/controller log correspondence, visibility separation, pair equality, decisions and state records; no independent environment rerun or human review"
+  },
+  "boundaries": [
+    "Hand-authored single-task contract and scripted proposals",
+    "Direct original environment class; no full agent SDK or stdio transport",
+    "Five successful calls use local FastMCP dispatch; expected failure uses original early override branch",
+    "Added profile lookups separately declared before replay",
+    "Raw native verification logger omits provided_details; controller records preserve it",
+    "No full original-task completion or general model comparison"
+  ],
+  "sha256": {
+    "README.md": "e7bebf499cb0c9e2df0c79a049d469ca2a1b7fbe5cbba3e9554d4bebbc4396a6",
+    "freeze.json": "b3553e482b9d126a2a2a9be53930d029f026312bce01b5bd85343743a9c38ff2",
+    "PROTOCOL.md": "7476b3814846f26ef1e7562683f1a043ecc0b395c81fb890d568a956a539b039",
+    "sources.json": "06add4894395896e3e01afd3fecd7cf78d1cb14900d27acacf66d15474e45bf8",
+    "requirements-lock.txt": "37b41e144585d1de41c4ae15f48704aa591cc18fb7d9c69605a3ab30937becab",
+    "dependencies.json": "b38ddb337c72a414d733c1c3589117e5283794fa29d3f810b817a0103f1c1fa2",
+    "run_integration.py": "681ba498a1d11881673223ba568246066bb1489b38a50b50e4a54fa326a7df74",
+    "gate.py": "04b1df651e632396c0ce2b94a015ae1215d716f3d0997cc41a5eff45518469d6",
+    "test_gate.py": "416df9fc0fb82e7438ceaf08e6c04fa69063340e09818115fbf7de765bb78928",
+    "contract.json": "9b9e558a457ec8963478159e2e21071b7002843e049db6a7d39153fa6bf1d367",
+    "UPSTREAM_NOTICES.md": "b550aa9b6a698e9304b9f52357f1e7404db0f22a1a720359e6ee7248b6014ae5",
+    "results/attempt-001/attempt_events.jsonl": "c6014aef31941a12620c0f21e8397d0b7e1a6e8f7ec6fc9385fbbe91bc40812a",
+    "results/attempt-001/evaluator_only.json": "cd453489a5a15684788e1ae1088c25135da139be6a6824a5bbd3a896e8fb4712",
+    "results/attempt-001/gate_decisions.json": "74114b30b383c2f92ec68f08b2bccbdf832fdb99d8963e11ef67dc393b33647d",
+    "results/attempt-001/summary.json": "8e7d409c38e4e4fd0cafe2765c87d9698e94213579d33c75d655fe8723cd26c1",
+    "results/attempt-001/trajectories.json": "75b80159fa6786e2928debe796629ef8e5d1aaa1246f1ace03acdab4747609f3",
+    "results/attempt-001/visible.json": "c170a12c556ed38116c44ecf7e9b6bcd1d089d9ca70f4a9e5c3318db381d4c91"
+  }
+}

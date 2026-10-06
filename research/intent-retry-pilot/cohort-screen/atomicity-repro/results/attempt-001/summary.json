@@ -1,0 +1,40 @@
+{
+  "status": "software counterexample reproduced",
+  "source_parent_pairs": 1,
+  "scripted_resets": 4,
+  "tool_attempts": 6,
+  "expected_tool_errors": 2,
+  "failed_call_changed_public_bio": true,
+  "isolated_commit_check_passed_that_trace": true,
+  "model_calls": 0,
+  "real_profile_updates": 0,
+  "aggregate_benchmark_score_evaluated": false,
+  "upstream_sources_patched": false,
+  "network_audit_events": [
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    },
+    {
+      "event": "socket.connect",
+      "host": "127.0.0.1"
+    }
+  ],
+  "claim_limit": "Developer-selected invalid input causes a real simulated state mutation despite a failure receipt; no model error prevalence or published-score impact measured."
+}

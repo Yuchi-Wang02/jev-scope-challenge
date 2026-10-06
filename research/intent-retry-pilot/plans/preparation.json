@@ -1,0 +1,24 @@
+{
+  "status": "prepared_not_frozen",
+  "parents": 12,
+  "visible_inputs": 72,
+  "primary_requests": 144,
+  "smoke_requests": 3,
+  "orders": [
+    [
+      "RESUME_EXISTING",
+      "START_ADDITIONAL",
+      "CLARIFY"
+    ],
+    [
+      "CLARIFY",
+      "RESUME_EXISTING",
+      "START_ADDITIONAL"
+    ]
+  ],
+  "planned_input_units_utf8_bytes": 350898,
+  "unit_note": "UTF-8 byte reservations plus 256 units/request overhead; not tokenizer measurements. Actual API usage is authoritative.",
+  "model": "jev-1.13.0",
+  "ordinary_capable_baseline": "not configured",
+  "human_review_count": 0
+}

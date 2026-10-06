@@ -1,5 +1,25 @@
 # Credits, reuse and license boundaries
 
+## Later local maintenance and hosted-model reference
+
+The [ToolTalk checker reproduction](research/intent-retry-pilot/TOOLTALK_CHECKER_AUDIT.md)
+retains Microsoft's pinned `message.py` under its [MIT notice](research/intent-retry-pilot/audit_sources/TOOLTALK_LICENSE).
+It is used in an isolated receiver-check reproduction with controlled similarity;
+the one-line repair is local and has not been submitted upstream or evaluated for
+full benchmark score impact.
+
+The [AgentAbstain notices](research/intent-retry-pilot/cohort-screen/atomicity-repro/UPSTREAM_NOTICES.md)
+separate MIT runtime/evaluator code from CC BY 4.0 environment, schema and fixture
+material. The [derivative modification record](research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/ATTRIBUTION.md)
+identifies the validate-before-write repair. Preserve both source terms and author
+attribution; repository MIT does not relicense that dataset or its derivatives.
+No GitHub fork or upstream submission was made in these local stages.
+
+The [Sonnet capability reference](research/rule-direction/capable-reference/RESULTS.md)
+uses Anthropic's hosted API with the fixed returned model ID recorded in each
+response. No Anthropic model weights or implementation are incorporated. It
+reuses this repository's original prompts, with no new upstream code copy.
+
 The [QA4PC answer-interface study](research/qa4pc-answer-interface/README.md)
 uses the same pinned QA4PC upstream source and redistribution boundary as the
 stage-attribution study. It reuses this repository's own journal and adapts its
@@ -84,7 +104,7 @@ default Kev release.
 |Artifact|Revision actually used|Pinned license declaration|
 |---|---|---|
 |[Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B/tree/1cfa9a7208912126459214e8b04321603b3df60c)|`1cfa9a7208912126459214e8b04321603b3df60c`|[Apache-2.0 model card](https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md)|
-|[Qwen3.5-4B technical smoke only](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)|`851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`|[Apache-2.0 license](https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE)|
+|[Qwen3.5-4B runtime and later pinned studies](research/baseline-readiness/QWEN35_SMOKE_RESULTS.md)|`851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`|[Apache-2.0 license](https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE)|
 |[Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base/tree/906bfd4b4dc7f14ee4320094d8b41684abff8539)|`906bfd4b4dc7f14ee4320094d8b41684abff8539`|[Apache-2.0 model card](https://huggingface.co/Qwen/Qwen3-4B-Base/blob/906bfd4b4dc7f14ee4320094d8b41684abff8539/README.md)|
 |[Kev-4B adapter + pointer head](https://huggingface.co/jaredpalmer/kev-4b/tree/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416)|`c4bfa11b0dc07691884f2d97f1c4c4c05c92e416`|[Apache-2.0 model card](https://huggingface.co/jaredpalmer/kev-4b/blob/c4bfa11b0dc07691884f2d97f1c4c4c05c92e416/README.md)|
 

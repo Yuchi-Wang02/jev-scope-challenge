@@ -1,0 +1,299 @@
+[
+  {
+    "item_id": "seed-001",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one blue notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original purchase if needed. I want only one in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "buy",
+          "sku": "notebook-blue",
+          "quantity": 1
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-002",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one blue notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original purchase and do one additional identical purchase. I want two in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "buy",
+          "sku": "notebook-blue",
+          "quantity": 1
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-003",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Purchase one blue notebook."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "I have not decided whether I want one or two in total. Ask me before continuing the purchase."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "buy",
+          "sku": "notebook-blue",
+          "quantity": 1
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-004",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message saying: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original message if needed. I want only one in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "send",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-005",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message saying: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original message and do one additional identical message. I want two in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "send",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-006",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Send Alex one message saying: The report is ready."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "I have not decided whether I want one or two in total. Ask me before continuing the message."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "send",
+          "to": "alex@example.test",
+          "body": "The report is ready."
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-007",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original job submission if needed. I want only one in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "submit",
+          "queue": "render",
+          "asset": "scene-17"
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-008",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "Complete the original job submission and do one additional identical job submission. I want two in total."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "submit",
+          "queue": "render",
+          "asset": "scene-17"
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  },
+  {
+    "item_id": "seed-009",
+    "model_input": {
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "Submit one render job for scene-17."
+        },
+        {
+          "role": "assistant",
+          "content": "The request timed out. Its effect is not confirmed."
+        },
+        {
+          "role": "user",
+          "content": "I have not decided whether I want one or two in total. Ask me before continuing the job submission."
+        }
+      ],
+      "existing_operation": {
+        "handle": "existing-op-1",
+        "payload": {
+          "tool": "submit",
+          "queue": "render",
+          "asset": "scene-17"
+        },
+        "status": "UNKNOWN"
+      },
+      "allowed_decisions": [
+        "RESUME_EXISTING",
+        "START_ADDITIONAL",
+        "CLARIFY"
+      ]
+    }
+  }
+]

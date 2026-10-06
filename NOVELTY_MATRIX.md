@@ -11,13 +11,28 @@ without changing that document or any frozen study. Pair it with the
 and documented failures of particular compositions. A novel general method or
 paper-level contribution has not been established.**
 
-The [rule-direction result](research/rule-direction/RESULTS.md) is a compact,
-reproducible failure signature shared by both tested configurations. Sufficient
+The [original rule-direction result](research/rule-direction/RESULTS.md) is a compact,
+reproducible failure signature shared by its two tested configurations. The
+[completed Sonnet reference](research/rule-direction/capable-reference/RESULTS.md)
+scores 107/108 and 108/108, with one strict format invalid and no valid wrong
+labels. This narrows the shared-deficit interpretation and retires that finite
+grid as the current main paper candidate. It does not supply a new intervention.
+Sufficient
 versus necessary conditions, truth tables and controlled
 logic diagnostics have direct precedents; the [protocol's related work](research/rule-direction/PROTOCOL.md)
 credits RuleTaker, ProofWriter and FOLIO. No intervention or new general algorithm
-was tested. Stronger baselines, language review and independent new materials
-remain necessary before a paper-level contribution claim.
+was tested. One capable reference is now available for this grid only; independent
+language evidence, a distinct question and new materials would still be necessary
+for a paper-level contribution claim. See the [stage report](TECHNICAL_REPORT.md).
+
+The later [relation-loss screen](research/topic-screen-2026-10-05/README.md) and
+[retry-intent source screen](research/intent-retry-pilot/SOURCE_SCREEN_DECISION.md)
+did not establish a ready new method experiment. Existing work already covers
+broad binding, clarification, provenance and safe-action formulations. The isolated
+ToolTalk and AgentAbstain defects and local fixes are maintenance contributions;
+neither validates a model intervention or establishes benchmark-wide score impact.
+The [confidence-boundary correction](research/series-closeout/confidence_report.json)
+is a retrospective numerical repair, not a calibration method.
 
 The [latest semantic audit](research/qa4pc-answer-interface/SOURCE_AUDIT.md) adds
 traceable review concerns and retrospective review tooling. Source-label audits,

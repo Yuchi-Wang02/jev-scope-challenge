@@ -1,0 +1,29 @@
+{
+  "captured_at_utc": "2026-10-06T01:33:41.861500+00:00",
+  "status": "prepared and locally frozen; waiting for provider-budget authorization",
+  "model_generations": 0,
+  "generation_journal_present": false,
+  "approval_present": false,
+  "software_tests_passed": 19,
+  "independent_ai_code_review": "read-only review found no remaining blocking defect; not human scientific validation",
+  "independent_human_reviews": 0,
+  "prompt_identity_verified": 222,
+  "count_payload_identity_verified": 222,
+  "model_metadata_requests": 1,
+  "successful_free_token_count_requests": 222,
+  "preserved_free_count_http_429": 1,
+  "input_token_estimate": 58288,
+  "input_reservation_tokens": 512944,
+  "maximum_generation_attempts": 222,
+  "automatic_generation_retries": 0,
+  "exact_standard_price_reserve_usd": 19.212128,
+  "standard_price_budget_cap_usd": 20,
+  "freeze_sha256_lf": "a8208904091b9f3548e4b67bfa57489ba6a9dfab5b1e095a30448218dd9c34d4",
+  "frozen_input_files": 13,
+  "offline_dry_run": {
+    "started": 0,
+    "network_calls": 0,
+    "halted": false
+  },
+  "scientific_result_status": "none; all mocked responses were temporary software-test fixtures"
+}

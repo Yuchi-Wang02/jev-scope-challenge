@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-06T00:46:56.980226+00:00",
+  "dataset_revision": "842228426c2a703347396501af61c7890972c7ee",
+  "selection_method": "First four lexicographic operational IDs per declared category; prior to source body review for this screen",
+  "source_metadata_sha256": "1c8a57cf2efcee9c9b700d9b17ddfeff1f6e2b9db1ffde882d3d0965b8bea8da",
+  "protocol_sha256": "00c2269e265debc172e1ae4e920006eac23861f9bbd9cf7eeda35bfffc55b0aa",
+  "selected_pair_ids": [
+    "conflicting_constraints/preview_005",
+    "conflicting_constraints/preview_006",
+    "conflicting_constraints/preview_009",
+    "conflicting_constraints/preview_010",
+    "conflicting_evidence/preview_008",
+    "conflicting_evidence/preview_009",
+    "conflicting_evidence/preview_010",
+    "conflicting_evidence/preview_011",
+    "emergent_risk_discovery/preview_003",
+    "emergent_risk_discovery/preview_004",
+    "emergent_risk_discovery/preview_006",
+    "emergent_risk_discovery/preview_008"
+  ],
+  "model_calls": 0
+}

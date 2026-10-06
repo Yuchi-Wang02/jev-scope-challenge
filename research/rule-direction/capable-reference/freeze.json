@@ -1,0 +1,35 @@
+{
+  "study": "rule-direction-capable-reference-v1",
+  "status": "prepared; no generation calls",
+  "old_sources_sha256_lf": {
+    "request_plan.json": "83c35ff0338600325b55c9f0805b072d930775319431a9795c38668bfe4c0a8c",
+    "cases.json": "cbb82b3ca4b2330a39a4d8fe26937e58cbeef92fa7025204b2fb35fdbf65eb9b",
+    "manifest.json": "a78415b18d687d500fa3e01731fd315c1493f96f58132e6eb5cedeb80b6300d1"
+  },
+  "old_contracts_sha256_lf": {
+    "PROTOCOL.md": "a382a887de720966e04cf833fa39267119ddc3f4048ba2a56d9ed6ea0f4b7306",
+    "freeze.json": "39ab00df9ab7327c42b20333654d6183e9a30cfc1c9ca5d6a9702e57a6c4ebf0",
+    "RESULTS.md": "a1045e316abfe8991a98827064f06cd60a9f816dc03637676d2f380c27632b80",
+    "report.json": "4668d765399ebba6c4451cefc2ba1046e94a66b5f6c3c91feb14a7a9706bd6be"
+  },
+  "files_sha256_lf": {
+    "prepare.py": "d46e3525c94ca6e988701bdb273346bfcdc9bfa92172ed33a39902e990c8daa1",
+    "runner.py": "d937363780290f3ae9233ee5adf817cd2394973a80b8d53bb4af25462deabfd6",
+    "analyze.py": "076102a32732637effd9f1ea1891306695f29c7be3fb5c3d278cee9063f7f688",
+    "test_runner.py": "1aba1346fd20c140eba04b64a0ceff898dbdbfdb08e23a855e3c976ab1e0b781",
+    "README.md": "9098a2e710d68bc993c5279f7cdaf05a274de06a30519ce49db1cc7f9967ebd7",
+    "PROTOCOL.md": "a8f954dbae9c3c3ad915e3049b3923c4d9249d8a4b884f688c33bbeb4e64eb80",
+    "requests.json": "56ada4d1b60bfa428b55278ddec2f4f92d645ed9aed6db0d39aa663545e530e4",
+    "token_counts.json": "818e8aa68caf00bae674c8bfd58b97bd20153f8b6095acbbb1f07911e5fbbf4c",
+    "model_metadata.json": "5b4b7a4abcb1eb6b84639edf990ce3f8e7a82dedef17dbaba3bbbb5969ca5c9f",
+    "count_tokens.py": "fead238ea138e8ac5f55ab797e6821d6b531d04bde22b0028358362c54122467",
+    "token_count_attempts.jsonl": "5b801238b186955f70cf286a31d801291607a20116289cd0e412dd2ea528b32e",
+    "preparation-history/count_tokens-before-rate-limit.py": "b30fa8a79375ac0a177152bf2947a55666afff44c0aa2f4b047ed4f606bb329d",
+    "preparation-history/token-count-rate-limit.json": "7070d0f0402349e7b0f4f5d476103e59cdc88a93b5392bba4ec61dde6cc52dca"
+  },
+  "budget": {
+    "input_reserve_tokens": 512944,
+    "cost_reserve_microusd": 19212128,
+    "estimated_input_tokens": 58288
+  }
+}

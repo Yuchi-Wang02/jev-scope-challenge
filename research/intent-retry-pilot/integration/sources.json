@@ -1,0 +1,127 @@
+[
+  {
+    "file": "upstream/github/LICENSE",
+    "upstream_path": "LICENSE",
+    "revision": "cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/LICENSE",
+    "sha256": "ae23741b50e4cb70f5e4eddf4878f4623899d467fa97012d505bf5b5272c5d91",
+    "bytes": 1081,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/github/abstention_factory/__init__.py",
+    "upstream_path": "abstention_factory/__init__.py",
+    "revision": "cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/abstention_factory/__init__.py",
+    "sha256": "f9e8762deb480b24b9968a947dc093048a7598c276e43ac3bd1a8810dd77808f",
+    "bytes": 53,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/github/abstention_factory/runtime/__init__.py",
+    "upstream_path": "abstention_factory/runtime/__init__.py",
+    "revision": "cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/abstention_factory/runtime/__init__.py",
+    "sha256": "e99c6e17a4913168fc656c0964fa8bc818ff1114e4cae3984aff2e242961ac53",
+    "bytes": 1155,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/github/abstention_factory/runtime/base.py",
+    "upstream_path": "abstention_factory/runtime/base.py",
+    "revision": "cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/abstention_factory/runtime/base.py",
+    "sha256": "d48bb65e21c2e1d1ff9c14360323a93034153a3623c7f20a7e1c77d58f5424ad",
+    "bytes": 8951,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/github/abstention_factory/environments/__init__.py",
+    "upstream_path": "abstention_factory/environments/__init__.py",
+    "revision": "cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3",
+    "url": "https://raw.githubusercontent.com/AntiQuality/agentabstain/cfc3faf7ab1cfd4892cde1158d6e43b2f312ddc3/abstention_factory/environments/__init__.py",
+    "sha256": "3d4615c73f651effb2b3ab6e9491d1fb24d40d45cd70966b84e1c93996b02020",
+    "bytes": 559,
+    "license": "MIT"
+  },
+  {
+    "file": "upstream/dataset/environments/flight_and_travel_management/__init__.py",
+    "upstream_path": "environments/flight_and_travel_management/__init__.py",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/environments/flight_and_travel_management/environment.py",
+    "upstream_path": "environments/flight_and_travel_management/environment.py",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/environment.py",
+    "sha256": "822e2a1fb3931149b5d6cf9368f939cfd0de1d592730d9510ca2ea4b4b422d61",
+    "bytes": 86152,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/environments/flight_and_travel_management/schema.py",
+    "upstream_path": "environments/flight_and_travel_management/schema.py",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/schema.py",
+    "sha256": "d45755bd82866d5f23a12176a1aa26119cd44636e4edf59b8f5e52c33d73591d",
+    "bytes": 15773,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/tasks/critical_tool_failure/preview_002/metadata.yaml",
+    "upstream_path": "tasks/critical_tool_failure/preview_002/metadata.yaml",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/critical_tool_failure/preview_002/metadata.yaml",
+    "sha256": "676f85968ee724d2ea38885d677421d3df89d518e191f1b1b47d89702fd8ac52",
+    "bytes": 579,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/tasks/critical_tool_failure/preview_002/act/task.yaml",
+    "upstream_path": "tasks/critical_tool_failure/preview_002/act/task.yaml",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/critical_tool_failure/preview_002/act/task.yaml",
+    "sha256": "ab9828cdf3b52cc0881d6d090ce7298d8a31b2df7bc38fd4652eb75af4499c77",
+    "bytes": 2178,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/tasks/critical_tool_failure/preview_002/act/initial_states/flight_and_travel_management.json",
+    "upstream_path": "tasks/critical_tool_failure/preview_002/act/initial_states/flight_and_travel_management.json",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/critical_tool_failure/preview_002/act/initial_states/flight_and_travel_management.json",
+    "sha256": "c7dc2c5e72d5098e2117537a495fc72d6d66262253678144764695f3d3089659",
+    "bytes": 8655,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/tasks/critical_tool_failure/preview_002/abstain/task.yaml",
+    "upstream_path": "tasks/critical_tool_failure/preview_002/abstain/task.yaml",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/critical_tool_failure/preview_002/abstain/task.yaml",
+    "sha256": "0f8a3564025df70a3debe26a7613d2deb889a654c9670bd43b5431989b8ff329",
+    "bytes": 1254,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/tasks/critical_tool_failure/preview_002/abstain/initial_states/flight_and_travel_management.json",
+    "upstream_path": "tasks/critical_tool_failure/preview_002/abstain/initial_states/flight_and_travel_management.json",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/critical_tool_failure/preview_002/abstain/initial_states/flight_and_travel_management.json",
+    "sha256": "c7dc2c5e72d5098e2117537a495fc72d6d66262253678144764695f3d3089659",
+    "bytes": 8655,
+    "license": "CC-BY-4.0"
+  },
+  {
+    "file": "upstream/dataset/README.md",
+    "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/README.md",
+    "revision": "842228426c2a703347396501af61c7890972c7ee",
+    "sha256": "ecf954a0ac7e060f1d7e6ceed93cf5a41195645607d7d8eda6544aa7b39627d1",
+    "bytes": 5138,
+    "license": "CC-BY-4.0"
+  }
+]

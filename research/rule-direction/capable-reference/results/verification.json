@@ -1,0 +1,359 @@
+{
+  "verified_at_utc": "2026-10-06T02:37:52.351219+00:00",
+  "status": "verified",
+  "method": "Independent in-memory Python raw-journal recount; did not import analyzer, runner, prepare, or specification. Four-world reference enumeration; old24/old84 sets recovered from both historical raw journals. No API calls or frozen-file edits.",
+  "verification_note": "First local verification attempt stopped on a verifier-only Counter key representation difference (None versus string None); no model artifact changed. Corrected independent comparison then matched the full analyzer mappings.",
+  "journal_sha256_lf": "ed3479816b0e460ce9fd4ed1e720721c810e4690879bca29ca2a713551e4341b",
+  "requests_sha256_lf": "56ada4d1b60bfa428b55278ddec2f4f92d645ed9aed6db0d39aa663545e530e4",
+  "freeze_sha256_lf": "a8208904091b9f3548e4b67bfa57489ba6a9dfab5b1e095a30448218dd9c34d4",
+  "analyzer_report_sha256_lf": "b7cc382c3dbf39762796da10b7ed10f561e86e92a1a0422bc014a20abd546621",
+  "frozen_files_verified": 13,
+  "old_source_and_contract_files_verified": 7,
+  "events": 444,
+  "attempts": 222,
+  "results": 222,
+  "unique_response_ids": 222,
+  "unique_provider_request_ids": 222,
+  "retries": 0,
+  "unresolved_starts": 0,
+  "unknown_usage": 0,
+  "schema_version_http_errors": 0,
+  "stop_reasons": {
+    "end_turn": 222
+  },
+  "served_models": {
+    "claude-sonnet-5-5": 222
+  },
+  "smoke_correct": 6,
+  "smoke_denominator": 6,
+  "mappings": {
+    "0": {
+      "correct": 107,
+      "planned_denominator": 108,
+      "executed": 108,
+      "invalid": 1,
+      "truncated": 0,
+      "refusals": 0,
+      "cells": {
+        "sufficient": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "yes": 12
+            }
+          },
+          "negative": {
+            "correct": 11,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 11,
+              "None": 1
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        },
+        "necessary": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          },
+          "negative": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "no": 12
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        },
+        "equivalent": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "yes": 12
+            }
+          },
+          "negative": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "no": 12
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        }
+      },
+      "critical_pairs_correct": {
+        "positive": 12,
+        "negative": 11
+      },
+      "critical_pairs_denominator_each": 12,
+      "complete_nine_case_families_correct": 11,
+      "complete_biconditional_like_signature_families": 0,
+      "always_maybe_control_correct": 60,
+      "unknown_fact_triples_correct": 12,
+      "false_commitments": 0,
+      "false_commitment_reference_denominator": 60,
+      "unnecessary_deferrals": 0,
+      "determined_reference_denominator": 48,
+      "old_shared_error_cells": {
+        "planned": 24,
+        "valid_wrong": 0,
+        "invalid": 1,
+        "unresolved": 0,
+        "unrun": 0,
+        "resolved": 23
+      },
+      "previously_correct_controls": {
+        "planned": 84,
+        "correct": 84,
+        "invalid": 0,
+        "unresolved": 0,
+        "unrun": 0,
+        "new_valid_wrong": 0
+      }
+    },
+    "1": {
+      "correct": 108,
+      "planned_denominator": 108,
+      "executed": 108,
+      "invalid": 0,
+      "truncated": 0,
+      "refusals": 0,
+      "cells": {
+        "sufficient": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "yes": 12
+            }
+          },
+          "negative": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        },
+        "necessary": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          },
+          "negative": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "no": 12
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        },
+        "equivalent": {
+          "positive": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "yes": 12
+            }
+          },
+          "negative": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "no": 12
+            }
+          },
+          "unknown": {
+            "correct": 12,
+            "planned_denominator": 12,
+            "executed": 12,
+            "actions": {
+              "maybe": 12
+            }
+          }
+        }
+      },
+      "critical_pairs_correct": {
+        "positive": 12,
+        "negative": 12
+      },
+      "critical_pairs_denominator_each": 12,
+      "complete_nine_case_families_correct": 12,
+      "complete_biconditional_like_signature_families": 0,
+      "always_maybe_control_correct": 60,
+      "unknown_fact_triples_correct": 12,
+      "false_commitments": 0,
+      "false_commitment_reference_denominator": 60,
+      "unnecessary_deferrals": 0,
+      "determined_reference_denominator": 48,
+      "old_shared_error_cells": {
+        "planned": 24,
+        "valid_wrong": 0,
+        "invalid": 0,
+        "unresolved": 0,
+        "unrun": 0,
+        "resolved": 24
+      },
+      "previously_correct_controls": {
+        "planned": 84,
+        "correct": 84,
+        "invalid": 0,
+        "unresolved": 0,
+        "unrun": 0,
+        "new_valid_wrong": 0
+      }
+    }
+  },
+  "both_mappings_valid": 107,
+  "mapping_disagreements_among_valid_pairs": 0,
+  "both_mappings_correct": 107,
+  "actual_input_tokens": 58288,
+  "actual_output_tokens": 1277,
+  "nominal_cost_microusd": 129346,
+  "nominal_cost_usd": 0.129346,
+  "reserved_input_tokens": 512944,
+  "reserved_cost_microusd": 19212128,
+  "usage_and_latency_by_phase": {
+    "smoke": {
+      "results": 6,
+      "known_usage_results": 6,
+      "input_tokens": 1402,
+      "output_tokens": 24,
+      "cost_microusd": 3044,
+      "summed_latency_seconds": 6.819379900000058,
+      "output_token_distribution": {
+        "3": 2,
+        "4": 2,
+        "5": 2
+      }
+    },
+    "main": {
+      "results": 216,
+      "known_usage_results": 216,
+      "input_tokens": 56886,
+      "output_tokens": 1253,
+      "cost_microusd": 126302,
+      "summed_latency_seconds": 256.56527640036074,
+      "output_token_distribution": {
+        "3": 48,
+        "4": 44,
+        "5": 119,
+        "44": 1,
+        "50": 1,
+        "74": 1,
+        "80": 1,
+        "90": 1
+      }
+    }
+  },
+  "summed_latency_seconds": 263.3846563003608,
+  "latency_summary_seconds": {
+    "minimum": 0.7107898999820463,
+    "median": 1.1981688999803737,
+    "maximum": 2.519816100015305
+  },
+  "output_token_summary": {
+    "minimum": 3,
+    "median": 5.0,
+    "maximum": 90,
+    "distribution": {
+      "3": 50,
+      "4": 46,
+      "5": 121,
+      "44": 1,
+      "50": 1,
+      "74": 1,
+      "80": 1,
+      "90": 1
+    }
+  },
+  "content_block_counts": {
+    "text": 222,
+    "thinking": 4
+  },
+  "responses_with_thinking_blocks": 4,
+  "responses_with_redacted_thinking_blocks": 0,
+  "reported_thinking_token_details": {
+    "responses_with_field": 222,
+    "total": 232,
+    "minimum": 0,
+    "maximum": 76
+  },
+  "usage_metadata_counts": {
+    "service_tier": {
+      "standard": 222
+    },
+    "inference_geo": {
+      "global": 222
+    }
+  },
+  "invalid_outputs": [
+    {
+      "job_id": "r08_sufficient_negative_m0_qwen",
+      "status": "invalid",
+      "final_text": "The policy gives only a sufficient condition (verified address leads to qualification), not a necessary one. The account has no verified address, so that condition doesn't apply. Other routes to qualification may exist, and no stated rule rules them out, so both outcomes remain possible.\n\nmaybe"
+    }
+  ],
+  "thinking_interpretation": "Adaptive/high was requested, not guaranteed on every response. 8192 is the per-request cap, not actual usage. Content and thinking-token detail counts are API-reported; visible thinking text is a summary, not a billed-token count or evidence of all internal computation.",
+  "analyzer_agreement": true,
+  "scope": "108 authored inputs, 12 lexical families sharing 3 logical templates; two mappings are repeated measurements. Historical cross-provider comparison, not matched compute, independent confirmation, a new algorithm, or population prevalence."
+}

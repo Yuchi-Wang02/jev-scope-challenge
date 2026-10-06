@@ -1,0 +1,102 @@
+{
+  "verified_at_utc": "2026-10-06T01:20:01.085133+00:00",
+  "status": "clean staged-source portable replay passed",
+  "staging_root": "G:\\jev-scope-challenge\\.local\\agentabstain-portable-replay\\staged-3674fd7353",
+  "staging_gitignored": true,
+  "staging_is_remote_git_clone": false,
+  "dependency_installation": "none; existing venv reused",
+  "reused_python": "G:\\jev-scope-challenge\\.local\\agentabstain-integration-venv\\Scripts\\python.exe",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portable_regress.py",
+    "--output",
+    "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001"
+  ],
+  "execution_return_code": 0,
+  "copied_input_files_unchanged": 71,
+  "bytecode_before": [],
+  "bytecode_after": [],
+  "original_preexisting_files_unchanged": 62,
+  "new_tool_attempts": 8,
+  "new_successful_calls": 6,
+  "new_expected_errors": 2,
+  "model_calls": 0,
+  "proposed_fix_cumulative_tool_attempts": 20,
+  "proposed_fix_cumulative_successes": 15,
+  "proposed_fix_cumulative_expected_errors": 5,
+  "prior_harness_assertion_failures": 1,
+  "locked_distributions_verified": 68,
+  "python_version": "3.13.5",
+  "collected_results": [
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/attempts.jsonl",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/attempts.jsonl",
+      "sha256": "a178c1fd79aab795e64918c6ad88b6e69cf9d7ab7d603dba96685b1ca0bbad8d",
+      "bytes": 23650
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_with_bio.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_with_bio.json",
+      "sha256": "d2cd871a54cbde7b1afc888e2829f9e1348a61363fd83af5db6503f4e784851f",
+      "bytes": 10864
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_without_bio.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/invalid_visibility_without_bio.json",
+      "sha256": "aaee42591a40182e70b8bf7b0679ea8fa264a52f5af84fbc1be68b9d0d5ecb5d",
+      "bytes": 10232
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/no_action.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/no_action.json",
+      "sha256": "e2a015c939c42e7d410d0800df512152255fffa7f3c218fa27d6cea5458d0007",
+      "bytes": 2582
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/privacy_only.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/privacy_only.json",
+      "sha256": "5ed3da5b051fe33cb07742e08825750c28714314a4fe2c0a2765adc72c7b737c",
+      "bytes": 10492
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/runtime.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/runtime.json",
+      "sha256": "eb5ff30ff7ca81348491afa41445eb2e0da7286647ccec07fe423ab91377e620",
+      "bytes": 8497
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/summary.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/summary.json",
+      "sha256": "69566a738cdd96070d4d77ed9bdf56ab54b0ed05d1a5ac763684b651e5365c50",
+      "bytes": 2074
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/valid_bio_and_visibility.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/results/portable-staged-001/valid_bio_and_visibility.json",
+      "sha256": "a6c42a46e726676753f8c77f848ab65c0deadde9a8ef68c79cb6ba3d28c91576",
+      "bytes": 10509
+    },
+    {
+      "staged_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/preflight-001/preflight.json",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/source-preflight/preflight.json",
+      "sha256": "f62002ce68d29663a470f52ce9a82fc6ede8a12cf5e7048daef4ca2f04c58f8f",
+      "bytes": 1055
+    },
+    {
+      "staged_path": "portable-execution.log",
+      "collected_path": "research/intent-retry-pilot/cohort-screen/atomicity-repro/proposed-fix/portability-checks/staged-001/portable-execution.log",
+      "sha256": "67aded621e4510234c9c3e7a166eea86e5d1a7e48b1dffb53bc84f3eb9eb8961",
+      "bytes": 8119
+    }
+  ],
+  "limits": [
+    "one Windows host",
+    "existing dependency environment",
+    "five fixed cases",
+    "staged source tree, not a remote checkout",
+    "no fresh-install or cross-platform test"
+  ]
+}

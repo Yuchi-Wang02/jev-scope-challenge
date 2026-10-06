@@ -1,5 +1,44 @@
 # Release notes
 
+## 2026-10-05 — diagnostics-v0.2.0 milestone
+
+Consolidates the capable-reference results, confidence-boundary correction,
+stopped source screens, attributed software reproductions and all-case replay.
+Current navigation links to the hosted replay and [stage release notes](RELEASE_NOTES.md).
+The dated local preparation entries and audit receipts below remain historical.
+Publication does not add model calls or validate a general research method.
+
+## 2026-10-05 — local release candidate and saved-result replay
+
+Prepared a three-model direction replay, a concrete release review packet and
+standard-library offline CI checks. Removed a default dependency on an ignored
+source cache while explicitly retaining its unverified provenance status.
+Scoped byte-preserving Git attributes protect historical raw-byte hashes;
+temporary-index checkout checks leave the actual staging index unchanged.
+Historical preservation snapshots and the later navigation-only README hash
+change are disclosed in the packet. No new inference or public release here.
+
+Follow-up: all 77 Python command steps from the original and closeout CI jobs
+passed in an isolated Git checkout on existing Windows Python 3.10.18 with exact
+requirements versions, including 393 unit tests. No checkout files or real
+index changed. This is local workflow-command reproduction, not a remote CI
+run, fresh dependency installation or new scientific validation.
+
+## 2026-10-05 — local closeout and series synthesis, not yet published
+
+Completed the separately approved 222-request Sonnet 5.5 arm: strict main
+107/108 and 108/108, one invalid format and no valid wrong labels; no retries.
+Saved raw responses, independent recount and $0.129346 nominal usage accounting.
+Added a stage technical report and updated current navigation to narrow the
+earlier shared-error claim while preserving frozen historical records.
+
+Recorded the earlier local intent-retry pilot, bounded no-go source screens,
+ToolTalk checker reproduction and AgentAbstain atomicity repair as distinct
+evidence kinds. Added an original offline decimal-threshold recheck: the old
+Jev direction subset at >=0.99 is 173 retained /9 wrong, correcting a supplied
+draft's 128/0 floating-point boundary result. The wider external patch is not
+applied. This synthesis adds zero model calls and is not a GitHub release.
+
 ## 2026-09-30 — complete444-call rule-direction diagnostic
 
 Published before-call freeze5bd9675, all108 synthetic inputs and444 requests.

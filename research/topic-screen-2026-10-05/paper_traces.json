@@ -1,0 +1,34 @@
+{
+  "status": "AI analyst paper diagnostics; no model calls or action execution",
+  "source_packet": "case_packet.json",
+  "source_revision": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+  "traces": [
+    {
+      "id": "relation_change",
+      "source_case": "retail/0",
+      "kind": "explicit synthetic counterfactual on a copy; original source unchanged",
+      "operations": [
+        {"path": "/records/retail/products/1656367028/variants/9025753381/available", "before": false, "after": true},
+        {"path": "/records/retail/products/1656367028/variants/6342039236/available", "before": true, "after": false}
+      ],
+      "invariants": ["request and policy", "variant IDs, options and prices", "all other record fields", "total available/unavailable counts", "complete-object interface"],
+      "bounded_question": "After target and preferences are understood, which available keyboard variant meets the stated first choice or accepted fallback?",
+      "conditional_selection_before": "7706410293",
+      "conditional_selection_after": "9025753381",
+      "interpretation": "Native records and a direct filter already preserve and use the changed relation. Not evidence of a lossy interface.",
+      "not_established": ["full action authorization", "language understanding performance", "model failure", "new method gain"]
+    },
+    {
+      "id": "irrelevant_records",
+      "source_case": "airline/1",
+      "kind": "analyst subset comparison after target resolution; not an oracle retrieval result",
+      "target_reservation": "Q69X3R",
+      "operation": "For the bounded predicate, compare the full reservation mapping with a mapping retaining only Q69X3R. Keep the request, governing policy, target record and its dated flight statuses unchanged.",
+      "bounded_question": "Does the selected reservation meet any listed cancellation ground: within 24 hours, airline cancellation, business cabin, or insurance with a covered reason?",
+      "ground_presence_before": [false, false, false, false],
+      "ground_presence_after": [false, false, false, false],
+      "interpretation": "The same record join and policy calculation are invariant to unrelated reservations. No model selection or end-to-end retrieval is scored.",
+      "not_established": ["full action authorization", "automatic target resolution", "model robustness", "independent human review"]
+    }
+  ]
+}

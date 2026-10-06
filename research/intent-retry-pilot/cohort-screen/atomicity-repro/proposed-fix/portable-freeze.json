@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-10-06T01:18:09.079695+00:00",
+  "phase": "before first clean staged-source portable replay",
+  "old_freeze_sha256": "c6bf2c705fed802ed4bbe5f02ac8a50de55dc383298106caeb9b5e525e951c50",
+  "planned_resets": 5,
+  "planned_tool_attempts": 8,
+  "planned_expected_tool_errors": 2,
+  "planned_model_calls": 0,
+  "dependency_installation": "none; reuse existing locked local venv",
+  "sha256": {
+    "PORTABLE_PROTOCOL.md": "9984931b19589b49b3b522d149a9045043ff7713617aab86e5252cf39f5c1cff",
+    "portable_regress.py": "3eb28c02541fc59ed1ac2c2153a70703cbdc2fc8f5bc18ad7a0be7d74b6c12b8",
+    "portable-runner.diff": "961bc75a1adc95955e3d1f37a9d17e1316c8bc6c5343ca3116b7f5b73e7de709",
+    "portable-preservation.json": "9d1183faf63bda4fef2572f6963021635ed6adb53e665959224680f2c58858c8",
+    "portable_preflight.py": "b38581eb7c11816a967e6f325a1ffa072a5b5857f8a012ef8b9adad7562e7b2d"
+  }
+}

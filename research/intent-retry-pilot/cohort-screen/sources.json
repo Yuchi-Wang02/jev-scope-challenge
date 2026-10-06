@@ -1,0 +1,964 @@
+{
+  "dataset_revision": "842228426c2a703347396501af61c7890972c7ee",
+  "cache_root_relative": ".local/intent-natural-screen/agentabstain/dataset",
+  "selected_pairs": [
+    "conflicting_constraints/preview_005",
+    "conflicting_constraints/preview_006",
+    "conflicting_constraints/preview_009",
+    "conflicting_constraints/preview_010",
+    "conflicting_evidence/preview_008",
+    "conflicting_evidence/preview_009",
+    "conflicting_evidence/preview_010",
+    "conflicting_evidence/preview_011",
+    "emergent_risk_discovery/preview_003",
+    "emergent_risk_discovery/preview_004",
+    "emergent_risk_discovery/preview_006",
+    "emergent_risk_discovery/preview_008"
+  ],
+  "environment_names": [
+    "clinical_records_and_claims",
+    "compliance_and_contracts",
+    "consumer_banking",
+    "consumer_health_portal",
+    "document_authoring_and_publication",
+    "filesystem",
+    "flight_and_travel_management",
+    "industrial_and_infrastructure_control",
+    "personal_profile_and_contacts",
+    "phone_and_messages",
+    "retail_orders",
+    "store_procurement_and_inventory",
+    "trading_and_portfolio",
+    "workforce_and_hr"
+  ],
+  "files": [
+    {
+      "path": "tasks/conflicting_constraints/preview_005/abstain/initial_states/consumer_banking.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/abstain/initial_states/consumer_banking.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3144,
+      "sha256": "1e5aae1da99a5e6368f687e1ca19ff6a705ceb0ea94c324c3599f25063da69ce",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/abstain/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/abstain/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 537,
+      "sha256": "1189aab488a86eecff718bf9983216ece77750929d35b32db74e65222b55f8ba",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1335,
+      "sha256": "ddcc3aaaf0803a150ed1838b5df1374a67e938e9defc85d7eb877ec808a2fcbe",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/act/initial_states/consumer_banking.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/act/initial_states/consumer_banking.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3144,
+      "sha256": "1e5aae1da99a5e6368f687e1ca19ff6a705ceb0ea94c324c3599f25063da69ce",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/act/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/act/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 537,
+      "sha256": "1189aab488a86eecff718bf9983216ece77750929d35b32db74e65222b55f8ba",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2573,
+      "sha256": "6e65349ee403ed6fc41080253ad90d8f5954fc4c5011b022cb8aadb127d4729a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_005/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_005/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 439,
+      "sha256": "b9ab65ed09e767fe95fbdd5318f3c0739f9dd9d49e446a49c1f0ea317f2b1437",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_006/abstain/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_006/abstain/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6973,
+      "sha256": "ed070486d431831cd4a846264e8a0476f97559a81ebee2319e2cdfe203431fe7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_006/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_006/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1595,
+      "sha256": "8ad71388b54fe00b4ab0da48595c52554380a6633a9175a657842a3cd1d00837",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_006/act/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_006/act/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6973,
+      "sha256": "ed070486d431831cd4a846264e8a0476f97559a81ebee2319e2cdfe203431fe7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_006/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_006/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2667,
+      "sha256": "d4eb79f58aa238dc1df19a499dcdf90145941aa568114c3f592b80f54f0d985b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_006/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_006/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 465,
+      "sha256": "ed120693a67bef5afd01a976f00163f7d44c08e6c46186dc6ad2046a67dfb3cc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_009/abstain/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_009/abstain/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 13575,
+      "sha256": "50e599fdb684ef2d3900fb337a60c7dcc7f68b97e7829771b1a23da1272f2c8d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_009/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_009/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1183,
+      "sha256": "ae7bd65e122c80f758b3c73e80b403875fc430930e22bf32cca452995f0948ed",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_009/act/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_009/act/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 13575,
+      "sha256": "50e599fdb684ef2d3900fb337a60c7dcc7f68b97e7829771b1a23da1272f2c8d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_009/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_009/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2229,
+      "sha256": "d63c0d50981a1bc25ece8680a52be15091f5427e2552c82bbf28331155904e4c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_009/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_009/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 461,
+      "sha256": "c25fda3c59bad178c9d439e3ac9eb99b746487bc96e43b758de66644b5e25f2b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/abstain/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/abstain/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4792,
+      "sha256": "f2f6627ccb5967dc1d89fefb66622fd1c35600c27b7098152e9340525e8afc2c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/abstain/initial_states/trading_and_portfolio.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/abstain/initial_states/trading_and_portfolio.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1218,
+      "sha256": "4dd2a845cbb0b752068a2352cf9bfdf28811e068435c2119030453f0e44fee9f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1262,
+      "sha256": "69bc4706df106a096a0845781ac47ba54b365d59e9b4f6fc6fd3643d0f0f7510",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/act/initial_states/flight_and_travel_management.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/act/initial_states/flight_and_travel_management.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4792,
+      "sha256": "f2f6627ccb5967dc1d89fefb66622fd1c35600c27b7098152e9340525e8afc2c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/act/initial_states/trading_and_portfolio.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/act/initial_states/trading_and_portfolio.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1218,
+      "sha256": "4dd2a845cbb0b752068a2352cf9bfdf28811e068435c2119030453f0e44fee9f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3569,
+      "sha256": "00a6742338dd5bb25ef588e77af4e715e52c86aa86af3cf87e2a3b479734d4c1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_constraints/preview_010/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_constraints/preview_010/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 472,
+      "sha256": "1dbc6e9357bff4737de52b4ada9901355d92c89eefd30e57f3c60f936963fd75",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/abstain/initial_states/filesystem.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/abstain/initial_states/filesystem.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2746,
+      "sha256": "92d8191cf764c52a2e2161249142c022c3e9fdfecced4d4c47a9b6becd9fd2b3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/abstain/initial_states/industrial_and_infrastructure_control.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/abstain/initial_states/industrial_and_infrastructure_control.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 828,
+      "sha256": "4cb3bad97d7ee8a31d7116e14c566f52c1d90dd882bfa67535b643b3fb81216d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/abstain/initial_states/phone_and_messages.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/abstain/initial_states/phone_and_messages.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1094,
+      "sha256": "d02069497d9549913025ee47fd4ff6d14ffea94937eacf4bef3fcad89077c00a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1537,
+      "sha256": "f6c39c9780d5f752dc66ed7670a56643e7896a75762f34f00db3ffdd915e562f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/act/initial_states/filesystem.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/act/initial_states/filesystem.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2746,
+      "sha256": "92d8191cf764c52a2e2161249142c022c3e9fdfecced4d4c47a9b6becd9fd2b3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/act/initial_states/industrial_and_infrastructure_control.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/act/initial_states/industrial_and_infrastructure_control.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 828,
+      "sha256": "bf6697ade7dbeb4d8d208eb40a97d352bd19b8ec8f00a70f49abdd09fff8d3ab",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/act/initial_states/phone_and_messages.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/act/initial_states/phone_and_messages.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1094,
+      "sha256": "d02069497d9549913025ee47fd4ff6d14ffea94937eacf4bef3fcad89077c00a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2908,
+      "sha256": "f6bde90b1773a97311c0899767089118c667dec14266f5376a4fab7aa8cf2547",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_008/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_008/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 486,
+      "sha256": "56b6605e4ac26e8620beab0b4a560ab8dd3411d60b886712b679be6efd1a9d94",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_009/abstain/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_009/abstain/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 9485,
+      "sha256": "0897cd5ae1b9e98e7a01888b284d0823a81654fe7d4058b44d55725a2a246349",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_009/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_009/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1390,
+      "sha256": "19314ada4f34043b7bb16e5d2075d48295ed7fd729809588a4ba4b435dc64ace",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_009/act/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_009/act/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 9485,
+      "sha256": "73600579651e3b9348e87cb59f468371112ca2bdf962be2b85a0c3d662f4b3fc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_009/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_009/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4968,
+      "sha256": "8c7dcf78e972c96609364845b07357d25cc1cc0179dea43a44cec9c2743f813c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_009/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_009/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 482,
+      "sha256": "fbcab580a26bed70431f63a9573e602140bb26f813eecd7a51830c433f7c777f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_010/abstain/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_010/abstain/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 7712,
+      "sha256": "94f291f66c46b4aa940d940b87dbcd195a29e25b8127ce3ac49472e8dff1ef64",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_010/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_010/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1436,
+      "sha256": "fcd6a37e2d5e1a3228e3839ef0edc7e3cb7278d08a1a28185f1d6617b613da27",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_010/act/initial_states/retail_orders.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_010/act/initial_states/retail_orders.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 7714,
+      "sha256": "432939c80ffbd2dcf6ecaa0167068e8d064d36fdad86b655be0a407533570cac",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_010/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_010/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4489,
+      "sha256": "d3f0a560ce38ad4fff17264eca1ccf817bc528068ce69ebb8f582f93a15f8e02",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_010/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_010/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 455,
+      "sha256": "be1a9433b8a2dd2fb4da185572b22c83c750303aebb07ee31fb80b9ccd72711c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/abstain/initial_states/document_authoring_and_publication.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/abstain/initial_states/document_authoring_and_publication.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2033,
+      "sha256": "04574718995bafa9b7fd901359691092e08fbbb50e52985e47393aaaca57465e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/abstain/initial_states/filesystem.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/abstain/initial_states/filesystem.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3018,
+      "sha256": "11fdfc98c0d78966e6a280d583bb511c27601371ad80350d4711089fb5fbdde2",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1577,
+      "sha256": "5700c8b0b8742d18169f04c569734d6e6445676fa94400f6a205222dc8e2d454",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/act/initial_states/document_authoring_and_publication.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/act/initial_states/document_authoring_and_publication.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2033,
+      "sha256": "04574718995bafa9b7fd901359691092e08fbbb50e52985e47393aaaca57465e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/act/initial_states/filesystem.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/act/initial_states/filesystem.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3020,
+      "sha256": "966f7f82cc2e8031531422ec94133aa37fe085e54d6fa5bd6728d688d8e0ee0f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2546,
+      "sha256": "24760d474e11f86aa010f63ad35a6d4ef25fe0ffd5c99773bda71e12b9bd332e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/conflicting_evidence/preview_011/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/conflicting_evidence/preview_011/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 504,
+      "sha256": "4bbb3c828ac2cf5519900bf3caf021347adc1ba9d53fa5b1c588fa4e9ebbc036",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_003/abstain/initial_states/personal_profile_and_contacts.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/abstain/initial_states/personal_profile_and_contacts.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 760,
+      "sha256": "59119c536a5e4fb5fc8575e30bd7381ffc5fb3a9221443f1c00db3abbfe4c103",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_003/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1598,
+      "sha256": "79555e1d1e5b8156d2c3646c276aa8f74328dede11cd41f3a2d279f05cf950cf",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_003/act/initial_states/personal_profile_and_contacts.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/act/initial_states/personal_profile_and_contacts.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 686,
+      "sha256": "1bb60ceb7d8a715bdc0e6ec7027e54b59bd7d8855492d4a86ae2fe99eeb0bd9a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_003/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1806,
+      "sha256": "4f4f1a19d90ad3af9da03ddfed6b23a8c92ec5b4990bc1616a8b9e8229d59ca3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_003/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_003/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 397,
+      "sha256": "531b74d74829faeb3e0bb26a4b1ea302ba5d10572e3e4eee54f7efde2af94060",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_004/abstain/initial_states/store_procurement_and_inventory.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_004/abstain/initial_states/store_procurement_and_inventory.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6336,
+      "sha256": "73130dc813255a989aa18eb08d0f7d2462573b78b33e4b9250dd456fa1f7ea74",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_004/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_004/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1414,
+      "sha256": "3619341ab2d8409aad5d6058d2e61c4733ebfc619f1d85bce138750909a196d4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_004/act/initial_states/store_procurement_and_inventory.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_004/act/initial_states/store_procurement_and_inventory.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6150,
+      "sha256": "39185ffce1c5276dfcbfcae98fec2fe5f2cf4a5e371ccc06802af337e27133de",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_004/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_004/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1394,
+      "sha256": "b3c5c93bff3ce391c42c10bedb68648ce998615a61b7535ee9e63a6e5b749d74",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_004/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_004/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 398,
+      "sha256": "6ddebfcc824efabd484bf61d3c50ba594a2372ee2e464d1eaf4edefcebf42f0d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/abstain/initial_states/consumer_health_portal.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/abstain/initial_states/consumer_health_portal.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6198,
+      "sha256": "b8f5a89dc90e912db108a57b4885ef50e770441b57ab68914a4e6a8c9b594253",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/abstain/initial_states/workforce_and_hr.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/abstain/initial_states/workforce_and_hr.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3238,
+      "sha256": "bb56e459ee1cc28eaecbaf7f50891aaa5b63981dccb5a5a0d7bb05a83ad66a0a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 1814,
+      "sha256": "8f6266d916e3982f8eeceb757b5f03061e9c15bb0d3e6ed8a0b89ac9fb3f0d9a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/act/initial_states/consumer_health_portal.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/act/initial_states/consumer_health_portal.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 5885,
+      "sha256": "3bb08342ee82dafa84ed52817ba2bc037dd6a75fc885efa7595a49fda8e25e0b",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/act/initial_states/workforce_and_hr.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/act/initial_states/workforce_and_hr.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2896,
+      "sha256": "038562b8a6c3da5ec858c159dd8e9fbceee06fe18dadc6ef70e4f5471dbf802d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2002,
+      "sha256": "77ca10f6272d49039d2722f2e7ff92394d063602f234bd57116600c118005c40",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_006/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_006/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 422,
+      "sha256": "d621ace916da30745324b22b72a3907766b9f97a3acef3cb9727b4b37eece2f2",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/abstain/initial_states/clinical_records_and_claims.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/abstain/initial_states/clinical_records_and_claims.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4877,
+      "sha256": "7405c3bd19b0b056eb3432c470df52c6cc2bf4bdb412f2dc51ffe8fb545496d7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/abstain/initial_states/compliance_and_contracts.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/abstain/initial_states/compliance_and_contracts.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2525,
+      "sha256": "315e3d219d0aff16272441c58b3d44016aedc5ad40cb65920339d055c6734576",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/abstain/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/abstain/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2138,
+      "sha256": "97446f3c2a42a3f218a6339fb231f9fceda125e983c3a5c23407ce6fb875407a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/act/initial_states/clinical_records_and_claims.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/act/initial_states/clinical_records_and_claims.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4877,
+      "sha256": "7405c3bd19b0b056eb3432c470df52c6cc2bf4bdb412f2dc51ffe8fb545496d7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/act/initial_states/compliance_and_contracts.json",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/act/initial_states/compliance_and_contracts.json",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 2320,
+      "sha256": "8be344a64781ba51657868c702ebbc716f8caaab342bb4f62fe5566db44a15a4",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/act/task.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/act/task.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 3116,
+      "sha256": "2d54f328079a57013c95a69c83da4c07da300fe2328e6048c8df45396fea2fcc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tasks/emergent_risk_discovery/preview_008/metadata.yaml",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/tasks/emergent_risk_discovery/preview_008/metadata.yaml",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 457,
+      "sha256": "37b63e48ae75232384556905f5e939b24d8982edfde031fc72cfeee1b83b6d54",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/clinical_records_and_claims/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/clinical_records_and_claims/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/clinical_records_and_claims/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/clinical_records_and_claims/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 53102,
+      "sha256": "278aeb0b4a55e9aefdd8292876445a5d31fbc9b9941807c573017b24a8c6fc19",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/clinical_records_and_claims/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/clinical_records_and_claims/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 8171,
+      "sha256": "aa695cd4cf357e41f0dc7d596ff8517ae6017eef31f0cb9fd29223bbe0db414e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/compliance_and_contracts/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/compliance_and_contracts/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/compliance_and_contracts/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/compliance_and_contracts/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 33991,
+      "sha256": "395f74eb9aec6453b9367e439e0a2e56e20b695cb9849a5a535d462c86f10dd3",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/compliance_and_contracts/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/compliance_and_contracts/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 5222,
+      "sha256": "eae955e75470d36d4e2719f0f0a92823d4f8d8a8b1d3c0d44958b14da4896bb2",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_banking/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_banking/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_banking/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_banking/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 92717,
+      "sha256": "b608c7c106ba699327659c0eee09126a101aca05474c78181b0f0e184a54b5a5",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_banking/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_banking/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 11466,
+      "sha256": "b5ea3e228bf1faaa47630e6530742c0cecf00192756569cfaab091b9ce81dacb",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_health_portal/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_health_portal/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_health_portal/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_health_portal/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 65220,
+      "sha256": "ad9a7c0dc7a4345a57ef11710c35899cf974dd2efc05b46f0a48621e945a60a9",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/consumer_health_portal/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/consumer_health_portal/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 11739,
+      "sha256": "823c8a197be954bc8c9bf33fbe33992951312f8de73344141d1dcbf172b45d43",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/document_authoring_and_publication/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/document_authoring_and_publication/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/document_authoring_and_publication/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/document_authoring_and_publication/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 69611,
+      "sha256": "f01c9223949b16a72b81ff92925174f19a055f5596bbdde0c18fef56b77c9202",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/document_authoring_and_publication/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/document_authoring_and_publication/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 6129,
+      "sha256": "a518aa23fa6a1280bac31ff01e14cbcf85420bfe9df746311367d3a19b29a72e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/filesystem/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/filesystem/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/filesystem/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/filesystem/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 83929,
+      "sha256": "d57301aa21d39d24192c09345457b8eee042b84d202092de9efff099c7362f62",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/filesystem/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/filesystem/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 8085,
+      "sha256": "fcd72a81c3591807de7d33d02b17795d7b2407f209987e353dad82d1e6361e1c",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/flight_and_travel_management/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/flight_and_travel_management/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 86152,
+      "sha256": "822e2a1fb3931149b5d6cf9368f939cfd0de1d592730d9510ca2ea4b4b422d61",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/flight_and_travel_management/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/flight_and_travel_management/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 15773,
+      "sha256": "d45755bd82866d5f23a12176a1aa26119cd44636e4edf59b8f5e52c33d73591d",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/industrial_and_infrastructure_control/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/industrial_and_infrastructure_control/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/industrial_and_infrastructure_control/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/industrial_and_infrastructure_control/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 57529,
+      "sha256": "9e0511e1321adc50a5b71a44907280977f9b81380ecf0ab09acb5e42646a17ba",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/industrial_and_infrastructure_control/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/industrial_and_infrastructure_control/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 5690,
+      "sha256": "e7ab139341aa5dd994c3f7f9250f3455a9a6111f9d0bf5577a9ac03ab4dee177",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/personal_profile_and_contacts/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/personal_profile_and_contacts/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 8676,
+      "sha256": "f9c6eb9dd79776e7405baed84a170bd7978682c1d7c01b023d4d53112f18cb15",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/personal_profile_and_contacts/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/personal_profile_and_contacts/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 991,
+      "sha256": "c2b02ca2e528e85a21fce0e9d7a1faacb6c5b42a7389a1350e5c87dfb96448b9",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/phone_and_messages/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/phone_and_messages/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/phone_and_messages/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/phone_and_messages/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 48677,
+      "sha256": "58594d2dbcca22ee8e9f0c7917ecf7c5f0e5eb16c83eb80473ca8a3abadf7020",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/phone_and_messages/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/phone_and_messages/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 4909,
+      "sha256": "56a586af1a4b812c077be2cba373bdd042802e9d4e56b01bc0f9e1030d692513",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/retail_orders/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/retail_orders/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/retail_orders/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/retail_orders/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 87941,
+      "sha256": "bf2f523e8c1893a3a3552c26383209de8a661e8437ed005707ee55fe62561187",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/retail_orders/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/retail_orders/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 16031,
+      "sha256": "a9494af09d76a8f09ce42979e902c79a93be3a5de63712e83987f10d70e95658",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/store_procurement_and_inventory/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/store_procurement_and_inventory/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/store_procurement_and_inventory/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/store_procurement_and_inventory/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 43162,
+      "sha256": "d730b890e8eb590f5f0bec8a7daff013f451480dd90b9091227f6df5e66ac0c7",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/store_procurement_and_inventory/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/store_procurement_and_inventory/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 5638,
+      "sha256": "7838b55172cec56a985c899e53326ca6fae61e27dd8e8033fe4152f2eacdfad6",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/trading_and_portfolio/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/trading_and_portfolio/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/trading_and_portfolio/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/trading_and_portfolio/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 66672,
+      "sha256": "7bca7da220c4b03f52637e8b11ff98d87242e03740fbad35811c933ec5d211a1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/trading_and_portfolio/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/trading_and_portfolio/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 7616,
+      "sha256": "282bdf13b98957d3bfca466bb51a7fdf65f8312e7732bd9ede5dc6fc4bd5b22e",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/workforce_and_hr/__init__.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/workforce_and_hr/__init__.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/workforce_and_hr/environment.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/workforce_and_hr/environment.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 67627,
+      "sha256": "9cc9d3cb76a4f31541d8c66e530ea8fa1d874426701906b99822f5a38b4ae40a",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "environments/workforce_and_hr/schema.py",
+      "url": "https://huggingface.co/datasets/antiquality/agentabstain/resolve/842228426c2a703347396501af61c7890972c7ee/environments/workforce_and_hr/schema.py",
+      "revision": "842228426c2a703347396501af61c7890972c7ee",
+      "bytes": 11719,
+      "sha256": "ede31bfffb7ee90d0aff846dab939278a30fc4d0c68ea03c8943fbc06506b172",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

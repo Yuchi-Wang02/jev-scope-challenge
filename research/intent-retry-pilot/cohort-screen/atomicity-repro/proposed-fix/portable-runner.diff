@@ -1,0 +1,48 @@
+--- frozen/regress.py
++++ portable/portable_regress.py
+@@ -1,4 +1,4 @@
+-"""Frozen, isolated proposed-fix regression; real BaseEnvironment/FastMCP."""
++"""Portable copy of the frozen regression; only explicit audit bytecode is optional."""
+ from __future__ import annotations
+ 
+ import argparse
+@@ -18,6 +18,10 @@
+ ORIGINAL = ROOT.parent
+ INTEGRATION = ORIGINAL.parents[1] / 'integration'
+ sys.dont_write_bytecode = True
++BYTECODE_PREFIX = 'upstream/dataset/environments/personal_profile_and_contacts/__pycache__/'
++OPTIONAL_BYTECODE = {BYTECODE_PREFIX + name for name in (
++    '__init__.cpython-313.pyc', 'environment.cpython-313.pyc', 'schema.cpython-313.pyc')}
++
+ 
+ 
+ def write(path, value):
+@@ -55,6 +59,10 @@
+ def run(output):
+     frozen = json.loads((ROOT/'freeze.json').read_text(encoding='utf-8'))
+     preserved = json.loads((ROOT/'preserved-original-files.json').read_text(encoding='utf-8'))['sha256']
++    assert len(preserved) == 29 and OPTIONAL_BYTECODE.issubset(preserved)
++    preserved = {name: digest for name, digest in preserved.items() if name not in OPTIONAL_BYTECODE}
++    portable_frozen = json.loads((ROOT/'portable-freeze.json').read_text(encoding='utf-8'))
++    check_hashes(ROOT, portable_frozen['sha256'])
+     check_hashes(ROOT, frozen['sha256'])
+     check_hashes(ORIGINAL, preserved)
+     original = load_original_runner()
+@@ -176,6 +184,7 @@
+     check_hashes(ORIGINAL, preserved)
+     original.source_checks()
+     check_sources()
++    check_hashes(ROOT, portable_frozen['sha256'])
+     summary = {'status': 'proposed fix regression passed', 'source_parent_pairs': 1,
+         'scripted_resets': len(results), 'tool_attempts': sum(len(c['controller_calls']) for c in results),
+         'successful_tool_attempts': sum(e['success'] for c in results for e in c['controller_calls']),
+@@ -185,6 +194,9 @@
+         'legal_privacy_and_bio_updates_preserved': True,
+         'model_calls': 0, 'real_profile_updates': 0, 'aggregate_benchmark_score_evaluated': False,
+         'original_files_verified_unchanged': len(preserved), 'integration_source_files_verified': integration_source_count,
++        'portable_audit_bytecode_exclusions': sorted(OPTIONAL_BYTECODE),
++        'original_preservation_manifest_entries': 29,
++        'portable_freeze_sha256': hashlib.sha256((ROOT/'portable-freeze.json').read_bytes()).hexdigest(),
+         'upstream_sources_patched': False, 'derivative_source_patched': True,
+         'network_audit_events': NETWORK_EVENTS, 'frozen_files_verified': len(frozen['sha256']),
+         'freeze_sha256': hashlib.sha256((ROOT/'freeze.json').read_bytes()).hexdigest(),

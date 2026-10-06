@@ -1,0 +1,106 @@
+[
+  {
+    "record_id": "c842",
+    "verification_status_gate": {
+      "decision": "NEED_DISCOVERY",
+      "reason": "no_pending_cancel_target"
+    },
+    "profile_evidence_gate": {
+      "decision": "NEED_DISCOVERY",
+      "reason": "no_pending_cancel_target"
+    },
+    "no_gate": "NO_ACTION",
+    "never_commit": "NO_ACTION"
+  },
+  {
+    "record_id": "e105",
+    "verification_status_gate": {
+      "decision": "HOLD",
+      "reason": "no_identity_verification_after_discovery"
+    },
+    "profile_evidence_gate": {
+      "decision": "HOLD",
+      "reason": "no_identity_verification_after_discovery"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  },
+  {
+    "record_id": "a391",
+    "verification_status_gate": {
+      "decision": "ALLOW",
+      "reason": "upstream_verification_passed_identity_fields_unchecked"
+    },
+    "profile_evidence_gate": {
+      "decision": "HOLD",
+      "reason": "profile_evidence_required"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  },
+  {
+    "record_id": "d760",
+    "verification_status_gate": {
+      "decision": "ALLOW",
+      "reason": "upstream_verification_passed_identity_fields_unchecked"
+    },
+    "profile_evidence_gate": {
+      "decision": "ALLOW",
+      "reason": "profile_fields_and_upstream_verification_match"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  },
+  {
+    "record_id": "f214",
+    "verification_status_gate": {
+      "decision": "NEED_DISCOVERY",
+      "reason": "no_pending_cancel_target"
+    },
+    "profile_evidence_gate": {
+      "decision": "NEED_DISCOVERY",
+      "reason": "no_pending_cancel_target"
+    },
+    "no_gate": "NO_ACTION",
+    "never_commit": "NO_ACTION"
+  },
+  {
+    "record_id": "b908",
+    "verification_status_gate": {
+      "decision": "HOLD",
+      "reason": "no_identity_verification_after_discovery"
+    },
+    "profile_evidence_gate": {
+      "decision": "HOLD",
+      "reason": "no_identity_verification_after_discovery"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  },
+  {
+    "record_id": "g623",
+    "verification_status_gate": {
+      "decision": "HOLD",
+      "reason": "identity_verification_failed_or_unstructured"
+    },
+    "profile_evidence_gate": {
+      "decision": "HOLD",
+      "reason": "identity_verification_failed_or_unstructured"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  },
+  {
+    "record_id": "h457",
+    "verification_status_gate": {
+      "decision": "HOLD",
+      "reason": "identity_verification_failed_or_unstructured"
+    },
+    "profile_evidence_gate": {
+      "decision": "HOLD",
+      "reason": "identity_verification_failed_or_unstructured"
+    },
+    "no_gate": "PERMIT",
+    "never_commit": "HOLD"
+  }
+]

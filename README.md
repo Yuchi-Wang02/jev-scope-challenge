@@ -9,12 +9,38 @@
 [Milestone audits and next decisions](STAGE_LOG.md) ·
 [Candidate-coverage results](research/candidate-completeness/RESULTS.md)
 
-Latest execution: **[One "Only". Different Decision.](research/rule-direction/RESULTS.md)**
-Jev and Qwen3.5-4B both score84/108 in both tested orders, making the same24
-errors when sufficient and necessary conditions require different decisions.
-All444 calls are retained. [Replay every case](https://yuchi-wang02.github.io/jev-scope-challenge/rule_direction.html).
-Twelve authored vocabulary families repeat three formal patterns; this is a
-synthetic diagnostic under explicit constraint semantics, not a general benchmark.
+**Start with the [stage technical report: A Valid Answer Is Not a Verified Decision](TECHNICAL_REPORT.md).**
+It brings together local attribution gains, failed decompositions, source-label
+limits and the stronger comparison that narrows the earlier shared-error finding.
+The project has not established a general model-replacement advantage or a new method.
+
+**Inspect the saved decisions:** [interactive three-model replay](https://yuchi-wang02.github.io/jev-scope-challenge/decision_boundary.html)
+([standalone HTML](docs/decision_boundary.html)). It shows all 108 authored
+inputs in both option orders, exact final answers and the one strict format failure.
+The [release review packet](RELEASE_CANDIDATE.md) records scope, checks and known limits.
+
+Latest completed arm: **[a capable ordinary-model direction reference](research/rule-direction/capable-reference/RESULTS.md)**.
+Sonnet 5.5 scores **107/108 and 108/108** on the unchanged Qwen prompts in two
+option orders; strict main total **215/216**, including one invalid format.
+All 222 requests completed without retries. The original Jev and short nonthinking
+Qwen configurations each scored 84/108 with the same 24 errors. The signature
+does not extend to this new reference's valid labels. This is a historical,
+unequal-compute comparison on twelve authored vocabulary families, not independent
+confirmation. Both grids are closed; this is no longer the current main paper candidate.
+
+The [original 444-call report](research/rule-direction/RESULTS.md) and
+[historical case replay](https://yuchi-wang02.github.io/jev-scope-challenge/rule_direction.html)
+remain unchanged. A separate [offline confidence recheck](research/series-closeout/confidence_report.json)
+corrects the supplied retrospective draft's inclusive 0.99 threshold: **173
+retained decisions, 9 errors**, not 128 with zero errors.
+
+The [retry-intent pilot](research/intent-retry-pilot/RESULTS.md) passed its clear
+cases; ambiguous labels remain unvalidated and expansion is parked. Subsequent
+[source screening](research/intent-retry-pilot/cohort-screen/README.md) did not
+produce a ready model-comparison cohort. Isolated checker/environment repairs
+are recorded separately as software maintenance. The
+[stage release notes](RELEASE_NOTES.md) describe this synthesis; the original
+two-model replay retains its historical grid.
 
 Earlier execution: [Same facts. Different answer interface.](research/qa4pc-answer-interface/RESULTS.md)
 All 648 jobs completed on 12 new policy clusters. Generated outputs are fully
@@ -44,7 +70,8 @@ Jev won that probe, and a parser tailored to its grammar also solved every case.
 The intermediate studies examine **historical pinned Kev/Qwen checkpoints**.
 N1 uses an already-trained Kev LoRA with native causal logits; no new training
 does not mean an unadapted model. The payment diagnostic returned to live Jev;
-the latest public-source screen compares Jev with Qwen3.5-4B.
+the public-source screens compare Jev with Qwen3.5-4B. The later Sonnet arm is
+a capability reference on the synthetic rule-direction grid only.
 
 **Current evidence: real, replayable synthetic and public-source diagnostics; two reviewers have
 submitted judgments on the same 96 payment-study items, with a scope objection;

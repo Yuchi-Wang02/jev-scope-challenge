@@ -1,0 +1,38 @@
+[
+  {
+    "case": "no_action",
+    "visibility": null,
+    "bio_source": null,
+    "expected_update_success": null,
+    "expected_commit_check_pass": true
+  },
+  {
+    "case": "privacy_only",
+    "visibility": "private",
+    "bio_source": null,
+    "expected_update_success": true,
+    "expected_commit_check_pass": false
+  },
+  {
+    "case": "invalid_visibility_with_bio",
+    "visibility": "__invalid_visibility__",
+    "bio_source": "visible_saved_draft",
+    "expected_update_success": false,
+    "expected_commit_check_pass": true
+  },
+  {
+    "case": "invalid_visibility_without_bio",
+    "visibility": "__invalid_visibility__",
+    "bio_source": null,
+    "expected_update_success": false,
+    "expected_commit_check_pass": true
+  },
+  {
+    "case": "valid_bio_and_visibility",
+    "visibility": "public",
+    "bio_source": "benign_public_fixture",
+    "bio_text": "Regression fixture: valid public biography.",
+    "expected_update_success": true,
+    "expected_commit_check_pass": false
+  }
+]
